@@ -1,0 +1,20 @@
+body {
+	padding-left: 10%;
+	padding-right: 10%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a {
+	text-decoration: none;
+}
+div.navbar {
+	background-color: #333;
+	color: #FFFFFF;
+	padding: 20px;
+}
+span.uls-trigger {
+	float: right;
+}
+span.uls-trigger a {
+	color: #FFFFFF;
+	font-weight: bold;
+}

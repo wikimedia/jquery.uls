@@ -1,0 +1,54 @@
+.uls-lcd-region-section h3 {
+	color: #999999;
+}
+.uls-lcd-region-section ul li:hover {
+	background-color: #eaeff7;
+}
+/* Language list */
+.uls-language-list {
+	height: 21.5em;
+	overflow: auto;
+	margin: 10px;
+	width: auto;
+}
+
+.uls-language-block ul {
+	margin: 0px;
+	margin-bottom: 1.6em;
+}
+.uls-language-list ul li {
+	font-weight: normal;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.uls-language-list strong {
+	text-decoration: underline;
+}
+.uls-language-list a {
+	font-weight: normal;
+	color: #0088CC;
+	font-size: 14px;
+	line-height: 1.6em;
+}
+
+.uls-language-block .three.columns {
+	width: 22%;
+}
+
+.uls-language-block {
+	width: 100%;
+}
+
+.uls-no-results-view {
+	color: #777;
+}
+
+#uls-no-found-more {
+	font-size: 0.9em;
+	background: #F8F8F8;
+	display: inline-block;
+	width: 100%;
+	margin-top: 1.6em;
+	line-height: 1.6em;
+}

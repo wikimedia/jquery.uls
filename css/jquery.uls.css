@@ -1,0 +1,180 @@
+.uls-trigger {
+	/* @embed */
+	background: url('../images/icon-language.png') no-repeat scroll left center transparent;
+	padding-left: 30px;
+}
+.uls-menu {
+	position: fixed;
+	z-index: 1000;
+	display: none;
+	min-width: 715px;
+	margin-top: 1px;
+	width: 45%;
+	/* Styling */
+	background-color: #ffffff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	*border-right-width: 2px;
+	*border-bottom-width: 2px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+.uls-menu a {
+	color: #0088CC;
+}
+.uls-menu h1 {
+	font-weight: normal;
+	padding-top: 1.25em;
+	border: none;
+	padding-bottom: 3px;
+	font-size: 18pt;
+	line-height: 1.25em;
+	padding-left: 15px;
+	color: #777;
+}
+.uls-menu h2 {
+	font-size: 16pt;
+	line-height: 1.5em;
+	padding-left: 6px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	border-bottom: none;
+	color: #777;
+}
+.uls-menu h3 {
+	font-size: 14pt;
+	line-height: 1.5em;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	border-bottom: none;
+}
+.uls-worldmap {
+	/* @embed */
+	background: url('../images/world_map.png') no-repeat scroll right top transparent;
+	background-size: 100%;
+}
+.uls-region {
+	/* The map doesn't flip */
+	/* @noflip */
+	float: left;
+	cursor: pointer;
+	padding: 0px;
+	margin: 0px;
+	height: 125px;
+	border-bottom-color: #777;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+}
+.uls-region a {
+	bottom: 2px;
+	position: absolute;
+	font-size: 13px;
+}
+.uls-region:hover {
+	/*Cross-browser background transparency*/
+	background: #3366bb;
+	background: rgba(51, 102, 187, 0.1);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb, endColorstr=#253366bb);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb, endColorstr=#253366bb)";
+	border-bottom-color: #3366bb;
+	border-bottom-style: solid;
+}
+.regionselector.active {
+	/*Cross-browser background transparency*/
+	background: #3366bb;
+	background: rgba(51, 102, 187, 0.2);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb, endColorstr=#253366bb);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb, endColorstr=#253366bb)";
+	border-bottom-color: #3366bb;
+	border-bottom-style: solid;
+}
+#map-block {
+	top: 1px;
+	margin-right: 0;
+	padding-right: 0px;
+	float: right;
+	overflow: hidden;
+}
+#map-block a {
+	color: #444;
+}
+#map-block .active a {
+	font-weight: bold;
+}
+.icon-close {
+	/* @embed */
+	background: url('../images/close.png') no-repeat scroll center center transparent;
+	float: right;
+	padding: 15px;
+	cursor: pointer;
+}
+input#languagefilter {
+	border: 1px solid #c9c9c9;
+	-moz-transition: all 0.15s linear 0s;
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+	color: #333;
+	display: block;
+	background-color: transparent;
+}
+input:focus#languagefilter {
+	border: 1px solid #08C;
+}
+
+#search {
+	background-color: #f8f8f8;
+	border-top-color: #777;
+	border-top-style: solid;
+	border-top-width: 1px;
+	padding: 0.8em 0;
+}
+.search-label {
+	/* @embed */
+	background: url('../images/search.png') no-repeat scroll right center transparent;
+	background-size: 30px;
+	height: 32px;
+	width: 32px;
+	display: inline-block;
+	float: right;
+}
+span#languagefilter-clear {
+	/* @embed */
+	background: url('../images/clear.png') no-repeat scroll left center transparent;
+	cursor: pointer;
+	height: 32px;
+	position: absolute;
+	width: 32px;
+	margin-left: -32px;
+}
+
+.filterinput {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-size: 14px;
+	height: 32px;
+	padding: 6px;
+	width: 100%;
+	text-align: left;
+}
+
+#filtersuggestion {
+	background-color: white;
+	color: #888;
+	border: 1px transparent;
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 1px 2px transparent inset;
+	left: 1px;
+}
+
+#search-input-block {
+	position: relative;
+}
