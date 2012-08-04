@@ -74,7 +74,7 @@
 					delay( function() {
 						that.options.$target.empty();
 						that.search();
-					}, 500 );
+					}, 300 );
 					this.toggleClear();
 			}
 		},
@@ -114,7 +114,7 @@
 				}
 			}
 			// Also do a search by search API
-			if( this.options.searchAPI && query ) {
+			if( !this.resultCount && this.options.searchAPI && query ) {
 				this.searchAPI( query );
 			} else {
 				this.resultHandler( query );
@@ -125,6 +125,10 @@
 			var that = this;
 			$.get( that.options.searchAPI, { search: query }, function( result ) {
 				$.each( result['languagesearch'], function( code, name ) {
+					if ( that.resultCount === 0 ) {
+						// Autofill the first result.
+						that.autofill( code, name );
+					}
 					that.render( code, name );
 					that.resultCount++;
 				} );
@@ -145,7 +149,7 @@
 			}
 		},
 
-		autofill: function( langCode ) {
+		autofill: function( langCode, languageName ) {
 			if ( !this.$suggestion.length ) {
 				return;
 			}
@@ -153,8 +157,8 @@
 				this.$suggestion.val( '' );
 				return;
 			}
+			languageName = languageName || this.options.languages[langCode];
 			var autonym,
-				languageName = this.options.languages[langCode],
 				userInput = this.$element.val(),
 				suggestion = userInput + languageName.substring( userInput.length, languageName.length );
 			if ( suggestion !== languageName ) {
@@ -178,8 +182,7 @@
 		},
 
 		escapeRegex: function( value ) {
-			// This is a prefix search.
-			return value.replace( /^[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&" );
+			return value.replace( /[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&" );
 		},
 
 		/**
@@ -192,7 +195,7 @@
 		 */
 		filter: function( langCode, searchTerm ) {
 			// FIXME script is ISO 15924 code. We might need actual name of script.
-			var matcher = new RegExp( this.escapeRegex( searchTerm ), 'i' ),
+			var matcher = new RegExp( "^" + this.escapeRegex( searchTerm ), 'i' ),
 				languageName = this.options.languages[langCode];
 			return matcher.test( languageName ) ||
 				matcher.test( $.uls.data.autonym( langCode ) ) ||

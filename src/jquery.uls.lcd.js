@@ -35,16 +35,7 @@
 			var that = this;
 			this.addToRegion( langCode, regionCode, languageName );
 		},
-		/**
-		 * Check whether a language code is already displayed or not.
-		 * @param langCode
-		 * @return boolean
-		 */
-		exists: function( langCode ) {
-			return this.$element.find( 'li' ).filter(function() {
-					return $(this).data('code')  === langCode;
-				} ).length > 0;
-		},
+
 		/**
 		 * Add the language to a region.
 		 * If the region parameter is given , add to that region alone
@@ -55,10 +46,7 @@
 		 */
 		addToRegion: function( langCode, region, languageName) {
 			var that = this;
-			if ( that.exists( langCode ) ) {
-				return;
-			}
-			var language = $.uls.data.languages[langCode],
+			var language = that.options.languages[langCode],
 				langName = languageName
 					|| $.uls.data.autonym( langCode )
 					|| that.options.languages[langCode]
@@ -123,6 +111,10 @@
 		empty: function() {
 			this.$element.find( 'div.row' ).remove();
 			this.$element.find( 'div' ).hide();
+		},
+
+		focus: function() {
+			this.$element.focus();
 		},
 
 		listen: function() {
