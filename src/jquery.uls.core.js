@@ -123,7 +123,7 @@
 				languages: that.languages,
 				success: function() {
 					// clear the search field.
-					that.$languageFilter.languagefilter( 'clear' );
+					that.$languageFilter.val( '' );
 					that.success();
 				}
 			} );
