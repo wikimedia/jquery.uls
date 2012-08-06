@@ -32,6 +32,7 @@
 			}
 		}
 		this.shown = false;
+		this.initialized = false;
 		this.$languageFilter = $( 'input#languagefilter' );
 		this.$noResultsView = $( 'div.uls-no-results-view' );
 		this.$resultsView = $( 'div.uls-language-list' );
@@ -44,8 +45,7 @@
 	ULS.prototype = {
 		constructor: ULS,
 		ready: function() {
-			// Initialize with a full search.
-			this.$languageFilter.val( "" ).languagefilter( "search" );
+			// Currently empty, can be overridden for anything useful.
 		},
 		show: function() {
 			var pos = $.extend( {}, this.$element.offset(), {
@@ -56,9 +56,14 @@
 				left: '25%'
 			} );
 
+			if ( !this.initialized ) {
+				// Initialize with a full search.
+				// This happens on first time click of uls trigger.
+				this.$languageFilter.languagefilter( 'clear' );
+				this.initialized = true;
+			}
 			this.$menu.show();
 			this.shown = true;
-
 			this.$languageFilter.focus();
 			return this;
 		},
