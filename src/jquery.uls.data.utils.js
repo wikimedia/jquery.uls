@@ -170,16 +170,20 @@
 	};
 
 	/**
-	 * Get the given list of languages sorted by script.
+	 * Get the given list of languages grouped by script.
 	 * @param languages Array of language codes
 	 * @return {Object} Array of languages indexed by script codes
 	 */
 	$.uls.data.languagesByScriptGroup = function( languages ) {
-		var languagesByScriptGroup = {}, scriptGroup, language, langScriptGroup;
+		var languagesByScriptGroup = {},
+			scriptGroup,
+			language,
+			langScriptGroup;
+
 		for ( scriptGroup in $.uls.data.scriptgroups ) {
 			for ( language in languages ) {
 				langScriptGroup = $.uls.data.scriptGroupOfLanguage( language );
-				if( langScriptGroup !== scriptGroup ){
+				if( langScriptGroup !== scriptGroup ) {
 					continue;
 				}
 				if ( !languagesByScriptGroup[scriptGroup] ) {
@@ -188,8 +192,10 @@
 				languagesByScriptGroup[scriptGroup].push( language );
 			}
 		}
+
 		return languagesByScriptGroup;
 	};
+
 	/**
 	 * Returns an associative array of languages in several regions,
 	 * grouped by script group.
@@ -297,5 +303,16 @@
 	 */
 	$.uls.data.scriptGroupOfLanguage = function( language ) {
 		return $.uls.data.groupOfScript( $.uls.data.script( language ) );
+	};
+
+	/**
+	 * A callback for sorting languages by autonym.
+	 * Can be used as an argument to a sort function.
+	 * @param two language codes
+	 */
+	$.uls.data.sortByAutonym = function( a, b ) {
+		var autonymA = $.uls.data.autonym( a ) || a,
+			autonymB = $.uls.data.autonym( b ) || b;
+		return ( autonymA.toLowerCase() < autonymB.toLowerCase() ) ? -1 : 1;
 	};
 } )( jQuery );

@@ -67,7 +67,7 @@
 						e.preventDefault();
 						e.stopPropagation();
 					} else {
-					 	this.options.$target.focus();
+						this.options.$target.focus();
 					}
 				default:
 					var that = this;
@@ -87,7 +87,10 @@
 		},
 
 		toggleClear: function() {
-			if ( !this.$clear.length ) return;
+			if ( !this.$clear.length ) {
+				return;
+			}
+
 			if ( this.$element.val() ) {
 				this.$clear.show();
 			} else {
@@ -101,8 +104,10 @@
 				scriptGroup, langNum, langCode;
 			this.resultCount = 0;
 			for ( scriptGroup in languages ) {
-				for ( langNum = 0; langNum < languages[scriptGroup].length; langNum++ ) {
-					langCode = languages[scriptGroup][langNum];
+				var languagesInScript = languages[scriptGroup];
+				languagesInScript.sort( $.uls.data.sortByAutonym );
+				for ( langNum = 0; langNum < languagesInScript.length; langNum++ ) {
+					langCode = languagesInScript[langNum];
 					if ( query === "" || this.filter( langCode, query ) ) {
 						if ( this.resultCount === 0 ) {
 							// Autofill the first result.
@@ -261,6 +266,7 @@
 		test: function( langCode ) {
 			var langRegions = $.uls.data.regions( langCode ),
 				region;
+
 			for ( var i = 0; i < this.regions.length; i++ ) {
 				region = this.regions[i];
 				if ( $.inArray( region, langRegions ) >= 0 ) {
@@ -271,21 +277,21 @@
 		},
 
 		show: function() {
-			var i, regions, language, languagesByScriptGroup, scriptGroup, languages;
 			// Make the selected region (and it only) active
 			$( '.regionselector' ).removeClass( 'active' );
-			if( this.regionGroup ) {
+			if ( this.regionGroup ) {
 				// if there is a region group, make it active.
 				this.$element.addClass( 'active' );
 			}
+
 			// Re-populate the list of languages
 			this.options.$target.empty();
-			languagesByScriptGroup = $.uls.data.languagesByScriptGroup( this.options.languages );
-			for ( scriptGroup in languagesByScriptGroup ) {
-				languages = languagesByScriptGroup[scriptGroup];
-				for ( i = 0; i < languages.length; i++) {
-					language = languages[i];
-					this.test( language );
+			var languagesByScriptGroup = $.uls.data.languagesByScriptGroup( this.options.languages );
+			for ( var scriptGroup in languagesByScriptGroup ) {
+				var languages = languagesByScriptGroup[scriptGroup];
+				languages.sort( $.uls.data.sortByAutonym );
+				for ( var i = 0; i < languages.length; i++ ) {
+					this.test( languages[i] );
 				}
 			}
 
