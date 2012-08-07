@@ -163,7 +163,7 @@
 				suggestion = userInput + languageName.substring( userInput.length, languageName.length );
 			if ( suggestion !== languageName ) {
 				// see if it was autonym match
-				autonym = $.uls.data.autonym( langCode );
+				autonym = $.uls.data.autonym( langCode ) || '';
 				suggestion = userInput + autonym.substring( userInput.length, autonym.length );
 				if ( suggestion !== autonym ) {
 					// Give up. It may be iso/script code match.
