@@ -107,11 +107,7 @@
 
 			lcd = that.$resultsView.lcd( {
 				languages: that.languages,
-				clickhandler: function( langCode ) {
-					if ( that.options.onSelect ) {
-						that.options.onSelect.call( this, langCode );
-					}
-				}
+				clickhandler: $.proxy( that.onSelect, that )
 			} ).data( "lcd" );
 
 			that.$languageFilter.languagefilter( {
@@ -119,7 +115,8 @@
 				languages: that.languages,
 				success: $.proxy( that.success, that ),
 				noresults: $.proxy( that.noresults, that ),
-				searchAPI: that.options.searchAPI
+				searchAPI: that.options.searchAPI,
+				onSelect: $.proxy( that.onSelect, that )
 			} );
 
 			// Create region selectors, one per region
@@ -133,6 +130,12 @@
 				}
 			} );
 
+		},
+
+		onSelect: function( langCode ) {
+			if ( this.options.onSelect ) {
+				this.options.onSelect.call( this, langCode );
+			}
 		},
 
 		keyup: function( e ) {
