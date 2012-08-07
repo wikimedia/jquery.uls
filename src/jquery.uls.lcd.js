@@ -32,7 +32,6 @@
 		constructor: LanguageCategoryDisplay,
 
 		append: function( langCode, regionCode, languageName ) {
-			var that = this;
 			this.addToRegion( langCode, regionCode, languageName );
 		},
 
@@ -47,10 +46,10 @@
 		addToRegion: function( langCode, region, languageName) {
 			var that = this;
 			var language = that.options.languages[langCode],
-				langName = languageName
-					|| $.uls.data.autonym( langCode )
-					|| that.options.languages[langCode]
-					|| langCode,
+				langName = languageName ||
+					$.uls.data.autonym( langCode ) ||
+					that.options.languages[langCode] ||
+					langCode,
 				regions = [];
 			if ( region ) {
 				regions.push( region );
@@ -68,8 +67,22 @@
 					);
 
 				// Append the element to the column in the list
-				var column = that.getColumn( regionCode );
-				column.append( $li );
+				var $column = that.getColumn( regionCode );
+				var lastLanguage = $column.find( 'li:last' ).data( 'code' );
+				if ( lastLanguage ) {
+					var lastScriptGroup = $.uls.data.scriptGroupOfLanguage( lastLanguage ),
+						currentScriptGroup = $.uls.data.scriptGroupOfLanguage( langCode );
+					if ( lastScriptGroup !== currentScriptGroup ) {
+						if ( $column.find( 'li' ).length > 5 ) {
+							// If column has already 5 or more languages, add a new column
+							$column = that.getColumn( regionCode, true );
+						} else {
+							// An empty item as column break.
+							$column.append( $( '<li>' ).addClass( 'uls-column-break' ) );
+						}
+					}
+				}
+				$column.append( $li );
 
 				if ( that.options.clickhandler ) {
 					$li.click( function() {
@@ -78,23 +91,30 @@
 				}
 			}
 		},
-
-		getColumn: function( regionCode ) {
-			var $divRegionCode = $( 'div#' + regionCode );
-			var $rowDiv = $divRegionCode.find( 'div.row:last' );
-			var $ul = $divRegionCode.find( 'ul:last' );
+		/**
+		 * Get a column to add language.
+		 * @param String regionCode The region code
+		 * @param boolean forceNew whether a new column must be created or not
+		 */
+		getColumn: function( regionCode, forceNew ) {
+			var $divRegionCode, $rowDiv, $ul;
+			forceNew = forceNew || false;
+			$divRegionCode = $( 'div#' + regionCode );
+			$rowDiv = $divRegionCode.find( 'div.row:last' );
+			$ul = $divRegionCode.find( 'ul:last' );
 			// Each column can have maximum 10 languages.
-			if ( $ul.length === 0 || $ul.find( 'li' ).length >= 10 ) {
-				// Each row can have 4 columns with 10 languages.
+			if ( $ul.length === 0 || $ul.find( 'li' ).length >= 10 || forceNew ) {
 				$ul = $( '<ul>' ).addClass( 'three columns end' );
 				if ( $rowDiv.length === 0 || $rowDiv.find( 'ul' ).length >= 4 ) {
 					$rowDiv = $( '<div>' ).addClass( 'row uls-language-block' );
 					$divRegionCode.append( $rowDiv );
-					$ul.addClass('offset-by-one');
+					$ul.addClass( 'offset-by-one' );
 				}
 				$rowDiv.append( $ul );
 			}
-			$divRegionCode.show();
+			if( !$divRegionCode.is( ':visible' ) ) {
+				$divRegionCode.show();
+			}
 			return $ul;
 		},
 

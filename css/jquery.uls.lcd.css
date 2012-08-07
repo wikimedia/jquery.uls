@@ -52,3 +52,7 @@
 	margin-top: 1.6em;
 	line-height: 1.6em;
 }
+
+.uls-lcd-region-section ul li.uls-column-break:hover{
+	background: none;
+}
