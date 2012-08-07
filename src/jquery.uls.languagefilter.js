@@ -134,7 +134,7 @@
 						// Autofill the first result.
 						that.autofill( code, name );
 					}
-					that.render( code, name );
+					that.render( code );
 					that.resultCount++;
 				} );
 				that.resultHandler( query );
@@ -178,12 +178,12 @@
 			this.$suggestion.val( suggestion );
 		},
 
-		render: function( langCode, languageName ) {
+		render: function( langCode ) {
 			var $target = this.options.$target;
 			if ( !$target ) {
 				return;
 			}
-			$target.append( langCode, null, languageName );
+			$target.append( langCode, null );
 		},
 
 		escapeRegex: function( value ) {

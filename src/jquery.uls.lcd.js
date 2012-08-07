@@ -31,8 +31,8 @@
 	LanguageCategoryDisplay.prototype = {
 		constructor: LanguageCategoryDisplay,
 
-		append: function( langCode, regionCode, languageName ) {
-			this.addToRegion( langCode, regionCode, languageName );
+		append: function( langCode, regionCode ) {
+			this.addToRegion( langCode, regionCode );
 		},
 
 		/**
@@ -41,15 +41,13 @@
 		 * Otherwise to all regions that this language belongs.
 		 * @param langCode
 		 * @param region Optional region
-		 * @param languageName Optional languageName
 		 */
-		addToRegion: function( langCode, region, languageName) {
+		addToRegion: function( langCode, region ) {
 			var that = this;
 			var language = that.options.languages[langCode],
-				langName = languageName ||
-					$.uls.data.autonym( langCode ) ||
-					that.options.languages[langCode] ||
-					langCode,
+				langName = $.uls.data.autonym( langCode )
+					|| language
+					|| langCode,
 				regions = [];
 			if ( region ) {
 				regions.push( region );
