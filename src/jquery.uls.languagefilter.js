@@ -33,6 +33,7 @@
 		this.resultCount = 0;
 		this.$suggestion = $( '#' + this.$element.data( 'suggestion' ) );
 		this.$clear = $( '#'+ this.$element.data( 'clear' ) );
+		this.selectedLanguage = null;
 		this.listen();
 	};
 
@@ -66,11 +67,16 @@
 						this.$element.val( suggestion );
 						e.preventDefault();
 						e.stopPropagation();
-					} else {
-						this.options.$target.focus();
 					}
+					break;
+				case 13:
+					if ( this.options.onSelect && this.selectedLanguage ) {
+						this.options.onSelect( this.selectedLanguage );
+					}
+					break;
 				default:
 					var that = this;
+					this.selectedLanguage = null;
 					delay( function() {
 						that.options.$target.empty();
 						that.search();
@@ -112,6 +118,9 @@
 						if ( this.resultCount === 0 ) {
 							// Autofill the first result.
 							this.autofill( langCode );
+						}
+						if ( query === langCode ) {
+							this.selectedLanguage = langCode;
 						}
 						this.render( langCode );
 						this.resultCount++;
@@ -162,6 +171,7 @@
 				this.$suggestion.val( '' );
 				return;
 			}
+			this.selectedLanguage = langCode;
 			languageName = languageName || this.options.languages[langCode];
 			var autonym,
 				userInput = this.$element.val(),
@@ -229,7 +239,8 @@
 		searchAPI: null,
 		languages: null, // Languages as code:name format.
 		noresults: null, // callback for no results found case
-		success: null // callback if any results found.
+		success: null, // callback if any results found.
+		onSelect: null // Language select handler - like enter in filter textbox.
 	};
 
 	$.fn.languagefilter.Constructor = LanguageFilter;
