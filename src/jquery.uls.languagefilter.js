@@ -157,6 +157,7 @@
 		 */
 		resultHandler: function( query ) {
 			if ( this.resultCount === 0 && this.options.noresults ) {
+				this.$suggestion.val( '' );
 				this.options.noresults.call( this, query );
 			} else if ( this.options.success ) {
 				this.options.success( this, query, this.resultCount );
@@ -176,7 +177,7 @@
 			var autonym,
 				userInput = this.$element.val(),
 				suggestion = userInput + languageName.substring( userInput.length, languageName.length );
-			if ( suggestion !== languageName ) {
+			if ( suggestion.toLowerCase() !== languageName.toLowerCase() ) {
 				// see if it was autonym match
 				autonym = $.uls.data.autonym( langCode ) || '';
 				suggestion = userInput + autonym.substring( userInput.length, autonym.length );
