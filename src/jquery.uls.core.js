@@ -91,7 +91,9 @@
 		},
 
 		listen: function() {
-			var that = this, lcd;
+			var lcd,
+				that = this;
+
 			// Register all event listeners to the ULS here.
 			that.$element.on( 'click', $.proxy( that.click, that ) );
 
