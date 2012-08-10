@@ -115,8 +115,14 @@
 			that.$languageFilter.languagefilter( {
 				$target: lcd,
 				languages: that.languages,
-				success: $.proxy( that.success, that ),
-				noresults: $.proxy( that.noresults, that ),
+				success: function() {
+					$( '.regionselector' ).removeClass( 'active' );
+					that.success();
+				},
+				noresults: function() {
+					$( '.regionselector' ).removeClass( 'active' );
+					that.noresults();
+				},
 				searchAPI: that.options.searchAPI,
 				onSelect: $.proxy( that.onSelect, that )
 			} );
@@ -129,6 +135,9 @@
 					// clear the search field.
 					that.$languageFilter.val( '' );
 					that.success();
+				},
+				noresult: function() {
+					that.$languageFilter.languagefilter( 'clear' );
 				}
 			} );
 

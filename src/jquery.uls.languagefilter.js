@@ -325,9 +325,14 @@
 		},
 
 		click: function( e ) {
-			e.stopPropagation();
-			e.preventDefault();
-			this.show();
+			if( this.$element.hasClass( 'active' ) ) {
+				this.$element.removeClass( 'active' );
+				if ( this.options.noresult ) {
+					this.options.noresult.call();
+				}
+			} else {
+				this.show();
+			}
 		}
 	};
 
@@ -351,6 +356,7 @@
 	$.fn.regionselector.defaults = {
 		$target: null, // Where to render the results
 		success: null, // callback if any results found.
+		noresult: null, // callback when no results to show
 		languages: null
 	};
 
