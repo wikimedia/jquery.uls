@@ -48,6 +48,20 @@
 	};
 
 	/**
+	 * Returns all language codes and corresponding autonyms
+	 * @return array
+	 */
+	$.uls.data.autonyms = function() {
+		var autonymsByCode = {};
+
+		for ( var language in $.uls.data.languages ) {
+			autonymsByCode[language] = $.uls.data.autonym( language );
+		}
+
+		return autonymsByCode;
+	};
+
+	/**
 	 * Returns an array of all region codes.
 	 * @return array
 	 */

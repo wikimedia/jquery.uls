@@ -24,7 +24,7 @@
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.uls.defaults, options );
 		this.$menu = $( this.options.menu );
-		this.languages = this.$menu.data( 'languages' );
+		this.languages = this.options.languages;
 		for ( var code in this.languages ) {
 			if ( $.uls.data.languages[code] === undefined ) {
 				window.console && console.log && console.log( "ULS: Unknown language " + code + "." );
@@ -104,7 +104,7 @@
 			that.$menu.on('keypress', $.proxy(this.keypress, this) )
 				.on('keyup', $.proxy(this.keyup, this) );
 			if ( $.browser.webkit || $.browser.msie ) {
-				this.$menu.on( 'keydown', $.proxy( this.keypress, this ) )
+				this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
 			}
 
 			lcd = that.$resultsView.lcd( {
@@ -208,7 +208,8 @@
 	$.fn.uls.defaults = {
 		menu: '.uls-menu',
 		onSelect: null, // Callback function to be called when a language is selected
-		searchAPI: null // Language search API
+		searchAPI: null, // Language search API
+		languages: $.uls.data.autonyms() // Languages to be used for ULS, default is all languages
 	};
 
 	$.fn.uls.Constructor = ULS;
