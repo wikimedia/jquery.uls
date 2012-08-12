@@ -1,3 +1,4 @@
+// This file is generated from data/langdb.yaml by ulsdata2json.php
 (function ($) {
 	$.uls = {};
 	$.uls.data = {
