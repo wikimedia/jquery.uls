@@ -44,7 +44,7 @@
 	 * @return string
 	 */
 	$.uls.data.autonym = function( language ) {
-		return $.uls.data.autonyms[language];
+		return ( $.uls.data.languages[language] && $.uls.data.languages[language][2] ) || language;
 	};
 
 	/**
