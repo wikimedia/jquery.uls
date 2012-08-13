@@ -496,18 +496,18 @@ languages:
  #
  # The classification is roughly based on http://www.unicode.org/charts/
  # with some practical corrections.
+ # The order of the groups affects display. It was suggested by Pau to distance
+ # the largest groups from one another to improve discoverability.
 scriptgroups:
- # Other is reserved
- # Large groups, one script in each
-  Cyrillic: [Cyrl]
-  Arabic: [Arab]
- # It's probalby different enough from Latin and Cyrillic, but user testing
+ # The group name "Other" is reserved.
+ # It's hard to find a better place for Goth except the Latin group.
+  Latin: [Latn, Goth]
+ # Greek is probalby different enough from Latin and Cyrillic, but user testing
  # may prove otherwise.
   Greek: [Grek]
- # Couldn't find a better place for Goth.
-  Latin: [Latn, Goth]
   WestCaucasian: [Armn, Geor]
- # Maybe it can be unified with Arabic.
+  Arabic: [Arab]
+ # Maybe MiddleEastern can be unified with Arabic.
  # Maybe Thaana can be moved here from SouthAsian.
  # Maybe it can be unified with African.
   MiddleEastern: [Hebr, Syrc]
@@ -522,10 +522,11 @@ scriptgroups:
  # Unicode, because linguistically and geographically it's closely related to
  # the Brahmic family.
   SouthAsian: [Beng, Deva, Gujr, Guru, Knda, Mlym, Orya, Saur, Sinh, Taml, Telu, Tibt, Thaa]
+  Cyrillic: [Cyrl]
+  CJK: [Hans, Hant, Kana, Kore, Jpan, Yiii]
   SouthEastAsian: [Batk, Bugi, Java, Khmr, Laoo, Mymr, Thai]
   Mongolian: [Mong]
   SignWriting: [Sgnw]
-  CJK: [Hans, Hant, Kana, Kore, Jpan, Yiii]
   NativeAmerican: [Cher, Cans]
 
 regiongroups:

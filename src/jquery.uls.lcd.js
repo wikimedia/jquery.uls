@@ -45,10 +45,9 @@
 		addToRegion: function( langCode, region ) {
 			var that = this;
 			var language = that.options.languages[langCode],
-				langName = $.uls.data.autonym( langCode )
-					|| language
-					|| langCode,
+				langName = $.uls.data.autonym( langCode ) || language || langCode,
 				regions = [];
+
 			if ( region ) {
 				regions.push( region );
 			} else {
@@ -67,19 +66,19 @@
 				// Append the element to the column in the list
 				var $column = that.getColumn( regionCode );
 				var lastLanguage = $column.find( 'li:last' ).data( 'code' );
+
 				if ( lastLanguage ) {
 					var lastScriptGroup = $.uls.data.scriptGroupOfLanguage( lastLanguage ),
 						currentScriptGroup = $.uls.data.scriptGroupOfLanguage( langCode );
+
 					if ( lastScriptGroup !== currentScriptGroup ) {
-						if ( $column.find( 'li' ).length > 5 ) {
-							// If column has already 5 or more languages, add a new column
+						if ( $column.find( 'li' ).length > 2 ) {
+							// If column already has 2 or more languages, add a new column
 							$column = that.getColumn( regionCode, true );
-						} else {
-							// An empty item as column break.
-							$column.append( $( '<li>' ).addClass( 'uls-column-break' ) );
 						}
 					}
 				}
+
 				$column.append( $li );
 
 				if ( that.options.clickhandler ) {
@@ -96,23 +95,29 @@
 		 */
 		getColumn: function( regionCode, forceNew ) {
 			var $divRegionCode, $rowDiv, $ul;
+
 			forceNew = forceNew || false;
 			$divRegionCode = $( 'div#' + regionCode );
 			$rowDiv = $divRegionCode.find( 'div.row:last' );
 			$ul = $divRegionCode.find( 'ul:last' );
-			// Each column can have maximum 10 languages.
-			if ( $ul.length === 0 || $ul.find( 'li' ).length >= 10 || forceNew ) {
+
+			// Each column can have maximum 8 languages.
+			if ( $ul.length === 0 || $ul.find( 'li' ).length >= 8 || forceNew ) {
 				$ul = $( '<ul>' ).addClass( 'three columns end' );
+
 				if ( $rowDiv.length === 0 || $rowDiv.find( 'ul' ).length >= 4 ) {
 					$rowDiv = $( '<div>' ).addClass( 'row uls-language-block' );
 					$divRegionCode.append( $rowDiv );
 					$ul.addClass( 'offset-by-one' );
 				}
+
 				$rowDiv.append( $ul );
 			}
+
 			if( !$divRegionCode.is( ':visible' ) ) {
 				$divRegionCode.show();
 			}
+
 			return $ul;
 		},
 
