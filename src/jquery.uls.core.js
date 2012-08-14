@@ -98,7 +98,7 @@
 			that.$element.on( 'click', $.proxy( that.click, that ) );
 
 			// Handle click on close button
-			$( ".icon-close" ).on( 'click', $.proxy( that.click, that ) );
+			$( "#uls-close" ).on( 'click', $.proxy( that.click, that ) );
 
 			// Handle key press events on the menu
 			that.$menu.on('keypress', $.proxy(this.keypress, this) )
