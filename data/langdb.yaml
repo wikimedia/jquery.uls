@@ -4,7 +4,9 @@ languages:
   ace: [Latn, [AS, PA], Acèh]
   ady-cyrl: [Cyrl, [EU], Адыгэбзэ]
   ady-latn: [Latn, [EU], Adygabze]
-  ady: [[Cyrl, Latn], [EU], [Адыгэбзэ, Adygabze]]
+ # XXX multiple script
+ # ady: [[Cyrl, Latn], [EU], [Адыгэбзэ, Adygabze]]
+  ady: [Cyrl, [EU], Адыгэбзэ]
   aeb: [Arab, [AF], زَوُن]
   af: [Latn, [AF], Afrikaans]
   ahr: [Deva, [AS], अहिराणी]
@@ -73,14 +75,18 @@ languages:
   cps: [Latn, [AS], Capiceño]
   cr-cans: [Cans, [NA], ᓀᐦᐃᔭᐍᐏᐣ]
   cr-latn: [Latn, [NA], Nēhiyawēwin]
-  cr: [[Latn, Cans], [NA], [Nēhiyawēwin, ᓀᐦᐃᔭᐍᐏᐣ]]
+ # XXX multiple script
+ # cr: [[Latn, Cans], [NA], [Nēhiyawēwin, ᓀᐦᐃᔭᐍᐏᐣ]]
+  cr: [Cans, [NA], Nēhiyawēwin / ᓀᐦᐃᔭᐍᐏᐣ]
   crh-cyrl: [Cyrl, [EU], къырымтатарджа (Кирилл)]
   crh-latn: [Latn, [EU], qırımtatarca (Latin)]
- # Latn is default, Cyrl is common IRL
-  crh: [[Curl, Latn], [EU], [къырымтатарджа, qırımtatarca]]
+ # XXX multiple script
+ # Latn is default in Wikipedia, Cyrl is common IRL
+ # crh: [[Cyrl, Latn], [EU], [къырымтатарджа, qırımtatarca]]
+  crh: [Latn, [EU], къырымтатарджа / qırımtatarca]
   cs: [Latn, [EU], česky]
   csb: [Latn, [EU], kaszëbsczi]
-# FIXME: what script?
+ # FIXME: what script?
   cu: [Cyrl, [EU], словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ]
   cv: [Cyrl, [EU], Чӑвашла]
   cy: [Latn, [EU], Cymraeg]
@@ -138,8 +144,10 @@ languages:
   gn: [Latn, [LA], "Avañe'ẽ"]
   gom-deva: [Deva, [AS], कोंकणी]
   gom-latn: [Latn, [AS], Konknni]
-  gom: [[Deva, Latn], [AS], [कोंकणी, Konknni]]
- # hmph??
+ # XXX multiple script
+ # gom: [[Deva, Latn], [AS], [कोंकणी, Konknni]]
+  gom: [Deva, [AS], कोंकणी / Konknni]
+ # hmph?..
   got: [Goth, [EU], 𐌲𐌿𐍄𐌹𐍃𐌺]
   grc: [Grek, [EU], Ἀρχαία ἑλληνικὴ]
   gsw: [Latn, [EU], Alemannisch]
@@ -156,7 +164,9 @@ languages:
   hi: [Deva, [AS], हिन्दी]
   hif-deva: [Deva, [AS], फ़ीजी हिन्दी]
   hif-latn: [Latn, [PA, AU, AS], Fiji Hindi]
-  hif: [[Deva, Latn[, [PA, AU, AS], [फ़ीजी हिन्दी, Fiji Hindi]]
+ # XXX multiple script
+ # hif: [[Deva, Latn], [PA, AU, AS], [फ़ीजी हिन्दी, Fiji Hindi]]
+  hif: [Latn, [PA, AU, AS], फ़ीजी हिन्दी / Fiji Hindi]
   hil: [Latn, [AS], Ilonggo]
   hne: [Deva, [AS], छत्तीसगढ़ी]
   ho: [Latn, [PA], Hiri Motu]
@@ -177,13 +187,12 @@ languages:
   ik: [Latn, [NA], Iñupiak]
   ike-cans: [Cans, [NA], ᐃᓄᒃᑎᑐᑦ]
   ike-latn: [Latn, [NA], inuktitut]
-  ike: [[Cans, Latn], [NA], [ᐃᓄᒃᑎᑐᑦ, inuktitut]]
   ilo: [Latn, [AS], Ilokano]
   inh: [Cyrl, [EU], ГӀалгӀай]
   io: [Latn, [WW], Ido]
   is: [Latn, [EU], íslenska]
   it: [Latn, [EU], italiano]
-# FIXME: relation to ike?
+ # For variants ike-* is used
   iu: [Cans, [NA], ᐃᓄᒃᑎᑐᑦ/inuktitut]
   ja: [Jpan, [AS], 日本語]
   jam: [Latn, [NA], Patois]
@@ -211,7 +220,9 @@ languages:
   kk-kz: [Cyrl, [EU, AS], қазақша (Қазақстан)]
   kk-latn: [Latn, [EU, AS, ME], qazaqşa (latın)]
   kk-tr: [Latn, [EU, AS, ME], qazaqşa (Türkïya)]
-  kk: [[Arab, Cyrl, Latn] [EU, AS], [قازاقشا, қазақша, qazaqşa]]
+ # XXX multiple script
+ # kk: [[Arab, Cyrl, Latn] [EU, AS], [قازاقشا, қазақша, qazaqşa]]
+  kk: [Cyrl, [EU, AS], қазақша / قازاقشا / qazaqşa]
   kl: [Latn, [NA, EU], kalaallisut]
   km: [Khmr, [AS], ភាសាខ្មែរ]
   kn: [Knda, [AS], ಕನ್ನಡ]
@@ -227,13 +238,17 @@ languages:
   krl: [Latn, [EU], Karjala]
   ks-arab: [Arab, [AS], کٲشُر]
   ks-deva: [Deva, [AS], कॉशुर]
- # Just because it's the current default in the Wikipedia. Deva may be needed, too.
-  ks: [[Deva, Arab], [AS], [कॉशुर, کٲشُر]]
+ # XXX multiple script
+ # Arab is first here just because it's the current default in the Wikipedia. Deva may be needed, too.
+ # ks: [[Deva, Arab], [AS], [कॉशुर, کٲشُر]]
+  ks: [Arab, [AS], कॉशुर / کٲشُر]
   ksf: [Latn, [AF], Bafia]
   ksh: [Latn, [EU], Ripoarisch]
   ku-arab: [Arab, [EU, ME], كوردي (عەرەبی)]
   ku-latn: [Latn, [EU, ME], Kurdî (latînî)]
-  ku: [[Arab, Latn], [EU, ME], [كوردي , Kurdî]]
+ # XXX multiple script
+ # ku: [[Arab, Latn], [EU, ME], [كوردي , Kurdî]]
+  ku: [Latn, [EU, ME], كوردي / Kurdî]
   kv: [Cyrl, [EU], коми]
   kw: [Latn, [EU], kernowek]
   ky: [Cyrl, [AS], Кыргызча]
@@ -359,7 +374,7 @@ languages:
   rup: [Latn, [EU], Armãneashce]
   ruq: [Latn, [EU], Vlăheşte]
   ruq-cyrl: [Cyrl, [EU], Влахесте]
-# FIXME: broken autonym
+ # FIXME: broken autonym
   ruq-grek: [Grek, [EU], Megleno-Romanian (Greek script)]
   ruq-latn: [Latn, [EU], Vlăheşte]
   rw: [Latn, [AF], Kinyarwanda]
@@ -381,10 +396,14 @@ languages:
   sgs: [Latn, [EU], žemaitėška]
   sh-cyrl: [Cyrl, [EU], српскохрватски]
   sh-latn: [Latn, [EU], srpskohrvatski]
-  sh: [[Latn, Cyrl], [EU], [srpskohrvatski, српскохрватски]]
+ # XXX multiple script
+ # sh: [[Latn, Cyrl], [EU], [srpskohrvatski, српскохрватски]]
+  sh: [Latn, [EU], srpskohrvatski / српскохрватски]
   shi-latn: [Latn, [AF], Tašlḥiyt]
   shi-tfng: [Tfng, [AF], ⵜⴰⵛⵍⵃⵉⵜ]
-  shi: [[Latn, Tfng], [AF], [Tašlḥiyt, ⵜⴰⵛⵍⵃⵉⵜ]]
+ # XXX multiple script
+ # shi: [[Latn, Tfng], [AF], [Tašlḥiyt, ⵜⴰⵛⵍⵃⵉⵜ]]
+  shi: [Latn, [AF], Tašlḥiyt / ⵜⴰⵛⵍⵃⵉⵜ]
   shn: [Mymr, [AS], လိၵ်ႈတႆး]
   si: [Sinh, [AS], සිංහල]
   simple: [Latn, [WW], Simple English]
@@ -400,7 +419,9 @@ languages:
   sq: [Latn, [EU], shqip]
   sr-ec: [Cyrl, [EU], српски (ћирилица)]
   sr-el: [Latn, [EU], srpski (latinica)]
-  sr: [[Cyrl, Latn], [EU], [српски, srpski]]
+ # XXX multiple script
+ # sr: [[Cyrl, Latn], [EU], [српски, srpski]]
+  sr: [Cyrl, [EU], српски / srpski]
   srn: [Latn, [SA, NA, EU], Sranantongo]
   ss: [Latn, [AF], SiSwati]
   st: [Latn, [AF], Sesotho]
@@ -436,7 +457,9 @@ languages:
   tsd: [Grek, [EU], Τσακωνικά]
   tt-cyrl: [Cyrl, [EU], татарча]
   tt-latn: [Latn, [EU], tatarça]
-  tt: [[Cyrl, Latn] [EU], [татарча, tatarça]]
+ # XXX multiple script
+ # tt: [[Cyrl, Latn] [EU], [татарча, tatarça]]
+  tt: [Cyrl, [EU], татарча / tatarça]
   ttt: [Cyrl, [AS], Tati]
   tum: [Latn, [AF], chiTumbuka]
   tw: [Latn, [AF], Twi]
@@ -447,7 +470,9 @@ languages:
   udm: [Cyrl, [EU], удмурт]
   ug-arab: [Arab, [AS], ئۇيغۇرچە]
   ug-latn: [Latn, [AS], Uyghurche]
-  ug: [[Arab, Latn], [AS], [ئۇيغۇرچە, Uyghurche]]
+ # XXX multiple script
+ # ug: [[Arab, Latn], [AS], [ئۇيغۇرچە, Uyghurche]]
+  ug: [Arab, [AS], ئۇيغۇرچە / Uyghurche ]
   uk: [Cyrl, [EU], українська]
   ur: [Arab, [AS, ME], اردو]
   uz: [Latn, [AS], oʻzbekcha]
