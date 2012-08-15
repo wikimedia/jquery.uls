@@ -43,7 +43,7 @@
 	font-size: 16pt;
 	line-height: 1.5em;
 	padding-left: 6px;
-	margin-top: 0px;
+	margin-top: 0;
 	margin-bottom: 15px;
 	border-bottom: none;
 	color: #555;
@@ -51,8 +51,8 @@
 .uls-menu h3 {
 	font-size: 14pt;
 	line-height: 1.5em;
-	padding-left: 0px;
-	margin-top: 0px;
+	padding-left: 0;
+	margin-top: 0;
 	margin-bottom: 10px;
 	border-bottom: none;
 }
@@ -66,8 +66,8 @@
 	/* @noflip */
 	float: left !important;
 	cursor: pointer;
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 	height: 125px;
 	border-bottom-color: #555;
 	border-bottom-style: solid;
@@ -102,7 +102,7 @@
 #map-block {
 	top: 1px;
 	margin-right: 0;
-	padding-right: 0px;
+	padding-right: 0;
 	float: right;
 	overflow: hidden;
 }
@@ -161,8 +161,8 @@ span#languagefilter-clear {
 
 .filterinput {
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
 	font-size: 14px;
 	height: 32px;
 	padding: 6px;
