@@ -44,9 +44,14 @@
 
 	ULS.prototype = {
 		constructor: ULS,
+
 		ready: function() {
 			// Currently empty, can be overridden for anything useful.
 		},
+
+		/**
+		 * Show the ULS window
+		 */
 		show: function() {
 			var pos = $.extend( {}, this.$element.offset(), {
 				height: this.$element[0].offsetHeight
@@ -65,31 +70,44 @@
 			this.$menu.show();
 			this.shown = true;
 			this.$languageFilter.focus();
-			return this;
 		},
 
+		/**
+		 * Hide the ULS window
+		 */
 		hide: function() {
 			this.$menu.hide();
 			this.shown = false;
-			return this;
 		},
 
+		/**
+		 * Render the UI elements. Can be used for customization
+		 */
 		render: function() {
 			// Rendering stuff here
 		},
 
+		/**
+		 * callback for no results found context.
+		 * @param String search the search term
+		 */
 		noresults: function( search ) {
 			this.$noResultsView.show();
-			// FIXME i18n
 			this.$noResultsView.find( 'span#uls-no-found-search-term' ).text( search );
 			this.$resultsView.hide();
 		},
 
+		/**
+		 *  callback for results found context.
+		 */
 		success: function() {
 			this.$noResultsView.hide();
 			this.$resultsView.show();
 		},
 
+		/**
+		 * Bind the UI elements with their event listeners
+		 */
 		listen: function() {
 			var lcd,
 				that = this;
@@ -140,9 +158,12 @@
 					that.$languageFilter.languagefilter( 'clear' );
 				}
 			} );
-
 		},
 
+		/**
+		 * On select handler for search results
+		 * @param langCode
+		 */
 		onSelect: function( langCode ) {
 			if ( this.options.onSelect ) {
 				this.options.onSelect.call( this, langCode );
