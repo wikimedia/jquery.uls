@@ -124,7 +124,7 @@ languages:
   fit: [Latn, [EU], meänkieli]
   fj: [Latn, [PA], Na Vosa Vakaviti]
   fo: [Latn, [EU], føroyskt]
-  fr: [Latn, [EU], français]
+  fr: [Latn, [EU, NA, SA, WW], français]
   frc: [Latn, [EU], français cadien]
   frp: [Latn, [EU], arpetan]
   frr: [Latn, [EU], Nordfriisk]
