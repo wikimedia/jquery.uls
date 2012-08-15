@@ -186,6 +186,10 @@
 					suggestion = "";
 				}
 			}
+			// Make sure that it is a visual prefix.
+			if ( !isVisualPrefix( userInput, suggestion ) ) {
+				suggestion = "";
+			}
 			this.$suggestion.val( suggestion );
 		},
 
@@ -361,5 +365,20 @@
 	};
 
 	$.fn.regionselector.Constructor = RegionSelector;
+	/**
+	 * Check if a prefix is visually prefix of a string
+	 * @param String prefix
+	 * @param String string
+	 */
+	function isVisualPrefix( prefix, string ) {
+		// Pre-base vowel signs of Indic languages. A vowel sign is called pre-base if
+		// consonant + vowel becomes [vowel][consonant] when rendered. Eg:  ക + െ => കെ
+		var prebases = "െേൈൊോൌெேைொோௌେୈୋୌિਿिিেৈোৌෙේෛොෝෞ";
+		if ( prebases.indexOf( string[prefix.length] ) > 0 ) {
+			return false;
+		} else {
+			return true;
+		}
+	}
 
 } )( jQuery );
