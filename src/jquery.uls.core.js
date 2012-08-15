@@ -50,14 +50,23 @@
 		},
 
 		/**
-		 * Show the ULS window
+		 * Calculate the position of ULS
+		 * Returns an object with top and left properties.
+		 * @returns {Object}
 		 */
-		show: function() {
+		position: function() {
 			var pos = $.extend( {}, this.$element.offset(), {
 				height: this.$element[0].offsetHeight
 			} );
+			return {
+				top:  pos.top + pos.height,
+				left: '25%'
+			};
+		},
+		show: function() {
+			var pos = this.position();
 			this.$menu.css( {
-				top: pos.top + pos.height,
+				top: pos.top,
 				left: '25%'
 			} );
 
