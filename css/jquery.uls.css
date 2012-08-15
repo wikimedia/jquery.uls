@@ -37,7 +37,7 @@
 	font-size: 18pt;
 	line-height: 1.25em;
 	padding-left: 15px;
-	color: #777;
+	color: #555;
 }
 .uls-menu h2 {
 	font-size: 16pt;
@@ -46,7 +46,7 @@
 	margin-top: 0px;
 	margin-bottom: 15px;
 	border-bottom: none;
-	color: #777;
+	color: #555;
 }
 .uls-menu h3 {
 	font-size: 14pt;
@@ -69,7 +69,7 @@
 	padding: 0px;
 	margin: 0px;
 	height: 125px;
-	border-bottom-color: #777;
+	border-bottom-color: #555;
 	border-bottom-style: solid;
 	border-bottom-width: 3px;
 }
@@ -77,6 +77,9 @@
 	bottom: 2px;
 	position: absolute;
 	font-size: 13px;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
 }
 .uls-region:hover {
 	/*Cross-browser background transparency*/
@@ -107,6 +110,7 @@
 	color: #444;
 }
 #map-block .active a {
+	color:#252525;
 	font-weight: bold;
 }
 .icon-close {
@@ -131,7 +135,7 @@ input:focus#languagefilter {
 
 #search {
 	background-color: #f8f8f8;
-	border-top-color: #777;
+	border-top-color: #555;
 	border-top-style: solid;
 	border-top-width: 1px;
 	padding: 0.8em 0;

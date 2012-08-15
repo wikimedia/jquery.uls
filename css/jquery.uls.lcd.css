@@ -1,12 +1,12 @@
 .uls-lcd-region-section h3 {
-	color: #999999;
+	color: #777;
 }
 .uls-lcd-region-section ul li:hover {
 	background-color: #eaeff7;
 }
 /* Language list */
 .uls-language-list {
-	height: 21.5em;
+	height: 18em;
 	overflow: auto;
 	margin: 10px;
 	width: auto;
@@ -41,7 +41,7 @@
 }
 
 .uls-no-results-view {
-	color: #777;
+	color: #555;
 }
 
 #uls-no-found-more {
