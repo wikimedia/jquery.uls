@@ -159,11 +159,12 @@
 				$target: lcd,
 				languages: that.languages,
 				success: function() {
-					// clear the search field.
-					that.$languageFilter.val( '' );
+					// Deactivate search filtering
+					that.$languageFilter.languagefilter( 'deactivate' );
+					// Show 'results view' if we are in no results mode
 					that.success();
 				},
-				noresult: function() {
+				noresults: function() {
 					that.$languageFilter.languagefilter( 'clear' );
 				}
 			} );

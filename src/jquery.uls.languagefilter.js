@@ -85,13 +85,29 @@
 			}
 		},
 
-		clear: function() {
+		/**
+		 * Clears the current search removing
+		 * clear buttons and suggestions.
+		 */
+		deactivate: function() {
 			this.$element.val( '' );
 			this.$element.focus();
 			this.toggleClear();
+			this.autofill();
+		},
+
+		/**
+		 * Clears the search and shows all languages
+		 */
+		clear: function() {
+			this.deactivate();
 			this.search();
 		},
 
+		/**
+		 * Toggles the visibility of clear icon depending
+		 * on whether there is anything to clear.
+		 */
 		toggleClear: function() {
 			if ( !this.$clear.length ) {
 				return;
@@ -331,8 +347,8 @@
 		click: function( e ) {
 			if( this.$element.hasClass( 'active' ) ) {
 				this.$element.removeClass( 'active' );
-				if ( this.options.noresult ) {
-					this.options.noresult.call();
+				if ( this.options.noresults ) {
+					this.options.noresults.call();
 				}
 			} else {
 				this.show();
@@ -360,7 +376,7 @@
 	$.fn.regionselector.defaults = {
 		$target: null, // Where to render the results
 		success: null, // callback if any results found.
-		noresult: null, // callback when no results to show
+		noresults: null, // callback when no results to show
 		languages: null
 	};
 
