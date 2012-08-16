@@ -59,7 +59,7 @@
 				height: this.$element[0].offsetHeight
 			} );
 			return {
-				top:  pos.top + pos.height,
+				top: pos.top + pos.height,
 				left: '25%'
 			};
 		},
@@ -107,7 +107,7 @@
 		},
 
 		/**
-		 *  callback for results found context.
+		 * callback for results found context.
 		 */
 		success: function() {
 			this.$noResultsView.hide();

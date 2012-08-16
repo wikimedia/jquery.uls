@@ -288,7 +288,7 @@
 		constructor: RegionSelector,
 
 		init: function() {
-			var region =  this.$element.data( 'region' );
+			var region = this.$element.data( 'region' );
 			this.regions = $.uls.data.regionsInGroup( this.regionGroup );
 			if ( region ) {
 				this.regions.push( region );
@@ -388,7 +388,7 @@
 	 */
 	function isVisualPrefix( prefix, string ) {
 		// Pre-base vowel signs of Indic languages. A vowel sign is called pre-base if
-		// consonant + vowel becomes [vowel][consonant] when rendered. Eg:  ക + െ => കെ
+		// consonant + vowel becomes [vowel][consonant] when rendered. Eg: ക + െ => കെ
 		var prebases = "െേൈൊോൌெேைொோௌେୈୋୌિਿिিেৈোৌෙේෛොෝෞ";
 		if ( prebases.indexOf( string[prefix.length] ) > 0 ) {
 			return false;
