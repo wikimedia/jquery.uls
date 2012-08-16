@@ -62,9 +62,6 @@
 	background-size: 100%;
 }
 .uls-region {
-	/* The map doesn't flip */
-	/* @noflip */
-	float: left !important;
 	cursor: pointer;
 	padding: 0;
 	margin: 0;
@@ -72,6 +69,11 @@
 	border-bottom-color: #555;
 	border-bottom-style: solid;
 	border-bottom-width: 3px;
+}
+.uls-worldmap .uls-region {
+	/* The map doesn't flip */
+	/* @noflip */
+	float: left;
 }
 .uls-region a {
 	bottom: 2px;
