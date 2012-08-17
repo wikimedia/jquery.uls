@@ -1,12 +1,13 @@
 .uls-lcd-region-section h3 {
 	color: #777;
 }
+
 .uls-lcd-region-section ul li:hover {
 	background-color: #eaeff7;
 }
 /* Language list */
 .uls-language-list {
-	height: 18em;
+	height: 22em;
 	overflow: auto;
 	margin: 10px;
 	width: auto;
@@ -15,18 +16,23 @@
 .uls-language-block ul {
 	margin: 0px 0px 1.6em;
 }
+
 .uls-language-list ul li {
+	cursor: pointer;
 	font-weight: normal;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
+
 .uls-language-list strong {
 	text-decoration: underline;
 }
+
 .uls-language-list a {
 	font-weight: normal;
-	color: #0088CC;
+	text-decoration: none;
+	color: #3366bb;
 	font-size: 14px;
 	line-height: 1.6em;
 }
@@ -52,6 +58,6 @@
 	line-height: 1.6em;
 }
 
-.uls-lcd-region-section ul li.uls-column-break:hover{
+.uls-lcd-region-section ul li.uls-column-break:hover {
 	background: none;
 }

@@ -1,8 +1,10 @@
 .uls-trigger {
 	/* @embed */
-	background: url('../images/icon-language.png') no-repeat scroll left center transparent;
+	background: url('../images/icon-language.png') no-repeat scroll left
+		center transparent;
 	padding-left: 30px;
 }
+
 .uls-menu {
 	position: fixed;
 	z-index: 1000;
@@ -26,9 +28,11 @@
 	-moz-background-clip: padding;
 	background-clip: padding-box;
 }
+
 .uls-menu a {
-	color: #0088CC;
+	color: #3366bb;
 }
+
 .uls-menu h1 {
 	font-weight: normal;
 	padding-top: 1.25em;
@@ -39,6 +43,7 @@
 	padding-left: 15px;
 	color: #555;
 }
+
 .uls-menu h2 {
 	font-size: 16pt;
 	line-height: 1.5em;
@@ -48,6 +53,7 @@
 	border-bottom: none;
 	color: #555;
 }
+
 .uls-menu h3 {
 	font-size: 14pt;
 	line-height: 1.5em;
@@ -56,12 +62,15 @@
 	margin-bottom: 10px;
 	border-bottom: none;
 }
+
 .uls-worldmap {
 	/* @embed */
-	background: url('../images/world_map.png') no-repeat scroll right top transparent;
+	background: url('../images/world_map.png') no-repeat scroll right top
+		transparent;
 	background-size: 100%;
 }
-.uls-region {
+
+div.uls-region {
 	cursor: pointer;
 	padding: 0;
 	margin: 0;
@@ -70,37 +79,48 @@
 	border-bottom-style: solid;
 	border-bottom-width: 3px;
 }
-.uls-worldmap .uls-region {
-	/* The map doesn't flip */
+
+.uls-worldmap .uls-region { /* The map doesn't flip */
 	/* @noflip */
 	float: left;
 }
+
 .uls-region a {
-	bottom: 2px;
+	bottom: 0;
+	padding: 2px;
 	position: absolute;
 	font-size: 13px;
+	line-height: 1.2em;
+	text-decoration: none;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	width: 100%;
 }
+
 .uls-region:hover {
 	/*Cross-browser background transparency*/
 	background: #3366bb;
 	background: rgba(51, 102, 187, 0.1);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb, endColorstr=#253366bb);
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb, endColorstr=#253366bb)";
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb,
+		endColorstr=#253366bb );
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb, endColorstr=#253366bb)";
 	border-bottom-color: #3366bb;
 	border-bottom-style: solid;
 }
+
 .regionselector.active {
 	/*Cross-browser background transparency*/
 	background: #3366bb;
 	background: rgba(51, 102, 187, 0.2);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb, endColorstr=#253366bb);
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb, endColorstr=#253366bb)";
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb,
+		endColorstr=#253366bb );
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb, endColorstr=#253366bb)";
 	border-bottom-color: #3366bb;
 	border-bottom-style: solid;
 }
+
 #map-block {
 	top: 1px;
 	margin-right: 0;
@@ -108,20 +128,25 @@
 	float: right;
 	overflow: hidden;
 }
+
 #map-block a {
 	color: #444;
 }
+
 #map-block .active a {
-	color:#252525;
+	color: #252525;
 	font-weight: bold;
 }
+
 .icon-close {
 	/* @embed */
-	background: url('../images/close.png') no-repeat scroll center center transparent;
+	background: url('../images/close.png') no-repeat scroll center center
+		transparent;
 	float: right;
 	padding: 15px;
 	cursor: pointer;
 }
+
 input#languagefilter {
 	border: 1px solid #c9c9c9;
 	-moz-transition: all 0.15s linear 0s;
@@ -131,29 +156,34 @@ input#languagefilter {
 	display: block;
 	background-color: transparent;
 }
+
 input:focus#languagefilter {
-	border: 1px solid #08C;
+	border: 1px solid #3366bb;
 }
 
 #search {
 	background-color: #f8f8f8;
-	border-top-color: #555;
+	border-top-color: #aaaaaa;
 	border-top-style: solid;
 	border-top-width: 1px;
 	padding: 0.8em 0;
 }
+
 .search-label {
 	/* @embed */
-	background: url('../images/search.png') no-repeat scroll right center transparent;
+	background: url('../images/search.png') no-repeat scroll right center
+		transparent;
 	background-size: 30px;
 	height: 32px;
 	width: 32px;
 	display: inline-block;
 	float: right;
 }
+
 span#languagefilter-clear {
 	/* @embed */
-	background: url('../images/clear.png') no-repeat scroll left center transparent;
+	background: url('../images/clear.png') no-repeat scroll left center
+		transparent;
 	cursor: pointer;
 	height: 32px;
 	position: absolute;
