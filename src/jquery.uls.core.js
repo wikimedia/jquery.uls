@@ -27,7 +27,7 @@
 				<span id="uls-close" class="icon-close"></span> \
 			</div> \
 			<div class="row"> \
-				<div class="four columns">\
+				<div class="uls-title four columns">\
 					<h1>Select language</h1>\
 				</div>\
 				<div class="three columns" id="settings-block"></div>\
@@ -105,6 +105,8 @@
 				delete this.languages[code];
 			}
 		}
+		this.left = this.options.left;
+		this.top = this.options.top;
 		this.shown = false;
 		this.initialized = false;
 		this.$languageFilter = this.$menu.find( 'input#languagefilter' );
@@ -120,7 +122,9 @@
 		constructor: ULS,
 
 		ready: function() {
-			// Currently empty, can be overridden for anything useful.
+			if ( this.options.onReady ) {
+				this.options.onReady( this );
+			}
 		},
 
 		/**
@@ -133,8 +137,8 @@
 				height: this.$element[0].offsetHeight
 			} );
 			return {
-				top: pos.top + pos.height,
-				left: '25%'
+				top: this.top || pos.top + pos.height,
+				left: this.left || '25%'
 			};
 		},
 
@@ -256,6 +260,7 @@
 		 * @param langCode
 		 */
 		onSelect: function( langCode ) {
+			this.hide();
 			if ( this.options.onSelect ) {
 				this.options.onSelect.call( this, langCode );
 			}
@@ -292,8 +297,6 @@
 			e.preventDefault();
 			if ( !this.shown ) {
 				this.show();
-			} else {
-				this.hide();
 			}
 		}
 
