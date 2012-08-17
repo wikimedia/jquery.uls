@@ -1,5 +1,7 @@
 /**
- * <explain briefly what this file is about>.
+ * Universal Language Selector
+ * Language category display component - Used for showing the search results,
+ * grouped by regions, scripts
  *
  * Copyright (C) 2012 Alolita Sharma, Amir Aharoni, Arun Ganesh, Brandon Harris,
  * Niklas Laxström, Pau Giner, Santhosh Thottingal, Siebrand Mazeland and other
@@ -97,7 +99,7 @@
 			var $divRegionCode, $rowDiv, $ul;
 
 			forceNew = forceNew || false;
-			$divRegionCode = $( 'div#' + regionCode );
+			$divRegionCode = this.$element.find( 'div#' + regionCode );
 			$rowDiv = $divRegionCode.find( 'div.row:last' );
 			$ul = $divRegionCode.find( 'ul:last' );
 
@@ -144,9 +146,9 @@
 			var that = this;
 			// The region section need to be in sync with the map filter.
 			that.$element.scroll( function () {
-				var inviewRegion = $( 'div.uls-lcd-region-section:first' ).attr( 'id' );
+				var inviewRegion = that.$element.find( 'div.uls-lcd-region-section:first' ).attr( 'id' );
 				var listtop = that.$element.position().top;
-				$( 'div.uls-lcd-region-section' ).each( function () {
+				that.$element.find( 'div.uls-lcd-region-section' ).each( function () {
 					var offset = $( this ).position().top - listtop;
 					if ( offset < 0 ) {
 						inviewRegion = $( this ).attr( 'id' );
@@ -156,8 +158,8 @@
 				} );
 
 				var inview = $.uls.data.regiongroups[inviewRegion];
-				$( 'div.uls-region' ).removeClass( 'active' );
-				$( 'div#uls-region-' + inview ).addClass( 'active' );
+				that.$element.find( 'div.uls-region' ).removeClass( 'active' );
+				that.$element.find( 'div#uls-region-' + inview ).addClass( 'active' );
 			} );
 		}
 

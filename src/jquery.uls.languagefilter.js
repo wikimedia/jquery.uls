@@ -31,8 +31,8 @@
 		this.options = $.extend( {}, $.fn.regionselector.defaults, options );
 		this.$element.addClass( 'languagefilter' );
 		this.resultCount = 0;
-		this.$suggestion = $( '#' + this.$element.data( 'suggestion' ) );
-		this.$clear = $( '#'+ this.$element.data( 'clear' ) );
+		this.$suggestion = this.$element.parents().find( '#' + this.$element.data( 'suggestion' ) );
+		this.$clear = this.$element.parents().find( '#'+ this.$element.data( 'clear' ) );
 		this.selectedLanguage = null;
 		this.listen();
 	};
