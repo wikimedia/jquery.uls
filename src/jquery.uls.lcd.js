@@ -158,8 +158,9 @@
 				} );
 
 				var inview = $.uls.data.regiongroups[inviewRegion];
-				that.$element.find( 'div.uls-region' ).removeClass( 'active' );
-				that.$element.find( 'div#uls-region-' + inview ).addClass( 'active' );
+				// FIXME This is not a clean solution. It should get fixed with infinite scroll feature.
+				$( 'div.uls-region' ).removeClass( 'active' );
+				$( 'div#uls-region-' + inview ).addClass( 'active' );
 			} );
 		}
 
