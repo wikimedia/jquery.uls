@@ -39,7 +39,7 @@
 
 		/**
 		 * Add the language to a region.
-		 * If the region parameter is given , add to that region alone
+		 * If the region parameter is given, add to that region alone
 		 * Otherwise to all regions that this language belongs.
 		 * @param langCode
 		 * @param region Optional region
