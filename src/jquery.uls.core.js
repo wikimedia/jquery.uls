@@ -209,7 +209,7 @@
 			that.$element.on( 'click', $.proxy( that.click, that ) );
 
 			// Handle click on close button
-			this.$menu.find( "#uls-close" ).on( 'click', $.proxy( that.click, that ) );
+			this.$menu.find( "#uls-close" ).on( 'click', $.proxy( that.hide, that ) );
 
 			// Handle key press events on the menu
 			that.$menu.on('keypress', $.proxy(this.keypress, this) )
