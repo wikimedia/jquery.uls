@@ -82,12 +82,6 @@
 				}
 
 				$column.append( $li );
-
-				if ( that.options.clickhandler ) {
-					$li.click( function() {
-						that.options.clickhandler.call( this, langCode );
-					} );
-				}
 			}
 		},
 		/**
@@ -144,6 +138,11 @@
 
 		listen: function() {
 			var that = this;
+			if ( this.options.clickhandler ) {
+				this.$element.on( 'click', 'div.row li', function() {
+					that.options.clickhandler.call( this, $( this ).data( 'code' ) );
+				} );
+			}
 			// The region section need to be in sync with the map filter.
 			that.$element.scroll( function () {
 				var inviewRegion = that.$element.find( 'div.uls-lcd-region-section:first' ).attr( 'id' );
