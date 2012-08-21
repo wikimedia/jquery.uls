@@ -33,6 +33,7 @@
 		this.options = $.extend( {}, $.fn.regionselector.defaults, options );
 		this.$element.addClass( 'regionselector' );
 		this.regions = [];
+		this.cache= null;
 		this.regionGroup = this.$element.data( 'regiongroup' );
 		this.init();
 		this.listen();
@@ -57,6 +58,7 @@
 				region = this.regions[i];
 				if ( $.inArray( region, langRegions ) >= 0 ) {
 					this.render( langCode, region );
+					this.cache[langCode] = region;
 					return;
 				}
 			}
@@ -69,15 +71,28 @@
 				// if there is a region group, make it active.
 				this.$element.addClass( 'active' );
 			}
-
 			// Re-populate the list of languages
 			this.options.$target.empty();
-			var languagesByScriptGroup = $.uls.data.languagesByScriptGroup( this.options.languages );
-			for ( var scriptGroup in languagesByScriptGroup ) {
-				var languages = languagesByScriptGroup[scriptGroup];
-				languages.sort( $.uls.data.sortByAutonym );
-				for ( var i = 0; i < languages.length; i++ ) {
-					this.test( languages[i] );
+
+			if ( this.cache ) {
+				// If the result cache is present, render the results from there.
+				var result = null;
+				for ( result in this.cache ) {
+					this.render( result, this.cache[result] );
+				}
+			} else {
+				this.cache = {};
+				// Get the languages grouped by script group
+				var languagesByScriptGroup = $.uls.data.languagesByScriptGroup( this.options.languages );
+				for ( var scriptGroup in languagesByScriptGroup ) {
+					// Get the languages for the script group
+					var languages = languagesByScriptGroup[scriptGroup];
+					// Sort it based on autonym
+					languages.sort( $.uls.data.sortByAutonym );
+					for ( var i = 0; i < languages.length; i++ ) {
+						// Check whether it belongs to the region
+						this.test( languages[i] );
+					}
 				}
 			}
 
