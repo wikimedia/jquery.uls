@@ -26,6 +26,7 @@
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.lcd.defaults, options );
 		this.$element.addClass( 'lcd' );
+		this.regionDivs = {};
 		this.show();
 		this.listen();
 	};
@@ -93,9 +94,9 @@
 			var $divRegionCode, $rowDiv, $ul;
 
 			forceNew = forceNew || false;
-			$divRegionCode = this.$element.find( 'div#' + regionCode );
+			$divRegionCode = this.regionDivs[regionCode];
 			$rowDiv = $divRegionCode.find( 'div.row:last' );
-			$ul = $divRegionCode.find( 'ul:last' );
+			$ul = $rowDiv.find( 'ul:last' );
 
 			// Each column can have maximum 8 languages.
 			if ( $ul.length === 0 || $ul.find( 'li' ).length >= 8 || forceNew ) {
@@ -124,6 +125,7 @@
 				$section.append( $( '<h3>' ).addClass( 'eleven columns uls-lcd-region-section offset-by-one' ).html( regionCode ) );
 				// FIXME this is regioncode(NA, EU etc). Should be proper localized region name.
 				that.$element.append( $section );
+				that.regionDivs[regionCode] = $section;
 			} );
 		},
 
