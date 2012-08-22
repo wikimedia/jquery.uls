@@ -27,7 +27,7 @@
 		this.options = $.extend( {}, $.fn.lcd.defaults, options );
 		this.$element.addClass( 'lcd' );
 		this.regionDivs = {};
-		this.show();
+		this.render();
 		this.listen();
 	};
 
@@ -111,27 +111,60 @@
 				$rowDiv.append( $ul );
 			}
 
-			if( !$divRegionCode.is( ':visible' ) ) {
-				$divRegionCode.show();
-			}
+			$divRegionCode.show();
 
 			return $ul;
 		},
 
-		show: function() {
+		render: function() {
 			var that = this;
+			var $section;
 			$.each( $.uls.data.regiongroups, function( regionCode, regionIndex ) {
-				var $section = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', regionCode );
+				$section = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', regionCode );
 				$section.append( $( '<h3>' ).addClass( 'eleven columns uls-lcd-region-section offset-by-one' ).html( regionCode ) );
 				// FIXME this is regioncode(NA, EU etc). Should be proper localized region name.
 				that.$element.append( $section );
+				$section.hide();
 				that.regionDivs[regionCode] = $section;
 			} );
 		},
 
+		quicklist: function() {
+			if ( !this.options.quickList ) {
+				return;
+			}
+			var $column;
+			var quickList = this.options.quickList;
+			var quickListLength = ( quickList.length <= 16 ) ? quickList.length : 16;
+			var $quickListsection = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', 'uls-lcd-quicklist' );
+			$quickListsection.append( $( '<h3>' ).addClass( 'eleven columns uls-lcd-region-section offset-by-one' ).text( 'Common Languages' ) );
+			this.$element.prepend( $quickListsection );
+			this.regionDivs[ 'quick' ] = $quickListsection;
+			for ( var i = 0; i < quickListLength; i++) {
+				$column = this.getColumn( 'quick', i % 4 === 0 );
+				var langCode = quickList[i];
+				var language = this.options.languages[langCode];
+				var langName = $.uls.data.autonym( langCode ) || language || langCode;
+				var $li = $( '<li>' )
+					.data( 'code', langCode )
+					.append(
+						$( '<a>' ).prop( 'href', '#' ).prop( 'title', language ).html( langName )
+					);
+				$column.append( $li );
+			}
+			$quickListsection.show();
+		},
+
+		show: function() {
+			if ( !this.regionDivs ) {
+				this.render();
+			}
+			//this.quickList();
+		},
+
 		empty: function() {
 			this.$element.find( 'div.row' ).remove();
-			this.$element.find( 'div' ).hide();
+			this.$element.find( 'div.uls-lcd-region-section' ).hide();
 		},
 
 		focus: function() {
@@ -145,23 +178,13 @@
 					that.options.clickhandler.call( this, $( this ).data( 'code' ) );
 				} );
 			}
+
 			// The region section need to be in sync with the map filter.
 			that.$element.scroll( function () {
-				var inviewRegion = that.$element.find( 'div.uls-lcd-region-section:first' ).attr( 'id' );
-				var listtop = that.$element.position().top;
-				that.$element.find( 'div.uls-lcd-region-section' ).each( function () {
-					var offset = $( this ).position().top - listtop;
-					if ( offset < 0 ) {
-						inviewRegion = $( this ).attr( 'id' );
-					} else {
-						return false;
-					}
-				} );
+				if ( this.offsetHeight + this.scrollTop >= this.scrollHeight ) {
+					that.$element.trigger( 'scrollend' );
+				}
 
-				var inview = $.uls.data.regiongroups[inviewRegion];
-				// FIXME This is not a clean solution. It should get fixed with infinite scroll feature.
-				$( 'div.uls-region' ).removeClass( 'active' );
-				$( 'div#uls-region-' + inview ).addClass( 'active' );
 			} );
 		}
 

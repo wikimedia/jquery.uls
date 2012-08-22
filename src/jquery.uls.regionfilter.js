@@ -71,8 +71,6 @@
 				// if there is a region group, make it active.
 				this.$element.addClass( 'active' );
 			}
-			// Re-populate the list of languages
-			this.options.$target.empty();
 
 			if ( this.cache ) {
 				// If the result cache is present, render the results from there.
@@ -109,8 +107,28 @@
 			$target.append( langCode, region );
 		},
 
+		next: function () {
+			if ( !this.$element.hasClass( 'active') ) {
+				return true;
+			}
+			var that = this;
+			// Do not respond to all scroll end events, but only after a short interval
+			delay( function () {
+				var regiongroup = that.$element.data( 'regiongroup' );
+				var nextRegiongroup = regiongroup + 1;
+
+				var $nextRegion = $( '#uls-region-' + nextRegiongroup );
+				var next = $nextRegion.length && $nextRegion.data( 'regionselector' );
+				if ( next ) {
+					next.show();
+				}
+			}, 100 );
+			return false;
+		},
+
 		listen: function() {
 			this.$element.on( 'click', $.proxy( this.click, this ) );
+			this.options.$target.$element.bind( 'scrollend', $.proxy( this.next, this) );
 		},
 
 		click: function( e ) {
@@ -120,6 +138,8 @@
 					this.options.noresults.call();
 				}
 			} else {
+				// Re-populate the list of languages
+				this.options.$target.empty();
 				this.show();
 			}
 		}
@@ -150,4 +170,13 @@
 	};
 
 	$.fn.regionselector.Constructor = RegionSelector;
+
+	var delay = function () {
+		var timer = 0;
+		return ( function ( callback, milliseconds ) {
+			clearTimeout( timer );
+			timer = setTimeout( callback, milliseconds );
+		} );
+	}();
+
 } )( jQuery );

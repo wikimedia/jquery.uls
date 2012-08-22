@@ -557,24 +557,25 @@ scriptgroups:
 rtlscripts:
   [Arab, Hebr, Syrc, Nkoo, Thaa]
 
+ # The numbers are also used in HTML id attributes
 regiongroups:
- # north-america
-  NA: 1
- # latin-america
-  LA: 1
- # south-america
-  SA: 1
- # europe
-  EU: 2
- # middle-east
-  ME: 2
- # africa
-  AF: 2
- # asia
-  AS: 3
- # pacific
-  PA: 3
- # australia
-  AU: 3
- # world wide, international
-  WW: 4
+ # Worldwide, international
+  WW: 1
+ # North America
+  NA: 2
+ # Latin America
+  LA: 2
+ # South America
+  SA: 2
+ # Europe
+  EU: 3
+ # Middle East
+  ME: 3
+ # Africa
+  AF: 3
+ # Asia
+  AS: 4
+ # Pacific
+  PA: 4
+ # Aaustralia
+  AU: 4

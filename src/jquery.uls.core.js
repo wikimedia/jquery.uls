@@ -21,6 +21,7 @@
 (function ( $ ) {
 	"use strict";
 
+	// Region numbers in id attributes also appear in the langdb.
 	var template = '\
 		<div class="uls-menu"> \
 			<div class="row"> \
@@ -33,19 +34,19 @@
 				<div class="three columns" id="settings-block"></div>\
 				<div class="five columns" id="map-block">\
 					<div class="row">\
-						<div data-regiongroup="4" id="uls-region-4" class="three columns uls-region">\
+						<div data-regiongroup="1" id="uls-region-1" class="three columns uls-region">\
 							<a>Worldwide</a>\
 						</div>\
 						<div class="nine columns">\
 							<div class="row uls-worldmap">\
-								<div data-regiongroup="1" id="uls-region-1" class="four columns uls-region">\
+								<div data-regiongroup="2" id="uls-region-2" class="four columns uls-region">\
 									<a>America</a>\
 								</div>\
-								<div data-regiongroup="2" id="uls-region-2" class="four columns uls-region">\
+								<div data-regiongroup="3" id="uls-region-3" class="four columns uls-region">\
 									<a>Europe <br> Middle east <br> Africa\
 									</a>\
 								</div>\
-								<div data-regiongroup="3" id="uls-region-3" class="four columns uls-region">\
+								<div data-regiongroup="4" id="uls-region-4" class="four columns uls-region">\
 									<a>Asia <br> Australia <br> Pacific\
 									</a>\
 								</div>\
@@ -110,6 +111,7 @@
 		this.shown = false;
 		this.initialized = false;
 		this.$languageFilter = this.$menu.find( 'input#languagefilter' );
+		this.$regionFilters = this.$menu.find( '.uls-region' );
 		this.$noResultsView = this.$menu.find( 'div.uls-no-results-view' );
 		this.$resultsView = this.$menu.find( 'div.uls-language-list' );
 		this.$noResultsView.hide();
@@ -156,12 +158,18 @@
 				$( 'body' ).prepend( this.$menu );
 				// Initialize with a full search.
 				// This happens on first time click of uls trigger.
-				this.$languageFilter.languagefilter( 'clear' );
+				this.defaultSearch();
 				this.initialized = true;
 			}
 			this.$menu.show();
 			this.shown = true;
 			this.$languageFilter.focus();
+		},
+
+		defaultSearch: function() {
+			this.$resultsView.lcd( 'empty' );
+			this.$resultsView.lcd( 'quicklist' );
+			this.$regionFilters.first().regionselector( 'show' );
 		},
 
 		/**
@@ -208,6 +216,7 @@
 			// Register all event listeners to the ULS here.
 			that.$element.on( 'click', $.proxy( that.click, that ) );
 
+			that.$languageFilter.on( 'seachclear', $.proxy( that.defaultSearch, that ) );
 			// Handle click on close button
 			this.$menu.find( "#uls-close" ).on( 'click', $.proxy( that.hide, that ) );
 
@@ -220,6 +229,7 @@
 
 			lcd = that.$resultsView.lcd( {
 				languages: that.languages,
+				quickList: that.options.quickList,
 				clickhandler: $.proxy( that.onSelect, that )
 			} ).data( "lcd" );
 
@@ -239,7 +249,7 @@
 			} );
 
 			// Create region selectors, one per region
-			this.$menu.find( '.uls-region, .uls-region-link' ).regionselector( {
+			this.$menu.find( '.uls-region' ).regionselector( { //, .uls-region-link
 				$target: lcd,
 				languages: that.languages,
 				success: function() {
@@ -324,7 +334,8 @@
 		menu: template,
 		onSelect: null, // Callback function to be called when a language is selected
 		searchAPI: null, // Language search API
-		languages: $.uls.data.autonyms() // Languages to be used for ULS, default is all languages
+		languages: $.uls.data.autonyms(), // Languages to be used for ULS, default is all languages
+		quickList : null
 	};
 
 	$.fn.uls.Constructor = ULS;

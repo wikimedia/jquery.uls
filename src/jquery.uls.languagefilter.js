@@ -78,8 +78,12 @@
 					var that = this;
 					this.selectedLanguage = null;
 					delay( function() {
-						that.options.$target.empty();
-						that.search();
+						if ( !that.$element.val() ) {
+							that.clear();
+						} else {
+							that.options.$target.empty();
+							that.search();
+						}
 					}, 300 );
 					this.toggleClear();
 			}
@@ -101,7 +105,7 @@
 		 */
 		clear: function() {
 			this.deactivate();
-			this.search();
+			this.$element.trigger( 'seachclear' );
 		},
 
 		/**
