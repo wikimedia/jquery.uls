@@ -329,4 +329,13 @@
 			autonymB = $.uls.data.autonym( b ) || b;
 		return ( autonymA.toLowerCase() < autonymB.toLowerCase() ) ? -1 : 1;
 	};
+
+	/**
+	 * Check if a language is right-to-left.
+	 * @param string language code
+	 * @return boolean
+	 */
+	$.uls.data.isRtl = function( language ) {
+		return $.inArray( $.uls.data.script( language ), $.uls.data.rtlscripts ) !== -1;
+	};
 } )( jQuery );

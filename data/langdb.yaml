@@ -554,6 +554,9 @@ scriptgroups:
   SignWriting: [Sgnw]
   NativeAmerican: [Cher, Cans]
 
+rtlscripts:
+  [Arab, Hebr, Syrc, Nkoo, Thaa]
+
 regiongroups:
  # north-america
   NA: 1
