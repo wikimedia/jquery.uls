@@ -338,4 +338,13 @@
 	$.uls.data.isRtl = function( language ) {
 		return $.inArray( $.uls.data.script( language ), $.uls.data.rtlscripts ) !== -1;
 	};
+
+	/**
+	 * Returns the languages spoken in a territory.
+	 * @param string Territory code
+	 * @return list of language codes
+	 */
+	$.uls.data.languagesInTerritory = function( territory ) {
+		return $.uls.data.territories[territory];
+	};
 } )( jQuery );

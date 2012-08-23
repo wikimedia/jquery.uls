@@ -20,9 +20,53 @@
 
 include __DIR__ . '/spyc.php';
 
-$data = file_get_contents( 'langdb.yaml' );
-$parsed = spyc_load( $data );
-$json = json_encode( $parsed );
+print( "Reading langdb.yaml...\n" );
+$yamlLangdb = file_get_contents( 'langdb.yaml' );
+$parsedLangdb = spyc_load( $yamlLangdb );
+
+$supplementalDataFilename = 'supplementalData.xml';
+$supplementalDataUrl = "http://unicode.org/repos/cldr/trunk/common/supplemental/$supplementalDataFilename";
+
+$curl = curl_init( $supplementalDataUrl );
+$supplementalDataFile = fopen( $supplementalDataFilename, 'w' );
+
+curl_setopt( $curl, CURLOPT_FILE, $supplementalDataFile );
+curl_setopt( $curl, CURLOPT_HEADER, 0 );
+
+print( "Trying to download $supplementalDataUrl...\n" );
+$curlSuccess = curl_exec( $curl );
+curl_close( $curl );
+fclose( $supplementalDataFile );
+
+if ( !$curlSuccess ) {
+	die( "Failed to download CLDR data from $supplementalDataUrl.\n" );
+}
+print( "Downloaded $supplementalDataFilename, trying to parse...\n" );
+
+$supplementalData = simplexml_load_file( $supplementalDataFilename );
+
+if ( !( $supplementalData instanceof SimpleXMLElement ) ) {
+	die( "Attempt to load CLDR data from $supplementalDataFilename failed.\n" );
+}
+
+print( "CLDR supplemental data parsed successfully, reading territories info...\n" );
+$parsedLangdb['territories'] = array();
+
+foreach ( $supplementalData->territoryInfo->territory as $territoryRecord ) {
+	$territoryAtributes = $territoryRecord->attributes();
+	$territoryCodeAttr = $territoryAtributes['type'];
+	$territoryCode = "$territoryCodeAttr[0]";
+	$parsedLangdb['territories'][$territoryCode] = array();
+
+	foreach ( $territoryRecord->languagePopulation as $languageRecord ) {
+		$languageAttributes = $languageRecord->attributes();
+		$languageCodeAttr = $languageAttributes['type'];
+		$parsedLangdb['territories'][$territoryCode][] = "$languageCodeAttr[0]";
+	}
+}
+
+print( "Writing JSON langdb...\n" );
+$json = json_encode( $parsedLangdb );
 $js = <<<JAVASCRIPT
 // Please do not edit. This file is generated from data/langdb.yaml by ulsdata2json.php
 ( function ( $ ) {
@@ -32,3 +76,5 @@ $js = <<<JAVASCRIPT
 
 JAVASCRIPT;
 file_put_contents( '../src/jquery.uls.data.js', $js );
+
+print( "Done.\n" );
