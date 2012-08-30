@@ -335,7 +335,7 @@
 		onSelect: null, // Callback function to be called when a language is selected
 		searchAPI: null, // Language search API
 		languages: $.uls.data.autonyms(), // Languages to be used for ULS, default is all languages
-		quickList : null
+		quickList: null // Array of language codes of function that returns such
 	};
 
 	$.fn.uls.Constructor = ULS;

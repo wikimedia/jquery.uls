@@ -130,9 +130,14 @@
 		},
 
 		quicklist: function() {
+			if ( $.isFunction( this.options.quickList ) ) {
+				this.options.quickList = this.options.quickList();
+			}
+
 			if ( !this.options.quickList ) {
 				return;
 			}
+
 			var $column;
 			var quickList = this.options.quickList;
 			var quickListLength = ( quickList.length <= 16 ) ? quickList.length : 16;
