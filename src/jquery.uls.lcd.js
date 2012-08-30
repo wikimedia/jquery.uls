@@ -139,7 +139,12 @@
 			}
 
 			// Pick only the first elements, because we don't have room for more
-			var quickList = this.options.quickList.slice( 0, 16 );
+			var that = this,
+				quickList = this.options.quickList;
+			quickList = $.grep( quickList, function( langCode, index ) {
+				return that.options.languages[langCode];
+			} );
+			quickList = quickList.slice( 0, 16 );
 			quickList.sort( $.uls.data.sortByAutonym );
 			var $quickListsection = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', 'uls-lcd-quicklist' );
 			$quickListsection.append( $( '<h3>' ).addClass( 'eleven columns uls-lcd-region-section offset-by-one' ).text( 'Common Languages' ) );
@@ -164,7 +169,6 @@
 			if ( !this.regionDivs ) {
 				this.render();
 			}
-			//this.quickList();
 		},
 
 		empty: function() {
