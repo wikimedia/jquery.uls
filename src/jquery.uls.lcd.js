@@ -138,15 +138,15 @@
 				return;
 			}
 
-			var $column;
-			var quickList = this.options.quickList;
-			var quickListLength = ( quickList.length <= 16 ) ? quickList.length : 16;
+			// Pick only the first elements, because we don't have room for more
+			var quickList = this.options.quickList.slice( 0, 16 );
+			quickList.sort( $.uls.data.sortByAutonym );
 			var $quickListsection = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', 'uls-lcd-quicklist' );
 			$quickListsection.append( $( '<h3>' ).addClass( 'eleven columns uls-lcd-region-section offset-by-one' ).text( 'Common Languages' ) );
 			this.$element.prepend( $quickListsection );
 			this.regionDivs[ 'quick' ] = $quickListsection;
-			for ( var i = 0; i < quickListLength; i++) {
-				$column = this.getColumn( 'quick', i % 4 === 0 );
+			for ( var i = 0; i < quickList.length; i++) {
+				var $column = this.getColumn( 'quick', i % 4 === 0 );
 				var langCode = quickList[i];
 				var language = this.options.languages[langCode];
 				var langName = $.uls.data.autonym( langCode ) || language || langCode;
