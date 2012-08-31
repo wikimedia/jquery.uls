@@ -6,7 +6,7 @@
 }
 
 .uls-menu {
-	position: fixed;
+	position: absolute;
 	z-index: 1000;
 	display: none;
 	min-width: 715px;
