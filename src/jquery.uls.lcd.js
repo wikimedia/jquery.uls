@@ -22,11 +22,36 @@
 (function( $ ) {
 	"use strict";
 
+
+	var noResultsTemplate = '\
+	<div class="twelve columns uls-no-results-view">\
+		<h2 class="eleven columns end offset-by-one">\
+			No results found\
+		</h2>\
+		<div id="uls-no-found-more">\
+			<div class="ten columns end offset-by-one">\
+				<p>\
+					You can search by language name, script name, ISO code of language or \
+					you can browse by region:\
+					<a class="uls-region-link" data-region="NA" href="#">America</a>,\
+					<a class="uls-region-link" data-region="EU" href="#">Europe</a>,\
+					<a class="uls-region-link" data-region="ME" href="#">Middle East</a>, \
+					<a class="uls-region-link" data-region="AF" href="#">Africa</a>,\
+					<a class="uls-region-link" data-region="AS" href="#">Asia</a>,\
+					<a class="uls-region-link" data-region="PA" href="#">Pacific</a> or \
+					<a class="uls-region-link" data-region="WW" href="#">Worldwide languages</a>.\
+				</p>\
+			</div>\
+		</div>\
+	</div>';
+
 	var LanguageCategoryDisplay = function( element, options ) {
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.lcd.defaults, options );
 		this.$element.addClass( 'lcd' );
 		this.regionDivs = {};
+		this.$element.append( $(noResultsTemplate) );
+		this.$noResults = this.$element.find( 'div.uls-no-results-view' );
 		this.render();
 		this.listen();
 	};
@@ -36,6 +61,7 @@
 
 		append: function( langCode, regionCode ) {
 			this.addToRegion( langCode, regionCode );
+			this.$noResults.hide();
 		},
 
 		/**
@@ -127,6 +153,7 @@
 				$section.hide();
 				that.regionDivs[regionCode] = $section;
 			} );
+			this.$noResults.hide();
 		},
 
 		quicklist: function() {
@@ -139,8 +166,7 @@
 			}
 
 			// Pick only the first elements, because we don't have room for more
-			var that = this,
-				quickList = this.options.quickList;
+			var quickList = this.options.quickList;
 			quickList = quickList.slice( 0, 16 );
 			quickList.sort( $.uls.data.sortByAutonym );
 			var $quickListsection = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', 'uls-lcd-quicklist' );
@@ -160,6 +186,7 @@
 				$column.append( $li );
 			}
 			$quickListsection.show();
+			return $quickListsection;
 		},
 
 		show: function() {
@@ -169,12 +196,19 @@
 		},
 
 		empty: function() {
-			this.$element.find( 'div.row' ).remove();
+			this.$element.find( 'div.uls-language-block' ).remove();
 			this.$element.find( 'div.uls-lcd-region-section' ).hide();
 		},
 
 		focus: function() {
 			this.$element.focus();
+		},
+
+		noResults: function() {
+			this.$noResults.show();
+			var $suggestions = this.quicklist();
+			$suggestions.find( 'h3' ).text( 'You may be interested in' );
+			this.$noResults.find( 'h2' ).after( $suggestions );
 		},
 
 		listen: function() {

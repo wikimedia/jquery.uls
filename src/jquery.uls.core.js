@@ -72,24 +72,6 @@
 				</div>\
 			</div>\
 			<div class="row uls-language-list"></div>\
-			<div class="row uls-no-results-view">\
-				<h2 class="ten columns end offset-by-one">\
-					No results found\
-				</h2>\
-				<div id="uls-no-found-more">\
-					<div class="ten columns end offset-by-one">\
-						<p>\
-							You can search by language name, script name, ISO code of language or you can browse by\
-							region: <a class="uls-region-link" data-region="NA" href="#">America</a>, <a\
-								class="uls-region-link" data-region="EU" href="#">Europe</a>, <a class="uls-region-link"\
-								data-region="ME" href="#">Middle East</a>, <a class="uls-region-link" data-region="AF"\
-								href="#">Africa</a>, <a class="uls-region-link" data-region="AS" href="#">Asia</a>, <a\
-								class="uls-region-link" data-region="PA" href="#">Pacific</a> or <a class="uls-region-link"\
-								data-region="WW" href="#">Worldwide languages</a>.\
-						</p>\
-					</div>\
-				</div>\
-			</div>\
 		</div> ';
 
 	/**
@@ -112,9 +94,7 @@
 		this.initialized = false;
 		this.$languageFilter = this.$menu.find( 'input#languagefilter' );
 		this.$regionFilters = this.$menu.find( '.uls-region' );
-		this.$noResultsView = this.$menu.find( 'div.uls-no-results-view' );
 		this.$resultsView = this.$menu.find( 'div.uls-language-list' );
-		this.$noResultsView.hide();
 		this.render();
 		this.listen();
 		this.ready();
@@ -193,16 +173,13 @@
 		 * @param String search the search term
 		 */
 		noresults: function( search ) {
-			this.$noResultsView.show();
-			this.$noResultsView.find( 'span#uls-no-found-search-term' ).text( search );
-			this.$resultsView.hide();
+			this.$resultsView.lcd( 'noResults' );
 		},
 
 		/**
 		 * callback for results found context.
 		 */
 		success: function() {
-			this.$noResultsView.hide();
 			this.$resultsView.show();
 		},
 
