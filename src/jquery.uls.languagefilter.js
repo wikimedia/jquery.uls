@@ -70,8 +70,16 @@
 					}
 					break;
 				case 13:
-					if ( this.options.onSelect && this.selectedLanguage ) {
+					if ( !this.options.onSelect ) {
+						break;
+					}
+					if ( this.selectedLanguage ) {
+						// this.selectLanguage will be populated from a matching search
 						this.options.onSelect( this.selectedLanguage );
+					} else if ( this.options.languages[this.$element.val()] ) {
+						// Search is yet to happen(in timeout delay),
+						// but we have a matching language code.
+						this.options.onSelect( this.$element.val() );
 					}
 					break;
 				default:
