@@ -141,9 +141,6 @@
 			// Pick only the first elements, because we don't have room for more
 			var that = this,
 				quickList = this.options.quickList;
-			quickList = $.grep( quickList, function( langCode, index ) {
-				return that.options.languages[langCode];
-			} );
 			quickList = quickList.slice( 0, 16 );
 			quickList.sort( $.uls.data.sortByAutonym );
 			var $quickListsection = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', 'uls-lcd-quicklist' );
