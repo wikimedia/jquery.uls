@@ -354,7 +354,7 @@ languages:
   ps: [Arab, [AS, ME], پښتو]
   pt-br: [Latn, [AM], português do Brasil]
  # world?
-  pt: [Latn, [EU, AM, AS, PA, AF], português]
+  pt: [Latn, [EU, AM, AS, PA, AF, WW], português]
   qu: [Latn, [AM], Runa Simi]
   qug: [Latn, [AM], Runa shimi]
   rap: [Latn, [AM], arero rapa nui]
