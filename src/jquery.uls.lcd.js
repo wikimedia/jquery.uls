@@ -83,6 +83,11 @@
 				regions = $.uls.data.regions( langCode );
 			}
 
+			// World wide languages need not be repeated in all regions.
+			if ( $.inArray( 'WW', regions ) > -1 ) {
+				regions = [ 'WW' ];
+			}
+
 			for ( var i = 0; i < regions.length; i++ ) {
 				var regionCode = regions[i];
 
