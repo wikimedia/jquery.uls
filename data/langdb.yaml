@@ -105,9 +105,9 @@ languages:
   el: [Grek, [EU], Ελληνικά]
   eml: [Latn, [EU], emiliàn e rumagnòl]
   en-ca: [Latn, [AM], Canadian English]
-  en-gb: [Latn, [EU, AS, AU], British English]
+  en-gb: [Latn, [EU, AS, PA], British English]
  # world?
-  en: [Latn, [EU, AM, AU, AF, ME, AS, PA, WW], English]
+  en: [Latn, [EU, AM, AF, ME, AS, PA, WW], English]
   eo: [Latn, [WW], Esperanto]
   es-419: [Latn, [AM], espanol de America Latina]
  # world?
@@ -163,10 +163,10 @@ languages:
  # Or maybe world?
   hi: [Deva, [AS], हिन्दी]
   hif-deva: [Deva, [AS], फ़ीजी हिन्दी]
-  hif-latn: [Latn, [PA, AU, AS], Fiji Hindi]
+  hif-latn: [Latn, [PA, AS], Fiji Hindi]
  # XXX multiple script
- # hif: [[Deva, Latn], [PA, AU, AS], [फ़ीजी हिन्दी, Fiji Hindi]]
-  hif: [Latn, [PA, AU, AS], फ़ीजी हिन्दी / Fiji Hindi]
+ # hif: [[Deva, Latn], [PA, AS], [फ़ीजी हिन्दी, Fiji Hindi]]
+  hif: [Latn, [PA, AS], फ़ीजी हिन्दी / Fiji Hindi]
   hil: [Latn, [AS], Ilonggo]
   hne: [Deva, [AS], छत्तीसगढ़ी]
   ho: [Latn, [PA], Hiri Motu]
@@ -284,7 +284,7 @@ languages:
   mg: [Latn, [AF], Malagasy]
   mh: [Latn, [PA], Ebon]
   mhr: [Cyrl, [EU], олык марий]
-  mi: [Latn, [PA, AU], Māori]
+  mi: [Latn, [PA], Māori]
   mic: [Latn, [AM], "Mi'kmaq"]
   min: [Latn, [AS], Baso Minangkabau]
   mk: [Cyrl, [EU], македонски]
@@ -306,7 +306,7 @@ languages:
   my: [Mymr, [AS], မြန်မာဘာသာ]
   myv: [Cyrl, [EU], эрзянь]
   mzn: [Arab, [ME, AS], مازِرونی]
-  na: [Latn, [PA, AU], Dorerin Naoero]
+  na: [Latn, [PA], Dorerin Naoero]
   nah: [Latn, [AM], Nāhuatl]
   nan: [Latn, [AS], Bân-lâm-gú]
   nap: [Latn, [EU], Nnapulitano]
@@ -576,5 +576,3 @@ regiongroups:
   AS: 4
  # Pacific
   PA: 4
- # Aaustralia
-  AU: 4

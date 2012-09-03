@@ -47,7 +47,7 @@
 									</a>\
 								</div>\
 								<div data-regiongroup="4" id="uls-region-4" class="four columns uls-region">\
-									<a>Asia <br> Australia <br> Pacific\
+									<a>Asia <br> Pacific\
 									</a>\
 								</div>\
 							</div>\
