@@ -144,7 +144,7 @@
 			quickList = quickList.slice( 0, 16 );
 			quickList.sort( $.uls.data.sortByAutonym );
 			var $quickListsection = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', 'uls-lcd-quicklist' );
-			$quickListsection.append( $( '<h3>' ).addClass( 'eleven columns uls-lcd-region-section offset-by-one' ).text( 'Common Languages' ) );
+			$quickListsection.append( $( '<h3>' ).addClass( 'eleven columns uls-lcd-region-section offset-by-one' ).text( 'Common languages' ) );
 			this.$element.prepend( $quickListsection );
 			this.regionDivs[ 'quick' ] = $quickListsection;
 			for ( var i = 0; i < quickList.length; i++) {
