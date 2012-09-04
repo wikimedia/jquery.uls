@@ -256,4 +256,4 @@
 
 	$.fn.lcd.Constructor = LanguageCategoryDisplay;
 
-} )( jQuery );
+} ( jQuery ) );

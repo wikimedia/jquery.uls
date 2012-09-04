@@ -347,4 +347,4 @@
 	$.uls.data.languagesInTerritory = function( territory ) {
 		return $.uls.data.territories[territory];
 	};
-} )( jQuery );
+} ( jQuery ) );

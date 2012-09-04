@@ -171,12 +171,12 @@
 
 	$.fn.regionselector.Constructor = RegionSelector;
 
-	var delay = function () {
+	var delay = ( function () {
 		var timer = 0;
-		return ( function ( callback, milliseconds ) {
+		return function ( callback, milliseconds ) {
 			clearTimeout( timer );
 			timer = setTimeout( callback, milliseconds );
-		} );
-	}();
+		};
+	} () );
 
-} )( jQuery );
+} ( jQuery ) );

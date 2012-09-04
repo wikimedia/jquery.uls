@@ -37,13 +37,13 @@
 		this.listen();
 	};
 
-	var delay = function() {
+	var delay = ( function() {
 		var timer = 0;
-		return ( function( callback, milliseconds ) {
+		return function( callback, milliseconds ) {
 			clearTimeout( timer );
 			timer = setTimeout( callback, milliseconds );
-		} );
-	}();
+		};
+	} () );
 
 	LanguageFilter.prototype = {
 
@@ -230,7 +230,7 @@
 		},
 
 		escapeRegex: function( value ) {
-			return value.replace( /[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&" );
+			return value.replace( /[\-\[\]{}()*+?.,\\\^$\|#\s]/g, "\\$&" );
 		},
 
 		/**
@@ -294,4 +294,4 @@
 		}
 	}
 
-} )( jQuery );
+} ( jQuery ) );

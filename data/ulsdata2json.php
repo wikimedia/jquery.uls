@@ -72,7 +72,7 @@ $js = <<<JAVASCRIPT
 ( function ( $ ) {
 	$.uls = $.uls || {};
 	$.uls.data = $json;
-} )( jQuery );
+} ( jQuery ) );
 
 JAVASCRIPT;
 file_put_contents( '../src/jquery.uls.data.js', $js );

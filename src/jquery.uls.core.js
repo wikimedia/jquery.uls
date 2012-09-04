@@ -84,7 +84,9 @@
 		this.languages = this.options.languages;
 		for ( var code in this.languages ) {
 			if ( $.uls.data.languages[code] === undefined ) {
-				window.console && console.log && console.log( "ULS: Unknown language " + code + "." );
+				if ( window.console && window.console.log ) {
+					window.console.log( "ULS: Unknown language " + code + "." );
+				}
 				delete this.languages[code];
 			}
 		}
@@ -257,11 +259,9 @@
 			if ( !this.shown ) {
 				return;
 			}
-			switch( e.keyCode ) {
-				case 27: // escape
-					this.hide();
-					e.preventDefault();
-					break;
+			if ( e.keyCode === 27 ) { // escape
+				this.hide();
+				e.preventDefault();
 			}
 			e.stopPropagation();
 		},
@@ -270,11 +270,9 @@
 			if ( !this.shown ) {
 				return;
 			}
-			switch( e.keyCode ) {
-				case 27: // escape
-					this.hide();
-					e.preventDefault();
-					break;
+			if ( e.keyCode === 27 ) { // escape
+				this.hide();
+				e.preventDefault();
 			}
 			e.stopPropagation();
 		},
@@ -317,4 +315,4 @@
 
 	$.fn.uls.Constructor = ULS;
 
-} )( jQuery );
+} ( jQuery ) );
