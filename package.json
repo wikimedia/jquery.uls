@@ -1,0 +1,53 @@
+{
+  "name": "jquery.uls",
+  "version": "0.1.0",
+  "description": "Universal Language Selector",
+  "homepage": "https://github.com/wikimedia/jquery.uls",
+  "keywords": [
+    "internationalization",
+    "localization",
+    "uls",
+    "jquery",
+    "l10n"
+  ],
+  "author": {
+     "name": "Santhosh Thottingal",
+     "email": "santhosh.thottingal@gmail.com"
+  },
+  "contributors": [
+    "Alolita Sharma",
+    "Amir Aharoni",
+    "Arun Ganesh",
+    "Brandon Harris",
+    "Niklas Laxström",
+    "Pau Giner",
+    "Santhosh Thottingal",
+    "Siebrand Mazeland"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.3.9",
+    "grunt-compare-size": ">=0.1.4",
+    "grunt-css":   ">0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wikimedia/jquery.uls.git"
+  },
+  "bugs": {
+    "url" : "http://github.com/wikimedia/jquery.uls/issues"
+  },
+  "engine": {
+    "node": ">=0.6.x"
+  },
+  "licenses": [
+    {
+      "type": "GPL",
+      "url": "https://github.com/wikimedia/jquery.uls/blob/master/GPL-LICENSE"
+    },
+    {
+      "type": "MIT",
+      "url": "https://github.com/wikimedia/jquery.uls/blob/master/MIT-LICENSE"
+    }
+  ]
+}
