@@ -228,7 +228,7 @@
 			} );
 
 			// Create region selectors, one per region
-			this.$menu.find( '.uls-region' ).regionselector( { //, .uls-region-link
+			this.$menu.find( '.uls-region, .uls-region-link' ).regionselector( {
 				$target: lcd,
 				languages: that.languages,
 				success: function() {

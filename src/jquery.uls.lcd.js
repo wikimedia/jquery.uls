@@ -33,7 +33,7 @@
 				<p>\
 					You can search by language name, script name, ISO code of language or \
 					you can browse by region:\
-					<a class="uls-region-link" data-region="NA" href="#">America</a>,\
+					<a class="uls-region-link" data-region="AM" href="#">America</a>,\
 					<a class="uls-region-link" data-region="EU" href="#">Europe</a>,\
 					<a class="uls-region-link" data-region="ME" href="#">Middle East</a>, \
 					<a class="uls-region-link" data-region="AF" href="#">Africa</a>,\
