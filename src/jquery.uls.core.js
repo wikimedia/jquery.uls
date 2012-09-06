@@ -150,7 +150,6 @@
 
 		defaultSearch: function() {
 			this.$resultsView.lcd( 'empty' );
-			this.$resultsView.lcd( 'quicklist' );
 			this.$regionFilters.first().regionselector( 'show' );
 		},
 
@@ -231,10 +230,13 @@
 			this.$menu.find( '.uls-region, .uls-region-link' ).regionselector( {
 				$target: lcd,
 				languages: that.languages,
-				success: function() {
+				success: function( regionfilter ) {
 					// Deactivate search filtering
 					that.$languageFilter.languagefilter( 'deactivate' );
-
+					// If it is WW region, show the quicklist
+					if ( regionfilter.regionGroup === 1 ) {
+						lcd.quicklist();
+					}
 					// Show 'results view' if we are in no results mode
 					that.success();
 				},

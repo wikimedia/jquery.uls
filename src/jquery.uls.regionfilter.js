@@ -95,7 +95,7 @@
 			}
 
 			if ( this.options.success ) {
-				this.options.success.call();
+				this.options.success( this );
 			}
 		},
 
