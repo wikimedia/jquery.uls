@@ -264,8 +264,8 @@
 			if ( e.keyCode === 27 ) { // escape
 				this.hide();
 				e.preventDefault();
+				e.stopPropagation();
 			}
-			e.stopPropagation();
 		},
 
 		keypress: function( e ) {
@@ -275,8 +275,8 @@
 			if ( e.keyCode === 27 ) { // escape
 				this.hide();
 				e.preventDefault();
+				e.stopPropagation();
 			}
-			e.stopPropagation();
 		},
 
 		click: function( e ) {
