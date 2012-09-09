@@ -149,11 +149,21 @@
 
 		render: function() {
 			var that = this;
+			var regions = { // FIXME Remove this when i18n is in place.
+				WW: 'Worldwide',
+				AM: 'America',
+				EU: 'Europe',
+				ME: 'Middle East',
+				AS: 'Asia',
+				AF: 'Africa',
+				PA: 'Pacific'
+			};
 			var $section;
 			$.each( $.uls.data.regiongroups, function( regionCode, regionIndex ) {
 				$section = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', regionCode );
-				$section.append( $( '<h3>' ).addClass( 'eleven columns uls-lcd-region-section offset-by-one' ).html( regionCode ) );
-				// FIXME this is regioncode(NA, EU etc). Should be proper localized region name.
+				$section.append( $( '<h3>' )
+						.addClass( 'eleven columns uls-lcd-region-section offset-by-one' )
+						.text( regions[regionCode] ) );
 				that.$element.append( $section );
 				$section.hide();
 				that.regionDivs[regionCode] = $section;

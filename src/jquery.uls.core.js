@@ -43,7 +43,7 @@
 									<a>America</a>\
 								</div>\
 								<div data-regiongroup="3" id="uls-region-3" class="four columns uls-region">\
-									<a>Europe <br> Middle east <br> Africa\
+									<a>Europe <br> Middle East <br> Africa\
 									</a>\
 								</div>\
 								<div data-regiongroup="4" id="uls-region-4" class="four columns uls-region">\
