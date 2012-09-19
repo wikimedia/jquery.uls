@@ -33,6 +33,9 @@ module.exports = function(grunt) {
 						dest : 'dist/<%= pkg.name %>.min.js'
 					}
 				},
+				qunit : {
+					files : [ 'test/**/*.html' ]
+				},
 				cssmin : {
 					dist: {
 						src : '<config:concat.css.dest>',
@@ -82,4 +85,6 @@ module.exports = function(grunt) {
 			});
 	// Default task.
 	grunt.registerTask('default', 'lint cssmin concat min csslint');
+	grunt.registerTask('test', 'lint qunit');
+
 };
