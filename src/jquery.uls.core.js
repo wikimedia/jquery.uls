@@ -29,26 +29,27 @@
 			</div> \
 			<div class="row"> \
 				<div class="uls-title four columns">\
-					<h1>Select language</h1>\
+					<h1 data-i18n="uls-select-language">Select Language</h1>\
 				</div>\
 				<div class="three columns" id="settings-block"></div>\
 				<div class="five columns" id="map-block">\
 					<div class="row">\
 						<div data-regiongroup="1" id="uls-region-1" class="three columns uls-region">\
-							<a>Worldwide</a>\
+							<a data-i18n="uls-region-WW">Worldwide</a>\
 						</div>\
 						<div class="nine columns">\
 							<div class="row uls-worldmap">\
 								<div data-regiongroup="2" id="uls-region-2" class="four columns uls-region">\
-									<a>America</a>\
+									<a data-i18n="uls-region-AM">America</a>\
 								</div>\
 								<div data-regiongroup="3" id="uls-region-3" class="four columns uls-region">\
-									<a>Europe <br> Middle East <br> Africa\
-									</a>\
+									<a><span data-i18n="uls-region-EU">Europe</span><br>\
+									<span data-i18n="uls-region-ME">Middle East</span><br>\
+									<span data-i18n="uls-region-AF">Africa</span></a>\
 								</div>\
 								<div data-regiongroup="4" id="uls-region-4" class="four columns uls-region">\
-									<a>Asia <br> Pacific\
-									</a>\
+									<a><span data-i18n="uls-region-AS">Asia</span><br>\
+									<span data-i18n="uls-region-PA">Pacific</span></a>\
 								</div>\
 							</div>\
 						</div>\
@@ -138,6 +139,7 @@
 
 			if ( !this.initialized ) {
 				$( 'body' ).prepend( this.$menu );
+				this.i18n();
 				// Initialize with a full search.
 				// This happens on first time click of uls trigger.
 				this.defaultSearch();
@@ -148,7 +150,11 @@
 			this.$languageFilter.focus();
 		},
 
-		defaultSearch: function() {
+		i18n: function() {
+			this.$element.find( '[data-i18n]' ).i18n();
+		},
+
+		defaultSearch: function () {
 			this.$resultsView.lcd( 'empty' );
 			this.$regionFilters.first().regionselector( 'show' );
 		},
@@ -315,6 +321,12 @@
 		quickList: null // Array of language codes of function that returns such
 	};
 
+	//  Define a dummy i18n function, if jquery.i18n not integrated.
+	if( !$.fn.i18n ) {
+		$.fn.i18n = function( option ) {
+		};
+	}
+	
 	$.fn.uls.Constructor = ULS;
 
 } ( jQuery ) );

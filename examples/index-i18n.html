@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Universal Language Selector</title>
+		<meta name="author" content="Santhosh Thottingal"/>
+		<link href="../css/jquery.uls.css" rel="stylesheet"/>
+		<link href="../css/jquery.uls.grid.css" rel="stylesheet"/>
+		<link href="../css/jquery.uls.lcd.css" rel="stylesheet"/>
+		<!-- demo -->
+		<link href="resources/demo.css" rel="stylesheet"/>
+		<!-- Libs -->
+		<script src="resources/jquery.js"></script>
+		<!-- Source -->
+		<script src="../src/jquery.uls.data.js"></script>
+		<script src="../src/jquery.uls.data.utils.js"></script>
+		<script src="../src/jquery.uls.lcd.js"></script>
+		<script src="../src/jquery.uls.languagefilter.js"></script>
+		<script src="../src/jquery.uls.regionfilter.js"></script>
+		<script src="../src/jquery.uls.core.js"></script>
+		<script src="resources/jquery.i18n.min.js"></script>
+		<script>
+			$( document ).ready( function() {
+				var i18n = $.i18n( );
+				$( '.uls-trigger' ).uls( {
+					onSelect : function( language ) {
+						var languageName = $.uls.data.autonym( language );
+						$('a#pageLanguage').text( languageName );
+						i18n.locale = language;
+						// For ULS
+						i18n.load( '../i18n/' + language + '.json', language);
+						// For the web page
+						i18n.load( 'resources/i18n/' + language + '.json', language);
+						// re-i18n the elements
+						$( '.uls-menu' ).i18n();
+						$( '.navbar' ).i18n();
+					},
+					quickList: [ 'en', 'hi', 'he', 'ml', 'ta', 'fr' ]
+				} );
+			} );
+		</script>
+	</head>
+
+	<body>
+		<div class="navbar navbar-fixed-top">
+			<span class="active uls-trigger"> <a id="pageLanguage" href="#">Select Language</a> </span>
+			<h1 data-i18n="uls-example-title">Universal Language Selector</h1>
+			<p>
+				Demonstration of jquery plugin
+			</p>
+		</div>
+		<div class="container"></div>
+	</body>
+</html>

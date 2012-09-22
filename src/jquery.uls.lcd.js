@@ -25,21 +25,22 @@
 
 	var noResultsTemplate = '\
 	<div class="twelve columns uls-no-results-view">\
-		<h2 class="eleven columns end offset-by-one">\
-			No results found\
+		<h2 data-i18n="uls-no-results-found" class="eleven columns end offset-by-one">\
+		No results found\
 		</h2>\
 		<div id="uls-no-found-more">\
 			<div class="ten columns end offset-by-one">\
 				<p>\
-					You can search by language name, script name, ISO code of language or \
-					you can browse by region:\
-					<a class="uls-region-link" data-region="AM" href="#">America</a>,\
-					<a class="uls-region-link" data-region="EU" href="#">Europe</a>,\
-					<a class="uls-region-link" data-region="ME" href="#">Middle East</a>, \
-					<a class="uls-region-link" data-region="AF" href="#">Africa</a>,\
-					<a class="uls-region-link" data-region="AS" href="#">Asia</a>,\
-					<a class="uls-region-link" data-region="PA" href="#">Pacific</a> or \
-					<a class="uls-region-link" data-region="WW" href="#">Worldwide languages</a>.\
+					<span data-i18n="uls-search-help">You can search by language name, \
+					script name, ISO code of language or \
+					you can browse by region:</span>\
+					<a class="uls-region-link" data-i18n="uls-region-AM" data-region="AM" href="#">America</a>, \
+					<a class="uls-region-link" data-i18n="uls-region-EU" data-region="EU" href="#">Europe</a>, \
+					<a class="uls-region-link" data-i18n="uls-region-ME" data-region="ME" href="#">Middle East</a>, \
+					<a class="uls-region-link" data-i18n="uls-region-AF" data-region="AF" href="#">Africa</a>, \
+					<a class="uls-region-link" data-i18n="uls-region-AS" data-region="AS" href="#">Asia</a>, \
+					<a class="uls-region-link" data-i18n="uls-region-PA" data-region="PA" href="#">Pacific</a>, \
+					<a class="uls-region-link" data-i18n="uls-region-WW" data-region="WW" href="#">Worldwide</a>.\
 				</p>\
 			</div>\
 		</div>\
@@ -149,7 +150,9 @@
 
 		render: function() {
 			var that = this;
-			var regions = { // FIXME Remove this when i18n is in place.
+			var $section, $sectionTitle;
+			var regions = {
+				// These are fallback text when i18n library not present
 				WW: 'Worldwide',
 				AM: 'America',
 				EU: 'Europe',
@@ -158,17 +161,22 @@
 				AF: 'Africa',
 				PA: 'Pacific'
 			};
-			var $section;
 			$.each( $.uls.data.regiongroups, function( regionCode, regionIndex ) {
 				$section = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', regionCode );
-				$section.append( $( '<h3>' )
-						.addClass( 'eleven columns uls-lcd-region-section offset-by-one' )
-						.text( regions[regionCode] ) );
+				$sectionTitle = $( '<h3 data-i18n="uls-region-'+ regionCode+'">' )
+					.addClass( 'eleven columns uls-lcd-region-section offset-by-one' )
+					.text( regions[regionCode] );
+				$section.append( $sectionTitle );
 				that.$element.append( $section );
 				$section.hide();
 				that.regionDivs[regionCode] = $section;
 			} );
 			this.$noResults.hide();
+			this.i18n();
+		},
+
+		i18n: function( ) {
+			this.$element.find( '[data-i18n]' ).i18n();
 		},
 
 		quicklist: function() {
@@ -184,10 +192,13 @@
 			var quickList = this.options.quickList;
 			quickList = quickList.slice( 0, 16 );
 			quickList.sort( $.uls.data.sortByAutonym );
-			var $quickListsection = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', 'uls-lcd-quicklist' );
-			$quickListsection.append( $( '<h3>' ).addClass( 'eleven columns uls-lcd-region-section offset-by-one' ).text( 'Common languages' ) );
-			this.$element.prepend( $quickListsection );
-			this.regionDivs[ 'quick' ] = $quickListsection;
+			var $quickListSection = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', 'uls-lcd-quicklist' );
+			var $quickListSectionTitle = $( '<h3 data-i18n="uls-common-languages">' )
+				.addClass( 'eleven columns uls-lcd-region-section offset-by-one' )
+				.text( 'Common languages' ); // This is placeholder text if jquery.i18n not present
+			$quickListSection.append( $quickListSectionTitle );
+			this.$element.prepend( $quickListSection );
+			this.regionDivs[ 'quick' ] = $quickListSection;
 			for ( var i = 0; i < quickList.length; i++) {
 				var $column = this.getColumn( 'quick', i % 4 === 0 );
 				var langCode = quickList[i];
@@ -200,8 +211,9 @@
 					);
 				$column.append( $li );
 			}
-			$quickListsection.show();
-			return $quickListsection;
+			$quickListSection.show();
+			$quickListSectionTitle.i18n();
+			return $quickListSection;
 		},
 
 		show: function() {
@@ -222,7 +234,10 @@
 		noResults: function() {
 			this.$noResults.show();
 			var $suggestions = this.quicklist();
-			$suggestions.find( 'h3' ).text( 'You may be interested in' );
+			$suggestions.find( 'h3' )
+				.data( 'i18n', 'uls-no-results-suggestion-title' )
+				.text( "You may be interested in:" )
+				.i18n();
 			this.$noResults.find( 'h2' ).after( $suggestions );
 		},
 
