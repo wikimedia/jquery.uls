@@ -151,7 +151,7 @@
 		},
 
 		i18n: function() {
-			this.$element.find( '[data-i18n]' ).i18n();
+			this.$menu.find( '[data-i18n]' ).i18n();
 		},
 
 		defaultSearch: function () {
