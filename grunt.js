@@ -1,6 +1,7 @@
-/*global module:false*/
+/* global module:false */
 module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-css');
+	grunt.loadNpmTasks('grunt-cp');
 	// Project configuration.
 	grunt
 			.initConfig({
@@ -17,20 +18,30 @@ module.exports = function(grunt) {
 						src: [ '<banner:meta.banner>','src/jquery.uls.data.js',
 						'src/jquery.uls.data.utils.js', 'src/jquery.uls.lcd.js',
 						'src/jquery.uls.languagefilter.js', 'src/jquery.uls.regionfilter.js',
-						 'src/jquery.uls.core.js'],
-						dest : 'dist/<%= pkg.name %>.js'
+						'src/jquery.uls.core.js'],
+						dest : 'dist/<%= pkg.name %>/<%= pkg.name %>.js'
 					},
 					css: {
 						src: [ 'css/jquery.uls.css', 'css/jquery.uls.grid.css',
 							'css/jquery.uls.lcd.css' ],
-						dest : 'dist/<%= pkg.name %>.css'
+						dest : 'dist/<%= pkg.name %>/css/<%= pkg.name %>.css'
+					}
+				},
+				cp: {
+					i18n: {
+						src: 'i18n',
+						dest: 'dist/jquery.uls/i18n'
+					},
+					images: {
+						src: 'images',
+						dest: 'dist/jquery.uls/images'
 					}
 				},
 				min : {
 					dist : {
 						src : [ '<banner:meta.banner>',
 								'<config:concat.js.dest>' ],
-						dest : 'dist/<%= pkg.name %>.min.js'
+						dest : 'dist/<%= pkg.name %>/<%= pkg.name %>.min.js'
 					}
 				},
 				qunit : {
@@ -39,7 +50,7 @@ module.exports = function(grunt) {
 				cssmin : {
 					dist: {
 						src : '<config:concat.css.dest>',
-						dest : 'dist/<%= pkg.name %>.min.css'
+						dest : 'dist/<%= pkg.name %>/css/<%= pkg.name %>.min.css'
 					}
 				},
 				lint : {
@@ -84,7 +95,7 @@ module.exports = function(grunt) {
 				}
 			});
 	// Default task.
-	grunt.registerTask('default', 'lint cssmin concat min csslint');
+	grunt.registerTask('default', 'lint cssmin concat min cp csslint');
 	grunt.registerTask('test', 'lint qunit');
 
 };
