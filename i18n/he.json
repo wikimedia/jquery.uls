@@ -1,3 +1,20 @@
 {
-"uls-select-language": "בחר את השפה"
+"@metadata": {
+	"author": "Amire80",
+	"last-updated": "2012-09-21",
+	"locale": "he",
+	"message-documentation": "qqq"
+},
+"uls-select-language": "בחירת שפה",
+"uls-region-WW": "עולמי",
+"uls-region-AM": "אמריקה",
+"uls-region-AF": "אפריקה",
+"uls-region-EU": "אירופה",
+"uls-region-AS": "אסיה",
+"uls-region-ME": "המזרח התיכון",
+"uls-region-PA": "האוקיינוס השקט",
+"uls-no-results-found": "לא נמצאו שפות",
+"uls-common-languages": "שפות נפוצות",
+"uls-no-results-suggestion-title": "אולי זה יעזור:",
+"uls-search-help": "אפשר לחפש לפי שם שפה, שם שיטת הכתב וקוד ISO של השפה, או לעיין לפי אזור:"
 }

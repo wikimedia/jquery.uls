@@ -1,19 +1,19 @@
 {
 "@metadata": {
 	"author": "Santhosh Thottingal <santhosh.thottingal@gmail.com>",
-	"last-updated": "2012 Septmber 21",
+	"last-updated": "2012-09-21",
 	"locale": "qqq"
 },
 "uls-select-language": "Language Selector Title",
 "uls-region-WW": "Label for worldwide languages. They are languages spoken in multiple countries. Eg: English, French, Spanish etc. This lable is used in the map region of ULS and as the title of section showing worldwide languages. Translation should not be descriptive.",
-"uls-region-AM": "America",
-"uls-region-AF": "Africa",
-"uls-region-EU": "Europe",
-"uls-region-AS": "Asia",
-"uls-region-ME": "Middle East",
-"uls-region-PA": "Pacific",
-"uls-no-results-found": "No results found",
-"uls-common-languages": "Common languages",
-"uls-no-results-suggestion-title": "You may be interested in:", 
-"uls-search-help": "You can search by language name, script name, ISO code of language or you can browse by region:"
+"uls-region-AM": "Label for America",
+"uls-region-AF": "Label for Africa",
+"uls-region-EU": "Label for Europe",
+"uls-region-AS": "Label for Asia",
+"uls-region-ME": "Label for Middle East",
+"uls-region-PA": "Label for Pacific",
+"uls-no-results-found": "Title text for 'No results found' section",
+"uls-common-languages": "Title for languages listed based on GeoIP, previously used languaguage, browser accept-language etc.",
+"uls-no-results-suggestion-title": "Title for language suggestion in 'no results found' screen", 
+"uls-search-help": "Help text for searching. After this text, there will be a set of links for regions"
 }
