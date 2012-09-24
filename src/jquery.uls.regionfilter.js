@@ -65,13 +65,6 @@
 		},
 
 		show: function() {
-			// Make the selected region (and it only) active
-			$( '.regionselector' ).removeClass( 'active' );
-			if ( this.regionGroup ) {
-				// if there is a region group, make it active.
-				this.$element.addClass( 'active' );
-			}
-
 			if ( this.cache ) {
 				// If the result cache is present, render the results from there.
 				var result = null;
@@ -141,6 +134,12 @@
 				// Re-populate the list of languages
 				this.options.$target.empty();
 				this.show();
+				// Make the selected region (and it only) active
+				$( '.regionselector' ).removeClass( 'active' );
+				if ( this.regionGroup ) {
+					// if there is a region group, make it active.
+					this.$element.addClass( 'active' );
+				}
 			}
 		}
 	};
