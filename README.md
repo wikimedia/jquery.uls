@@ -4,6 +4,8 @@ Universal  Language Selector
 
 [![Build Status](https://secure.travis-ci.org/wikimedia/jquery.uls.png)](http://travis-ci.org/wikimedia/jquery.uls)
 
+This is a [Wikimedia Foundation Internationalization team project](https://www.mediawiki.org/wiki/Project_Milkshake).
+
 Quick start
 -----------
 
@@ -17,7 +19,7 @@ Documentation
 For documentation and examples please visit the [wiki](https://github.com/wikimedia/jquery.uls/wiki/_pages)
 
 
-How to build and test jQuery i18n
+How to build and test jQuery ULS
 ----------------------------------
 
 First, get a copy of the git repo by running:
