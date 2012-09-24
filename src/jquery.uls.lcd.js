@@ -19,9 +19,8 @@
  * @licence MIT License
  */
 
-(function( $ ) {
+( function( $ ) {
 	"use strict";
-
 
 	var noResultsTemplate = '\
 	<div class="twelve columns uls-no-results-view">\
@@ -94,6 +93,10 @@
 
 				var $li = $( '<li>' )
 					.data( 'code', langCode )
+					.attr( {
+						lang: langCode,
+						dir: $.uls.data.getDir( langCode )
+					} )
 					.append(
 						$( '<a>' ).prop( 'href', '#' ).prop( 'title', language ).html( langName )
 					);
@@ -206,6 +209,10 @@
 				var langName = $.uls.data.autonym( langCode ) || language || langCode;
 				var $li = $( '<li>' )
 					.data( 'code', langCode )
+					.attr( {
+						lang: langCode,
+						dir: $.uls.data.getDir( langCode )
+					} )
 					.append(
 						$( '<a>' ).prop( 'href', '#' ).prop( 'title', language ).html( langName )
 					);
