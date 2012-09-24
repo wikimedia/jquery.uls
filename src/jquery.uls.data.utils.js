@@ -346,7 +346,7 @@
 	 */
 	$.uls.data.getDir = function( language ) {
 		return $.uls.data.isRtl( language ) ? 'rtl' : 'ltr';
-		};
+	};
 
 	/**
 	 * Returns the languages spoken in a territory.
