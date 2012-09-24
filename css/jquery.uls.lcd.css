@@ -5,6 +5,7 @@
 .uls-lcd-region-section ul li:hover {
 	background-color: #eaeff7;
 }
+
 /* Language list */
 .uls-language-list {
 	height: 22em;
@@ -22,7 +23,32 @@
 	font-weight: normal;
 	overflow: hidden;
 	white-space: nowrap;
+
+	/*
+	 * Some languages have long names for various reasons and we still want
+	 * them to appear on one line.
+	 * To make it work correctly, the directionality must be set correctly
+	 * on the item level.
+	 */
 	text-overflow: ellipsis;
+
+	/*
+	 * The directionality (ltr/rtl) for each list item is set dynamically
+	 * as HTML attributes in JavaScript. Setting directionality also applies
+	 * alignment, but a list with mixed alignment is hard to read.
+	 * All items are therefore explicitly aligned to the left, including names
+	 * of right-to-left languages in left-to-right environment and vice versa.
+	 * As long as the directionality of the item is set correctly, the text
+	 * is readable.
+	 */
+	text-align: left;
+
+	
+	/*
+	 * We don't want any visible bullets in this list.
+	 */
+	list-style-image: none;
+	list-style-type: none;
 }
 
 .uls-language-list strong {
