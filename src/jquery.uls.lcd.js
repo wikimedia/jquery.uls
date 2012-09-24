@@ -241,7 +241,7 @@
 			this.$noResults.find( 'h2' ).after( $suggestions );
 		},
 
-		listen: function() {
+		listen: function () {
 			var that = this;
 			if ( this.options.clickhandler ) {
 				this.$element.on( 'click', 'div.row li', function() {
@@ -251,11 +251,26 @@
 
 			// The region section need to be in sync with the map filter.
 			that.$element.scroll( function () {
-				if ( this.offsetHeight + this.scrollTop >= this.scrollHeight ) {
+				var scrollTop = $( this ).position().top;
+				var scrollBottom = $( this ).height();
+				if ( this.offsetHeight + this.scrollTop >= this.scrollHeight/2 ) {
 					that.$element.trigger( 'scrollend' );
 				}
-
+				// The region section need to be in sync with the map filter.
+				var inviewRegion = 'WW';
+				that.$element.find( 'div.uls-lcd-region-section' ).each( function () {
+					var top = $( this ).position().top;
+					var height = $( this ).height();
+					if ( top < scrollTop && height > scrollBottom ) {
+						inviewRegion = $( this ).attr( 'id' );
+						return true;
+					}
+				} );
+				var inview = $.uls.data.regiongroups[inviewRegion];
+				$( '.regionselector' ).removeClass( 'active' );
+				$( '#uls-region-' + inview ).addClass( 'active' );
 			} );
+
 		}
 
 	};
