@@ -2,11 +2,10 @@ languages:
   aa: [Latn, [AF], Qafár af]
   ab: [Cyrl, [EU], Аҧсшәа]
   ace: [Latn, [AS, PA], Acèh]
-  ady-cyrl: [Cyrl, [EU], Адыгэбзэ]
-  ady-latn: [Latn, [EU], Adygabze]
- # XXX multiple script
- # ady: [[Cyrl, Latn], [EU], [Адыгэбзэ, Adygabze]]
-  ady: [Cyrl, [EU], Адыгэбзэ]
+ # FIXME: alias
+  ady: [Cyrl, [EU, ME], Адыгэбзэ]
+  ady-cyrl: [Cyrl, [EU, ME], Адыгэбзэ]
+  ady-latn: [Latn, [EU, ME], Adygabze]
   aeb: [Arab, [AF], زَوُن]
   af: [Latn, [AF], Afrikaans]
   ahr: [Deva, [AS], अहिराणी]
@@ -30,8 +29,12 @@ languages:
   av: [Cyrl, [EU], авар]
   avk: [Latn, [WW], Kotava]
   ay: [Latn, [AM], Aymar aru]
- # also Arab, and in the past - Cyrl
+ # Latin is the default in Azerbaijani Wikipedia
+ # FIXME: alias
   az: [Latn, [EU, ME], azərbaycanca]
+  az-latn: [Latn, [EU, ME], azərbaycanca]
+  az-arab: [Arab, [EU, ME], آذربايجانجا]
+  az-cyrl: [Latn, [EU, ME], азәрбајҹанҹа]
   ba: [Cyrl, [EU], башҡортса]
   bar: [Latn, [EU], Boarisch]
   bbc-latn: [Latn, [AS], Batak Toba]
@@ -39,7 +42,7 @@ languages:
   bbc: [Batk, [AS], Batak Toba/Batak autonym unknown]
   bcc: [Arab, [AS, ME], بلوچی مکرانی]
   bcl: [Latn, [AS], Bikol Central]
-# FIXME: which is the correct code?
+ # FIXME: alias
   be-tarask: [Cyrl, [EU], беларуская (тарашкевіца)]
   be-x-old: [Cyrl, [EU], беларуская (тарашкевіца)]
   be: [Cyrl, [EU], беларуская]
@@ -73,17 +76,14 @@ languages:
   ckb: [Arab, [ME], کوردی]
   co: [Latn, [EU], corsu]
   cps: [Latn, [AS], Capiceño]
+ # FIXME: alias
+  cr: [Cans, [AM], ᓀᐦᐃᔭᐍᐏᐣ]
   cr-cans: [Cans, [AM], ᓀᐦᐃᔭᐍᐏᐣ]
   cr-latn: [Latn, [AM], Nēhiyawēwin]
- # XXX multiple script
- # cr: [[Latn, Cans], [AM], [Nēhiyawēwin, ᓀᐦᐃᔭᐍᐏᐣ]]
-  cr: [Cans, [AM], Nēhiyawēwin / ᓀᐦᐃᔭᐍᐏᐣ]
-  crh-cyrl: [Cyrl, [EU], къырымтатарджа (Кирилл)]
-  crh-latn: [Latn, [EU], qırımtatarca (Latin)]
- # XXX multiple script
- # Latn is default in Wikipedia, Cyrl is common IRL
- # crh: [[Cyrl, Latn], [EU], [къырымтатарджа, qırımtatarca]]
-  crh: [Latn, [EU], къырымтатарджа / qırımtatarca]
+ # FIXME: alias
+  crh: [Latn, [EU], qırımtatarca]
+  crh-cyrl: [Cyrl, [EU], къырымтатарджа]
+  crh-latn: [Latn, [EU], qırımtatarca]
   cs: [Latn, [EU], česky]
   csb: [Latn, [EU], kaszëbsczi]
  # FIXME: what script?
@@ -333,7 +333,9 @@ languages:
   om: [Latn, [AF], Oromoo]
   or: [Orya, [AS], ଓଡ଼ିଆ]
   os: [Cyrl, [EU], Ирон]
+ # FIXME: alias
   pa: [Guru, [AS], ਪੰਜਾਬੀ]
+  pa-guru: [Guru, [AS], ਪੰਜਾਬੀ]
   pag: [Latn, [AS], Pangasinan]
   pam: [Latn, [AS], Kapampangan]
   pap: [Latn, [AM], Papiamentu]
@@ -421,11 +423,14 @@ languages:
   sn: [Latn, [AF], chiShona]
   so: [Latn, [AF], Soomaaliga]
   sq: [Latn, [EU], shqip]
-  sr-ec: [Cyrl, [EU], српски (ћирилица)]
-  sr-el: [Latn, [EU], srpski (latinica)]
- # XXX multiple script
- # sr: [[Cyrl, Latn], [EU], [српски, srpski]]
-  sr: [Cyrl, [EU], српски / srpski]
+ # FIXME: do we need the double name here?
+  sr: [Cyrl, [EU], српски]
+ # FIXME: alias
+  sr-ec: [Cyrl, [EU], српски]
+  sr-cyrl: [Cyrl, [EU], српски]
+ # FIXME: alias
+  sr-el: [Latn, [EU], srpski]
+  sr-latn: [Latn, [EU], srpski]
   srn: [Latn, [AM, EU], Sranantongo]
   ss: [Latn, [AF], SiSwati]
   st: [Latn, [AF], Sesotho]
@@ -461,9 +466,10 @@ languages:
   tsd: [Grek, [EU], Τσακωνικά]
   tt-cyrl: [Cyrl, [EU], татарча]
   tt-latn: [Latn, [EU], tatarça]
- # XXX multiple script
- # tt: [[Cyrl, Latn] [EU], [татарча, tatarça]]
-  tt: [Cyrl, [EU], татарча / tatarça]
+ # FIXME: alias
+  tt: [Cyrl, [EU], татарча]
+  tt-cyrl: [Cyrl, [EU], татарча]
+  tt-latn: [Latn, [EU], tatarça]
   ttt: [Cyrl, [AS], Tati]
   tum: [Latn, [AF], chiTumbuka]
   tw: [Latn, [AF], Twi]
@@ -474,9 +480,10 @@ languages:
   udm: [Cyrl, [EU], удмурт]
   ug-arab: [Arab, [AS], ئۇيغۇرچە]
   ug-latn: [Latn, [AS], Uyghurche]
- # XXX multiple script
- # ug: [[Arab, Latn], [AS], [ئۇيغۇرچە, Uyghurche]]
-  ug: [Arab, [AS], ئۇيغۇرچە / Uyghurche ]
+ # FIXME: alias
+  ug: [Arab, [AS], ئۇيغۇرچە ]
+  ug-arab: [Arab, [AS], ئۇيغۇرچە ]
+  ug-latn: [Latn, [AS], Uyghurche ]
   uk: [Cyrl, [EU], українська]
   ur: [Arab, [AS, ME], اردو]
   uz: [Latn, [AS], oʻzbekcha]
