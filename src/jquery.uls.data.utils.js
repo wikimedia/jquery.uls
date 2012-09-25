@@ -17,7 +17,7 @@
  * @licence MIT License
  */
 
-(function ( $ ) {
+( function ( $ ) {
 	"use strict";
 
 	/**
