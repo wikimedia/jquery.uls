@@ -1,0 +1,19 @@
+{
+	"uls-select-language": "V\u00e4lj spr\u00e5k",
+	"uls-region-WW": "V\u00e4rldsomfattande",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Asien",
+	"uls-region-ME": "Mellan\u00f6stern",
+	"uls-region-PA": "Stilla havet",
+	"uls-no-results-found": "Inga resultat hittades",
+	"uls-common-languages": "Vanliga spr\u00e5k",
+	"uls-no-results-suggestion-title": "Du kan vara intresserad av:",
+	"uls-search-help": "Du kan s\u00f6ka efter spr\u00e5kets namn, skriptnamn, ISO-koden f\u00f6r spr\u00e5ket eller bl\u00e4ddra efter region:",
+	"@metadata": {
+		"authors": [
+			"WikiPhoenix"
+		]
+	}
+}

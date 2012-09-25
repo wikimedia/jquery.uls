@@ -1,0 +1,19 @@
+{
+	"uls-select-language": "\uc5b8\uc5b4 \uc120\ud0dd",
+	"uls-region-WW": "\uc804\uc138\uacc4",
+	"uls-region-AM": "\uc544\uba54\ub9ac\uce74",
+	"uls-region-AF": "\uc544\ud504\ub9ac\uce74",
+	"uls-region-EU": "\uc720\ub7fd",
+	"uls-region-AS": "\uc544\uc2dc\uc544",
+	"uls-region-ME": "\uc911\ub3d9",
+	"uls-region-PA": "\ud0dc\ud3c9\uc591",
+	"uls-no-results-found": "\uacb0\uacfc\uac00 \uc5c6\uc2b5\ub2c8\ub2e4",
+	"uls-common-languages": "\uacf5\uc6a9\uc5b4",
+	"uls-no-results-suggestion-title": "\uc774\uac83\uc744 \ucc3e\uc73c\uc168\ub098\uc694:",
+	"uls-search-help": "\uc5b8\uc5b4 \uc774\ub984, \ubb38\uc790 \uccb4\uacc4 \uc774\ub984, \uc5b8\uc5b4\uc758 ISO \ucf54\ub4dc\ub85c \ucc3e\uc744 \uc218 \uc788\uc73c\uba70 \uc9c0\uc5ed\ubcc4\ub85c \ucc3e\uc544\ubcfc \uc218 \uc788\uc2b5\ub2c8\ub2e4:",
+	"@metadata": {
+		"authors": [
+			"\uc544\ub77c"
+		]
+	}
+}

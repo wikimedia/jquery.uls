@@ -1,3 +1,20 @@
 {
-"uls-select-language": "Wählen Sie eine Sprache"
+	"uls-select-language": "W\u00e4hle eine Sprache",
+	"uls-region-WW": "Weltweit",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Asien",
+	"uls-region-ME": "Mittlerer Osten",
+	"uls-region-PA": "Pazifik",
+	"uls-no-results-found": "Es wurden keine Ergebnisse gefunden.",
+	"uls-common-languages": "Sprachen",
+	"uls-no-results-suggestion-title": "Dies k\u00f6nnte dich interessieren:",
+	"uls-search-help": "Du kannst nach dem Namen der Sprache suchen, dem Namen der Schrift, dem ISO-Code der Sprache oder aber die Suche \u00fcber eine Region durchf\u00fchren:",
+	"@metadata": {
+		"authors": [
+			"Kghbln",
+			"Metalhead64"
+		]
+	}
 }

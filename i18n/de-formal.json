@@ -1,0 +1,19 @@
+{
+	"uls-select-language": "W\u00e4hlen Sie eine Sprache",
+	"uls-region-WW": null,
+	"uls-region-AM": null,
+	"uls-region-AF": null,
+	"uls-region-EU": null,
+	"uls-region-AS": null,
+	"uls-region-ME": null,
+	"uls-region-PA": null,
+	"uls-no-results-found": null,
+	"uls-common-languages": null,
+	"uls-no-results-suggestion-title": "Dies k\u00f6nnte Sie interessieren:",
+	"uls-search-help": "Sie k\u00f6nnen nach dem Namen der Sprache suchen, dem Namen der Schrift, dem ISO-Code der Sprache oder aber die Suche \u00fcber eine Region durchf\u00fchren:",
+	"@metadata": {
+		"authors": [
+			"Kghbln"
+		]
+	}
+}

@@ -1,3 +1,20 @@
 {
-"uls-select-language": "言語を選択する"
+	"uls-select-language": "\u8a00\u8a9e\u306e\u9078\u629e",
+	"uls-region-WW": "\u5168\u4e16\u754c",
+	"uls-region-AM": "\u30a2\u30e1\u30ea\u30ab",
+	"uls-region-AF": "\u30a2\u30d5\u30ea\u30ab",
+	"uls-region-EU": "\u30e8\u30fc\u30ed\u30c3\u30d1",
+	"uls-region-AS": "\u30a2\u30b8\u30a2",
+	"uls-region-ME": "\u4e2d\u6771",
+	"uls-region-PA": "\u592a\u5e73\u6d0b\u5730\u57df",
+	"uls-no-results-found": "\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f",
+	"uls-common-languages": "\u3088\u304f\u4f7f\u7528\u3059\u308b\u8a00\u8a9e",
+	"uls-no-results-suggestion-title": "\u3082\u3057\u304b\u3057\u3066:",
+	"uls-search-help": "\u8a00\u8a9e\u540d\u3001\u6587\u5b57\u4f53\u7cfb\u540d\u3001\u8a00\u8a9e\u306e ISO \u30b3\u30fc\u30c9\u3067\u691c\u7d22\u3067\u304d\u307e\u3059\u3002\u5730\u57df\u5225\u306e\u4e00\u89a7\u304b\u3089\u9078\u629e\u3059\u308b\u3053\u3068\u3082\u3067\u304d\u307e\u3059:",
+	"@metadata": {
+		"authors": [
+			"Santhosh.thottingal",
+			"Shirayuki"
+		]
+	}
 }
