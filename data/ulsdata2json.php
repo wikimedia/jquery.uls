@@ -55,14 +55,16 @@ $parsedLangdb['territories'] = array();
 foreach ( $supplementalData->territoryInfo->territory as $territoryRecord ) {
 	$territoryAtributes = $territoryRecord->attributes();
 	$territoryCodeAttr = $territoryAtributes['type'];
-	$territoryCode = "$territoryCodeAttr[0]";
+	$territoryCode = (string) $territoryCodeAttr[0];
 	$parsedLangdb['territories'][$territoryCode] = array();
 
 	foreach ( $territoryRecord->languagePopulation as $languageRecord ) {
 		$languageAttributes = $languageRecord->attributes();
 		$languageCodeAttr = $languageAttributes['type'];
-		$parsedLangdb['territories'][$territoryCode][] = "$languageCodeAttr[0]";
-	}
+		// Lower case is a convention for language codes in ULS.
+		// '_' is used in CLDR for compound codes and it's replaced with '-' here.
+		$parsedLangdb['territories'][$territoryCode][] =
+			strtr( strtolower( (string) $languageCodeAttr[0] ), '_', '-' );	}
 }
 
 print( "Writing JSON langdb...\n" );
