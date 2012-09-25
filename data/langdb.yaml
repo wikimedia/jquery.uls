@@ -199,8 +199,9 @@ languages:
   jam: [Latn, [AM], Patois]
   jbo: [Latn, [WW], Lojban]
   jut: [Latn, [EU], jysk]
- # also in the Javanese script (Java), but the Wikipedia is in Latn
   jv: [Latn, [AS, PA], Basa Jawa]
+ # For support in webfonts.
+  jv-java: [Java, [AS, PA], ꦧꦱꦗꦮ]
   ka: [Geor, [EU], ქართული]
   kaa: [Latn, [AS], Qaraqalpaqsha]
  # Can also be Tfng, but the Wikipedia is mostly Latn
