@@ -1,0 +1,19 @@
+{
+	"uls-select-language": "V\u00e6lg sprog",
+	"uls-region-WW": "Verdensomsp\u00e6ndende",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Asien",
+	"uls-region-ME": "Mellem\u00f8sten",
+	"uls-region-PA": "Stillehavet",
+	"uls-no-results-found": "Ingen resultater fundet",
+	"uls-common-languages": "Almindelige sprog",
+	"uls-no-results-suggestion-title": "Du er m\u00e5ske interesseret i:",
+	"uls-search-help": "Du kan s\u00f8ge p\u00e5 sprogets navn, skriftens navn eller sprogets ISO-kode, eller du kan bladre hen til sproget efter regionen:",
+	"@metadata": {
+		"authors": [
+			"Peter Alberti"
+		]
+	}
+}

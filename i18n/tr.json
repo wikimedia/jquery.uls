@@ -1,0 +1,19 @@
+{
+	"uls-select-language": "Dil se\u00e7in",
+	"uls-region-WW": "D\u00fcnya \u00e7ap\u0131nda",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Avrupa",
+	"uls-region-AS": "Asya",
+	"uls-region-ME": "Orta Do\u011fu",
+	"uls-region-PA": "Pasifik",
+	"uls-no-results-found": "Sonu\u00e7 bulunamad\u0131",
+	"uls-common-languages": "Ortak diller",
+	"uls-no-results-suggestion-title": "Belki ilginizi \u00e7ekebilir:",
+	"uls-search-help": null,
+	"@metadata": {
+		"authors": [
+			"Erdemaslancan"
+		]
+	}
+}

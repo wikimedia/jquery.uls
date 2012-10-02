@@ -1,0 +1,19 @@
+{
+	"uls-select-language": "Choisir la langue",
+	"uls-region-WW": "Dans le monde entier",
+	"uls-region-AM": "Am\u00e9rique",
+	"uls-region-AF": "Afrique",
+	"uls-region-EU": "Europe",
+	"uls-region-AS": "Asie",
+	"uls-region-ME": "Moyen-Orient",
+	"uls-region-PA": "Pacifique",
+	"uls-no-results-found": "Aucun r\u00e9sultat trouv\u00e9",
+	"uls-common-languages": "Langues communes",
+	"uls-no-results-suggestion-title": "Vous pouvez \u00eatre int\u00e9ress\u00e9 par:",
+	"uls-search-help": "Vous pouvez rechercher par nom de langue, par nom du script, par code ISO de la langue, ou vous pouvez naviguer par r\u00e9gion:",
+	"@metadata": {
+		"authors": [
+			"Gomoko"
+		]
+	}
+}

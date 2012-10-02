@@ -2,7 +2,7 @@
 	"uls-select-language": "\u0bae\u0bc6\u0bbe\u0bb4\u0bbf \u0ba4\u0bc7\u0bb0\u0bcd\u0bb5\u0bc1",
 	"uls-region-WW": null,
 	"uls-region-AM": "\u0b85\u0bae\u0bc6\u0bb0\u0bbf\u0b95\u0bcd\u0b95\u0bbe",
-	"uls-region-AF": "\u0b86\u0baa\u0bcd\u0bb0\u0bbf\u0b95\u0bcd\u0b95\u0bbe",
+	"uls-region-AF": "\u0b86\u0baa\u0bcd\u0baa\u0bbf\u0bb0\u0bbf\u0b95\u0bcd\u0b95\u0bbe",
 	"uls-region-EU": "\u0b90\u0bb0\u0bcb\u0baa\u0bcd\u0baa\u0bbe",
 	"uls-region-AS": "\u0b86\u0b9a\u0bbf\u0baf\u0bbe",
 	"uls-region-ME": null,
@@ -13,6 +13,7 @@
 	"uls-search-help": null,
 	"@metadata": {
 		"authors": [
+			"Kanags",
 			"Santhosh.thottingal"
 		]
 	}
