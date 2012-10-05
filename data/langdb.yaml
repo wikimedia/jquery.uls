@@ -49,6 +49,7 @@ languages:
   bew: [Latn, [AS], Bahasa Betawi]
   bfq: [Taml, [AS], படகா]
   bg: [Cyrl, [EU], български]
+ # FIXME - currently says Bhojpuri, but it's a macrolanguage.
   bh: [Deva, [AS], भोजपुरी]
   bho: [Deva, [AS], भोजपुरी]
   bi: [Latn, [PA], Bislama]
@@ -106,7 +107,6 @@ languages:
   eml: [Latn, [EU], emiliàn e rumagnòl]
   en-ca: [Latn, [AM], Canadian English]
   en-gb: [Latn, [EU, AS, PA], British English]
- # world?
   en: [Latn, [EU, AM, AF, ME, AS, PA, WW], English]
   eo: [Latn, [WW], Esperanto]
   es-419: [Latn, [AM], español de America Latina]
@@ -133,6 +133,7 @@ languages:
   ga: [Latn, [EU], Gaeilge]
   gag: [Latn, [EU], Gagauz]
   gah: [Latn, [AS], Alekano]
+ # FIXME: alias
   gan-hans: [Hans, [AS], 赣语（简体）]
   gan-hant: [Hant, [AS], 贛語（繁體）]
   gan: [Hant, [AS], 贛語]
@@ -142,12 +143,10 @@ languages:
   gl: [Latn, [EU], galego]
   glk: [Arab, [ME], گیلکی]
   gn: [Latn, [AM], "Avañe'ẽ"]
+ # FIXME: alias
+  gom: [Deva, [AS], कोंकणी]
   gom-deva: [Deva, [AS], कोंकणी]
   gom-latn: [Latn, [AS], Konknni]
- # XXX multiple script
- # gom: [[Deva, Latn], [AS], [कोंकणी, Konknni]]
-  gom: [Deva, [AS], कोंकणी / Konknni]
- # hmph?..
   got: [Goth, [EU], 𐌲𐌿𐍄𐌹𐍃𐌺]
   grc: [Grek, [EU], Ἀρχαία ἑλληνικὴ]
   gsw: [Latn, [EU], Alemannisch]
@@ -155,19 +154,18 @@ languages:
   guc: [Latn, [AM], Wayúu]
   gur: [Latn, [AF], Gurenɛ]
   gv: [Latn, [EU], Gaelg]
+ # FIXME: alias
   ha-arab: [Arab, [AF], هَوُسَ]
   ha-latn: [Latn, [AF], Hausa]
   ha: [Latn, [AF], Hausa]
   hak: [Latn, [AS], Hak-kâ-fa]
   haw: [Latn, [AM, PA], Hawai`i]
   he: [Hebr, [ME], עברית]
- # Or maybe world?
   hi: [Deva, [AS], हिन्दी]
+ # FIXME: alias
+  hif: [Latn, [PA, AS], Fiji Hindi]
   hif-deva: [Deva, [AS], फ़ीजी हिन्दी]
   hif-latn: [Latn, [PA, AS], Fiji Hindi]
- # XXX multiple script
- # hif: [[Deva, Latn], [PA, AS], [फ़ीजी हिन्दी, Fiji Hindi]]
-  hif: [Latn, [PA, AS], फ़ीजी हिन्दी / Fiji Hindi]
   hil: [Latn, [AS], Ilonggo]
   hne: [Deva, [AS], छत्तीसगढ़ी]
   ho: [Latn, [PA], Hiri Motu]
@@ -194,7 +192,7 @@ languages:
   is: [Latn, [EU], íslenska]
   it: [Latn, [EU], italiano]
  # For variants ike-* is used
-  iu: [Cans, [AM], ᐃᓄᒃᑎᑐᑦ/inuktitut]
+  iu: [Cans, [AM], ᐃᓄᒃᑎᑐᑦ]
   ja: [Jpan, [AS], 日本語]
   jam: [Latn, [AM], Patois]
   jbo: [Latn, [WW], Lojban]
@@ -216,15 +214,14 @@ languages:
   ki: [Latn, [AF], Gĩkũyũ]
   kiu: [Latn, [EU, ME], Kırmancki]
   kj: [Latn, [AF], Kwanyama]
+ # FIXME: alias
+  kk: [Cyrl, [EU, AS], қазақша]
   kk-arab: [Arab, [EU, AS], قازاقشا (تٴوتە)]
   kk-cn: [Arab, [EU, AS, ME], قازاقشا (جۇنگو)]
-  kk-cyrl: [Cyrl, [EU, AS], қазақша (кирил)]
+  kk-cyrl: [Cyrl, [EU, AS], қазақша]
   kk-kz: [Cyrl, [EU, AS], қазақша (Қазақстан)]
-  kk-latn: [Latn, [EU, AS, ME], qazaqşa (latın)]
+  kk-latn: [Latn, [EU, AS, ME], qazaqşa]
   kk-tr: [Latn, [EU, AS, ME], qazaqşa (Türkïya)]
- # XXX multiple script
- # kk: [[Arab, Cyrl, Latn] [EU, AS], [قازاقشا, қазақша, qazaqşa]]
-  kk: [Cyrl, [EU, AS], қазақша / قازاقشا / qazaqşa]
   kl: [Latn, [AM, EU], kalaallisut]
   km: [Khmr, [AS], ភាសាខ្មែរ]
   kn: [Knda, [AS], ಕನ್ನಡ]
@@ -240,25 +237,22 @@ languages:
   krl: [Latn, [EU], Karjala]
   ks-arab: [Arab, [AS], کٲشُر]
   ks-deva: [Deva, [AS], कॉशुर]
- # XXX multiple script
- # Arab is first here just because it's the current default in the Wikipedia. Deva may be needed, too.
- # ks: [[Deva, Arab], [AS], [कॉशुर, کٲشُر]]
-  ks: [Arab, [AS], कॉशुर / کٲشُر]
+ # FIXME: alias
+  ks: [Arab, [AS], کٲشُر]
   ksf: [Latn, [AF], Bafia]
   ksh: [Latn, [EU], Ripoarisch]
-  ku-arab: [Arab, [EU, ME], كوردي (عەرەبی)]
-  ku-latn: [Latn, [EU, ME], Kurdî (latînî)]
- # XXX multiple script
- # ku: [[Arab, Latn], [EU, ME], [كوردي , Kurdî]]
-  ku: [Latn, [EU, ME], كوردي / Kurdî]
+ # FIXME: alias
+  ku: [Latn, [EU, ME], Kurdî]
+  ku-arab: [Arab, [EU, ME], كوردي]
+  ku-latn: [Latn, [EU, ME], Kurdî]
   kv: [Cyrl, [EU], коми]
   kw: [Latn, [EU], kernowek]
   ky: [Cyrl, [AS], Кыргызча]
   la: [Latn, [EU], Latina]
- # Most identified with Turkey, Bulgaria, Greece, Spain and Israel,
- # but also spoken in Latin America and elsewhere.
- # Wikipedia is mostly in Latn, but also in Hebr. (Comparable to az.)
+ # FIXME: alias
   lad: [Latn, [ME, EU, AM], Ladino]
+  lad-latn: [Latn, [ME, EU, AM], Ladino]
+  lad-hebr: [Hebr, [ME, EU, AM], לאדינו]
   lb: [Latn, [EU], Lëtzebuergesch]
   lbe: [Cyrl, [EU], лакку]
   lez: [Cyrl, [EU], лезги]
@@ -357,7 +351,6 @@ languages:
   pru: [Latn, [EU], Prūsiskan]
   ps: [Arab, [AS, ME], پښتو]
   pt-br: [Latn, [AM], português do Brasil]
- # world?
   pt: [Latn, [EU, AM, AS, PA, AF, WW], português]
   qu: [Latn, [AM], Runa Simi]
   qug: [Latn, [AM], Runa shimi]
@@ -400,13 +393,11 @@ languages:
   sgs: [Latn, [EU], žemaitėška]
   sh-cyrl: [Cyrl, [EU], српскохрватски]
   sh-latn: [Latn, [EU], srpskohrvatski]
- # XXX multiple script
- # sh: [[Latn, Cyrl], [EU], [srpskohrvatski, српскохрватски]]
-  sh: [Latn, [EU], srpskohrvatski / српскохрватски]
+ # FIXME: alias
+  sh: [Latn, [EU], srpskohrvatski]
   shi-latn: [Latn, [AF], Tašlḥiyt]
   shi-tfng: [Tfng, [AF], ⵜⴰⵛⵍⵃⵉⵜ]
- # XXX multiple script
- # shi: [[Latn, Tfng], [AF], [Tašlḥiyt, ⵜⴰⵛⵍⵃⵉⵜ]]
+ # FIXME: which one to pick and alias?
   shi: [Latn, [AF], Tašlḥiyt / ⵜⴰⵛⵍⵃⵉⵜ]
   shn: [Mymr, [AS], လိၵ်ႈတႆး]
   si: [Sinh, [AS], සිංහල]
@@ -479,8 +470,6 @@ languages:
   tyv: [Cyrl, [AS], тыва дыл]
   tzm: [Tfng, [AF], ⵜⴰⵎⴰⵣⵉⵖⵜ]
   udm: [Cyrl, [EU], удмурт]
-  ug-arab: [Arab, [AS], ئۇيغۇرچە]
-  ug-latn: [Latn, [AS], Uyghurche]
  # FIXME: alias
   ug: [Arab, [AS], ئۇيغۇرچە ]
   ug-arab: [Arab, [AS], ئۇيغۇرچە ]
@@ -515,6 +504,8 @@ languages:
   yue: [Hant, [AS], 粵語]
   za: [Latn, [AS], Vahcuengh]
   zea: [Latn, [EU], Zeêuws]
+ # world? (may apply to many varieties of Chinese)
+  zh: [Hans, [AS], 中文]
   zh-classical: [Hant, [AS], 文言]
   zh-cn: [Hans, [AS], 中文（中国大陆）]
   zh-hans: [Hans, [AS], 中文（简体）]
@@ -526,17 +517,21 @@ languages:
   zh-sg: [Hans, [AS], 中文（新加坡）]
   zh-tw: [Hant, [AS], 中文（台灣）]
   zh-yue: [Hans, [AS], 粵語]
-  zh: [Hans, [AS], 中文]
   zu: [Latn, [AF], isiZulu]
 
+ # All the supported scripts, grouped logically.
+ #
  # The codes are taken from http://unicode.org/iso15924/iso15924-codes.html .
  #
  # The classification is roughly based on http://www.unicode.org/charts/
  # with some practical corrections.
- # The order of the groups affects display. It was suggested by Pau to distance
- # the largest groups from one another to improve discoverability.
-scriptgroups:
+ #
+ # The order of the groups affects display. Pau Giner suggested the order;
+ # the rationale of the order is to distance the largest groups from
+ # one another to improve discoverability.
+ #
  # The group name "Other" is reserved.
+scriptgroups:
  # It's hard to find a better place for Goth except the Latin group.
   Latin: [Latn, Goth]
  # Greek is probalby different enough from Latin and Cyrillic, but user testing
