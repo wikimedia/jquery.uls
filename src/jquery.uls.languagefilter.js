@@ -208,7 +208,7 @@
 				suggestion = userInput + languageName.substring( userInput.length, languageName.length );
 			if ( suggestion.toLowerCase() !== languageName.toLowerCase() ) {
 				// see if it was autonym match
-				autonym = $.uls.data.autonym( langCode ) || '';
+				autonym = $.uls.data.getAutonym( langCode ) || '';
 				suggestion = userInput + autonym.substring( userInput.length, autonym.length );
 				if ( suggestion !== autonym ) {
 					// Give up. It may be iso/script code match.
@@ -247,7 +247,7 @@
 			var matcher = new RegExp( "^" + this.escapeRegex( searchTerm ), 'i' ),
 				languageName = this.options.languages[langCode];
 			return matcher.test( languageName ) ||
-				matcher.test( $.uls.data.autonym( langCode ) ) ||
+				matcher.test( $.uls.data.getAutonym( langCode ) ) ||
 				matcher.test( langCode ) ||
 				matcher.test( $.uls.data.getScript( langCode ) );
 		}

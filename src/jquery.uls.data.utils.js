@@ -79,7 +79,7 @@
 		var autonymsByCode = {};
 
 		for ( var language in $.uls.data.languages ) {
-			autonymsByCode[language] = $.uls.data.autonym( language );
+			autonymsByCode[language] = $.uls.data.getAutonym( language );
 		}
 
 		return autonymsByCode;
@@ -429,8 +429,8 @@
 	 * @param two language codes
 	 */
 	$.uls.data.sortByAutonym = function( a, b ) {
-		var autonymA = $.uls.data.autonym( a ) || a,
-			autonymB = $.uls.data.autonym( b ) || b;
+		var autonymA = $.uls.data.getAutonym( a ) || a,
+			autonymB = $.uls.data.getAutonym( b ) || b;
 		return ( autonymA.toLowerCase() < autonymB.toLowerCase() ) ? -1 : 1;
 	};
 
