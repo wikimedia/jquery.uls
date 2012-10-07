@@ -51,7 +51,7 @@
 		},
 
 		test: function( langCode ) {
-			var langRegions = $.uls.data.regions( langCode ),
+			var langRegions = $.uls.data.getRegions( langCode ),
 				region;
 
 			for ( var i = 0; i < this.regions.length; i++ ) {
