@@ -74,7 +74,7 @@
 			} else {
 				this.cache = {};
 				// Get the languages grouped by script group
-				var languagesByScriptGroup = $.uls.data.languagesByScriptGroup( this.options.languages );
+				var languagesByScriptGroup = $.uls.data.getLanguagesByScriptGroup( this.options.languages );
 				for ( var scriptGroup in languagesByScriptGroup ) {
 					// Get the languages for the script group
 					var languages = languagesByScriptGroup[scriptGroup];
