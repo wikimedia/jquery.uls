@@ -74,7 +74,7 @@
 		addToRegion: function( langCode, region ) {
 			var that = this;
 			var language = that.options.languages[langCode],
-				langName = $.uls.data.autonym( langCode ) || language || langCode,
+				langName = $.uls.data.getAutonym( langCode ) || language || langCode,
 				regions = [];
 
 			if ( region ) {
@@ -206,7 +206,7 @@
 				var $column = this.getColumn( 'quick', i % 4 === 0 );
 				var langCode = quickList[i];
 				var language = this.options.languages[langCode];
-				var langName = $.uls.data.autonym( langCode ) || language || langCode;
+				var langName = $.uls.data.getAutonym( langCode ) || language || langCode;
 				var $li = $( '<li>' )
 					.data( 'code', langCode )
 					.attr( {
