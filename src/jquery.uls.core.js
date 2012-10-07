@@ -326,7 +326,7 @@
 		$.fn.i18n = function( option ) {
 		};
 	}
-	
+
 	$.fn.uls.Constructor = ULS;
 
 } ( jQuery ) );
