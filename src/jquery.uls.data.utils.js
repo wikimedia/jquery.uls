@@ -249,7 +249,7 @@
 	 * @return associative array
 	 */
 	$.uls.data.getAllLanguagesByScriptGroup = function() {
-		return $.uls.data.languagesByScriptGroupInRegions( $.uls.data.allRegions() );
+		return $.uls.data.languagesByScriptGroupInRegions( $.uls.data.getAllRegions() );
 	};
 
 	$.uls.data.allLanguagesByScriptGroup = function() { // deprecated
