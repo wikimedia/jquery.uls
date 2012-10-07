@@ -249,7 +249,7 @@
 			return matcher.test( languageName ) ||
 				matcher.test( $.uls.data.autonym( langCode ) ) ||
 				matcher.test( langCode ) ||
-				matcher.test( $.uls.data.script( langCode ) );
+				matcher.test( $.uls.data.getScript( langCode ) );
 		}
 
 	};

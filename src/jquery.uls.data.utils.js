@@ -133,7 +133,7 @@
 
 		for ( var language in $.uls.data.languages ) {
 			for ( var i = 0; i < scripts.length; i++ ) {
-				if ( scripts[i] === $.uls.data.script( language ) ) {
+				if ( scripts[i] === $.uls.data.getScript( language ) ) {
 					languagesInScripts.push( language );
 					break;
 				}
@@ -212,7 +212,7 @@
 
 		for ( var language in $.uls.data.languages ) {
 			if ( $.inArray( region, $.uls.data.regions( language ) ) !== -1 ) {
-				var script = $.uls.data.script( language );
+				var script = $.uls.data.getScript( language );
 				if ( languagesByScriptInRegion[script] === undefined ) {
 					languagesByScriptInRegion[script] = [];
 				}
@@ -338,7 +338,7 @@
 		}
 
 		for ( var language in $.uls.data.languages ) {
-			var script = $.uls.data.script( language );
+			var script = $.uls.data.getScript( language );
 			var scriptGroup = $.uls.data.groupOfScript( script );
 			var regions = $.uls.data.regions( language );
 
@@ -415,7 +415,7 @@
 	 * @return string script group name
 	 */
 	$.uls.data.getScriptGroupOfLanguage = function( language ) {
-		return $.uls.data.groupOfScript( $.uls.data.script( language ) );
+		return $.uls.data.groupOfScript( $.uls.data.getScript( language ) );
 	};
 
 	$.uls.data.scriptGroupOfLanguage = function( language ) { // deprecated
@@ -440,7 +440,7 @@
 	 * @return boolean
 	 */
 	$.uls.data.isRtl = function( language ) {
-		return $.inArray( $.uls.data.script( language ), $.uls.data.rtlscripts ) !== -1;
+		return $.inArray( $.uls.data.getScript( language ), $.uls.data.rtlscripts ) !== -1;
 	};
 
 	/**
