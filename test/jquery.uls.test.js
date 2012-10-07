@@ -54,7 +54,7 @@
 		assert.ok( $.fn.uls, "$.fn.uls is defined" );
 	} );
 
-	test( "-- $.uls.data testing", 25, function ( assert ) {
+	test( "-- $.uls.data testing", 27, function ( assert ) {
 
 		assert.strictEqual( $.uls.data.autonyms()['he'], 'עברית', 'Correct autonym is returned for Hebrew using autonyms().' );
 
@@ -114,7 +114,7 @@
 
 		assert.deepEqual( $.uls.data.regionsInGroup( 3 ), [
 			"EU", "ME", "AF"
-		], "regions in group 2 are selected correctly" );
+		], "regions in group 3 are selected correctly" );
 		assert.deepEqual( $.uls.data.regionsInGroup( 2 ), [
 			"AM"
 		], "regions in group 2 are selected correctly" );
@@ -150,6 +150,8 @@
 
 		assert.strictEqual( $.uls.data.isRtl( "te" ), false, "Telugu language is not RTL" );
 		assert.strictEqual( $.uls.data.isRtl( "dv" ), true, "Divehi language is RTL" );
+		assert.strictEqual( $.uls.data.getDir( "mzn" ), "rtl", "Mazandarani language is RTL" );
+		assert.strictEqual( $.uls.data.getDir( "uk" ), "ltr", "Ukrainian language is LTR" );
 
 		assert.ok( $.inArray( "sah", $.uls.data.languagesInTerritory( "RU" ) )
 			> -1, "Sakha language is spoken in Russia" );
