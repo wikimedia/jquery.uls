@@ -154,7 +154,7 @@
 	 * @return array of strings (languages codes)
 	 */
 	$.uls.data.getLanguagesInRegion = function( region ) {
-		return $.uls.data.languagesInRegions( [ region ] );
+		return $.uls.data.getLanguagesInRegions( [ region ] );
 	};
 
 	$.uls.data.languagesInRegion = function( region ) { // deprecated
@@ -193,7 +193,7 @@
 	 * @return array of strings (languages codes)
 	 */
 	$.uls.data.getLanguagesInRegionGroup = function( groupNum ) {
-		return $.uls.data.languagesInRegions( $.uls.data.regionsInGroup( groupNum ) );
+		return $.uls.data.getLanguagesInRegions( $.uls.data.regionsInGroup( groupNum ) );
 	};
 
 	$.uls.data.languagesInRegionGroup = function( groupNum ) { // deprecated
@@ -235,7 +235,7 @@
 	 * @return associative array
 	 */
 	$.uls.data.getLanguagesByScriptGroupInRegion = function( region ) {
-		return $.uls.data.languagesByScriptGroupInRegions( [ region ] );
+		return $.uls.data.getLanguagesByScriptGroupInRegions( [ region ] );
 	};
 
 	$.uls.data.languagesByScriptGroupInRegion = function( region ) { // deprecated
@@ -249,7 +249,7 @@
 	 * @return associative array
 	 */
 	$.uls.data.getAllLanguagesByScriptGroup = function() {
-		return $.uls.data.languagesByScriptGroupInRegions( $.uls.data.getAllRegions() );
+		return $.uls.data.getLanguagesByScriptGroupInRegions( $.uls.data.getAllRegions() );
 	};
 
 	$.uls.data.allLanguagesByScriptGroup = function() { // deprecated

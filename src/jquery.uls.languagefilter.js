@@ -135,7 +135,7 @@
 
 		search: function() {
 			var query = $.trim( this.$element.val() ),
-				languages = $.uls.data.languagesByScriptGroup( this.options.languages ),
+				languages = $.uls.data.getLanguagesByScriptGroup( this.options.languages ),
 				scriptGroup, langNum, langCode;
 			this.resultCount = 0;
 			for ( scriptGroup in languages ) {
