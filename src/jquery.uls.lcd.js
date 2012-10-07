@@ -80,7 +80,7 @@
 			if ( region ) {
 				regions.push( region );
 			} else {
-				regions = $.uls.data.regions( langCode );
+				regions = $.uls.data.getRegions( langCode );
 			}
 
 			// World wide languages need not be repeated in all regions.
