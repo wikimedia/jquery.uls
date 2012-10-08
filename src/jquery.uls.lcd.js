@@ -106,8 +106,8 @@
 				var lastLanguage = $column.find( 'li:last' ).data( 'code' );
 
 				if ( lastLanguage ) {
-					var lastScriptGroup = $.uls.data.scriptGroupOfLanguage( lastLanguage ),
-						currentScriptGroup = $.uls.data.scriptGroupOfLanguage( langCode );
+					var lastScriptGroup = $.uls.data.getScriptGroupOfLanguage( lastLanguage ),
+						currentScriptGroup = $.uls.data.getScriptGroupOfLanguage( langCode );
 
 					if ( lastScriptGroup !== currentScriptGroup ) {
 						if ( $column.find( 'li' ).length > 2 ) {

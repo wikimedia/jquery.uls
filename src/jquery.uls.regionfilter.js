@@ -17,7 +17,7 @@
  * @licence MIT License
  */
 
-(function ( $ ) {
+( function ( $ ) {
 	"use strict";
 
 	/* RegionSelector plugin definition */
@@ -44,7 +44,7 @@
 
 		init: function() {
 			var region = this.$element.data( 'region' );
-			this.regions = $.uls.data.regionsInGroup( this.regionGroup );
+			this.regions = $.uls.data.getRegionsInGroup( this.regionGroup );
 			if ( region ) {
 				this.regions.push( region );
 			}
