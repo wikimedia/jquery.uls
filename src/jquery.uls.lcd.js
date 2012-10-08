@@ -249,26 +249,26 @@
 		},
 
 		listen: function () {
-			var that = this;
+			var lcd = this;
 
 			if ( this.options.clickhandler ) {
 				this.$element.on( 'click', 'div.row li', function() {
-					that.options.clickhandler.call( this, $( this ).data( 'code' ) );
+					lcd.options.clickhandler.call( this, $( this ).data( 'code' ) );
 				} );
 			}
 
 			// The region section need to be in sync with the map filter.
-			that.$element.scroll( function () {
+			lcd.$element.scroll( function () {
 				var scrollTop = $( this ).position().top,
 					scrollBottom = $( this ).height();
 
 				if ( this.offsetHeight + this.scrollTop >= this.scrollHeight / 2 ) {
-					that.$element.trigger( 'scrollend' );
+					lcd.$element.trigger( 'scrollend' );
 				}
 
 				// The region section need to be in sync with the map filter.
 				var inviewRegion = 'WW';
-				that.$element.find( 'div.uls-lcd-region-section' ).each( function () {
+				lcd.$element.find( 'div.uls-lcd-region-section' ).each( function () {
 					var top = $( this ).position().top,
 						height = $( this ).height();
 
