@@ -74,13 +74,13 @@
 		addToRegion: function( langCode, region ) {
 			var that = this;
 			var language = that.options.languages[langCode],
-				langName = $.uls.data.autonym( langCode ) || language || langCode,
+				langName = $.uls.data.getAutonym( langCode ) || language || langCode,
 				regions = [];
 
 			if ( region ) {
 				regions.push( region );
 			} else {
-				regions = $.uls.data.regions( langCode );
+				regions = $.uls.data.getRegions( langCode );
 			}
 
 			// World wide languages need not be repeated in all regions.
@@ -106,8 +106,8 @@
 				var lastLanguage = $column.find( 'li:last' ).data( 'code' );
 
 				if ( lastLanguage ) {
-					var lastScriptGroup = $.uls.data.scriptGroupOfLanguage( lastLanguage ),
-						currentScriptGroup = $.uls.data.scriptGroupOfLanguage( langCode );
+					var lastScriptGroup = $.uls.data.getScriptGroupOfLanguage( lastLanguage ),
+						currentScriptGroup = $.uls.data.getScriptGroupOfLanguage( langCode );
 
 					if ( lastScriptGroup !== currentScriptGroup ) {
 						if ( $column.find( 'li' ).length > 2 ) {
@@ -206,7 +206,7 @@
 				var $column = this.getColumn( 'quick', i % 4 === 0 );
 				var langCode = quickList[i];
 				var language = this.options.languages[langCode];
-				var langName = $.uls.data.autonym( langCode ) || language || langCode;
+				var langName = $.uls.data.getAutonym( langCode ) || language || langCode;
 				var $li = $( '<li>' )
 					.data( 'code', langCode )
 					.attr( {

@@ -32,7 +32,7 @@
 			$( document ).ready( function() {
 				$( '.uls-trigger' ).uls( {
 					onSelect : function( language ) {
-						var languageName = $.uls.data.autonym( language );
+						var languageName = $.uls.data.getAutonym( language );
 						$('a#pageLanguage').text( languageName );
 					},
 					quickList: ['en', 'hi', 'he', 'ml', 'ta','fr'] //FIXME
