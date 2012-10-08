@@ -34,7 +34,7 @@
 				<div class="three columns" id="settings-block"></div>\
 				<div class="five columns" id="map-block">\
 					<div class="row">\
-						<div data-regiongroup="1" id="uls-region-1" class="three columns uls-region">\
+						<div data-regiongroup="1" id="uls-region-1" class="three columns uls-region active">\
 							<a data-i18n="uls-region-WW">Worldwide</a>\
 						</div>\
 						<div class="nine columns">\
