@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>jQuery ULS Test Suite</title>
+
+<!-- External libs -->
+<script src="../libs/jquery.js"></script>
+
+<!-- Source of our libs -->
+<script src="../src/jquery.uls.data.js"></script>
+<script src="../src/jquery.uls.data.utils.js"></script>
+<script src="../src/jquery.uls.lcd.js"></script>
+<script src="../src/jquery.uls.languagefilter.js"></script>
+<script src="../src/jquery.uls.regionfilter.js"></script>
+<script src="../src/jquery.uls.core.js"></script>
+
+<!-- Test framework -->
+<link rel="stylesheet" href="../libs/qunit/qunit/qunit.css">
+<script src="../libs/qunit/qunit/qunit.js"></script>
+
+<!-- Test config -->
+<script>
+	QUnit.config.requireExpects = true;
+</script>
+
+<!-- Test Suite -->
+<script src="jquery.uls.test.js"></script>
+
+</head>
+<body>
+	<div id="qunit"></div>
+	<div id="qunit-fixture"></div>
+</body>
+</html>
+
