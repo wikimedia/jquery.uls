@@ -125,21 +125,19 @@
 		},
 
 		click: function( e ) {
+			// Don't do anything if a region is selected already
 			if( this.$element.hasClass( 'active' ) ) {
-				this.$element.removeClass( 'active' );
-				if ( this.options.noresults ) {
-					this.options.noresults.call();
-				}
-			} else {
-				// Re-populate the list of languages
-				this.options.$target.empty();
-				this.show();
-				// Make the selected region (and it only) active
-				$( '.regionselector' ).removeClass( 'active' );
-				if ( this.regionGroup ) {
-					// if there is a region group, make it active.
-					this.$element.addClass( 'active' );
-				}
+				return;
+			}
+
+			// Re-populate the list of languages
+			this.options.$target.empty();
+			this.show();
+			// Make the selected region (and it only) active
+			$( '.regionselector' ).removeClass( 'active' );
+			if ( this.regionGroup ) {
+				// if there is a region group, make it active.
+				this.$element.addClass( 'active' );
 			}
 		}
 	};
