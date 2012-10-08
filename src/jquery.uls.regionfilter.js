@@ -17,7 +17,7 @@
  * @licence MIT License
  */
 
-(function ( $ ) {
+( function ( $ ) {
 	"use strict";
 
 	/* RegionSelector plugin definition */
@@ -44,14 +44,14 @@
 
 		init: function() {
 			var region = this.$element.data( 'region' );
-			this.regions = $.uls.data.regionsInGroup( this.regionGroup );
+			this.regions = $.uls.data.getRegionsInGroup( this.regionGroup );
 			if ( region ) {
 				this.regions.push( region );
 			}
 		},
 
 		test: function( langCode ) {
-			var langRegions = $.uls.data.regions( langCode ),
+			var langRegions = $.uls.data.getRegions( langCode ),
 				region;
 
 			for ( var i = 0; i < this.regions.length; i++ ) {
@@ -74,7 +74,7 @@
 			} else {
 				this.cache = {};
 				// Get the languages grouped by script group
-				var languagesByScriptGroup = $.uls.data.languagesByScriptGroup( this.options.languages );
+				var languagesByScriptGroup = $.uls.data.getLanguagesByScriptGroup( this.options.languages );
 				for ( var scriptGroup in languagesByScriptGroup ) {
 					// Get the languages for the script group
 					var languages = languagesByScriptGroup[scriptGroup];

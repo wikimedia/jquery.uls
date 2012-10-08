@@ -25,8 +25,8 @@
 		var result = [];
 
 		for ( var language in $.uls.data.languages ) {
-			var script = $.uls.data.script( language );
-			if ( $.uls.data.groupOfScript( script ) === 'Other' ) {
+			var script = $.uls.data.getScript( language );
+			if ( $.uls.data.getGroupOfScript( script ) === 'Other' ) {
 				result.push( script );
 			}
 		}
@@ -42,7 +42,7 @@
 		var result = [];
 
 		for ( var language in $.uls.data.languages ) {
-			if ( typeof $.uls.data.autonym( language ) !== 'string' ) {
+			if ( typeof $.uls.data.getAutonym( language ) !== 'string' ) {
 				result.push( language );
 			}
 		}
@@ -56,7 +56,7 @@
 
 	test( "-- $.uls.data testing", 27, function ( assert ) {
 
-		assert.strictEqual( $.uls.data.autonyms()['he'], 'עברית', 'Correct autonym is returned for Hebrew using autonyms().' );
+		assert.strictEqual( $.uls.data.getAutonyms()['he'], 'עברית', 'Correct autonym is returned for Hebrew using getAutonyms().' );
 
 		// This test assumes that we don't want any scripts to be in the 'Other'
 		// group. Actually, this may become wrong some day.
@@ -64,35 +64,35 @@
 		assert.deepEqual( languagesWithoutAutonym(), [], 'All languages have autonyms.' );
 
 		assert.strictEqual(
-			$.uls.data.groupOfScript( 'Beng' ),
+			$.uls.data.getGroupOfScript( 'Beng' ),
 			'SouthAsian',
 			'Bengali script belongs to the SouthAsian group.'
 		);
 		assert.strictEqual(
-			$.uls.data.scriptGroupOfLanguage( 'iu' ),
+			$.uls.data.getScriptGroupOfLanguage( 'iu' ),
 			'NativeAmerican',
 			'The script of the Inupiaq language belongs to the NativeAmerican group.'
 		);
 
-		assert.strictEqual( $.uls.data.script( 'ii' ), 'Yiii', 'Correct script of the Yi language was selected' );
-		assert.deepEqual( $.uls.data.regions( 'lzz' ), [
+		assert.strictEqual( $.uls.data.getScript( 'ii' ), 'Yiii', 'Correct script of the Yi language was selected' );
+		assert.deepEqual( $.uls.data.getRegions( 'lzz' ), [
 			'EU', 'ME'
 		], 'Correct regions of the Laz language were selected' );
-		assert.strictEqual( $.uls.data.regions( 'no-such-language' ), 'UNKNOWN', "The region of an invalid language is 'UNKNOWN'" );
+		assert.strictEqual( $.uls.data.getRegions( 'no-such-language' ), 'UNKNOWN', "The region of an invalid language is 'UNKNOWN'" );
 
-		var allLanguagesByRegionAndScript = $.uls.data.allLanguagesByRegionAndScript();
+		var allLanguagesByRegionAndScript = $.uls.data.getAllLanguagesByRegionAndScript();
 		assert.deepEqual( allLanguagesByRegionAndScript['4']['AS']['SouthEastAsian']['Bugi'], [
 			'bug'
 		], 'All languages in the Buginese script in Asia were selected' );
 
-		assert.deepEqual( $.uls.data.languagesInRegion( "PA" ),
+		assert.deepEqual( $.uls.data.getLanguagesInRegion( "PA" ),
 			[
 				"ace", "bi", "ch", "en-gb", "en", "fj", "haw", "hif-latn", "hif", "ho", "jv",
 				"mh", "mi", "na", "niu", "pih", "pis", "pt", "rtm", "sm", "tet",
 				"to", "tpi", "ty", "wls"
 			],
 			"languages of region PA are selected correctly" );
-		assert.deepEqual( $.uls.data.languagesInRegions( ["AM", "WW"] ),
+		assert.deepEqual( $.uls.data.getLanguagesInRegions( ["AM", "WW"] ),
 			[
 				"akz", "arn", "aro", "ase", "avk", "ay", "cho", "chr", "chy", "cr-cans", "cr-latn",
 				"cr", "en-ca", "en", "eo", "es-419", "es-formal", "es", "esu", "fr", "gcf", "gn",
@@ -104,42 +104,42 @@
 			"languages of regions AM and WW are selected correctly"
 		);
 
-		assert.deepEqual( $.uls.data.languagesInScript( 'Knda' ), [
+		assert.deepEqual( $.uls.data.getLanguagesInScript( 'Knda' ), [
 			"kn", "tcy"
 		], "languages in script Knda are selected correctly" );
-		assert.deepEqual( $.uls.data.languagesInScripts( ['Geor', 'Armn'] ),
+		assert.deepEqual( $.uls.data.getLanguagesInScripts( ['Geor', 'Armn'] ),
 			["hy", "ka", "xmf"],
 			"languages in scripts Geor and Armn are selected correctly"
 		);
 
-		assert.deepEqual( $.uls.data.regionsInGroup( 3 ), [
+		assert.deepEqual( $.uls.data.getRegionsInGroup( 3 ), [
 			"EU", "ME", "AF"
 		], "regions in group 3 are selected correctly" );
-		assert.deepEqual( $.uls.data.regionsInGroup( 2 ), [
+		assert.deepEqual( $.uls.data.getRegionsInGroup( 2 ), [
 			"AM"
 		], "regions in group 2 are selected correctly" );
-		assert.deepEqual( $.uls.data.regionsInGroup( 1 ), [
+		assert.deepEqual( $.uls.data.getRegionsInGroup( 1 ), [
 			"WW"
 		], "regions in group 1 are selected correctly" );
 
-		var languagesByScriptInAM = $.uls.data.languagesByScriptInRegion( "AM" );
+		var languagesByScriptInAM = $.uls.data.getLanguagesByScriptInRegion( "AM" );
 		assert.deepEqual( languagesByScriptInAM['Cans'], [
 			"cr-cans", "cr", "ike-cans", "iu"
 		], "correct languages in Cans in AM selected" );
 
-		assert.strictEqual( $.uls.data.autonym( 'pa' ), 'ਪੰਜਾਬੀ', 'Correct autonym of the Punjabi language was selected' );
+		assert.strictEqual( $.uls.data.getAutonym( 'pa' ), 'ਪੰਜਾਬੀ', 'Correct autonym of the Punjabi language was selected' );
 
-		var languagesByScriptGroupInEMEA = $.uls.data.languagesByScriptGroupInRegions( $.uls.data.regionsInGroup( 3 ) );
+		var languagesByScriptGroupInEMEA = $.uls.data.getLanguagesByScriptGroupInRegions( $.uls.data.getRegionsInGroup( 3 ) );
 		assert.deepEqual( languagesByScriptGroupInEMEA['WestCaucasian'], [
 			'hy', 'ka', 'xmf'
 		], 'Correct languages in WestCaucasian script group in EMEA selected' );
 
-		var allLanguagesByScriptGroup = $.uls.data.allLanguagesByScriptGroup();
+		var allLanguagesByScriptGroup = $.uls.data.getAllLanguagesByScriptGroup();
 		assert.deepEqual( allLanguagesByScriptGroup['Greek'], [
 			'el', 'grc', 'pnt', 'ruq-grek', 'tsd'
 		], 'All languages in the Greek script found' );
 
-		assert.deepEqual( $.uls.data.allRegions(), [
+		assert.deepEqual( $.uls.data.getAllRegions(), [
 			"WW", "AM", "EU", "ME", "AF", "AS", "PA"
 		], "All regions found" );
 
@@ -153,7 +153,7 @@
 		assert.strictEqual( $.uls.data.getDir( "mzn" ), "rtl", "Mazandarani language is RTL" );
 		assert.strictEqual( $.uls.data.getDir( "uk" ), "ltr", "Ukrainian language is LTR" );
 
-		assert.ok( $.inArray( "sah", $.uls.data.languagesInTerritory( "RU" ) )
+		assert.ok( $.inArray( "sah", $.uls.data.getLanguagesInTerritory( "RU" ) )
 			> -1, "Sakha language is spoken in Russia" );
 	} );
 
