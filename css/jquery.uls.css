@@ -180,7 +180,7 @@ input:focus#languagefilter {
 	float: right;
 }
 
-span#languagefilter-clear {
+#languagefilter-clear {
 	/* @embed */
 	background: url('../images/clear.png') no-repeat scroll left center
 		transparent;
