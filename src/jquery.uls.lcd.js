@@ -259,8 +259,9 @@
 
 			// The region section need to be in sync with the map filter.
 			lcd.$element.scroll( function () {
-				var scrollTop = $( this ).position().top,
-					scrollBottom = $( this ).height();
+				var $ulsLanguageList = $( this ),
+					scrollTop = $ulsLanguageList.position().top,
+					scrollBottom = $ulsLanguageList.height();
 
 				if ( this.offsetHeight + this.scrollTop >= this.scrollHeight / 2 ) {
 					lcd.$element.trigger( 'scrollend' );
@@ -269,11 +270,12 @@
 				// The region section need to be in sync with the map filter.
 				var inviewRegion = 'WW';
 				lcd.$element.find( 'div.uls-lcd-region-section' ).each( function () {
-					var top = $( this ).position().top,
-						height = $( this ).height();
+					var $lcdRegionSection = $( this ),
+						top = $lcdRegionSection.position().top,
+						height = $lcdRegionSection.height();
 
 					if ( top < scrollTop && height > scrollBottom ) {
-						inviewRegion = $( this ).attr( 'id' );
+						inviewRegion = $lcdRegionSection.attr( 'id' );
 						return true;
 					}
 				} );
