@@ -250,6 +250,7 @@
 
 		listen: function () {
 			var that = this;
+
 			if ( this.options.clickhandler ) {
 				this.$element.on( 'click', 'div.row li', function() {
 					that.options.clickhandler.call( this, $( this ).data( 'code' ) );
@@ -258,28 +259,30 @@
 
 			// The region section need to be in sync with the map filter.
 			that.$element.scroll( function () {
-				var scrollTop = $( this ).position().top;
-				var scrollBottom = $( this ).height();
-				if ( this.offsetHeight + this.scrollTop >= this.scrollHeight/2 ) {
+				var scrollTop = $( this ).position().top,
+					scrollBottom = $( this ).height();
+
+				if ( this.offsetHeight + this.scrollTop >= this.scrollHeight / 2 ) {
 					that.$element.trigger( 'scrollend' );
 				}
+
 				// The region section need to be in sync with the map filter.
 				var inviewRegion = 'WW';
 				that.$element.find( 'div.uls-lcd-region-section' ).each( function () {
-					var top = $( this ).position().top;
-					var height = $( this ).height();
+					var top = $( this ).position().top,
+						height = $( this ).height();
+
 					if ( top < scrollTop && height > scrollBottom ) {
 						inviewRegion = $( this ).attr( 'id' );
 						return true;
 					}
 				} );
+
 				var inview = $.uls.data.regiongroups[inviewRegion];
 				$( '.regionselector' ).removeClass( 'active' );
 				$( '#uls-region-' + inview ).addClass( 'active' );
 			} );
-
 		}
-
 	};
 
 	$.fn.lcd = function( option ) {
