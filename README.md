@@ -40,9 +40,9 @@ If not, run:
 npm install
 ```
 
-To run tests locally, run `grunt`, and this will run the tests in PhantomJS.
+To run tests locally, run `grunt test`. This will run the tests in PhantomJS.
 
-You can also run the tests in a browser by navigating to the `test/` directory, but first run `grunt` to install submodules.
+You can also run the tests in a browser by navigating to the `test/` directory, but first run `grunt` to install the submodules.
 
 Coding style
 -------------
