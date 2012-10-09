@@ -22,17 +22,23 @@
 		<script>
 			$( document ).ready( function() {
 				var i18n = $.i18n( );
+				// Use default locale "en"
+				i18n.locale = "en";
+				i18n.load( '../i18n/en.json', 'en' );
 				$( '.uls-trigger' ).uls( {
-					onSelect : function( language ) {
+					onReady: function ( ) {
+						this.i18n();
+					},
+					onSelect: function ( language ) {
 						var languageName = $.uls.data.autonym( language );
-						$('a#pageLanguage').text( languageName );
+						$( 'a#pageLanguage' ).text( languageName );
 						i18n.locale = language;
 						// For ULS
-						i18n.load( '../i18n/' + language + '.json', language);
+						i18n.load( '../i18n/' + language + '.json', language );
 						// For the web page
-						i18n.load( 'resources/i18n/' + language + '.json', language);
+						i18n.load( 'resources/i18n/' + language + '.json', language );
 						// re-i18n the elements
-						$( '.uls-menu' ).i18n();
+						this.i18n();
 						$( '.navbar' ).i18n();
 					},
 					quickList: [ 'en', 'hi', 'he', 'ml', 'ta', 'fr' ]

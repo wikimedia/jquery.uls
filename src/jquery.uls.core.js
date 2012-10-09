@@ -108,7 +108,7 @@
 
 		ready: function() {
 			if ( this.options.onReady ) {
-				this.options.onReady( this );
+				this.options.onReady.call( this );
 			}
 		},
 
@@ -152,6 +152,7 @@
 
 		i18n: function() {
 			this.$menu.find( '[data-i18n]' ).i18n();
+			this.$languageFilter.prop( 'placeholder', $.i18n( 'uls-search-placeholder' ) );
 		},
 
 		defaultSearch: function () {

@@ -10,5 +10,6 @@
 	"uls-no-results-found": "Title text for 'No results found' section",
 	"uls-common-languages": "Title for languages listed based on GeoIP, previously used languaguage, browser accept-language etc.",
 	"uls-no-results-suggestion-title": "Title for language suggestion in 'no results found' screen",
-	"uls-search-help": "Help text for searching. After this text, there will be a set of links for regions"
+	"uls-search-help": "Help text for searching. After this text, there will be a set of links for regions",
+	"uls-search-placeholder": "Placeholder text in search box"
 }
