@@ -29,9 +29,9 @@
 					onReady: function ( ) {
 						this.i18n();
 					},
-					onSelect: function ( language ) {
-						var languageName = $.uls.data.autonym( language );
-						$( 'a#pageLanguage' ).text( languageName );
+					onSelect : function( language ) {
+						var languageName = $.uls.data.getAutonym( language );
+						$('a#pageLanguage').text( languageName );
 						i18n.locale = language;
 						// For ULS
 						i18n.load( '../i18n/' + language + '.json', language );

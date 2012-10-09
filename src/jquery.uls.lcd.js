@@ -74,13 +74,13 @@
 		addToRegion: function( langCode, region ) {
 			var that = this;
 			var language = that.options.languages[langCode],
-				langName = $.uls.data.autonym( langCode ) || language || langCode,
+				langName = $.uls.data.getAutonym( langCode ) || language || langCode,
 				regions = [];
 
 			if ( region ) {
 				regions.push( region );
 			} else {
-				regions = $.uls.data.regions( langCode );
+				regions = $.uls.data.getRegions( langCode );
 			}
 
 			// World wide languages need not be repeated in all regions.
@@ -106,8 +106,8 @@
 				var lastLanguage = $column.find( 'li:last' ).data( 'code' );
 
 				if ( lastLanguage ) {
-					var lastScriptGroup = $.uls.data.scriptGroupOfLanguage( lastLanguage ),
-						currentScriptGroup = $.uls.data.scriptGroupOfLanguage( langCode );
+					var lastScriptGroup = $.uls.data.getScriptGroupOfLanguage( lastLanguage ),
+						currentScriptGroup = $.uls.data.getScriptGroupOfLanguage( langCode );
 
 					if ( lastScriptGroup !== currentScriptGroup ) {
 						if ( $column.find( 'li' ).length > 2 ) {
@@ -206,7 +206,7 @@
 				var $column = this.getColumn( 'quick', i % 4 === 0 );
 				var langCode = quickList[i];
 				var language = this.options.languages[langCode];
-				var langName = $.uls.data.autonym( langCode ) || language || langCode;
+				var langName = $.uls.data.getAutonym( langCode ) || language || langCode;
 				var $li = $( '<li>' )
 					.data( 'code', langCode )
 					.attr( {
@@ -249,37 +249,42 @@
 		},
 
 		listen: function () {
-			var that = this;
+			var lcd = this;
+
 			if ( this.options.clickhandler ) {
 				this.$element.on( 'click', 'div.row li', function() {
-					that.options.clickhandler.call( this, $( this ).data( 'code' ) );
+					lcd.options.clickhandler.call( this, $( this ).data( 'code' ) );
 				} );
 			}
 
 			// The region section need to be in sync with the map filter.
-			that.$element.scroll( function () {
-				var scrollTop = $( this ).position().top;
-				var scrollBottom = $( this ).height();
-				if ( this.offsetHeight + this.scrollTop >= this.scrollHeight/2 ) {
-					that.$element.trigger( 'scrollend' );
+			lcd.$element.scroll( function () {
+				var $ulsLanguageList = $( this ),
+					scrollTop = $ulsLanguageList.position().top,
+					scrollBottom = $ulsLanguageList.height();
+
+				if ( this.offsetHeight + this.scrollTop >= this.scrollHeight / 2 ) {
+					lcd.$element.trigger( 'scrollend' );
 				}
+
 				// The region section need to be in sync with the map filter.
 				var inviewRegion = 'WW';
-				that.$element.find( 'div.uls-lcd-region-section' ).each( function () {
-					var top = $( this ).position().top;
-					var height = $( this ).height();
+				lcd.$element.find( 'div.uls-lcd-region-section' ).each( function () {
+					var $lcdRegionSection = $( this ),
+						top = $lcdRegionSection.position().top,
+						height = $lcdRegionSection.height();
+
 					if ( top < scrollTop && height > scrollBottom ) {
-						inviewRegion = $( this ).attr( 'id' );
+						inviewRegion = $lcdRegionSection.attr( 'id' );
 						return true;
 					}
 				} );
+
 				var inview = $.uls.data.regiongroups[inviewRegion];
 				$( '.regionselector' ).removeClass( 'active' );
 				$( '#uls-region-' + inview ).addClass( 'active' );
 			} );
-
 		}
-
 	};
 
 	$.fn.lcd = function( option ) {
