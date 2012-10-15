@@ -151,8 +151,10 @@
 		},
 
 		i18n: function() {
-			this.$menu.find( '[data-i18n]' ).i18n();
-			this.$languageFilter.prop( 'placeholder', $.i18n( 'uls-search-placeholder' ) );
+			if ( $.i18n ) {
+				this.$menu.find( '[data-i18n]' ).i18n();
+				this.$languageFilter.prop( 'placeholder', $.i18n( 'uls-search-placeholder' ) );
+			}
 		},
 
 		defaultSearch: function () {
