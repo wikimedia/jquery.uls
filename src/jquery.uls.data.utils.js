@@ -115,7 +115,7 @@
 	 * @return array of strings (languages codes)
 	 */
 	$.uls.data.getLanguagesInScript = function( script ) {
-		return $.uls.data.languagesInScripts( [ script ] );
+		return $.uls.data.getLanguagesInScripts( [ script ] );
 	};
 
 	$.uls.data.languagesInScript = function( script ) { // deprecated
