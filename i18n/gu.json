@@ -1,19 +1,12 @@
 {
-	"uls-select-language": null,
-	"uls-region-WW": null,
-	"uls-region-AM": "\u0a85\u0aae\u0ac7\u0ab0\u0abf\u0a95\u0abe",
-	"uls-region-AF": "\u0a86\u0aab\u0acd\u0ab0\u0abf\u0a95\u0abe",
-	"uls-region-EU": "\u0aaf\u0ac1\u0ab0\u0acb\u0aaa",
-	"uls-region-AS": "\u0a8f\u0ab6\u0abf\u0aaf\u0abe",
-	"uls-region-ME": null,
-	"uls-region-PA": null,
-	"uls-no-results-found": "\u0a95\u0acb\u0a88 \u0aaa\u0ab0\u0abf\u0aa3\u0abe\u0aae \u0aa8\u0aa5\u0ac0 \u0aae\u0ab3\u0ac7\u0ab2.",
-	"uls-common-languages": null,
-	"uls-no-results-suggestion-title": null,
-	"uls-search-help": null,
 	"@metadata": {
 		"authors": [
 			"Santhosh.thottingal"
 		]
-	}
+	},
+	"uls-region-AM": "\u0a85\u0aae\u0ac7\u0ab0\u0abf\u0a95\u0abe",
+	"uls-region-AF": "\u0a86\u0aab\u0acd\u0ab0\u0abf\u0a95\u0abe",
+	"uls-region-EU": "\u0aaf\u0ac1\u0ab0\u0acb\u0aaa",
+	"uls-region-AS": "\u0a8f\u0ab6\u0abf\u0aaf\u0abe",
+	"uls-no-results-found": "\u0a95\u0acb\u0a88 \u0aaa\u0ab0\u0abf\u0aa3\u0abe\u0aae \u0aa8\u0aa5\u0ac0 \u0aae\u0ab3\u0ac7\u0ab2."
 }

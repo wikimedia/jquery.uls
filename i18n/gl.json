@@ -1,4 +1,9 @@
 {
+	"@metadata": {
+		"authors": [
+			"Toli\u00f1o"
+		]
+	},
 	"uls-select-language": "Seleccione unha lingua",
 	"uls-region-WW": "Mundial",
 	"uls-region-AM": "Am\u00e9rica",
@@ -10,10 +15,5 @@
 	"uls-no-results-found": "Non se atopou ning\u00fan resultado",
 	"uls-common-languages": "Linguas com\u00fans",
 	"uls-no-results-suggestion-title": "Poida que estea buscando:",
-	"uls-search-help": "Pode procurar polo nome da lingua, o tipo de escritura ou o c\u00f3digo ISO. Tam\u00e9n pode explorar as rexi\u00f3ns:",
-	"@metadata": {
-		"authors": [
-			"Toli\u00f1o"
-		]
-	}
+	"uls-search-help": "Pode procurar polo nome da lingua, o tipo de escritura ou o c\u00f3digo ISO. Tam\u00e9n pode explorar as rexi\u00f3ns:"
 }

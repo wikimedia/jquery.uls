@@ -1,16 +1,10 @@
 {
 	"uls-select-language": "\u0417\u044b\u0432\u043e\u043d\u0438 \u0432\u044b\u0436\u043d\u0438\u0458\u0435",
-	"uls-region-WW": null,
 	"uls-region-AM": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430",
-	"uls-region-AF": null,
 	"uls-region-EU": "\u0410\u0432\u0440\u043e\u043f\u0430",
-	"uls-region-AS": null,
-	"uls-region-ME": null,
-	"uls-region-PA": null,
 	"uls-no-results-found": "\u04ba\u0438\u0447\u0438 \u043f\u04d9\u0458\u0434\u043e \u0431\u044b\u04d9\u043d\u0438",
 	"uls-common-languages": "\u0412\u044b\u0436\u043d\u0438\u0458\u04d9 \u0431\u044b\u04d9 \u0437\u044b\u0432\u043e\u043d\u043e\u043d",
 	"uls-no-results-suggestion-title": "\u0411\u04d9\u0437\u043d\u0435 \u0431\u0435 \u043a\u0438 \u0431\u043e \u0448\u044b\u043c\u04d9 \u043c\u0430\u0440\u0430\u0493\u0438\u043d\u0438\u043d \u044b\u043d \u0437\u044b\u0432\u043e\u043d\u043e\u043d:",
-	"uls-search-help": null,
 	"@metadata": {
 		"authors": [
 			"Erdemaslancan",

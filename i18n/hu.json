@@ -1,0 +1,19 @@
+{
+	"uls-select-language": "Nyelv kiv\u00e1laszt\u00e1sa",
+	"uls-region-WW": "Vil\u00e1gszerte",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Eur\u00f3pa",
+	"uls-region-AS": "\u00c1zsia",
+	"uls-region-ME": "K\u00f6zel-Kelet",
+	"uls-region-PA": "Csendes-\u00f3ce\u00e1ni",
+	"uls-no-results-found": "Nincs tal\u00e1lat",
+	"uls-common-languages": "K\u00f6z\u00f6s nyelvek",
+	"uls-no-results-suggestion-title": "Lehet, hogy \u00e9rdekel:",
+	"uls-search-help": "Kereshetsz a nyelv neve, parancsf\u00e1jl neve, a nyelv ISO k\u00f3dja vagy b\u00f6ng\u00e9szhetsz r\u00e9gi\u00f3k szerint:",
+	"@metadata": {
+		"authors": [
+			"Dj"
+		]
+	}
+}

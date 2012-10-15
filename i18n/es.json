@@ -1,4 +1,11 @@
 {
+	"@metadata": {
+		"authors": [
+			"McDutchie",
+			"Pginer",
+			"Santhosh.thottingal"
+		]
+	},
 	"uls-select-language": "Seleccione el idioma",
 	"uls-region-WW": "Mundial",
 	"uls-region-AM": "Am\u00e9rica",
@@ -10,12 +17,5 @@
 	"uls-no-results-found": "No se encontraron resultados",
 	"uls-common-languages": "Idiomas comunes",
 	"uls-no-results-suggestion-title": "Puedes estar interesado en:",
-	"uls-search-help": "Puedes buscar por el nombre del idioma, su tipo de escritura, el c\u00f3digo ISO del idioma o su \u00e1rea geogr\u00e1fica:",
-	"@metadata": {
-		"authors": [
-			"McDutchie",
-			"Pginer",
-			"Santhosh.thottingal"
-		]
-	}
+	"uls-search-help": "Puedes buscar por el nombre del idioma, su tipo de escritura, el c\u00f3digo ISO del idioma o su \u00e1rea geogr\u00e1fica:"
 }

@@ -1,4 +1,9 @@
 {
+	"@metadata": {
+		"authors": [
+			"Gwenn-Ael"
+		]
+	},
 	"uls-select-language": "Dibab ar yezh",
 	"uls-region-WW": "Bed a-bezh",
 	"uls-region-AM": "Amerika",
@@ -10,10 +15,5 @@
 	"uls-no-results-found": "N'eus bet kavet disoc'h ebet",
 	"uls-common-languages": "Yezho\u00f9 boutin",
 	"uls-no-results-suggestion-title": "Gallout a reot beza\u00f1 dedennet gant :",
-	"uls-search-help": "Gallout a reot klask dre anv yezh, anv skript, kod yezh ISO pe gallout a reot klask dre rannvro :",
-	"@metadata": {
-		"authors": [
-			"Gwenn-Ael"
-		]
-	}
+	"uls-search-help": "Gallout a reot klask dre anv yezh, anv skript, kod yezh ISO pe gallout a reot klask dre rannvro :"
 }

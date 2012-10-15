@@ -1,4 +1,9 @@
 {
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
 	"uls-select-language": "R\u011bc wubra\u015b",
 	"uls-region-WW": "na ce\u0142em sw\u011b\u015be",
 	"uls-region-AM": "Amerika",
@@ -10,10 +15,5 @@
 	"uls-no-results-found": "\u017dedne wusl\u011bdki namakane",
 	"uls-common-languages": "Pow\u0161ykne r\u011bcy",
 	"uls-no-results-suggestion-title": "To by m\u00f3g\u0142o \u015bi zajmowa\u015b:",
-	"uls-search-help": "M\u00f3\u017eo\u0161 p\u00f3 mjenju r\u011bcy, mjenju pisma, ISO-ko\u017ae r\u011bcy pyta\u015b abo m\u00f3\u017eo\u0161 p\u00f3 regionje pyta\u015b:",
-	"@metadata": {
-		"authors": [
-			"Michawiki"
-		]
-	}
+	"uls-search-help": "M\u00f3\u017eo\u0161 p\u00f3 mjenju r\u011bcy, mjenju pisma, ISO-ko\u017ae r\u011bcy pyta\u015b abo m\u00f3\u017eo\u0161 p\u00f3 regionje pyta\u015b:"
 }

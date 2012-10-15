@@ -1,0 +1,19 @@
+{
+	"uls-select-language": "Sproch wehle",
+	"uls-region-WW": "W\u00e4ltwyt",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Asie",
+	"uls-region-ME": "Mittlere Oschte",
+	"uls-region-PA": "Pazifik",
+	"uls-no-results-found": "Kei Ergebnis gfunde",
+	"uls-common-languages": "Sproche",
+	"uls-no-results-suggestion-title": "Des chennt Di interessiere:",
+	"uls-search-help": "Du chasch noch em Name vu dr Sproch sueche, em Name vu dr Schrift, em ISO-Code vu dr Sproch oder Du gohsch iber e Region fir Suechi:",
+	"@metadata": {
+		"authors": [
+			"Als-Holder"
+		]
+	}
+}

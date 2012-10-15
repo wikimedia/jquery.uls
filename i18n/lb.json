@@ -1,4 +1,9 @@
 {
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
 	"uls-select-language": "Sprooch eraussichen",
 	"uls-region-WW": "Weltw\u00e4it",
 	"uls-region-AM": "Amerika",
@@ -10,10 +15,5 @@
 	"uls-no-results-found": "N\u00e4ischt fonnt",
 	"uls-common-languages": "Sproochen",
 	"uls-no-results-suggestion-title": "Dir k\u00ebnnt interess\u00e9iert sinn un:",
-	"uls-search-help": "Dir k\u00ebnnt mam Numm vun der Sprooch, Numm vun der Schr\u00ebft, ISO-Code vun der Sprooch oder iwwer eng Regioun sichen:",
-	"@metadata": {
-		"authors": [
-			"Robby"
-		]
-	}
+	"uls-search-help": "Dir k\u00ebnnt mam Numm vun der Sprooch, Numm vun der Schr\u00ebft, ISO-Code vun der Sprooch oder iwwer eng Regioun sichen:"
 }
