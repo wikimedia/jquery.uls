@@ -10,7 +10,7 @@
 .uls-language-list {
 	height: 22em;
 	overflow: auto;
-	margin: 10px;
+	padding: 10px;
 	width: auto;
 }
 
