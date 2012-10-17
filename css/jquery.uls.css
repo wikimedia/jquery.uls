@@ -33,14 +33,18 @@
 	color: #3366bb;
 }
 
+.uls-title a{
+	padding-left: 15px;
+}
+
 .uls-menu h1 {
 	font-weight: normal;
-	padding-top: 1.25em;
 	border: none;
+	padding-top: 1.25em;
+	padding-left: 15px;
 	padding-bottom: 3px;
 	font-size: 18pt;
 	line-height: 1.25em;
-	padding-left: 15px;
 	color: #555;
 }
 
