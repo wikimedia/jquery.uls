@@ -161,12 +161,18 @@ input:focus#languagefilter {
 	border: 1px solid #3366bb;
 }
 
-#search {
-	background-color: #f8f8f8;
-	border-top-color: #aaaaaa;
+#search{
+	background: #f8f8f8;
+	background: linear-gradient(#F0F0F0, #FBFBFB);
+	background: -webkit-gradient(linear, left top, left bottom, from(#F0F0F0), to(#FBFBFB));
+	background: -moz-linear-gradient(top, #F0F0F0, #FBFBFB);
+	border-top-color: #AAA;
 	border-top-style: solid;
 	border-top-width: 1px;
 	padding: 0.8em 0;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #EEE;
 }
 
 .search-label {
