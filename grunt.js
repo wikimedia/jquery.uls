@@ -1,7 +1,7 @@
 /* global module:false */
 module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-css');
-	grunt.loadNpmTasks('grunt-cp');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 	// Project configuration.
 	grunt
 			.initConfig({
@@ -27,14 +27,12 @@ module.exports = function(grunt) {
 						dest : 'dist/<%= pkg.name %>/css/<%= pkg.name %>.css'
 					}
 				},
-				cp: {
-					i18n: {
-						src: 'i18n',
-						dest: 'dist/jquery.uls/i18n'
-					},
-					images: {
-						src: 'images',
-						dest: 'dist/jquery.uls/images'
+				copy: {
+					dist: {
+						files: {
+							'dist/jquery.uls/i18n/': 'i18n/**',
+							'dist/jquery.uls/images/': 'images/**'
+						}
 					}
 				},
 				min : {
@@ -95,7 +93,7 @@ module.exports = function(grunt) {
 				}
 			});
 	// Default task.
-	grunt.registerTask('default', 'lint cssmin concat min cp csslint');
+	grunt.registerTask('default', 'lint cssmin concat min copy csslint');
 	grunt.registerTask('test', 'lint qunit');
 
 };

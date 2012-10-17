@@ -31,7 +31,7 @@
     "grunt": "~0.3.9",
     "grunt-compare-size": ">=0.1.4",
     "grunt-css": ">0.0.0",
-    "grunt-cp": ">0.0.0"
+    "grunt-contrib-copy": ">0.0.0"
   },
   "repository": {
     "type": "git",
