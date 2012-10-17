@@ -29,10 +29,6 @@
 	background-clip: padding-box;
 }
 
-.uls-menu a {
-	color: #3366bb;
-}
-
 .uls-menu h1 {
 	font-weight: normal;
 	padding-top: 1.25em;
@@ -75,9 +71,9 @@ div.uls-region {
 	padding: 0;
 	margin: 0;
 	height: 125px;
-	border-bottom-color: #555;
+	border-bottom-color: transparent;
 	border-bottom-style: solid;
-	border-bottom-width: 3px;
+	border-bottom-width: 2px;
 }
 
 .uls-worldmap .uls-region { /* The map doesn't flip */
@@ -105,18 +101,9 @@ div.uls-region {
 		endColorstr=#253366bb );
 	-ms-filter:
 		"progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb, endColorstr=#253366bb)";
-	border-bottom-color: #3366bb;
-	border-bottom-style: solid;
 }
 
 .regionselector.active {
-	/*Cross-browser background transparency*/
-	background: #3366bb;
-	background: rgba(51, 102, 187, 0.2);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb,
-		endColorstr=#253366bb );
-	-ms-filter:
-		"progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb, endColorstr=#253366bb)";
 	border-bottom-color: #3366bb;
 	border-bottom-style: solid;
 }
@@ -127,14 +114,33 @@ div.uls-region {
 	padding-right: 0;
 	float: right;
 	overflow: hidden;
+	color: rgba(0,0,0,0);
+	opacity: 0.7;
+	transition: color 0.15s linear;
+	-moz-transition: color 0.15s linear;
+	-webkit-transition: color 0.15s linear;
+}
+
+#map-block:hover {
+	opacity: 1;
+	color: #333;
 }
 
 #map-block a {
-	color: #444;
+	
 }
 
+#map-block #uls-region-1 {
+	border-color: transparent;
+}
+#map-block:hover #uls-region-1.active{
+	border-color: #3366bb;
+}
+
+
+
 #map-block .active a {
-	color: #252525;
+	/*color: #252525;*/
 	font-weight: bold;
 }
 
