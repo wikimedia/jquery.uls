@@ -109,9 +109,9 @@ languages:
  # world?
   en: [Latn, [EU, AM, AF, ME, AS, PA, WW], English]
   eo: [Latn, [WW], Esperanto]
-  es-419: [Latn, [AM], espanol de America Latina]
+  es-419: [Latn, [AM], español de America Latina]
  # world?
-  es-formal: [Latn, [EU, AM, AF, WW], Español (formal)]
+  es-formal: [Latn, [EU, AM, AF, WW], español (formal)]
  # world?
   es: [Latn, [EU, AM, AF, WW], español]
   esu: [Latn, [AM], "Yup'ik"]
