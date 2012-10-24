@@ -104,18 +104,21 @@
 			if ( !this.$element.hasClass( 'active') ) {
 				return true;
 			}
-			var that = this;
+
+			var regionSelector = this;
+
 			// Do not respond to all scroll end events, but only after a short interval
 			delay( function () {
-				var regiongroup = that.$element.data( 'regiongroup' );
-				var nextRegiongroup = regiongroup + 1;
+				var regiongroup = regionSelector.$element.data( 'regiongroup' ),
+					nextRegiongroup = regiongroup + 1,
+					$nextRegion = $( '#uls-region-' + nextRegiongroup ),
+					next = $nextRegion.length && $nextRegion.data( 'regionselector' );
 
-				var $nextRegion = $( '#uls-region-' + nextRegiongroup );
-				var next = $nextRegion.length && $nextRegion.data( 'regionselector' );
 				if ( next ) {
 					next.show();
 				}
 			}, 100 );
+
 			return false;
 		},
 
@@ -136,7 +139,7 @@
 			// Make the selected region (and it only) active
 			$( '.regionselector' ).removeClass( 'active' );
 			if ( this.regionGroup ) {
-				// if there is a region group, make it active.
+				// If there is a region group, make it active.
 				this.$element.addClass( 'active' );
 			}
 		}
