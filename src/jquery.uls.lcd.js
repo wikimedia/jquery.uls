@@ -272,9 +272,10 @@
 				lcd.$element.find( 'div.uls-lcd-region-section' ).each( function () {
 					var $lcdRegionSection = $( this ),
 						top = $lcdRegionSection.position().top,
-						height = $lcdRegionSection.height();
+						height = $lcdRegionSection.height(),
+						padding = 10;
 
-					if ( top < scrollTop && height > scrollBottom ) {
+					if ( top - padding <= scrollTop && height > scrollBottom ) {
 						inviewRegion = $lcdRegionSection.attr( 'id' );
 						return true;
 					}
