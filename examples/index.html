@@ -33,7 +33,7 @@
 				$( '.uls-trigger' ).uls( {
 					onSelect : function( language ) {
 						var languageName = $.uls.data.getAutonym( language );
-						$('a#pageLanguage').text( languageName );
+						$( '.uls-trigger' ).text( languageName );
 					},
 					quickList: ['en', 'hi', 'he', 'ml', 'ta','fr'] //FIXME
 				} );
@@ -43,7 +43,7 @@
 
 	<body>
 		<div class="navbar navbar-fixed-top">
-			<span class="active uls-trigger"> <a id="pageLanguage" href="#">Select Language</a> </span>
+			<span class="active uls-trigger">Select Language</span>
 			<h1>Universal Language Selector</h1>
 			<p>
 				Demonstration of jquery plugin

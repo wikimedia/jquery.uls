@@ -31,7 +31,7 @@
 					},
 					onSelect : function( language ) {
 						var languageName = $.uls.data.getAutonym( language );
-						$('a#pageLanguage').text( languageName );
+						$( '.uls-trigger' ).text( languageName );
 						i18n.locale = language;
 						// For ULS
 						i18n.load( '../i18n/' + language + '.json', language );
@@ -49,7 +49,7 @@
 
 	<body>
 		<div class="navbar navbar-fixed-top">
-			<span class="active uls-trigger"> <a id="pageLanguage" href="#">Select Language</a> </span>
+			<span class="active uls-trigger">Select Language</span>
 			<h1 data-i18n="uls-example-title">Universal Language Selector</h1>
 			<p>
 				Demonstration of jquery plugin
