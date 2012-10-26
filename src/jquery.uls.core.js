@@ -162,7 +162,7 @@
 			this.$resultsView.lcd( 'empty' );
 
 			// Use lazy loading only when there are 100+ languages.
-			if ( count > 100 ) {
+			if ( this.options.lazyload ) {
 				this.$regionFilters.first().regionselector( 'show' );
 			} else{
 				this.$regionFilters.regionselector( 'show' );
@@ -224,7 +224,8 @@
 			lcd = that.$resultsView.lcd( {
 				languages: that.languages,
 				quickList: that.options.quickList,
-				clickhandler: $.proxy( that.onSelect, that )
+				clickhandler: $.proxy( that.onSelect, that ),
+				lazyload: that.options.lazyload
 			} ).data( "lcd" );
 
 			that.$languageFilter.languagefilter( {
@@ -328,7 +329,8 @@
 		onSelect: null, // Callback function to be called when a language is selected
 		searchAPI: null, // Language search API
 		languages: $.uls.data.getAutonyms(), // Languages to be used for ULS, default is all languages
-		quickList: null // Array of language codes of function that returns such
+		quickList: null, // Array of language codes of function that returns such
+		lazyload: true // Lazy load the language list when scrolled.
 	};
 
 	//  Define a dummy i18n function, if jquery.i18n not integrated.
