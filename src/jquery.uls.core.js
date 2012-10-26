@@ -158,8 +158,15 @@
 		},
 
 		defaultSearch: function () {
+			var count = getObjectLength ( this.languages );
 			this.$resultsView.lcd( 'empty' );
-			this.$regionFilters.first().regionselector( 'show' );
+
+			// Use lazy loading only when there are 100+ languages.
+			if ( count > 100 ) {
+				this.$regionFilters.first().regionselector( 'show' );
+			} else{
+				this.$regionFilters.regionselector( 'show' );
+			}
 		},
 
 		/**
@@ -331,5 +338,17 @@
 	}
 
 	$.fn.uls.Constructor = ULS;
+
+	// Private utility functions
+
+	function getObjectLength ( obj ) {
+		var k, count = 0;
+		for ( k in obj ) {
+			if ( obj.hasOwnProperty( k ) ) {
+				count++;
+			}
+		}
+		return count;
+	}
 
 } ( jQuery ) );
