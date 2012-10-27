@@ -1,0 +1,19 @@
+{
+	"uls-select-language": "Ch'al xkaghun",
+	"uls-region-WW": "Virialemdin",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Azia",
+	"uls-region-ME": "Muq'o erch'i pad",
+	"uls-region-PA": "Okeani",
+	"uls-no-results-found": "Jaghanach",
+	"uls-common-languages": "Bulvilin ch'alar",
+	"uls-no-results-suggestion-title": "Kwez mumkin i ch'alar muqaya xun:",
+	"uls-search-help": "Mumkinval ava jagharun chalan t'warceay ni xat'unay, ISO koday chalan ik'ni kiligun ellday",
+	"@metadata": {
+		"authors": [
+			"Namik"
+		]
+	}
+}

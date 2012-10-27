@@ -1,0 +1,19 @@
+{
+	"uls-select-language": "Escueyi llingua",
+	"uls-region-WW": "Mundial",
+	"uls-region-AM": "Am\u00e9rica",
+	"uls-region-AF": "\u00c1frica",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Oriente mediu",
+	"uls-region-PA": "Pac\u00edficu",
+	"uls-no-results-found": "Nun s'alcontraron resultaos",
+	"uls-common-languages": "Lling\u00fces com\u00fanes",
+	"uls-no-results-suggestion-title": "Seique t'interese:",
+	"uls-search-help": "Pues buscar pol nome de la llingua, nome del alfabetu, c\u00f3digu ISO de la llingua o ver un \u00e1rea xeogr\u00e1fica:",
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	}
+}
