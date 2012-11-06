@@ -6,6 +6,9 @@ Universal  Language Selector
 
 This is a [Wikimedia Foundation Internationalization team project](https://www.mediawiki.org/wiki/Project_Milkshake).
 
+
+![Universal Language Selector](https://upload.wikimedia.org/wikipedia/commons/c/cd/ULS-GeoIP.png "Universal Language Selector")
+
 Quick start
 -----------
 
