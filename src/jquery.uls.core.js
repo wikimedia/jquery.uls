@@ -329,7 +329,7 @@
 		onSelect: null, // Callback function to be called when a language is selected
 		searchAPI: null, // Language search API
 		languages: $.uls.data.getAutonyms(), // Languages to be used for ULS, default is all languages
-		quickList: null, // Array of language codes of function that returns such
+		quickList: null, // Array of language codes or function that returns such
 		lazyload: true // Lazy load the language list when scrolled.
 	};
 
