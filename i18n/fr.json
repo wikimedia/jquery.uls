@@ -1,4 +1,9 @@
 {
+	"@metadata": {
+		"authors": [
+			"Gomoko"
+		]
+	},
 	"uls-select-language": "Choisir la langue",
 	"uls-region-WW": "Dans le monde entier",
 	"uls-region-AM": "Am\u00e9rique",
@@ -11,9 +16,5 @@
 	"uls-common-languages": "Langues communes",
 	"uls-no-results-suggestion-title": "Vous pouvez \u00eatre int\u00e9ress\u00e9 par:",
 	"uls-search-help": "Vous pouvez rechercher par nom de langue, par nom du script, par code ISO de la langue, ou vous pouvez naviguer par r\u00e9gion:",
-	"@metadata": {
-		"authors": [
-			"Gomoko"
-		]
-	}
+	"uls-search-placeholder": "Recherche de langue"
 }

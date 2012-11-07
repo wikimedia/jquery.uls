@@ -1,9 +1,11 @@
 {
-	"@metadata": [
-		
-	],
+	"@metadata": {
+		"authors": [
+			"Nike"
+		]
+	},
 	"uls-select-language": "Language Selector Title",
-	"uls-region-WW": "Label for worldwide languages. They are languages spoken in multiple countries. Eg: English, French, Spanish etc. This lable is used in the map region of ULS and as the title of section showing worldwide languages. Translation should not be descriptive.",
+	"uls-region-WW": "Label for worldwide languages. They are languages spoken in multiple countries. Eg: English, French, Spanish etc. This label is used in the map region of ULS and as the title of section showing worldwide languages. Translation should not be descriptive.",
 	"uls-region-AM": "Label for America",
 	"uls-region-AF": "Label for Africa",
 	"uls-region-EU": "Label for Europe",
@@ -13,5 +15,6 @@
 	"uls-no-results-found": "Title text for 'No results found' section",
 	"uls-common-languages": "Title for languages listed based on GeoIP, previously used languaguage, browser accept-language etc.",
 	"uls-no-results-suggestion-title": "Title for language suggestion in 'no results found' screen",
-	"uls-search-help": "Help text for searching. After this text, there will be a set of links for regions"
+	"uls-search-help": "Help text for searching. After this text, there will be a set of links for regions",
+	"uls-search-placeholder": "Placeholder text in search box"
 }

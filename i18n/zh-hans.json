@@ -1,0 +1,20 @@
+{
+	"uls-select-language": "\u9009\u62e9\u8bed\u8a00",
+	"uls-region-WW": "\u5168\u7403\u6027",
+	"uls-region-AM": "\u7f8e\u6d32",
+	"uls-region-AF": "\u975e\u6d32",
+	"uls-region-EU": "\u6b27\u6d32",
+	"uls-region-AS": "\u4e9a\u6d32",
+	"uls-region-ME": "\u4e2d\u4e1c",
+	"uls-region-PA": "\u592a\u5e73\u6d0b",
+	"uls-no-results-found": "\u672a\u627e\u5230\u4efb\u4f55\u7ed3\u679c",
+	"uls-common-languages": "\u5e38\u7528\u8bed\u8a00",
+	"uls-no-results-suggestion-title": "\u60a8\u53ef\u80fd\u611f\u5174\u8da3\u7684\uff1a",
+	"uls-search-help": "\u60a8\u53ef\u4ee5\u7528\u8bed\u8a00\u540d\u79f0\u3001\u811a\u672c\u540d\u79f0\u3001\u8bed\u8a00ISO\u4ee3\u7801\u641c\u7d22\uff0c\u6216\u8005\u60a8\u4e5f\u53ef\u4ee5\u6309\u533a\u57df\u6d4f\u89c8\uff1a",
+	"uls-search-placeholder": "\u8bed\u8a00\u641c\u7d22",
+	"@metadata": {
+		"authors": [
+			"Yfdyh000"
+		]
+	}
+}

@@ -1,4 +1,9 @@
 {
+	"@metadata": {
+		"authors": [
+			"Als-Holder"
+		]
+	},
 	"uls-select-language": "Sproch wehle",
 	"uls-region-WW": "W\u00e4ltwyt",
 	"uls-region-AM": "Amerika",
@@ -11,9 +16,5 @@
 	"uls-common-languages": "Sproche",
 	"uls-no-results-suggestion-title": "Des chennt Di interessiere:",
 	"uls-search-help": "Du chasch noch em Name vu dr Sproch sueche, em Name vu dr Schrift, em ISO-Code vu dr Sproch oder Du gohsch iber e Region fir Suechi:",
-	"@metadata": {
-		"authors": [
-			"Als-Holder"
-		]
-	}
+	"uls-search-placeholder": "Sproch sueche"
 }

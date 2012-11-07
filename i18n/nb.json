@@ -1,4 +1,10 @@
 {
+	"@metadata": {
+		"authors": [
+			"Event",
+			"Wouterkoch"
+		]
+	},
 	"uls-select-language": "Velg spr\u00e5k",
 	"uls-region-WW": "Verdensomspennende",
 	"uls-region-AM": "Amerika",
@@ -11,9 +17,5 @@
 	"uls-common-languages": "Vanlige spr\u00e5k",
 	"uls-no-results-suggestion-title": "Dette kan kanskje interessere deg:",
 	"uls-search-help": "Du kan s\u00f8ke basert p\u00e5 spr\u00e5kets navn, skriptnavn eller ISO-kode, eller bla basert p\u00e5 region:",
-	"@metadata": {
-		"authors": [
-			"Event"
-		]
-	}
+	"uls-search-placeholder": "Spr\u00e5ks\u00f8k"
 }

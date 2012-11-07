@@ -1,4 +1,9 @@
 {
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
 	"uls-select-language": "Selige lingua",
 	"uls-region-WW": "Mundial",
 	"uls-region-AM": "America",
@@ -11,9 +16,5 @@
 	"uls-common-languages": "Linguas commun",
 	"uls-no-results-suggestion-title": "Tu pote esser interessate in:",
 	"uls-search-help": "Tu pote cercar per nomine de lingua, nomine de scriptura o codice ISO de lingua, o tu pote foliar per le regiones:",
-	"@metadata": {
-		"authors": [
-			"McDutchie"
-		]
-	}
+	"uls-search-placeholder": "Recerca de lingua"
 }

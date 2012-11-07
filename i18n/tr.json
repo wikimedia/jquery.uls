@@ -1,4 +1,10 @@
 {
+	"@metadata": {
+		"authors": [
+			"Erdemaslancan",
+			"Sadrettin"
+		]
+	},
 	"uls-select-language": "Dil se\u00e7in",
 	"uls-region-WW": "D\u00fcnya \u00e7ap\u0131nda",
 	"uls-region-AM": "Amerika",
@@ -10,11 +16,5 @@
 	"uls-no-results-found": "Sonu\u00e7 bulunamad\u0131",
 	"uls-common-languages": "Ortak diller",
 	"uls-no-results-suggestion-title": "Belki ilginizi \u00e7ekebilir:",
-	"uls-search-help": "Dil ad\u0131na, betik ad\u0131na, dilin ISO koduna g\u00f6re arama yapabilirsiniz ya da b\u00f6lgeye g\u00f6re tarayabilirsiniz:",
-	"@metadata": {
-		"authors": [
-			"Erdemaslancan",
-			"Sadrettin"
-		]
-	}
+	"uls-search-help": "Dil ad\u0131na, betik ad\u0131na, dilin ISO koduna g\u00f6re arama yapabilirsiniz ya da b\u00f6lgeye g\u00f6re tarayabilirsiniz:"
 }

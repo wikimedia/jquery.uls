@@ -15,5 +15,6 @@
 	"uls-no-results-found": "Nenalezeny \u017e\u00e1dn\u00e9 v\u00fdsledky",
 	"uls-common-languages": "B\u011b\u017en\u00e9 jazyky",
 	"uls-no-results-suggestion-title": "Mohlo by v\u00e1s zaj\u00edmat:",
-	"uls-search-help": "M\u016f\u017eete vyhled\u00e1vat podle n\u00e1zvu jazyka, n\u00e1zvu p\u00edsma, ISO k\u00f3du jazyka nebo m\u016f\u017eete proch\u00e1zet po regionech:"
+	"uls-search-help": "M\u016f\u017eete vyhled\u00e1vat podle n\u00e1zvu jazyka, n\u00e1zvu p\u00edsma, ISO k\u00f3du jazyka nebo m\u016f\u017eete proch\u00e1zet po regionech:",
+	"uls-search-placeholder": "Hled\u00e1n\u00ed jazyka"
 }

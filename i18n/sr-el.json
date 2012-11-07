@@ -1,4 +1,9 @@
 {
+	"@metadata": {
+		"authors": [
+			"Rancher"
+		]
+	},
 	"uls-select-language": "Odabir jezika",
 	"uls-region-WW": "Svetski",
 	"uls-region-AM": "Amerika",
@@ -11,9 +16,5 @@
 	"uls-common-languages": "Zastupljeni jezici",
 	"uls-no-results-suggestion-title": "Mo\u017eda vas interesuje:",
 	"uls-search-help": "Mo\u017eete da tra\u017eite po imenu jezika ili pisma, po ISO kodu jezika ili pak po regionu:",
-	"@metadata": {
-		"authors": [
-			"Rancher"
-		]
-	}
+	"uls-search-placeholder": "Jezik pretrage"
 }

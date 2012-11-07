@@ -15,5 +15,6 @@
 	"uls-no-results-found": "Geen resultaten gevonden",
 	"uls-common-languages": "Taalsuggesties",
 	"uls-no-results-suggestion-title": "Wellicht wilt u een van de volgende talen kiezen:",
-	"uls-search-help": "U kunt zoeken op taalnaam, schriftnaam, ISO-code van de taal of u kunt bladeren per regio:"
+	"uls-search-help": "U kunt zoeken op taalnaam, schriftnaam, ISO-code van de taal of u kunt bladeren per regio:",
+	"uls-search-placeholder": "Taal zoeken"
 }

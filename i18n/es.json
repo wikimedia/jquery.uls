@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Armando-Martin",
 			"McDutchie",
 			"Pginer",
 			"Santhosh.thottingal"
@@ -17,5 +18,6 @@
 	"uls-no-results-found": "No se encontraron resultados",
 	"uls-common-languages": "Idiomas comunes",
 	"uls-no-results-suggestion-title": "Puedes estar interesado en:",
-	"uls-search-help": "Puedes buscar por el nombre del idioma, su tipo de escritura, el c\u00f3digo ISO del idioma o su \u00e1rea geogr\u00e1fica:"
+	"uls-search-help": "Puedes buscar por el nombre del idioma, su tipo de escritura, el c\u00f3digo ISO del idioma o su \u00e1rea geogr\u00e1fica:",
+	"uls-search-placeholder": "B\u00fasqueda de idioma"
 }

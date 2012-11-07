@@ -1,4 +1,10 @@
 {
+	"@metadata": {
+		"authors": [
+			"Dbc334",
+			"Irena Plahuta"
+		]
+	},
 	"uls-select-language": "Izberite jezik",
 	"uls-region-WW": "Svetovni jeziki",
 	"uls-region-AM": "Amerika",
@@ -11,9 +17,5 @@
 	"uls-common-languages": "Splo\u0161ni jezik",
 	"uls-no-results-suggestion-title": "Morda Vas zanima:",
 	"uls-search-help": "I\u0161\u010dete lahko po imenu jezika, imenu pisave, jezikovni ISO kodi ali po podro\u010dju:",
-	"@metadata": {
-		"authors": [
-			"Irena Plahuta"
-		]
-	}
+	"uls-search-placeholder": "Iskanje jezikov"
 }

@@ -15,5 +15,6 @@
 	"uls-no-results-found": "Nessun risultato",
 	"uls-common-languages": "Lingue pi\u00f9 scelte",
 	"uls-no-results-suggestion-title": "Puoi essere interessato a:",
-	"uls-search-help": "\u00c8 possibile cercare per nome, nome dello script, codice ISO della lingua o si pu\u00f2 navigare tramite regione:"
+	"uls-search-help": "\u00c8 possibile cercare per nome, nome dello script, codice ISO della lingua o si pu\u00f2 navigare tramite regione:",
+	"uls-search-placeholder": "Ricerca lingua"
 }
