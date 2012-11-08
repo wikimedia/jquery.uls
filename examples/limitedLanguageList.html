@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8"/>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+		<title>Universal Language Selector</title>
+		<meta name="author" content="Santhosh Thottingal"/>
+		<link href="../css/jquery.uls.css" rel="stylesheet"/>
+		<link href="../css/jquery.uls.grid.css" rel="stylesheet"/>
+		<link href="../css/jquery.uls.lcd.css" rel="stylesheet"/>
+		<!-- demo -->
+		<link href="resources/demo.css" rel="stylesheet"/>
+		<!-- Libs -->
+		<script src="resources/jquery.js"></script>
+		<!-- Source -->
+		<script src="../src/jquery.uls.data.js"></script>
+		<script src="../src/jquery.uls.data.utils.js"></script>
+		<script src="../src/jquery.uls.lcd.js"></script>
+		<script src="../src/jquery.uls.languagefilter.js"></script>
+		<script src="../src/jquery.uls.regionfilter.js"></script>
+		<script src="../src/jquery.uls.core.js"></script>
+		<script>
+			$( document ).ready( function() {
+				$( '.uls-trigger' ).uls( {
+					onSelect : function( language ) {
+						var languageName = $.uls.data.getAutonym( language );
+						$( '.uls-trigger' ).text( languageName );
+					},
+			lazyload: false, // For small language list no lazy load required.
+			languages: { // Languages are listed using its autonym. these language names
+						// in English(language names in current UI language) will also be used for search.
+						'en': 'English',
+						'hi': 'Hindi',
+						'he': 'Hebrew',
+						'ml': 'Malayalam',
+						'ta': 'Tamil',
+						'fr': 'French'
+					}
+				} );
+			} );
+		</script>
+	</head>
+
+	<body>
+		<div class="navbar navbar-fixed-top">
+			<span class="active uls-trigger">Select Language</span>
+			<h1>Universal Language Selector</h1>
+			<p>
+				Demonstration of jquery plugin with limited language list
+			</p>
+		</div>
+		<div class="container"></div>
+	</body>
+</html>
