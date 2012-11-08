@@ -158,10 +158,8 @@
 		},
 
 		defaultSearch: function () {
-			var count = getObjectLength ( this.languages );
 			this.$resultsView.lcd( 'empty' );
 
-			// Use lazy loading only when there are 100+ languages.
 			if ( this.options.lazyload ) {
 				this.$regionFilters.first().regionselector( 'show' );
 			} else{
