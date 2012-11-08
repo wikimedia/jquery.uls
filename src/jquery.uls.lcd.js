@@ -262,7 +262,7 @@
 				var $ulsLanguageList = $( this ),
 					scrollTop = $ulsLanguageList.position().top,
 					scrollBottom = $ulsLanguageList.height();
-				if ( lcd.options.lazyload ) {
+				if ( lcd.options.lazyload && lcd.options.source.val() === '' ) {
 					if ( this.offsetHeight + this.scrollTop >= this.scrollHeight / 2 ) {
 						lcd.$element.trigger( 'scrollend' );
 					}

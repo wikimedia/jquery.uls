@@ -223,7 +223,8 @@
 				languages: that.languages,
 				quickList: that.options.quickList,
 				clickhandler: $.proxy( that.onSelect, that ),
-				lazyload: that.options.lazyload
+				lazyload: that.options.lazyload,
+				source: that.$languageFilter
 			} ).data( "lcd" );
 
 			that.$languageFilter.languagefilter( {
