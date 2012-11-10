@@ -210,7 +210,7 @@
 
 			that.$languageFilter.on( 'seachclear', $.proxy( that.defaultSearch, that ) );
 			// Handle click on close button
-			this.$menu.find( "#uls-close" ).on( 'click', $.proxy( that.hide, that ) );
+			this.$menu.find( "#uls-close" ).on( 'click', $.proxy( that.cancel, that ) );
 
 			// Handle key press events on the menu
 			that.$menu.on('keypress', $.proxy(this.keypress, this) )
@@ -222,7 +222,7 @@
 			lcd = that.$resultsView.lcd( {
 				languages: that.languages,
 				quickList: that.options.quickList,
-				clickhandler: $.proxy( that.onSelect, that ),
+				clickhandler: $.proxy( that.select, that ),
 				lazyload: that.options.lazyload,
 				source: that.$languageFilter
 			} ).data( "lcd" );
@@ -239,7 +239,7 @@
 					that.noresults();
 				},
 				searchAPI: that.options.searchAPI,
-				onSelect: $.proxy( that.onSelect, that )
+				onSelect: $.proxy( that.select, that )
 			} );
 
 			// Create region selectors, one per region
@@ -266,10 +266,20 @@
 		 * On select handler for search results
 		 * @param langCode
 		 */
-		onSelect: function( langCode ) {
+		select: function( langCode ) {
 			this.hide();
 			if ( this.options.onSelect ) {
 				this.options.onSelect.call( this, langCode );
+			}
+		},
+
+		/**
+		 * On cancel handler for the uls menu
+		 */
+		cancel: function() {
+			this.hide();
+			if ( this.options.onCancel ) {
+				this.options.onCancel.call( this );
 			}
 		},
 
@@ -278,7 +288,7 @@
 				return;
 			}
 			if ( e.keyCode === 27 ) { // escape
-				this.hide();
+				this.cancel();
 				e.preventDefault();
 				e.stopPropagation();
 			}
@@ -289,7 +299,7 @@
 				return;
 			}
 			if ( e.keyCode === 27 ) { // escape
-				this.hide();
+				this.cancel();
 				e.preventDefault();
 				e.stopPropagation();
 			}
