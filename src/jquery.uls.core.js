@@ -215,7 +215,7 @@
 			// Handle key press events on the menu
 			that.$menu.on('keypress', $.proxy(this.keypress, this) )
 				.on('keyup', $.proxy(this.keyup, this) );
-			if ( $.browser.webkit || $.browser.msie ) {
+			if ( this.eventSupported( 'keydown' ) ) {
 				this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
 			}
 
@@ -301,8 +301,17 @@
 			if ( !this.shown ) {
 				this.show();
 			}
-		}
+		},
 
+		eventSupported: function ( eventName ) {
+			var isSupported = eventName in this.$menu;
+
+			if ( !isSupported ) {
+				this.$element.setAttribute( eventName, 'return;' );
+				isSupported = typeof this.$element[eventName] === 'function';
+			}
+			return isSupported;
+		}
 	};
 
 	/* ULS PLUGIN DEFINITION

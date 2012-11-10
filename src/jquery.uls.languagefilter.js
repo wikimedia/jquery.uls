@@ -50,7 +50,7 @@
 		listen: function() {
 			this.$element.on( 'keypress', $.proxy( this.keyup, this ) )
 				.on( 'keyup', $.proxy( this.keyup, this ) );
-			if ( $.browser.webkit || $.browser.msie ) {
+			if ( this.eventSupported( 'keydown' ) ) {
 				this.$element.on( 'keydown', $.proxy( this.keyup, this ) );
 			}
 			if ( this.$clear.length ) {
@@ -250,6 +250,17 @@
 				matcher.test( $.uls.data.getAutonym( langCode ) ) ||
 				matcher.test( langCode ) ||
 				matcher.test( $.uls.data.getScript( langCode ) );
+		},
+
+		eventSupported: function ( eventName ) {
+			var isSupported = eventName in this.$element;
+
+			if ( !isSupported ) {
+				this.$element.setAttribute( eventName, 'return;' );
+				isSupported = typeof this.$element[eventName] === 'function';
+			}
+
+			return isSupported;
 		}
 
 	};
