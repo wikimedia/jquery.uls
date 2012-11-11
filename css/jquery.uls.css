@@ -29,7 +29,7 @@
 	background-clip: padding-box;
 }
 
-.uls-title a{
+.uls-title a {
 	padding-left: 15px;
 }
 
@@ -118,9 +118,9 @@ div.uls-region {
 	padding-right: 0;
 	float: right;
 	overflow: hidden;
-	 color: rgba(0,0,0,0);
+	color: rgba(0,0,0,0);
 	opacity: 0.7;
- 	transition: color 0.15s linear;
+	transition: color 0.15s linear;
 	-moz-transition: color 0.15s linear;
 	-webkit-transition: color 0.15s linear;
 }
@@ -134,7 +134,7 @@ div.uls-region {
 	border-color: transparent;
 }
 
-#map-block:hover #uls-region-1.active{
+#map-block:hover #uls-region-1.active {
 	border-color: #3366bb;
 }
 
