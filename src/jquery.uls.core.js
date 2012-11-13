@@ -147,7 +147,10 @@
 			}
 			this.$menu.show();
 			this.shown = true;
-			this.$languageFilter.focus();
+
+			if ( !this.isMobile() ) {
+				this.$languageFilter.focus();
+			}
 		},
 
 		i18n: function() {
@@ -321,6 +324,10 @@
 				isSupported = typeof this.$element[eventName] === 'function';
 			}
 			return isSupported;
+		},
+
+		isMobile: function () {
+			return navigator.userAgent.match( /(iPhone|iPod|iPad|Android|BlackBerry)/ );
 		}
 	};
 

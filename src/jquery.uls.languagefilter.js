@@ -104,7 +104,10 @@
 		 */
 		deactivate: function() {
 			this.$element.val( '' );
-			this.$element.focus();
+
+			if ( !$.fn.uls.Constructor.prototype.isMobile() ) {
+				this.$element.focus();
+			}
 			this.toggleClear();
 			this.autofill();
 		},
