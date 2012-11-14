@@ -33,13 +33,13 @@
 					<span data-i18n="uls-search-help">You can search by language name, \
 					script name, ISO code of language or \
 					you can browse by region:</span>\
-					<a class="uls-region-link" data-i18n="uls-region-AM" data-region="AM" href="#">America</a>, \
-					<a class="uls-region-link" data-i18n="uls-region-EU" data-region="EU" href="#">Europe</a>, \
-					<a class="uls-region-link" data-i18n="uls-region-ME" data-region="ME" href="#">Middle East</a>, \
-					<a class="uls-region-link" data-i18n="uls-region-AF" data-region="AF" href="#">Africa</a>, \
-					<a class="uls-region-link" data-i18n="uls-region-AS" data-region="AS" href="#">Asia</a>, \
-					<a class="uls-region-link" data-i18n="uls-region-PA" data-region="PA" href="#">Pacific</a>, \
-					<a class="uls-region-link" data-i18n="uls-region-WW" data-region="WW" href="#">Worldwide</a>.\
+					<a class="uls-region-link" data-i18n="uls-region-AM" data-region="AM">America</a>, \
+					<a class="uls-region-link" data-i18n="uls-region-EU" data-region="EU">Europe</a>, \
+					<a class="uls-region-link" data-i18n="uls-region-ME" data-region="ME">Middle East</a>, \
+					<a class="uls-region-link" data-i18n="uls-region-AF" data-region="AF">Africa</a>, \
+					<a class="uls-region-link" data-i18n="uls-region-AS" data-region="AS">Asia</a>, \
+					<a class="uls-region-link" data-i18n="uls-region-PA" data-region="PA">Pacific</a>, \
+					<a class="uls-region-link" data-i18n="uls-region-WW" data-region="WW">Worldwide</a>.\
 				</p>\
 			</div>\
 		</div>\
