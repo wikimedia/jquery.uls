@@ -124,7 +124,7 @@ div.uls-region {
 	-webkit-transition: opacity 0.2s linear;
 }
 
-#map-block a{
+#map-block a {
 	opacity:0;
 	transition: opacity 0.15s linear;
 	-moz-transition: opacity 0.15s linear;
