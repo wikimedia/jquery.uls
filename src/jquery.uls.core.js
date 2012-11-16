@@ -319,7 +319,9 @@
 		click: function( e ) {
 			e.stopPropagation();
 			e.preventDefault();
-			if ( !this.shown ) {
+			if ( this.shown ) {
+				this.hide();
+			} else {
 				this.show();
 			}
 		},
