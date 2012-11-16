@@ -211,7 +211,7 @@
 			// Register all event listeners to the ULS here.
 			uls.$element.on( 'click', $.proxy( uls.click, uls ) );
 
-			uls.$languageFilter.on( 'seachclear', $.proxy( uls.defaultSearch, uls ) );
+			uls.$languageFilter.on( 'searchclear', $.proxy( uls.defaultSearch, uls ) );
 			// Handle click on close button
 			uls.$menu.find( '#uls-close' ).on( 'click', $.proxy( uls.cancel, uls ) );
 
