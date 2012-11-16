@@ -95,7 +95,7 @@
 		this.top = this.options.top;
 		this.shown = false;
 		this.initialized = false;
-		this.$languageFilter = this.$menu.find( 'input#languagefilter' );
+		this.$languageFilter = this.$menu.find( '#languagefilter' );
 		this.$regionFilters = this.$menu.find( '.uls-region' );
 		this.$resultsView = this.$menu.find( 'div.uls-language-list' );
 		this.render();
