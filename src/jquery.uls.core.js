@@ -18,8 +18,8 @@
  * @licence MIT License
  */
 
-(function ( $ ) {
-	"use strict";
+( function ( $ ) {
+	'use strict';
 
 	// Region numbers in id attributes also appear in the langdb.
 	var template = '\
@@ -86,7 +86,7 @@
 		for ( var code in this.languages ) {
 			if ( $.uls.data.languages[code] === undefined ) {
 				if ( window.console && window.console.log ) {
-					window.console.log( "ULS: Unknown language " + code + "." );
+					window.console.log( 'ULS: Unknown language ' + code + '.' );
 				}
 				delete this.languages[code];
 			}
@@ -206,61 +206,61 @@
 		 */
 		listen: function() {
 			var lcd,
-				that = this;
+				uls = this;
 
 			// Register all event listeners to the ULS here.
-			that.$element.on( 'click', $.proxy( that.click, that ) );
+			uls.$element.on( 'click', $.proxy( uls.click, uls ) );
 
-			that.$languageFilter.on( 'seachclear', $.proxy( that.defaultSearch, that ) );
+			uls.$languageFilter.on( 'searchclear', $.proxy( uls.defaultSearch, uls ) );
 			// Handle click on close button
-			this.$menu.find( "#uls-close" ).on( 'click', $.proxy( that.cancel, that ) );
+			uls.$menu.find( '#uls-close' ).on( 'click', $.proxy( uls.cancel, uls ) );
 
 			// Handle key press events on the menu
-			that.$menu.on('keypress', $.proxy(this.keypress, this) )
-				.on('keyup', $.proxy(this.keyup, this) );
+			uls.$menu.on( 'keypress', $.proxy( this.keypress, this ) )
+				.on( 'keyup', $.proxy( this.keyup, this ) );
 			if ( this.eventSupported( 'keydown' ) ) {
 				this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
 			}
 
-			lcd = that.$resultsView.lcd( {
-				languages: that.languages,
-				quickList: that.options.quickList,
-				clickhandler: $.proxy( that.select, that ),
-				lazyload: that.options.lazyload,
-				source: that.$languageFilter
-			} ).data( "lcd" );
+			lcd = uls.$resultsView.lcd( {
+				languages: uls.languages,
+				quickList: uls.options.quickList,
+				clickhandler: $.proxy( uls.select, uls ),
+				lazyload: uls.options.lazyload,
+				source: uls.$languageFilter
+			} ).data( 'lcd' );
 
-			that.$languageFilter.languagefilter( {
+			uls.$languageFilter.languagefilter( {
 				$target: lcd,
-				languages: that.languages,
+				languages: uls.languages,
 				success: function() {
 					$( '.regionselector' ).removeClass( 'active' );
-					that.success();
+					uls.success();
 				},
 				noresults: function() {
 					$( '.regionselector' ).removeClass( 'active' );
-					that.noresults();
+					uls.noresults();
 				},
-				searchAPI: that.options.searchAPI,
-				onSelect: $.proxy( that.select, that )
+				searchAPI: uls.options.searchAPI,
+				onSelect: $.proxy( uls.select, uls )
 			} );
 
 			// Create region selectors, one per region
 			this.$menu.find( '.uls-region, .uls-region-link' ).regionselector( {
 				$target: lcd,
-				languages: that.languages,
+				languages: uls.languages,
 				success: function( regionfilter ) {
 					// Deactivate search filtering
-					that.$languageFilter.languagefilter( 'deactivate' );
+					uls.$languageFilter.languagefilter( 'deactivate' );
 					// If it is WW region, show the quicklist
 					if ( regionfilter.regionGroup === 1 ) {
 						lcd.quicklist();
 					}
 					// Show 'results view' if we are in no results mode
-					that.success();
+					uls.success();
 				},
 				noresults: function() {
-					that.$languageFilter.languagefilter( 'clear' );
+					uls.$languageFilter.languagefilter( 'clear' );
 				}
 			} );
 		},
