@@ -206,14 +206,22 @@
 		 */
 		listen: function() {
 			var lcd,
-				uls = this;
+				uls = this,
+				cancelProxy = $.proxy( uls.cancel, uls );
 
 			// Register all event listeners to the ULS here.
 			uls.$element.on( 'click', $.proxy( uls.click, uls ) );
 
 			uls.$languageFilter.on( 'searchclear', $.proxy( uls.defaultSearch, uls ) );
-			// Handle click on close button
-			uls.$menu.find( '#uls-close' ).on( 'click', $.proxy( uls.cancel, uls ) );
+
+			// Close when clicking on the close button
+			uls.$menu.find( '#uls-close' ).on( 'click', cancelProxy );
+			// Don't do anything if pressing on empty space in the ULS
+			uls.$menu.on( 'click', function ( e ) {
+				e.stopPropagation();
+			} );
+			// Close ULS if clicking elsewhere
+			$( document ).on( 'click', cancelProxy );
 
 			// Handle key press events on the menu
 			uls.$menu.on( 'keypress', $.proxy( this.keypress, this ) )
