@@ -117,7 +117,7 @@
 		 */
 		clear: function() {
 			this.deactivate();
-			this.$element.trigger( 'seachclear' );
+			this.$element.trigger( 'searchclear' );
 		},
 
 		/**
