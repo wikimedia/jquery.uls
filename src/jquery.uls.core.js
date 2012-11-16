@@ -18,8 +18,8 @@
  * @licence MIT License
  */
 
-(function ( $ ) {
-	"use strict";
+( function ( $ ) {
+	'use strict';
 
 	// Region numbers in id attributes also appear in the langdb.
 	var template = '\
@@ -86,7 +86,7 @@
 		for ( var code in this.languages ) {
 			if ( $.uls.data.languages[code] === undefined ) {
 				if ( window.console && window.console.log ) {
-					window.console.log( "ULS: Unknown language " + code + "." );
+					window.console.log( 'ULS: Unknown language ' + code + '.' );
 				}
 				delete this.languages[code];
 			}
@@ -213,7 +213,7 @@
 
 			that.$languageFilter.on( 'seachclear', $.proxy( that.defaultSearch, that ) );
 			// Handle click on close button
-			this.$menu.find( "#uls-close" ).on( 'click', $.proxy( that.cancel, that ) );
+			this.$menu.find( '#uls-close' ).on( 'click', $.proxy( that.cancel, that ) );
 
 			// Handle key press events on the menu
 			that.$menu.on('keypress', $.proxy(this.keypress, this) )
@@ -228,7 +228,7 @@
 				clickhandler: $.proxy( that.select, that ),
 				lazyload: that.options.lazyload,
 				source: that.$languageFilter
-			} ).data( "lcd" );
+			} ).data( 'lcd' );
 
 			that.$languageFilter.languagefilter( {
 				$target: lcd,
