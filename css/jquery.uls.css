@@ -118,14 +118,22 @@ div.uls-region {
 	padding-right: 0;
 	float: right;
 	overflow: hidden;
-	color: rgba(0,0,0,0);
 	opacity: 0.7;
-	transition: color 0.15s linear;
-	-moz-transition: color 0.15s linear;
-	-webkit-transition: color 0.15s linear;
+	-moz-transition: opacity 0.2s linear;
+	-o-transition: opacity 0.2s linear;
+	-webkit-transition: opacity 0.2s linear;
+	transition: opacity 0.2s linear;
 }
 
-#map-block:hover {
+#map-block a {
+	opacity:0;
+	-moz-transition: opacity 0.15s linear;
+	-o-transition: opacity 0.15s linear;
+	-webkit-transition: opacity 0.15s linear;
+	transition: opacity 0.15s linear;
+}
+
+#map-block:hover, #map-block:hover a {
 	opacity: 1;
 	color: #333;
 }
@@ -153,12 +161,16 @@ div.uls-region {
 
 input#languagefilter {
 	border: 1px solid #c9c9c9;
-	-moz-transition: all 0.15s linear 0s;
 	border-radius: 2px 2px 2px 2px;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
 	color: #333;
 	display: block;
 	background-color: transparent !important;
+	-moz-transition: all 0.15s linear 0s;
+	-o-transition: all 0.15s linear 0s;
+	-webkit-transition: all 0.15s linear 0s;
+	transition: all 0.15s linear 0s;
+
 }
 
 input:focus#languagefilter {
