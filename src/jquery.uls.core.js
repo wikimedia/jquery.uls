@@ -213,11 +213,11 @@
 
 			uls.$languageFilter.on( 'seachclear', $.proxy( uls.defaultSearch, uls ) );
 			// Handle click on close button
-			this.$menu.find( '#uls-close' ).on( 'click', $.proxy( uls.cancel, uls ) );
+			uls.$menu.find( '#uls-close' ).on( 'click', $.proxy( uls.cancel, uls ) );
 
 			// Handle key press events on the menu
-			uls.$menu.on('keypress', $.proxy(this.keypress, this) )
-				.on('keyup', $.proxy(this.keyup, this) );
+			uls.$menu.on( 'keypress', $.proxy( this.keypress, this ) )
+				.on( 'keyup', $.proxy( this.keyup, this ) );
 			if ( this.eventSupported( 'keydown' ) ) {
 				this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
 			}
