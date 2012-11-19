@@ -138,7 +138,8 @@ div.uls-region {
 	transition: opacity 0.15s linear;
 }
 
-.map-block:hover, .map-block:hover a {
+.map-block:hover,
+.map-block:hover a {
 	opacity: 1;
 	color: #333;
 }
