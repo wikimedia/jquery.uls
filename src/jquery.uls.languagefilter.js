@@ -34,11 +34,13 @@
 		this.$suggestion = this.$element.parents().find( '#' + this.$element.data( 'suggestion' ) );
 		this.$clear = this.$element.parents().find( '#'+ this.$element.data( 'clear' ) );
 		this.selectedLanguage = null;
+
 		this.listen();
 	};
 
 	var delay = ( function() {
 		var timer = 0;
+
 		return function( callback, milliseconds ) {
 			clearTimeout( timer );
 			timer = setTimeout( callback, milliseconds );
@@ -50,12 +52,15 @@
 		listen: function() {
 			this.$element.on( 'keypress', $.proxy( this.keyup, this ) )
 				.on( 'keyup', $.proxy( this.keyup, this ) );
+
 			if ( this.eventSupported( 'keydown' ) ) {
 				this.$element.on( 'keydown', $.proxy( this.keyup, this ) );
 			}
+
 			if ( this.$clear.length ) {
 				this.$clear.on( 'click' , $.proxy( this.clear, this ) );
 			}
+
 			this.toggleClear();
 		},
 
@@ -63,6 +68,7 @@
 			switch( e.keyCode ) {
 				case 9: // Tab -> Autocomplete
 					var suggestion = this.$suggestion.val();
+
 					if ( suggestion && suggestion !== this.$element.val() ) {
 						this.$element.val( suggestion );
 						e.preventDefault();
@@ -73,7 +79,9 @@
 					if ( !this.options.onSelect ) {
 						break;
 					}
+
 					var query = $.trim( this.$element.val() ).toLowerCase();
+
 					if ( this.selectedLanguage ) {
 						// this.selectLanguage will be populated from a matching search
 						this.options.onSelect( this.selectedLanguage );
@@ -82,10 +90,13 @@
 						// but we have a matching language code.
 						this.options.onSelect( query );
 					}
+
 					break;
 				default:
 					var that = this;
+
 					this.selectedLanguage = null;
+
 					delay( function() {
 						if ( !that.$element.val() ) {
 							that.clear();
@@ -94,6 +105,7 @@
 							that.search();
 						}
 					}, 300 );
+
 					this.toggleClear();
 			}
 		},
@@ -108,6 +120,7 @@
 			if ( !$.fn.uls.Constructor.prototype.isMobile() ) {
 				this.$element.focus();
 			}
+
 			this.toggleClear();
 			this.autofill();
 		},
@@ -140,25 +153,33 @@
 			var query = $.trim( this.$element.val() ),
 				languages = $.uls.data.getLanguagesByScriptGroup( this.options.languages ),
 				scriptGroup, langNum, langCode;
+
 			this.resultCount = 0;
+
 			for ( scriptGroup in languages ) {
 				var languagesInScript = languages[scriptGroup];
+
 				languagesInScript.sort( $.uls.data.sortByAutonym );
+
 				for ( langNum = 0; langNum < languagesInScript.length; langNum++ ) {
 					langCode = languagesInScript[langNum];
+
 					if ( query === "" || this.filter( langCode, query ) ) {
 						if ( this.resultCount === 0 ) {
 							// Autofill the first result.
 							this.autofill( langCode );
 						}
+
 						if ( query.toLowerCase() === langCode ) {
 							this.selectedLanguage = langCode;
 						}
+
 						this.render( langCode );
 						this.resultCount++;
 					}
 				}
 			}
+
 			// Also do a search by search API
 			if( !this.resultCount && this.options.searchAPI && query ) {
 				this.searchAPI( query );
@@ -169,6 +190,7 @@
 
 		searchAPI: function( query ) {
 			var that = this;
+
 			$.get( that.options.searchAPI, { search: query }, function( result ) {
 				$.each( result['languagesearch'], function( code, name ) {
 					if ( that.resultCount === 0 ) {
@@ -200,15 +222,19 @@
 			if ( !this.$suggestion.length ) {
 				return;
 			}
+
 			if ( !this.$element.val() ) {
 				this.$suggestion.val( '' );
 				return;
 			}
+
 			this.selectedLanguage = langCode;
 			languageName = languageName || this.options.languages[langCode];
+
 			var autonym,
 				userInput = this.$element.val(),
 				suggestion = userInput + languageName.substring( userInput.length, languageName.length );
+
 			if ( suggestion.toLowerCase() !== languageName.toLowerCase() ) {
 				// see if it was autonym match
 				autonym = $.uls.data.getAutonym( langCode ) || '';
@@ -218,18 +244,22 @@
 					suggestion = "";
 				}
 			}
+
 			// Make sure that it is a visual prefix.
 			if ( !isVisualPrefix( userInput, suggestion ) ) {
 				suggestion = "";
 			}
+
 			this.$suggestion.val( suggestion );
 		},
 
 		render: function( langCode ) {
 			var $target = this.options.$target;
+
 			if ( !$target ) {
 				return;
 			}
+
 			$target.append( langCode, null );
 		},
 
@@ -249,6 +279,7 @@
 			// FIXME script is ISO 15924 code. We might need actual name of script.
 			var matcher = new RegExp( "^" + this.escapeRegex( searchTerm ), 'i' ),
 				languageName = this.options.languages[langCode];
+
 			return matcher.test( languageName ) ||
 				matcher.test( $.uls.data.getAutonym( langCode ) ) ||
 				matcher.test( langCode ) ||
@@ -273,9 +304,11 @@
 			var $this = $( this ),
 				data = $this.data( 'languagefilter' ),
 				options = typeof option === 'object' && option;
+
 			if ( !data ) {
 				$this.data( 'languagefilter', ( data = new LanguageFilter( this, options ) ) );
 			}
+
 			if ( typeof option === 'string' ) {
 				data[option]();
 			}
