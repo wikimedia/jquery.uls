@@ -23,18 +23,18 @@
 
 	// Region numbers in id attributes also appear in the langdb.
 	var template = '\
-		<div class="uls-menu"> \
+		<div class="uls-menu uls-wide"> \
 			<div class="row"> \
 				<span id="uls-close" class="icon-close"></span> \
 			</div> \
 			<div class="row"> \
-				<div class="uls-title four columns">\
-					<h1 data-i18n="uls-select-language">Select Language</h1>\
+				<div class="uls-title-region four columns">\
+					<h1 data-i18n="uls-select-language" class="uls-title">Select Language</h1>\
 				</div>\
 				<div class="three columns" id="settings-block"></div>\
-				<div class="five columns" id="map-block">\
+				<div class="five columns map-block" id="map-block">\
 					<div class="row">\
-						<div data-regiongroup="1" id="uls-region-1" class="three columns uls-region">\
+						<div data-regiongroup="1" id="uls-region-1" class="three columns uls-region uls-region-1">\
 							<a data-i18n="uls-region-WW">Worldwide</a>\
 						</div>\
 						<div class="nine columns">\
@@ -56,20 +56,20 @@
 					</div>\
 				</div>\
 			</div>\
-			<div id="search" class="row"> \
+			<div id="search" class="row search"> \
 				<div class="one column">\
 					<span class="search-label"></span>\
 				</div>\
 				<div class="ten columns">\
-					<div id="search-input-block">\
-						<input type="text" class="filterinput" id="filtersuggestion" disabled="true"\
-							autocomplete="off" /> <input type="text" class="filterinput" id="languagefilter"\
+					<div id="search-input-block" class="search-input-block">\
+						<input type="text" class="filterinput filtersuggestion" id="filtersuggestion" disabled="true"\
+							autocomplete="off" /> <input type="text" class="filterinput languagefilter" id="languagefilter"\
 							data-clear="languagefilter-clear" data-suggestion="filtersuggestion"\
 							placeholder="Language search" autocomplete="off" />\
 					</div>\
 				</div>\
 				<div class="one column">\
-					<span id="languagefilter-clear"></span>\
+					<span id="languagefilter-clear" class="languagefilter-clear"></span>\
 				</div>\
 			</div>\
 			<div class="row uls-language-list"></div>\
