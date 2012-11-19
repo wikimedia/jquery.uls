@@ -173,10 +173,10 @@ div.uls-region {
 	color: #333;
 	display: block;
 	padding: 6px;
-	-moz-transition: all 0.15s linear 0s;
-	-o-transition: all 0.15s linear 0s;
-	-webkit-transition: all 0.15s linear 0s;
-	transition: all 0.15s linear 0s;
+	-moz-transition: border 0.15s linear 0s;
+	-o-transition: border 0.15s linear 0s;
+	-webkit-transition: border 0.15s linear 0s;
+	transition: border 0.15s linear 0s;
 }
 
 .uls-menu .languagefilter:focus {
