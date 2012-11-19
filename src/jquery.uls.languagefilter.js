@@ -95,6 +95,11 @@
 				default:
 					var that = this;
 
+					if ( e.which < 32 ) {
+						// ignore any ASCII control characters
+						break;
+					}
+
 					this.selectedLanguage = null;
 
 					delay( function() {
