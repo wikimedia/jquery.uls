@@ -1,21 +1,20 @@
-.uls-lcd-region-section h3 {
-	color: #777;
-}
-
 .uls-lcd-region-section ul li:hover {
 	background-color: #eaeff7;
+}
+
+.uls-lcd-region-section {
+	margin-top:10px;
 }
 
 /* Language list */
 .uls-language-list {
 	height: 22em;
 	overflow: auto;
-	padding: 10px;
 	width: auto;
 }
 
 .uls-language-block ul {
-	margin: 0 0 1.6em;
+	margin: 0 0 1.5em;
 }
 
 .uls-language-list ul li {
@@ -62,10 +61,9 @@
 	line-height: 1.6em;
 }
 
-.uls-language-block .three.columns {
+.uls-language-block .columns {
 	width: 22%;
 }
-
 .uls-language-block {
 	width: 100%;
 }
@@ -75,11 +73,11 @@
 	height: 100%;
 }
 
-.uls-no-results-view h2{
+.uls-no-results-found-title {
 	font-weight: bold;
 }
 
-#uls-no-found-more {
+.uls-no-found-more {
 	font-size: 0.9em;
 	background: #F8F8F8;
 	width: 100%;
@@ -88,8 +86,7 @@
 	position:absolute;
 	bottom:0;
 	left:0;
-}
-
-.uls-lcd-region-section ul li.uls-column-break:hover {
-	background: none;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius:  0 0 5px 5px;
+	border-radius:  0 0 5px 5px;
 }

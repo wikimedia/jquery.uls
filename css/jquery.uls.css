@@ -54,7 +54,8 @@
 	color: #555;
 }
 
-.uls-menu h3 {
+.uls-menu .uls-lcd-region-title {
+	color: #777;
 	font-size: 14pt;
 	line-height: 1.5em;
 	padding-left: 0;
