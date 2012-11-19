@@ -24,10 +24,10 @@
 
 	var noResultsTemplate = '\
 	<div class="twelve columns uls-no-results-view">\
-		<h2 data-i18n="uls-no-results-found" class="eleven columns end offset-by-one">\
+		<h2 data-i18n="uls-no-results-found" class="eleven columns end offset-by-one uls-no-results-found-title">\
 		No results found\
 		</h2>\
-		<div id="uls-no-found-more">\
+		<div id="uls-no-found-more" class="uls-no-found-more">\
 			<div class="ten columns end offset-by-one">\
 				<p>\
 					<span data-i18n="uls-search-help">You can search by language name, \
@@ -167,7 +167,7 @@
 			$.each( $.uls.data.regiongroups, function( regionCode, regionIndex ) {
 				$section = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', regionCode );
 				$sectionTitle = $( '<h3 data-i18n="uls-region-'+ regionCode+'">' )
-					.addClass( 'eleven columns uls-lcd-region-section offset-by-one' )
+					.addClass( 'eleven columns uls-lcd-region-section uls-lcd-region-title offset-by-one' )
 					.text( regions[regionCode] );
 				$section.append( $sectionTitle );
 				that.$element.append( $section );
@@ -197,7 +197,7 @@
 			quickList.sort( $.uls.data.sortByAutonym );
 			var $quickListSection = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', 'uls-lcd-quicklist' );
 			var $quickListSectionTitle = $( '<h3 data-i18n="uls-common-languages">' )
-				.addClass( 'eleven columns uls-lcd-region-section offset-by-one' )
+				.addClass( 'eleven columns uls-lcd-region-section uls-lcd-region-title offset-by-one' )
 				.text( 'Common languages' ); // This is placeholder text if jquery.i18n not present
 			$quickListSection.append( $quickListSectionTitle );
 			this.$element.prepend( $quickListSection );
