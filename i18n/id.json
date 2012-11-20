@@ -1,4 +1,9 @@
 {
+	"@metadata": {
+		"authors": [
+			"Farras"
+		]
+	},
 	"uls-select-language": "Pilih Bahasa",
 	"uls-region-WW": "Seluruh dunia",
 	"uls-region-AM": "Amerika",
@@ -11,10 +16,5 @@
 	"uls-common-languages": "Bahasa umum",
 	"uls-no-results-suggestion-title": "Anda mungkin tertarik pada:",
 	"uls-search-help": "Anda dapat mencari dengan nama bahasa, nama skrip, kode ISO bahasa atau Anda dapat menelusuri menurut wilayahnya:",
-	"uls-search-placeholder": "Pencarian bahasa",
-	"@metadata": {
-		"authors": [
-			"Farras"
-		]
-	}
+	"uls-search-placeholder": "Pencarian bahasa"
 }

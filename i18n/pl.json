@@ -1,14 +1,14 @@
 {
+	"@metadata": {
+		"authors": [
+			"Woytecr"
+		]
+	},
 	"uls-select-language": "Wybierz j\u0119zyk",
 	"uls-region-AM": "Ameryka",
 	"uls-region-AF": "Afryka",
 	"uls-region-EU": "Europa",
 	"uls-region-AS": "Azja",
 	"uls-region-ME": "Bliski Wsch\u00f3d",
-	"uls-no-results-found": "Brak wynik\u00f3w",
-	"@metadata": {
-		"authors": [
-			"Woytecr"
-		]
-	}
+	"uls-no-results-found": "Brak wynik\u00f3w"
 }
