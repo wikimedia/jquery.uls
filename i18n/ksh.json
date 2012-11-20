@@ -1,4 +1,9 @@
 {
+	"@metadata": {
+		"authors": [
+			"Purodha"
+		]
+	},
 	"uls-select-language": "En Schprooch u\u00dfw\u00e4hle",
 	"uls-region-WW": "F\u00fcr de jannze \u00c4\u00e4d",
 	"uls-region-AM": "Amm\u00e4rrika",
@@ -11,10 +16,5 @@
 	"uls-common-languages": "Jemeinsamm Schprooche",
 	"uls-no-results-suggestion-title": "Do k\u00fcnnts Schpa\u00df\u00df hann aan:",
 	"uls-search-help": "Do kanns noh Schprooche s\u00f6hke \u00f6vver der Name, d\u00e4 Schreff iehre name, et K\u00f6\u00f6zel noh d\u00e4 ISO-Norrm udder \u00f6vver \u00f6vver Rejuhne:",
-	"uls-search-placeholder": "En Schprooch S\u00f6hke",
-	"@metadata": {
-		"authors": [
-			"Purodha"
-		]
-	}
+	"uls-search-placeholder": "En Schprooch S\u00f6hke"
 }
