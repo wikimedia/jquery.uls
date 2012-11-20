@@ -86,3 +86,7 @@
 	-moz-border-radius:  0 0 5px 5px;
 	border-radius:  0 0 5px 5px;
 }
+
+.uls-no-found-more a {
+	cursor: pointer;
+}
