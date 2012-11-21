@@ -24,6 +24,7 @@
 	-moz-background-clip: padding;
 	background-clip: padding-box;
 }
+
 .uls-wide {
 	min-width: 715px;
 	width: 45%;
