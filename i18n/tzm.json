@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tifinaghes"
+		]
+	},
+	"uls-select-language": "\u2d59\u2d5c\u2d49 \u2d5c\u2d53\u2d5c\u2d4d\u2d30\u2d62\u2d5c",
+	"uls-region-WW": "\u2d4e\u2d30\u2d55\u2d55\u2d30 \u2d30\u2d4e\u2d30\u2d39\u2d30\u2d4d",
+	"uls-region-AM": "\u2d30\u2d4e\u2d54\u2d49\u2d3d\u2d30",
+	"uls-region-AF": "\u2d49\u2d3c\u2d54\u2d49\u2d47\u2d62\u2d30",
+	"uls-region-EU": "\u2d5c\u2d53\u2d54\u2d53\u2d3c\u2d5c (Europe)",
+	"uls-region-AS": "\u2d30\u2d59\u2d62\u2d30",
+	"uls-common-languages": "\u2d5c\u2d53\u2d5c\u2d4d\u2d30\u2d62\u2d49\u2d4f \u2d49\u2d37\u2d54\u2d53\u2d4f",
+	"uls-search-placeholder": "\u2d5c\u2d53\u2d5c\u2d4d\u2d30\u2d62\u2d5c \u2d53\u2d54\u2d63\u2d63\u2d53"
+}

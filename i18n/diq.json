@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Erdemaslancan"
+			"Erdemaslancan",
+			"Mirzali"
 		]
 	},
 	"uls-select-language": "Z\u0131wan we\u00e7ine",
@@ -16,5 +17,5 @@
 	"uls-common-languages": "Wertax z\u0131wani",
 	"uls-no-results-suggestion-title": "Belki \u015f\u0131ma c\u0131ya eleqederi:",
 	"uls-search-help": "\u015e\u0131ma \u015fen\u00ea name d\u00ea z\u0131waniya, skript kodiya, ISO qodiya yana m\u0131nt\u0131qa heta c\u0131geyray\u0131\u015f b\u0131ker\u00ea.",
-	"uls-search-placeholder": "Z\u0131wan c\u0131 geyray\u0131\u015f"
+	"uls-search-placeholder": "Z\u0131wan c\u0131geyray\u0131\u015f"
 }

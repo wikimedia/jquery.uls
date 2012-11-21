@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Farras"
+		]
+	},
+	"uls-select-language": "Pilih Bahasa",
+	"uls-region-WW": "Seluruh dunia",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Eropa",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Timur Tengah",
+	"uls-region-PA": "Pasifik",
+	"uls-no-results-found": "Tidak ada hasil ditemukan",
+	"uls-common-languages": "Bahasa umum",
+	"uls-no-results-suggestion-title": "Anda mungkin tertarik pada:",
+	"uls-search-help": "Anda dapat mencari dengan nama bahasa, nama skrip, kode ISO bahasa atau Anda dapat menelusuri menurut wilayahnya:",
+	"uls-search-placeholder": "Pencarian bahasa"
+}
