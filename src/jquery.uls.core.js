@@ -145,6 +145,10 @@
 				this.defaultSearch();
 				this.initialized = true;
 			}
+
+			// hide any other ULS visible
+			$( '.uls-menu' ).hide();
+
 			this.$menu.show();
 			this.shown = true;
 
@@ -206,8 +210,7 @@
 		 */
 		listen: function() {
 			var lcd,
-				uls = this,
-				cancelProxy = $.proxy( uls.cancel, uls );
+				uls = this;
 
 			// Register all event listeners to the ULS here.
 			uls.$element.on( 'click', $.proxy( uls.click, uls ) );
@@ -215,13 +218,14 @@
 			uls.$languageFilter.on( 'searchclear', $.proxy( uls.defaultSearch, uls ) );
 
 			// Close when clicking on the close button
-			uls.$menu.find( '#uls-close' ).on( 'click', cancelProxy );
+			uls.$menu.find( '#uls-close' ).on( 'click', $.proxy( uls.cancel, uls ) );
 			// Don't do anything if pressing on empty space in the ULS
 			uls.$menu.on( 'click', function ( e ) {
 				e.stopPropagation();
 			} );
+
 			// Close ULS if clicking elsewhere
-			$( document ).on( 'click', cancelProxy );
+			$( document ).on( 'click', $.proxy( uls.cancel, uls ) );
 
 			// Handle key press events on the menu
 			uls.$menu.on( 'keypress', $.proxy( this.keypress, this ) )
