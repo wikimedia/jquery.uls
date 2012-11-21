@@ -224,9 +224,6 @@
 				e.stopPropagation();
 			} );
 
-			// Close ULS if clicking elsewhere
-			$( document ).on( 'click', $.proxy( uls.cancel, uls ) );
-
 			// Handle key press events on the menu
 			uls.$menu.on( 'keypress', $.proxy( this.keypress, this ) )
 				.on( 'keyup', $.proxy( this.keyup, this ) );
