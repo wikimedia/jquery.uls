@@ -117,7 +117,7 @@ div.uls-region {
 	border-bottom-style: solid;
 }
 
-.map-block {
+.uls-menu .row .map-block {
 	top: 1px;
 	margin-right: 0;
 	padding-right: 0;
