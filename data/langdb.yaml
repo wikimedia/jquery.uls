@@ -39,9 +39,7 @@ languages:
   bbc: [Batk, [AS], Batak Toba/Batak autonym unknown]
   bcc: [Arab, [AS, ME], بلوچی مکرانی]
   bcl: [Latn, [AS], Bikol Central]
-# FIXME: which is the correct code?
   be-tarask: [Cyrl, [EU], беларуская (тарашкевіца)]
-  be-x-old: [Cyrl, [EU], беларуская (тарашкевіца)]
   be: [Cyrl, [EU], беларуская]
   bew: [Latn, [AS], Bahasa Betawi]
   bfq: [Taml, [AS], படகா]
