@@ -23,7 +23,7 @@
 
 	// Region numbers in id attributes also appear in the langdb.
 	var template = '\
-		<div class="uls-menu uls-wide"> \
+		<div class="grid uls-menu uls-wide"> \
 			<div class="row"> \
 				<span id="uls-close" class="icon-close"></span> \
 			</div> \
