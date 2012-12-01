@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Nedergard",
 			"Nike"
 		]
 	},
@@ -15,5 +16,6 @@
 	"uls-no-results-found": "Tuloksia ei l\u00f6ytynyt",
 	"uls-common-languages": "Yleiset kielet",
 	"uls-no-results-suggestion-title": "Etsitk\u00f6 jotakin n\u00e4ist\u00e4:",
-	"uls-search-help": "Voit hakea joko kielen nimell\u00e4, kirjoitusj\u00e4rjejestelm\u00e4n nimell\u00e4 tai ISO-koodilla tai selata kartan avulla:"
+	"uls-search-help": "Voit hakea joko kielen nimell\u00e4, kirjoitusj\u00e4rjejestelm\u00e4n nimell\u00e4 tai ISO-koodilla tai selata kartan avulla:",
+	"uls-search-placeholder": "Kielen haku"
 }
