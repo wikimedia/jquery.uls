@@ -1,4 +1,9 @@
 {
+	"@metadata": {
+		"authors": [
+			"Cyklopas"
+		]
+	},
 	"uls-select-language": "Pasirinkite kalb\u0105",
 	"uls-region-WW": "Visame pasaulyje",
 	"uls-region-AM": "Amerika",
@@ -11,10 +16,5 @@
 	"uls-common-languages": "Bendros kalbos",
 	"uls-no-results-suggestion-title": "Jums gali b\u016bti \u012fdomu:",
 	"uls-search-help": "Galite ie\u0161koti informacijos pagal kalbos pavadinim\u0105, scenarijaus pavadinim\u0105, ISO kalbos kod\u0105 arba galite nar\u0161yti pagal regionus:",
-	"uls-search-placeholder": "Kalbos ie\u0161ka",
-	"@metadata": {
-		"authors": [
-			"Cyklopas"
-		]
-	}
+	"uls-search-placeholder": "Kalbos ie\u0161ka"
 }
