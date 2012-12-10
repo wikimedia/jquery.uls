@@ -72,8 +72,8 @@
 		 * @param region Optional region
 		 */
 		addToRegion: function( langCode, region ) {
-			var that = this;
-			var language = that.options.languages[langCode],
+			var lcd = this,
+				language = lcd.options.languages[langCode],
 				langName = $.uls.data.getAutonym( langCode ) || language || langCode,
 				regions = [];
 
@@ -102,7 +102,7 @@
 					);
 
 				// Append the element to the column in the list
-				var $column = that.getColumn( regionCode );
+				var $column = lcd.getColumn( regionCode );
 				var lastLanguage = $column.find( 'li:last' ).data( 'code' );
 
 				if ( lastLanguage ) {
@@ -112,7 +112,7 @@
 					if ( lastScriptGroup !== currentScriptGroup ) {
 						if ( $column.find( 'li' ).length > 2 ) {
 							// If column already has 2 or more languages, add a new column
-							$column = that.getColumn( regionCode, true );
+							$column = lcd.getColumn( regionCode, true );
 						}
 					}
 				}
@@ -152,28 +152,30 @@
 		},
 
 		render: function() {
-			var that = this;
-			var $section, $sectionTitle;
-			var regions = {
-				// These are fallback text when i18n library not present
-				WW: 'Worldwide',
-				AM: 'America',
-				EU: 'Europe',
-				ME: 'Middle East',
-				AS: 'Asia',
-				AF: 'Africa',
-				PA: 'Pacific'
-			};
+			var $section, $sectionTitle,
+				lcd = this,
+				regions = {
+					// These are fallback text when i18n library not present
+					WW: 'Worldwide',
+					AM: 'America',
+					EU: 'Europe',
+					ME: 'Middle East',
+					AS: 'Asia',
+					AF: 'Africa',
+					PA: 'Pacific'
+				};
+
 			$.each( $.uls.data.regiongroups, function( regionCode, regionIndex ) {
 				$section = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', regionCode );
 				$sectionTitle = $( '<h3 data-i18n="uls-region-'+ regionCode+'">' )
 					.addClass( 'eleven columns uls-lcd-region-section uls-lcd-region-title offset-by-one' )
 					.text( regions[regionCode] );
 				$section.append( $sectionTitle );
-				that.$element.append( $section );
+				lcd.$element.append( $section );
 				$section.hide();
-				that.regionDivs[regionCode] = $section;
+				lcd.regionDivs[regionCode] = $section;
 			} );
+
 			this.$noResults.hide();
 			this.i18n();
 		},
