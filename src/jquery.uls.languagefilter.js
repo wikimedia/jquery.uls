@@ -93,7 +93,7 @@
 
 					break;
 				default:
-					var that = this;
+					var languageFilter = this;
 
 					if ( e.which < 32 ) {
 						// ignore any ASCII control characters
@@ -103,11 +103,11 @@
 					this.selectedLanguage = null;
 
 					delay( function() {
-						if ( !that.$element.val() ) {
-							that.clear();
+						if ( !languageFilter.$element.val() ) {
+							languageFilter.clear();
 						} else {
-							that.options.$target.empty();
-							that.search();
+							languageFilter.options.$target.empty();
+							languageFilter.search();
 						}
 					}, 300 );
 
@@ -194,18 +194,18 @@
 		},
 
 		searchAPI: function( query ) {
-			var that = this;
+			var languageFilter = this;
 
-			$.get( that.options.searchAPI, { search: query }, function( result ) {
+			$.get( languageFilter.options.searchAPI, { search: query }, function( result ) {
 				$.each( result['languagesearch'], function( code, name ) {
-					if ( that.resultCount === 0 ) {
+					if ( languageFilter.resultCount === 0 ) {
 						// Autofill the first result.
-						that.autofill( code, name );
+						languageFilter.autofill( code, name );
 					}
-					that.render( code );
-					that.resultCount++;
+					languageFilter.render( code );
+					languageFilter.resultCount++;
 				} );
-				that.resultHandler( query );
+				languageFilter.resultHandler( query );
 			} );
 		},
 

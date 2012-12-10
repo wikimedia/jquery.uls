@@ -104,10 +104,11 @@
 			if ( !this.$element.hasClass( 'active') ) {
 				return true;
 			}
-			var that = this;
+
+			var regionSelector = this;
 			// Do not respond to all scroll end events, but only after a short interval
 			delay( function () {
-				var regiongroup = that.$element.data( 'regiongroup' );
+				var regiongroup = regionSelector.$element.data( 'regiongroup' );
 				var nextRegiongroup = regiongroup + 1;
 
 				var $nextRegion = $( '#uls-region-' + nextRegiongroup );
