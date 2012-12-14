@@ -13,7 +13,7 @@
 		<!-- <link rel="shortcut icon" href="/favicon.ico"/> -->
 		<!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png"/> -->
 		<!-- <meta name="description" content=""/> -->
-		<meta name="author" content="Santhosh Thottingal"/>
+		<meta name="author" content="Santhosh Thottingal, Pau Giner"/>
 		<link href="../css/jquery.uls.css" rel="stylesheet"/>
 		<link href="../css/jquery.uls.grid.css" rel="stylesheet"/>
 		<link href="../css/jquery.uls.lcd.css" rel="stylesheet"/>
@@ -30,19 +30,19 @@
 		<script src="../src/jquery.uls.regionfilter.js"></script>
 		<script src="../src/jquery.uls.core.js"></script>
 		<script>
-			$( document ).ready( function() {
+			$( document ).ready( function () {
 				$( '.uls-trigger' ).uls( {
-					onSelect : function( language ) {
+					onSelect: function( language ) {
 						var languageName = $.uls.data.getAutonym( language );
 						$( '.uls-trigger' ).text( languageName );
 					},
-					quickList: ['en', 'hi', 'he', 'ml', 'ta','fr'] //FIXME
+					quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr'] //FIXME
 				} );
-				$('.uls-trigger').click(function() {
+				$( '.uls-trigger' ).click( function () {
 					//Hacks I need to make afterwards. ULS API should be probably modified to allow optional classes and not force position:
-					$('.uls-menu').removeClass('uls-wide');
-					$('.uls-menu').addClass('uls-mobile');
-					$('.uls-menu').css('left',"2.5%")	
+					$( '.uls-menu' ).removeClass( 'uls-wide' );
+					$( '.uls-menu' ).addClass( 'uls-mobile' );
+					$( '.uls-menu' ).css( 'left', '2.5%' )
 				});
 			} );
 		</script>
@@ -53,7 +53,7 @@
 			<span class="active uls-trigger">Select Language</span>
 			<h1>Universal Language Selector</h1>
 			<p>
-				Demonstration of jquery plugin
+				Demonstration of jQuery plugin
 			</p>
 		</div>
 		<div class="container"></div>
