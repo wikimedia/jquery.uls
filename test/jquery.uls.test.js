@@ -54,8 +54,9 @@
 		assert.ok( $.fn.uls, "$.fn.uls is defined" );
 	} );
 
-	test( "-- $.uls.data testing", 27, function ( assert ) {
+	test( "-- $.uls.data testing", 29, function ( assert ) {
 
+		assert.strictEqual( $.uls.data.isRedirect( 'sr-ec' ), 'sr-cyrl', "'sr-ec' is a redirect to 'sr-cyrl'" );
 		assert.strictEqual( $.uls.data.getAutonyms()['he'], 'עברית', 'Correct autonym is returned for Hebrew using getAutonyms().' );
 
 		// This test assumes that we don't want any scripts to be in the 'Other'
@@ -87,7 +88,7 @@
 
 		assert.deepEqual( $.uls.data.getLanguagesInRegion( "PA" ),
 			[
-				"ace", "bi", "ch", "en-gb", "en", "fj", "haw", "hif-latn", "hif", "ho", "jv",
+				"ace", "bi", "ch", "en-gb", "en", "fj", "haw", "hif", "hif-latn", "ho", "jv", "jv-java",
 				"mh", "mi", "na", "niu", "pih", "pis", "pt", "rtm", "sm", "tet",
 				"to", "tpi", "ty", "wls"
 			],
@@ -97,7 +98,7 @@
 				"akz", "arn", "aro", "ase", "avk", "ay", "cho", "chr", "chy", "cr", "cr-cans", "cr-latn",
 				"en-ca", "en", "eo", "es-419", "es-formal", "es", "esu", "fr", "gcf", "gn",
 				"guc", "haw", "ht", "ia", "ie", "ik", "ike-cans", "ike-latn", "io", "iu", "jam",
-				"jbo", "kgp", "kl", "lad", "lfn", "mfe", "mic", "mus", "nah", "nl-informal", "nl",
+				"jbo", "kgp", "kl", "lad", "lad-latn", "lad-hebr", "lfn", "mfe", "mic", "mus", "nah", "nl-informal", "nl",
 				"nov", "nv", "pap", "pdc", "pdt", "ppl", "pt-br", "pt", "qu", "qug", "rap", "sei",
 				"simple", "srn", "tokipona", "vo", "yi", "yrl", "yua"
 			],
@@ -107,6 +108,10 @@
 		assert.deepEqual( $.uls.data.getLanguagesInScript( 'Knda' ), [
 			"kn", "tcy"
 		], "languages in script Knda are selected correctly" );
+		assert.deepEqual( $.uls.data.getLanguagesInScript( 'Guru' ),
+			["pa-guru"],
+			"'pa-guru' is written in script Guru, and 'pa' is skipped as a redirect"
+		);
 		assert.deepEqual( $.uls.data.getLanguagesInScripts( ['Geor', 'Armn'] ),
 			["hy", "ka", "xmf"],
 			"languages in scripts Geor and Armn are selected correctly"
