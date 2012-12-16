@@ -107,6 +107,10 @@
 		var autonymsByCode = {};
 
 		for ( var language in $.uls.data.languages ) {
+			if ( $.uls.data.isRedirect( language ) ) {
+				continue;
+			}
+
 			autonymsByCode[language] = $.uls.data.getAutonym( language );
 		}
 
@@ -203,6 +207,10 @@
 		var languagesInRegions = [];
 
 		for ( var language in $.uls.data.languages ) {
+			if ( $.uls.data.isRedirect( language ) ) {
+				continue;
+			}
+
 			for ( var i = 0; i < regions.length; i++ ) {
 				if ( $.inArray( regions[i], $.uls.data.getRegions( language ) ) !== -1 ) {
 					languagesInRegions.push( language );
@@ -243,6 +251,10 @@
 		var languagesByScriptInRegion = {};
 
 		for ( var language in $.uls.data.languages ) {
+			if ( $.uls.data.isRedirect( language ) ) {
+				continue;
+			}
+
 			if ( $.inArray( region, $.uls.data.getRegions( language ) ) !== -1 ) {
 				var script = $.uls.data.getScript( language );
 				if ( languagesByScriptInRegion[script] === undefined ) {
@@ -331,12 +343,18 @@
 		var languagesByScriptGroupInRegions = {};
 
 		for ( var language in $.uls.data.languages ) {
+			if ( $.uls.data.isRedirect( language ) ) {
+				continue;
+			}
+
 			for ( var i = 0; i < regions.length; i++ ) {
 				if ( $.inArray( regions[i], $.uls.data.getRegions( language ) ) !== -1 ) {
 					var scriptGroup = $.uls.data.getScriptGroupOfLanguage( language );
+
 					if ( languagesByScriptGroupInRegions[scriptGroup] === undefined ) {
 						languagesByScriptGroupInRegions[scriptGroup] = [];
 					}
+
 					languagesByScriptGroupInRegions[scriptGroup].push( language );
 					break;
 				}
@@ -363,13 +381,19 @@
 
 		for ( region in $.uls.data.regiongroups ) {
 			regionGroup = $.uls.data.regiongroups[region];
+
 			if ( allLanguagesByRegionAndScript[regionGroup] === undefined ) {
 				allLanguagesByRegionAndScript[regionGroup] = {};
 			}
+
 			allLanguagesByRegionAndScript[regionGroup][region] = {};
 		}
 
 		for ( var language in $.uls.data.languages ) {
+			if ( $.uls.data.isRedirect( language ) ) {
+				continue;
+			}
+
 			var script = $.uls.data.getScript( language );
 			var scriptGroup = $.uls.data.getGroupOfScript( script );
 			var regions = $.uls.data.getRegions( language );
