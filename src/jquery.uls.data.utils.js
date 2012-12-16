@@ -30,11 +30,27 @@
 	}
 
 	/**
+	 * Is this language a redirect to another language?
+	 * @param string language code
+	 * @return Target language code if it's a redirect or false if it's not
+	 */
+	$.uls.data.isRedirect = function( language ) {
+		return ( $.uls.data.languages[language] !== undefined &&
+			$.uls.data.languages[language].length === 1 ) ? $.uls.data.languages[language][0] : false;
+	}
+
+	/**
 	 * Returns the script of the language.
 	 * @param string language code
 	 * @return string
 	 */
 	$.uls.data.getScript = function( language ) {
+		var target = $.uls.data.isRedirect( language );
+
+		if ( target ) {
+			return $.uls.data.getScript( target );
+		}
+
 		return $.uls.data.languages[language][0];
 	};
 
@@ -49,6 +65,12 @@
 	 * @return array|string 'UNKNOWN'
 	 */
 	$.uls.data.getRegions = function( language ) {
+		var target = $.uls.data.isRedirect( language );
+
+		if ( target ) {
+			return $.uls.data.getRegions( target );
+		}
+
 		return ( $.uls.data.languages[language] && $.uls.data.languages[language][1] ) || 'UNKNOWN';
 	};
 
@@ -63,6 +85,12 @@
 	 * @return string
 	 */
 	$.uls.data.getAutonym = function( language ) {
+		var target = $.uls.data.isRedirect( language );
+
+		if ( target ) {
+			return $.uls.data.getAutonym( target );
+		}
+
 		return ( $.uls.data.languages[language] && $.uls.data.languages[language][2] ) || language;
 	};
 
