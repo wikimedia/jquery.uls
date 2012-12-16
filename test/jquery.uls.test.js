@@ -35,6 +35,23 @@
 	};
 
 	/*
+	 * Runs over all languages and checks that all redirects have a valid target.
+	 */
+	var badRedirects = function () {
+		var result = [];
+
+		for ( var language in $.uls.data.languages ) {
+			var target = $.uls.data.isRedirect( language );
+
+			if ( target && !$.uls.data.languages[target] ) {
+				result.push( language );
+			}
+		}
+
+		return result;
+	};
+
+	/*
 	 * Runs over all script codes mentioned in langdb and checks whether
 	 * they have something that looks like an autonym.
 	 */
@@ -54,7 +71,7 @@
 		assert.ok( $.fn.uls, "$.fn.uls is defined" );
 	} );
 
-	test( "-- $.uls.data testing", 39, function ( assert ) {
+	test( "-- $.uls.data testing", 40, function ( assert ) {
 
 		assert.strictEqual( $.uls.data.isRedirect( 'sr-ec' ), 'sr-cyrl', "'sr-ec' is a redirect to 'sr-cyrl'" );
 		var autonyms = $.uls.data.getAutonyms();
@@ -65,6 +82,7 @@
 		// This test assumes that we don't want any scripts to be in the 'Other'
 		// group. Actually, this may become wrong some day.
 		assert.deepEqual( orphanScripts(), [], 'All scripts belong to script groups.' );
+		assert.deepEqual( badRedirects(), [], 'All redirects have valid targets.' );
 		assert.deepEqual( languagesWithoutAutonym(), [], 'All languages have autonyms.' );
 
 		assert.strictEqual(
