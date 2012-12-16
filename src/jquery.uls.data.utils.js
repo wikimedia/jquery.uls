@@ -160,6 +160,10 @@
 		var languagesInScripts = [];
 
 		for ( var language in $.uls.data.languages ) {
+			if ( $.uls.data.isRedirect( language ) ) {
+				continue;
+			}
+
 			for ( var i = 0; i < scripts.length; i++ ) {
 				if ( scripts[i] === $.uls.data.getScript( language ) ) {
 					languagesInScripts.push( language );

@@ -328,8 +328,7 @@ languages:
   om: [Latn, [AF], Oromoo]
   or: [Orya, [AS], ଓଡ଼ିଆ]
   os: [Cyrl, [EU], Ирон]
- # FIXME: alias
-  pa: [Guru, [AS], ਪੰਜਾਬੀ]
+  pa: [pa-guru]
   pa-guru: [Guru, [AS], ਪੰਜਾਬੀ]
   pag: [Latn, [AS], Pangasinan]
   pam: [Latn, [AS], Kapampangan]
@@ -417,11 +416,9 @@ languages:
   sq: [Latn, [EU], shqip]
  # FIXME: do we need the double name here?
   sr: [Cyrl, [EU], српски]
- # FIXME: alias
-  sr-ec: [Cyrl, [EU], српски]
+  sr-ec: [sr-cyrl]
   sr-cyrl: [Cyrl, [EU], српски]
- # FIXME: alias
-  sr-el: [Latn, [EU], srpski]
+  sr-el: [sr-latn]
   sr-latn: [Latn, [EU], srpski]
   srn: [Latn, [AM, EU], Sranantongo]
   ss: [Latn, [AF], SiSwati]
