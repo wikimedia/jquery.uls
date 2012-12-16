@@ -94,8 +94,8 @@
 			"languages of region PA are selected correctly" );
 		assert.deepEqual( $.uls.data.getLanguagesInRegions( ["AM", "WW"] ),
 			[
-				"akz", "arn", "aro", "ase", "avk", "ay", "cho", "chr", "chy", "cr-cans", "cr-latn",
-				"cr", "en-ca", "en", "eo", "es-419", "es-formal", "es", "esu", "fr", "gcf", "gn",
+				"akz", "arn", "aro", "ase", "avk", "ay", "cho", "chr", "chy", "cr", "cr-cans", "cr-latn",
+				"en-ca", "en", "eo", "es-419", "es-formal", "es", "esu", "fr", "gcf", "gn",
 				"guc", "haw", "ht", "ia", "ie", "ik", "ike-cans", "ike-latn", "io", "iu", "jam",
 				"jbo", "kgp", "kl", "lad", "lfn", "mfe", "mic", "mus", "nah", "nl-informal", "nl",
 				"nov", "nv", "pap", "pdc", "pdt", "ppl", "pt-br", "pt", "qu", "qug", "rap", "sei",
@@ -124,7 +124,7 @@
 
 		var languagesByScriptInAM = $.uls.data.getLanguagesByScriptInRegion( "AM" );
 		assert.deepEqual( languagesByScriptInAM['Cans'], [
-			"cr-cans", "cr", "ike-cans", "iu"
+			"cr", "cr-cans", "ike-cans", "iu"
 		], "correct languages in Cans in AM selected" );
 
 		assert.strictEqual( $.uls.data.getAutonym( 'pa' ), 'ਪੰਜਾਬੀ', 'Correct autonym of the Punjabi language was selected' );
