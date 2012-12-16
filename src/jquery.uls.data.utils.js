@@ -18,14 +18,14 @@
  */
 
 ( function ( $ ) {
-	"use strict";
+	'use strict';
 
 	/**
 	 * Log deprecated functions
 	 */
 	function deprecated( oldFunc, newFunc ) {
 		if ( window.console && window.console.log ) {
-			window.console.log( oldFunc + " is deprecated. Please use " + newFunc );
+			window.console.log( oldFunc + ' is deprecated. Please use ' + newFunc );
 		}
 	}
 
@@ -39,7 +39,7 @@
 	};
 
 	$.uls.data.script = function( language ) { // deprecated
-		deprecated( "script", "getScript" );
+		deprecated( 'script', 'getScript' );
 		return $.uls.data.getScript( language );
 	};
 
@@ -53,7 +53,7 @@
 	};
 
 	$.uls.data.regions = function( language ) { // deprecated
-		deprecated( "regions", "getRegions" );
+		deprecated( 'regions', 'getRegions' );
 		return $.uls.data.getRegions( language );
 	};
 
@@ -67,7 +67,7 @@
 	};
 
 	$.uls.data.autonym = function( language ) { // deprecated
-		deprecated( "autonym", "getAutonym" );
+		deprecated( 'autonym', 'getAutonym' );
 		return $.uls.data.getAutonym( language );
 	};
 
@@ -86,7 +86,7 @@
 	};
 
 	$.uls.data.autonyms = function() { // deprecated
-		deprecated( "autonyms", "getAutonyms" );
+		deprecated( 'autonyms', 'getAutonyms' );
 		return $.uls.data.getAutonyms();
 	};
 
@@ -105,7 +105,7 @@
 	};
 
 	$.uls.data.allRegions = function() { // deprecated
-		deprecated( "allRegions", "getAllRegions" );
+		deprecated( 'allRegions', 'getAllRegions' );
 		return $.uls.data.getAllRegions();
 	};
 
@@ -119,7 +119,7 @@
 	};
 
 	$.uls.data.languagesInScript = function( script ) { // deprecated
-		deprecated( "languagesInScript", "getLanguagesInScript" );
+		deprecated( 'languagesInScript', 'getLanguagesInScript' );
 		return $.uls.data.getLanguagesInScript( script );
 	};
 
@@ -144,7 +144,7 @@
 	};
 
 	$.uls.data.languagesInScripts = function( scripts ) { // deprecated
-		deprecated( "languagesInScripts", "getLanguagesInScripts" );
+		deprecated( 'languagesInScripts', 'getLanguagesInScripts' );
 		return $.uls.data.getLanguagesInScripts( scripts );
 	};
 
@@ -158,7 +158,7 @@
 	};
 
 	$.uls.data.languagesInRegion = function( region ) { // deprecated
-		deprecated( "languagesInRegion", "getLanguagesInRegion" );
+		deprecated( 'languagesInRegion', 'getLanguagesInRegion' );
 		return $.uls.data.getLanguagesInRegion( region );
 	};
 
@@ -183,7 +183,7 @@
 	};
 
 	$.uls.data.languagesInRegions = function( regions ) { // deprecated
-		deprecated( "languagesInRegions", "getLanguagesInRegions" );
+		deprecated( 'languagesInRegions', 'getLanguagesInRegions' );
 		return $.uls.data.getLanguagesInRegions( regions );
 	};
 
@@ -197,7 +197,7 @@
 	};
 
 	$.uls.data.languagesInRegionGroup = function( groupNum ) { // deprecated
-		deprecated( "languagesInRegionGroup", "getLanguagesInRegionGroup" );
+		deprecated( 'languagesInRegionGroup', 'getLanguagesInRegionGroup' );
 		return $.uls.data.getLanguagesInRegionGroup( groupNum );
 	};
 
@@ -224,7 +224,7 @@
 	};
 
 	$.uls.data.languagesByScriptInRegion = function( region ) { // deprecated
-		deprecated( "languagesByScriptInRegion", "getLanguagesByScriptInRegion" );
+		deprecated( 'languagesByScriptInRegion', 'getLanguagesByScriptInRegion' );
 		return $.uls.data.getLanguagesByScriptInRegion( region );
 	};
 
@@ -239,7 +239,7 @@
 	};
 
 	$.uls.data.languagesByScriptGroupInRegion = function( region ) { // deprecated
-		deprecated( "languagesByScriptGroupInRegion", "getLanguagesByScriptGroupInRegion" );
+		deprecated( 'languagesByScriptGroupInRegion', 'getLanguagesByScriptGroupInRegion' );
 		return $.uls.data.getLanguagesByScriptGroupInRegion( region );
 	};
 
@@ -253,7 +253,7 @@
 	};
 
 	$.uls.data.allLanguagesByScriptGroup = function() { // deprecated
-		deprecated( "allLanguagesByScriptGroup", "getAllLanguagesByScriptGroup" );
+		deprecated( 'allLanguagesByScriptGroup', 'getAllLanguagesByScriptGroup' );
 		return $.uls.data.getAllLanguagesByScriptGroup();
 	};
 
@@ -285,7 +285,7 @@
 	};
 
 	$.uls.data.languagesByScriptGroup = function( languages ) { // deprecated
-		deprecated( "languagesByScriptGroup", "getLanguagesByScriptGroup" );
+		deprecated( 'languagesByScriptGroup', 'getLanguagesByScriptGroup' );
 		return $.uls.data.getLanguagesByScriptGroup( languages );
 	};
 
@@ -315,7 +315,7 @@
 	};
 
 	$.uls.data.languagesByScriptGroupInRegions = function( regions ) { // deprecated
-		deprecated( "languagesByScriptGroupInRegions", "getLanguagesByScriptGroupInRegions" );
+		deprecated( 'languagesByScriptGroupInRegions', 'getLanguagesByScriptGroupInRegions' );
 		return $.uls.data.getLanguagesByScriptGroupInRegions( regions );
 	};
 
@@ -362,7 +362,7 @@
 	};
 
 	$.uls.data.allLanguagesByRegionAndScript = function() { // deprecated
-		deprecated( "allLanguagesByRegionAndScript", "getAllLanguagesByRegionAndScript" );
+		deprecated( 'allLanguagesByRegionAndScript', 'getAllLanguagesByRegionAndScript' );
 		return $.uls.data.getAllLanguagesByRegionAndScript();
 	};
 
@@ -384,7 +384,7 @@
 	};
 
 	$.uls.data.regionsInGroup = function( groupNum ) { // deprecated
-		deprecated( "regionsInGroup", "getRegionsInGroup" );
+		deprecated( 'regionsInGroup', 'getRegionsInGroup' );
 		return $.uls.data.getRegionsInGroup( groupNum );
 	};
 
@@ -405,7 +405,7 @@
 	};
 
 	$.uls.data.groupOfScript = function( script ) { // deprecated
-		deprecated( "groupOfScript", "getGroupOfScript" );
+		deprecated( 'groupOfScript', 'getGroupOfScript' );
 		return $.uls.data.getGroupOfScript( script );
 	};
 
@@ -419,7 +419,7 @@
 	};
 
 	$.uls.data.scriptGroupOfLanguage = function( language ) { // deprecated
-		deprecated( "scriptGroupOfLanguage", "getScriptGroupOfLanguage" );
+		deprecated( 'scriptGroupOfLanguage', 'getScriptGroupOfLanguage' );
 		return $.uls.data.getScriptGroupOfLanguage( language );
 	};
 
@@ -462,7 +462,7 @@
 	};
 
 	$.uls.data.languagesInTerritory = function( territory ) { // deprecated
-		deprecated( "languagesInTerritory", "getLanguagesInTerritory" );
+		deprecated( 'languagesInTerritory', 'getLanguagesInTerritory' );
 		return $.uls.data.getLanguagesInTerritory( territory );
 	};
 } ( jQuery ) );
