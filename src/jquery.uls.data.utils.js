@@ -37,7 +37,7 @@
 	$.uls.data.isRedirect = function( language ) {
 		return ( $.uls.data.languages[language] !== undefined &&
 			$.uls.data.languages[language].length === 1 ) ? $.uls.data.languages[language][0] : false;
-	}
+	};
 
 	/**
 	 * Returns the script of the language.
