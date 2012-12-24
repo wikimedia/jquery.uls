@@ -21,15 +21,6 @@
 	'use strict';
 
 	/**
-	 * Log deprecated functions
-	 */
-	function deprecated( oldFunc, newFunc ) {
-		if ( window.console && window.console.log ) {
-			window.console.log( oldFunc + ' is deprecated. Please use ' + newFunc );
-		}
-	}
-
-	/**
 	 * Is this language a redirect to another language?
 	 * @param string language code
 	 * @return Target language code if it's a redirect or false if it's not
@@ -54,11 +45,6 @@
 		return $.uls.data.languages[language][0];
 	};
 
-	$.uls.data.script = function( language ) { // deprecated
-		deprecated( 'script', 'getScript' );
-		return $.uls.data.getScript( language );
-	};
-
 	/**
 	 * Returns the regions in which a language is spoken.
 	 * @param string language code
@@ -74,11 +60,6 @@
 		return ( $.uls.data.languages[language] && $.uls.data.languages[language][1] ) || 'UNKNOWN';
 	};
 
-	$.uls.data.regions = function( language ) { // deprecated
-		deprecated( 'regions', 'getRegions' );
-		return $.uls.data.getRegions( language );
-	};
-
 	/**
 	 * Returns the autonym of the language.
 	 * @param string language code
@@ -92,11 +73,6 @@
 		}
 
 		return ( $.uls.data.languages[language] && $.uls.data.languages[language][2] ) || language;
-	};
-
-	$.uls.data.autonym = function( language ) { // deprecated
-		deprecated( 'autonym', 'getAutonym' );
-		return $.uls.data.getAutonym( language );
 	};
 
 	/**
@@ -117,11 +93,6 @@
 		return autonymsByCode;
 	};
 
-	$.uls.data.autonyms = function() { // deprecated
-		deprecated( 'autonyms', 'getAutonyms' );
-		return $.uls.data.getAutonyms();
-	};
-
 	/**
 	 * Returns an array of all region codes.
 	 * @return array
@@ -136,10 +107,6 @@
 		return allRegions;
 	};
 
-	$.uls.data.allRegions = function() { // deprecated
-		deprecated( 'allRegions', 'getAllRegions' );
-		return $.uls.data.getAllRegions();
-	};
 
 	/**
 	 * Returns all languages written in script.
@@ -148,11 +115,6 @@
 	 */
 	$.uls.data.getLanguagesInScript = function( script ) {
 		return $.uls.data.getLanguagesInScripts( [ script ] );
-	};
-
-	$.uls.data.languagesInScript = function( script ) { // deprecated
-		deprecated( 'languagesInScript', 'getLanguagesInScript' );
-		return $.uls.data.getLanguagesInScript( script );
 	};
 
 	/**
@@ -179,11 +141,6 @@
 		return languagesInScripts;
 	};
 
-	$.uls.data.languagesInScripts = function( scripts ) { // deprecated
-		deprecated( 'languagesInScripts', 'getLanguagesInScripts' );
-		return $.uls.data.getLanguagesInScripts( scripts );
-	};
-
 	/**
 	 * Returns all languages in a given region.
 	 * @param region string
@@ -191,11 +148,6 @@
 	 */
 	$.uls.data.getLanguagesInRegion = function( region ) {
 		return $.uls.data.getLanguagesInRegions( [ region ] );
-	};
-
-	$.uls.data.languagesInRegion = function( region ) { // deprecated
-		deprecated( 'languagesInRegion', 'getLanguagesInRegion' );
-		return $.uls.data.getLanguagesInRegion( region );
 	};
 
 	/**
@@ -222,11 +174,6 @@
 		return languagesInRegions;
 	};
 
-	$.uls.data.languagesInRegions = function( regions ) { // deprecated
-		deprecated( 'languagesInRegions', 'getLanguagesInRegions' );
-		return $.uls.data.getLanguagesInRegions( regions );
-	};
-
 	/**
 	 * Returns all languages in a region group.
 	 * @param groupNum number.
@@ -234,11 +181,6 @@
 	 */
 	$.uls.data.getLanguagesInRegionGroup = function( groupNum ) {
 		return $.uls.data.getLanguagesInRegions( $.uls.data.getRegionsInGroup( groupNum ) );
-	};
-
-	$.uls.data.languagesInRegionGroup = function( groupNum ) { // deprecated
-		deprecated( 'languagesInRegionGroup', 'getLanguagesInRegionGroup' );
-		return $.uls.data.getLanguagesInRegionGroup( groupNum );
 	};
 
 	/**
@@ -267,11 +209,6 @@
 		return languagesByScriptInRegion;
 	};
 
-	$.uls.data.languagesByScriptInRegion = function( region ) { // deprecated
-		deprecated( 'languagesByScriptInRegion', 'getLanguagesByScriptInRegion' );
-		return $.uls.data.getLanguagesByScriptInRegion( region );
-	};
-
 	/**
 	 * Returns an associative array of languages in a region,
 	 * grouped by script group.
@@ -282,10 +219,6 @@
 		return $.uls.data.getLanguagesByScriptGroupInRegions( [ region ] );
 	};
 
-	$.uls.data.languagesByScriptGroupInRegion = function( region ) { // deprecated
-		deprecated( 'languagesByScriptGroupInRegion', 'getLanguagesByScriptGroupInRegion' );
-		return $.uls.data.getLanguagesByScriptGroupInRegion( region );
-	};
 
 	/**
 	 * Returns an associative array of all languages,
@@ -294,11 +227,6 @@
 	 */
 	$.uls.data.getAllLanguagesByScriptGroup = function() {
 		return $.uls.data.getLanguagesByScriptGroupInRegions( $.uls.data.getAllRegions() );
-	};
-
-	$.uls.data.allLanguagesByScriptGroup = function() { // deprecated
-		deprecated( 'allLanguagesByScriptGroup', 'getAllLanguagesByScriptGroup' );
-		return $.uls.data.getAllLanguagesByScriptGroup();
 	};
 
 	/**
@@ -326,11 +254,6 @@
 		}
 
 		return languagesByScriptGroup;
-	};
-
-	$.uls.data.languagesByScriptGroup = function( languages ) { // deprecated
-		deprecated( 'languagesByScriptGroup', 'getLanguagesByScriptGroup' );
-		return $.uls.data.getLanguagesByScriptGroup( languages );
 	};
 
 	/**
@@ -362,11 +285,6 @@
 		}
 
 		return languagesByScriptGroupInRegions;
-	};
-
-	$.uls.data.languagesByScriptGroupInRegions = function( regions ) { // deprecated
-		deprecated( 'languagesByScriptGroupInRegions', 'getLanguagesByScriptGroupInRegions' );
-		return $.uls.data.getLanguagesByScriptGroupInRegions( regions );
 	};
 
 	/**
@@ -417,11 +335,6 @@
 		return allLanguagesByRegionAndScript;
 	};
 
-	$.uls.data.allLanguagesByRegionAndScript = function() { // deprecated
-		deprecated( 'allLanguagesByRegionAndScript', 'getAllLanguagesByRegionAndScript' );
-		return $.uls.data.getAllLanguagesByRegionAndScript();
-	};
-
 	/**
 	 * Returns all regions in a region group.
 	 * @param number groupNum
@@ -439,10 +352,6 @@
 		return regionsInGroup;
 	};
 
-	$.uls.data.regionsInGroup = function( groupNum ) { // deprecated
-		deprecated( 'regionsInGroup', 'getRegionsInGroup' );
-		return $.uls.data.getRegionsInGroup( groupNum );
-	};
 
 	/**
 	 * Returns the script group of a script or 'Other' if it doesn't
@@ -460,11 +369,6 @@
 		return 'Other';
 	};
 
-	$.uls.data.groupOfScript = function( script ) { // deprecated
-		deprecated( 'groupOfScript', 'getGroupOfScript' );
-		return $.uls.data.getGroupOfScript( script );
-	};
-
 	/**
 	 * Returns the script group of a language.
 	 * @param string language code
@@ -472,11 +376,6 @@
 	 */
 	$.uls.data.getScriptGroupOfLanguage = function( language ) {
 		return $.uls.data.getGroupOfScript( $.uls.data.getScript( language ) );
-	};
-
-	$.uls.data.scriptGroupOfLanguage = function( language ) { // deprecated
-		deprecated( 'scriptGroupOfLanguage', 'getScriptGroupOfLanguage' );
-		return $.uls.data.getScriptGroupOfLanguage( language );
 	};
 
 	/**
@@ -517,8 +416,4 @@
 		return $.uls.data.territories[territory];
 	};
 
-	$.uls.data.languagesInTerritory = function( territory ) { // deprecated
-		deprecated( 'languagesInTerritory', 'getLanguagesInTerritory' );
-		return $.uls.data.getLanguagesInTerritory( territory );
-	};
 } ( jQuery ) );
