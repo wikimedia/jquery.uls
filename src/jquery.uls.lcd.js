@@ -245,7 +245,7 @@
 			var $suggestions = this.quicklist();
 			$suggestions.find( 'h3' )
 				.data( 'i18n', 'uls-no-results-suggestion-title' )
-				.text( "You may be interested in:" )
+				.text( 'You may be interested in:' )
 				.i18n();
 			this.$noResults.find( 'h2' ).after( $suggestions );
 		},

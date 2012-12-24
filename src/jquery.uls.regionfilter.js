@@ -18,7 +18,7 @@
  */
 
 ( function ( $ ) {
-	"use strict";
+	'use strict';
 
 	/* RegionSelector plugin definition */
 

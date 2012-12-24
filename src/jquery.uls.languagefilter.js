@@ -24,7 +24,7 @@
  */
 
 (function ( $ ) {
-	"use strict";
+	'use strict';
 
 	var LanguageFilter = function( element, options ) {
 		this.$element = $( element );
