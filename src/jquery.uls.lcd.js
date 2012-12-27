@@ -122,8 +122,8 @@
 		},
 		/**
 		 * Get a column to add language.
-		 * @param String regionCode The region code
-		 * @param boolean forceNew whether a new column must be created or not
+		 * @param regionCode string The region code
+		 * @param forceNew bool whether a new column must be created or not
 		 */
 		getColumn: function( regionCode, forceNew ) {
 			var $divRegionCode, $rowDiv, $ul;

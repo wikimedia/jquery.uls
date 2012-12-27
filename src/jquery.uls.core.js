@@ -192,7 +192,7 @@
 
 		/**
 		 * callback for no results found context.
-		 * @param String search the search term
+		 * @param search string The search term
 		 */
 		noresults: function( search ) {
 			this.$resultsView.lcd( 'noResults' );
