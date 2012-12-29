@@ -22,7 +22,7 @@
 
 	/**
 	 * Is this language a redirect to another language?
-	 * @param string language code
+	 * @param language string Language code
 	 * @return Target language code if it's a redirect or false if it's not
 	 */
 	$.uls.data.isRedirect = function( language ) {
@@ -32,7 +32,7 @@
 
 	/**
 	 * Returns the script of the language.
-	 * @param string language code
+	 * @param language string Language code
 	 * @return string
 	 */
 	$.uls.data.getScript = function( language ) {
@@ -47,7 +47,7 @@
 
 	/**
 	 * Returns the regions in which a language is spoken.
-	 * @param string language code
+	 * @param language string Language code
 	 * @return array|string 'UNKNOWN'
 	 */
 	$.uls.data.getRegions = function( language ) {
@@ -62,7 +62,7 @@
 
 	/**
 	 * Returns the autonym of the language.
-	 * @param string language code
+	 * @param language string Language code
 	 * @return string
 	 */
 	$.uls.data.getAutonym = function( language ) {
@@ -152,7 +152,7 @@
 
 	/**
 	 * Returns all languages in given regions.
-	 * @param region array of strings.
+	 * @param regions array of strings.
 	 * @return array of strings (languages codes)
 	 */
 	$.uls.data.getLanguagesInRegions = function( regions ) {
@@ -186,7 +186,7 @@
 	/**
 	 * Returns an associative array of languages in a region,
 	 * grouped by script.
-	 * @param string region code
+	 * @param region string Region code
 	 * @return associative array
 	 */
 	$.uls.data.getLanguagesByScriptInRegion = function( region ) {
@@ -212,7 +212,7 @@
 	/**
 	 * Returns an associative array of languages in a region,
 	 * grouped by script group.
-	 * @param string region code
+	 * @param region string Region code
 	 * @return associative array
 	 */
 	$.uls.data.getLanguagesByScriptGroupInRegion = function( region ) {
@@ -259,7 +259,7 @@
 	/**
 	 * Returns an associative array of languages in several regions,
 	 * grouped by script group.
-	 * @param array of strings - region codes
+	 * @param regions array of strings - region codes
 	 * @return associative array
 	 */
 	$.uls.data.getLanguagesByScriptGroupInRegions = function( regions ) {
@@ -337,7 +337,7 @@
 
 	/**
 	 * Returns all regions in a region group.
-	 * @param number groupNum
+	 * @param groupNum int
 	 * @return array of strings
 	 */
 	$.uls.data.getRegionsInGroup = function( groupNum ) {
@@ -356,7 +356,7 @@
 	/**
 	 * Returns the script group of a script or 'Other' if it doesn't
 	 * belong to any group.
-	 * @param string script code
+	 * @param script string Script code
 	 * @return string script group name
 	 */
 	$.uls.data.getGroupOfScript = function( script ) {
@@ -371,7 +371,7 @@
 
 	/**
 	 * Returns the script group of a language.
-	 * @param string language code
+	 * @param language string Language code
 	 * @return string script group name
 	 */
 	$.uls.data.getScriptGroupOfLanguage = function( language ) {
@@ -381,7 +381,8 @@
 	/**
 	 * A callback for sorting languages by autonym.
 	 * Can be used as an argument to a sort function.
-	 * @param two language codes
+	 * @param a string Language code
+	 * @param b string Language code
 	 */
 	$.uls.data.sortByAutonym = function( a, b ) {
 		var autonymA = $.uls.data.getAutonym( a ) || a,
@@ -391,7 +392,7 @@
 
 	/**
 	 * Check if a language is right-to-left.
-	 * @param string language code
+	 * @param language string Language code
 	 * @return boolean
 	 */
 	$.uls.data.isRtl = function( language ) {
@@ -400,7 +401,7 @@
 
 	/**
 	 * Return the direction of the language
-	 * @param string language code
+	 * @param language string Language code
 	 * @return string
 	 */
 	$.uls.data.getDir = function( language ) {
@@ -409,7 +410,7 @@
 
 	/**
 	 * Returns the languages spoken in a territory.
-	 * @param string Territory code
+	 * @param territory string Territory code
 	 * @return list of language codes
 	 */
 	$.uls.data.getLanguagesInTerritory = function( territory ) {

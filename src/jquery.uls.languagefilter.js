@@ -22,7 +22,6 @@
  * The values for autocompletion is from the options.languages.
  * The data is in the format of languagecode:languagename.
  */
-
 (function ( $ ) {
 	'use strict';
 
@@ -48,7 +47,6 @@
 	} () );
 
 	LanguageFilter.prototype = {
-
 		listen: function() {
 			this.$element.on( 'keypress', $.proxy( this.keyup, this ) )
 				.on( 'keyup', $.proxy( this.keyup, this ) );
@@ -212,7 +210,7 @@
 		/**
 		 * Handler method to be called once search is over.
 		 * Based on search result call success or noresults callbacks
-		 * @param String query
+		 * @param query string
 		 */
 		resultHandler: function( query ) {
 			if ( this.resultCount === 0 && this.options.noresults ) {
@@ -301,7 +299,6 @@
 
 			return isSupported;
 		}
-
 	};
 
 	$.fn.languagefilter = function( option ) {
@@ -333,18 +330,13 @@
 
 	/**
 	 * Check if a prefix is visually prefix of a string
-	 * @param String prefix
-	 * @param String string
+	 * @param prefix string
+	 * @param string string
 	 */
 	function isVisualPrefix( prefix, string ) {
 		// Pre-base vowel signs of Indic languages. A vowel sign is called pre-base if
 		// consonant + vowel becomes [vowel][consonant] when rendered. Eg: ക + െ => കെ
 		var prebases = "െേൈൊോൌெேைொோௌେୈୋୌિਿिিেৈোৌෙේෛොෝෞ";
-		if ( prebases.indexOf( string[prefix.length] ) > 0 ) {
-			return false;
-		} else {
-			return true;
-		}
+		return prebases.indexOf( string[prefix.length] ) <= 0;
 	}
-
 } ( jQuery ) );
