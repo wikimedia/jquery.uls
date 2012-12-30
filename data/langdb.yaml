@@ -531,7 +531,7 @@ languages:
 scriptgroups:
  # It's hard to find a better place for Goth except the Latin group.
   Latin: [Latn, Goth]
- # Greek is probalby different enough from Latin and Cyrillic, but user testing
+ # Greek is probably different enough from Latin and Cyrillic, but user testing
  # may prove otherwise.
   Greek: [Grek]
   WestCaucasian: [Armn, Geor]
