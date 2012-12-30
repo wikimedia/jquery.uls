@@ -29,11 +29,12 @@ languages:
   avk: [Latn, [WW], Kotava]
   ay: [Latn, [AM], Aymar aru]
  # Latin is the default in Azerbaijani Wikipedia
+ # CLDR uses az-latn and az-arab
   az: [az-latn]
   az-latn: [Latn, [EU, ME], azərbaycanca]
   az-arab: [Arab, [EU, ME], آذربايجانجا]
   az-cyrl: [Latn, [EU, ME], азәрбајҹанҹа]
- # CLDR uses az-arab
+ # CLDR uses az-arab for the Arabic-script Azerbaijani of Iran
   azb: [az-arab]
   ba: [Cyrl, [EU], башҡортса]
   bar: [Latn, [EU], Boarisch]
@@ -150,6 +151,7 @@ languages:
   guc: [Latn, [AM], Wayúu]
   gur: [Latn, [AF], Gurenɛ]
   gv: [Latn, [EU], Gaelg]
+ # CLDR uses ha-latn and ha-arab. Latin is more common and is used in Wikipedia.
   ha-arab: [Arab, [AF], هَوُسَ]
   ha-latn: [Latn, [AF], Hausa]
   ha: [ha-latn]
@@ -232,6 +234,7 @@ languages:
   ks: [Arab, [AS], کٲشُر]
   ksf: [Latn, [AF], Bafia]
   ksh: [Latn, [EU], Ripoarisch]
+ # CLDR uses ku-latn and ku-arab. Latin is more common and is used in Wikipedia.
   ku: [ku-latn]
   ku-arab: [Arab, [EU, ME], كوردي]
   ku-latn: [Latn, [EU, ME], Kurdî]
@@ -447,6 +450,8 @@ languages:
   tyv: [Cyrl, [AS], тыва дыл]
   tzm: [Tfng, [AF], ⵜⴰⵎⴰⵣⵉⵖⵜ]
   udm: [Cyrl, [EU], удмурт]
+ # CLDR uses ug-arab, ug-latn and ug-cyrl.
+ # Arabic seems to have the largest number of users and is the main script in the Wikipedia.
   ug: [ug-arab]
   ug-arab: [Arab, [AS], ئۇيغۇرچە]
   ug-latn: [Latn, [AS], uyghurche]
