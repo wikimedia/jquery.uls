@@ -52,6 +52,24 @@
 	};
 
 	/*
+	 * Runs over all languages and checks that all redirects point to a language.
+	 * There's no reason to have double redirects.
+	 */
+	var doubleRedirects = function () {
+		var result = [];
+
+		for ( var language in $.uls.data.languages ) {
+			var target = $.uls.data.isRedirect( language );
+
+			if ( target && $.uls.data.isRedirect( target ) ) {
+				result.push( language );
+			}
+		}
+
+		return result;
+	};
+
+	/*
 	 * Runs over all script codes mentioned in langdb and checks whether
 	 * they have something that looks like an autonym.
 	 */
@@ -71,7 +89,7 @@
 		assert.ok( $.fn.uls, "$.fn.uls is defined" );
 	} );
 
-	test( "-- $.uls.data testing", 40, function ( assert ) {
+	test( "-- $.uls.data testing", 41, function ( assert ) {
 
 		assert.strictEqual( $.uls.data.isRedirect( 'sr-ec' ), 'sr-cyrl', "'sr-ec' is a redirect to 'sr-cyrl'" );
 		var autonyms = $.uls.data.getAutonyms();
@@ -82,7 +100,9 @@
 		// This test assumes that we don't want any scripts to be in the 'Other'
 		// group. Actually, this may become wrong some day.
 		assert.deepEqual( orphanScripts(), [], 'All scripts belong to script groups.' );
+
 		assert.deepEqual( badRedirects(), [], 'All redirects have valid targets.' );
+		assert.deepEqual( doubleRedirects(), [], 'There are no double redirects.' );
 		assert.deepEqual( languagesWithoutAutonym(), [], 'All languages have autonyms.' );
 
 		assert.strictEqual(
@@ -116,17 +136,17 @@
 
 		assert.deepEqual( $.uls.data.getLanguagesInRegion( "PA" ),
 			[
-				"ace", "bi", "ch", "en-gb", "en", "fj", "haw", "hif", "hif-latn", "ho", "jv", "jv-java",
+				"ace", "bi", "ch", "en-gb", "en", "fj", "haw", "hif", "ho", "jv", "jv-java",
 				"mh", "mi", "na", "niu", "pih", "pis", "pt", "rtm", "sm", "tet",
 				"to", "tpi", "ty", "wls"
 			],
 			"languages of region PA are selected correctly" );
 		assert.deepEqual( $.uls.data.getLanguagesInRegions( ["AM", "WW"] ),
 			[
-				"akz", "arn", "aro", "ase", "avk", "ay", "cho", "chr", "chy", "cr", "cr-cans", "cr-latn",
+				"akz", "arn", "aro", "ase", "avk", "ay", "cho", "chr", "chy", "cr", "cr-latn",
 				"en-ca", "en", "eo", "es-419", "es-formal", "es", "esu", "fr", "gcf", "gn",
 				"guc", "haw", "ht", "ia", "ie", "ik", "ike-cans", "ike-latn", "io", "iu", "jam",
-				"jbo", "kgp", "kl", "lad", "lad-latn", "lad-hebr", "lfn", "mfe", "mic", "mus", "nah", "nl-informal", "nl",
+				"jbo", "kgp", "kl", "lad-latn", "lad-hebr", "lfn", "mfe", "mic", "mus", "nah", "nl-informal", "nl",
 				"nov", "nv", "pap", "pdc", "pdt", "ppl", "pt-br", "pt", "qu", "qug", "rap", "sei",
 				"simple", "srn", "tokipona", "vo", "yi", "yrl", "yua"
 			],
@@ -157,7 +177,7 @@
 
 		var languagesByScriptInAM = $.uls.data.getLanguagesByScriptInRegion( "AM" );
 		assert.deepEqual( languagesByScriptInAM['Cans'], [
-			"cr", "cr-cans", "ike-cans", "iu"
+			"cr", "ike-cans", "iu"
 		], "correct languages in Cans in AM selected" );
 
 		var languagesByScriptInEU = $.uls.data.getLanguagesByScriptInRegion( "EU" );
