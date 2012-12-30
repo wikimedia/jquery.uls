@@ -1,0 +1,18 @@
+{
+	"uls-select-language": "Tilni tanlash",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Yevropa",
+	"uls-region-AS": "Osiyo",
+	"uls-region-ME": "Yaqin sharq",
+	"uls-region-PA": "Tinch Okean",
+	"uls-no-results-found": "Natija topilmadi",
+	"uls-no-results-suggestion-title": "Sizni qiziqtirgan bo'lishi mumkin:",
+	"uls-search-placeholder": "Qidiruv tili",
+	"@metadata": {
+		"authors": [
+			"Akmalzhon",
+			"CoderSI"
+		]
+	}
+}

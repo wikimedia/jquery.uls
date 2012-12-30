@@ -1,4 +1,9 @@
 {
+	"@metadata": {
+		"authors": [
+			"Khan27"
+		]
+	},
 	"uls-select-language": "Dili se\u00e7in:",
 	"uls-region-WW": "\u00dcmumd\u00fcnya",
 	"uls-region-AM": "Amerika",
@@ -11,10 +16,5 @@
 	"uls-common-languages": "\u00dcmumi dill\u0259r",
 	"uls-no-results-suggestion-title": "Sizin \u00fc\u00e7\u00fcn maraql\u0131 ola bil\u0259r:",
 	"uls-search-help": "Dilin v\u0259 ya yaz\u0131n\u0131n adlar\u0131 \u00fczr\u0259 axtarmaq olar, dilin ISO-kodu \u00fczr\u0259 v\u0259 ya region \u00fczr\u0259 g\u00f6zd\u0259n ke\u00e7ir\u0259 bil\u0259rsiniz:",
-	"uls-search-placeholder": "Dil axtar",
-	"@metadata": {
-		"authors": [
-			"Khan27"
-		]
-	}
+	"uls-search-placeholder": "Dil axtar"
 }

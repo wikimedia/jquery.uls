@@ -1,4 +1,9 @@
 {
+	"@metadata": {
+		"authors": [
+			"Naudefj"
+		]
+	},
 	"uls-select-language": "Kies taal",
 	"uls-region-WW": "W\u00eareldwyd",
 	"uls-region-AM": "Amerika",
@@ -11,10 +16,5 @@
 	"uls-common-languages": "Taalvoorstelle",
 	"uls-no-results-suggestion-title": "U mag ge\u00efnteresseerd wees in:",
 	"uls-search-help": "U kan soek volgens taalnaam, skrifnaam, ISO-kode van die taal of u kan per streek deurblaai:",
-	"uls-search-placeholder": "Soek taal",
-	"@metadata": {
-		"authors": [
-			"Naudefj"
-		]
-	}
+	"uls-search-placeholder": "Soek taal"
 }
