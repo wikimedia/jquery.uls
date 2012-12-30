@@ -369,7 +369,7 @@
 		lazyload: true // Lazy load the language list when scrolled.
 	};
 
-	//  Define a dummy i18n function, if jquery.i18n not integrated.
+	// Define a dummy i18n function, if jquery.i18n not integrated.
 	if( !$.fn.i18n ) {
 		$.fn.i18n = function( option ) {
 		};

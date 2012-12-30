@@ -139,7 +139,7 @@ div.uls-region {
 	transition: opacity 0.15s linear;
 }
 
-.uls-menu .map-block:hover, 
+.uls-menu .map-block:hover,
 .uls-menu .map-block:hover a {
 	opacity: 1;
 	color: #333;
@@ -190,7 +190,7 @@ div.uls-region {
 	background: #f8f8f8;
 	background: -webkit-gradient(linear, left top, left bottom, from(#F0F0F0), to(#FBFBFB));
 	background: -webkit-linear-gradient(top, #F0F0F0, #FBFBFB);
-	background: -moz-linear-gradient(top,  #F0F0F0,  #FBFBFB);
+	background: -moz-linear-gradient(top, #F0F0F0, #FBFBFB);
 	background: -ms-linear-gradient(top, #F0F0F0, #FBFBFB);
 	background: -o-linear-gradient(top, #F0F0F0, #FBFBFB);
 	background: linear-gradient(#F0F0F0, #FBFBFB);
