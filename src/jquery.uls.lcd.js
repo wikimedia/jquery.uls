@@ -146,7 +146,10 @@
 				$rowDiv.append( $ul );
 			}
 
-			$divRegionCode.show();
+			// Don't show the region unless it was enabled
+			if ( $.inArray( regionCode, this.options.showRegions ) > -1 ) {
+				$divRegionCode.show();
+			}
 
 			return $ul;
 		},
@@ -157,6 +160,7 @@
 				regions = {
 					// These are fallback text when i18n library not present
 					WW: 'Worldwide',
+					SP: 'Special',
 					AM: 'America',
 					EU: 'Europe',
 					ME: 'Middle East',
@@ -307,6 +311,7 @@
 
 	$.fn.lcd.defaults = {
 		languages: null,
+		showRegions: ['WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA'],
 		lazyload: true
 	};
 

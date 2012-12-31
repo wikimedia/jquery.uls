@@ -7,6 +7,7 @@
 },
 "uls-select-language": "Select Language",
 "uls-region-WW": "Worldwide",
+"uls-region-SP": "Special",
 "uls-region-AM": "America",
 "uls-region-AF": "Africa",
 "uls-region-EU": "Europe",
@@ -15,7 +16,7 @@
 "uls-region-PA": "Pacific",
 "uls-no-results-found": "No results found",
 "uls-common-languages": "Common languages",
-"uls-no-results-suggestion-title": "You may be interested in:", 
+"uls-no-results-suggestion-title": "You may be interested in:",
 "uls-search-help": "You can search by language name, script name, ISO code of language or you can browse by region:",
 "uls-search-placeholder": "Language search"
 }
