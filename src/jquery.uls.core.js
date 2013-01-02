@@ -236,7 +236,8 @@
 				quickList: uls.options.quickList,
 				clickhandler: $.proxy( uls.select, uls ),
 				lazyload: uls.options.lazyload,
-				source: uls.$languageFilter
+				source: uls.$languageFilter,
+				showRegions: uls.options.showRegions
 			} ).data( 'lcd' );
 
 			uls.$languageFilter.languagefilter( {
@@ -366,7 +367,8 @@
 		searchAPI: null, // Language search API
 		languages: $.uls.data.getAutonyms(), // Languages to be used for ULS, default is all languages
 		quickList: null, // Array of language codes or function that returns such
-		lazyload: true // Lazy load the language list when scrolled.
+		lazyload: true, // Lazy load the language list when scrolled.
+		showRegions: ['WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA']
 	};
 
 	//  Define a dummy i18n function, if jquery.i18n not integrated.

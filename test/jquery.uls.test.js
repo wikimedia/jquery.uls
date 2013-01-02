@@ -89,7 +89,16 @@
 		assert.ok( $.fn.uls, "$.fn.uls is defined" );
 	} );
 
-	test( "-- $.uls.data testing", 41, function ( assert ) {
+	test( "-- $.uls.data testing", 45, function ( assert ) {
+		// Add a language in run time.
+		// This is done early to make sure that it doesn't break other functions.
+		$.uls.data.addLanguage( 'qqq', {
+			script: 'Latn',
+			regions: ['SP'],
+			autonym: 'Language documentation'
+		} );
+
+		assert.ok( $.uls.data.getAutonym( 'qqq' ), 'Language documentation', 'Language qqq was added with the correct autonym' );
 
 		assert.strictEqual( $.uls.data.isRedirect( 'sr-ec' ), 'sr-cyrl', "'sr-ec' is a redirect to 'sr-cyrl'" );
 		var autonyms = $.uls.data.getAutonyms();
@@ -166,14 +175,14 @@
 		);
 
 		assert.deepEqual( $.uls.data.getRegionsInGroup( 3 ), [
-			"EU", "ME", "AF"
-		], "regions in group 3 are selected correctly" );
+			'EU', 'ME', 'AF'
+		], 'regions in group 3 are selected correctly' );
 		assert.deepEqual( $.uls.data.getRegionsInGroup( 2 ), [
-			"AM"
-		], "regions in group 2 are selected correctly" );
+			'AM'
+		], 'regions in group 2 are selected correctly' );
 		assert.deepEqual( $.uls.data.getRegionsInGroup( 1 ), [
-			"WW"
-		], "regions in group 1 are selected correctly" );
+			'WW', 'SP'
+		], 'regions in group 1 are selected correctly' );
 
 		var languagesByScriptInAM = $.uls.data.getLanguagesByScriptInRegion( "AM" );
 		assert.deepEqual( languagesByScriptInAM['Cans'], [
@@ -204,8 +213,8 @@
 		], 'All languages in the Greek script found' );
 
 		assert.deepEqual( $.uls.data.getAllRegions(), [
-			"WW", "AM", "EU", "ME", "AF", "AS", "PA"
-		], "All regions found" );
+			'WW', 'SP', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA'
+		], 'All regions found' );
 
 		// autonyms: gn: avañe'ẽ, de: deutsch, hu: magyar, fi: suomi
 		assert.deepEqual( ['de', 'fi', 'gn', 'hu'].sort( $.uls.data.sortByAutonym ), [
@@ -219,6 +228,10 @@
 
 		assert.ok( $.inArray( "sah", $.uls.data.getLanguagesInTerritory( "RU" ) )
 			> -1, "Sakha language is spoken in Russia" );
+
+		assert.ok( $.uls.data.deleteLanguage( 'qqq' ), 'Deleting language qqq, which was added earlier, returns true.' );
+		assert.strictEqual( $.uls.data.languages['qqq'], undefined, 'Data about qqq is undefined after being deleted.' );
+		assert.ok( !$.uls.data.deleteLanguage( 'qqr' ), 'Deleting language qqr, which was never added, returns false.' );
 	} );
 
 }( jQuery ) );
