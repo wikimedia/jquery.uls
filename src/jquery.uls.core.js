@@ -169,7 +169,7 @@
 
 			if ( this.options.lazyload ) {
 				this.$regionFilters.first().regionselector( 'show' );
-			} else{
+			} else {
 				this.$regionFilters.regionselector( 'show' );
 			}
 		},

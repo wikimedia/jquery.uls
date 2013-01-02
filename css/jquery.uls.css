@@ -45,7 +45,7 @@
 	color: #555;
 }
 
-.uls-menu .uls-no-results-found-title{
+.uls-menu .uls-no-results-found-title {
 	font-size: 16pt;
 	font-weight: bold;
 	line-height: 1.5em;
@@ -139,7 +139,7 @@ div.uls-region {
 	transition: opacity 0.15s linear;
 }
 
-.uls-menu .map-block:hover, 
+.uls-menu .map-block:hover,
 .uls-menu .map-block:hover a {
 	opacity: 1;
 	color: #333;
@@ -184,7 +184,7 @@ div.uls-region {
 	border: 1px solid #3366bb;
 }
 
-.uls-menu .search{
+.uls-menu .search {
 	position: relative;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0F0F0', endColorstr='#FBFBFB');
 	background: #f8f8f8;
