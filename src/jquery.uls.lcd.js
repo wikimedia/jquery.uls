@@ -19,8 +19,8 @@
  * @licence MIT License
  */
 
-( function( $ ) {
-	"use strict";
+( function ( $ ) {
+	'use strict';
 
 	var noResultsTemplate = '\
 	<div class="twelve columns uls-no-results-view">\
@@ -45,12 +45,12 @@
 		</div>\
 	</div>';
 
-	var LanguageCategoryDisplay = function( element, options ) {
+	var LanguageCategoryDisplay = function ( element, options ) {
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.lcd.defaults, options );
 		this.$element.addClass( 'lcd' );
 		this.regionDivs = {};
-		this.$element.append( $(noResultsTemplate) );
+		this.$element.append( $( noResultsTemplate ) );
 		this.$noResults = this.$element.find( 'div.uls-no-results-view' );
 		this.render();
 		this.listen();
@@ -59,7 +59,7 @@
 	LanguageCategoryDisplay.prototype = {
 		constructor: LanguageCategoryDisplay,
 
-		append: function( langCode, regionCode ) {
+		append: function ( langCode, regionCode ) {
 			this.addToRegion( langCode, regionCode );
 			this.$noResults.hide();
 		},
@@ -71,7 +71,7 @@
 		 * @param langCode
 		 * @param region Optional region
 		 */
-		addToRegion: function( langCode, region ) {
+		addToRegion: function ( langCode, region ) {
 			var lcd = this,
 				language = lcd.options.languages[langCode],
 				langName = $.uls.data.getAutonym( langCode ) || language || langCode,
@@ -120,12 +120,13 @@
 				$column.append( $li );
 			}
 		},
+
 		/**
 		 * Get a column to add language.
 		 * @param regionCode string The region code
 		 * @param forceNew bool whether a new column must be created or not
 		 */
-		getColumn: function( regionCode, forceNew ) {
+		getColumn: function ( regionCode, forceNew ) {
 			var $divRegionCode, $rowDiv, $ul;
 
 			forceNew = forceNew || false;
@@ -151,7 +152,7 @@
 			return $ul;
 		},
 
-		render: function() {
+		render: function () {
 			var $section, $sectionTitle,
 				lcd = this,
 				regions = {
@@ -165,11 +166,13 @@
 					PA: 'Pacific'
 				};
 
-			$.each( $.uls.data.regiongroups, function( regionCode, regionIndex ) {
+			$.each( $.uls.data.regiongroups, function ( regionCode, regionIndex ) {
 				$section = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', regionCode );
-				$sectionTitle = $( '<h3 data-i18n="uls-region-'+ regionCode+'">' )
+
+				$sectionTitle = $( '<h3 data-i18n="uls-region-' + regionCode + '">' )
 					.addClass( 'eleven columns uls-lcd-region-section uls-lcd-region-title offset-by-one' )
 					.text( regions[regionCode] );
+
 				$section.append( $sectionTitle );
 				lcd.$element.append( $section );
 				$section.hide();
@@ -180,11 +183,11 @@
 			this.i18n();
 		},
 
-		i18n: function( ) {
+		i18n: function ( ) {
 			this.$element.find( '[data-i18n]' ).i18n();
 		},
 
-		quicklist: function() {
+		quicklist: function () {
 			if ( $.isFunction( this.options.quickList ) ) {
 				this.options.quickList = this.options.quickList();
 			}
@@ -197,6 +200,7 @@
 			var quickList = this.options.quickList;
 			quickList = quickList.slice( 0, 16 );
 			quickList.sort( $.uls.data.sortByAutonym );
+
 			var $quickListSection = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', 'uls-lcd-quicklist' );
 			var $quickListSectionTitle = $( '<h3 data-i18n="uls-common-languages">' )
 				.addClass( 'eleven columns uls-lcd-region-section uls-lcd-region-title offset-by-one' )
@@ -204,6 +208,7 @@
 			$quickListSection.append( $quickListSectionTitle );
 			this.$element.prepend( $quickListSection );
 			this.regionDivs[ 'quick' ] = $quickListSection;
+
 			for ( var i = 0; i < quickList.length; i++) {
 				var $column = this.getColumn( 'quick', i % 4 === 0 );
 				var langCode = quickList[i];
@@ -220,27 +225,29 @@
 					);
 				$column.append( $li );
 			}
+
 			$quickListSection.show();
 			$quickListSectionTitle.i18n();
+
 			return $quickListSection;
 		},
 
-		show: function() {
+		show: function () {
 			if ( !this.regionDivs ) {
 				this.render();
 			}
 		},
 
-		empty: function() {
+		empty: function () {
 			this.$element.find( 'div.uls-language-block' ).remove();
 			this.$element.find( 'div.uls-lcd-region-section' ).hide();
 		},
 
-		focus: function() {
+		focus: function () {
 			this.$element.focus();
 		},
 
-		noResults: function() {
+		noResults: function () {
 			this.$noResults.show();
 			var $suggestions = this.quicklist();
 			$suggestions.find( 'h3' )
@@ -254,7 +261,7 @@
 			var lcd = this;
 
 			if ( this.options.clickhandler ) {
-				this.$element.on( 'click', 'div.row li', function() {
+				this.$element.on( 'click', 'div.row li', function () {
 					lcd.options.clickhandler.call( this, $( this ).data( 'code' ) );
 				} );
 			}
@@ -264,6 +271,7 @@
 				var $ulsLanguageList = $( this ),
 					scrollTop = $ulsLanguageList.position().top,
 					scrollBottom = $ulsLanguageList.height();
+
 				if ( lcd.options.lazyload && lcd.options.source.val() === '' ) {
 					if ( this.offsetHeight + this.scrollTop >= this.scrollHeight / 2 ) {
 						lcd.$element.trigger( 'scrollend' );
@@ -279,6 +287,7 @@
 
 					if ( top - padding <= scrollTop && height > scrollBottom ) {
 						inviewRegion = $lcdRegionSection.attr( 'id' );
+
 						return true;
 					}
 				} );
@@ -290,8 +299,8 @@
 		}
 	};
 
-	$.fn.lcd = function( option ) {
-		return this.each( function() {
+	$.fn.lcd = function ( option ) {
+		return this.each( function () {
 			var $this = $( this ),
 				data = $this.data( 'lcd' ),
 				options = typeof option === 'object' && option;
@@ -299,6 +308,7 @@
 			if ( !data ) {
 				$this.data( 'lcd', ( data = new LanguageCategoryDisplay( this, options ) ) );
 			}
+
 			if ( typeof option === 'string') {
 				data[option]();
 			}

@@ -25,7 +25,7 @@
 	 * @param language string Language code
 	 * @return Target language code if it's a redirect or false if it's not
 	 */
-	$.uls.data.isRedirect = function( language ) {
+	$.uls.data.isRedirect = function ( language ) {
 		return ( $.uls.data.languages[language] !== undefined &&
 			$.uls.data.languages[language].length === 1 ) ? $.uls.data.languages[language][0] : false;
 	};
@@ -35,7 +35,7 @@
 	 * @param language string Language code
 	 * @return string
 	 */
-	$.uls.data.getScript = function( language ) {
+	$.uls.data.getScript = function ( language ) {
 		var target = $.uls.data.isRedirect( language );
 
 		if ( target ) {
@@ -50,7 +50,7 @@
 	 * @param language string Language code
 	 * @return array|string 'UNKNOWN'
 	 */
-	$.uls.data.getRegions = function( language ) {
+	$.uls.data.getRegions = function ( language ) {
 		var target = $.uls.data.isRedirect( language );
 
 		if ( target ) {
@@ -65,7 +65,7 @@
 	 * @param language string Language code
 	 * @return string
 	 */
-	$.uls.data.getAutonym = function( language ) {
+	$.uls.data.getAutonym = function ( language ) {
 		var target = $.uls.data.isRedirect( language );
 
 		if ( target ) {
@@ -79,7 +79,7 @@
 	 * Returns all language codes and corresponding autonyms
 	 * @return array
 	 */
-	$.uls.data.getAutonyms = function() {
+	$.uls.data.getAutonyms = function () {
 		var autonymsByCode = {};
 
 		for ( var language in $.uls.data.languages ) {
@@ -97,10 +97,10 @@
 	 * Returns an array of all region codes.
 	 * @return array
 	 */
-	$.uls.data.getAllRegions = function() {
+	$.uls.data.getAllRegions = function () {
 		var allRegions = [];
 
-		for( var region in $.uls.data.regiongroups ) {
+		for ( var region in $.uls.data.regiongroups ) {
 			allRegions.push( region );
 		}
 
@@ -113,7 +113,7 @@
 	 * @param script string
 	 * @return array of strings (languages codes)
 	 */
-	$.uls.data.getLanguagesInScript = function( script ) {
+	$.uls.data.getLanguagesInScript = function ( script ) {
 		return $.uls.data.getLanguagesInScripts( [ script ] );
 	};
 
@@ -122,7 +122,7 @@
 	 * @param scripts array of strings
 	 * @return array of strings (languages codes)
 	 */
-	$.uls.data.getLanguagesInScripts = function( scripts ) {
+	$.uls.data.getLanguagesInScripts = function ( scripts ) {
 		var languagesInScripts = [];
 
 		for ( var language in $.uls.data.languages ) {
@@ -146,7 +146,7 @@
 	 * @param region string
 	 * @return array of strings (languages codes)
 	 */
-	$.uls.data.getLanguagesInRegion = function( region ) {
+	$.uls.data.getLanguagesInRegion = function ( region ) {
 		return $.uls.data.getLanguagesInRegions( [ region ] );
 	};
 
@@ -155,7 +155,7 @@
 	 * @param regions array of strings.
 	 * @return array of strings (languages codes)
 	 */
-	$.uls.data.getLanguagesInRegions = function( regions ) {
+	$.uls.data.getLanguagesInRegions = function ( regions ) {
 		var languagesInRegions = [];
 
 		for ( var language in $.uls.data.languages ) {
@@ -179,7 +179,7 @@
 	 * @param groupNum number.
 	 * @return array of strings (languages codes)
 	 */
-	$.uls.data.getLanguagesInRegionGroup = function( groupNum ) {
+	$.uls.data.getLanguagesInRegionGroup = function ( groupNum ) {
 		return $.uls.data.getLanguagesInRegions( $.uls.data.getRegionsInGroup( groupNum ) );
 	};
 
@@ -189,7 +189,7 @@
 	 * @param region string Region code
 	 * @return associative array
 	 */
-	$.uls.data.getLanguagesByScriptInRegion = function( region ) {
+	$.uls.data.getLanguagesByScriptInRegion = function ( region ) {
 		var languagesByScriptInRegion = {};
 
 		for ( var language in $.uls.data.languages ) {
@@ -199,6 +199,7 @@
 
 			if ( $.inArray( region, $.uls.data.getRegions( language ) ) !== -1 ) {
 				var script = $.uls.data.getScript( language );
+
 				if ( languagesByScriptInRegion[script] === undefined ) {
 					languagesByScriptInRegion[script] = [];
 				}
@@ -215,7 +216,7 @@
 	 * @param region string Region code
 	 * @return associative array
 	 */
-	$.uls.data.getLanguagesByScriptGroupInRegion = function( region ) {
+	$.uls.data.getLanguagesByScriptGroupInRegion = function ( region ) {
 		return $.uls.data.getLanguagesByScriptGroupInRegions( [ region ] );
 	};
 
@@ -225,7 +226,7 @@
 	 * grouped by script group.
 	 * @return associative array
 	 */
-	$.uls.data.getAllLanguagesByScriptGroup = function() {
+	$.uls.data.getAllLanguagesByScriptGroup = function () {
 		return $.uls.data.getLanguagesByScriptGroupInRegions( $.uls.data.getAllRegions() );
 	};
 
@@ -234,7 +235,7 @@
 	 * @param languages Array of language codes
 	 * @return {Object} Array of languages indexed by script codes
 	 */
-	$.uls.data.getLanguagesByScriptGroup = function( languages ) {
+	$.uls.data.getLanguagesByScriptGroup = function ( languages ) {
 		var languagesByScriptGroup = {},
 			scriptGroup,
 			language,
@@ -243,12 +244,15 @@
 		for ( scriptGroup in $.uls.data.scriptgroups ) {
 			for ( language in languages ) {
 				langScriptGroup = $.uls.data.getScriptGroupOfLanguage( language );
-				if( langScriptGroup !== scriptGroup ) {
+
+				if ( langScriptGroup !== scriptGroup ) {
 					continue;
 				}
+
 				if ( !languagesByScriptGroup[scriptGroup] ) {
 					languagesByScriptGroup[scriptGroup] = [];
 				}
+
 				languagesByScriptGroup[scriptGroup].push( language );
 			}
 		}
@@ -262,7 +266,7 @@
 	 * @param regions array of strings - region codes
 	 * @return associative array
 	 */
-	$.uls.data.getLanguagesByScriptGroupInRegions = function( regions ) {
+	$.uls.data.getLanguagesByScriptGroupInRegions = function ( regions ) {
 		var languagesByScriptGroupInRegions = {};
 
 		for ( var language in $.uls.data.languages ) {
@@ -292,7 +296,7 @@
 	 * region, script group and script.
 	 * @return associative array
 	 */
-	$.uls.data.getAllLanguagesByRegionAndScript = function() {
+	$.uls.data.getAllLanguagesByRegionAndScript = function () {
 		var allLanguagesByRegionAndScript = {},
 			region,
 			regionGroup;
@@ -340,7 +344,7 @@
 	 * @param groupNum int
 	 * @return array of strings
 	 */
-	$.uls.data.getRegionsInGroup = function( groupNum ) {
+	$.uls.data.getRegionsInGroup = function ( groupNum ) {
 		var regionsInGroup = [];
 
 		for ( var region in $.uls.data.regiongroups ) {
@@ -359,7 +363,7 @@
 	 * @param script string Script code
 	 * @return string script group name
 	 */
-	$.uls.data.getGroupOfScript = function( script ) {
+	$.uls.data.getGroupOfScript = function ( script ) {
 		for ( var group in $.uls.data.scriptgroups ) {
 			if ( $.inArray( script, $.uls.data.scriptgroups[group] ) !== -1 ) {
 				return group;
@@ -374,7 +378,7 @@
 	 * @param language string Language code
 	 * @return string script group name
 	 */
-	$.uls.data.getScriptGroupOfLanguage = function( language ) {
+	$.uls.data.getScriptGroupOfLanguage = function ( language ) {
 		return $.uls.data.getGroupOfScript( $.uls.data.getScript( language ) );
 	};
 
@@ -384,9 +388,10 @@
 	 * @param a string Language code
 	 * @param b string Language code
 	 */
-	$.uls.data.sortByAutonym = function( a, b ) {
+	$.uls.data.sortByAutonym = function ( a, b ) {
 		var autonymA = $.uls.data.getAutonym( a ) || a,
 			autonymB = $.uls.data.getAutonym( b ) || b;
+
 		return ( autonymA.toLowerCase() < autonymB.toLowerCase() ) ? -1 : 1;
 	};
 
@@ -395,7 +400,7 @@
 	 * @param language string Language code
 	 * @return boolean
 	 */
-	$.uls.data.isRtl = function( language ) {
+	$.uls.data.isRtl = function ( language ) {
 		return $.inArray( $.uls.data.getScript( language ), $.uls.data.rtlscripts ) !== -1;
 	};
 
@@ -404,7 +409,7 @@
 	 * @param language string Language code
 	 * @return string
 	 */
-	$.uls.data.getDir = function( language ) {
+	$.uls.data.getDir = function ( language ) {
 		return $.uls.data.isRtl( language ) ? 'rtl' : 'ltr';
 	};
 
@@ -413,8 +418,7 @@
 	 * @param territory string Territory code
 	 * @return list of language codes
 	 */
-	$.uls.data.getLanguagesInTerritory = function( territory ) {
+	$.uls.data.getLanguagesInTerritory = function ( territory ) {
 		return $.uls.data.territories[territory];
 	};
-
 } ( jQuery ) );

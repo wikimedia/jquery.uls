@@ -28,7 +28,7 @@
 	 * The attached element should have data-regiongroup attribute
 	 * that defines the regiongroup for the selector.
 	 */
-	var RegionSelector = function( element, options ) {
+	var RegionSelector = function ( element, options ) {
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.regionselector.defaults, options );
 		this.$element.addClass( 'regionselector' );
@@ -42,32 +42,36 @@
 	RegionSelector.prototype = {
 		constructor: RegionSelector,
 
-		init: function() {
+		init: function () {
 			var region = this.$element.data( 'region' );
 			this.regions = $.uls.data.getRegionsInGroup( this.regionGroup );
+
 			if ( region ) {
 				this.regions.push( region );
 			}
 		},
 
-		test: function( langCode ) {
+		test: function ( langCode ) {
 			var langRegions = $.uls.data.getRegions( langCode ),
 				region;
 
 			for ( var i = 0; i < this.regions.length; i++ ) {
 				region = this.regions[i];
+
 				if ( $.inArray( region, langRegions ) >= 0 ) {
 					this.render( langCode, region );
 					this.cache[langCode] = region;
+
 					return;
 				}
 			}
 		},
 
-		show: function() {
+		show: function () {
 			if ( this.cache ) {
 				// If the result cache is present, render the results from there.
 				var result = null;
+
 				for ( result in this.cache ) {
 					this.render( result, this.cache[result] );
 				}
@@ -75,11 +79,14 @@
 				this.cache = {};
 				// Get the languages grouped by script group
 				var languagesByScriptGroup = $.uls.data.getLanguagesByScriptGroup( this.options.languages );
+
 				for ( var scriptGroup in languagesByScriptGroup ) {
 					// Get the languages for the script group
 					var languages = languagesByScriptGroup[scriptGroup];
+
 					// Sort it based on autonym
 					languages.sort( $.uls.data.sortByAutonym );
+
 					for ( var i = 0; i < languages.length; i++ ) {
 						// Check whether it belongs to the region
 						this.test( languages[i] );
@@ -92,11 +99,13 @@
 			}
 		},
 
-		render: function( langCode, region ) {
+		render: function ( langCode, region ) {
 			var $target = this.options.$target;
+
 			if ( !$target ) {
 				return;
 			}
+
 			$target.append( langCode, region );
 		},
 
@@ -113,21 +122,23 @@
 
 				var $nextRegion = $( '#uls-region-' + nextRegiongroup );
 				var next = $nextRegion.length && $nextRegion.data( 'regionselector' );
+
 				if ( next ) {
 					next.show();
 				}
 			}, 100 );
+
 			return false;
 		},
 
-		listen: function() {
+		listen: function () {
 			this.$element.on( 'click', $.proxy( this.click, this ) );
 			this.options.$target.$element.bind( 'scrollend', $.proxy( this.next, this) );
 		},
 
-		click: function( e ) {
+		click: function ( e ) {
 			// Don't do anything if a region is selected already
-			if( this.$element.hasClass( 'active' ) ) {
+			if ( this.$element.hasClass( 'active' ) ) {
 				return;
 			}
 
@@ -136,6 +147,7 @@
 			this.show();
 			// Make the selected region (and it only) active
 			$( '.regionselector' ).removeClass( 'active' );
+
 			if ( this.regionGroup ) {
 				// if there is a region group, make it active.
 				this.$element.addClass( 'active' );
@@ -145,8 +157,8 @@
 
 	/* RegionSelector plugin definition */
 
-	$.fn.regionselector = function( option ) {
-		return this.each( function() {
+	$.fn.regionselector = function ( option ) {
+		return this.each( function () {
 			var $this = $( this ),
 				data = $this.data( 'regionselector' ),
 				options = typeof option === 'object' && option;
@@ -154,6 +166,7 @@
 			if ( !data ) {
 				$this.data( 'regionselector', ( data = new RegionSelector( this, options ) ) );
 			}
+
 			if ( typeof option === 'string' ) {
 				data[option]();
 			}
