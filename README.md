@@ -1,6 +1,6 @@
-jQuery Universal Language Selector 
+jQuery Universal Language Selector
 ==================================
-Universal  Language Selector
+Universal Language Selector
 
 [![Build Status](https://secure.travis-ci.org/wikimedia/jquery.uls.png)](http://travis-ci.org/wikimedia/jquery.uls)
 
