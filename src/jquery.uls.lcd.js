@@ -268,7 +268,8 @@
 
 			// The region section need to be in sync with the map filter.
 			lcd.$element.scroll( function () {
-				var $ulsLanguageList = $( this ),
+				var inview, inviewRegion,
+					$ulsLanguageList = $( this ),
 					scrollTop = $ulsLanguageList.position().top,
 					scrollBottom = $ulsLanguageList.height();
 
@@ -278,7 +279,7 @@
 					}
 				}
 				// The region section need to be in sync with the map filter.
-				var inviewRegion = 'WW';
+				inviewRegion = 'WW';
 				lcd.$element.find( 'div.uls-lcd-region-section' ).each( function () {
 					var $lcdRegionSection = $( this ),
 						top = $lcdRegionSection.position().top,
@@ -292,7 +293,7 @@
 					}
 				} );
 
-				var inview = $.uls.data.regiongroups[inviewRegion];
+				inview = $.uls.data.regiongroups[inviewRegion];
 				$( '.regionselector' ).removeClass( 'active' );
 				$( '#uls-region-' + inview ).addClass( 'active' );
 			} );
