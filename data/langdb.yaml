@@ -121,6 +121,7 @@ languages:
   ff: [Latn, [AF], Fulfulde]
   fi: [Latn, [EU], suomi]
   fit: [Latn, [EU], meänkieli]
+  fiu-vro: [vro]
   fj: [Latn, [PA], Na Vosa Vakaviti]
   fo: [Latn, [EU], føroyskt]
   fr: [Latn, [EU, AM, WW], français]
@@ -339,7 +340,6 @@ languages:
   pnt: [Grek, [EU], Ποντιακά]
   ppl: [Latn, [AM], Nawat]
   prg: [Latn, [EU], Prūsiskan]
-  pru: [Latn, [EU], Prūsiskan]
   ps: [Arab, [AS, ME], پښتو]
   pt-br: [Latn, [AM], português do Brasil]
   pt: [Latn, [EU, AM, AS, PA, AF, WW], português]
@@ -353,7 +353,7 @@ languages:
   rmy: [Latn, [EU], Romani]
   rn: [Latn, [AF], Kirundi]
   ro: [Latn, [EU], română]
-  roa-rup: [Latn, [EU], Armãneashce]
+  roa-rup: [rup]
   roa-tara: [Latn, [EU], tarandíne]
   rtm: [Latn, [PA], Faeag Rotuma]
  # world?
@@ -482,7 +482,6 @@ languages:
   yrk: [Cyrl, [AS], Ненэцяʼ вада]
   yrl: [Latn, [AM], "ñe'engatú"]
   yua: [Latn, [AM], "Maaya T'aan"]
- # world?
   yue: [Hant, [AS], 粵語]
   za: [Latn, [AS], Vahcuengh]
   zea: [Latn, [EU], Zeêuws]
@@ -498,7 +497,7 @@ languages:
   zh-my: [Hans, [AS], 中文（马来西亚）]
   zh-sg: [Hans, [AS], 中文（新加坡）]
   zh-tw: [Hant, [AS], 中文（台灣）]
-  zh-yue: [Hans, [AS], 粵語]
+  zh-yue: [yue]
   zu: [Latn, [AF], isiZulu]
 
  # All the supported scripts, grouped logically.
