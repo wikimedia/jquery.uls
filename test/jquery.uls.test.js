@@ -93,7 +93,7 @@
 
 		assert.strictEqual( $.uls.data.isRedirect( 'sr-ec' ), 'sr-cyrl', "'sr-ec' is a redirect to 'sr-cyrl'" );
 		var autonyms = $.uls.data.getAutonyms();
-		assert.strictEqual( autonyms['he'], 'עברית', 'Correct autonym is returned for Hebrew using getAutonyms().' );
+		assert.strictEqual( autonyms['zu'], 'isiZulu', 'Correct autonym is returned for Zulu using getAutonyms().' );
 		assert.strictEqual( autonyms['pa'], undefined, "Language 'pa' is not listed in autonyms, because it's a redirect" );
 		assert.strictEqual( autonyms['pa-guru'], 'ਪੰਜਾਬੀ', "Language 'pa-guru' has the correct autonym" );
 
@@ -187,7 +187,7 @@
 			"Language 'sr-latn' appears as a Latin-script language in EU, because it's not a redirect" );
 
 		assert.strictEqual( $.uls.data.getAutonym( 'pa' ), 'ਪੰਜਾਬੀ', 'Correct autonym of the Punjabi language was selected using code pa.' );
-		assert.strictEqual( $.uls.data.getAutonym( 'pa-guru' ), 'ਪੰਜਾਬੀ', 'Correct autonym of the Punjabi language was selected using code pa.' );
+		assert.strictEqual( $.uls.data.getAutonym( 'pa-guru' ), 'ਪੰਜਾਬੀ', 'Correct autonym of the Punjabi language was selected using code pa-guru.' );
 
 		var languagesByScriptGroupInEMEA = $.uls.data.getLanguagesByScriptGroupInRegions( $.uls.data.getRegionsInGroup( 3 ) );
 		assert.deepEqual( languagesByScriptGroupInEMEA['WestCaucasian'], [
