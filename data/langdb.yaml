@@ -493,7 +493,7 @@ languages:
   zh-hans: [Hans, [AS], 中文（简体）]
   zh-hant: [Hant, [AS], 中文（繁體）]
   zh-hk: [Hant, [AS], 中文（香港）]
-  zh-min-nan: [Latn, [AS], Bân-lâm-gú]
+  zh-min-nan: [nan]
   zh-mo: [Hant, [AS], 中文（澳門）]
   zh-my: [Hans, [AS], 中文（马来西亚）]
   zh-sg: [Hans, [AS], 中文（新加坡）]
