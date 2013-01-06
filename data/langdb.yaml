@@ -38,6 +38,7 @@ languages:
   azb: [az-arab]
   ba: [Cyrl, [EU], башҡортса]
   bar: [Latn, [EU], Boarisch]
+  bat-smg: [sgs]
   bbc-latn: [Latn, [AS], Batak Toba]
  # FIXME - autonym in the Batak script is unknown
   bbc-batk: [Batk, [AS], Batak Toba]
