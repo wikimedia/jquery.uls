@@ -551,6 +551,8 @@ rtlscripts:
 regiongroups:
  # Worldwide, international
   WW: 1
+ # Special languages. To be shown near Worldwide when relevant.
+  SP: 1
  # America
   AM: 2
  # Europe
