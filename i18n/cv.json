@@ -1,4 +1,9 @@
 {
+	"@metadata": {
+		"authors": [
+			"Salam"
+		]
+	},
 	"uls-select-language": "\u0427\u04d7\u043b\u0445\u0435 \u0441\u0443\u0439\u043b\u0430\u043d\u0438",
 	"uls-region-WW": "\u041f\u04d7\u0442\u04d7\u043c \u0442\u04d7\u043d\u0447\u0435\u0440\u0438",
 	"uls-region-AM": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430",
@@ -8,10 +13,5 @@
 	"uls-region-ME": "\u041c\u0430\u043b\u0442\u0438 \u0445\u04d7\u0432\u0435\u043b \u0442\u0443\u0445\u04d1\u04ab",
 	"uls-region-PA": "\u041e\u043a\u0435\u0430\u043d\u0438",
 	"uls-no-results-found": "\u041d\u0438\u043c\u04d7\u043d \u0442\u0435 \u0442\u0443\u043f\u04d1\u043d\u043c\u0430\u0440\u04d7",
-	"uls-common-languages": "\u0427\u04d7\u043b\u0445\u0435\u043d\u0435 \u0441\u0438\u0441",
-	"@metadata": {
-		"authors": [
-			"Salam"
-		]
-	}
+	"uls-common-languages": "\u0427\u04d7\u043b\u0445\u0435\u043d\u0435 \u0441\u0438\u0441"
 }

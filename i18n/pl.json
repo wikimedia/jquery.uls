@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Matma Rex",
+			"Rezonansowy",
 			"Woytecr"
 		]
 	},
@@ -15,6 +16,7 @@
 	"uls-region-PA": "Pacyfik",
 	"uls-no-results-found": "Brak wynik\u00f3w",
 	"uls-common-languages": "Wybrane j\u0119zyki",
+	"uls-no-results-suggestion-title": "By\u0107 mo\u017ce ci\u0119 zainteresuj\u0105 te j\u0119zyki:",
 	"uls-search-help": "Mo\u017cesz wyszukiwa\u0107 wed\u0142ug nazwy j\u0119zyka, nazwy systemu pisma, kodu ISO j\u0119zyka, lub przegl\u0105da\u0107 listy wed\u0142ug region\u00f3w:",
 	"uls-search-placeholder": "Wyszukiwanie j\u0119zyka"
 }

@@ -1,4 +1,9 @@
 {
+	"@metadata": {
+		"authors": [
+			"Objectivesea"
+		]
+	},
 	"uls-select-language": "Elekti lingvon",
 	"uls-region-WW": "Tutmonda",
 	"uls-region-AM": "Ameriko",
@@ -11,10 +16,5 @@
 	"uls-common-languages": "Komunaj lingvoj",
 	"uls-no-results-suggestion-title": "Vi eble interesi\u011dis pri:",
 	"uls-search-help": "Vi povas ser\u0109i la\u016d la lingvonomo, la skriptnomo a\u016d la lingva ISO-kodo, a\u016d vi povas abeli la\u016d regiono:",
-	"uls-search-placeholder": "Lingvoser\u0109o",
-	"@metadata": {
-		"authors": [
-			"Objectivesea"
-		]
-	}
+	"uls-search-placeholder": "Lingvoser\u0109o"
 }

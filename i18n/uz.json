@@ -1,4 +1,10 @@
 {
+	"@metadata": {
+		"authors": [
+			"Akmalzhon",
+			"CoderSI"
+		]
+	},
 	"uls-select-language": "Tilni tanlash",
 	"uls-region-AM": "Amerika",
 	"uls-region-AF": "Afrika",
@@ -8,11 +14,5 @@
 	"uls-region-PA": "Tinch Okean",
 	"uls-no-results-found": "Natija topilmadi",
 	"uls-no-results-suggestion-title": "Sizni qiziqtirgan bo'lishi mumkin:",
-	"uls-search-placeholder": "Qidiruv tili",
-	"@metadata": {
-		"authors": [
-			"Akmalzhon",
-			"CoderSI"
-		]
-	}
+	"uls-search-placeholder": "Qidiruv tili"
 }
