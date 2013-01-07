@@ -110,21 +110,22 @@
 		},
 
 		next: function () {
-			if ( !this.$element.hasClass( 'active') ) {
+			var regionSelector = this;
+
+			if ( !this.$element.hasClass( 'active' ) ) {
 				return true;
 			}
 
-			var regionSelector = this;
 			// Do not respond to all scroll end events, but only after a short interval
 			delay( function () {
-				var regiongroup = regionSelector.$element.data( 'regiongroup' );
-				var nextRegiongroup = regiongroup + 1;
+				var nextRegionGroupNumber = regionSelector.$element.data( 'regiongroup' ) + 1,
+					$nextRegion = $( '#uls-region-' + nextRegionGroupNumber ),
+					nextRegionSelector = $nextRegion.length && $nextRegion.data( 'regionselector' );
 
-				var $nextRegion = $( '#uls-region-' + nextRegiongroup );
-				var next = $nextRegion.length && $nextRegion.data( 'regionselector' );
-
-				if ( next ) {
-					next.show();
+				// If cache is defined, then it is already rendered and there's no need
+				// to re-render it.
+				if ( nextRegionSelector && nextRegionSelector.cache === null ) {
+					nextRegionSelector.show();
 				}
 			}, 100 );
 
@@ -133,7 +134,7 @@
 
 		listen: function () {
 			this.$element.on( 'click', $.proxy( this.click, this ) );
-			this.options.$target.$element.bind( 'scrollend', $.proxy( this.next, this) );
+			this.options.$target.$element.bind( 'scrollend', $.proxy( this.next, this ) );
 		},
 
 		click: function ( e ) {
