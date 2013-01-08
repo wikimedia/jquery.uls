@@ -69,8 +69,8 @@
 					</div>\
 				</div>\
 				<div class="one column">\
-					<span id="languagefilter-clear" class="languagefilter-clear"></span>\
-				</div>\
+					<span id="languagefilter-clear" class="languagefilter-clear" title="Clear Text"></span>\
+					</div>\
 			</div>\
 			<div class="row uls-language-list"></div>\
 		</div> ';
