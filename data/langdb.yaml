@@ -127,7 +127,7 @@ languages:
   fj: [Latn, [PA], Na Vosa Vakaviti]
   fo: [Latn, [EU], føroyskt]
   fr: [Latn, [EU, AM, WW], français]
-  frc: [Latn, [EU], français cadien]
+  frc: [Latn, [AM], français cadien]
   frp: [Latn, [EU], arpetan]
   frr: [Latn, [EU], Nordfriisk]
   fur: [Latn, [EU], furlan]
