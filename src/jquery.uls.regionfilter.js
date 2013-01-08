@@ -80,9 +80,16 @@
 				// Get the languages grouped by script group
 				var languagesByScriptGroup = $.uls.data.getLanguagesByScriptGroup( this.options.languages );
 
-				for ( var scriptGroup in languagesByScriptGroup ) {
+				// Make sure that we go by the original order
+				// of script groups
+				for ( var scriptGroup in $.uls.data.scriptgroups ) {
 					// Get the languages for the script group
 					var languages = languagesByScriptGroup[scriptGroup];
+
+					// It's possible that some script groups are missing
+					if ( !languages ) {
+						continue;
+					}
 
 					// Sort it based on autonym
 					languages.sort( $.uls.data.sortByAutonym );
