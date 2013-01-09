@@ -312,7 +312,8 @@ languages:
   nl-informal: [Latn, [EU, AM], Nederlands (informeel)]
   nl: [Latn, [EU, AM], Nederlands]
   nn: [Latn, [EU], norsk (nynorsk)]
-  "no": [Latn, [EU]]
+ # There's also nb for Bokmål and nn for Nynorsk
+  "no": [Latn, [EU], norsk]
   nov: [Latn, [WW], Novial]
   nqo: [Nkoo, [AF], ߒߞߏ]
   nrm: [Latn, [EU], Nouormand]
