@@ -69,7 +69,9 @@
 					</div>\
 				</div>\
 				<div class="one column">\
-					<span id="languagefilter-clear" class="languagefilter-clear" title="Clear Text"></span>\
+					<span id="languagefilter-clear"  class="languagefilter-clear" title="">\
+					<script>//$(".languagefilter-clear").attr("title",$.i18n("uls-clear-text")) </script>\
+					</span>\
 					</div>\
 			</div>\
 			<div class="row uls-language-list"></div>\
@@ -161,6 +163,7 @@
 			if ( $.i18n ) {
 				this.$menu.find( '[data-i18n]' ).i18n();
 				this.$languageFilter.prop( 'placeholder', $.i18n( 'uls-search-placeholder' ) );
+				$(".languagefilter-clear").attr('title',$.i18n("uls-clear-text"));
 			}
 		},
 
