@@ -89,7 +89,7 @@
 		assert.ok( $.fn.uls, "$.fn.uls is defined" );
 	} );
 
-	test( "-- $.uls.data testing", 45, function ( assert ) {
+	test( "-- $.uls.data testing", 46, function ( assert ) {
 		// Add a language in run time.
 		// This is done early to make sure that it doesn't break other functions.
 		$.uls.data.addLanguage( 'qqq', {
@@ -153,7 +153,7 @@
 		assert.deepEqual( $.uls.data.getLanguagesInRegions( ["AM", "WW"] ),
 			[
 				"akz", "arn", "aro", "ase", "avk", "ay", "cho", "chr", "chy", "cr", "cr-latn",
-				"en-ca", "en", "eo", "es-419", "es-formal", "es", "esu", "fr", "gcf", "gn",
+				"en-ca", "en", "eo", "es-419", "es-formal", "es", "esu", "fr", "frc", "gcf", "gn",
 				"guc", "haw", "ht", "ia", "ie", "ik", "ike-cans", "ike-latn", "io", "iu", "jam",
 				"jbo", "kgp", "kl", "lad-latn", "lad-hebr", "lfn", "mfe", "mic", "mus", "nah", "nl-informal", "nl",
 				"nov", "nv", "pap", "pdc", "pdt", "ppl", "pt-br", "pt", "qu", "qug", "rap", "sei",
@@ -197,6 +197,24 @@
 
 		assert.strictEqual( $.uls.data.getAutonym( 'pa' ), 'ਪੰਜਾਬੀ', 'Correct autonym of the Punjabi language was selected using code pa.' );
 		assert.strictEqual( $.uls.data.getAutonym( 'pa-guru' ), 'ਪੰਜਾਬੀ', 'Correct autonym of the Punjabi language was selected using code pa-guru.' );
+
+		var languagesToGroup = {
+				'en': 'English',
+				'fiu-vro': 'Võro', // Alias before target
+				'ru': 'русский',
+				'sr': 'српски', // Alias before target
+				'sr-cyrl': 'српски', // Target before alias
+				'sr-latn': 'srpski', // Target before alias
+				'sr-el': 'srpski', // Alias after target
+				'vro': 'Võro' // Target after alias
+			},
+			groupedLanguages = {
+				Latin: [ 'en', 'vro', 'sr-latn' ],
+				Cyrillic: [ 'ru', 'sr-cyrl' ]
+			};
+
+		assert.deepEqual( $.uls.data.getLanguagesByScriptGroup( languagesToGroup ), groupedLanguages,
+			'A custom list of languages is grouped correctly using getLanguagesByScriptGroup.' );
 
 		var languagesByScriptGroupInEMEA = $.uls.data.getLanguagesByScriptGroupInRegions( $.uls.data.getRegionsInGroup( 3 ) );
 		assert.deepEqual( languagesByScriptGroupInEMEA['WestCaucasian'], [
