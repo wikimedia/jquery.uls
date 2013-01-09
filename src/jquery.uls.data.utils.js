@@ -220,7 +220,6 @@
 		return $.uls.data.getLanguagesByScriptGroupInRegions( [ region ] );
 	};
 
-
 	/**
 	 * Returns an associative array of all languages,
 	 * grouped by script group.
@@ -237,23 +236,20 @@
 	 */
 	$.uls.data.getLanguagesByScriptGroup = function ( languages ) {
 		var languagesByScriptGroup = {},
-			scriptGroup,
-			language,
-			langScriptGroup;
+			language, codeToAdd, langScriptGroup;
 
-		for ( scriptGroup in $.uls.data.scriptgroups ) {
-			for ( language in languages ) {
-				langScriptGroup = $.uls.data.getScriptGroupOfLanguage( language );
+		for ( language in languages ) {
+			codeToAdd = $.uls.data.isRedirect( language ) || language;
 
-				if ( langScriptGroup !== scriptGroup ) {
-					continue;
-				}
+			langScriptGroup = $.uls.data.getScriptGroupOfLanguage( codeToAdd );
 
-				if ( !languagesByScriptGroup[scriptGroup] ) {
-					languagesByScriptGroup[scriptGroup] = [];
-				}
+			if ( !languagesByScriptGroup[langScriptGroup] ) {
+				languagesByScriptGroup[langScriptGroup] = [];
+			}
 
-				languagesByScriptGroup[scriptGroup].push( language );
+			// Prevent duplicate adding of redirects
+			if ( $.inArray( codeToAdd, languagesByScriptGroup[langScriptGroup] ) === -1 ) {
+				languagesByScriptGroup[langScriptGroup].push( codeToAdd );
 			}
 		}
 
