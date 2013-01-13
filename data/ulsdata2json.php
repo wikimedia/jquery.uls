@@ -72,6 +72,7 @@ $json = json_encode( $parsedLangdb );
 $js = <<<JAVASCRIPT
 // Please do not edit. This file is generated from data/langdb.yaml by ulsdata2json.php
 ( function ( $ ) {
+	'use strict';
 	$.uls = $.uls || {};
 	$.uls.data = $json;
 } ( jQuery ) );

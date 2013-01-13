@@ -127,7 +127,7 @@ languages:
   fj: [Latn, [PA], Na Vosa Vakaviti]
   fo: [Latn, [EU], føroyskt]
   fr: [Latn, [EU, AM, WW], français]
-  frc: [Latn, [EU], français cadien]
+  frc: [Latn, [AM], français cadien]
   frp: [Latn, [EU], arpetan]
   frr: [Latn, [EU], Nordfriisk]
   fur: [Latn, [EU], furlan]
@@ -312,7 +312,8 @@ languages:
   nl-informal: [Latn, [EU, AM], Nederlands (informeel)]
   nl: [Latn, [EU, AM], Nederlands]
   nn: [Latn, [EU], norsk (nynorsk)]
-  "no": [Latn, [EU]]
+ # There's also nb for Bokmål and nn for Nynorsk
+  "no": [Latn, [EU], norsk]
   nov: [Latn, [WW], Novial]
   nqo: [Nkoo, [AF], ߒߞߏ]
   nrm: [Latn, [EU], Nouormand]
@@ -551,6 +552,8 @@ rtlscripts:
 regiongroups:
  # Worldwide, international
   WW: 1
+ # Special languages. To be shown near Worldwide when relevant.
+  SP: 1
  # America
   AM: 2
  # Europe

@@ -220,7 +220,6 @@
 		return $.uls.data.getLanguagesByScriptGroupInRegions( [ region ] );
 	};
 
-
 	/**
 	 * Returns an associative array of all languages,
 	 * grouped by script group.
@@ -237,23 +236,20 @@
 	 */
 	$.uls.data.getLanguagesByScriptGroup = function ( languages ) {
 		var languagesByScriptGroup = {},
-			scriptGroup,
-			language,
-			langScriptGroup;
+			language, codeToAdd, langScriptGroup;
 
-		for ( scriptGroup in $.uls.data.scriptgroups ) {
-			for ( language in languages ) {
-				langScriptGroup = $.uls.data.getScriptGroupOfLanguage( language );
+		for ( language in languages ) {
+			codeToAdd = $.uls.data.isRedirect( language ) || language;
 
-				if ( langScriptGroup !== scriptGroup ) {
-					continue;
-				}
+			langScriptGroup = $.uls.data.getScriptGroupOfLanguage( codeToAdd );
 
-				if ( !languagesByScriptGroup[scriptGroup] ) {
-					languagesByScriptGroup[scriptGroup] = [];
-				}
+			if ( !languagesByScriptGroup[langScriptGroup] ) {
+				languagesByScriptGroup[langScriptGroup] = [];
+			}
 
-				languagesByScriptGroup[scriptGroup].push( language );
+			// Prevent duplicate adding of redirects
+			if ( $.inArray( codeToAdd, languagesByScriptGroup[langScriptGroup] ) === -1 ) {
+				languagesByScriptGroup[langScriptGroup].push( codeToAdd );
 			}
 		}
 
@@ -421,4 +417,38 @@
 	$.uls.data.getLanguagesInTerritory = function ( territory ) {
 		return $.uls.data.territories[territory];
 	};
+
+	/**
+	 * Adds a language in run time and sets its options as provided.
+	 * If the target option is provided, the language is defined as a redirect.
+	 * Other possible options are script, regions and autonym.
+	 *
+	 * @param code string New language code.
+	 * @param options Object Language properties.
+	 * @return list of language codes
+	 */
+	$.uls.data.addLanguage = function( code, options ) {
+		if ( options.target ) {
+			$.uls.data.languages[code] = [options.target];
+		} else {
+			$.uls.data.languages[code] = [options.script, options.regions, options.autonym];
+		}
+	};
+
+	/**
+	 * Removes a language from the langdb in run time.
+	 *
+	 * @param code string Language code to delete.
+	 * @return true if the language was removed, false otherwise.
+	 */
+	$.uls.data.deleteLanguage = function( code ) {
+		if ( $.uls.data.languages[code] ) {
+			delete $.uls.data.languages[code];
+
+			return true;
+		}
+
+		return false;
+	};
+
 } ( jQuery ) );
