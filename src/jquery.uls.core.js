@@ -22,6 +22,7 @@
 	'use strict';
 
 	// Region numbers in id attributes also appear in the langdb.
+	/*jshint multistr:true */
 	var template = '\
 		<div class="grid uls-menu uls-wide"> \
 			<div class="row"> \
@@ -74,15 +75,17 @@
 			</div>\
 			<div class="row uls-language-list"></div>\
 		</div> ';
+	/*jshint multistr:false */
 
 	/**
 	 * ULS Public class definition
 	 */
-	var ULS = function( element, options ) {
+	var ULS = function ( element, options ) {
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.uls.defaults, options );
 		this.$menu = $( template );
 		this.languages = this.options.languages;
+
 		for ( var code in this.languages ) {
 			if ( $.uls.data.languages[code] === undefined ) {
 				if ( window.console && window.console.log ) {
@@ -91,13 +94,16 @@
 				delete this.languages[code];
 			}
 		}
+
 		this.left = this.options.left;
 		this.top = this.options.top;
 		this.shown = false;
 		this.initialized = false;
+
 		this.$languageFilter = this.$menu.find( '#languagefilter' );
 		this.$regionFilters = this.$menu.find( '.uls-region' );
 		this.$resultsView = this.$menu.find( 'div.uls-language-list' );
+
 		this.render();
 		this.listen();
 		this.ready();
@@ -106,7 +112,7 @@
 	ULS.prototype = {
 		constructor: ULS,
 
-		ready: function() {
+		ready: function () {
 			if ( this.options.onReady ) {
 				this.options.onReady.call( this );
 			}
@@ -117,7 +123,7 @@
 		 * Returns an object with top and left properties.
 		 * @returns {Object}
 		 */
-		position: function() {
+		position: function () {
 			var pos = $.extend( {}, this.$element.offset(), {
 				height: this.$element[0].offsetHeight
 			} );
@@ -130,7 +136,7 @@
 		/**
 		 * Show the ULS window
 		 */
-		show: function() {
+		show: function () {
 			var pos = this.position();
 			this.$menu.css( {
 				top: pos.top,
@@ -157,7 +163,7 @@
 			}
 		},
 
-		i18n: function() {
+		i18n: function () {
 			if ( $.i18n ) {
 				this.$menu.find( '[data-i18n]' ).i18n();
 				this.$languageFilter.prop( 'placeholder', $.i18n( 'uls-search-placeholder' ) );
@@ -177,7 +183,7 @@
 		/**
 		 * Hide the ULS window
 		 */
-		hide: function() {
+		hide: function () {
 			this.$menu.hide();
 			this.shown = false;
 		},
@@ -186,29 +192,28 @@
 		 * Render the UI elements.
 		 * Does nothing by default. Can be used for customization.
 		 */
-		render: function() {
+		render: function () {
 			// Rendering stuff here
 		},
 
 		/**
-		 * callback for no results found context.
-		 * @param search string The search term
+		 * Callback for no results found context.
 		 */
-		noresults: function( search ) {
+		noresults: function () {
 			this.$resultsView.lcd( 'noResults' );
 		},
 
 		/**
 		 * callback for results found context.
 		 */
-		success: function() {
+		success: function () {
 			this.$resultsView.show();
 		},
 
 		/**
 		 * Bind the UI elements with their event listeners
 		 */
-		listen: function() {
+		listen: function () {
 			var lcd,
 				uls = this;
 
@@ -227,6 +232,7 @@
 			// Handle key press events on the menu
 			uls.$menu.on( 'keypress', $.proxy( this.keypress, this ) )
 				.on( 'keyup', $.proxy( this.keyup, this ) );
+
 			if ( this.eventSupported( 'keydown' ) ) {
 				this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
 			}
@@ -243,11 +249,11 @@
 			uls.$languageFilter.languagefilter( {
 				$target: lcd,
 				languages: uls.languages,
-				success: function() {
+				success: function () {
 					$( '.regionselector' ).removeClass( 'active' );
 					uls.success();
 				},
-				noresults: function() {
+				noresults: function () {
 					$( '.regionselector' ).removeClass( 'active' );
 					uls.noresults();
 				},
@@ -259,17 +265,19 @@
 			this.$menu.find( '.uls-region, .uls-region-link' ).regionselector( {
 				$target: lcd,
 				languages: uls.languages,
-				success: function( regionfilter ) {
+				success: function ( regionfilter ) {
 					// Deactivate search filtering
 					uls.$languageFilter.languagefilter( 'deactivate' );
-					// If it is WW region, show the quicklist
+
+					// If it is the WW region, show the quicklist
 					if ( regionfilter.regionGroup === 1 ) {
 						lcd.quicklist();
 					}
+
 					// Show 'results view' if we are in no results mode
 					uls.success();
 				},
-				noresults: function() {
+				noresults: function () {
 					uls.$languageFilter.languagefilter( 'clear' );
 				}
 			} );
@@ -279,8 +287,9 @@
 		 * On select handler for search results
 		 * @param langCode
 		 */
-		select: function( langCode ) {
+		select: function ( langCode ) {
 			this.hide();
+
 			if ( this.options.onSelect ) {
 				this.options.onSelect.call( this, langCode );
 			}
@@ -289,17 +298,19 @@
 		/**
 		 * On cancel handler for the uls menu
 		 */
-		cancel: function() {
+		cancel: function () {
 			this.hide();
+
 			if ( this.options.onCancel ) {
 				this.options.onCancel.call( this );
 			}
 		},
 
-		keyup: function( e ) {
+		keyup: function ( e ) {
 			if ( !this.shown ) {
 				return;
 			}
+
 			if ( e.keyCode === 27 ) { // escape
 				this.cancel();
 				e.preventDefault();
@@ -307,10 +318,11 @@
 			}
 		},
 
-		keypress: function( e ) {
+		keypress: function ( e ) {
 			if ( !this.shown ) {
 				return;
 			}
+
 			if ( e.keyCode === 27 ) { // escape
 				this.cancel();
 				e.preventDefault();
@@ -318,9 +330,10 @@
 			}
 		},
 
-		click: function( e ) {
+		click: function ( e ) {
 			e.stopPropagation();
 			e.preventDefault();
+
 			if ( this.shown ) {
 				this.hide();
 			} else {
@@ -335,6 +348,7 @@
 				this.$element.setAttribute( eventName, 'return;' );
 				isSupported = typeof this.$element[eventName] === 'function';
 			}
+
 			return isSupported;
 		},
 
@@ -346,8 +360,8 @@
 	/* ULS PLUGIN DEFINITION
 	 * =========================== */
 
-	$.fn.uls = function( option ) {
-		return this.each( function() {
+	$.fn.uls = function ( option ) {
+		return this.each( function () {
 			var $this = $( this ),
 				data = $this.data( 'uls' ),
 				options = typeof option === 'object' && option;
@@ -355,6 +369,7 @@
 			if ( !data ) {
 				$this.data( 'uls', ( data = new ULS( this, options ) ) );
 			}
+
 			if ( typeof option === 'string' ) {
 				data[option]();
 			}
@@ -372,23 +387,10 @@
 	};
 
 	// Define a dummy i18n function, if jquery.i18n not integrated.
-	if( !$.fn.i18n ) {
-		$.fn.i18n = function( option ) {
+	if ( !$.fn.i18n ) {
+		$.fn.i18n = function () {
 		};
 	}
 
 	$.fn.uls.Constructor = ULS;
-
-	// Private utility functions
-
-	function getObjectLength ( obj ) {
-		var k, count = 0;
-		for ( k in obj ) {
-			if ( obj.hasOwnProperty( k ) ) {
-				count++;
-			}
-		}
-		return count;
-	}
-
 } ( jQuery ) );
