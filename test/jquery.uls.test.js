@@ -13,6 +13,8 @@
  *
  */
 
+/*jshint sub:true */
+
 ( function ( $ ) {
 	'use strict';
 
