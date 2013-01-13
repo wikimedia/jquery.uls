@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"AZISS",
 			"Khan27"
 		]
 	},
 	"uls-select-language": "Dili se\u00e7in:",
 	"uls-region-WW": "\u00dcmumd\u00fcnya",
+	"uls-region-SP": "X\u00fcsusi",
 	"uls-region-AM": "Amerika",
 	"uls-region-AF": "Afrika",
 	"uls-region-EU": "Avropa",

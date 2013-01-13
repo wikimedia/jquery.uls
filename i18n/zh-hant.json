@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Justincheng12345"
+			"Justincheng12345",
+			"Simon Shek"
 		]
 	},
 	"uls-select-language": "\u9078\u64c7\u8a9e\u8a00",
 	"uls-region-WW": "\u5168\u4e16\u754c",
+	"uls-region-SP": "\u7279\u5225",
 	"uls-region-AM": "\u7f8e\u6d32",
 	"uls-region-AF": "\u975e\u6d32",
 	"uls-region-EU": "\u6b50\u6d32",
