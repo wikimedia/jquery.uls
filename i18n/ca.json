@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Pginer",
 			"Toniher"
 		]
 	},
 	"uls-select-language": "Escolliu idioma",
 	"uls-region-WW": "Mundial",
+	"uls-region-SP": "Especials",
 	"uls-region-AM": "Am\u00e8rica",
 	"uls-region-AF": "\u00c0frica",
 	"uls-region-EU": "Europa",

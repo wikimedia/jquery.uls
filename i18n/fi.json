@@ -2,20 +2,21 @@
 	"@metadata": {
 		"authors": [
 			"Nedergard",
-			"Nike"
+			"Nike",
+			"VezonThunder"
 		]
 	},
 	"uls-select-language": "Valitse kieli",
-	"uls-region-WW": "Maailman ymp\u00e4ri",
+	"uls-region-WW": "Ymp\u00e4ri maailmaa",
 	"uls-region-AM": "Amerikka",
 	"uls-region-AF": "Afrikka",
 	"uls-region-EU": "Eurooppa",
 	"uls-region-AS": "Aasia",
 	"uls-region-ME": "L\u00e4hi-It\u00e4",
 	"uls-region-PA": "Tyynimeri",
-	"uls-no-results-found": "Tuloksia ei l\u00f6ytynyt",
+	"uls-no-results-found": "Ei tuloksia",
 	"uls-common-languages": "Yleiset kielet",
 	"uls-no-results-suggestion-title": "Etsitk\u00f6 jotakin n\u00e4ist\u00e4:",
-	"uls-search-help": "Voit hakea joko kielen nimell\u00e4, kirjoitusj\u00e4rjejestelm\u00e4n nimell\u00e4 tai ISO-koodilla tai selata kartan avulla:",
-	"uls-search-placeholder": "Kielen haku"
+	"uls-search-help": "Voit hakea kielen nimell\u00e4, kirjoitusj\u00e4rjestelm\u00e4n nimell\u00e4 tai kielen ISO-koodilla tai selata alueittain:",
+	"uls-search-placeholder": "Kielihaku"
 }

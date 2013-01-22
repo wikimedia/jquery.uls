@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"DzWiki",
 			"Edinwiki"
 		]
 	},
 	"uls-select-language": "Izaberite jezik",
 	"uls-region-WW": "Svjetski",
+	"uls-region-SP": "Posebno",
 	"uls-region-AM": "Amerika",
 	"uls-region-AF": "Afrika",
 	"uls-region-EU": "Evropa",
