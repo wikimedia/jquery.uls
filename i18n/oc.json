@@ -1,4 +1,9 @@
 {
+	"@metadata": {
+		"authors": [
+			"Cedric31"
+		]
+	},
 	"uls-select-language": "Causir la lenga",
 	"uls-region-WW": "Dins lo monde enti\u00e8r",
 	"uls-region-SP": "Especial",
@@ -12,10 +17,5 @@
 	"uls-common-languages": "Lengas comunas",
 	"uls-no-results-suggestion-title": "Pod\u00e8tz \u00e8sser interessat per :",
 	"uls-search-help": "Pod\u00e8tz recercar per nom de lenga, per nom de l'escript, per c\u00f2de ISO de la lenga, o pod\u00e8tz navigar per region :",
-	"uls-search-placeholder": "Rec\u00e8rca de lenga",
-	"@metadata": {
-		"authors": [
-			"Cedric31"
-		]
-	}
+	"uls-search-placeholder": "Rec\u00e8rca de lenga"
 }
