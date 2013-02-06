@@ -28,10 +28,9 @@
 				<span id="uls-close" class="icon-close"></span> \
 			</div> \
 			<div class="row"> \
-				<div class="uls-title-region four columns">\
+				<div class="uls-title-region seven columns">\
 					<h1 data-i18n="uls-select-language" class="uls-title">Select Language</h1>\
 				</div>\
-				<div class="three columns" id="settings-block"></div>\
 				<div class="five columns map-block" id="map-block">\
 					<div class="row">\
 						<div data-regiongroup="1" id="uls-region-1" class="three columns uls-region uls-region-1">\
@@ -73,6 +72,7 @@
 				</div>\
 			</div>\
 			<div class="row uls-language-list"></div>\
+			<div class="row" id="settings-block"></div>\
 		</div> ';
 
 	/**
