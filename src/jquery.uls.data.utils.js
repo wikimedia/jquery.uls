@@ -80,9 +80,10 @@
 	 * @return array
 	 */
 	$.uls.data.getAutonyms = function () {
-		var autonymsByCode = {};
+		var language,
+			autonymsByCode = {};
 
-		for ( var language in $.uls.data.languages ) {
+		for ( language in $.uls.data.languages ) {
 			if ( $.uls.data.isRedirect( language ) ) {
 				continue;
 			}
@@ -98,9 +99,10 @@
 	 * @return array
 	 */
 	$.uls.data.getAllRegions = function () {
-		var allRegions = [];
+		var region,
+			allRegions = [];
 
-		for ( var region in $.uls.data.regiongroups ) {
+		for ( region in $.uls.data.regiongroups ) {
 			allRegions.push( region );
 		}
 
@@ -123,14 +125,15 @@
 	 * @return array of strings (languages codes)
 	 */
 	$.uls.data.getLanguagesInScripts = function ( scripts ) {
-		var languagesInScripts = [];
+		var language, i,
+			languagesInScripts = [];
 
-		for ( var language in $.uls.data.languages ) {
+		for ( language in $.uls.data.languages ) {
 			if ( $.uls.data.isRedirect( language ) ) {
 				continue;
 			}
 
-			for ( var i = 0; i < scripts.length; i++ ) {
+			for ( i = 0; i < scripts.length; i++ ) {
 				if ( scripts[i] === $.uls.data.getScript( language ) ) {
 					languagesInScripts.push( language );
 					break;
@@ -156,14 +159,15 @@
 	 * @return array of strings (languages codes)
 	 */
 	$.uls.data.getLanguagesInRegions = function ( regions ) {
-		var languagesInRegions = [];
+		var language, i,
+			languagesInRegions = [];
 
-		for ( var language in $.uls.data.languages ) {
+		for ( language in $.uls.data.languages ) {
 			if ( $.uls.data.isRedirect( language ) ) {
 				continue;
 			}
 
-			for ( var i = 0; i < regions.length; i++ ) {
+			for ( i = 0; i < regions.length; i++ ) {
 				if ( $.inArray( regions[i], $.uls.data.getRegions( language ) ) !== -1 ) {
 					languagesInRegions.push( language );
 					break;
@@ -190,15 +194,16 @@
 	 * @return associative array
 	 */
 	$.uls.data.getLanguagesByScriptInRegion = function ( region ) {
-		var languagesByScriptInRegion = {};
+		var language, script,
+			languagesByScriptInRegion = {};
 
-		for ( var language in $.uls.data.languages ) {
+		for ( language in $.uls.data.languages ) {
 			if ( $.uls.data.isRedirect( language ) ) {
 				continue;
 			}
 
 			if ( $.inArray( region, $.uls.data.getRegions( language ) ) !== -1 ) {
-				var script = $.uls.data.getScript( language );
+				script = $.uls.data.getScript( language );
 
 				if ( languagesByScriptInRegion[script] === undefined ) {
 					languagesByScriptInRegion[script] = [];
@@ -263,16 +268,17 @@
 	 * @return associative array
 	 */
 	$.uls.data.getLanguagesByScriptGroupInRegions = function ( regions ) {
-		var languagesByScriptGroupInRegions = {};
+		var language, i, scriptGroup,
+			languagesByScriptGroupInRegions = {};
 
-		for ( var language in $.uls.data.languages ) {
+		for ( language in $.uls.data.languages ) {
 			if ( $.uls.data.isRedirect( language ) ) {
 				continue;
 			}
 
-			for ( var i = 0; i < regions.length; i++ ) {
+			for ( i = 0; i < regions.length; i++ ) {
 				if ( $.inArray( regions[i], $.uls.data.getRegions( language ) ) !== -1 ) {
-					var scriptGroup = $.uls.data.getScriptGroupOfLanguage( language );
+					scriptGroup = $.uls.data.getScriptGroupOfLanguage( language );
 
 					if ( languagesByScriptGroupInRegions[scriptGroup] === undefined ) {
 						languagesByScriptGroupInRegions[scriptGroup] = [];
@@ -293,9 +299,9 @@
 	 * @return associative array
 	 */
 	$.uls.data.getAllLanguagesByRegionAndScript = function () {
-		var allLanguagesByRegionAndScript = {},
-			region,
-			regionGroup;
+		var region, regionGroup, language,
+			script, scriptGroup, regions, regionNum,
+			allLanguagesByRegionAndScript = {};
 
 		for ( region in $.uls.data.regiongroups ) {
 			regionGroup = $.uls.data.regiongroups[region];
@@ -307,16 +313,16 @@
 			allLanguagesByRegionAndScript[regionGroup][region] = {};
 		}
 
-		for ( var language in $.uls.data.languages ) {
+		for ( language in $.uls.data.languages ) {
 			if ( $.uls.data.isRedirect( language ) ) {
 				continue;
 			}
 
-			var script = $.uls.data.getScript( language );
-			var scriptGroup = $.uls.data.getGroupOfScript( script );
-			var regions = $.uls.data.getRegions( language );
+			script = $.uls.data.getScript( language );
+			scriptGroup = $.uls.data.getGroupOfScript( script );
+			regions = $.uls.data.getRegions( language );
 
-			for ( var regionNum = 0; regionNum < regions.length; regionNum++ ) {
+			for ( regionNum = 0; regionNum < regions.length; regionNum++ ) {
 				region = regions[regionNum];
 				regionGroup = $.uls.data.regiongroups[region];
 
@@ -341,9 +347,10 @@
 	 * @return array of strings
 	 */
 	$.uls.data.getRegionsInGroup = function ( groupNum ) {
-		var regionsInGroup = [];
+		var region,
+			regionsInGroup = [];
 
-		for ( var region in $.uls.data.regiongroups ) {
+		for ( region in $.uls.data.regiongroups ) {
 			if ( $.uls.data.regiongroups[region] === groupNum ) {
 				regionsInGroup.push( region );
 			}
@@ -360,9 +367,11 @@
 	 * @return string script group name
 	 */
 	$.uls.data.getGroupOfScript = function ( script ) {
-		for ( var group in $.uls.data.scriptgroups ) {
-			if ( $.inArray( script, $.uls.data.scriptgroups[group] ) !== -1 ) {
-				return group;
+		var scriptGroup;
+
+		for ( scriptGroup in $.uls.data.scriptgroups ) {
+			if ( $.inArray( script, $.uls.data.scriptgroups[scriptGroup] ) !== -1 ) {
+				return scriptGroup;
 			}
 		}
 

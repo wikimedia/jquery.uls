@@ -22,6 +22,7 @@
 ( function ( $ ) {
 	'use strict';
 
+	/*jshint multistr:true */
 	var noResultsTemplate = '\
 	<div class="twelve columns uls-no-results-view">\
 		<h2 data-i18n="uls-no-results-found" class="eleven columns end offset-by-one uls-no-results-found-title">\
@@ -44,6 +45,7 @@
 			</div>\
 		</div>\
 	</div>';
+	/*jshint multistr:false */
 
 	var LanguageCategoryDisplay = function ( element, options ) {
 		this.$element = $( element );
@@ -211,7 +213,7 @@
 				.text( 'Common languages' ); // This is placeholder text if jquery.i18n not present
 			$quickListSection.append( $quickListSectionTitle );
 			this.$element.prepend( $quickListSection );
-			this.regionDivs[ 'quick' ] = $quickListSection;
+			this.regionDivs.quick = $quickListSection;
 
 			for ( var i = 0; i < quickList.length; i++) {
 				var $column = this.getColumn( 'quick', i % 4 === 0 );

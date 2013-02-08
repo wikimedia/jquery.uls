@@ -12,6 +12,9 @@
  * header is left intact. See files GPL-LICENSE and MIT-LICENSE for details.
  *
  */
+
+/*jshint sub:true */
+
 ( function ( $ ) {
 	'use strict';
 
@@ -22,10 +25,12 @@
 	 * they belong to the 'Other' group.
 	 */
 	var orphanScripts = function () {
-		var result = [];
+		var language, script,
+			result = [];
 
-		for ( var language in $.uls.data.languages ) {
-			var script = $.uls.data.getScript( language );
+		for ( language in $.uls.data.languages ) {
+			script = $.uls.data.getScript( language );
+
 			if ( $.uls.data.getGroupOfScript( script ) === 'Other' ) {
 				result.push( script );
 			}
@@ -38,10 +43,11 @@
 	 * Runs over all languages and checks that all redirects have a valid target.
 	 */
 	var badRedirects = function () {
-		var result = [];
+		var language, target,
+			result = [];
 
-		for ( var language in $.uls.data.languages ) {
-			var target = $.uls.data.isRedirect( language );
+		for ( language in $.uls.data.languages ) {
+			target = $.uls.data.isRedirect( language );
 
 			if ( target && !$.uls.data.languages[target] ) {
 				result.push( language );
@@ -56,10 +62,11 @@
 	 * There's no reason to have double redirects.
 	 */
 	var doubleRedirects = function () {
-		var result = [];
+		var language, target,
+			result = [];
 
-		for ( var language in $.uls.data.languages ) {
-			var target = $.uls.data.isRedirect( language );
+		for ( language in $.uls.data.languages ) {
+			target = $.uls.data.isRedirect( language );
 
 			if ( target && $.uls.data.isRedirect( target ) ) {
 				result.push( language );
@@ -74,9 +81,10 @@
 	 * they have something that looks like an autonym.
 	 */
 	var languagesWithoutAutonym = function () {
-		var result = [];
+		var language,
+			result = [];
 
-		for ( var language in $.uls.data.languages ) {
+		for ( language in $.uls.data.languages ) {
 			if ( typeof $.uls.data.getAutonym( language ) !== 'string' ) {
 				result.push( language );
 			}
@@ -85,11 +93,19 @@
 		return result;
 	};
 
-	test( "-- Initial check", 1, function ( assert ) {
-		assert.ok( $.fn.uls, "$.fn.uls is defined" );
+	test( '-- Initial check', 1, function ( assert ) {
+		assert.ok( $.fn.uls, '$.fn.uls is defined' );
 	} );
 
-	test( "-- $.uls.data testing", 46, function ( assert ) {
+	test( '-- $.uls.data testing', 46, function ( assert ) {
+		var autonyms,
+			allLanguagesByRegionAndScript,
+			languagesInEU,
+			languagesByScriptInAM, languagesByScriptInEU,
+			languagesToGroup, groupedLanguages,
+			languagesByScriptGroupInEMEA,
+			allLanguagesByScriptGroup;
+
 		// Add a language in run time.
 		// This is done early to make sure that it doesn't break other functions.
 		$.uls.data.addLanguage( 'qqq', {
@@ -100,11 +116,11 @@
 
 		assert.ok( $.uls.data.getAutonym( 'qqq' ), 'Language documentation', 'Language qqq was added with the correct autonym' );
 
-		assert.strictEqual( $.uls.data.isRedirect( 'sr-ec' ), 'sr-cyrl', "'sr-ec' is a redirect to 'sr-cyrl'" );
-		var autonyms = $.uls.data.getAutonyms();
+		assert.strictEqual( $.uls.data.isRedirect( 'sr-ec' ), 'sr-cyrl', '"sr-ec" is a redirect to "sr-cyrl"' );
+		autonyms = $.uls.data.getAutonyms();
 		assert.strictEqual( autonyms['zu'], 'isiZulu', 'Correct autonym is returned for Zulu using getAutonyms().' );
-		assert.strictEqual( autonyms['pa'], undefined, "Language 'pa' is not listed in autonyms, because it's a redirect" );
-		assert.strictEqual( autonyms['pa-guru'], 'ਪੰਜਾਬੀ', "Language 'pa-guru' has the correct autonym" );
+		assert.strictEqual( autonyms['pa'], undefined, 'Language "pa" is not listed in autonyms, because it is a redirect' );
+		assert.strictEqual( autonyms['pa-guru'], 'ਪੰਜਾਬੀ', 'Language "pa-guru" has the correct autonym' );
 
 		// This test assumes that we don't want any scripts to be in the 'Other'
 		// group. Actually, this may become wrong some day.
@@ -129,9 +145,9 @@
 		assert.deepEqual( $.uls.data.getRegions( 'lzz' ), [
 			'EU', 'ME'
 		], 'Correct regions of the Laz language were selected' );
-		assert.strictEqual( $.uls.data.getRegions( 'no-such-language' ), 'UNKNOWN', "The region of an invalid language is 'UNKNOWN'" );
+		assert.strictEqual( $.uls.data.getRegions( 'no-such-language' ), 'UNKNOWN', 'The region of an invalid language is "UNKNOWN"' );
 
-		var allLanguagesByRegionAndScript = $.uls.data.getAllLanguagesByRegionAndScript();
+		allLanguagesByRegionAndScript = $.uls.data.getAllLanguagesByRegionAndScript();
 		assert.deepEqual( allLanguagesByRegionAndScript['4']['AS']['SouthEastAsian']['Bugi'], [
 			'bug'
 		], 'All languages in the Buginese script in Asia were selected' );
@@ -139,39 +155,39 @@
 			'pa-guru'
 		], 'Only language pa-guru appears as a language in script Guru in SouthAsian languages in Asia' );
 
-		var languagesInEU = $.uls.data.getLanguagesInRegion( 'EU' );
-		assert.strictEqual( $.inArray( 'sr-ec', languagesInEU ), -1, "Language 'sr-ec' doesn't appear in languages of region EU, because it's a redirect" );
-		assert.ok( $.inArray( 'sr-cyrl', languagesInEU ) > -1, "Language 'sr-cyrl' appears in languages of region EU, because it's not a redirect" );
+		languagesInEU = $.uls.data.getLanguagesInRegion( 'EU' );
+		assert.strictEqual( $.inArray( 'sr-ec', languagesInEU ), -1, 'Language "sr-ec" does not appear in languages of region EU, because it is a redirect' );
+		assert.ok( $.inArray( 'sr-cyrl', languagesInEU ) > -1, 'Language "sr-cyrl" appears in languages of region EU, because it is not a redirect' );
 
-		assert.deepEqual( $.uls.data.getLanguagesInRegion( "PA" ),
+		assert.deepEqual( $.uls.data.getLanguagesInRegion( 'PA' ),
 			[
-				"ace", "bi", "ch", "en-gb", "en", "fj", "haw", "hif", "ho", "jv", "jv-java",
-				"mh", "mi", "na", "niu", "pih", "pis", "pt", "rtm", "sm", "tet",
-				"to", "tpi", "ty", "wls"
+				'ace', 'bi', 'ch', 'en-gb', 'en', 'fj', 'haw', 'hif', 'ho', 'jv', 'jv-java',
+				'mh', 'mi', 'na', 'niu', 'pih', 'pis', 'pt', 'rtm', 'sm', 'tet',
+				'to', 'tpi', 'ty', 'wls'
 			],
-			"languages of region PA are selected correctly" );
-		assert.deepEqual( $.uls.data.getLanguagesInRegions( ["AM", "WW"] ),
+			'languages of region PA are selected correctly' );
+		assert.deepEqual( $.uls.data.getLanguagesInRegions( ['AM', 'WW'] ),
 			[
-				"akz", "arn", "aro", "ase", "avk", "ay", "cho", "chr", "chy", "cr", "cr-latn",
-				"en-ca", "en", "eo", "es-419", "es-formal", "es", "esu", "fr", "frc", "gcf", "gn",
-				"guc", "haw", "ht", "ia", "ie", "ik", "ike-cans", "ike-latn", "io", "iu", "jam",
-				"jbo", "kgp", "kl", "lad-latn", "lad-hebr", "lfn", "mfe", "mic", "mus", "nah", "nl-informal", "nl",
-				"nov", "nv", "pap", "pdc", "pdt", "ppl", "pt-br", "pt", "qu", "qug", "rap", "sei",
-				"simple", "srn", "tokipona", "vo", "yi", "yrl", "yua"
+				'akz', 'arn', 'aro', 'ase', 'avk', 'ay', 'cho', 'chr', 'chy', 'cr', 'cr-latn',
+				'en-ca', 'en', 'eo', 'es-419', 'es-formal', 'es', 'esu', 'fr', 'frc', 'gcf', 'gn',
+				'guc', 'haw', 'ht', 'ia', 'ie', 'ik', 'ike-cans', 'ike-latn', 'io', 'iu', 'jam',
+				'jbo', 'kgp', 'kl', 'lad-latn', 'lad-hebr', 'lfn', 'mfe', 'mic', 'mus', 'nah', 'nl-informal', 'nl',
+				'nov', 'nv', 'pap', 'pdc', 'pdt', 'ppl', 'pt-br', 'pt', 'qu', 'qug', 'rap', 'sei',
+				'simple', 'srn', 'tokipona', 'vo', 'yi', 'yrl', 'yua'
 			],
-			"languages of regions AM and WW are selected correctly"
+			'languages of regions AM and WW are selected correctly'
 		);
 
 		assert.deepEqual( $.uls.data.getLanguagesInScript( 'Knda' ), [
-			"kn", "tcy"
-		], "languages in script Knda are selected correctly" );
+			'kn', 'tcy'
+		], 'languages in script Knda are selected correctly' );
 		assert.deepEqual( $.uls.data.getLanguagesInScript( 'Guru' ),
-			["pa-guru"],
-			"'pa-guru' is written in script Guru, and 'pa' is skipped as a redirect"
+			['pa-guru'],
+			'"pa-guru" is written in script Guru, and "pa" is skipped as a redirect'
 		);
 		assert.deepEqual( $.uls.data.getLanguagesInScripts( ['Geor', 'Armn'] ),
-			["hy", "ka", "xmf"],
-			"languages in scripts Geor and Armn are selected correctly"
+			['hy', 'ka', 'xmf'],
+			'languages in scripts Geor and Armn are selected correctly'
 		);
 
 		assert.deepEqual( $.uls.data.getRegionsInGroup( 3 ), [
@@ -184,48 +200,48 @@
 			'WW', 'SP'
 		], 'regions in group 1 are selected correctly' );
 
-		var languagesByScriptInAM = $.uls.data.getLanguagesByScriptInRegion( "AM" );
+		languagesByScriptInAM = $.uls.data.getLanguagesByScriptInRegion( 'AM' );
 		assert.deepEqual( languagesByScriptInAM['Cans'], [
-			"cr", "ike-cans", "iu"
-		], "correct languages in Cans in AM selected" );
+			'cr', 'ike-cans', 'iu'
+		], 'correct languages in Cans in AM selected' );
 
-		var languagesByScriptInEU = $.uls.data.getLanguagesByScriptInRegion( "EU" );
+		languagesByScriptInEU = $.uls.data.getLanguagesByScriptInRegion( 'EU' );
 		assert.strictEqual( $.inArray( 'sr-el', languagesByScriptInEU['Latn'] ), -1,
-			"Language 'sr-el' doesn't appear as a Latin-script language in EU, because it's a redirect" );
+			'Language "sr-el" does not appear as a Latin-script language in EU, because it is a redirect' );
 		assert.ok( $.inArray( 'sr-latn', languagesByScriptInEU['Latn'] ) > -1,
-			"Language 'sr-latn' appears as a Latin-script language in EU, because it's not a redirect" );
+			'Language "sr-latn" appears as a Latin-script language in EU, because it is not a redirect' );
 
 		assert.strictEqual( $.uls.data.getAutonym( 'pa' ), 'ਪੰਜਾਬੀ', 'Correct autonym of the Punjabi language was selected using code pa.' );
 		assert.strictEqual( $.uls.data.getAutonym( 'pa-guru' ), 'ਪੰਜਾਬੀ', 'Correct autonym of the Punjabi language was selected using code pa-guru.' );
 
-		var languagesToGroup = {
-				'en': 'English',
-				'fiu-vro': 'Võro', // Alias before target
-				'ru': 'русский',
-				'sr': 'српски', // Alias before target
-				'sr-cyrl': 'српски', // Target before alias
-				'sr-latn': 'srpski', // Target before alias
-				'sr-el': 'srpski', // Alias after target
-				'vro': 'Võro' // Target after alias
-			},
-			groupedLanguages = {
-				Latin: [ 'en', 'vro', 'sr-latn' ],
-				Cyrillic: [ 'ru', 'sr-cyrl' ]
-			};
+		languagesToGroup = {
+			'en': 'English',
+			'fiu-vro': 'Võro', // Alias before target
+			'ru': 'русский',
+			'sr': 'српски', // Alias before target
+			'sr-cyrl': 'српски', // Target before alias
+			'sr-latn': 'srpski', // Target before alias
+			'sr-el': 'srpski', // Alias after target
+			'vro': 'Võro' // Target after alias
+		};
+		groupedLanguages = {
+			Latin: [ 'en', 'vro', 'sr-latn' ],
+			Cyrillic: [ 'ru', 'sr-cyrl' ]
+		};
 
 		assert.deepEqual( $.uls.data.getLanguagesByScriptGroup( languagesToGroup ), groupedLanguages,
 			'A custom list of languages is grouped correctly using getLanguagesByScriptGroup.' );
 
-		var languagesByScriptGroupInEMEA = $.uls.data.getLanguagesByScriptGroupInRegions( $.uls.data.getRegionsInGroup( 3 ) );
+		languagesByScriptGroupInEMEA = $.uls.data.getLanguagesByScriptGroupInRegions( $.uls.data.getRegionsInGroup( 3 ) );
 		assert.deepEqual( languagesByScriptGroupInEMEA['WestCaucasian'], [
 			'hy', 'ka', 'xmf'
 		], 'Correct languages in WestCaucasian script group in EMEA selected' );
 		assert.strictEqual( $.inArray( 'sr-ec', languagesByScriptGroupInEMEA['Cyrillic'] ), -1,
-			"Language 'sr-ec' doesn't appear as a Cyrillic-scriptgroup language in EMEA, because it's a redirect" );
+			'Language "sr-ec" does not appear as a Cyrillic-scriptgroup language in EMEA, because it is a redirect' );
 		assert.ok( $.inArray( 'sr-cyrl', languagesByScriptGroupInEMEA['Cyrillic'] ) > -1,
-			"Language 'sr-cyrl' appears as a Cyrillic-scriptgroup language in EMEA, because it's not a redirect" );
+			'Language "sr-cyrl" appears as a Cyrillic-scriptgroup language in EMEA, because it is not a redirect' );
 
-		var allLanguagesByScriptGroup = $.uls.data.getAllLanguagesByScriptGroup();
+		allLanguagesByScriptGroup = $.uls.data.getAllLanguagesByScriptGroup();
 		assert.deepEqual( allLanguagesByScriptGroup['Greek'], [
 			'el', 'grc', 'pnt', 'ruq-grek', 'tsd'
 		], 'All languages in the Greek script found' );
@@ -239,13 +255,15 @@
 			'gn', 'de', 'hu', 'fi'
 		], 'Languages are correctly sorted by autonym' );
 
-		assert.strictEqual( $.uls.data.isRtl( "te" ), false, "Telugu language is not RTL" );
-		assert.strictEqual( $.uls.data.isRtl( "dv" ), true, "Divehi language is RTL" );
-		assert.strictEqual( $.uls.data.getDir( "mzn" ), "rtl", "Mazandarani language is RTL" );
-		assert.strictEqual( $.uls.data.getDir( "uk" ), "ltr", "Ukrainian language is LTR" );
+		assert.strictEqual( $.uls.data.isRtl( 'te' ), false, 'Telugu language is not RTL' );
+		assert.strictEqual( $.uls.data.isRtl( 'dv' ), true, 'Divehi language is RTL' );
+		assert.strictEqual( $.uls.data.getDir( 'mzn' ), 'rtl', 'Mazandarani language is RTL' );
+		assert.strictEqual( $.uls.data.getDir( 'uk' ), 'ltr', 'Ukrainian language is LTR' );
 
-		assert.ok( $.inArray( "sah", $.uls.data.getLanguagesInTerritory( "RU" ) )
-			> -1, "Sakha language is spoken in Russia" );
+		assert.ok(
+			$.inArray( 'sah', $.uls.data.getLanguagesInTerritory( 'RU' ) ) > -1,
+			'Sakha language is spoken in Russia'
+		);
 
 		assert.ok( $.uls.data.deleteLanguage( 'qqq' ), 'Deleting language qqq, which was added earlier, returns true.' );
 		assert.strictEqual( $.uls.data.languages['qqq'], undefined, 'Data about qqq is undefined after being deleted.' );

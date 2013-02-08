@@ -167,7 +167,7 @@
 				for ( langNum = 0; langNum < languagesInScript.length; langNum++ ) {
 					langCode = languagesInScript[langNum];
 
-					if ( query === "" || this.filter( langCode, query ) ) {
+					if ( query === '' || this.filter( langCode, query ) ) {
 						if ( this.resultCount === 0 ) {
 							// Autofill the first result.
 							this.autofill( langCode );
@@ -195,14 +195,16 @@
 			var languageFilter = this;
 
 			$.get( languageFilter.options.searchAPI, { search: query }, function( result ) {
-				$.each( result['languagesearch'], function( code, name ) {
+				$.each( result.languagesearch, function( code, name ) {
 					if ( languageFilter.resultCount === 0 ) {
 						// Autofill the first result.
 						languageFilter.autofill( code, name );
 					}
+
 					languageFilter.render( code );
 					languageFilter.resultCount++;
 				} );
+
 				languageFilter.resultHandler( query );
 			} );
 		},
@@ -242,15 +244,16 @@
 				// see if it was autonym match
 				autonym = $.uls.data.getAutonym( langCode ) || '';
 				suggestion = userInput + autonym.substring( userInput.length, autonym.length );
+
 				if ( suggestion !== autonym ) {
-					// Give up. It may be iso/script code match.
-					suggestion = "";
+					// Give up. It may be an ISO/script code match.
+					suggestion = '';
 				}
 			}
 
 			// Make sure that it is a visual prefix.
 			if ( !isVisualPrefix( userInput, suggestion ) ) {
-				suggestion = "";
+				suggestion = '';
 			}
 
 			this.$suggestion.val( suggestion );
@@ -267,7 +270,7 @@
 		},
 
 		escapeRegex: function( value ) {
-			return value.replace( /[\-\[\]{}()*+?.,\\\^$\|#\s]/g, "\\$&" );
+			return value.replace( /[\-\[\]{}()*+?.,\\\^$\|#\s]/g, '\\$&' );
 		},
 
 		/**
@@ -280,7 +283,7 @@
 		 */
 		filter: function( langCode, searchTerm ) {
 			// FIXME script is ISO 15924 code. We might need actual name of script.
-			var matcher = new RegExp( "^" + this.escapeRegex( searchTerm ), 'i' ),
+			var matcher = new RegExp( '^' + this.escapeRegex( searchTerm ), 'i' ),
 				languageName = this.options.languages[langCode];
 
 			return matcher.test( languageName ) ||
@@ -336,7 +339,7 @@
 	function isVisualPrefix( prefix, string ) {
 		// Pre-base vowel signs of Indic languages. A vowel sign is called pre-base if
 		// consonant + vowel becomes [vowel][consonant] when rendered. Eg: ക + െ => കെ
-		var prebases = "െേൈൊോൌெேைொோௌେୈୋୌિਿिিেৈোৌෙේෛොෝෞ";
+		var prebases = 'െേൈൊോൌெேைொோௌେୈୋୌિਿिিেৈোৌෙේෛොෝෞ';
 		return prebases.indexOf( string[prefix.length] ) <= 0;
 	}
 } ( jQuery ) );
