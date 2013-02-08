@@ -74,7 +74,7 @@
 	background: transparent url('../images/world_map.png') no-repeat scroll right top;
 	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/world_map.svg');
 	background-image: -moz-linear-gradient(transparent, transparent), url('../images/world_map.svg');
-	background-image: linear-gradient(transparent, transparent), url('../images/world_map.svg');	
+	background-image: linear-gradient(transparent, transparent), url('../images/world_map.svg');
 	background-size: 100%;
 }
 
@@ -166,7 +166,7 @@ div.uls-region {
 	background: transparent url('../images/close.png') no-repeat scroll center center;
 	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/close.svg');
 	background-image: -moz-linear-gradient(transparent, transparent), url('../images/close.svg');
-	background-image: linear-gradient(transparent, transparent), url('../images/close.svg');	
+	background-image: linear-gradient(transparent, transparent), url('../images/close.svg');
 	float: right;
 	padding: 15px;
 	cursor: pointer;
