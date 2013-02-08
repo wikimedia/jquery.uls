@@ -69,8 +69,9 @@
 					</div>\
 				</div>\
 				<div class="one column">\
-					<span id="languagefilter-clear" class="languagefilter-clear"></span>\
-				</div>\
+					<span id="languagefilter-clear" class="languagefilter-clear" title="">\
+					</span>\
+					</div>\
 			</div>\
 			<div class="row uls-language-list"></div>\
 			<div class="row" id="settings-block"></div>\
@@ -167,6 +168,7 @@
 			if ( $.i18n ) {
 				this.$menu.find( '[data-i18n]' ).i18n();
 				this.$languageFilter.prop( 'placeholder', $.i18n( 'uls-search-placeholder' ) );
+				this.$menu.find( '.languagefilter-clear' ).prop( 'title', $.i18n( 'uls-clear-text' ) );
 			}
 		},
 

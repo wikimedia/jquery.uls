@@ -5,3 +5,7 @@
 /node_modules
 /dist
 data/supplementalData.xml
+
+css/.DS_Store
+
+src/.DS_Store
