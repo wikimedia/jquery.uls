@@ -59,9 +59,10 @@
 	color: #555;
 }
 
-.uls-menu .uls-lcd-region-title {
+.uls-menu .uls-lcd-region-section .uls-lcd-region-title {
 	color: #777;
 	font-size: 14pt;
+	font-weight: lighter;
 	line-height: 1.5em;
 	padding-left: 0;
 	margin-top: 0;
@@ -82,7 +83,7 @@ div.uls-region {
 	cursor: pointer;
 	padding: 0;
 	margin: 0;
-	height: 125px;
+	height: 120px;
 	border-bottom-color: transparent;
 	border-bottom-style: solid;
 	border-bottom-width: 2px;
@@ -206,7 +207,7 @@ div.uls-region {
 	padding: 0.8em 0;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
-	border-bottom-color: #EEE;
+	border-bottom-color: #DDD;
 }
 
 .uls-menu .search-label {
