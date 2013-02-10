@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajdar",
 			"\u0418\u043b\u044c\u043d\u0430\u0440"
 		]
 	},
 	"uls-select-language": "\u0422\u0435\u043b \u0441\u0430\u0439\u043b\u0430\u0443",
 	"uls-region-WW": "\u0411\u04e9\u0442\u0435\u043d\u0434\u04e9\u043d\u044c\u044f",
+	"uls-region-SP": "\u041c\u0430\u0445\u0441\u0443\u0441",
 	"uls-region-AM": "\u0410\u043c\u0435\u0440\u0438\u043a\u0430",
 	"uls-region-AF": "\u0410\u0444\u0440\u0438\u043a\u0430",
 	"uls-region-EU": "\u0410\u0443\u0440\u0443\u043f\u0430",
