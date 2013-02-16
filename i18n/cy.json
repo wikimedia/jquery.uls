@@ -1,4 +1,9 @@
 {
+	"@metadata": {
+		"authors": [
+			"Lloffiwr"
+		]
+	},
 	"uls-select-language": "Dewis iaith",
 	"uls-region-WW": "Aml i fan",
 	"uls-region-SP": "Neilltuol",
@@ -12,10 +17,5 @@
 	"uls-common-languages": "Awgrymiadau o ieithoedd",
 	"uls-no-results-suggestion-title": "Hwyrach bod y rhai sy'n dilyn o ddiddordeb i chi:",
 	"uls-search-help": "Gallwch chwilio am enw iaith, enw sgript, c\u00f4d ISO rhyw iaith neu gallwch bori fesul rhanbarth:",
-	"uls-search-placeholder": "Chwilio am iaith",
-	"@metadata": {
-		"authors": [
-			"Lloffiwr"
-		]
-	}
+	"uls-search-placeholder": "Chwilio am iaith"
 }

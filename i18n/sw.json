@@ -1,4 +1,10 @@
 {
+	"@metadata": {
+		"authors": [
+			"Lloffiwr",
+			"Muddyb Blast Producer"
+		]
+	},
 	"uls-select-language": "Chagua lugha",
 	"uls-region-WW": "Dunia nzima",
 	"uls-region-SP": "Maalumu",
@@ -12,11 +18,5 @@
 	"uls-common-languages": "Lugha za kawaida",
 	"uls-no-results-suggestion-title": "Pengine unaweza kuvutiwa na:",
 	"uls-search-help": "Unaweza kutafuta kwa jina la lugha, jina la maandishi, msimbo wa ISO wa lugha, ama unaweza kutafuta kwa eneo.",
-	"uls-search-placeholder": "Tafuta lugha",
-	"@metadata": {
-		"authors": [
-			"Lloffiwr",
-			"Muddyb Blast Producer"
-		]
-	}
+	"uls-search-placeholder": "Tafuta lugha"
 }

@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Omshivaprakash"
+			"Omshivaprakash",
+			"Shankar"
 		]
 	},
 	"uls-select-language": "\u0cad\u0cbe\u0cb7\u0cc6\u0caf \u0c86\u0caf\u0ccd\u0c95\u0cc6",
 	"uls-region-WW": "\u0caa\u0ccd\u0cb0\u0caa\u0c82\u0c9a\u0ca6\u0cbe\u0ca6\u0ccd\u0caf\u0c82\u0ca4",
+	"uls-region-SP": "\u0cb5\u0cbf\u0cb6\u0cc7\u0cb7",
 	"uls-region-AM": "\u0c85\u0cae\u0cc7\u0cb0\u0cbf\u0c95",
 	"uls-region-AF": "\u0c86\u0cab\u0ccd\u0cb0\u0cbf\u0c95",
 	"uls-region-EU": "\u0caf\u0cc1\u0cb0\u0ccb\u0caa\u0ccd",
