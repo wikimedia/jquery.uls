@@ -8,7 +8,7 @@
 	},
 	"uls-select-language": "Language Selector Title.\n{{Identical|Select language}}",
 	"uls-region-WW": "Label for worldwide languages. They are languages spoken in multiple countries. Eg: English, French, Spanish etc. This label is used in the map region of ULS and as the title of section showing worldwide languages. Translation should not be descriptive.",
-	"uls-region-SP": "Label for the special languages section. This section may include special custom languages that can be added in run time. It's shown after the Worldwide section.\n\nThe special language is everything that isn't a real language. Like code qqq or qqx.",
+	"uls-region-SP": "Label for the special languages section. This section may include special custom languages that can be added in run time. It's shown after the Worldwide section.\n\nThe special language is everything that isn't a real language. Like code qqq or qqx.\n{{Identical|Special}}",
 	"uls-region-AM": "Label for America",
 	"uls-region-AF": "Label for Africa",
 	"uls-region-EU": "Label for Europe",

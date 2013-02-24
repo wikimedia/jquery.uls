@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Sarilho1",
 			"Waldir"
 		]
 	},
 	"uls-select-language": "Escolha a l\u00edngua",
 	"uls-region-WW": "Global",
+	"uls-region-SP": "Especiais",
 	"uls-region-AM": "Am\u00e9rica",
 	"uls-region-AF": "\u00c1frica",
 	"uls-region-EU": "Europa",

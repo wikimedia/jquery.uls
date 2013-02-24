@@ -3,11 +3,13 @@
 		"authors": [
 			"Bellayet",
 			"Nasir8891",
+			"Sankarshan",
 			"Sayak Sarkar"
 		]
 	},
 	"uls-select-language": "\u09ad\u09be\u09b7\u09be \u09a8\u09bf\u09b0\u09cd\u09ac\u09be\u099a\u09a8",
 	"uls-region-WW": "\u09ac\u09bf\u09b6\u09cd\u09ac\u09ac\u09cd\u09af\u09be\u09aa\u09c0",
+	"uls-region-SP": "\u09ac\u09bf\u09b6\u09c7\u09b7 \u09ad\u09be\u09b7\u09be",
 	"uls-region-AM": "\u0986\u09ae\u09c7\u09b0\u09bf\u0995\u09be",
 	"uls-region-AF": "\u0986\u09ab\u09cd\u09b0\u09bf\u0995\u09be",
 	"uls-region-EU": "\u0987\u0989\u09b0\u09cb\u09aa",
