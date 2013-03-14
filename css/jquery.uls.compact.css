@@ -1,5 +1,5 @@
 .uls-compact .icon-close,
-.uls-compact .uls-title-region,
+.uls-compact .uls-title,
 .uls-compact .map-block {
 	display: none !important;
 }
@@ -41,4 +41,32 @@
 
 .uls-compact .languagefilter-clear {
 	margin-left: 0;
+}
+
+.uls-compact .uls-title-region a {
+	color: #777;
+	display: inline-block;
+	margin: 15px 0 5px 19px;
+	cursor: pointer;
+	padding: 6px;
+	font-size: 14px;
+	border: 1px solid transparent;
+}
+
+.uls-compact .uls-title-region a:hover {
+	color: #252525;
+	background: #F0F0F0;
+	border: 1px solid #DDD;
+	border-radius: 3px;
+}
+
+.uls-compact .uls-title-region a:before {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-right: 4px solid #777;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	content: "";
+	margin: 0 6px 0 0;
 }
