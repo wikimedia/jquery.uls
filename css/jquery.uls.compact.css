@@ -1,0 +1,44 @@
+.uls-compact .icon-close,
+.uls-compact .uls-title-region,
+.uls-compact .map-block {
+	display: none !important;
+}
+
+.uls-compact.uls-menu {
+	border-radius: 0;
+}
+
+.uls-compact .search {
+	background: white;
+	border-top: none;
+	padding: 0.8em 0;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #DDD;
+}
+
+.uls-compact .filterinput,
+.uls-compact .filterinput:focus  {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	outline: none;
+	font-size: 18px;
+}
+
+.uls-compact .uls-language-list {
+	background: #FCFCFC;
+	height: 20em;
+}
+
+.uls-compact .search-label {
+	background-size: 25px;
+	height: 26px;
+	width: 26px;
+	float: right;
+	opacity: 0.8;
+}
+
+.uls-compact .languagefilter-clear {
+	margin-left: 0;
+}
