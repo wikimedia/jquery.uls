@@ -3,7 +3,7 @@
 }
 
 .uls-lcd-region-section {
-	margin-top:10px;
+	margin-top: 10px;
 }
 
 /* Language list */
@@ -79,9 +79,9 @@
 	width: 100%;
 	margin-top: 1.6em;
 	line-height: 1.6em;
-	position:absolute;
-	bottom:0;
-	left:0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
 
 .uls-no-found-more a {
