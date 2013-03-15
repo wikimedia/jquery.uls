@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 					},
 					css: {
 						src: [ 'css/jquery.uls.css', 'css/jquery.uls.grid.css',
-							'css/jquery.uls.lcd.css' ],
+							'css/jquery.uls.lcd.css', 'css/jquery.uls.compact.css' ],
 						dest : 'dist/<%= pkg.name %>/css/<%= pkg.name %>.css'
 					}
 				},

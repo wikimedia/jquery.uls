@@ -143,6 +143,10 @@
 				left: '25%'
 			} );
 
+			if ( this.options.compact ) {
+				this.$menu.addClass( 'uls-compact' );
+			}
+
 			if ( !this.initialized ) {
 				$( 'body' ).prepend( this.$menu );
 				this.i18n();
@@ -281,6 +285,8 @@
 					uls.$languageFilter.languagefilter( 'clear' );
 				}
 			} );
+
+			$( 'html' ).click( $.proxy( this.hide, this ) );
 		},
 
 		/**
@@ -383,6 +389,7 @@
 		languages: $.uls.data.getAutonyms(), // Languages to be used for ULS, default is all languages
 		quickList: null, // Array of language codes or function that returns such
 		lazyload: true, // Lazy load the language list when scrolled.
+		compact: false, // Show ULS in compact mode
 		showRegions: ['WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA']
 	};
 

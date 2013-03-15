@@ -26,20 +26,10 @@
 					var languageName = $.uls.data.getAutonym( language );
 					$( '.uls-trigger' ).text( languageName );
 				},
+				compact: true,
 				quickList: [ 'en', 'hi', 'he', 'ml', 'ta', 'fr' ]
 			} );
-			$( '.uls-trigger' ).click( function () {
-				//Hacks to include optional classes and make the dialog close when clicking outside:
-				$( '.uls-menu' ).addClass( 'uls-compact' );
-				$( 'html' ).click( function () {
-					$( '.uls-menu' ).hide();
-				} );
-
-				$( '.uls-menu' ).click( function ( event ) {
-					event.stopPropagation();
-				} );
-				} );
-			} );
+		} );
 		</script>
 	</head>
 
