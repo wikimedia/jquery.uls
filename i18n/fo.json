@@ -1,4 +1,9 @@
 {
+	"@metadata": {
+		"authors": [
+			"EileenSanda"
+		]
+	},
 	"uls-select-language": "Vel m\u00e1l",
 	"uls-region-WW": "Alheims",
 	"uls-region-SP": "Serstakt",
@@ -12,10 +17,5 @@
 	"uls-common-languages": "Vanlig m\u00e1l",
 	"uls-no-results-suggestion-title": "T\u00fa ert kanska \u00e1huga\u00f0\/ur \u00ed:",
 	"uls-search-help": "T\u00fa kanst leita eftir navni \u00e1 m\u00e1li, skriftt\u00fdpu \u00e1 m\u00e1li, ISO kotu av m\u00e1li ella kanst t\u00fa leita eftir \u00f8ki:",
-	"uls-search-placeholder": "Leita eftir m\u00e1li",
-	"@metadata": {
-		"authors": [
-			"EileenSanda"
-		]
-	}
+	"uls-search-placeholder": "Leita eftir m\u00e1li"
 }
