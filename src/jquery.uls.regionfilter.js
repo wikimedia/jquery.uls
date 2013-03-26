@@ -70,6 +70,7 @@
 		show: function () {
 			if ( this.cache ) {
 				// If the result cache is present, render the results from there.
+				//noinspection JSUnusedAssignment
 				var result = null;
 
 				for ( result in this.cache ) {
