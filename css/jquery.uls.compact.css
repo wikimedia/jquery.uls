@@ -24,6 +24,7 @@
 	box-shadow: none;
 	outline: none;
 	font-size: 18px;
+	left: 0;
 }
 
 .uls-compact .uls-language-list {
@@ -49,6 +50,7 @@
 	margin: 15px 0 5px 19px;
 	cursor: pointer;
 	padding: 6px;
+	text-decoration: none;
 	font-size: 14px;
 	border: 1px solid transparent;
 }
