@@ -1,23 +1,23 @@
 {
-	"@metadata": {
-		"authors": [
-			"Amire80",
-			"Pginer",
-			"Toniher"
-		]
-	},
-	"uls-select-language": "Escolliu idioma",
-	"uls-region-WW": "Mundial",
-	"uls-region-SP": "Especials",
-	"uls-region-AM": "Am\u00e8rica",
-	"uls-region-AF": "\u00c0frica",
-	"uls-region-EU": "Europa",
-	"uls-region-AS": "\u00c0sia",
-	"uls-region-ME": "Orient mitj\u00e0",
-	"uls-region-PA": "Pac\u00edfic",
-	"uls-no-results-found": "Cap resultat",
-	"uls-common-languages": "Lleng\u00fces comunes",
-	"uls-no-results-suggestion-title": "Potser estiguis interessat en:",
-	"uls-search-help": "Pots cercar el nom de la llengua, el nom de l'escriptura, el codi ISO de la llengua o la seva regi\u00f3:",
-	"uls-search-placeholder": "Cerca de llengua"
+    "@metadata": {
+        "authors": [
+            "Amire80",
+            "Pginer",
+            "Toniher"
+        ]
+    },
+    "uls-select-language": "Escolliu idioma",
+    "uls-region-WW": "Mundial",
+    "uls-region-SP": "Especials",
+    "uls-region-AM": "Am\u00e8rica",
+    "uls-region-AF": "\u00c0frica",
+    "uls-region-EU": "Europa",
+    "uls-region-AS": "\u00c0sia",
+    "uls-region-ME": "Orient mitj\u00e0",
+    "uls-region-PA": "Pac\u00edfic",
+    "uls-no-results-found": "Cap resultat",
+    "uls-common-languages": "Lleng\u00fces comunes",
+    "uls-no-results-suggestion-title": "Potser estiguis interessat en:",
+    "uls-search-help": "Pots cercar el nom de la llengua, el nom de l'escriptura, el codi ISO de la llengua o la seva regi\u00f3:",
+    "uls-search-placeholder": "Cerca de llengua"
 }

@@ -1,21 +1,21 @@
 {
-	"@metadata": {
-		"authors": [
-			"Beta16"
-		]
-	},
-	"uls-select-language": "Seleziona lingua",
-	"uls-region-WW": "Tutto il mondo",
-	"uls-region-SP": "Speciali",
-	"uls-region-AM": "America",
-	"uls-region-AF": "Africa",
-	"uls-region-EU": "Europa",
-	"uls-region-AS": "Asia",
-	"uls-region-ME": "Medio oriente",
-	"uls-region-PA": "Pacifico",
-	"uls-no-results-found": "Nessun risultato",
-	"uls-common-languages": "Lingue pi\u00f9 scelte",
-	"uls-no-results-suggestion-title": "Puoi essere interessato a:",
-	"uls-search-help": "\u00c8 possibile cercare per nome, nome dello script, codice ISO della lingua o si pu\u00f2 navigare tramite regione:",
-	"uls-search-placeholder": "Ricerca lingua"
+    "@metadata": {
+        "authors": [
+            "Beta16"
+        ]
+    },
+    "uls-select-language": "Seleziona lingua",
+    "uls-region-WW": "Tutto il mondo",
+    "uls-region-SP": "Speciali",
+    "uls-region-AM": "America",
+    "uls-region-AF": "Africa",
+    "uls-region-EU": "Europa",
+    "uls-region-AS": "Asia",
+    "uls-region-ME": "Medio oriente",
+    "uls-region-PA": "Pacifico",
+    "uls-no-results-found": "Nessun risultato",
+    "uls-common-languages": "Lingue pi\u00f9 scelte",
+    "uls-no-results-suggestion-title": "Puoi essere interessato a:",
+    "uls-search-help": "\u00c8 possibile cercare per nome, nome dello script, codice ISO della lingua o si pu\u00f2 navigare tramite regione:",
+    "uls-search-placeholder": "Ricerca lingua"
 }

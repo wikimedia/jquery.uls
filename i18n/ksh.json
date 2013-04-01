@@ -1,21 +1,21 @@
 {
-	"@metadata": {
-		"authors": [
-			"Purodha"
-		]
-	},
-	"uls-select-language": "En Schprooch u\u00dfw\u00e4hle",
-	"uls-region-WW": "F\u00f6 de jannze \u00c4\u00e4d",
-	"uls-region-SP": "Extras - kein Schprooche",
-	"uls-region-AM": "Amm\u00e4rrika",
-	"uls-region-AF": "Affrikka",
-	"uls-region-EU": "Europpa",
-	"uls-region-AS": "Aasije",
-	"uls-region-ME": "der meddlere O\u00dfte",
-	"uls-region-PA": "der Paziffesche Oozejaan",
-	"uls-no-results-found": "Nix jefonge",
-	"uls-common-languages": "Jemeinsamm Schprooche",
-	"uls-no-results-suggestion-title": "Do k\u00fcnnts Schpa\u00df\u00df hann aan:",
-	"uls-search-help": "Do kanns noh Schprooche s\u00f6hke \u00f6vver der Name, d\u00e4 Schreff iehre name, et K\u00f6\u00f6zel noh d\u00e4 ISO-Norrm udder \u00f6vver \u00f6vver Rejuhne:",
-	"uls-search-placeholder": "En Schprooch S\u00f6hke"
+    "@metadata": {
+        "authors": [
+            "Purodha"
+        ]
+    },
+    "uls-select-language": "En Schprooch u\u00dfw\u00e4hle",
+    "uls-region-WW": "F\u00f6 de jannze \u00c4\u00e4d",
+    "uls-region-SP": "Extras - kein Schprooche",
+    "uls-region-AM": "Amm\u00e4rrika",
+    "uls-region-AF": "Affrikka",
+    "uls-region-EU": "Europpa",
+    "uls-region-AS": "Aasije",
+    "uls-region-ME": "der meddlere O\u00dfte",
+    "uls-region-PA": "der Paziffesche Oozejaan",
+    "uls-no-results-found": "Nix jefonge",
+    "uls-common-languages": "Jemeinsamm Schprooche",
+    "uls-no-results-suggestion-title": "Do k\u00fcnnts Schpa\u00df\u00df hann aan:",
+    "uls-search-help": "Do kanns noh Schprooche s\u00f6hke \u00f6vver der Name, d\u00e4 Schreff iehre name, et K\u00f6\u00f6zel noh d\u00e4 ISO-Norrm udder \u00f6vver \u00f6vver Rejuhne:",
+    "uls-search-placeholder": "En Schprooch S\u00f6hke"
 }

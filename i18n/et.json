@@ -1,20 +1,20 @@
 {
-	"@metadata": {
-		"authors": [
-			"Pikne"
-		]
-	},
-	"uls-select-language": "Keele valimine",
-	"uls-region-WW": "Kogu maailm",
-	"uls-region-AM": "Ameerika",
-	"uls-region-AF": "Aafrika",
-	"uls-region-EU": "Euroopa",
-	"uls-region-AS": "Aasia",
-	"uls-region-ME": "L\u00e4his-Ida",
-	"uls-region-PA": "Vaikne ookean",
-	"uls-no-results-found": "Tulemusi ei leitud.",
-	"uls-common-languages": "Eelistatavad keeled",
-	"uls-no-results-suggestion-title": "V\u00f5id eelistada neid:",
-	"uls-search-help": "Saad otsida keeli keelenimetuse, kirjanimetuse v\u00f5i keele ISO-koodi j\u00e4rgi v\u00f5i sirvida keeli piirkonna j\u00e4rgi:",
-	"uls-search-placeholder": "Keeleotsing"
+    "@metadata": {
+        "authors": [
+            "Pikne"
+        ]
+    },
+    "uls-select-language": "Keele valimine",
+    "uls-region-WW": "Kogu maailm",
+    "uls-region-AM": "Ameerika",
+    "uls-region-AF": "Aafrika",
+    "uls-region-EU": "Euroopa",
+    "uls-region-AS": "Aasia",
+    "uls-region-ME": "L\u00e4his-Ida",
+    "uls-region-PA": "Vaikne ookean",
+    "uls-no-results-found": "Tulemusi ei leitud.",
+    "uls-common-languages": "Eelistatavad keeled",
+    "uls-no-results-suggestion-title": "V\u00f5id eelistada neid:",
+    "uls-search-help": "Saad otsida keeli keelenimetuse, kirjanimetuse v\u00f5i keele ISO-koodi j\u00e4rgi v\u00f5i sirvida keeli piirkonna j\u00e4rgi:",
+    "uls-search-placeholder": "Keeleotsing"
 }

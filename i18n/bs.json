@@ -1,22 +1,22 @@
 {
-	"@metadata": {
-		"authors": [
-			"DzWiki",
-			"Edinwiki"
-		]
-	},
-	"uls-select-language": "Izaberite jezik",
-	"uls-region-WW": "Svjetski",
-	"uls-region-SP": "Posebno",
-	"uls-region-AM": "Amerika",
-	"uls-region-AF": "Afrika",
-	"uls-region-EU": "Evropa",
-	"uls-region-AS": "Azija",
-	"uls-region-ME": "Bliski istok",
-	"uls-region-PA": "Pacifik",
-	"uls-no-results-found": "Nema prona\u0111enih rezultata",
-	"uls-common-languages": "Prijedlozi za jezik",
-	"uls-no-results-suggestion-title": "Mo\u017eda vas interesuje:",
-	"uls-search-help": "Mo\u017eete da tra\u017eite po imenu jezika ili pisma, po ISO kodu jezika ili po regionu:",
-	"uls-search-placeholder": "Pretraga jezika"
+    "@metadata": {
+        "authors": [
+            "DzWiki",
+            "Edinwiki"
+        ]
+    },
+    "uls-select-language": "Izaberite jezik",
+    "uls-region-WW": "Svjetski",
+    "uls-region-SP": "Posebno",
+    "uls-region-AM": "Amerika",
+    "uls-region-AF": "Afrika",
+    "uls-region-EU": "Evropa",
+    "uls-region-AS": "Azija",
+    "uls-region-ME": "Bliski istok",
+    "uls-region-PA": "Pacifik",
+    "uls-no-results-found": "Nema prona\u0111enih rezultata",
+    "uls-common-languages": "Prijedlozi za jezik",
+    "uls-no-results-suggestion-title": "Mo\u017eda vas interesuje:",
+    "uls-search-help": "Mo\u017eete da tra\u017eite po imenu jezika ili pisma, po ISO kodu jezika ili po regionu:",
+    "uls-search-placeholder": "Pretraga jezika"
 }
