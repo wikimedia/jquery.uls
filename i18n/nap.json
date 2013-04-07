@@ -1,4 +1,9 @@
 {
+    "@metadata": {
+        "authors": [
+            "Chelin"
+        ]
+    },
     "uls-select-language": "Selezziona lengua",
     "uls-region-WW": "Munno intero",
     "uls-region-SP": "Speciale",
@@ -12,10 +17,5 @@
     "uls-common-languages": "Lengue cchi\u00f9 scelte",
     "uls-no-results-suggestion-title": "Puo essere interessato a:",
     "uls-search-help": "Puo cerca ppe nomme, nomme ddo script, codece ISO dda lengua o navigga tra e reggione:",
-    "uls-search-placeholder": "Asci\u00e0 lengua",
-    "@metadata": {
-        "authors": [
-            "Chelin"
-        ]
-    }
+    "uls-search-placeholder": "Asci\u00e0 lengua"
 }
