@@ -93,7 +93,9 @@
 				default:
 					var languageFilter = this;
 
-					if ( e.which < 32 ) {
+					if ( e.which < 32 &&
+						e.which !== 8 // Backspace
+					) {
 						// ignore any ASCII control characters
 						break;
 					}
