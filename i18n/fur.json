@@ -1,4 +1,9 @@
 {
+    "@metadata": {
+        "authors": [
+            "Klenje"
+        ]
+    },
     "uls-select-language": "Siel\u00e7 la lenghe",
     "uls-region-WW": "Dut il mont",
     "uls-region-SP": "Speci\u00e2l",
@@ -12,10 +17,5 @@
     "uls-common-languages": "Lenghis comunis",
     "uls-no-results-suggestion-title": "Tu puedis jessi interess\u00e2t a:",
     "uls-search-help": "Tu pues cir\u00ee par non de lenghe, non dal alfabet, codis ISO de lenghe o tu puedis cir\u00ee intune regjon:",
-    "uls-search-placeholder": "Ricercje de lenghe",
-    "@metadata": {
-        "authors": [
-            "Klenje"
-        ]
-    }
+    "uls-search-placeholder": "Ricercje de lenghe"
 }
