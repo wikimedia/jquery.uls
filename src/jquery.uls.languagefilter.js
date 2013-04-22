@@ -25,7 +25,9 @@
 (function ( $ ) {
 	'use strict';
 
-	var LanguageFilter = function( element, options ) {
+	var LanguageFilter, delay;
+
+	LanguageFilter = function( element, options ) {
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.regionselector.defaults, options );
 		this.$element.addClass( 'languagefilter' );
@@ -37,7 +39,7 @@
 		this.listen();
 	};
 
-	var delay = ( function() {
+	delay = ( function() {
 		var timer = 0;
 
 		return function( callback, milliseconds ) {
@@ -63,9 +65,11 @@
 		},
 
 		keyup: function( e ) {
+			var suggestion, query, languageFilter;
+
 			switch( e.keyCode ) {
 				case 9: // Tab -> Autocomplete
-					var suggestion = this.$suggestion.val();
+					suggestion = this.$suggestion.val();
 
 					if ( suggestion && suggestion !== this.$element.val() ) {
 						this.$element.val( suggestion );
@@ -78,7 +82,7 @@
 						break;
 					}
 
-					var query = $.trim( this.$element.val() ).toLowerCase();
+					query = $.trim( this.$element.val() ).toLowerCase();
 
 					if ( this.selectedLanguage ) {
 						// this.selectLanguage will be populated from a matching search
@@ -91,7 +95,7 @@
 
 					break;
 				default:
-					var languageFilter = this;
+					languageFilter = this;
 
 					if ( e.which < 32 &&
 						e.which !== 8 // Backspace

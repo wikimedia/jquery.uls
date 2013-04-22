@@ -21,9 +21,11 @@
 ( function ( $ ) {
 	'use strict';
 
+	var template, ULS;
+
 	// Region numbers in id attributes also appear in the langdb.
 	/*jshint multistr:true */
-	var template = '\
+	template = '\
 		<div class="grid uls-menu uls-wide"> \
 			<div class="row"> \
 				<span id="uls-close" class="icon-close"></span> \
@@ -80,7 +82,7 @@
 	/**
 	 * ULS Public class definition
 	 */
-	var ULS = function ( element, options ) {
+	ULS = function ( element, options ) {
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.uls.defaults, options );
 		this.$menu = $( template );

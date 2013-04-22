@@ -22,13 +22,15 @@
 
 	/* RegionSelector plugin definition */
 
+	var RegionSelector, delay;
+
 	/**
 	 * Region selector is a language selector based on regions.
 	 * Usage: $( 'jqueryselector' ).regionselector( options );
 	 * The attached element should have data-regiongroup attribute
 	 * that defines the regiongroup for the selector.
 	 */
-	var RegionSelector = function ( element, options ) {
+	RegionSelector = function ( element, options ) {
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.regionselector.defaults, options );
 		this.$element.addClass( 'regionselector' );
@@ -52,10 +54,10 @@
 		},
 
 		test: function ( langCode ) {
-			var langRegions = $.uls.data.getRegions( langCode ),
-				region;
+			var region, i,
+				langRegions = $.uls.data.getRegions( langCode );
 
-			for ( var i = 0; i < this.regions.length; i++ ) {
+			for ( i = 0; i < this.regions.length; i++ ) {
 				region = this.regions[i];
 
 				if ( $.inArray( region, langRegions ) >= 0 ) {
@@ -68,10 +70,12 @@
 		},
 
 		show: function () {
+			var result, languagesByScriptGroup, scriptGroup, languages, i;
+
 			if ( this.cache ) {
 				// If the result cache is present, render the results from there.
 				//noinspection JSUnusedAssignment
-				var result = null;
+				result = null;
 
 				for ( result in this.cache ) {
 					this.render( result, this.cache[result] );
@@ -79,13 +83,13 @@
 			} else {
 				this.cache = {};
 				// Get the languages grouped by script group
-				var languagesByScriptGroup = $.uls.data.getLanguagesByScriptGroup( this.options.languages );
+				languagesByScriptGroup = $.uls.data.getLanguagesByScriptGroup( this.options.languages );
 
 				// Make sure that we go by the original order
 				// of script groups
-				for ( var scriptGroup in $.uls.data.scriptgroups ) {
+				for ( scriptGroup in $.uls.data.scriptgroups ) {
 					// Get the languages for the script group
-					var languages = languagesByScriptGroup[scriptGroup];
+					languages = languagesByScriptGroup[scriptGroup];
 
 					// It's possible that some script groups are missing
 					if ( !languages ) {
@@ -95,7 +99,7 @@
 					// Sort it based on autonym
 					languages.sort( $.uls.data.sortByAutonym );
 
-					for ( var i = 0; i < languages.length; i++ ) {
+					for ( i = 0; i < languages.length; i++ ) {
 						// Check whether it belongs to the region
 						this.test( languages[i] );
 					}
@@ -145,7 +149,7 @@
 			this.options.$target.$element.bind( 'scrollend', $.proxy( this.next, this ) );
 		},
 
-		click: function ( e ) {
+		click: function () {
 			// Don't do anything if a region is selected already
 			if ( this.$element.hasClass( 'active' ) ) {
 				return;
@@ -191,7 +195,7 @@
 
 	$.fn.regionselector.Constructor = RegionSelector;
 
-	var delay = ( function () {
+	delay = ( function () {
 		var timer = 0;
 		return function ( callback, milliseconds ) {
 			clearTimeout( timer );
