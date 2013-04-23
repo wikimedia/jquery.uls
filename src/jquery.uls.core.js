@@ -120,6 +120,12 @@
 			}
 		},
 
+		afterShowing: function () {
+			if ( this.options.afterShowing ) {
+				this.options.afterShowing.call( this );
+			}
+		},
+
 		/**
 		 * Calculate the position of ULS
 		 * Returns an object with top and left properties.
@@ -152,9 +158,11 @@
 			if ( !this.initialized ) {
 				$( 'body' ).prepend( this.$menu );
 				this.i18n();
+
 				// Initialize with a full search.
 				// This happens on first time click of uls trigger.
 				this.defaultSearch();
+
 				this.initialized = true;
 			}
 
@@ -163,6 +171,8 @@
 
 			this.$menu.show();
 			this.shown = true;
+
+			this.afterShowing();
 
 			if ( !this.isMobile() ) {
 				this.$languageFilter.focus();
