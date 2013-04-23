@@ -159,14 +159,15 @@
 		},
 
 		search: function() {
-			var query = $.trim( this.$element.val() ),
+			var languagesInScript,
+				query = $.trim( this.$element.val() ),
 				languages = $.uls.data.getLanguagesByScriptGroup( this.options.languages ),
 				scriptGroup, langNum, langCode;
 
 			this.resultCount = 0;
 
 			for ( scriptGroup in languages ) {
-				var languagesInScript = languages[scriptGroup];
+				languagesInScript = languages[scriptGroup];
 
 				languagesInScript.sort( $.uls.data.sortByAutonym );
 
