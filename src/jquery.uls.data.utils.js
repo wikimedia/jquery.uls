@@ -42,6 +42,11 @@
 			return $.uls.data.getScript( target );
 		}
 
+		if ( !$.uls.data.languages[language] ) {
+			// Undetermined
+			return 'Zyyy';
+		}
+
 		return $.uls.data.languages[language][0];
 	};
 
