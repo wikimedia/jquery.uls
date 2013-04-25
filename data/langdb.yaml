@@ -544,6 +544,8 @@ scriptgroups:
   Mongolian: [Mong]
   SignWriting: [Sgnw]
   NativeAmerican: [Cher, Cans]
+ # Undetermined script
+  Special: [Zyyy]
 
 rtlscripts:
   [Arab, Hebr, Syrc, Nkoo, Thaa]
