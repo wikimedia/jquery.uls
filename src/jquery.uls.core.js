@@ -114,9 +114,30 @@
 	ULS.prototype = {
 		constructor: ULS,
 
+		/**
+		 * A "hook" that runs after the ULS constructor.
+		 * At this point it is not guaranteed that the ULS has its dimensions
+		 * and that the languages lists are initialized.
+		 *
+		 * To use it, pass a function as the onReady parameter
+		 * in the options when initializing ULS.
+		 */
 		ready: function () {
 			if ( this.options.onReady ) {
 				this.options.onReady.call( this );
+			}
+		},
+
+		/**
+		 * A "hook" that runs after the ULS panel becomes visible
+		 * by using the show method.
+		 *
+		 * To use it, pass a function as the onVisible parameter
+		 * in the options when initializing ULS.
+		 */
+		visible: function () {
+			if ( this.options.onVisible ) {
+				this.options.onVisible.call( this );
 			}
 		},
 
@@ -152,13 +173,15 @@
 			if ( !this.initialized ) {
 				$( 'body' ).prepend( this.$menu );
 				this.i18n();
+
 				// Initialize with a full search.
 				// This happens on first time click of uls trigger.
 				this.defaultSearch();
+
 				this.initialized = true;
 			}
 
-			// hide any other ULS visible
+			// hide any other visible ULS
 			$( '.uls-menu' ).hide();
 
 			this.$menu.show();
@@ -167,6 +190,8 @@
 			if ( !this.isMobile() ) {
 				this.$languageFilter.focus();
 			}
+
+			this.visible();
 		},
 
 		i18n: function () {
