@@ -97,7 +97,7 @@
 		assert.ok( $.fn.uls, '$.fn.uls is defined' );
 	} );
 
-	test( '-- $.uls.data testing', 46, function ( assert ) {
+	test( '-- $.uls.data testing', 47, function ( assert ) {
 		var autonyms,
 			allLanguagesByRegionAndScript,
 			languagesInEU,
@@ -141,6 +141,7 @@
 			'The script of the Inupiaq language belongs to the NativeAmerican group.'
 		);
 
+		assert.strictEqual( $.uls.data.getScript( 'no-such-language' ), 'Zyyy', 'A script for an unknown language is Zyyy - undetermined' );
 		assert.strictEqual( $.uls.data.getScript( 'ii' ), 'Yiii', 'Correct script of the Yi language was selected' );
 		assert.deepEqual( $.uls.data.getRegions( 'lzz' ), [
 			'EU', 'ME'
