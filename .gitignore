@@ -1,5 +1,6 @@
 *~
 .*.swp
+.idea
 *.kate-swp
 *.bak
 /node_modules
