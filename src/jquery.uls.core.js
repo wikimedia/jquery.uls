@@ -160,11 +160,7 @@
 		 * Show the ULS window
 		 */
 		show: function () {
-			var pos = this.position();
-			this.$menu.css( {
-				top: pos.top,
-				left: '25%'
-			} );
+			this.$menu.css( this.position() );
 
 			if ( this.options.compact ) {
 				this.$menu.addClass( 'uls-compact' );
