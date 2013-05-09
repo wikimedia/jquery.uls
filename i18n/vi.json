@@ -1,11 +1,12 @@
 {
     "@metadata": {
         "authors": [
-            "Minh Nguyen"
+            "Minh Nguyen",
+            "Tuankiet65"
         ]
     },
     "uls-select-language": "Ch\u1ecdn ng\u00f4n ng\u1eef",
-    "uls-region-WW": "Kh\u1eafp th\u1ebf gi\u1edbi",
+    "uls-region-WW": "To\u00e0n c\u1ea7u",
     "uls-region-SP": "\u0110\u1eb7c bi\u1ec7t",
     "uls-region-AM": "Ch\u00e2u M\u1ef9",
     "uls-region-AF": "Ch\u00e2u Phi",
@@ -15,7 +16,7 @@
     "uls-region-PA": "Ch\u00e2u \u0110\u1ea1i D\u01b0\u01a1ng",
     "uls-no-results-found": "Kh\u00f4ng t\u00ecm th\u1ea5y k\u1ebft qu\u1ea3",
     "uls-common-languages": "Ng\u00f4n ng\u1eef th\u00f4ng d\u1ee5ng",
-    "uls-no-results-suggestion-title": "B\u1ea1n c\u00f3 th\u1ec3 mu\u1ed1n:",
+    "uls-no-results-suggestion-title": "B\u1ea1n c\u00f3 th\u1ec3 quan t\u00e2m:",
     "uls-search-help": "B\u1ea1n c\u00f3 th\u1ec3 t\u00ecm ki\u1ebfm theo t\u00ean ng\u00f4n ng\u1eef, t\u00ean h\u1ec7 th\u1ed1ng ch\u1eef vi\u1ebft, hay m\u00e3 ISO c\u1ee7a ng\u00f4n ng\u1eef ho\u1eb7c duy\u1ec7t theo khu v\u1ef1c:",
     "uls-search-placeholder": "T\u00ecm ki\u1ebfm ng\u00f4n ng\u1eef"
 }
