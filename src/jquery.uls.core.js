@@ -295,7 +295,7 @@
 		 */
 		select: function ( langCode ) {
 			this.hide();
-
+			this.$languageFilter.trigger( 'searchclear' );
 			if ( this.options.onSelect ) {
 				this.options.onSelect.call( this, langCode );
 			}
