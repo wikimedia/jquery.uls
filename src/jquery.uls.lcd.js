@@ -22,8 +22,10 @@
 ( function ( $ ) {
 	'use strict';
 
+	var noResultsTemplate, LanguageCategoryDisplay;
+
 	/*jshint multistr:true */
-	var noResultsTemplate = '\
+	noResultsTemplate = '\
 	<div class="twelve columns uls-no-results-view">\
 		<h2 data-i18n="uls-no-results-found" class="eleven columns end offset-by-one uls-no-results-found-title">\
 		No results found\
@@ -47,7 +49,7 @@
 	</div>';
 	/*jshint multistr:false */
 
-	var LanguageCategoryDisplay = function ( element, options ) {
+	LanguageCategoryDisplay = function ( element, options ) {
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.lcd.defaults, options );
 		this.$element.addClass( 'lcd' );
@@ -74,7 +76,8 @@
 		 * @param region Optional region
 		 */
 		addToRegion: function ( langCode, region ) {
-			var lcd = this,
+			var i, regionCode, $li, $column, lastLanguage, lastScriptGroup, currentScriptGroup,
+				lcd = this,
 				language = lcd.options.languages[langCode],
 				langName = $.uls.data.getAutonym( langCode ) || language || langCode,
 				regions = [];
@@ -90,10 +93,10 @@
 				regions = [ 'WW' ];
 			}
 
-			for ( var i = 0; i < regions.length; i++ ) {
-				var regionCode = regions[i];
+			for ( i = 0; i < regions.length; i++ ) {
+				regionCode = regions[i];
 
-				var $li = $( '<li>' )
+				$li = $( '<li>' )
 					.data( 'code', langCode )
 					.attr( {
 						lang: langCode,
@@ -104,12 +107,12 @@
 					);
 
 				// Append the element to the column in the list
-				var $column = lcd.getColumn( regionCode );
-				var lastLanguage = $column.find( 'li:last' ).data( 'code' );
+				$column = lcd.getColumn( regionCode );
+				lastLanguage = $column.find( 'li:last' ).data( 'code' );
 
 				if ( lastLanguage ) {
-					var lastScriptGroup = $.uls.data.getScriptGroupOfLanguage( lastLanguage ),
-						currentScriptGroup = $.uls.data.getScriptGroupOfLanguage( langCode );
+					lastScriptGroup = $.uls.data.getScriptGroupOfLanguage( lastLanguage );
+					currentScriptGroup = $.uls.data.getScriptGroupOfLanguage( langCode );
 
 					if ( lastScriptGroup !== currentScriptGroup ) {
 						if ( $column.find( 'li' ).length > 2 ) {
@@ -172,7 +175,7 @@
 					PA: 'Pacific'
 				};
 
-			$.each( $.uls.data.regiongroups, function ( regionCode, regionIndex ) {
+			$.each( $.uls.data.regiongroups, function ( regionCode ) {
 				$section = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', regionCode );
 
 				$sectionTitle = $( '<h3 data-i18n="uls-region-' + regionCode + '">' )
@@ -194,6 +197,9 @@
 		},
 
 		quicklist: function () {
+			var quickList, $quickListSection, $quickListSectionTitle, i,
+				$column, langCode, language, langName, $li;
+
 			if ( $.isFunction( this.options.quickList ) ) {
 				this.options.quickList = this.options.quickList();
 			}
@@ -203,24 +209,24 @@
 			}
 
 			// Pick only the first elements, because we don't have room for more
-			var quickList = this.options.quickList;
+			quickList = this.options.quickList;
 			quickList = quickList.slice( 0, 16 );
 			quickList.sort( $.uls.data.sortByAutonym );
 
-			var $quickListSection = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', 'uls-lcd-quicklist' );
-			var $quickListSectionTitle = $( '<h3 data-i18n="uls-common-languages">' )
+			$quickListSection = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', 'uls-lcd-quicklist' );
+			$quickListSectionTitle = $( '<h3 data-i18n="uls-common-languages">' )
 				.addClass( 'eleven columns uls-lcd-region-section uls-lcd-region-title offset-by-one' )
 				.text( 'Common languages' ); // This is placeholder text if jquery.i18n not present
 			$quickListSection.append( $quickListSectionTitle );
 			this.$element.prepend( $quickListSection );
 			this.regionDivs.quick = $quickListSection;
 
-			for ( var i = 0; i < quickList.length; i++) {
-				var $column = this.getColumn( 'quick', i % 4 === 0 );
-				var langCode = quickList[i];
-				var language = this.options.languages[langCode];
-				var langName = $.uls.data.getAutonym( langCode ) || language || langCode;
-				var $li = $( '<li>' )
+			for ( i = 0; i < quickList.length; i++) {
+				$column = this.getColumn( 'quick', i % 4 === 0 );
+				langCode = quickList[i];
+				language = this.options.languages[langCode];
+				langName = $.uls.data.getAutonym( langCode ) || language || langCode;
+				$li = $( '<li>' )
 					.data( 'code', langCode )
 					.attr( {
 						lang: langCode,

@@ -2,11 +2,13 @@
     "@metadata": {
         "authors": [
             "Harsh4101991",
+            "KartikMistry",
             "Santhosh.thottingal"
         ]
     },
     "uls-select-language": "\u0aad\u0abe\u0ab7\u0abe \u0aaa\u0ab8\u0a82\u0aa6 \u0a95\u0ab0\u0acb",
     "uls-region-WW": "\u0ab5\u0abf\u0ab6\u0acd\u0ab5\u0aad\u0ab0\u0aae\u0abe\u0a82",
+    "uls-region-SP": "\u0a96\u0abe\u0ab8",
     "uls-region-AM": "\u0a85\u0aae\u0ac7\u0ab0\u0abf\u0a95\u0abe",
     "uls-region-AF": "\u0a86\u0aab\u0acd\u0ab0\u0abf\u0a95\u0abe",
     "uls-region-EU": "\u0aaf\u0ac1\u0ab0\u0acb\u0aaa",

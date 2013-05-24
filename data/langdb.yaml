@@ -396,6 +396,7 @@ languages:
   sli: [Latn, [EU], Schläsch]
   slr: [Latn, [AS], Salırça]
   sly: [Latn, [AS], Bahasa Selayar]
+  syc: [Syrc, [ME], ܣܘܪܝܝܐ]
   sm: [Latn, [PA], Gagana Samoa]
   sma: [Latn, [EU], åarjelsaemien]
   smj: [Latn, [EU], julevsámegiella]
@@ -475,7 +476,7 @@ languages:
   war: [Latn, [AS], Winaray]
   wls: [Latn, [PA], "Faka'uvea"]
   wo: [Latn, [AF], Wolof]
-  wuu: [Hans, [EU], 吴语]
+  wuu: [Hans, [AS], 吴语]
   xal: [Cyrl, [EU], хальмг]
   xh: [Latn, [AF], isiXhosa]
   xmf: [Geor, [EU], მარგალური]
@@ -544,6 +545,8 @@ scriptgroups:
   Mongolian: [Mong]
   SignWriting: [Sgnw]
   NativeAmerican: [Cher, Cans]
+ # Undetermined script
+  Special: [Zyyy]
 
 rtlscripts:
   [Arab, Hebr, Syrc, Nkoo, Thaa]

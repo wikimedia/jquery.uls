@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "Jetlag"
+        ]
+    },
+    "uls-select-language": "\u9078\u64c7\u8a9e\u8a00",
+    "uls-region-WW": "\u5168\u4e16\u754c",
+    "uls-region-SP": "\u7279\u5225",
+    "uls-region-AM": "\u7f8e\u6d32",
+    "uls-region-AF": "\u975e\u6d32",
+    "uls-region-EU": "\u6b50\u6d32",
+    "uls-region-AS": "\u4e9e\u6d32",
+    "uls-region-ME": "\u4e2d\u6771",
+    "uls-region-PA": "\u592a\u5e73\u6d0b",
+    "uls-no-results-found": "\u5c0b\u6bcb\u5230\u4efb\u4f55\u7d50\u679c",
+    "uls-common-languages": "\u5e38\u7528\u8a9e\u8a00",
+    "uls-no-results-suggestion-title": "\u723e\u53ef\u80fd\u611f\u8208\u8da3\uff1a",
+    "uls-search-help": "\u723e\u53ef\u4ee5\u6309\u8a9e\u8a00\u540d\u7a31\u3001\u7a0b\u5f0f\u78bc\u540d\u7a31\u3001\u8a9e\u8a00ISO\u4ee3\u78bc\u641c\u7d22\uff0c\u4e5f\u53ef\u4ee5\u6309\u5340\u57df\u700f\u89bd\uff1a",
+    "uls-search-placeholder": "\u8a9e\u8a00\u641c\u7d22"
+}

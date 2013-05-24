@@ -21,9 +21,11 @@
 ( function ( $ ) {
 	'use strict';
 
+	var template, ULS;
+
 	// Region numbers in id attributes also appear in the langdb.
 	/*jshint multistr:true */
-	var template = '\
+	template = '\
 		<div class="grid uls-menu uls-wide"> \
 			<div class="row"> \
 				<span id="uls-close" class="icon-close"></span> \
@@ -80,7 +82,7 @@
 	/**
 	 * ULS Public class definition
 	 */
-	var ULS = function ( element, options ) {
+	ULS = function ( element, options ) {
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.uls.defaults, options );
 		this.$menu = $( template );
@@ -112,9 +114,30 @@
 	ULS.prototype = {
 		constructor: ULS,
 
+		/**
+		 * A "hook" that runs after the ULS constructor.
+		 * At this point it is not guaranteed that the ULS has its dimensions
+		 * and that the languages lists are initialized.
+		 *
+		 * To use it, pass a function as the onReady parameter
+		 * in the options when initializing ULS.
+		 */
 		ready: function () {
 			if ( this.options.onReady ) {
 				this.options.onReady.call( this );
+			}
+		},
+
+		/**
+		 * A "hook" that runs after the ULS panel becomes visible
+		 * by using the show method.
+		 *
+		 * To use it, pass a function as the onVisible parameter
+		 * in the options when initializing ULS.
+		 */
+		visible: function () {
+			if ( this.options.onVisible ) {
+				this.options.onVisible.call( this );
 			}
 		},
 
@@ -137,11 +160,7 @@
 		 * Show the ULS window
 		 */
 		show: function () {
-			var pos = this.position();
-			this.$menu.css( {
-				top: pos.top,
-				left: '25%'
-			} );
+			this.$menu.css( this.position() );
 
 			if ( this.options.compact ) {
 				this.$menu.addClass( 'uls-compact' );
@@ -150,13 +169,15 @@
 			if ( !this.initialized ) {
 				$( 'body' ).prepend( this.$menu );
 				this.i18n();
+
 				// Initialize with a full search.
 				// This happens on first time click of uls trigger.
 				this.defaultSearch();
+
 				this.initialized = true;
 			}
 
-			// hide any other ULS visible
+			// hide any other visible ULS
 			$( '.uls-menu' ).hide();
 
 			this.$menu.show();
@@ -165,6 +186,8 @@
 			if ( !this.isMobile() ) {
 				this.$languageFilter.focus();
 			}
+
+			this.visible();
 		},
 
 		i18n: function () {
