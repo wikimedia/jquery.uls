@@ -1,11 +1,13 @@
 {
     "@metadata": {
         "authors": [
-            "Farras"
+            "Farras",
+            "Iwan Novirion"
         ]
     },
     "uls-select-language": "Pilih Bahasa",
     "uls-region-WW": "Seluruh dunia",
+    "uls-region-SP": "Khusus",
     "uls-region-AM": "Amerika",
     "uls-region-AF": "Afrika",
     "uls-region-EU": "Eropa",

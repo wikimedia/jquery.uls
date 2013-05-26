@@ -1,0 +1,21 @@
+{
+    "uls-select-language": "Piliah Bahaso",
+    "uls-region-WW": "Saluruah dunia",
+    "uls-region-SP": "Khusuih",
+    "uls-region-AM": "Amerika",
+    "uls-region-AF": "Afrika",
+    "uls-region-EU": "Eropa",
+    "uls-region-AS": "Asia",
+    "uls-region-ME": "Timua Tangah",
+    "uls-region-PA": "Pasifik",
+    "uls-no-results-found": "Hasil indak basobok",
+    "uls-common-languages": "Bahaso umum",
+    "uls-no-results-suggestion-title": "Sanak mungkin tatarik pado:",
+    "uls-search-help": "Sanak dapek mancari jo namo bahaso, namo skrip, kode ISO bahaso atau dapek pulo manalusuri manuruik wilayahnyo:",
+    "uls-search-placeholder": "Pancarian bahaso",
+    "@metadata": {
+        "authors": [
+            "Iwan Novirion"
+        ]
+    }
+}
