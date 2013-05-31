@@ -181,6 +181,7 @@
 			$( '.uls-menu' ).hide();
 
 			this.$menu.show();
+			this.$menu[0].scrollIntoView();
 			this.shown = true;
 
 			if ( !this.isMobile() ) {
