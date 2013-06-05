@@ -181,7 +181,7 @@
 			$( '.uls-menu' ).hide();
 
 			this.$menu.show();
-			this.$menu[0].scrollIntoView();
+			this.$menu.scrollIntoView();
 			this.shown = true;
 
 			if ( !this.isMobile() ) {
@@ -421,6 +421,36 @@
 	if ( !$.fn.i18n ) {
 		$.fn.i18n = function () {
 		};
+	}
+
+	/*
+	 * Simple scrollIntoView plugin.
+	 * Scrolls the element to the viewport smoothly if it is not already.
+	 */
+	$.fn.scrollIntoView = function () {
+		return this.each( function () {
+			var scrollPosition,
+				padding = 10,
+				$window = $( window ),
+				windowHeight = $window.height(),
+				windowScrollTop = $window.scrollTop(),
+				windowBottom = windowScrollTop + windowHeight,
+				$element = $( this ),
+				panelHeight = $element.height(),
+				panelTop = $element.offset().top,
+				panelBottom = panelTop + panelHeight;
+
+			if ( ( panelTop < windowScrollTop ) || ( panelBottom > windowBottom ) ) {
+				if ( panelHeight > windowHeight ) {
+					scrollPosition = panelTop - padding;
+				} else {
+					scrollPosition = panelBottom - windowHeight + padding;
+				}
+				$( 'html, body' ).stop().animate( {
+					scrollTop: scrollPosition
+				}, 500 );
+			}
+		} );
 	}
 
 	$.fn.uls.Constructor = ULS;
