@@ -243,6 +243,10 @@
 			this.selectedLanguage = langCode;
 			languageName = languageName || this.options.languages[langCode];
 
+			if ( !languageName ) {
+				return;
+			}
+
 			var autonym,
 				userInput = this.$element.val(),
 				suggestion = userInput + languageName.substring( userInput.length, languageName.length );

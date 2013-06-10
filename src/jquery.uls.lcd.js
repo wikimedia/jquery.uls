@@ -205,7 +205,7 @@
 			}
 
 			if ( !this.options.quickList ) {
-				return;
+				return $( [] );
 			}
 
 			// Pick only the first elements, because we don't have room for more
