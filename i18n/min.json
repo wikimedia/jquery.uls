@@ -1,4 +1,9 @@
 {
+    "@metadata": {
+        "authors": [
+            "Iwan Novirion"
+        ]
+    },
     "uls-select-language": "Piliah Bahaso",
     "uls-region-WW": "Saluruah dunia",
     "uls-region-SP": "Khusuih",
@@ -12,10 +17,5 @@
     "uls-common-languages": "Bahaso umum",
     "uls-no-results-suggestion-title": "Sanak mungkin tatarik pado:",
     "uls-search-help": "Sanak dapek mancari jo namo bahaso, namo skrip, kode ISO bahaso atau dapek pulo manalusuri manuruik wilayahnyo:",
-    "uls-search-placeholder": "Pancarian bahaso",
-    "@metadata": {
-        "authors": [
-            "Iwan Novirion"
-        ]
-    }
+    "uls-search-placeholder": "Pancarian bahaso"
 }

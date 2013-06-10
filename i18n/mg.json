@@ -1,4 +1,9 @@
 {
+    "@metadata": {
+        "authors": [
+            "Jagwar"
+        ]
+    },
     "uls-select-language": "Hifidy tenim-pirenena",
     "uls-region-WW": "Erak'izao tontolo izao",
     "uls-region-SP": "Manokana",
@@ -12,10 +17,5 @@
     "uls-common-languages": "Tenim-pirenena fampiasa matetika",
     "uls-no-results-suggestion-title": "Mety ahitanao tombon-tsoa:",
     "uls-search-help": "Afaka mikaroka araka ny anaran'ny tenim-pirena, anaran-tsoratra, kaody ISO-n'ny teny na afaka mifidy araky ny faritra:",
-    "uls-search-placeholder": "Fikarohana tenim-pirenena",
-    "@metadata": {
-        "authors": [
-            "Jagwar"
-        ]
-    }
+    "uls-search-placeholder": "Fikarohana tenim-pirenena"
 }

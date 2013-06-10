@@ -1,11 +1,13 @@
 {
     "@metadata": {
         "authors": [
-            "Cyklopas"
+            "Cyklopas",
+            "Mantak111"
         ]
     },
     "uls-select-language": "Pasirinkite kalb\u0105",
     "uls-region-WW": "Visame pasaulyje",
+    "uls-region-SP": "Specialios",
     "uls-region-AM": "Amerika",
     "uls-region-AF": "Afrika",
     "uls-region-EU": "Europa",
