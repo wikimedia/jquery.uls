@@ -82,6 +82,10 @@
 						break;
 					}
 
+					// Avoid bubbling this 'enter' to background page elements
+					e.preventDefault();
+					e.stopPropagation();
+
 					query = $.trim( this.$element.val() ).toLowerCase();
 
 					if ( this.selectedLanguage ) {
