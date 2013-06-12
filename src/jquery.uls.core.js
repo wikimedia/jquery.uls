@@ -430,21 +430,20 @@
 	$.fn.scrollIntoView = function () {
 		return this.each( function () {
 			var scrollPosition,
-				padding = 10,
 				$window = $( window ),
 				windowHeight = $window.height(),
-				windowScrollTop = $window.scrollTop(),
-				windowBottom = windowScrollTop + windowHeight,
+				windowTop = $window.scrollTop(),
+				windowBottom = windowTop + windowHeight,
 				$element = $( this ),
 				panelHeight = $element.height(),
 				panelTop = $element.offset().top,
 				panelBottom = panelTop + panelHeight;
 
-			if ( ( panelTop < windowScrollTop ) || ( panelBottom > windowBottom ) ) {
-				if ( panelHeight > windowHeight ) {
-					scrollPosition = panelTop - padding;
+			if ( ( panelTop < windowTop ) || ( panelBottom > windowBottom ) ) {
+				if ( windowTop > panelTop ) {
+					scrollPosition = panelTop;
 				} else {
-					scrollPosition = panelBottom - windowHeight + padding;
+					scrollPosition = panelBottom - windowHeight;
 				}
 				$( 'html, body' ).stop().animate( {
 					scrollTop: scrollPosition
