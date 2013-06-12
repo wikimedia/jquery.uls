@@ -178,7 +178,8 @@
 			$.each( $.uls.data.regiongroups, function ( regionCode ) {
 				$section = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', regionCode );
 
-				$sectionTitle = $( '<h3 data-i18n="uls-region-' + regionCode + '">' )
+				$sectionTitle = $( '<h3>' )
+					.attr( 'data-i18n', 'uls-region-' + regionCode )
 					.addClass( 'eleven columns uls-lcd-region-section uls-lcd-region-title offset-by-one' )
 					.text( regions[regionCode] );
 
@@ -214,7 +215,8 @@
 			quickList.sort( $.uls.data.sortByAutonym );
 
 			$quickListSection = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', 'uls-lcd-quicklist' );
-			$quickListSectionTitle = $( '<h3 data-i18n="uls-common-languages">' )
+			$quickListSectionTitle = $( '<h3>' )
+				.attr( 'data-i18n', 'uls-common-languages' )
 				.addClass( 'eleven columns uls-lcd-region-section uls-lcd-region-title offset-by-one' )
 				.text( 'Common languages' ); // This is placeholder text if jquery.i18n not present
 			$quickListSection.append( $quickListSectionTitle );
