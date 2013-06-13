@@ -201,11 +201,7 @@
 		defaultSearch: function () {
 			this.$resultsView.lcd( 'empty' );
 
-			if ( this.options.lazyload ) {
-				this.$regionFilters.first().regionselector( 'show' );
-			} else {
-				this.$regionFilters.regionselector( 'show' );
-			}
+			this.$regionFilters.regionselector( 'show' );
 		},
 
 		/**
@@ -269,7 +265,6 @@
 				languages: uls.languages,
 				quickList: uls.options.quickList,
 				clickhandler: $.proxy( uls.select, uls ),
-				lazyload: uls.options.lazyload,
 				source: uls.$languageFilter,
 				showRegions: uls.options.showRegions
 			} ).data( 'lcd' );
@@ -412,7 +407,6 @@
 		searchAPI: null, // Language search API
 		languages: $.uls.data.getAutonyms(), // Languages to be used for ULS, default is all languages
 		quickList: null, // Array of language codes or function that returns such
-		lazyload: false, // Whether to lazy load the language list when scrolled
 		compact: false, // Show ULS in compact mode
 		showRegions: ['WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA']
 	};

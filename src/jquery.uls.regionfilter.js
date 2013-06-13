@@ -22,7 +22,7 @@
 
 	/* RegionSelector plugin definition */
 
-	var RegionSelector, delay;
+	var RegionSelector;
 
 	/**
 	 * Region selector is a language selector based on regions.
@@ -138,32 +138,8 @@
 			$target.append( langCode, region );
 		},
 
-		next: function () {
-			var regionSelector = this;
-
-			if ( !this.$element.hasClass( 'active' ) ) {
-				return true;
-			}
-
-			// Do not respond to all scroll end events, but only after a short interval
-			delay( function () {
-				var nextRegionGroupNumber = regionSelector.$element.data( 'regiongroup' ) + 1,
-					$nextRegion = $( '#uls-region-' + nextRegionGroupNumber ),
-					nextRegionSelector = $nextRegion.length && $nextRegion.data( 'regionselector' );
-
-				// If cache is defined, then it is already rendered and there's no need
-				// to re-render it.
-				if ( nextRegionSelector && nextRegionSelector.cache === null ) {
-					nextRegionSelector.show();
-				}
-			}, 100 );
-
-			return false;
-		},
-
 		listen: function () {
 			this.$element.on( 'click', $.proxy( this.click, this ) );
-			this.options.$target.$element.bind( 'scrollend', $.proxy( this.next, this ) );
 		},
 
 		click: function () {
@@ -211,13 +187,5 @@
 	};
 
 	$.fn.regionselector.Constructor = RegionSelector;
-
-	delay = ( function () {
-		var timer = 0;
-		return function ( callback, milliseconds ) {
-			clearTimeout( timer );
-			timer = setTimeout( callback, milliseconds );
-		};
-	} () );
 
 } ( jQuery ) );
