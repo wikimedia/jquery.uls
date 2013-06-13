@@ -332,7 +332,7 @@
 	$.fn.lcd.defaults = {
 		languages: null,
 		showRegions: ['WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA'],
-		lazyload: true
+		lazyload: false
 	};
 
 	$.fn.lcd.Constructor = LanguageCategoryDisplay;
