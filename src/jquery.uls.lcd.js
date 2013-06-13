@@ -107,7 +107,7 @@
 
 				// Append the element to the column in the list
 				$column = this.getColumn( regionCode );
-				lastLanguage = $column.find( 'li:last-of-type' ).data( 'code' );
+				lastLanguage = $column.find( 'li:last-child' ).data( 'code' );
 
 				if ( lastLanguage ) {
 					lastScriptGroup = $.uls.data.getScriptGroupOfLanguage( lastLanguage );
@@ -135,8 +135,8 @@
 
 			forceNew = forceNew || false;
 			$divRegionCode = this.regionDivs[regionCode];
-			$rowDiv = $divRegionCode.find( 'div.row:last-of-type' );
-			$ul = $rowDiv.find( 'ul:last-of-type' );
+			$rowDiv = $divRegionCode.find( 'div.row:last-child' );
+			$ul = $rowDiv.find( 'ul:last-child' );
 
 			// Each column can have maximum 8 languages.
 			if ( $ul.length === 0 || $ul.find( 'li' ).length >= 8 || forceNew ) {
