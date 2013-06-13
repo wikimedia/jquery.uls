@@ -77,8 +77,7 @@
 		 */
 		addToRegion: function ( langCode, region ) {
 			var i, regionCode, $li, $column, lastLanguage, lastScriptGroup, currentScriptGroup,
-				lcd = this,
-				language = lcd.options.languages[langCode],
+				language = this.options.languages[langCode],
 				langName = $.uls.data.getAutonym( langCode ) || language || langCode,
 				regions = [];
 
@@ -86,11 +85,11 @@
 				regions.push( region );
 			} else {
 				regions = $.uls.data.getRegions( langCode );
-			}
 
-			// World wide languages need not be repeated in all regions.
-			if ( $.inArray( 'WW', regions ) > -1 ) {
-				regions = [ 'WW' ];
+				// World wide languages need not be repeated in all regions.
+				if ( $.inArray( 'WW', regions ) > -1 ) {
+					regions = [ 'WW' ];
+				}
 			}
 
 			for ( i = 0; i < regions.length; i++ ) {
@@ -103,12 +102,12 @@
 						dir: $.uls.data.getDir( langCode )
 					} )
 					.append(
-						$( '<a>' ).prop( 'title', language ).html( langName )
+						$( '<a>' ).attr( 'title', language ).text( langName )
 					);
 
 				// Append the element to the column in the list
-				$column = lcd.getColumn( regionCode );
-				lastLanguage = $column.find( 'li:last' ).data( 'code' );
+				$column = this.getColumn( regionCode );
+				lastLanguage = $column.find( 'li:last-child' ).data( 'code' );
 
 				if ( lastLanguage ) {
 					lastScriptGroup = $.uls.data.getScriptGroupOfLanguage( lastLanguage );
@@ -117,7 +116,7 @@
 					if ( lastScriptGroup !== currentScriptGroup ) {
 						if ( $column.find( 'li' ).length > 2 ) {
 							// If column already has 2 or more languages, add a new column
-							$column = lcd.getColumn( regionCode, true );
+							$column = this.getColumn( regionCode, true );
 						}
 					}
 				}
@@ -136,8 +135,8 @@
 
 			forceNew = forceNew || false;
 			$divRegionCode = this.regionDivs[regionCode];
-			$rowDiv = $divRegionCode.find( 'div.row:last' );
-			$ul = $rowDiv.find( 'ul:last' );
+			$rowDiv = $divRegionCode.find( 'div.row:last-child' );
+			$ul = $rowDiv.find( 'ul:last-child' );
 
 			// Each column can have maximum 8 languages.
 			if ( $ul.length === 0 || $ul.find( 'li' ).length >= 8 || forceNew ) {
@@ -176,7 +175,7 @@
 				};
 
 			$.each( $.uls.data.regiongroups, function ( regionCode ) {
-				$section = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', regionCode );
+				$section = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).attr( 'id', regionCode );
 
 				$sectionTitle = $( '<h3>' )
 					.attr( 'data-i18n', 'uls-region-' + regionCode )
@@ -214,7 +213,7 @@
 			quickList = quickList.slice( 0, 16 );
 			quickList.sort( $.uls.data.sortByAutonym );
 
-			$quickListSection = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', 'uls-lcd-quicklist' );
+			$quickListSection = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).attr( 'id', 'uls-lcd-quicklist' );
 			$quickListSectionTitle = $( '<h3>' )
 				.attr( 'data-i18n', 'uls-common-languages' )
 				.addClass( 'eleven columns uls-lcd-region-section uls-lcd-region-title offset-by-one' )
@@ -235,7 +234,7 @@
 						dir: $.uls.data.getDir( langCode )
 					} )
 					.append(
-						$( '<a>' ).prop( 'title', language ).html( langName )
+						$( '<a>' ).attr( 'title', language ).text( langName )
 					);
 				$column.append( $li );
 			}
