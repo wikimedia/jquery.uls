@@ -70,7 +70,15 @@
 		},
 
 		show: function () {
-			var result, languagesByScriptGroup, scriptGroup, languages, i;
+			var result, languagesByScriptGroup, scriptGroup, languages, i,
+				$element = this.options.$target && this.options.$target.$element,
+				$parent = $element && $element.parent(),
+				$prev = $element && $element.prev();
+
+			if ( $element && $parent ) {
+				// Avoid reflows while adding new elements to the list
+				$element.remove();
+			}
 
 			if ( this.cache ) {
 				// If the result cache is present, render the results from there.
@@ -103,6 +111,15 @@
 						// Check whether it belongs to the region
 						this.test( languages[i] );
 					}
+				}
+			}
+
+			if ( $element && $parent ) {
+				// Restore the element to where we removed it from
+				if ( $prev ) {
+					$prev.after( $element );
+				} else {
+					$parent.append( $element );
 				}
 			}
 
