@@ -56,6 +56,12 @@
 		this.regionDivs = {};
 		this.$element.append( $( noResultsTemplate ) );
 		this.$noResults = this.$element.find( 'div.uls-no-results-view' );
+
+		this.addToRegionLastLanguage = null;
+		this.getColumnLastRegionCode = null;
+		this.getColumnRowDiv = $( [] );
+		this.getColumnUl = $( [] );
+
 		this.render();
 		this.listen();
 	};
@@ -76,7 +82,7 @@
 		 * @param region Optional region
 		 */
 		addToRegion: function ( langCode, region ) {
-			var i, regionCode, $li, $column, lastLanguage, lastScriptGroup, currentScriptGroup,
+			var i, regionCode, $li, $column, lastScriptGroup, currentScriptGroup,
 				language = this.options.languages[langCode],
 				langName = $.uls.data.getAutonym( langCode ) || language || langCode,
 				regions = [];
@@ -107,10 +113,9 @@
 
 				// Append the element to the column in the list
 				$column = this.getColumn( regionCode );
-				lastLanguage = $column.find( 'li:last-child' ).data( 'code' );
 
-				if ( lastLanguage ) {
-					lastScriptGroup = $.uls.data.getScriptGroupOfLanguage( lastLanguage );
+				if ( this.addToRegionLastLanguage ) {
+					lastScriptGroup = $.uls.data.getScriptGroupOfLanguage( this.addToRegionLastLanguage );
 					currentScriptGroup = $.uls.data.getScriptGroupOfLanguage( langCode );
 
 					if ( lastScriptGroup !== currentScriptGroup ) {
@@ -121,6 +126,7 @@
 					}
 				}
 
+				this.addToRegionLastLanguage = langCode;
 				$column.append( $li );
 			}
 		},
@@ -135,8 +141,14 @@
 
 			forceNew = forceNew || false;
 			$divRegionCode = this.regionDivs[regionCode];
-			$rowDiv = $divRegionCode.find( 'div.row:last-child' );
-			$ul = $rowDiv.find( 'ul:last-child' );
+
+			if ( this.getColumnLastRegionCode === regionCode ) {
+				$rowDiv = this.getColumnRowDiv;
+				$ul = this.getColumnUl;
+			} else {
+				$rowDiv = $( [] );
+				$ul = $( [] );
+			}
 
 			// Each column can have maximum 8 languages.
 			if ( $ul.length === 0 || $ul.find( 'li' ).length >= 8 || forceNew ) {
@@ -156,6 +168,9 @@
 				$divRegionCode.show();
 			}
 
+			this.getColumnLastRegionCode = regionCode;
+			this.getColumnRowDiv = $rowDiv;
+			this.getColumnUl = $ul;
 			return $ul;
 		},
 
