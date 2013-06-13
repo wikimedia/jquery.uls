@@ -35,7 +35,7 @@
 		this.options = $.extend( {}, $.fn.regionselector.defaults, options );
 		this.$element.addClass( 'regionselector' );
 		this.regions = [];
-		this.cache= null;
+		this.cache = null;
 		this.regionGroup = this.$element.data( 'regiongroup' );
 		this.init();
 		this.listen();
@@ -149,9 +149,12 @@
 				return;
 			}
 
-			// Re-populate the list of languages
-			this.options.$target.empty();
-			this.show();
+			// Scroll to appropriate area
+			this.options.$target.$element
+				.find( '#' + this.regions[0] )
+				.get( 0 )
+				.scrollIntoView( true, { behavior: 'smooth' } );
+
 			// Make the selected region (and it only) active
 			$( '.regionselector' ).removeClass( 'active' );
 
