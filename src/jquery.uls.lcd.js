@@ -287,11 +287,6 @@
 					scrollTop = $ulsLanguageList.position().top,
 					scrollBottom = $ulsLanguageList.height();
 
-				if ( lcd.options.lazyload && lcd.options.source.val() === '' ) {
-					if ( this.offsetHeight + this.scrollTop >= this.scrollHeight / 2 ) {
-						lcd.$element.trigger( 'scrollend' );
-					}
-				}
 				// The region section need to be in sync with the map filter.
 				inviewRegion = 'WW';
 				lcd.$element.find( 'div.uls-lcd-region-section' ).each( function () {
@@ -332,8 +327,7 @@
 
 	$.fn.lcd.defaults = {
 		languages: null,
-		showRegions: ['WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA'],
-		lazyload: false
+		showRegions: ['WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA']
 	};
 
 	$.fn.lcd.Constructor = LanguageCategoryDisplay;
