@@ -121,6 +121,8 @@
 				} else {
 					$parent.append( $element );
 				}
+				// Restore the events jQuery has helpfully removed
+				this.options.$target.listen();
 			}
 
 			if ( this.options.success ) {
