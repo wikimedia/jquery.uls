@@ -58,6 +58,7 @@
 		this.$noResults = this.$element.find( 'div.uls-no-results-view' );
 
 		this.addToRegionLastLanguage = null;
+		this.getColumnLastRegionCode = null;
 		this.getColumnRowDiv = $();
 		this.getColumnUl = $();
 
@@ -140,8 +141,14 @@
 
 			forceNew = forceNew || false;
 			$divRegionCode = this.regionDivs[regionCode];
-			$rowDiv = this.getColumnRowDiv;
-			$ul = this.getColumnUl;
+
+			if ( this.getColumnLastRegionCode === regionCode ) {
+				$rowDiv = this.getColumnRowDiv;
+				$ul = this.getColumnUl;
+			} else {
+				$rowDiv = $();
+				$ul = $();
+			}
 
 			// Each column can have maximum 8 languages.
 			if ( $ul.length === 0 || $ul.find( 'li' ).length >= 8 || forceNew ) {
@@ -161,6 +168,7 @@
 				$divRegionCode.show();
 			}
 
+			this.getColumnLastRegionCode = regionCode;
 			this.getColumnRowDiv = $rowDiv;
 			this.getColumnUl = $ul;
 			return $ul;
