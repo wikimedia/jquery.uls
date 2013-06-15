@@ -59,8 +59,8 @@
 
 		this.addToRegionLastLanguage = null;
 		this.getColumnLastRegionCode = null;
-		this.getColumnRowDiv = $();
-		this.getColumnUl = $();
+		this.getColumnRowDiv = $( [] );
+		this.getColumnUl = $( [] );
 
 		this.render();
 		this.listen();
@@ -146,8 +146,8 @@
 				$rowDiv = this.getColumnRowDiv;
 				$ul = this.getColumnUl;
 			} else {
-				$rowDiv = $();
-				$ul = $();
+				$rowDiv = $( [] );
+				$ul = $( [] );
 			}
 
 			// Each column can have maximum 8 languages.
