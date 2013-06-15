@@ -77,7 +77,8 @@
 
 			if ( $element && $parent ) {
 				// Avoid reflows while adding new elements to the list
-				$element.remove();
+				// Use .detach() to keep jQuery events and data associated with elements
+				$element.detach();
 			}
 
 			if ( this.cache ) {
@@ -121,8 +122,6 @@
 				} else {
 					$parent.append( $element );
 				}
-				// Restore the events jQuery has helpfully removed
-				this.options.$target.listen();
 			}
 
 			if ( this.options.success ) {
