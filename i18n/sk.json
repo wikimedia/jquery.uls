@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "Rudko"
+        ]
+    },
+    "uls-select-language": "Vyber jazyk",
+    "uls-region-WW": "Celosvetove",
+    "uls-region-SP": "\u0160peci\u00e1lne",
+    "uls-region-AM": "Amerika",
+    "uls-region-AF": "Afrika",
+    "uls-region-EU": "Eur\u00f3pa",
+    "uls-region-AS": "\u00c1zia",
+    "uls-region-ME": "Bl\u00edzky v\u00fdchod",
+    "uls-region-PA": "Pacifik",
+    "uls-no-results-found": "Neboli n\u00e1jden\u00e9 \u017eiadne v\u00fdsledky",
+    "uls-common-languages": "Jazyky",
+    "uls-no-results-suggestion-title": "Mohlo by \u0165a zauj\u00edma\u0165:",
+    "uls-search-help": "M\u00f4\u017ee\u0161 vyh\u013ead\u00e1va\u0165 pod\u013ea n\u00e1zvu jazyka, n\u00e1zvu p\u00edsma, ISO k\u00f3du jazyka alebo m\u00f4\u017ee\u0161 prech\u00e1dza\u0165 po regi\u00f3nech:",
+    "uls-search-placeholder": "Vyh\u013ead\u00e1vanie jazyka"
+}

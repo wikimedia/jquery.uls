@@ -1,4 +1,9 @@
 {
+    "@metadata": {
+        "authors": [
+            "Elfalem"
+        ]
+    },
     "uls-select-language": "\u124b\u1295\u124b \u1218\u121d\u1228\u132b",
     "uls-region-WW": "\u12d3\u1208\u121d \u12a0\u1240\u134d",
     "uls-region-SP": "\u120d\u12e9",
@@ -9,10 +14,5 @@
     "uls-region-ME": "\u1218\u12ab\u12a8\u1208\u129b\u12cd \u121d\u1225\u122b\u1245",
     "uls-region-PA": "\u1353\u1232\u134a\u12ad",
     "uls-search-help": "\u1260\u124b\u1295\u124b \u1235\u121d\u1363 \u12e8\u12a0\u1343\u1343\u134d \u1225\u122d\u12d3\u1275 \u1235\u121d\u1363 \u12a0\u12ed.\u12a4\u1235.\u12a6. (ISO) \u12ae\u12f5 \u1218\u1348\u1208\u130d \u12ed\u127b\u120b\u120d \u12c8\u12ed\u121d \u1260\u12a0\u12ab\u1263\u1262 \u1218\u1243\u1298\u1275 \u12ed\u127b\u120b\u120d\u1366",
-    "uls-search-placeholder": "\u124b\u1295\u124b \u134d\u1208\u130b",
-    "@metadata": {
-        "authors": [
-            "Elfalem"
-        ]
-    }
+    "uls-search-placeholder": "\u124b\u1295\u124b \u134d\u1208\u130b"
 }
