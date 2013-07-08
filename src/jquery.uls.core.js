@@ -26,7 +26,7 @@
 	// Region numbers in id attributes also appear in the langdb.
 	/*jshint multistr:true */
 	template = '\
-		<div class="grid uls-menu uls-wide"> \
+		<div class="grid uls-menu uls-wide" draggable="true"> \
 			<div class="row"> \
 				<span id="uls-close" class="icon-close"></span> \
 			</div> \
@@ -260,6 +260,9 @@
 			if ( this.eventSupported( 'keydown' ) ) {
 				this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
 			}
+			uls.$menu.on( 'dragstart', $.proxy( uls.drag, uls ) );
+			$( 'body' ).on( 'drop', $.proxy( uls.drop, uls ) )
+				.on( 'dragover', $.proxy( uls.dragOver, uls ) );
 
 			lcd = uls.$resultsView.lcd( {
 				languages: uls.languages,
@@ -364,6 +367,30 @@
 			} else {
 				this.show();
 			}
+		},
+
+		drop: function ( e ) {
+			var offset = e.originalEvent.dataTransfer.getData( 'text/plain' ).split( ',' );
+			this.$menu.css( {
+				left: e.originalEvent.clientX + parseInt( offset[0], 10 ),
+				top: e.originalEvent.clientY + parseInt( offset[1], 10 )
+			} );
+			e.preventDefault();
+			return false;
+		},
+
+		dragOver: function ( e ) {
+			e.preventDefault();
+			return false;
+		},
+
+		drag: function ( e ) {
+			var style = window.getComputedStyle( e.target, null ),
+				left = parseInt( style.getPropertyValue( 'left' ), 10 ) -  e.originalEvent.clientX,
+				top = parseInt( style.getPropertyValue( 'top' ), 10 )-  e.originalEvent.clientY;
+			console.log( left );
+			e.originalEvent.dataTransfer.setData( 'text/plain',
+				( left ) + ',' + ( top  ) );
 		},
 
 		eventSupported: function ( eventName ) {
