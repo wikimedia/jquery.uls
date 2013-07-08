@@ -444,7 +444,7 @@
 				}, 500 );
 			}
 		} );
-	}
+	};
 
 	$.fn.uls.Constructor = ULS;
 } ( jQuery ) );
