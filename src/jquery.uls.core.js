@@ -26,30 +26,30 @@
 	// Region numbers in id attributes also appear in the langdb.
 	/*jshint multistr:true */
 	template = '\
-		<div class="grid uls-menu uls-wide"> \
-			<div class="row"> \
+		<div class="uls-grid uls-menu uls-wide"> \
+			<div class="uls-row"> \
 				<span id="uls-close" class="icon-close"></span> \
 			</div> \
-			<div class="row"> \
-				<div class="uls-title-region seven columns">\
+			<div class="uls-row"> \
+				<div class="uls-title-region uls-seven uls-columns">\
 					<h1 data-i18n="uls-select-language" class="uls-title">Select Language</h1>\
 				</div>\
-				<div class="five columns map-block" id="map-block">\
-					<div class="row">\
-						<div data-regiongroup="1" id="uls-region-1" class="three columns uls-region uls-region-1">\
+				<div class="uls-five uls-columns map-block" id="map-block">\
+					<div class="uls-row">\
+						<div data-regiongroup="1" id="uls-region-1" class="uls-three uls-columns uls-region uls-region-1">\
 							<a data-i18n="uls-region-WW">Worldwide</a>\
 						</div>\
-						<div class="nine columns">\
-							<div class="row uls-worldmap">\
-								<div data-regiongroup="2" id="uls-region-2" class="four columns uls-region">\
+						<div class="uls-nine uls-columns">\
+							<div class="uls-row uls-worldmap">\
+								<div data-regiongroup="2" id="uls-region-2" class="uls-four uls-columns uls-region">\
 									<a data-i18n="uls-region-AM">America</a>\
 								</div>\
-								<div data-regiongroup="3" id="uls-region-3" class="four columns uls-region">\
+								<div data-regiongroup="3" id="uls-region-3" class="uls-four uls-columns uls-region">\
 									<a><span data-i18n="uls-region-EU">Europe</span><br>\
 									<span data-i18n="uls-region-ME">Middle East</span><br>\
 									<span data-i18n="uls-region-AF">Africa</span></a>\
 								</div>\
-								<div data-regiongroup="4" id="uls-region-4" class="four columns uls-region">\
+								<div data-regiongroup="4" id="uls-region-4" class="uls-four uls-columns uls-region">\
 									<a><span data-i18n="uls-region-AS">Asia</span><br>\
 									<span data-i18n="uls-region-PA">Pacific</span></a>\
 								</div>\
@@ -58,11 +58,11 @@
 					</div>\
 				</div>\
 			</div>\
-			<div id="search" class="row search"> \
-				<div class="one column">\
+			<div id="search" class="uls-row search"> \
+				<div class="uls-one uls-column">\
 					<span class="search-label"></span>\
 				</div>\
-				<div class="ten columns">\
+				<div class="uls-ten uls-columns">\
 					<div id="search-input-block" class="search-input-block">\
 						<input type="text" class="filterinput filtersuggestion" id="filtersuggestion" disabled="true"\
 							autocomplete="off" /> <input type="text" class="filterinput languagefilter" id="languagefilter"\
@@ -70,12 +70,12 @@
 							placeholder="Language search" autocomplete="off" />\
 					</div>\
 				</div>\
-				<div class="one column">\
+				<div class="uls-one uls-column">\
 					<span id="languagefilter-clear" class="languagefilter-clear"></span>\
 				</div>\
 			</div>\
-			<div class="row uls-language-list"></div>\
-			<div class="row" id="settings-block"></div>\
+			<div class="uls-row uls-language-list"></div>\
+			<div class="uls-row" id="settings-block"></div>\
 		</div> ';
 	/*jshint multistr:false */
 
