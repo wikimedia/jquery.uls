@@ -303,8 +303,8 @@
 				} );
 
 				inview = $.uls.data.regiongroups[inviewRegion];
-				$( '.regionselector' ).removeClass( 'active' );
-				$( '#uls-region-' + inview ).addClass( 'active' );
+				$( '.regionselector' ).removeClass( 'uls-active' );
+				$( '#uls-region-' + inview ).addClass( 'uls-active' );
 			} );
 		}
 	};

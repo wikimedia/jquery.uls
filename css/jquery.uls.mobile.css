@@ -27,8 +27,8 @@
 		float: left !important;
 	}
 
-	.uls-mobile div.map-block a,
-	.uls-mobile div.map-block {
+	.uls-mobile div.uls-map-block a,
+	.uls-mobile div.uls-map-block {
 		opacity: 1 !important;
 	}
 

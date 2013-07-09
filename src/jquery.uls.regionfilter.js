@@ -145,7 +145,7 @@
 
 		click: function () {
 			// Don't do anything if a region is selected already
-			if ( this.$element.hasClass( 'active' ) ) {
+			if ( this.$element.hasClass( 'uls-active' ) ) {
 				return;
 			}
 
@@ -153,11 +153,11 @@
 			this.options.$target.empty();
 			this.show();
 			// Make the selected region (and it only) active
-			$( '.regionselector' ).removeClass( 'active' );
+			$( '.regionselector' ).removeClass( 'uls-active' );
 
 			if ( this.regionGroup ) {
 				// if there is a region group, make it active.
-				this.$element.addClass( 'active' );
+				this.$element.addClass( 'uls-active' );
 			}
 		}
 	};

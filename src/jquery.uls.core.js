@@ -28,13 +28,13 @@
 	template = '\
 		<div class="uls-grid uls-menu uls-wide"> \
 			<div class="uls-row"> \
-				<span id="uls-close" class="icon-close"></span> \
+				<span id="uls-close" class="uls-icon-close"></span> \
 			</div> \
 			<div class="uls-row"> \
 				<div class="uls-title-region uls-seven uls-columns">\
 					<h1 data-i18n="uls-select-language" class="uls-title">Select Language</h1>\
 				</div>\
-				<div class="uls-five uls-columns map-block" id="map-block">\
+				<div class="uls-five uls-columns uls-map-block" id="uls-map-block">\
 					<div class="uls-row">\
 						<div data-regiongroup="1" id="uls-region-1" class="uls-three uls-columns uls-region uls-region-1">\
 							<a data-i18n="uls-region-WW">Worldwide</a>\
@@ -58,20 +58,20 @@
 					</div>\
 				</div>\
 			</div>\
-			<div id="search" class="uls-row search"> \
+			<div id="uls-search" class="uls-row uls-search"> \
 				<div class="uls-one uls-column">\
-					<span class="search-label"></span>\
+					<span class="uls-search-label"></span>\
 				</div>\
 				<div class="uls-ten uls-columns">\
-					<div id="search-input-block" class="search-input-block">\
-						<input type="text" class="filterinput filtersuggestion" id="filtersuggestion" disabled="true"\
-							autocomplete="off" /> <input type="text" class="filterinput languagefilter" id="languagefilter"\
+					<div id="uls-search-input-block" class="uls-search-input-block">\
+						<input type="text" class="uls-filterinput uls-filtersuggestion" id="uls-filtersuggestion" disabled="true"\
+							autocomplete="off" /> <input type="text" class="uls-filterinput uls-languagefilter" id="uls-languagefilter"\
 							data-clear="languagefilter-clear" data-suggestion="filtersuggestion"\
 							placeholder="Language search" autocomplete="off" />\
 					</div>\
 				</div>\
 				<div class="uls-one uls-column">\
-					<span id="languagefilter-clear" class="languagefilter-clear"></span>\
+					<span id="uls-languagefilter-clear" class="uls-languagefilter-clear"></span>\
 				</div>\
 			</div>\
 			<div class="uls-row uls-language-list"></div>\
@@ -102,7 +102,7 @@
 		this.shown = false;
 		this.initialized = false;
 
-		this.$languageFilter = this.$menu.find( '#languagefilter' );
+		this.$languageFilter = this.$menu.find( '#uls-languagefilter' );
 		this.$regionFilters = this.$menu.find( '.uls-region' );
 		this.$resultsView = this.$menu.find( 'div.uls-language-list' );
 
@@ -273,11 +273,11 @@
 				$target: lcd,
 				languages: uls.languages,
 				success: function () {
-					$( '.regionselector' ).removeClass( 'active' );
+					$( '.regionselector' ).removeClass( 'uls-active' );
 					uls.success();
 				},
 				noresults: function () {
-					$( '.regionselector' ).removeClass( 'active' );
+					$( '.regionselector' ).removeClass( 'uls-active' );
 					uls.noresults();
 				},
 				searchAPI: uls.options.searchAPI,
