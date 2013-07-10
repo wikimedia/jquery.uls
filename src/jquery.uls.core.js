@@ -66,7 +66,7 @@
 					<div id="uls-search-input-block" class="uls-search-input-block">\
 						<input type="text" class="uls-filterinput uls-filtersuggestion" id="uls-filtersuggestion" disabled="true"\
 							autocomplete="off" /> <input type="text" class="uls-filterinput uls-languagefilter" id="uls-languagefilter"\
-							data-clear="languagefilter-clear" data-suggestion="filtersuggestion"\
+							data-clear="uls-languagefilter-clear" data-suggestion="uls-filtersuggestion"\
 							placeholder="Language search" autocomplete="off" />\
 					</div>\
 				</div>\
@@ -75,7 +75,7 @@
 				</div>\
 			</div>\
 			<div class="uls-row uls-language-list"></div>\
-			<div class="uls-row" id="settings-block"></div>\
+			<div class="uls-row" id="uls-settings-block"></div>\
 		</div> ';
 	/*jshint multistr:false */
 
@@ -273,11 +273,11 @@
 				$target: lcd,
 				languages: uls.languages,
 				success: function () {
-					$( '.regionselector' ).removeClass( 'uls-active' );
+					$( '.uls-regionselector' ).removeClass( 'uls-active' );
 					uls.success();
 				},
 				noresults: function () {
-					$( '.regionselector' ).removeClass( 'uls-active' );
+					$( '.uls-regionselector' ).removeClass( 'uls-active' );
 					uls.noresults();
 				},
 				searchAPI: uls.options.searchAPI,

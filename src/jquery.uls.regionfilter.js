@@ -33,7 +33,7 @@
 	RegionSelector = function ( element, options ) {
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.regionselector.defaults, options );
-		this.$element.addClass( 'regionselector' );
+		this.$element.addClass( 'uls-regionselector' );
 		this.regions = [];
 		this.cache= null;
 		this.regionGroup = this.$element.data( 'regiongroup' );
@@ -153,7 +153,7 @@
 			this.options.$target.empty();
 			this.show();
 			// Make the selected region (and it only) active
-			$( '.regionselector' ).removeClass( 'uls-active' );
+			$( '.uls-regionselector' ).removeClass( 'uls-active' );
 
 			if ( this.regionGroup ) {
 				// if there is a region group, make it active.

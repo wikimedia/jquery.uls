@@ -105,67 +105,67 @@
 	}
 
 	/* Mobile 4-column Grid */
-	.uls-mobile .uls-row .mobile-one {
+	.uls-mobile .uls-row .uls-mobile-one {
 		width: 25% !important;
 		float: left;
 		padding: 0 4px;
 	}
 
-	.uls-mobile .uls-row .mobile-one:last-child {
+	.uls-mobile .uls-row .uls-mobile-one:last-child {
 		float: right;
 	}
 
-	.uls-mobile .uls-row.uls-collapse .mobile-one {
+	.uls-mobile .uls-row.uls-collapse .uls-mobile-one {
 		padding: 0;
 	}
 
-	.uls-mobile .uls-row .mobile-two {
+	.uls-mobile .uls-row .uls-mobile-two {
 		width: 50% !important;
 		float: left;
 		padding: 0 4px;
 	}
 
-	.uls-mobile .uls-row .mobile-two:last-child {
+	.uls-mobile .uls-row .uls-mobile-two:last-child {
 		float: right;
 	}
 
-	.uls-mobile .uls-row.uls-collapse .mobile-two {
+	.uls-mobile .uls-row.uls-collapse .uls-mobile-two {
 		padding: 0;
 	}
 
-	.uls-mobile .uls-row .mobile-three {
+	.uls-mobile .uls-row .uls-mobile-three {
 		width: 75% !important;
 		float: left;
 		padding: 0 4px;
 	}
 
-	.uls-mobile .uls-row .mobile-three:last-child {
+	.uls-mobile .uls-row .uls-mobile-three:last-child {
 		float: right;
 	}
 
-	.uls-mobile .uls-row.uls-collapse .mobile-three {
+	.uls-mobile .uls-row.uls-collapse .uls-mobile-three {
 		padding: 0;
 	}
 
-	.uls-mobile .uls-row .mobile-four {
+	.uls-mobile .uls-row .uls-mobile-four {
 		width: 100% !important;
 		float: left;
 		padding: 0 4px;
 	}
 
-	.uls-mobile .uls-row .mobile-four:last-child {
+	.uls-mobile .uls-row .uls-mobile-four:last-child {
 		float: right;
 	}
 
-	.uls-mobile .uls-row.uls-collapse .mobile-four {
+	.uls-mobile .uls-row.uls-collapse .uls-mobile-four {
 		padding: 0;
 	}
 
-	.uls-mobile .push-one-mobile {
+	.uls-mobile .uls-push-one-mobile {
 		left: 25%;
 	}
 
-	.uls-mobile .pull-one-mobile {
+	.uls-mobile .uls-pull-one-mobile {
 		right: 25%;
 	}
 
