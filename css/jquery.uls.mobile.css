@@ -188,132 +188,132 @@
 
 /* Visibility Classes ---------------------- */
 /* Standard (large) display targeting */
-.uls-mobile .show-for-small,
-.uls-mobile .show-for-medium,
-.uls-mobile .show-for-medium-down,
-.uls-mobile .hide-for-large,
-.uls-mobile .hide-for-large-up,
-.uls-mobile .show-for-xlarge {
+.uls-mobile .uls-show-for-small,
+.uls-mobile .uls-show-for-medium,
+.uls-mobile .uls-show-for-medium-down,
+.uls-mobile .uls-hide-for-large,
+.uls-mobile .uls-hide-for-large-up,
+.uls-mobile .uls-show-for-xlarge {
 	display: none !important;
 }
 
-.uls-mobile .hide-for-xlarge,
-.uls-mobile .show-for-large,
-.uls-mobile .show-for-large-up,
-.uls-mobile .hide-for-small,
-.uls-mobile .hide-for-medium,
-.uls-mobile .hide-for-medium-down {
+.uls-mobile .uls-hide-for-xlarge,
+.uls-mobile .uls-show-for-large,
+.uls-mobile .uls-show-for-large-up,
+.uls-mobile .uls-hide-for-small,
+.uls-mobile .uls-hide-for-medium,
+.uls-mobile .uls-hide-for-medium-down {
 	display: block !important;
 }
 
 /* Very large display targeting */
 @media only screen and (min-width: 1441px) {
 
-	.uls-mobile .hide-for-small,
-	.uls-mobile .hide-for-medium,
-	.uls-mobile .hide-for-medium-down,
-	.hide-for-large, .show-for-large-up,
-	.show-for-xlarge {
+	.uls-mobile .uls-hide-for-small,
+	.uls-mobile .uls-hide-for-medium,
+	.uls-mobile .uls-hide-for-medium-down,
+	.uls-hide-for-large, .uls-show-for-large-up,
+	.uls-show-for-xlarge {
 		display: block !important;
 	}
 
-	.show-for-small,
-	.uls-mobile .show-for-medium,
-	.uls-mobile .show-for-medium-down,
-	.uls-mobile .show-for-large,
-	.uls-mobile .hide-for-large-up,
-	.uls-mobile .hide-for-xlarge {
+	.uls-show-for-small,
+	.uls-mobile .uls-show-for-medium,
+	.uls-mobile .uls-show-for-medium-down,
+	.uls-mobile .uls-show-for-large,
+	.uls-mobile .uls-hide-for-large-up,
+	.uls-mobile .uls-hide-for-xlarge {
 		display: none !important;
 	}
 }
 /* Medium display targeting */
 @media only screen and (max-width: 1279px) and (min-width: 768px) {
 
-	.uls-mobile .hide-for-small,
-	.uls-mobile .show-for-medium,
-	.uls-mobile .show-for-medium-down,
-	.uls-mobile .hide-for-large,
-	.uls-mobile .hide-for-large-up,
-	.uls-mobile .hide-for-xlarge {
+	.uls-mobile .uls-hide-for-small,
+	.uls-mobile .uls-show-for-medium,
+	.uls-mobile .uls-show-for-medium-down,
+	.uls-mobile .uls-hide-for-large,
+	.uls-mobile .uls-hide-for-large-up,
+	.uls-mobile .uls-hide-for-xlarge {
 		display: block !important;
 	}
 
-	.uls-mobile .show-for-small,
-	.uls-mobile .hide-for-medium,
-	.uls-mobile .hide-for-medium-down,
-	.uls-mobile .show-for-large,
-	.uls-mobile .show-for-large-up,
-	.uls-mobile .show-for-xlarge {
+	.uls-mobile .uls-show-for-small,
+	.uls-mobile .uls-hide-for-medium,
+	.uls-mobile .uls-hide-for-medium-down,
+	.uls-mobile .uls-show-for-large,
+	.uls-mobile .uls-show-for-large-up,
+	.uls-mobile .uls-show-for-xlarge {
 		display: none !important;
 	}
 }
 /* Small display targeting */
 @media only screen and (max-width: 767px) {
 
-	.uls-mobile .show-for-small,
-	.uls-mobile .hide-for-medium,
-	.uls-mobile .show-for-medium-down,
-	.uls-mobile .hide-for-large,
-	.uls-mobile .hide-for-large-up,
-	.uls-mobile .hide-for-xlarge {
+	.uls-mobile .uls-show-for-small,
+	.uls-mobile .uls-hide-for-medium,
+	.uls-mobile .uls-show-for-medium-down,
+	.uls-mobile .uls-hide-for-large,
+	.uls-mobile .uls-hide-for-large-up,
+	.uls-mobile .uls-hide-for-xlarge {
 		display: block !important;
 	}
-	.uls-mobile .hide-for-small,
-	.uls-mobile .show-for-medium,
-	.uls-mobile .hide-for-medium-down,
-	.uls-mobile .show-for-large,
-	.uls-mobile .show-for-large-up,
-	.uls-mobile .show-for-xlarge {
+	.uls-mobile .uls-hide-for-small,
+	.uls-mobile .uls-show-for-medium,
+	.uls-mobile .uls-hide-for-medium-down,
+	.uls-mobile .uls-show-for-large,
+	.uls-mobile .uls-show-for-large-up,
+	.uls-mobile .uls-show-for-xlarge {
 		display: none !important;
 	}
 }
 
 /* Orientation targeting */
-.uls-mobile .show-for-landscape,
-.uls-mobile .hide-for-portrait {
+.uls-mobile .uls-show-for-landscape,
+.uls-mobile .uls-hide-for-portrait {
 	display: block !important;
 }
 
-.uls-mobile .hide-for-landscape,
-.uls-mobile .show-for-portrait {
+.uls-mobile .uls-hide-for-landscape,
+.uls-mobile .uls-show-for-portrait {
 	display: none !important;
 }
 
 @media screen and (orientation: landscape) {
-	.uls-mobile .show-for-landscape,
-	.uls-mobile .hide-for-portrait {
+	.uls-mobile .uls-show-for-landscape,
+	.uls-mobile .uls-hide-for-portrait {
 		display: block !important;
 	}
-	.uls-mobile .hide-for-landscape,
-	.uls-mobile .show-for-portrait {
+	.uls-mobile .uls-hide-for-landscape,
+	.uls-mobile .uls-show-for-portrait {
 		display: none !important;
 	}
 }
 
 @media screen and (orientation: portrait) {
-	.uls-mobile .show-for-portrait,
-	.uls-mobile .hide-for-landscape {
+	.uls-mobile .uls-show-for-portrait,
+	.uls-mobile .uls-hide-for-landscape {
 		display: block !important;
 	}
-	.uls-mobile .hide-for-portrait,
-	.uls-mobile .show-for-landscape {
+	.uls-mobile .uls-hide-for-portrait,
+	.uls-mobile .uls-show-for-landscape {
 		display: none !important;
 	}
 }
 
 /* Touch-enabled device targeting */
-.uls-mobile .show-for-touch {
+.uls-mobile .uls-show-for-touch {
 	display: none !important;
 }
 
-.uls-mobile .hide-for-touch {
+.uls-mobile .uls-hide-for-touch {
 	display: block !important;
 }
 
-.uls-mobile .touch .show-for-touch {
+.uls-mobile .uls-touch .uls-show-for-touch {
 	display: block !important;
 }
 
-.uls-mobile .touch .hide-for-touch {
+.uls-mobile .uls-touch .uls-hide-for-touch {
 	display: none !important;
 }
