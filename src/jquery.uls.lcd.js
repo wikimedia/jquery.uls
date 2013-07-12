@@ -26,12 +26,12 @@
 
 	/*jshint multistr:true */
 	noResultsTemplate = '\
-	<div class="uls-twelve uls-columns uls-no-results-view">\
-		<h2 data-i18n="uls-no-results-found" class="uls-eleven uls-columns uls-end uls-offset-by-one uls-no-results-found-title">\
+	<div class="twelve columns uls-no-results-view">\
+		<h2 data-i18n="uls-no-results-found" class="eleven columns uls-end offset-by-one uls-no-results-found-title">\
 		No results found\
 		</h2>\
 		<div id="uls-no-found-more" class="uls-no-found-more">\
-			<div class="uls-ten uls-columns uls-end uls-offset-by-one">\
+			<div class="ten columns uls-end offset-by-one">\
 				<p>\
 					<span data-i18n="uls-search-help">You can search by language name, \
 					script name, ISO code of language or \
@@ -136,17 +136,17 @@
 
 			forceNew = forceNew || false;
 			$divRegionCode = this.regionDivs[regionCode];
-			$rowDiv = $divRegionCode.find( 'div.uls-row:last' );
+			$rowDiv = $divRegionCode.find( 'div.row:last' );
 			$ul = $rowDiv.find( 'ul:last' );
 
 			// Each column can have maximum 8 languages.
 			if ( $ul.length === 0 || $ul.find( 'li' ).length >= 8 || forceNew ) {
-				$ul = $( '<ul>' ).addClass( 'uls-three uls-columns uls-end' );
+				$ul = $( '<ul>' ).addClass( 'three columns uls-end' );
 
 				if ( $rowDiv.length === 0 || $rowDiv.find( 'ul' ).length >= 4 ) {
-					$rowDiv = $( '<div>' ).addClass( 'uls-row uls-language-block' );
+					$rowDiv = $( '<div>' ).addClass( 'row uls-language-block' );
 					$divRegionCode.append( $rowDiv );
-					$ul.addClass( 'uls-offset-by-one' );
+					$ul.addClass( 'offset-by-one' );
 				}
 
 				$rowDiv.append( $ul );
@@ -176,11 +176,11 @@
 				};
 
 			$.each( $.uls.data.regiongroups, function ( regionCode ) {
-				$section = $( '<div>' ).addClass( 'uls-twelve uls-columns uls-lcd-region-section' ).prop( 'id', regionCode );
+				$section = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', regionCode );
 
 				$sectionTitle = $( '<h3>' )
 					.attr( 'data-i18n', 'uls-region-' + regionCode )
-					.addClass( 'uls-eleven uls-columns uls-lcd-region-section uls-lcd-region-title uls-offset-by-one' )
+					.addClass( 'eleven columns uls-lcd-region-section uls-lcd-region-title offset-by-one' )
 					.text( regions[regionCode] );
 
 				$section.append( $sectionTitle );
@@ -214,10 +214,10 @@
 			quickList = quickList.slice( 0, 16 );
 			quickList.sort( $.uls.data.sortByAutonym );
 
-			$quickListSection = $( '<div>' ).addClass( 'uls-twelve uls-columns uls-lcd-region-section' ).prop( 'id', 'uls-lcd-quicklist' );
+			$quickListSection = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', 'uls-lcd-quicklist' );
 			$quickListSectionTitle = $( '<h3>' )
 				.attr( 'data-i18n', 'uls-common-languages' )
-				.addClass( 'uls-eleven uls-columns uls-lcd-region-section uls-lcd-region-title uls-offset-by-one' )
+				.addClass( 'eleven columns uls-lcd-region-section uls-lcd-region-title offset-by-one' )
 				.text( 'Common languages' ); // This is placeholder text if jquery.i18n not present
 			$quickListSection.append( $quickListSectionTitle );
 			this.$element.prepend( $quickListSection );
@@ -275,7 +275,7 @@
 			var lcd = this;
 
 			if ( this.options.clickhandler ) {
-				this.$element.on( 'click', 'div.uls-row li', function () {
+				this.$element.on( 'click', 'div.row li', function () {
 					lcd.options.clickhandler.call( this, $( this ).data( 'code' ) );
 				} );
 			}
