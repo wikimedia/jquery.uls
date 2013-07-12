@@ -27,11 +27,11 @@
 	/*jshint multistr:true */
 	noResultsTemplate = '\
 	<div class="twelve columns uls-no-results-view">\
-		<h2 data-i18n="uls-no-results-found" class="eleven columns end offset-by-one uls-no-results-found-title">\
+		<h2 data-i18n="uls-no-results-found" class="eleven columns uls-end offset-by-one uls-no-results-found-title">\
 		No results found\
 		</h2>\
 		<div id="uls-no-found-more" class="uls-no-found-more">\
-			<div class="ten columns end offset-by-one">\
+			<div class="ten columns uls-end offset-by-one">\
 				<p>\
 					<span data-i18n="uls-search-help">You can search by language name, \
 					script name, ISO code of language or \
@@ -141,7 +141,7 @@
 
 			// Each column can have maximum 8 languages.
 			if ( $ul.length === 0 || $ul.find( 'li' ).length >= 8 || forceNew ) {
-				$ul = $( '<ul>' ).addClass( 'three columns end' );
+				$ul = $( '<ul>' ).addClass( 'three columns uls-end' );
 
 				if ( $rowDiv.length === 0 || $rowDiv.find( 'ul' ).length >= 4 ) {
 					$rowDiv = $( '<div>' ).addClass( 'row uls-language-block' );
@@ -303,8 +303,8 @@
 				} );
 
 				inview = $.uls.data.regiongroups[inviewRegion];
-				$( '.regionselector' ).removeClass( 'active' );
-				$( '#uls-region-' + inview ).addClass( 'active' );
+				$( '.uls-regionselector' ).removeClass( 'uls-active' );
+				$( '#uls-region-' + inview ).addClass( 'uls-active' );
 			} );
 		}
 	};

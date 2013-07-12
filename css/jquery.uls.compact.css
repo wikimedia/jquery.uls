@@ -1,6 +1,6 @@
-.uls-compact .icon-close,
+.uls-compact .uls-icon-close,
 .uls-compact .uls-title,
-.uls-compact .map-block {
+.uls-compact .uls-map-block {
 	display: none !important;
 }
 
@@ -8,7 +8,7 @@
 	border-radius: 0;
 }
 
-.uls-compact .search {
+.uls-compact .uls-search {
 	background: white;
 	border-top: none;
 	padding: 0.8em 0;
@@ -17,8 +17,8 @@
 	border-bottom-color: #DDD;
 }
 
-.uls-compact .filterinput,
-.uls-compact .filterinput:focus {
+.uls-compact .uls-filterinput,
+.uls-compact .uls-filterinput:focus {
 	background-color: transparent;
 	border: none;
 	box-shadow: none;
@@ -32,7 +32,7 @@
 	height: 20em;
 }
 
-.uls-compact .search-label {
+.uls-compact .uls-search-label {
 	background-size: 25px;
 	height: 26px;
 	width: 26px;
@@ -40,7 +40,7 @@
 	opacity: 0.8;
 }
 
-.uls-compact .languagefilter-clear {
+.uls-compact .uls-languagefilter-clear {
 	margin-left: 0;
 }
 

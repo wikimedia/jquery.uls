@@ -27,293 +27,293 @@
 		float: left !important;
 	}
 
-	.uls-mobile div.map-block a,
-	.uls-mobile div.map-block {
+	.uls-mobile div.uls-map-block a,
+	.uls-mobile div.uls-map-block {
 		opacity: 1 !important;
 	}
 
-	.uls-mobile .row {
+	.uls-mobile .uls-row {
 		width: auto;
 		min-width: 0;
 		margin-left: 0;
 		margin-right: 0;
 	}
 
-	.uls-mobile .column,
-	.uls-mobile .columns {
+	.uls-mobile .uls-column,
+	.uls-mobile .uls-columns {
 		width: auto !important;
 		float: none;
 	}
 
-	.uls-mobile .column:last-child,
-	.uls-mobile .columns:last-child {
+	.uls-mobile .uls-column:last-child,
+	.uls-mobile .uls-columns:last-child {
 		float: none;
 	}
 
-	.uls-mobile [class*="column"] + [class*="column"]:last-child {
+	.uls-mobile [class*="uls-column"] + [class*="uls-column"]:last-child {
 		float: none;
 	}
 
-	.uls-mobile .column:before,
-	.uls-mobile .uls-mobile .columns:before,
-	.uls-mobile .column:after,
-	.columns:after {
+	.uls-mobile .uls-column:before,
+	.uls-mobile .uls-mobile .uls-columns:before,
+	.uls-mobile .uls-column:after,
+	.uls-columns:after {
 		content: "";
 		display: table;
 	}
 
-	.uls-mobile .column:after,
-	.uls-mobile .columns:after {
+	.uls-mobile .uls-column:after,
+	.uls-mobile .uls-columns:after {
 		clear: both;
 	}
 
-	.uls-mobile .offset-by-one,
-	.uls-mobile .offset-by-two,
-	.uls-mobile .offset-by-three,
-	.uls-mobile .offset-by-four,
-	.uls-mobile .offset-by-five,
-	.uls-mobile .offset-by-six,
-	.uls-mobile .offset-by-seven,
-	.uls-mobile .offset-by-eight,
-	.uls-mobile .offset-by-nine,
-	.uls-mobile .offset-by-ten {
+	.uls-mobile .uls-offset-by-one,
+	.uls-mobile .uls-offset-by-two,
+	.uls-mobile .uls-offset-by-three,
+	.uls-mobile .uls-offset-by-four,
+	.uls-mobile .uls-offset-by-five,
+	.uls-mobile .uls-offset-by-six,
+	.uls-mobile .uls-offset-by-seven,
+	.uls-mobile .uls-offset-by-eight,
+	.uls-mobile .uls-offset-by-nine,
+	.uls-mobile .uls-offset-by-ten {
 		margin-left: 0 !important;
 	}
 
-	.uls-mobile .push-two,
-	.uls-mobile .push-three,
-	.uls-mobile .push-four,
-	.uls-mobile .push-five,
-	.uls-mobile .push-six,
-	.uls-mobile .push-seven,
-	.uls-mobile .push-eight,
-	.uls-mobile .push-nine,
-	.uls-mobile .push-ten {
+	.uls-mobile .uls-push-two,
+	.uls-mobile .uls-push-three,
+	.uls-mobile .uls-push-four,
+	.uls-mobile .uls-push-five,
+	.uls-mobile .uls-push-six,
+	.uls-mobile .uls-push-seven,
+	.uls-mobile .uls-push-eight,
+	.uls-mobile .uls-push-nine,
+	.uls-mobile .uls-push-ten {
 		left: auto;
 	}
 
-	.uls-mobile .pull-two,
-	.uls-mobile .pull-three,
-	.uls-mobile .pull-four,
-	.uls-mobile .pull-five,
-	.uls-mobile .pull-six,
-	.uls-mobile .pull-seven,
-	.uls-mobile .pull-eight,
-	.uls-mobile .pull-nine,
-	.uls-mobile .pull-ten {
+	.uls-mobile .uls-pull-two,
+	.uls-mobile .uls-pull-three,
+	.uls-mobile .uls-pull-four,
+	.uls-mobile .uls-pull-five,
+	.uls-mobile .uls-pull-six,
+	.uls-mobile .uls-pull-seven,
+	.uls-mobile .uls-pull-eight,
+	.uls-mobile .uls-pull-nine,
+	.uls-mobile .uls-pull-ten {
 		right: auto;
 	}
 
 	/* Mobile 4-column Grid */
-	.uls-mobile .row .mobile-one {
+	.uls-mobile .uls-row .uls-mobile-one {
 		width: 25% !important;
 		float: left;
 		padding: 0 4px;
 	}
 
-	.uls-mobile .row .mobile-one:last-child {
+	.uls-mobile .uls-row .uls-mobile-one:last-child {
 		float: right;
 	}
 
-	.uls-mobile .row.collapse .mobile-one {
+	.uls-mobile .uls-row.uls-collapse .uls-mobile-one {
 		padding: 0;
 	}
 
-	.uls-mobile .row .mobile-two {
+	.uls-mobile .uls-row .uls-mobile-two {
 		width: 50% !important;
 		float: left;
 		padding: 0 4px;
 	}
 
-	.uls-mobile .row .mobile-two:last-child {
+	.uls-mobile .uls-row .uls-mobile-two:last-child {
 		float: right;
 	}
 
-	.uls-mobile .row.collapse .mobile-two {
+	.uls-mobile .uls-row.uls-collapse .uls-mobile-two {
 		padding: 0;
 	}
 
-	.uls-mobile .row .mobile-three {
+	.uls-mobile .uls-row .uls-mobile-three {
 		width: 75% !important;
 		float: left;
 		padding: 0 4px;
 	}
 
-	.uls-mobile .row .mobile-three:last-child {
+	.uls-mobile .uls-row .uls-mobile-three:last-child {
 		float: right;
 	}
 
-	.uls-mobile .row.collapse .mobile-three {
+	.uls-mobile .uls-row.uls-collapse .uls-mobile-three {
 		padding: 0;
 	}
 
-	.uls-mobile .row .mobile-four {
+	.uls-mobile .uls-row .uls-mobile-four {
 		width: 100% !important;
 		float: left;
 		padding: 0 4px;
 	}
 
-	.uls-mobile .row .mobile-four:last-child {
+	.uls-mobile .uls-row .uls-mobile-four:last-child {
 		float: right;
 	}
 
-	.uls-mobile .row.collapse .mobile-four {
+	.uls-mobile .uls-row.uls-collapse .uls-mobile-four {
 		padding: 0;
 	}
 
-	.uls-mobile .push-one-mobile {
+	.uls-mobile .uls-push-one-mobile {
 		left: 25%;
 	}
 
-	.uls-mobile .pull-one-mobile {
+	.uls-mobile .uls-pull-one-mobile {
 		right: 25%;
 	}
 
-	.uls-mobile .push-two-mobile {
+	.uls-mobile .uls-push-two-mobile {
 		left: 50%;
 	}
 
-	.uls-mobile .pull-two-mobile {
+	.uls-mobile .uls-pull-two-mobile {
 		right: 50%;
 	}
 
-	.uls-mobile .push-three-mobile {
+	.uls-mobile .uls-push-three-mobile {
 		left: 75%;
 	}
 
-	.uls-mobile .pull-three-mobile {
+	.uls-mobile .uls-pull-three-mobile {
 		right: 75%;
 	}
 }
 
 /* Visibility Classes ---------------------- */
 /* Standard (large) display targeting */
-.uls-mobile .show-for-small,
-.uls-mobile .show-for-medium,
-.uls-mobile .show-for-medium-down,
-.uls-mobile .hide-for-large,
-.uls-mobile .hide-for-large-up,
-.uls-mobile .show-for-xlarge {
+.uls-mobile .uls-show-for-small,
+.uls-mobile .uls-show-for-medium,
+.uls-mobile .uls-show-for-medium-down,
+.uls-mobile .uls-hide-for-large,
+.uls-mobile .uls-hide-for-large-up,
+.uls-mobile .uls-show-for-xlarge {
 	display: none !important;
 }
 
-.uls-mobile .hide-for-xlarge,
-.uls-mobile .show-for-large,
-.uls-mobile .show-for-large-up,
-.uls-mobile .hide-for-small,
-.uls-mobile .hide-for-medium,
-.uls-mobile .hide-for-medium-down {
+.uls-mobile .uls-hide-for-xlarge,
+.uls-mobile .uls-show-for-large,
+.uls-mobile .uls-show-for-large-up,
+.uls-mobile .uls-hide-for-small,
+.uls-mobile .uls-hide-for-medium,
+.uls-mobile .uls-hide-for-medium-down {
 	display: block !important;
 }
 
 /* Very large display targeting */
 @media only screen and (min-width: 1441px) {
 
-	.uls-mobile .hide-for-small,
-	.uls-mobile .hide-for-medium,
-	.uls-mobile .hide-for-medium-down,
-	.hide-for-large, .show-for-large-up,
-	.show-for-xlarge {
+	.uls-mobile .uls-hide-for-small,
+	.uls-mobile .uls-hide-for-medium,
+	.uls-mobile .uls-hide-for-medium-down,
+	.uls-hide-for-large, .uls-show-for-large-up,
+	.uls-show-for-xlarge {
 		display: block !important;
 	}
 
-	.show-for-small,
-	.uls-mobile .show-for-medium,
-	.uls-mobile .show-for-medium-down,
-	.uls-mobile .show-for-large,
-	.uls-mobile .hide-for-large-up,
-	.uls-mobile .hide-for-xlarge {
+	.uls-show-for-small,
+	.uls-mobile .uls-show-for-medium,
+	.uls-mobile .uls-show-for-medium-down,
+	.uls-mobile .uls-show-for-large,
+	.uls-mobile .uls-hide-for-large-up,
+	.uls-mobile .uls-hide-for-xlarge {
 		display: none !important;
 	}
 }
 /* Medium display targeting */
 @media only screen and (max-width: 1279px) and (min-width: 768px) {
 
-	.uls-mobile .hide-for-small,
-	.uls-mobile .show-for-medium,
-	.uls-mobile .show-for-medium-down,
-	.uls-mobile .hide-for-large,
-	.uls-mobile .hide-for-large-up,
-	.uls-mobile .hide-for-xlarge {
+	.uls-mobile .uls-hide-for-small,
+	.uls-mobile .uls-show-for-medium,
+	.uls-mobile .uls-show-for-medium-down,
+	.uls-mobile .uls-hide-for-large,
+	.uls-mobile .uls-hide-for-large-up,
+	.uls-mobile .uls-hide-for-xlarge {
 		display: block !important;
 	}
 
-	.uls-mobile .show-for-small,
-	.uls-mobile .hide-for-medium,
-	.uls-mobile .hide-for-medium-down,
-	.uls-mobile .show-for-large,
-	.uls-mobile .show-for-large-up,
-	.uls-mobile .show-for-xlarge {
+	.uls-mobile .uls-show-for-small,
+	.uls-mobile .uls-hide-for-medium,
+	.uls-mobile .uls-hide-for-medium-down,
+	.uls-mobile .uls-show-for-large,
+	.uls-mobile .uls-show-for-large-up,
+	.uls-mobile .uls-show-for-xlarge {
 		display: none !important;
 	}
 }
 /* Small display targeting */
 @media only screen and (max-width: 767px) {
 
-	.uls-mobile .show-for-small,
-	.uls-mobile .hide-for-medium,
-	.uls-mobile .show-for-medium-down,
-	.uls-mobile .hide-for-large,
-	.uls-mobile .hide-for-large-up,
-	.uls-mobile .hide-for-xlarge {
+	.uls-mobile .uls-show-for-small,
+	.uls-mobile .uls-hide-for-medium,
+	.uls-mobile .uls-show-for-medium-down,
+	.uls-mobile .uls-hide-for-large,
+	.uls-mobile .uls-hide-for-large-up,
+	.uls-mobile .uls-hide-for-xlarge {
 		display: block !important;
 	}
-	.uls-mobile .hide-for-small,
-	.uls-mobile .show-for-medium,
-	.uls-mobile .hide-for-medium-down,
-	.uls-mobile .show-for-large,
-	.uls-mobile .show-for-large-up,
-	.uls-mobile .show-for-xlarge {
+	.uls-mobile .uls-hide-for-small,
+	.uls-mobile .uls-show-for-medium,
+	.uls-mobile .uls-hide-for-medium-down,
+	.uls-mobile .uls-show-for-large,
+	.uls-mobile .uls-show-for-large-up,
+	.uls-mobile .uls-show-for-xlarge {
 		display: none !important;
 	}
 }
 
 /* Orientation targeting */
-.uls-mobile .show-for-landscape,
-.uls-mobile .hide-for-portrait {
+.uls-mobile .uls-show-for-landscape,
+.uls-mobile .uls-hide-for-portrait {
 	display: block !important;
 }
 
-.uls-mobile .hide-for-landscape,
-.uls-mobile .show-for-portrait {
+.uls-mobile .uls-hide-for-landscape,
+.uls-mobile .uls-show-for-portrait {
 	display: none !important;
 }
 
 @media screen and (orientation: landscape) {
-	.uls-mobile .show-for-landscape,
-	.uls-mobile .hide-for-portrait {
+	.uls-mobile .uls-show-for-landscape,
+	.uls-mobile .uls-hide-for-portrait {
 		display: block !important;
 	}
-	.uls-mobile .hide-for-landscape,
-	.uls-mobile .show-for-portrait {
+	.uls-mobile .uls-hide-for-landscape,
+	.uls-mobile .uls-show-for-portrait {
 		display: none !important;
 	}
 }
 
 @media screen and (orientation: portrait) {
-	.uls-mobile .show-for-portrait,
-	.uls-mobile .hide-for-landscape {
+	.uls-mobile .uls-show-for-portrait,
+	.uls-mobile .uls-hide-for-landscape {
 		display: block !important;
 	}
-	.uls-mobile .hide-for-portrait,
-	.uls-mobile .show-for-landscape {
+	.uls-mobile .uls-hide-for-portrait,
+	.uls-mobile .uls-show-for-landscape {
 		display: none !important;
 	}
 }
 
 /* Touch-enabled device targeting */
-.uls-mobile .show-for-touch {
+.uls-mobile .uls-show-for-touch {
 	display: none !important;
 }
 
-.uls-mobile .hide-for-touch {
+.uls-mobile .uls-hide-for-touch {
 	display: block !important;
 }
 
-.uls-mobile .touch .show-for-touch {
+.uls-mobile .uls-touch .uls-show-for-touch {
 	display: block !important;
 }
 
-.uls-mobile .touch .hide-for-touch {
+.uls-mobile .uls-touch .uls-hide-for-touch {
 	display: none !important;
 }
