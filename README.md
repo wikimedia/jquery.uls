@@ -19,7 +19,93 @@ git clone https://github.com/wikimedia/jquery.uls.git
 Documentation
 -------------
 
-For documentation and examples please visit the [wiki](https://github.com/wikimedia/jquery.uls/wiki/_pages)
+The quick and easy way to learn usage of jquery.uls is trying out the examples/index.html in some webserver. Try it from here: http://thottingal.in/projects/js/jquery.uls/examples/
+
+The jQuery.uls provides a jQuery extension ```$.fn.uls``` that can be attached to a trigger element. The expected behavior is, when you click on the trigger, the language selector opens up.
+
+The trigger can be a link, button or any valid jQuery element.
+
+Example:
+```javascript
+$( '.uls-trigger' ).uls( );
+```
+
+To use the selected language, you need define a selection Handler as shown below
+
+```javascript
+$( '.uls-trigger' ).uls( {
+  onSelect : function( language ) {
+  // language is a ISO 639 language code. eg: en, hi, fi, he etc
+  // Your selection handler code goes here.
+  }
+} );
+```
+
+In some usecases, you may need to provide a quick list of languages to select before going through all languages. For eg, it can a list of recently selected langauges, language suggestions based on Geo IP.
+That can be done as follows
+
+```javascript
+$( '.uls-trigger' ).uls( {
+  onSelect : function( language ) {
+  // language is a ISO 639 language code. eg: en, hi, fi, he etc
+  // Your selection handler code goes here.
+  },
+  quickList: [ 'en', 'ml', 'hi' ] // An array of language codes. Can be a function that returns this array too.
+} );
+```
+
+If the search needs to be more complex(such as cross language search, spelling error tolerating etc), a search API option can be provided.
+
+```javascript
+$( '.uls-trigger' ).uls( {
+  onSelect : function( language ) {
+  // language is a ISO 639 language code. eg: en, hi, fi, he etc
+  // Your selection handler code goes here.
+  },
+  searchAPI: apiURL,
+  quickList: [ 'en', 'ml', 'hi' ] // An array of language codes. Can be a function that returns this array too.
+} );
+```
+
+Example for such an api is used in Wikipedia: http://en.wikipedia.org/w/api.php?action=languagesearch&search=Te
+
+ULS knows about 500 languages. If you dont want to use that many languages for your usecase, use languages option.
+
+
+```javascript
+$( '.uls-trigger' ).uls( {
+  onSelect : function( language ) {
+  // language is a ISO 639 language code. eg: en, hi, fi, he etc
+  // Your selection handler code goes here.
+  },
+  languages: { languageCode1: languageName, languageCode2: languageName2 , .... },
+  searchAPI: apiURL,
+  quickList: [ 'en', 'ml', 'hi' ] // An array of language codes. Can be a function that returns this array too.
+} );
+```
+
+Features
+--------
+jQuery.uls has an elaborative langauge information collection. It knows about
+1. the script in which a language is written.
+2. The script code
+3. The language code
+4. The regions in which the language is spoken
+5. The autonym - language name written in its own script
+
+With all these information the search becomes very effective. Based on the spoken regions, the UI organize the languages. In side regions
+the language is again organized based on scripts.
+
+A user can search for a language based on script name.
+
+ULS can autocomplete a language name search.
+
+An advanced usage of jQuery.uls can be tried out from wikimedia sites. For eg, see the language icon at the top of http://mediawiki.org
+
+More details
+------------
+* Technical design - https://www.mediawiki.org/wiki/Universal_Language_Selector/Design
+* UX Design https://www.mediawiki.org/wiki/Universal_Language_Selector/Design
 
 
 How to build and test jQuery ULS
