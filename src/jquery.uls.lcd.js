@@ -331,5 +331,4 @@
 	};
 
 	$.fn.lcd.Constructor = LanguageCategoryDisplay;
-
 } ( jQuery ) );
