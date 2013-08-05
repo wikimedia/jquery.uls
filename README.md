@@ -41,7 +41,7 @@ $( '.uls-trigger' ).uls( {
 } );
 ```
 
-In some usecases, you may need to provide a quick list of languages to select before going through all languages. For eg, it can a list of recently selected langauges, language suggestions based on Geo IP.
+In some usecases, you may need to provide a quick list of languages to select before going through all languages. For eg, it can a list of recently selected languages, language suggestions based on Geo IP.
 That can be done as follows
 
 ```javascript
@@ -86,7 +86,7 @@ $( '.uls-trigger' ).uls( {
 
 Features
 --------
-jQuery.uls has an elaborative langauge information collection. It knows about
+jQuery.uls has an elaborative language information collection. It knows about
 1. the script in which a language is written.
 2. The script code
 3. The language code
