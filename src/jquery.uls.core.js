@@ -224,6 +224,7 @@
 		 * Callback for no results found context.
 		 */
 		noresults: function () {
+			$( '.regionselector' ).removeClass( 'active' );
 			this.$resultsView.lcd( 'noResults' );
 		},
 
@@ -231,6 +232,7 @@
 		 * callback for results found context.
 		 */
 		success: function () {
+			$( '.regionselector' ).removeClass( 'active' );
 			this.$resultsView.show();
 		},
 
@@ -244,7 +246,9 @@
 			// Register all event listeners to the ULS here.
 			uls.$element.on( 'click', $.proxy( uls.click, uls ) );
 
-			uls.$languageFilter.on( 'searchclear', $.proxy( uls.defaultSearch, uls ) );
+			uls.$languageFilter.on( 'searchclear.uls', $.proxy( uls.defaultSearch, uls ) );
+			uls.$languageFilter.on( 'noresults.uls', $.proxy( uls.noresults, uls ) );
+			uls.$languageFilter.on( 'resultsfound.uls', $.proxy( uls.success, uls ) );
 
 			// Close when clicking on the close button
 			uls.$menu.find( '#uls-close' ).on( 'click', $.proxy( uls.cancel, uls ) );
@@ -272,14 +276,6 @@
 			uls.$languageFilter.languagefilter( {
 				$target: lcd,
 				languages: uls.languages,
-				success: function () {
-					$( '.regionselector' ).removeClass( 'active' );
-					uls.success();
-				},
-				noresults: function () {
-					$( '.regionselector' ).removeClass( 'active' );
-					uls.noresults();
-				},
 				searchAPI: uls.options.searchAPI,
 				onSelect: $.proxy( uls.select, uls )
 			} );

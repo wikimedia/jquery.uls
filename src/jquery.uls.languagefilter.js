@@ -143,7 +143,7 @@
 		 */
 		clear: function() {
 			this.deactivate();
-			this.$element.trigger( 'searchclear' );
+			this.$element.trigger( 'searchclear.uls' );
 		},
 
 		/**
@@ -222,15 +222,15 @@
 
 		/**
 		 * Handler method to be called once search is over.
-		 * Based on search result call success or noresults callbacks
+		 * Based on search result triggers resultsfound or noresults events
 		 * @param query string
 		 */
 		resultHandler: function( query ) {
-			if ( this.resultCount === 0 && this.options.noresults ) {
+			if ( this.resultCount === 0 ) {
 				this.$suggestion.val( '' );
-				this.options.noresults.call( this, query );
-			} else if ( this.options.success ) {
-				this.options.success( this, query, this.resultCount );
+				this.$element.trigger( 'noresults.uls', query );
+			} else {
+				this.$element.trigger( 'resultsfound.uls', [query, this.resultCount] );
 			}
 		},
 
@@ -339,8 +339,6 @@
 		$target: null, // Where to append the results
 		searchAPI: null,
 		languages: null, // Languages as code:name format.
-		noresults: null, // callback for no results found case
-		success: null, // callback if any results found.
 		onSelect: null // Language select handler - like enter in filter textbox.
 	};
 
