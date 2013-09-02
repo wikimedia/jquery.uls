@@ -1,11 +1,13 @@
 {
     "@metadata": {
         "authors": [
+            "Papuass",
             "Ttdnet"
         ]
     },
     "uls-select-language": "Izv\u0113lieties valodu",
     "uls-region-WW": "Vis\u0101 pasaul\u0113",
+    "uls-region-SP": "\u012apa\u0161\u0101s",
     "uls-region-AM": "Amerika",
     "uls-region-AF": "\u0100frika",
     "uls-region-EU": "Eiropa",
