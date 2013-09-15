@@ -98,6 +98,7 @@
 
 				$li = $( '<li>' )
 					.data( 'code', langCode )
+					.addClass( 'autonym' )
 					.attr( {
 						lang: langCode,
 						dir: $.uls.data.getDir( langCode )
@@ -230,6 +231,7 @@
 				langName = $.uls.data.getAutonym( langCode ) || language || langCode;
 				$li = $( '<li>' )
 					.data( 'code', langCode )
+					.addClass( 'autonym' )
 					.attr( {
 						lang: langCode,
 						dir: $.uls.data.getDir( langCode )
