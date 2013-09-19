@@ -160,14 +160,19 @@
 		 * Show the ULS window
 		 */
 		show: function () {
-			this.$menu.css( this.position() );
-
+			if ( !this.$element.data( 'target') ) {
+				this.$menu.css( this.position() );
+			}
 			if ( this.options.compact ) {
 				this.$menu.addClass( 'uls-compact' );
 			}
 
 			if ( !this.initialized ) {
-				$( 'body' ).prepend( this.$menu );
+				if ( this.$element.data( 'target') ) {
+					$( this.$element.data( 'target' ) ).append( this.$menu );
+				} else {
+					$( 'body' ).prepend( this.$menu );
+				}
 				this.i18n();
 
 				// Initialize with a full search.
