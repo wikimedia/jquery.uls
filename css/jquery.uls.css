@@ -111,10 +111,8 @@ div.uls-region {
 	/*Cross-browser background transparency*/
 	background: #3366bb;
 	background: rgba(51, 102, 187, 0.1);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb,
-		endColorstr=#253366bb );
-	-ms-filter:
-		"progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb, endColorstr=#253366bb)";
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb, endColorstr=#253366bb );
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb, endColorstr=#253366bb)";
 }
 
 .map-block .active {
