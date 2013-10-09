@@ -114,7 +114,6 @@
 		return allRegions;
 	};
 
-
 	/**
 	 * Returns all languages written in script.
 	 * @param script string
@@ -363,7 +362,6 @@
 
 		return regionsInGroup;
 	};
-
 
 	/**
 	 * Returns the script group of a script or 'Other' if it doesn't

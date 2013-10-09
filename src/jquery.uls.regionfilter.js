@@ -35,7 +35,7 @@
 		this.options = $.extend( {}, $.fn.regionselector.defaults, options );
 		this.$element.addClass( 'regionselector' );
 		this.regions = [];
-		this.cache= null;
+		this.cache = null;
 		this.regionGroup = this.$element.data( 'regiongroup' );
 		this.init();
 		this.listen();
@@ -188,5 +188,4 @@
 	};
 
 	$.fn.regionselector.Constructor = RegionSelector;
-
 } ( jQuery ) );
