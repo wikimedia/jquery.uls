@@ -1,0 +1,20 @@
+{
+    "@metadata": {
+        "authors": [
+            "Mogoeilor"
+        ]
+    },
+    "uls-select-language": "\u0632\u0648\u0646 \u0627\u0646\u062a\u062e\u0627\u0648 \u0628\u064a\u0647",
+    "uls-region-WW": "\u0643\u0644 \u062f\u0648\u0646\u064a\u0627",
+    "uls-region-SP": "\u0648\u064a\u062c\u0647",
+    "uls-region-AM": "\u0627\u0645\u0631\u0643\u0627",
+    "uls-region-AF": "\u0627\u0641\u0631\u0642\u0627",
+    "uls-region-EU": "\u0627\u0648\u0631\u0648\u067e\u0627",
+    "uls-region-AS": "\u0622\u0633\u064a\u0627",
+    "uls-region-ME": "\u0645\u064a\u0646\u062c\u0627 \u062e\u0627\u0648\u0631",
+    "uls-region-PA": "\u0647\u0648\u0645 \u067e\u064a\u0648\u0633\u062a \u062c\u0647\u0648\u0646 \u0622\u0648\u06cc",
+    "uls-no-results-found": "\u0647\u064a\u0686 \u0646\u062a\u064a\u062c\u0647 \u064a\u06cc  \u062c\u0633\u062a\u0647 \u0646\u0628\u06cc",
+    "uls-common-languages": "\u0632\u0648\u0646\u0627 \u0631\u0627\u064a\u062c",
+    "uls-no-results-suggestion-title": "\u0634\u0645\u0627 \u0645\u0645\u0643\u0646\u0647 \u062f\u0634 \u0639\u0644\u0627\u0642\u0647 \u0645\u0646 \u0628\u0648\u0626\u064a\u062a",
+    "uls-search-placeholder": "\u067e\u06cc  \u062c\u0648\u0631\u06cc  \u0632\u0648\u0646\u06cc"
+}
