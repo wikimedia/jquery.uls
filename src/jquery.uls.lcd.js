@@ -98,7 +98,6 @@
 
 				$li = $( '<li>' )
 					.data( 'code', langCode )
-					.addClass( 'autonym' )
 					.attr( {
 						lang: langCode,
 						dir: $.uls.data.getDir( langCode )
@@ -142,7 +141,7 @@
 
 			// Each column can have maximum 8 languages.
 			if ( $ul.length === 0 || $ul.find( 'li' ).length >= 8 || forceNew ) {
-				$ul = $( '<ul>' ).addClass( 'three columns end' );
+				$ul = $( '<ul>' ).addClass( 'three columns end autonym' );
 
 				if ( $rowDiv.length === 0 || $rowDiv.find( 'ul' ).length >= 4 ) {
 					$rowDiv = $( '<div>' ).addClass( 'row uls-language-block' );
@@ -231,7 +230,6 @@
 				langName = $.uls.data.getAutonym( langCode ) || language || langCode;
 				$li = $( '<li>' )
 					.data( 'code', langCode )
-					.addClass( 'autonym' )
 					.attr( {
 						lang: langCode,
 						dir: $.uls.data.getDir( langCode )

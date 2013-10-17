@@ -262,11 +262,12 @@ div.uls-region {
 @font-face {
 	font-family: 'Autonym';
 	src: url('font/Autonym.eot');
-	src: local('Autonym'), url('font/Autonym.woff') format('woff'), url('font/Autonym.ttf') format('truetype');
+	src: local('Autonym'),
+		url('font/Autonym.woff') format('woff'),
+		url('font/Autonym.ttf') format('truetype');
 	font-style: normal;
 }
 
 .autonym {
 	font-family: 'Autonym', sans-serif;
-	font-size: 1em;
 }
