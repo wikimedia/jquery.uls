@@ -462,5 +462,4 @@
 
 		return false;
 	};
-
 } ( jQuery ) );
