@@ -77,8 +77,7 @@
 		 */
 		addToRegion: function ( langCode, region ) {
 			var i, regionCode, $li, $column, lastLanguage, lastScriptGroup, currentScriptGroup,
-				lcd = this,
-				language = lcd.options.languages[langCode],
+				language = this.options.languages[langCode],
 				langName = $.uls.data.getAutonym( langCode ) || language || langCode,
 				regions = [];
 
@@ -107,7 +106,7 @@
 					);
 
 				// Append the element to the column in the list
-				$column = lcd.getColumn( regionCode );
+				$column = this.getColumn( regionCode );
 				lastLanguage = $column.find( 'li:last' ).data( 'code' );
 
 				if ( lastLanguage ) {
@@ -117,7 +116,7 @@
 					if ( lastScriptGroup !== currentScriptGroup ) {
 						if ( $column.find( 'li' ).length > 2 ) {
 							// If column already has 2 or more languages, add a new column
-							$column = lcd.getColumn( regionCode, true );
+							$column = this.getColumn( regionCode, true );
 						}
 					}
 				}
