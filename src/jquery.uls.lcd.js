@@ -102,7 +102,7 @@
 						dir: $.uls.data.getDir( langCode )
 					} )
 					.append(
-						$( '<a>' ).prop( 'title', language ).text( langName )
+						$( '<a>' ).attr( 'title', language ).text( langName )
 					);
 
 				// Append the element to the column in the list
@@ -175,7 +175,7 @@
 				};
 
 			$.each( $.uls.data.regiongroups, function ( regionCode ) {
-				$section = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', regionCode );
+				$section = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).attr( 'id', regionCode );
 
 				$sectionTitle = $( '<h3>' )
 					.attr( 'data-i18n', 'uls-region-' + regionCode )
@@ -213,7 +213,7 @@
 			quickList = quickList.slice( 0, 16 );
 			quickList.sort( $.uls.data.sortByAutonym );
 
-			$quickListSection = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).prop( 'id', 'uls-lcd-quicklist' );
+			$quickListSection = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).attr( 'id', 'uls-lcd-quicklist' );
 			$quickListSectionTitle = $( '<h3>' )
 				.attr( 'data-i18n', 'uls-common-languages' )
 				.addClass( 'eleven columns uls-lcd-region-section uls-lcd-region-title offset-by-one' )
@@ -234,7 +234,7 @@
 						dir: $.uls.data.getDir( langCode )
 					} )
 					.append(
-						$( '<a>' ).prop( 'title', language ).text( langName )
+						$( '<a>' ).attr( 'title', language ).text( langName )
 					);
 				$column.append( $li );
 			}
