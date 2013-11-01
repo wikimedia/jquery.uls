@@ -70,7 +70,7 @@ foreach ( $supplementalData->territoryInfo->territory as $territoryRecord ) {
 }
 
 print "Writing JSON langdb...\n";
-$json = json_encode( $parsedLangdb );
+$json = json_encode( $parsedLangdb, JSON_UNESCAPED_UNICODE );
 $js = <<<JAVASCRIPT
 // Please do not edit. This file is generated from data/langdb.yaml by ulsdata2json.php
 ( function ( $ ) {
