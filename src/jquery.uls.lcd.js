@@ -301,9 +301,12 @@
 					}
 				} );
 
+				// highlight the region visible while scrolling in the map.
 				inview = $.uls.data.regiongroups[inviewRegion];
-				$( '.regionselector' ).removeClass( 'active' );
-				$( '#uls-region-' + inview ).addClass( 'active' );
+				if ( !$( '#uls-region-' + inview ).hasClass( 'active' ) ) {
+					$( '.regionselector' ).removeClass( 'active' );
+					$( '#uls-region-' + inview ).addClass( 'active' );
+				}
 			} );
 		}
 	};
