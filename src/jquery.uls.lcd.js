@@ -145,7 +145,6 @@
 				if ( $rowDiv.length === 0 || $rowDiv.find( 'ul' ).length >= 4 ) {
 					$rowDiv = $( '<div>' ).addClass( 'row uls-language-block' );
 					$divRegionCode.append( $rowDiv );
-					$ul.addClass( 'offset-by-one' );
 				}
 
 				$rowDiv.append( $ul );
@@ -175,11 +174,11 @@
 				};
 
 			$.each( $.uls.data.regiongroups, function ( regionCode ) {
-				$section = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).attr( 'id', regionCode );
+				$section = $( '<div>' ).addClass( 'eleven columns offset-by-one uls-lcd-region-section' ).attr( 'id', regionCode );
 
 				$sectionTitle = $( '<h3>' )
 					.attr( 'data-i18n', 'uls-region-' + regionCode )
-					.addClass( 'eleven columns uls-lcd-region-section uls-lcd-region-title offset-by-one' )
+					.addClass( 'eleven columns uls-lcd-region-section uls-lcd-region-title' )
 					.text( regions[regionCode] );
 
 				$section.append( $sectionTitle );
@@ -213,10 +212,10 @@
 			quickList = quickList.slice( 0, 16 );
 			quickList.sort( $.uls.data.sortByAutonym );
 
-			$quickListSection = $( '<div>' ).addClass( 'twelve columns uls-lcd-region-section' ).attr( 'id', 'uls-lcd-quicklist' );
+			$quickListSection = $( '<div>' ).addClass( 'eleven columns offset-by-one uls-lcd-region-section' ).attr( 'id', 'uls-lcd-quicklist' );
 			$quickListSectionTitle = $( '<h3>' )
 				.attr( 'data-i18n', 'uls-common-languages' )
-				.addClass( 'eleven columns uls-lcd-region-section uls-lcd-region-title offset-by-one' )
+				.addClass( 'eleven columns uls-lcd-region-section uls-lcd-region-title' )
 				.text( 'Common languages' ); // This is placeholder text if jquery.i18n not present
 			$quickListSection.append( $quickListSectionTitle );
 			this.$element.prepend( $quickListSection );
