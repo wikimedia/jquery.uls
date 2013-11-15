@@ -64,6 +64,10 @@
 		constructor: LanguageCategoryDisplay,
 
 		append: function ( langCode, regionCode ) {
+			if ( !this.options.languages[langCode] ) {
+				// Language is unknown or not in the list of langauges for this context.
+				return;
+			}
 			this.addToRegion( langCode, regionCode );
 			this.$noResults.hide();
 		},
