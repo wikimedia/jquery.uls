@@ -65,7 +65,7 @@
 
 		append: function ( langCode, regionCode ) {
 			if ( !this.options.languages[langCode] ) {
-				// Language is unknown or not in the list of langauges for this context.
+				// Language is unknown or not in the list of languages for this context.
 				return;
 			}
 			this.addToRegion( langCode, regionCode );
