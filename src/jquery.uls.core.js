@@ -90,9 +90,7 @@
 
 		for ( var code in this.languages ) {
 			if ( $.uls.data.languages[code] === undefined ) {
-				if ( window.console && window.console.log ) {
-					window.console.log( 'ULS: Unknown language ' + code + '.' );
-				}
+				// Language is unknown to ULS.
 				delete this.languages[code];
 			}
 		}
