@@ -5,18 +5,18 @@
             "Waldir"
         ]
     },
-    "uls-select-language": "Escolha a l\u00edngua",
+    "uls-select-language": "Escolha a língua",
     "uls-region-WW": "Global",
     "uls-region-SP": "Especiais",
-    "uls-region-AM": "Am\u00e9rica",
-    "uls-region-AF": "\u00c1frica",
+    "uls-region-AM": "América",
+    "uls-region-AF": "África",
     "uls-region-EU": "Europa",
-    "uls-region-AS": "\u00c1sia",
-    "uls-region-ME": "M\u00e9dio Oriente",
-    "uls-region-PA": "Pac\u00edfico",
-    "uls-no-results-found": "N\u00e3o foram encontrados resultados",
-    "uls-common-languages": "L\u00ednguas comuns",
-    "uls-no-results-suggestion-title": "Voc\u00ea pode estar interessado em:",
-    "uls-search-help": "Voc\u00ea pode pesquisar pwlo nome da l\u00edngua, o nome do alfabeto, c\u00f3digo ISO da l\u00edngua, ou voc\u00ea pode procurar por regi\u00e3o:",
-    "uls-search-placeholder": "Procurar l\u00edngua"
+    "uls-region-AS": "Ásia",
+    "uls-region-ME": "Médio Oriente",
+    "uls-region-PA": "Pacífico",
+    "uls-no-results-found": "Não foram encontrados resultados",
+    "uls-common-languages": "Línguas comuns",
+    "uls-no-results-suggestion-title": "Você pode estar interessado em:",
+    "uls-search-help": "Você pode pesquisar pwlo nome da língua, o nome do alfabeto, código ISO da língua, ou você pode procurar por região:",
+    "uls-search-placeholder": "Procurar língua"
 }

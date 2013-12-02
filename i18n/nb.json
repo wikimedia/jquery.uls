@@ -5,18 +5,18 @@
             "Wouterkoch"
         ]
     },
-    "uls-select-language": "Velg spr\u00e5k",
+    "uls-select-language": "Velg språk",
     "uls-region-WW": "Verdensomspennende",
     "uls-region-SP": "Spesielle",
     "uls-region-AM": "Amerika",
     "uls-region-AF": "Afrika",
     "uls-region-EU": "Europa",
     "uls-region-AS": "Asia",
-    "uls-region-ME": "Midt\u00f8sten",
-    "uls-region-PA": "Stillehavsomr\u00e5det",
+    "uls-region-ME": "Midtøsten",
+    "uls-region-PA": "Stillehavsområdet",
     "uls-no-results-found": "Ingen resultater funnet",
-    "uls-common-languages": "Vanlige spr\u00e5k",
+    "uls-common-languages": "Vanlige språk",
     "uls-no-results-suggestion-title": "Dette kan kanskje interessere deg:",
-    "uls-search-help": "Du kan s\u00f8ke basert p\u00e5 spr\u00e5kets navn, skriptnavn eller ISO-kode, eller bla basert p\u00e5 region:",
-    "uls-search-placeholder": "Spr\u00e5ks\u00f8k"
+    "uls-search-help": "Du kan søke basert på språkets navn, skriptnavn eller ISO-kode, eller bla basert på region:",
+    "uls-search-placeholder": "Språksøk"
 }

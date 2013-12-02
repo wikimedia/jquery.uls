@@ -4,7 +4,7 @@
             "Njardarlogar"
         ]
     },
-    "uls-select-language": "Vel spr\u00e5k",
+    "uls-select-language": "Vel språk",
     "uls-region-WW": "Verdsfemnande",
     "uls-region-SP": "Spesielle",
     "uls-region-AM": "Amerika",
@@ -12,10 +12,10 @@
     "uls-region-EU": "Europa",
     "uls-region-AS": "Asia",
     "uls-region-ME": "Midtausten",
-    "uls-region-PA": "Stillehavsomr\u00e5det",
+    "uls-region-PA": "Stillehavsområdet",
     "uls-no-results-found": "Ingen resultat funne",
-    "uls-common-languages": "Vanlege spr\u00e5k",
+    "uls-common-languages": "Vanlege språk",
     "uls-no-results-suggestion-title": "Kan henda er du interessert i:",
-    "uls-search-help": "Du kan s\u00f8kja etter spr\u00e5knamn, namn p\u00e5 skriftsystem, ISO-kode eller du kan bla gjennom etter region:",
-    "uls-search-placeholder": "Spr\u00e5ks\u00f8k"
+    "uls-search-help": "Du kan søkja etter språknamn, namn på skriftsystem, ISO-kode eller du kan bla gjennom etter region:",
+    "uls-search-placeholder": "Språksøk"
 }

@@ -4,18 +4,18 @@
             "Babanwalia"
         ]
     },
-    "uls-select-language": "\u0a2d\u0a3e\u0a38\u0a3c\u0a3e \u0a1a\u0a41\u0a23\u0a4b",
-    "uls-region-WW": "\u0a35\u0a3f\u0a38\u0a3c\u0a35\u0a35\u0a3f\u0a06\u0a2a\u0a40",
-    "uls-region-SP": "\u0a16\u0a3c\u0a3e\u0a38",
-    "uls-region-AM": "\u0a05\u0a2e\u0a30\u0a40\u0a15\u0a3e",
-    "uls-region-AF": "\u0a05\u0a2b\u0a3c\u0a30\u0a40\u0a15\u0a3e",
-    "uls-region-EU": "\u0a2f\u0a42\u0a30\u0a2a",
-    "uls-region-AS": "\u0a0f\u0a38\u0a3c\u0a40\u0a06",
-    "uls-region-ME": "\u0a2e\u0a71\u0a27 \u0a2a\u0a42\u0a30\u0a2c",
-    "uls-region-PA": "\u0a2a\u0a4d\u0a30\u0a38\u0a3c\u0a3e\u0a02\u0a24",
-    "uls-no-results-found": "\u0a15\u0a4b\u0a08 \u0a28\u0a24\u0a40\u0a1c\u0a3e \u0a28\u0a39\u0a40\u0a02 \u0a32\u0a71\u0a2d\u0a3e",
-    "uls-common-languages": "\u0a2a\u0a4d\u0a30\u0a1a\u0a71\u0a32\u0a24 \u0a2d\u0a3e\u0a38\u0a3c\u0a3e\u0a35\u0a3e\u0a02",
-    "uls-no-results-suggestion-title": "\u0a24\u0a41\u0a39\u0a3e\u0a28\u0a42\u0a70 \u0a07\u0a39\u0a28\u0a3e\u0a02 \u0a35\u0a3f\u0a71\u0a1a \u0a26\u0a3f\u0a32\u0a1a\u0a38\u0a2a\u0a40 \u0a39\u0a4b \u0a38\u0a15\u0a26\u0a40 \u0a39\u0a4b:",
-    "uls-search-help": "\u0a24\u0a41\u0a38\u0a40\u0a02 \u0a2d\u0a3e\u0a38\u0a3c\u0a3e \u0a26\u0a47 \u0a28\u0a3e\u0a02, \u0a32\u0a3f\u0a2a\u0a40 \u0a26\u0a47 \u0a28\u0a3e\u0a02, \u0a2d\u0a3e\u0a38\u0a3c\u0a3e \u0a26\u0a47 ISO \u0a15\u0a4b\u0a21 \u0a30\u0a3e\u0a39\u0a40\u0a02 \u0a16\u0a4b\u0a1c \u0a38\u0a15\u0a26\u0a47 \u0a39\u0a4b \u0a1c\u0a3e\u0a02 \u0a16\u0a47\u0a24\u0a30 \u0a2a\u0a71\u0a16\u0a4b\u0a02 \u0a38\u0a2b\u0a3c\u0a47 \u0a2a\u0a32\u0a1f \u0a38\u0a15\u0a26\u0a47 \u0a39\u0a4b:",
-    "uls-search-placeholder": "\u0a2d\u0a3e\u0a38\u0a3c\u0a3e \u0a16\u0a4b\u0a1c"
+    "uls-select-language": "ਭਾਸ਼ਾ ਚੁਣੋ",
+    "uls-region-WW": "ਵਿਸ਼ਵਵਿਆਪੀ",
+    "uls-region-SP": "ਖ਼ਾਸ",
+    "uls-region-AM": "ਅਮਰੀਕਾ",
+    "uls-region-AF": "ਅਫ਼ਰੀਕਾ",
+    "uls-region-EU": "ਯੂਰਪ",
+    "uls-region-AS": "ਏਸ਼ੀਆ",
+    "uls-region-ME": "ਮੱਧ ਪੂਰਬ",
+    "uls-region-PA": "ਪ੍ਰਸ਼ਾਂਤ",
+    "uls-no-results-found": "ਕੋਈ ਨਤੀਜਾ ਨਹੀਂ ਲੱਭਾ",
+    "uls-common-languages": "ਪ੍ਰਚੱਲਤ ਭਾਸ਼ਾਵਾਂ",
+    "uls-no-results-suggestion-title": "ਤੁਹਾਨੂੰ ਇਹਨਾਂ ਵਿੱਚ ਦਿਲਚਸਪੀ ਹੋ ਸਕਦੀ ਹੋ:",
+    "uls-search-help": "ਤੁਸੀਂ ਭਾਸ਼ਾ ਦੇ ਨਾਂ, ਲਿਪੀ ਦੇ ਨਾਂ, ਭਾਸ਼ਾ ਦੇ ISO ਕੋਡ ਰਾਹੀਂ ਖੋਜ ਸਕਦੇ ਹੋ ਜਾਂ ਖੇਤਰ ਪੱਖੋਂ ਸਫ਼ੇ ਪਲਟ ਸਕਦੇ ਹੋ:",
+    "uls-search-placeholder": "ਭਾਸ਼ਾ ਖੋਜ"
 }

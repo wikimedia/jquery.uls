@@ -5,18 +5,18 @@
             "Ttdnet"
         ]
     },
-    "uls-select-language": "Izv\u0113lieties valodu",
-    "uls-region-WW": "Vis\u0101 pasaul\u0113",
-    "uls-region-SP": "\u012apa\u0161\u0101s",
+    "uls-select-language": "Izvēlieties valodu",
+    "uls-region-WW": "Visā pasaulē",
+    "uls-region-SP": "Īpašās",
     "uls-region-AM": "Amerika",
-    "uls-region-AF": "\u0100frika",
+    "uls-region-AF": "Āfrika",
     "uls-region-EU": "Eiropa",
-    "uls-region-AS": "\u0100zija",
+    "uls-region-AS": "Āzija",
     "uls-region-ME": "Tuvie Austrumi",
-    "uls-region-PA": "Klus\u0101 oke\u0101na",
-    "uls-no-results-found": "Nav atrasts neviens rezult\u0101ts",
-    "uls-common-languages": "Izplat\u012btas valodas",
-    "uls-no-results-suggestion-title": "Jums var b\u016bt interes\u0113:",
-    "uls-search-help": "Var mekl\u0113t p\u0113c valodas, skripta nosaukuma, valodas ISO koda, vai j\u016bs tos varat p\u0101rl\u016bkot p\u0113c re\u0123iona:",
-    "uls-search-placeholder": "Valodas mekl\u0113\u0161ana"
+    "uls-region-PA": "Klusā okeāna",
+    "uls-no-results-found": "Nav atrasts neviens rezultāts",
+    "uls-common-languages": "Izplatītas valodas",
+    "uls-no-results-suggestion-title": "Jums var būt interesē:",
+    "uls-search-help": "Var meklēt pēc valodas, skripta nosaukuma, valodas ISO koda, vai jūs tos varat pārlūkot pēc reģiona:",
+    "uls-search-placeholder": "Valodas meklēšana"
 }

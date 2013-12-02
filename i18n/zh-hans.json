@@ -5,18 +5,18 @@
             "Yfdyh000"
         ]
     },
-    "uls-select-language": "\u9009\u62e9\u8bed\u8a00",
-    "uls-region-WW": "\u4e16\u754c\u6027",
-    "uls-region-SP": "\u7279\u522b",
-    "uls-region-AM": "\u7f8e\u6d32",
-    "uls-region-AF": "\u975e\u6d32",
-    "uls-region-EU": "\u6b27\u6d32",
-    "uls-region-AS": "\u4e9a\u6d32",
-    "uls-region-ME": "\u4e2d\u4e1c",
-    "uls-region-PA": "\u592a\u5e73\u6d0b",
-    "uls-no-results-found": "\u65e0\u641c\u7d22\u7ed3\u679c",
-    "uls-common-languages": "\u5e38\u89c1\u8bed\u8a00",
-    "uls-no-results-suggestion-title": "\u4f60\u53ef\u80fd\u611f\u5174\u8da3\uff1a",
-    "uls-search-help": "\u4f60\u53ef\u4ee5\u6309\u8bed\u8a00\u540d\u79f0\u3001\u6587\u5b57\u540d\u79f0\u3001\u8bed\u8a00\u7684ISO\u4ee3\u7801\u641c\u7d22\uff0c\u6216\u6309\u5730\u533a\u6d4f\u89c8\uff1a",
-    "uls-search-placeholder": "\u8bed\u8a00\u641c\u7d22"
+    "uls-select-language": "选择语言",
+    "uls-region-WW": "世界性",
+    "uls-region-SP": "特别",
+    "uls-region-AM": "美洲",
+    "uls-region-AF": "非洲",
+    "uls-region-EU": "欧洲",
+    "uls-region-AS": "亚洲",
+    "uls-region-ME": "中东",
+    "uls-region-PA": "太平洋",
+    "uls-no-results-found": "无搜索结果",
+    "uls-common-languages": "常见语言",
+    "uls-no-results-suggestion-title": "你可能感兴趣：",
+    "uls-search-help": "你可以按语言名称、文字名称、语言的ISO代码搜索，或按地区浏览：",
+    "uls-search-placeholder": "语言搜索"
 }

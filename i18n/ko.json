@@ -2,21 +2,21 @@
     "@metadata": {
         "authors": [
             "IRTC1015",
-            "\uc544\ub77c"
+            "아라"
         ]
     },
-    "uls-select-language": "\uc5b8\uc5b4 \uc120\ud0dd",
-    "uls-region-WW": "\uc804\uc138\uacc4",
-    "uls-region-SP": "\ud2b9\uc218",
-    "uls-region-AM": "\uc544\uba54\ub9ac\uce74",
-    "uls-region-AF": "\uc544\ud504\ub9ac\uce74",
-    "uls-region-EU": "\uc720\ub7fd",
-    "uls-region-AS": "\uc544\uc2dc\uc544",
-    "uls-region-ME": "\uc911\ub3d9",
-    "uls-region-PA": "\ud0dc\ud3c9\uc591",
-    "uls-no-results-found": "\uacb0\uacfc\uac00 \uc5c6\uc2b5\ub2c8\ub2e4",
-    "uls-common-languages": "\uc790\uc8fc \uc0ac\uc6a9\ud558\ub294 \uc5b8\uc5b4",
-    "uls-no-results-suggestion-title": "\uc774\uac83\uc744 \ucc3e\uc73c\uc168\ub098\uc694:",
-    "uls-search-help": "\uc5b8\uc5b4 \uc774\ub984, \ubb38\uc790 \uccb4\uacc4 \uc774\ub984, \uc5b8\uc5b4\uc758 ISO \ucf54\ub4dc\ub85c \ucc3e\uc744 \uc218 \uc788\uc73c\uba70 \uc9c0\uc5ed\ubcc4\ub85c \ucc3e\uc544\ubcfc \uc218 \uc788\uc2b5\ub2c8\ub2e4:",
-    "uls-search-placeholder": "\uc5b8\uc5b4 \ucc3e\uae30"
+    "uls-select-language": "언어 선택",
+    "uls-region-WW": "전세계",
+    "uls-region-SP": "특수",
+    "uls-region-AM": "아메리카",
+    "uls-region-AF": "아프리카",
+    "uls-region-EU": "유럽",
+    "uls-region-AS": "아시아",
+    "uls-region-ME": "중동",
+    "uls-region-PA": "태평양",
+    "uls-no-results-found": "결과가 없습니다",
+    "uls-common-languages": "자주 사용하는 언어",
+    "uls-no-results-suggestion-title": "이것을 찾으셨나요:",
+    "uls-search-help": "언어 이름, 문자 체계 이름, 언어의 ISO 코드로 검색할 수 있으며 지역별로 찾아볼 수 있습니다:",
+    "uls-search-placeholder": "언어 검색"
 }

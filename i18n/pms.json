@@ -1,22 +1,22 @@
 {
     "@metadata": {
         "authors": [
-            "Borich\u00e8t",
-            "Dragon\u00f2t"
+            "Borichèt",
+            "Dragonòt"
         ]
     },
     "uls-select-language": "Serne la lenga",
-    "uls-region-WW": "Tut \u00ebl mond",
+    "uls-region-WW": "Tut ël mond",
     "uls-region-SP": "Special",
-    "uls-region-AM": "Am\u00e9rica",
-    "uls-region-AF": "\u00c0frica",
-    "uls-region-EU": "Eur\u00f2pa",
+    "uls-region-AM": "América",
+    "uls-region-AF": "Àfrica",
+    "uls-region-EU": "Euròpa",
     "uls-region-AS": "Asia",
     "uls-region-ME": "Vzin Orient",
-    "uls-region-PA": "Pass\u00ecfich",
-    "uls-no-results-found": "Gnun arzult\u00e0 trov\u00e0",
+    "uls-region-PA": "Passìfich",
+    "uls-no-results-found": "Gnun arzultà trovà",
     "uls-common-languages": "Lenghe comun-e",
-    "uls-no-results-suggestion-title": "It peule esse anteress\u00e0 a:",
-    "uls-search-help": "A peul s\u00ebrch\u00e9 p\u00ebr n\u00f2m \u00ebd lenga, n\u00f2m dl'alfabet, c\u00f2des ISO dla lenga o a peul navigh\u00e9 p\u00ebr region:",
-    "uls-search-placeholder": "Arserca \u00ebd lenga"
+    "uls-no-results-suggestion-title": "It peule esse anteressà a:",
+    "uls-search-help": "A peul sërché për nòm ëd lenga, nòm dl'alfabet, còdes ISO dla lenga o a peul navighé për region:",
+    "uls-search-placeholder": "Arserca ëd lenga"
 }

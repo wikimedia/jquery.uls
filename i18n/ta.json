@@ -6,17 +6,17 @@
             "Santhosh.thottingal"
         ]
     },
-    "uls-select-language": "\u0bae\u0bc6\u0bbe\u0bb4\u0bbf \u0ba4\u0bc7\u0bb0\u0bcd\u0bb5\u0bc1",
-    "uls-region-WW": "\u0b89\u0bb2\u0b95\u0bb3\u0bbe\u0bb5\u0bbf\u0baf",
-    "uls-region-AM": "\u0b85\u0bae\u0bc6\u0bb0\u0bbf\u0b95\u0bcd\u0b95\u0bbe",
-    "uls-region-AF": "\u0b86\u0baa\u0bcd\u0baa\u0bbf\u0bb0\u0bbf\u0b95\u0bcd\u0b95\u0bbe",
-    "uls-region-EU": "\u0b90\u0bb0\u0bcb\u0baa\u0bcd\u0baa\u0bbe",
-    "uls-region-AS": "\u0b86\u0b9a\u0bbf\u0baf\u0bbe",
-    "uls-region-ME": "\u0bae\u0ba4\u0bcd\u0ba4\u0bbf\u0baf \u0b95\u0bbf\u0bb4\u0b95\u0bcd\u0b95\u0bc1",
-    "uls-region-PA": "\u0baa\u0b9a\u0bbf\u0baa\u0bbf\u0b95\u0bcd",
-    "uls-no-results-found": "\u0bae\u0bc1\u0b9f\u0bbf\u0bb5\u0bc1\u0b95\u0bb3\u0bcd \u0b8e\u0ba4\u0bc1\u0bb5\u0bc1\u0bae\u0bcd \u0b95\u0bbe\u0ba3\u0baa\u0bcd\u0baa\u0b9f\u0bb5\u0bbf\u0bb2\u0bcd\u0bb2\u0bc8",
-    "uls-common-languages": "\u0baa\u0bca\u0ba4\u0bc1\u0bb5\u0bbe\u0ba9 \u0bae\u0bca\u0bb4\u0bbf\u0b95\u0bb3\u0bcd",
-    "uls-no-results-suggestion-title": "\u0ba8\u0bc0\u0b99\u0bcd\u0b95\u0bb3\u0bcd \u0b87\u0bb5\u0bb1\u0bcd\u0bb1\u0bbf\u0bb2\u0bcd \u0b86\u0bb0\u0bcd\u0bb5\u0bae\u0bbe\u0b95 \u0b87\u0bb0\u0bc1\u0b95\u0bcd\u0b95\u0bb2\u0bbe\u0bae\u0bcd:",
-    "uls-search-help": "\u0bae\u0bca\u0bb4\u0bbf\u0baf\u0bbf\u0ba9\u0bcd \u0baa\u0bc6\u0baf\u0bb0\u0bcd, \u0b8e\u0bb4\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1 \u0bb5\u0b9f\u0bbf\u0bb5\u0bae\u0bcd, ISO \u0b95\u0bc1\u0bb1\u0bbf\u0baf\u0bc0\u0b9f\u0bc1 \u0bae\u0bc1\u0bb2\u0bae\u0bcd \u0ba4\u0bc7\u0b9f\u0bb2\u0bbe\u0bae\u0bcd \u0b85\u0bb2\u0bcd\u0bb2\u0ba4\u0bc1 \u0baa\u0b95\u0bc1\u0ba4\u0bbf\u0bb5\u0bbe\u0bb0\u0bbf\u0baf\u0bbe\u0b95 \u0b89\u0bb2\u0bb5\u0bb2\u0bbe\u0bae\u0bcd",
-    "uls-search-placeholder": "\u0bae\u0bca\u0bb4\u0bbf \u0ba4\u0bc7\u0b9f\u0bc1"
+    "uls-select-language": "மொழி தேர்வு",
+    "uls-region-WW": "உலகளாவிய",
+    "uls-region-AM": "அமெரிக்கா",
+    "uls-region-AF": "ஆப்பிரிக்கா",
+    "uls-region-EU": "ஐரோப்பா",
+    "uls-region-AS": "ஆசியா",
+    "uls-region-ME": "மத்திய கிழக்கு",
+    "uls-region-PA": "பசிபிக்",
+    "uls-no-results-found": "முடிவுகள் எதுவும் காணப்படவில்லை",
+    "uls-common-languages": "பொதுவான மொழிகள்",
+    "uls-no-results-suggestion-title": "நீங்கள் இவற்றில் ஆர்வமாக இருக்கலாம்:",
+    "uls-search-help": "மொழியின் பெயர், எழுத்து வடிவம், ISO குறியீடு முலம் தேடலாம் அல்லது பகுதிவாரியாக உலவலாம்",
+    "uls-search-placeholder": "மொழி தேடு"
 }

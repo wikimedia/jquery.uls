@@ -4,7 +4,7 @@
             "Minisarm"
         ]
     },
-    "uls-select-language": "Selectare limb\u0103",
+    "uls-select-language": "Selectare limbă",
     "uls-region-WW": "La nivel mondial",
     "uls-region-SP": "Speciale",
     "uls-region-AM": "America",
@@ -13,9 +13,9 @@
     "uls-region-AS": "Asia",
     "uls-region-ME": "Orientul Mijlociu",
     "uls-region-PA": "Oceania",
-    "uls-no-results-found": "Niciun rezultat g\u0103sit",
+    "uls-no-results-found": "Niciun rezultat găsit",
     "uls-common-languages": "Limbi comune",
-    "uls-no-results-suggestion-title": "A\u021bi putea fi interesat de:",
-    "uls-search-help": "Pute\u021bi c\u0103uta dup\u0103 numele limbii, numele scrierii, codul ISO al limbii sau pute\u021bi r\u0103sfoi \u00een func\u021bie de regiune:",
-    "uls-search-placeholder": "C\u0103utare limb\u0103"
+    "uls-no-results-suggestion-title": "Ați putea fi interesat de:",
+    "uls-search-help": "Puteți căuta după numele limbii, numele scrierii, codul ISO al limbii sau puteți răsfoi în funcție de regiune:",
+    "uls-search-placeholder": "Căutare limbă"
 }

@@ -6,18 +6,18 @@
             "V.narsikar"
         ]
     },
-    "uls-select-language": "\u092d\u093e\u0937\u093e \u0928\u093f\u0935\u0921\u093e",
-    "uls-region-WW": "\u0935\u0948\u0936\u094d\u0935\u093f\u0915",
-    "uls-region-SP": "\u0935\u093f\u0936\u0947\u0937",
-    "uls-region-AM": "\u0905\u092e\u0947\u0930\u0940\u0915\u093e",
-    "uls-region-AF": "\u0906\u092b\u094d\u0930\u0940\u0915\u093e",
-    "uls-region-EU": "\u092f\u0941\u0930\u094b\u092a",
-    "uls-region-AS": "\u0906\u0936\u093f\u092f\u093e",
-    "uls-region-ME": "\u092e\u0927\u094d\u092f\u092a\u0942\u0930\u094d\u0935 (\u092e\u093f\u0921\u0932 \u0907\u0938\u094d\u091f)",
-    "uls-region-PA": "\u092a\u0945\u0938\u093f\u092b\u0940\u0915",
-    "uls-no-results-found": "\u092a\u0930\u093f\u0923\u093e\u092e \u0938\u093e\u092a\u0921\u0932\u0947 \u0928\u093e\u0939\u0940",
-    "uls-common-languages": "\u0928\u093f\u0924\u094d\u092f\u093e\u091a\u094d\u092f\u093e \u092d\u093e\u0937\u093e",
-    "uls-no-results-suggestion-title": "\u0924\u0941\u092e\u094d\u0939\u093e\u0932\u093e \u0915\u0926\u093e\u091a\u093f\u0924 \u092f\u093e\u0924 \u0930\u0941\u091a\u0940 \u0905\u0938\u0947\u0932:",
-    "uls-search-help": "\u0906\u092a\u0923 \u092d\u093e\u0937\u0947\u0928\u0941\u0938\u093e\u0930, \u0932\u093f\u092a\u0940\u0928\u0941\u0938\u093e\u0930, \u092d\u093e\u0937\u0947\u091a\u094d\u092f\u093e \u0906\u092f\u090f\u0938\u0913 \u0915\u094b\u0921\u0928\u0941\u0938\u093e\u0930 \u0936\u094b\u0927 \u0918\u0947\u090a \u0936\u0915\u0924\u093e \u0905\u0925\u0935\u093e \u092a\u094d\u0930\u0926\u0947\u0936\u093e\u0928\u0941\u0938\u093e\u0930 \u0928\u094d\u092f\u093e\u0939\u093e\u0933\u0941 \u0936\u0915\u0924\u093e:",
-    "uls-search-placeholder": "\u092d\u093e\u0937\u093e \u0936\u094b\u0927"
+    "uls-select-language": "भाषा निवडा",
+    "uls-region-WW": "वैश्विक",
+    "uls-region-SP": "विशेष",
+    "uls-region-AM": "अमेरीका",
+    "uls-region-AF": "आफ्रीका",
+    "uls-region-EU": "युरोप",
+    "uls-region-AS": "आशिया",
+    "uls-region-ME": "मध्यपूर्व (मिडल इस्ट)",
+    "uls-region-PA": "पॅसिफीक",
+    "uls-no-results-found": "परिणाम सापडले नाही",
+    "uls-common-languages": "नित्याच्या भाषा",
+    "uls-no-results-suggestion-title": "तुम्हाला कदाचित यात रुची असेल:",
+    "uls-search-help": "आपण भाषेनुसार, लिपीनुसार, भाषेच्या आयएसओ कोडनुसार शोध घेऊ शकता अथवा प्रदेशानुसार न्याहाळु शकता:",
+    "uls-search-placeholder": "भाषा शोध"
 }

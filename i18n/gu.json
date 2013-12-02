@@ -7,18 +7,18 @@
             "Santhosh.thottingal"
         ]
     },
-    "uls-select-language": "\u0aad\u0abe\u0ab7\u0abe \u0aaa\u0ab8\u0a82\u0aa6 \u0a95\u0ab0\u0acb",
-    "uls-region-WW": "\u0ab5\u0abf\u0ab6\u0acd\u0ab5\u0aad\u0ab0\u0aae\u0abe\u0a82",
-    "uls-region-SP": "\u0a96\u0abe\u0ab8",
-    "uls-region-AM": "\u0a85\u0aae\u0ac7\u0ab0\u0abf\u0a95\u0abe",
-    "uls-region-AF": "\u0a86\u0aab\u0acd\u0ab0\u0abf\u0a95\u0abe",
-    "uls-region-EU": "\u0aaf\u0ac1\u0ab0\u0acb\u0aaa",
-    "uls-region-AS": "\u0a8f\u0ab6\u0abf\u0aaf\u0abe",
-    "uls-region-ME": "\u0aae\u0aa7\u0acd\u0aaf \u0aaa\u0ac2\u0ab0\u0acd\u0ab5",
-    "uls-region-PA": "\u0aaa\u0ac5\u0ab8\u0abf\u0aab\u0abf\u0a95",
-    "uls-no-results-found": "\u0a95\u0acb\u0a88 \u0aaa\u0ab0\u0abf\u0aa3\u0abe\u0aae \u0aae\u0ab3\u0acd\u0aaf\u0abe \u0aa8\u0ab9\u0ac0",
-    "uls-common-languages": "\u0ab8\u0abe\u0aae\u0abe\u0aa8\u0acd\u0aaf \u0aad\u0abe\u0ab7\u0abe\u0a93",
-    "uls-no-results-suggestion-title": "\u0aa4\u0aae\u0aa8\u0ac7 \u0a86\u0aae\u0abe\u0a82 \u0ab0\u0ab8 \u0ab9\u0acb\u0a88 \u0ab6\u0a95\u0ac7 \u0a9b\u0ac7:",
-    "uls-search-help": "\u0aa4\u0aae\u0ac7 \u0aad\u0abe\u0ab7\u0abe \u0aa8\u0abe\u0aae, \u0ab8\u0acd\u0a95\u0acd\u0ab0\u0abf\u0aaa\u0acd\u0a9f \u0aa8\u0abe\u0aae, \u0aad\u0abe\u0ab7\u0abe ISO \u0a95\u0acb\u0aa1 \u0aa6\u0acd\u0ab5\u0abe\u0ab0\u0abe \u0ab6\u0acb\u0aa7\u0ac0 \u0ab6\u0a95\u0acb \u0a9b\u0ac7 \u0a85\u0aa5\u0ab5\u0abe \u0aa4\u0aae\u0ac7 \u0aaa\u0acd\u0ab0\u0aa6\u0ac7\u0ab6 \u0aa6\u0acd\u0ab5\u0abe\u0ab0\u0abe \u0ab6\u0acb\u0aa7\u0ac0 \u0a95\u0ab0\u0ac0 \u0ab6\u0a95\u0acb \u0a9b\u0acb:",
-    "uls-search-placeholder": "\u0aad\u0abe\u0ab7\u0abe \u0ab6\u0acb\u0aa7"
+    "uls-select-language": "ભાષા પસંદ કરો",
+    "uls-region-WW": "વિશ્વભરમાં",
+    "uls-region-SP": "ખાસ",
+    "uls-region-AM": "અમેરિકા",
+    "uls-region-AF": "આફ્રિકા",
+    "uls-region-EU": "યુરોપ",
+    "uls-region-AS": "એશિયા",
+    "uls-region-ME": "મધ્ય પૂર્વ",
+    "uls-region-PA": "પૅસિફિક",
+    "uls-no-results-found": "કોઈ પરિણામ મળ્યા નહી",
+    "uls-common-languages": "સામાન્ય ભાષાઓ",
+    "uls-no-results-suggestion-title": "તમને આમાં રસ હોઈ શકે છે:",
+    "uls-search-help": "તમે ભાષા નામ, સ્ક્રિપ્ટ નામ, ભાષા ISO કોડ દ્વારા શોધી શકો છે અથવા તમે પ્રદેશ દ્વારા શોધી કરી શકો છો:",
+    "uls-search-placeholder": "ભાષા શોધ"
 }
