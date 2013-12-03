@@ -20,11 +20,13 @@
 
 	module( 'jquery.uls' );
 
+	var orphanScripts, badRedirects, doubleRedirects, languagesWithoutAutonym;
+
 	/*
 	 * Runs over all script codes mentioned in langdb and checks whether
 	 * they belong to the 'Other' group.
 	 */
-	var orphanScripts = function () {
+	orphanScripts = function () {
 		var language, script,
 			result = [];
 
@@ -42,7 +44,7 @@
 	/*
 	 * Runs over all languages and checks that all redirects have a valid target.
 	 */
-	var badRedirects = function () {
+	badRedirects = function () {
 		var language, target,
 			result = [];
 
@@ -61,7 +63,7 @@
 	 * Runs over all languages and checks that all redirects point to a language.
 	 * There's no reason to have double redirects.
 	 */
-	var doubleRedirects = function () {
+	doubleRedirects = function () {
 		var language, target,
 			result = [];
 
@@ -80,7 +82,7 @@
 	 * Runs over all script codes mentioned in langdb and checks whether
 	 * they have something that looks like an autonym.
 	 */
-	var languagesWithoutAutonym = function () {
+	languagesWithoutAutonym = function () {
 		var language,
 			result = [];
 

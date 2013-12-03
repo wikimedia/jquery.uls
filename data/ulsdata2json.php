@@ -76,6 +76,7 @@ $js = <<<JAVASCRIPT
 ( function ( $ ) {
 	'use strict';
 	$.uls = $.uls || {};
+	//noinspection JSHint
 	$.uls.data = $json;
 } ( jQuery ) );
 
