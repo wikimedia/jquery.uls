@@ -89,7 +89,7 @@ languages:
   cs: [Latn, [EU], česky]
   csb: [Latn, [EU], kaszëbsczi]
  # FIXME: which script to prefer?..
-  cu: [Cyrl, [EU], словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ]
+  cu: [Cyrl, [EU], словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ]
   cv: [Cyrl, [EU], Чӑвашла]
   cy: [Latn, [EU], Cymraeg]
   da: [Latn, [EU], dansk]
