@@ -1,0 +1,15 @@
+{
+    "@metadata": {
+        "authors": [
+            "Carsrac"
+        ]
+    },
+    "uls-select-language": "Kies taal",
+    "uls-region-WW": "Wereldwijd",
+    "uls-region-SP": "Speciaal",
+    "uls-region-AM": "Amerika",
+    "uls-region-AF": "Afrika",
+    "uls-region-EU": "Europa",
+    "uls-region-AS": "Azië",
+    "uls-region-ME": "Midden-Oosten"
+}
