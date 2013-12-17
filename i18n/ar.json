@@ -1,10 +1,10 @@
 {
     "@metadata": {
-        "authors": {
-            "0": "Amire80",
-            "1": "DRIHEM",
-            "3": "ترجمان05"
-        }
+        "authors": [
+            "Amire80",
+            "DRIHEM",
+            "ترجمان05"
+        ]
     },
     "uls-select-language": "حدد اللغة",
     "uls-region-WW": "في جميع أنحاء العالم",
