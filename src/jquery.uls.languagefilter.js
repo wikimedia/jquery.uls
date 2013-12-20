@@ -188,8 +188,9 @@
 							this.selectedLanguage = langCode;
 						}
 
-						this.render( langCode );
-						this.resultCount++;
+						if ( this.render( langCode ) ) {
+							this.resultCount++;
+						}
 					}
 				}
 			}
@@ -212,8 +213,9 @@
 						languageFilter.autofill( code, name );
 					}
 
-					languageFilter.render( code );
-					languageFilter.resultCount++;
+					if ( languageFilter.render( code ) ) {
+						languageFilter.resultCount++;
+					}
 				} );
 
 				languageFilter.resultHandler( query );
@@ -278,10 +280,10 @@
 			var $target = this.options.$target;
 
 			if ( !$target ) {
-				return;
+				return false;
 			}
 
-			$target.append( langCode, null );
+			return $target.append( langCode );
 		},
 
 		escapeRegex: function( value ) {
