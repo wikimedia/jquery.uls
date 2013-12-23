@@ -1,7 +1,4 @@
 {
-	/* Common */
-
-	// Enforcing
 	"camelcase": true,
 	"curly": true,
 	"eqeqeq": true,
@@ -15,23 +12,15 @@
 	"trailing": true,
 	"undef": true,
 	"unused": true,
-	// Legacy
 	"onevar": true,
-
-	/* Local */
-
-	// Enforcing
 	"bitwise": true,
 	"forin": false,
 	"regexp": false,
 	"strict": true,
-	// Relaxing
 	"laxbreak": true,
 	"smarttabs": true,
 	"multistr": true,
-	// Environment
 	"browser": true,
-
 	"predef": [
 		"_",
 		"jQuery",
