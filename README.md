@@ -4,7 +4,7 @@ Universal Language Selector
 
 [![Build Status](https://secure.travis-ci.org/wikimedia/jquery.uls.png)](http://travis-ci.org/wikimedia/jquery.uls)
 
-This is a [Wikimedia Foundation Internationalization team project](https://www.mediawiki.org/wiki/Project_Milkshake).
+This is a [Wikimedia Foundation Language Engineering team project](https://www.mediawiki.org/wiki/Project_Milkshake).
 
 
 ![Universal Language Selector](https://upload.wikimedia.org/wikipedia/commons/c/cd/ULS-GeoIP.png "Universal Language Selector")
@@ -98,11 +98,13 @@ $( '.uls-trigger' ).uls( {
 Features
 --------
 jQuery.uls has an elaborative language information collection. It knows about
-1. the script in which a language is written.
+
+1. The script in which a language is written.
 2. The script code
 3. The language code
 4. The regions in which the language is spoken
 5. The autonym - language name written in its own script
+6. The directionality of the text
 
 With all these information the search becomes very effective. Based on the spoken regions, the UI organize the languages. In side regions
 the language is again organized based on scripts.
@@ -111,7 +113,7 @@ A user can search for a language based on script name.
 
 ULS can autocomplete a language name search.
 
-An advanced usage of jQuery.uls can be tried out from wikimedia sites. For eg, see the language icon at the top of http://mediawiki.org
+An advanced usage of jQuery.uls can be tried out from wikimedia sites. For eg, see the language icon at the top of http://mediawiki.org or the cog icon near to the languages list in wikipedia in any language
 
 More details
 ------------
