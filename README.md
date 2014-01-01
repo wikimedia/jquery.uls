@@ -84,6 +84,17 @@ $( '.uls-trigger' ).uls( {
 } );
 ```
 
+*Other Options*
+
+| Option      | Description |
+|-------------|---------------------|
+| left        | left position of ULS. eg: 100px, 20%|
+| top         | top position of ULS. eg: 100px, 20%|
+| onCancel    | function to be handled when language selection is not done. ie. language selector is closed without selecting any |
+| showRegions | Regions to be shown in the language selector. Default: ['WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA'] |
+| itemsPerColumn | Number of languages per column. Default is 8 |
+
+
 Features
 --------
 jQuery.uls has an elaborative language information collection. It knows about
@@ -138,20 +149,3 @@ Coding style
 
 Please follow [jQuery coding guidelines](http://docs.jquery.com/JQuery_Core_Style_Guidelines)
 
-Versioning
-----------
-
-For transparency and insight into the release cycle, and to upgrading easier,
-we use the Semantic Versioning guidelines as much as possible.
-
-Releases will be numbered with the following format:
-
-`<major>.<minor>.<patch>`
-
-And constructed with the following guidelines:
-
-* Breaking backward compatibility bumps the major (and resets the minor and patch)
-* New additions without breaking backward compatibility bumps the minor (and resets the patch)
-* Bug fixes and misc changes bumps the patch
-
-For more information on SemVer, please visit http://semver.org/.
