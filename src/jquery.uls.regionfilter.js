@@ -144,16 +144,20 @@
 		},
 
 		click: function () {
+			var $list, $firstTargetRegion;
+
 			// Don't do anything if a region is selected already
 			if ( this.$element.hasClass( 'active' ) ) {
 				return;
 			}
 
+			$list = this.options.$target.$element;
+			$firstTargetRegion = $list.find( '#' + this.regions[0] );
+
 			// Scroll to appropriate area
-			this.options.$target.$element
-				.find( '#' + this.regions[0] )
-				.get( 0 )
-				.scrollIntoView( true, { behavior: 'smooth' } );
+			$list.scrollTop(
+				$firstTargetRegion.offset().top - $list.offset().top + $list.scrollTop()
+			);
 
 			// Make the selected region (and it only) active
 			$( '.regionselector' ).removeClass( 'active' );
