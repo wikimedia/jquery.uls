@@ -155,8 +155,9 @@
 			$firstTargetRegion = $list.find( '#' + this.regions[0] );
 
 			// Scroll to appropriate area
-			$list.scrollTop( 0 );
-			$list.scrollTop( $firstTargetRegion.offset().top - $list.offset().top );
+			$list.scrollTop(
+				$firstTargetRegion.offset().top - $list.offset().top + $list.scrollTop()
+			);
 
 			// Make the selected region (and it only) active
 			$( '.regionselector' ).removeClass( 'active' );
