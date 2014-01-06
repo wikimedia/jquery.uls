@@ -1,11 +1,13 @@
 {
     "@metadata": {
         "authors": [
-            "Salam"
+            "Salam",
+            "Chavash"
         ]
     },
     "uls-select-language": "Чӗлхе суйлани",
     "uls-region-WW": "Пӗтӗм тӗнчери",
+    "uls-region-SP": "Ятарлисем",
     "uls-region-AM": "Америка",
     "uls-region-AF": "Африка",
     "uls-region-EU": "Европа",
@@ -13,5 +15,8 @@
     "uls-region-ME": "Малти хӗвел тухӑҫ",
     "uls-region-PA": "Океани",
     "uls-no-results-found": "Нимӗн те тупӑнмарӗ",
-    "uls-common-languages": "Чӗлхене сис"
+    "uls-common-languages": "Чӗлхене сис",
+    "uls-no-results-suggestion-title": "Тен çак чĕлхесем пăхма пултаратăр:",
+    "uls-search-help": "Чĕлхе ячĕпе, çырулăхĕпе, ISO-кочĕпе е регионĕпе шырама пулать:",
+    "uls-search-placeholder": "Чĕлхе шыра"
 }
