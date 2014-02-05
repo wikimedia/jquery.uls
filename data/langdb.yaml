@@ -326,6 +326,8 @@ languages:
   om: [Latn, [AF], Oromoo]
   or: [Orya, [AS], ଓଡ଼ିଆ]
   os: [Cyrl, [EU], Ирон]
+ # Bug: 60815
+  ota: [Latn, [AS, EU], Ottoman Turkish]
   pa: [pa-guru]
   pa-guru: [Guru, [AS], ਪੰਜਾਬੀ]
   pag: [Latn, [AS], Pangasinan]
@@ -371,6 +373,8 @@ languages:
   ruq-grek: [Grek, [EU], Megleno-Romanian (Greek script)]
   ruq-latn: [Latn, [EU], Vlăheşte]
   rw: [Latn, [AF], Kinyarwanda]
+ # Bug: 60815
+  rwr: [Deva, [AS], मारवाड़ी]
   ryu: [Kana, [AS], ʔucināguci]
   sa: [Deva, [AS], संस्कृतम्]
   sah: [Cyrl, [EU, AS], саха тыла]
