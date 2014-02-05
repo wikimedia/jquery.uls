@@ -327,7 +327,7 @@ languages:
   or: [Orya, [AS], ଓଡ଼ିଆ]
   os: [Cyrl, [EU], Ирон]
  # Bug: 60815
-  ota: [Latn, [AS], Ottoman Turkish]
+  ota: [Latn, [AS, EU], Ottoman Turkish]
   pa: [pa-guru]
   pa-guru: [Guru, [AS], ਪੰਜਾਬੀ]
   pag: [Latn, [AS], Pangasinan]
