@@ -194,7 +194,7 @@ languages:
   iu: [Cans, [AM], ᐃᓄᒃᑎᑐᑦ]
   ja: [Jpan, [AS], 日本語]
   jam: [Latn, [AM], Patois]
-  jbo: [Latn, [WW], Lojban]
+  jbo: [Latn, [WW], lojban]
   jut: [Latn, [EU], jysk]
   jv: [Latn, [AS, PA], Basa Jawa]
  # For support in webfonts.
