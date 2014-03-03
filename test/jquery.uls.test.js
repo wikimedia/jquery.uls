@@ -174,7 +174,7 @@
 				'akz', 'arn', 'aro', 'ase', 'avk', 'ay', 'cho', 'chr', 'chy', 'cr', 'cr-latn',
 				'en-ca', 'en', 'eo', 'es-419', 'es-formal', 'es', 'esu', 'fr', 'frc', 'gcf', 'gn',
 				'guc', 'haw', 'ht', 'ia', 'ie', 'ik', 'ike-cans', 'ike-latn', 'io', 'iu', 'jam',
-				'jbo', 'kgp', 'kl', 'lad-latn', 'lad-hebr', 'lfn', 'mfe', 'mic', 'mus', 'nah', 'nl-informal', 'nl',
+				'jbo', 'kgp', 'kl', 'lad-latn', 'lad-hebr', 'lfn', 'lut', 'mfe', 'mic', 'mus', 'nah', 'nl-informal', 'nl',
 				'nov', 'nv', 'pap', 'pdc', 'pdt', 'ppl', 'pt-br', 'pt', 'qu', 'qug', 'rap', 'sei',
 				'simple', 'srn', 'tokipona', 'vo', 'yi', 'yrl', 'yua'
 			],
