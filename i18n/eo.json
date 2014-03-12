@@ -1,7 +1,8 @@
 {
     "@metadata": {
         "authors": [
-            "Objectivesea"
+            "Objectivesea",
+            "KuboF"
         ]
     },
     "uls-select-language": "Elekti lingvon",
@@ -15,7 +16,7 @@
     "uls-region-PA": "Pacifiko",
     "uls-no-results-found": "Neniu rezulto estis trovita",
     "uls-common-languages": "Komunaj lingvoj",
-    "uls-no-results-suggestion-title": "Vi eble interesiĝis pri:",
+    "uls-no-results-suggestion-title": "Vi eble interesiĝas pri:",
     "uls-search-help": "Vi povas serĉi laŭ la lingvonomo, la skriptnomo aŭ la lingva ISO-kodo, aŭ vi povas abeli laŭ regiono:",
     "uls-search-placeholder": "Lingvoserĉo"
 }
