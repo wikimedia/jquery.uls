@@ -561,6 +561,11 @@ scriptgroups:
 rtlscripts:
   [Arab, Hebr, Syrc, Nkoo, Thaa]
 
+ # This is distinct from the CJK scriptgroup, which is used for display.
+ # The CJK scriptgroup includes Yi, which is not an actual CJK script.
+cjkscripts:
+  [Hans, Hant, Kana, Kore, Jpan]
+
  # The numbers are also used in HTML id attributes
 regiongroups:
  # Worldwide, international

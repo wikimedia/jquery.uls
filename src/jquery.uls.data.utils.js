@@ -413,6 +413,15 @@
 	};
 
 	/**
+	 * Check if a language is written in Chinese, Japanese or Korean script.
+	 * @param language string Language code
+	 * @return boolean
+	 */
+	$.uls.data.isCjk = function ( language ) {
+		return $.inArray( $.uls.data.getScript( language ), $.uls.data.cjkscripts ) !== -1;
+	};
+
+	/**
 	 * Return the direction of the language
 	 * @param language string Language code
 	 * @return string

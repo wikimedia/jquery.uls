@@ -99,7 +99,7 @@
 		assert.ok( $.fn.uls, '$.fn.uls is defined' );
 	} );
 
-	test( '-- $.uls.data testing', 47, function ( assert ) {
+	test( '-- $.uls.data testing', 52, function ( assert ) {
 		var autonyms,
 			allLanguagesByRegionAndScript,
 			languagesInEU,
@@ -262,6 +262,12 @@
 		assert.strictEqual( $.uls.data.isRtl( 'dv' ), true, 'Divehi language is RTL' );
 		assert.strictEqual( $.uls.data.getDir( 'mzn' ), 'rtl', 'Mazandarani language is RTL' );
 		assert.strictEqual( $.uls.data.getDir( 'uk' ), 'ltr', 'Ukrainian language is LTR' );
+
+		assert.strictEqual( $.uls.data.isCjk( 'zh' ), true, 'Chinese language is CJK' );
+		assert.strictEqual( $.uls.data.isCjk( 'ja' ), true, 'Japanese language is CJK' );
+		assert.strictEqual( $.uls.data.isCjk( 'ko' ), true, 'Korean language is CJK' );
+		assert.strictEqual( $.uls.data.isCjk( 'ii' ), false, 'Yi language is not CJK' );
+		assert.strictEqual( $.uls.data.isCjk( 'zh-min-nan' ), false, 'Min-Nan language is not CJK' );
 
 		assert.ok(
 			$.inArray( 'sah', $.uls.data.getLanguagesInTerritory( 'RU' ) ) > -1,
