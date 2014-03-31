@@ -1,0 +1,15 @@
+{
+    "@metadata": {
+        "authors": [
+            "Iltever"
+        ]
+    },
+    "uls-region-WW": "Бютеудуниялы",
+    "uls-region-AM": "Америка",
+    "uls-region-AF": "Африка",
+    "uls-region-EU": "Европа",
+    "uls-region-AS": "Азия",
+    "uls-region-ME": "Джууукъ Кюнчыгъыш",
+    "uls-common-languages": "Автомат халда айырылгъан тилле",
+    "uls-search-placeholder": "Тил излеу"
+}

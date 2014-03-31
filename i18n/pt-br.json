@@ -1,11 +1,12 @@
 {
     "@metadata": {
         "authors": [
-            "Tuliouel"
+            "Tuliouel",
+            "Amgauna"
         ]
     },
-    "uls-select-language": "Selecionar idioma",
-    "uls-region-WW": "Globais",
+    "uls-select-language": "Selecionar um idioma",
+    "uls-region-WW": "Global",
     "uls-region-SP": "Especiais",
     "uls-region-AM": "América",
     "uls-region-AF": "África",
