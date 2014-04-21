@@ -1,24 +1,24 @@
 {
-    "@metadata": {
-        "authors": [
-            "Amire80",
-            "Bouron",
-            "Eleferen",
-            "Kaganer"
-        ]
-    },
-    "uls-select-language": "Выбор языка",
-    "uls-region-WW": "Всемирные",
-    "uls-region-SP": "Специальные",
-    "uls-region-AM": "Америка",
-    "uls-region-AF": "Африка",
-    "uls-region-EU": "Европа",
-    "uls-region-AS": "Азия",
-    "uls-region-ME": "Ближний Восток",
-    "uls-region-PA": "Океания",
-    "uls-no-results-found": "Не найдено",
-    "uls-common-languages": "Автоматически подобранные языки",
-    "uls-no-results-suggestion-title": "Может быть вас заинтересуют эти языки:",
-    "uls-search-help": "Можно искать по названия языка или письменности, по ISO-коду языка или просмотреть по региону:",
-    "uls-search-placeholder": "Поиск языка"
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Bouron",
+			"Eleferen",
+			"Kaganer"
+		]
+	},
+	"uls-select-language": "Выбор языка",
+	"uls-region-WW": "Всемирные",
+	"uls-region-SP": "Специальные",
+	"uls-region-AM": "Америка",
+	"uls-region-AF": "Африка",
+	"uls-region-EU": "Европа",
+	"uls-region-AS": "Азия",
+	"uls-region-ME": "Ближний Восток",
+	"uls-region-PA": "Океания",
+	"uls-no-results-found": "Не найдено",
+	"uls-common-languages": "Автоматически подобранные языки",
+	"uls-no-results-suggestion-title": "Может быть вас заинтересуют эти языки:",
+	"uls-search-help": "Можно искать по названия языка или письменности, по ISO-коду языка или просмотреть по региону:",
+	"uls-search-placeholder": "Поиск языка"
 }

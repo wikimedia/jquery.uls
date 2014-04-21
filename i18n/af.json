@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Naudefj"
-        ]
-    },
-    "uls-select-language": "Kies taal",
-    "uls-region-WW": "Wêreldwyd",
-    "uls-region-SP": "Spesiaal",
-    "uls-region-AM": "Amerika",
-    "uls-region-AF": "Afrika",
-    "uls-region-EU": "Europa",
-    "uls-region-AS": "Asië",
-    "uls-region-ME": "Middel-Ooste",
-    "uls-region-PA": "Pasifiese gebied",
-    "uls-no-results-found": "Geen resultate gevind nie",
-    "uls-common-languages": "Taalvoorstelle",
-    "uls-no-results-suggestion-title": "U mag geïnteresseerd wees in:",
-    "uls-search-help": "U kan soek volgens taalnaam, skrifnaam, ISO-kode van die taal of u kan per streek deurblaai:",
-    "uls-search-placeholder": "Soek taal"
+	"@metadata": {
+		"authors": [
+			"Naudefj"
+		]
+	},
+	"uls-select-language": "Kies taal",
+	"uls-region-WW": "Wêreldwyd",
+	"uls-region-SP": "Spesiaal",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Asië",
+	"uls-region-ME": "Middel-Ooste",
+	"uls-region-PA": "Pasifiese gebied",
+	"uls-no-results-found": "Geen resultate gevind nie",
+	"uls-common-languages": "Taalvoorstelle",
+	"uls-no-results-suggestion-title": "U mag geïnteresseerd wees in:",
+	"uls-search-help": "U kan soek volgens taalnaam, skrifnaam, ISO-kode van die taal of u kan per streek deurblaai:",
+	"uls-search-placeholder": "Soek taal"
 }

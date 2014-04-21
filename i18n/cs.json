@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Mormegil"
-        ]
-    },
-    "uls-select-language": "Vyberte jazyk",
-    "uls-region-WW": "Celosvětové",
-    "uls-region-SP": "Speciální",
-    "uls-region-AM": "Amerika",
-    "uls-region-AF": "Afrika",
-    "uls-region-EU": "Evropa",
-    "uls-region-AS": "Asie",
-    "uls-region-ME": "Blízký východ",
-    "uls-region-PA": "Tichomoří",
-    "uls-no-results-found": "Nenalezeny žádné výsledky",
-    "uls-common-languages": "Běžné jazyky",
-    "uls-no-results-suggestion-title": "Mohlo by vás zajímat:",
-    "uls-search-help": "Můžete vyhledávat podle názvu jazyka, názvu písma, ISO kódu jazyka nebo můžete procházet po regionech:",
-    "uls-search-placeholder": "Hledání jazyka"
+	"@metadata": {
+		"authors": [
+			"Mormegil"
+		]
+	},
+	"uls-select-language": "Vyberte jazyk",
+	"uls-region-WW": "Celosvětové",
+	"uls-region-SP": "Speciální",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Evropa",
+	"uls-region-AS": "Asie",
+	"uls-region-ME": "Blízký východ",
+	"uls-region-PA": "Tichomoří",
+	"uls-no-results-found": "Nenalezeny žádné výsledky",
+	"uls-common-languages": "Běžné jazyky",
+	"uls-no-results-suggestion-title": "Mohlo by vás zajímat:",
+	"uls-search-help": "Můžete vyhledávat podle názvu jazyka, názvu písma, ISO kódu jazyka nebo můžete procházet po regionech:",
+	"uls-search-placeholder": "Hledání jazyka"
 }

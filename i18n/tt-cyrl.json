@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Ajdar",
-            "Ильнар"
-        ]
-    },
-    "uls-select-language": "Тел сайлау",
-    "uls-region-WW": "Бөтендөнья",
-    "uls-region-SP": "Махсус",
-    "uls-region-AM": "Америка",
-    "uls-region-AF": "Африка",
-    "uls-region-EU": "Аурупа",
-    "uls-region-AS": "Азия",
-    "uls-region-ME": "Якын Көнчыгыш",
-    "uls-region-PA": "Океания",
-    "uls-no-results-found": "Бернидә табылмады",
-    "uls-common-languages": "Автоматик сайланган телләр",
-    "uls-no-results-suggestion-title": "Бәлки сезне бу телләр кызыксындырыр:",
-    "uls-search-help": "Телнең исеме яисә әлифбасы, телнең ISO-коды яки өлкәсе буенча эзләргә мөмкин:",
-    "uls-search-placeholder": "Эзләү теле"
+	"@metadata": {
+		"authors": [
+			"Ajdar",
+			"Ильнар"
+		]
+	},
+	"uls-select-language": "Тел сайлау",
+	"uls-region-WW": "Бөтендөнья",
+	"uls-region-SP": "Махсус",
+	"uls-region-AM": "Америка",
+	"uls-region-AF": "Африка",
+	"uls-region-EU": "Аурупа",
+	"uls-region-AS": "Азия",
+	"uls-region-ME": "Якын Көнчыгыш",
+	"uls-region-PA": "Океания",
+	"uls-no-results-found": "Бернидә табылмады",
+	"uls-common-languages": "Автоматик сайланган телләр",
+	"uls-no-results-suggestion-title": "Бәлки сезне бу телләр кызыксындырыр:",
+	"uls-search-help": "Телнең исеме яисә әлифбасы, телнең ISO-коды яки өлкәсе буенча эзләргә мөмкин:",
+	"uls-search-placeholder": "Эзләү теле"
 }

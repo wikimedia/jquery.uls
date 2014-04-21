@@ -1,23 +1,23 @@
 {
-    "@metadata": {
-        "authors": [
-            "Amire80",
-            "Pginer",
-            "Toniher"
-        ]
-    },
-    "uls-select-language": "Escolliu idioma",
-    "uls-region-WW": "Mundial",
-    "uls-region-SP": "Especials",
-    "uls-region-AM": "Amèrica",
-    "uls-region-AF": "Àfrica",
-    "uls-region-EU": "Europa",
-    "uls-region-AS": "Àsia",
-    "uls-region-ME": "Orient mitjà",
-    "uls-region-PA": "Pacífic",
-    "uls-no-results-found": "Cap resultat",
-    "uls-common-languages": "Llengües comunes",
-    "uls-no-results-suggestion-title": "Potser estiguis interessat en:",
-    "uls-search-help": "Pots cercar el nom de la llengua, el nom de l'escriptura, el codi ISO de la llengua o la seva regió:",
-    "uls-search-placeholder": "Cerca de llengua"
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Pginer",
+			"Toniher"
+		]
+	},
+	"uls-select-language": "Escolliu idioma",
+	"uls-region-WW": "Mundial",
+	"uls-region-SP": "Especials",
+	"uls-region-AM": "Amèrica",
+	"uls-region-AF": "Àfrica",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Àsia",
+	"uls-region-ME": "Orient mitjà",
+	"uls-region-PA": "Pacífic",
+	"uls-no-results-found": "Cap resultat",
+	"uls-common-languages": "Llengües comunes",
+	"uls-no-results-suggestion-title": "Potser estiguis interessat en:",
+	"uls-search-help": "Pots cercar el nom de la llengua, el nom de l'escriptura, el codi ISO de la llengua o la seva regió:",
+	"uls-search-placeholder": "Cerca de llengua"
 }

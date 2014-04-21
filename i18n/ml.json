@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Praveenp",
-            "Santhosh.thottingal"
-        ]
-    },
-    "uls-select-language": "ഭാഷ തിരഞ്ഞെടുക്കുക",
-    "uls-region-WW": "ആഗോള ഭാഷകൾ",
-    "uls-region-SP": "പ്രത്യേക ഭാഷകൾ",
-    "uls-region-AM": "അമേരിക്ക",
-    "uls-region-AF": "ആഫ്രിക്ക",
-    "uls-region-EU": "യൂറോപ്പ്",
-    "uls-region-AS": "ഏഷ്യ",
-    "uls-region-ME": "മദ്ധ്യപൂർവേഷ്യ",
-    "uls-region-PA": "പസഫിക്",
-    "uls-no-results-found": "ഒന്നും കണ്ടെത്താനായില്ല",
-    "uls-common-languages": "സാധാരണ ഭാഷകൾ",
-    "uls-no-results-suggestion-title": "താങ്കൾക്കാവശ്യം ഇതായിരിക്കാം:",
-    "uls-search-help": "താങ്കൾക്ക് ഭാഷയുടെ പേര്, ISO 639 കോഡ്, ലിപിയുടെ പേര് എന്നിവ ഉപയോഗിച്ച് തിരയാം. അല്ലെങ്കിൽ ഈ മേഖലകളിൽ തിരയാം:",
-    "uls-search-placeholder": "ഭാഷ തിരയുക"
+	"@metadata": {
+		"authors": [
+			"Praveenp",
+			"Santhosh.thottingal"
+		]
+	},
+	"uls-select-language": "ഭാഷ തിരഞ്ഞെടുക്കുക",
+	"uls-region-WW": "ആഗോള ഭാഷകൾ",
+	"uls-region-SP": "പ്രത്യേക ഭാഷകൾ",
+	"uls-region-AM": "അമേരിക്ക",
+	"uls-region-AF": "ആഫ്രിക്ക",
+	"uls-region-EU": "യൂറോപ്പ്",
+	"uls-region-AS": "ഏഷ്യ",
+	"uls-region-ME": "മദ്ധ്യപൂർവേഷ്യ",
+	"uls-region-PA": "പസഫിക്",
+	"uls-no-results-found": "ഒന്നും കണ്ടെത്താനായില്ല",
+	"uls-common-languages": "സാധാരണ ഭാഷകൾ",
+	"uls-no-results-suggestion-title": "താങ്കൾക്കാവശ്യം ഇതായിരിക്കാം:",
+	"uls-search-help": "താങ്കൾക്ക് ഭാഷയുടെ പേര്, ISO 639 കോഡ്, ലിപിയുടെ പേര് എന്നിവ ഉപയോഗിച്ച് തിരയാം. അല്ലെങ്കിൽ ഈ മേഖലകളിൽ തിരയാം:",
+	"uls-search-placeholder": "ഭാഷ തിരയുക"
 }

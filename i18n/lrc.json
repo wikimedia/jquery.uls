@@ -1,20 +1,20 @@
 {
-    "@metadata": {
-        "authors": [
-            "Mogoeilor"
-        ]
-    },
-    "uls-select-language": "زون انتخاو بيه",
-    "uls-region-WW": "كل دونيا",
-    "uls-region-SP": "ويجه",
-    "uls-region-AM": "امركا",
-    "uls-region-AF": "افرقا",
-    "uls-region-EU": "اوروپا",
-    "uls-region-AS": "آسيا",
-    "uls-region-ME": "مينجا خاور",
-    "uls-region-PA": "هوم پيوست جهون آوی",
-    "uls-no-results-found": "هيچ نتيجه يی  جسته نبی",
-    "uls-common-languages": "زونا رايج",
-    "uls-no-results-suggestion-title": "شما ممكنه دش علاقه من بوئيت",
-    "uls-search-placeholder": "پی  جوری  زونی"
+	"@metadata": {
+		"authors": [
+			"Mogoeilor"
+		]
+	},
+	"uls-select-language": "زون انتخاو بيه",
+	"uls-region-WW": "كل دونيا",
+	"uls-region-SP": "ويجه",
+	"uls-region-AM": "امركا",
+	"uls-region-AF": "افرقا",
+	"uls-region-EU": "اوروپا",
+	"uls-region-AS": "آسيا",
+	"uls-region-ME": "مينجا خاور",
+	"uls-region-PA": "هوم پيوست جهون آوی",
+	"uls-no-results-found": "هيچ نتيجه يی  جسته نبی",
+	"uls-common-languages": "زونا رايج",
+	"uls-no-results-suggestion-title": "شما ممكنه دش علاقه من بوئيت",
+	"uls-search-placeholder": "پی  جوری  زونی"
 }

@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Arjanizary",
-            "Mousa"
-        ]
-    },
-    "uls-select-language": "دیل سئچمه‌سی",
-    "uls-region-WW": "دونیا بویو",
-    "uls-region-SP": "اؤزل",
-    "uls-region-AM": "آمریکا",
-    "uls-region-AF": "آفریقا",
-    "uls-region-EU": "اوروپا",
-    "uls-region-AS": "آسیا",
-    "uls-region-ME": "اورتادوغو",
-    "uls-region-PA": "بؤیوک اوقیانوس",
-    "uls-no-results-found": "هئچ سونوچ تاپیلمادی",
-    "uls-common-languages": "اورتاق دیل‌لر",
-    "uls-no-results-suggestion-title": "بونلارا ماراقلی اولابیلرسینیز:",
-    "uls-search-help": "سیز دیل آدی، یازی آدی، دیلین ISO کودو، یوخسا بؤلگه ایله آختارا بیلرسینیز:",
-    "uls-search-placeholder": "دیل آختاریشی"
+	"@metadata": {
+		"authors": [
+			"Arjanizary",
+			"Mousa"
+		]
+	},
+	"uls-select-language": "دیل سئچمه‌سی",
+	"uls-region-WW": "دونیا بویو",
+	"uls-region-SP": "اؤزل",
+	"uls-region-AM": "آمریکا",
+	"uls-region-AF": "آفریقا",
+	"uls-region-EU": "اوروپا",
+	"uls-region-AS": "آسیا",
+	"uls-region-ME": "اورتادوغو",
+	"uls-region-PA": "بؤیوک اوقیانوس",
+	"uls-no-results-found": "هئچ سونوچ تاپیلمادی",
+	"uls-common-languages": "اورتاق دیل‌لر",
+	"uls-no-results-suggestion-title": "بونلارا ماراقلی اولابیلرسینیز:",
+	"uls-search-help": "سیز دیل آدی، یازی آدی، دیلین ISO کودو، یوخسا بؤلگه ایله آختارا بیلرسینیز:",
+	"uls-search-placeholder": "دیل آختاریشی"
 }

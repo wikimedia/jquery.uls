@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Wizardist"
-        ]
-    },
-    "uls-select-language": "Выбар мовы",
-    "uls-region-WW": "Сусьветныя",
-    "uls-region-SP": "Дадатковыя",
-    "uls-region-AM": "Амэрыка",
-    "uls-region-AF": "Афрыка",
-    "uls-region-EU": "Эўропа",
-    "uls-region-AS": "Азія",
-    "uls-region-ME": "Блізкі Ўсход",
-    "uls-region-PA": "Акіянія",
-    "uls-no-results-found": "Нічога ня знойдзена",
-    "uls-common-languages": "Прапанаваныя мовы",
-    "uls-no-results-suggestion-title": "Магчыма, вас зацікавяць:",
-    "uls-search-help": "Вы можаце шукаць па назьве мовы ці пісьменнасьці, а таксама ISO-коду мовы, або выбраць рэгіён:",
-    "uls-search-placeholder": "Шукайце мову тут"
+	"@metadata": {
+		"authors": [
+			"Wizardist"
+		]
+	},
+	"uls-select-language": "Выбар мовы",
+	"uls-region-WW": "Сусьветныя",
+	"uls-region-SP": "Дадатковыя",
+	"uls-region-AM": "Амэрыка",
+	"uls-region-AF": "Афрыка",
+	"uls-region-EU": "Эўропа",
+	"uls-region-AS": "Азія",
+	"uls-region-ME": "Блізкі Ўсход",
+	"uls-region-PA": "Акіянія",
+	"uls-no-results-found": "Нічога ня знойдзена",
+	"uls-common-languages": "Прапанаваныя мовы",
+	"uls-no-results-suggestion-title": "Магчыма, вас зацікавяць:",
+	"uls-search-help": "Вы можаце шукаць па назьве мовы ці пісьменнасьці, а таксама ISO-коду мовы, або выбраць рэгіён:",
+	"uls-search-placeholder": "Шукайце мову тут"
 }

@@ -1,18 +1,18 @@
 {
-    "@metadata": {
-        "authors": [
-            "Elfalem"
-        ]
-    },
-    "uls-select-language": "ቋንቋ መምረጫ",
-    "uls-region-WW": "ዓለም አቀፍ",
-    "uls-region-SP": "ልዩ",
-    "uls-region-AM": "አሜሪካ",
-    "uls-region-AF": "አፍሪካ",
-    "uls-region-EU": "አውሮፓ",
-    "uls-region-AS": " እስያ",
-    "uls-region-ME": "መካከለኛው ምሥራቅ",
-    "uls-region-PA": "ፓሲፊክ",
-    "uls-search-help": "በቋንቋ ስም፣ የአፃፃፍ ሥርዓት ስም፣ አይ.ኤስ.ኦ. (ISO) ኮድ መፈለግ ይቻላል ወይም በአካባቢ መቃኘት ይቻላል፦",
-    "uls-search-placeholder": "ቋንቋ ፍለጋ"
+	"@metadata": {
+		"authors": [
+			"Elfalem"
+		]
+	},
+	"uls-select-language": "ቋንቋ መምረጫ",
+	"uls-region-WW": "ዓለም አቀፍ",
+	"uls-region-SP": "ልዩ",
+	"uls-region-AM": "አሜሪካ",
+	"uls-region-AF": "አፍሪካ",
+	"uls-region-EU": "አውሮፓ",
+	"uls-region-AS": " እስያ",
+	"uls-region-ME": "መካከለኛው ምሥራቅ",
+	"uls-region-PA": "ፓሲፊክ",
+	"uls-search-help": "በቋንቋ ስም፣ የአፃፃፍ ሥርዓት ስም፣ አይ.ኤስ.ኦ. (ISO) ኮድ መፈለግ ይቻላል ወይም በአካባቢ መቃኘት ይቻላል፦",
+	"uls-search-placeholder": "ቋንቋ ፍለጋ"
 }

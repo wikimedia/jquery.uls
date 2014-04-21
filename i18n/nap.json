@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Chelin"
-        ]
-    },
-    "uls-select-language": "Selezziona lengua",
-    "uls-region-WW": "Munno intero",
-    "uls-region-SP": "Speciale",
-    "uls-region-AM": "Amereca",
-    "uls-region-AF": "Afreca",
-    "uls-region-EU": "Europa",
-    "uls-region-AS": "Asia",
-    "uls-region-ME": "Medio oriente",
-    "uls-region-PA": "Pacifico",
-    "uls-no-results-found": "Nisciuno risultato",
-    "uls-common-languages": "Lengue cchiù scelte",
-    "uls-no-results-suggestion-title": "Puo essere interessato a:",
-    "uls-search-help": "Puo cerca ppe nomme, nomme ddo script, codece ISO dda lengua o navigga tra e reggione:",
-    "uls-search-placeholder": "Ascià lengua"
+	"@metadata": {
+		"authors": [
+			"Chelin"
+		]
+	},
+	"uls-select-language": "Selezziona lengua",
+	"uls-region-WW": "Munno intero",
+	"uls-region-SP": "Speciale",
+	"uls-region-AM": "Amereca",
+	"uls-region-AF": "Afreca",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Medio oriente",
+	"uls-region-PA": "Pacifico",
+	"uls-no-results-found": "Nisciuno risultato",
+	"uls-common-languages": "Lengue cchiù scelte",
+	"uls-no-results-suggestion-title": "Puo essere interessato a:",
+	"uls-search-help": "Puo cerca ppe nomme, nomme ddo script, codece ISO dda lengua o navigga tra e reggione:",
+	"uls-search-placeholder": "Ascià lengua"
 }

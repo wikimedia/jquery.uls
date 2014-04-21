@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Krish Dulal",
-            "सरोज कुमार ढकाल"
-        ]
-    },
-    "uls-select-language": "भाषा छान्ने",
-    "uls-region-WW": "विश्वभर",
-    "uls-region-SP": "विशेष",
-    "uls-region-AM": "अमेरिका",
-    "uls-region-AF": "अफ्रिका",
-    "uls-region-EU": "युरोप",
-    "uls-region-AS": "एसिया",
-    "uls-region-ME": "मध्य पूर्व",
-    "uls-region-PA": "प्रशान्त",
-    "uls-no-results-found": "कुनै पनि नतिजाहरू भेटिएन",
-    "uls-common-languages": "साझा भाषा",
-    "uls-no-results-suggestion-title": "तपाईंलाई यसमा चाख लाग्नसक्छ:",
-    "uls-search-help": "तपाईं भाषाको नाम, लिपीको नाम, आइएसओ कोड वा क्षेत्रको आधारमा खोज्न सक्नुहुन्छ:",
-    "uls-search-placeholder": "भाषा खोज्नुहोस"
+	"@metadata": {
+		"authors": [
+			"Krish Dulal",
+			"सरोज कुमार ढकाल"
+		]
+	},
+	"uls-select-language": "भाषा छान्ने",
+	"uls-region-WW": "विश्वभर",
+	"uls-region-SP": "विशेष",
+	"uls-region-AM": "अमेरिका",
+	"uls-region-AF": "अफ्रिका",
+	"uls-region-EU": "युरोप",
+	"uls-region-AS": "एसिया",
+	"uls-region-ME": "मध्य पूर्व",
+	"uls-region-PA": "प्रशान्त",
+	"uls-no-results-found": "कुनै पनि नतिजाहरू भेटिएन",
+	"uls-common-languages": "साझा भाषा",
+	"uls-no-results-suggestion-title": "तपाईंलाई यसमा चाख लाग्नसक्छ:",
+	"uls-search-help": "तपाईं भाषाको नाम, लिपीको नाम, आइएसओ कोड वा क्षेत्रको आधारमा खोज्न सक्नुहुन्छ:",
+	"uls-search-placeholder": "भाषा खोज्नुहोस"
 }

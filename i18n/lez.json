@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Namik",
-            "Soul Train"
-        ]
-    },
-    "uls-select-language": "Ch'al xkaghun",
-    "uls-region-WW": "Virialemdin",
-    "uls-region-SP": "Гьакlдар",
-    "uls-region-AM": "ŵAmerika",
-    "uls-region-AF": "Африка",
-    "uls-region-EU": "Европа",
-    "uls-region-AS": "Азия",
-    "uls-region-ME": "Muq'o erch'i pad",
-    "uls-region-PA": "Океания",
-    "uls-no-results-found": "Jaghanach",
-    "uls-common-languages": "Bulvilin ch'alar",
-    "uls-no-results-suggestion-title": "Kwez mumkin i ch'alar muqaya xun:",
-    "uls-search-help": "Mumkinval ava jagharun chalan t'warceay ni xat'unay, ISO koday chalan ik'ni kiligun ellday",
-    "uls-search-placeholder": "Чlал жагъурун"
+	"@metadata": {
+		"authors": [
+			"Namik",
+			"Soul Train"
+		]
+	},
+	"uls-select-language": "Ch'al xkaghun",
+	"uls-region-WW": "Virialemdin",
+	"uls-region-SP": "Гьакlдар",
+	"uls-region-AM": "ŵAmerika",
+	"uls-region-AF": "Африка",
+	"uls-region-EU": "Европа",
+	"uls-region-AS": "Азия",
+	"uls-region-ME": "Muq'o erch'i pad",
+	"uls-region-PA": "Океания",
+	"uls-no-results-found": "Jaghanach",
+	"uls-common-languages": "Bulvilin ch'alar",
+	"uls-no-results-suggestion-title": "Kwez mumkin i ch'alar muqaya xun:",
+	"uls-search-help": "Mumkinval ava jagharun chalan t'warceay ni xat'unay, ISO koday chalan ik'ni kiligun ellday",
+	"uls-search-placeholder": "Чlал жагъурун"
 }

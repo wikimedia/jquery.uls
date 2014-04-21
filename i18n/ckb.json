@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Calak"
-        ]
-    },
-    "uls-select-language": "زمان ھەڵبژێرە",
-    "uls-region-WW": "لە گشت جیھاندا",
-    "uls-region-SP": "تایبەت",
-    "uls-region-AM": "ئەمریکا",
-    "uls-region-AF": "ئەفریقا",
-    "uls-region-EU": "ئەورووپا",
-    "uls-region-AS": "ئاسیا",
-    "uls-region-ME": "ڕۆژھەڵاتی ناوین",
-    "uls-region-PA": "ئۆقیانووسی ئارام",
-    "uls-no-results-found": "ھیچ ئاکامێک نەدۆزرایەوە",
-    "uls-common-languages": "زمانە ھاوبەشەکان",
-    "uls-no-results-suggestion-title": "ڕەنگە خۆشیت بێ لە:",
-    "uls-search-help": "دەتوانی بە پێی زمان، ناوی سکریپت، کۆدی ئای ئێس ئۆی زمان یان بە پێی ھەرێم بگەڕێی:",
-    "uls-search-placeholder": "گەڕانی زمان"
+	"@metadata": {
+		"authors": [
+			"Calak"
+		]
+	},
+	"uls-select-language": "زمان ھەڵبژێرە",
+	"uls-region-WW": "لە گشت جیھاندا",
+	"uls-region-SP": "تایبەت",
+	"uls-region-AM": "ئەمریکا",
+	"uls-region-AF": "ئەفریقا",
+	"uls-region-EU": "ئەورووپا",
+	"uls-region-AS": "ئاسیا",
+	"uls-region-ME": "ڕۆژھەڵاتی ناوین",
+	"uls-region-PA": "ئۆقیانووسی ئارام",
+	"uls-no-results-found": "ھیچ ئاکامێک نەدۆزرایەوە",
+	"uls-common-languages": "زمانە ھاوبەشەکان",
+	"uls-no-results-suggestion-title": "ڕەنگە خۆشیت بێ لە:",
+	"uls-search-help": "دەتوانی بە پێی زمان، ناوی سکریپت، کۆدی ئای ئێس ئۆی زمان یان بە پێی ھەرێم بگەڕێی:",
+	"uls-search-placeholder": "گەڕانی زمان"
 }

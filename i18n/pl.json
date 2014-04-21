@@ -1,23 +1,23 @@
 {
-    "@metadata": {
-        "authors": [
-            "Matma Rex",
-            "Rezonansowy",
-            "Woytecr"
-        ]
-    },
-    "uls-select-language": "Wybierz język",
-    "uls-region-WW": "Cały świat",
-    "uls-region-SP": "Specjalne",
-    "uls-region-AM": "Ameryka",
-    "uls-region-AF": "Afryka",
-    "uls-region-EU": "Europa",
-    "uls-region-AS": "Azja",
-    "uls-region-ME": "Bliski Wschód",
-    "uls-region-PA": "Pacyfik",
-    "uls-no-results-found": "Brak wyników",
-    "uls-common-languages": "Wybrane języki",
-    "uls-no-results-suggestion-title": "Być może cię zainteresują te języki:",
-    "uls-search-help": "Możesz wyszukiwać według nazwy języka, nazwy systemu pisma, kodu ISO języka, lub przeglądać listy według regionów:",
-    "uls-search-placeholder": "Wyszukiwanie języka"
+	"@metadata": {
+		"authors": [
+			"Matma Rex",
+			"Rezonansowy",
+			"Woytecr"
+		]
+	},
+	"uls-select-language": "Wybierz język",
+	"uls-region-WW": "Cały świat",
+	"uls-region-SP": "Specjalne",
+	"uls-region-AM": "Ameryka",
+	"uls-region-AF": "Afryka",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Azja",
+	"uls-region-ME": "Bliski Wschód",
+	"uls-region-PA": "Pacyfik",
+	"uls-no-results-found": "Brak wyników",
+	"uls-common-languages": "Wybrane języki",
+	"uls-no-results-suggestion-title": "Być może cię zainteresują te języki:",
+	"uls-search-help": "Możesz wyszukiwać według nazwy języka, nazwy systemu pisma, kodu ISO języka, lub przeglądać listy według regionów:",
+	"uls-search-placeholder": "Wyszukiwanie języka"
 }

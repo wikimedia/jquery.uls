@@ -1,21 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Rancher"
-        ]
-    },
-    "uls-select-language": "Одабир језика",
-    "uls-region-WW": "Светски",
-    "uls-region-SP": "Посебно",
-    "uls-region-AM": "Америка",
-    "uls-region-AF": "Африка",
-    "uls-region-EU": "Европа",
-    "uls-region-AS": "Азија",
-    "uls-region-ME": "Блиски исток",
-    "uls-region-PA": "Пацифик",
-    "uls-no-results-found": "Нема резултата",
-    "uls-common-languages": "Заступљени језици",
-    "uls-no-results-suggestion-title": "Можда вас интересује:",
-    "uls-search-help": "Можете да тражите по имену језика или писма, по ISO коду језика или пак по региону:",
-    "uls-search-placeholder": "Језик претраге"
+	"@metadata": {
+		"authors": [
+			"Rancher",
+			"Milicevic01"
+		]
+	},
+	"uls-select-language": "Одабир језика",
+	"uls-region-WW": "Светски",
+	"uls-region-SP": "Посебно",
+	"uls-region-AM": "Америка",
+	"uls-region-AF": "Африка",
+	"uls-region-EU": "Европа",
+	"uls-region-AS": "Азија",
+	"uls-region-ME": "Блиски исток",
+	"uls-region-PA": "Пацифик",
+	"uls-no-results-found": "Нема резултата",
+	"uls-common-languages": "Аутоматски изабрани језици",
+	"uls-no-results-suggestion-title": "Можда вас интересује:",
+	"uls-search-help": "Можете да тражите по имену језика или писма, по ISO коду језика или пак по региону:",
+	"uls-search-placeholder": "Претрага језика"
 }

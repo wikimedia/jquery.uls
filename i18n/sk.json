@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Rudko"
-        ]
-    },
-    "uls-select-language": "Vyber jazyk",
-    "uls-region-WW": "Celosvetove",
-    "uls-region-SP": "Špeciálne",
-    "uls-region-AM": "Amerika",
-    "uls-region-AF": "Afrika",
-    "uls-region-EU": "Európa",
-    "uls-region-AS": "Ázia",
-    "uls-region-ME": "Blízky východ",
-    "uls-region-PA": "Pacifik",
-    "uls-no-results-found": "Neboli nájdené žiadne výsledky",
-    "uls-common-languages": "Jazyky",
-    "uls-no-results-suggestion-title": "Mohlo by ťa zaujímať:",
-    "uls-search-help": "Môžeš vyhľadávať podľa názvu jazyka, názvu písma, ISO kódu jazyka alebo môžeš prechádzať po regiónech:",
-    "uls-search-placeholder": "Vyhľadávanie jazyka"
+	"@metadata": {
+		"authors": [
+			"Rudko"
+		]
+	},
+	"uls-select-language": "Vyber jazyk",
+	"uls-region-WW": "Celosvetove",
+	"uls-region-SP": "Špeciálne",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Európa",
+	"uls-region-AS": "Ázia",
+	"uls-region-ME": "Blízky východ",
+	"uls-region-PA": "Pacifik",
+	"uls-no-results-found": "Neboli nájdené žiadne výsledky",
+	"uls-common-languages": "Jazyky",
+	"uls-no-results-suggestion-title": "Mohlo by ťa zaujímať:",
+	"uls-search-help": "Môžeš vyhľadávať podľa názvu jazyka, názvu písma, ISO kódu jazyka alebo môžeš prechádzať po regiónech:",
+	"uls-search-placeholder": "Vyhľadávanie jazyka"
 }

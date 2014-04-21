@@ -1,19 +1,19 @@
 {
-    "@metadata": {
-        "authors": [
-            "Kghbln"
-        ]
-    },
-    "uls-select-language": "Wählen Sie eine Sprache",
-    "uls-region-WW": "",
-    "uls-region-AM": "",
-    "uls-region-AF": "",
-    "uls-region-EU": "",
-    "uls-region-AS": "",
-    "uls-region-ME": "",
-    "uls-region-PA": "",
-    "uls-no-results-found": "",
-    "uls-common-languages": "",
-    "uls-no-results-suggestion-title": "Dies könnte Sie interessieren:",
-    "uls-search-help": "Sie können nach dem Namen der Sprache suchen, dem Namen der Schrift, dem ISO-Code der Sprache oder aber die Suche über eine Region durchführen:"
+	"@metadata": {
+		"authors": [
+			"Kghbln"
+		]
+	},
+	"uls-select-language": "Wählen Sie eine Sprache",
+	"uls-region-WW": "",
+	"uls-region-AM": "",
+	"uls-region-AF": "",
+	"uls-region-EU": "",
+	"uls-region-AS": "",
+	"uls-region-ME": "",
+	"uls-region-PA": "",
+	"uls-no-results-found": "",
+	"uls-common-languages": "",
+	"uls-no-results-suggestion-title": "Dies könnte Sie interessieren:",
+	"uls-search-help": "Sie können nach dem Namen der Sprache suchen, dem Namen der Schrift, dem ISO-Code der Sprache oder aber die Suche über eine Region durchführen:"
 }

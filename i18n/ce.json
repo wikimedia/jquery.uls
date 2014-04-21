@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Умар"
-        ]
-    },
-    "uls-select-language": "Мотт харжар",
-    "uls-region-WW": "Дерригдуьненан",
-    "uls-region-AS": "Ази",
-    "uls-region-ME": "Гергара Малхбале",
-    "uls-region-PA": "Океани",
-    "uls-common-languages": "Ша дӀанисбелла меттанаш",
-    "uls-search-placeholder": "Лаха мотт"
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"uls-select-language": "Мотт харжар",
+	"uls-region-WW": "Дерригдуьненан",
+	"uls-region-AS": "Ази",
+	"uls-region-ME": "Гергара Малхбале",
+	"uls-region-PA": "Океани",
+	"uls-common-languages": "Ша дӀанисбелла меттанаш",
+	"uls-search-placeholder": "Лаха мотт"
 }

@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Evropi",
-            "Geraki"
-        ]
-    },
-    "uls-select-language": "Επιλέξτε γλώσσα",
-    "uls-region-WW": "Παγκόσμιες",
-    "uls-region-SP": "Ειδικές",
-    "uls-region-AM": "Αμερική",
-    "uls-region-AF": "Αφρική",
-    "uls-region-EU": "Ευρώπη",
-    "uls-region-AS": "Ασία",
-    "uls-region-ME": "Μέση Ανατολή",
-    "uls-region-PA": "Ειρηνικός",
-    "uls-no-results-found": "Δεν βρέθηκαν αποτελέσματα",
-    "uls-common-languages": "Κοινές γλώσσες",
-    "uls-no-results-suggestion-title": "Μπορεί να σας ενδιαφέρουν:",
-    "uls-search-help": "Μπορείτε να ψάξετε κατά το όνομα της γλώσσας, όνομα δέσμης ενεργειών, κωδικό ISO της γλώσσας, ή να περιηγηθείτε ανά περιοχή:",
-    "uls-search-placeholder": "Αναζήτηση γλώσσας"
+	"@metadata": {
+		"authors": [
+			"Evropi",
+			"Geraki"
+		]
+	},
+	"uls-select-language": "Επιλέξτε γλώσσα",
+	"uls-region-WW": "Παγκόσμιες",
+	"uls-region-SP": "Ειδικές",
+	"uls-region-AM": "Αμερική",
+	"uls-region-AF": "Αφρική",
+	"uls-region-EU": "Ευρώπη",
+	"uls-region-AS": "Ασία",
+	"uls-region-ME": "Μέση Ανατολή",
+	"uls-region-PA": "Ειρηνικός",
+	"uls-no-results-found": "Δεν βρέθηκαν αποτελέσματα",
+	"uls-common-languages": "Κοινές γλώσσες",
+	"uls-no-results-suggestion-title": "Μπορεί να σας ενδιαφέρουν:",
+	"uls-search-help": "Μπορείτε να ψάξετε κατά το όνομα της γλώσσας, όνομα δέσμης ενεργειών, κωδικό ISO της γλώσσας, ή να περιηγηθείτε ανά περιοχή:",
+	"uls-search-placeholder": "Αναζήτηση γλώσσας"
 }

@@ -1,16 +1,16 @@
 {
-    "@metadata": {
-        "authors": [
-            "Erdemaslancan",
-            "Гусейн"
-        ]
-    },
-    "uls-select-language": "Зывони выжније",
-    "uls-region-AM": "Америка",
-    "uls-region-AF": "Африка",
-    "uls-region-EU": "Авропа",
-    "uls-no-results-found": "Һичи пәјдо быәни",
-    "uls-common-languages": "Выжнијә быә зывонон",
-    "uls-no-results-suggestion-title": "Бәзне бе ки бо шымә марағинин ын зывонон:",
-    "uls-search-placeholder": "Зывони ныве"
+	"@metadata": {
+		"authors": [
+			"Erdemaslancan",
+			"Гусейн"
+		]
+	},
+	"uls-select-language": "Зывони выжније",
+	"uls-region-AM": "Америка",
+	"uls-region-AF": "Африка",
+	"uls-region-EU": "Авропа",
+	"uls-no-results-found": "Һичи пәјдо быәни",
+	"uls-common-languages": "Выжнијә быә зывонон",
+	"uls-no-results-suggestion-title": "Бәзне бе ки бо шымә марағинин ын зывонон:",
+	"uls-search-placeholder": "Зывони ныве"
 }

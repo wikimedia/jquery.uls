@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Andriykopanytsia",
-            "Base"
-        ]
-    },
-    "uls-select-language": "Оберіть мову",
-    "uls-region-WW": "Всесвітні",
-    "uls-region-SP": "Спеціальні",
-    "uls-region-AM": "Америка",
-    "uls-region-AF": "Африка",
-    "uls-region-EU": "Європа",
-    "uls-region-AS": "Азія",
-    "uls-region-ME": "Близький Схід",
-    "uls-region-PA": "Океанія",
-    "uls-no-results-found": "Не знайдено результатів",
-    "uls-common-languages": "Поширені мови",
-    "uls-no-results-suggestion-title": "Ви можете бути зацікавленими у:",
-    "uls-search-help": "Ви можете шукати за назвою мови або писемності, ISO-коду мови, або Ви можете переглянути за регіонами:",
-    "uls-search-placeholder": "Мова пошуку"
+	"@metadata": {
+		"authors": [
+			"Andriykopanytsia",
+			"Base"
+		]
+	},
+	"uls-select-language": "Оберіть мову",
+	"uls-region-WW": "Всесвітні",
+	"uls-region-SP": "Спеціальні",
+	"uls-region-AM": "Америка",
+	"uls-region-AF": "Африка",
+	"uls-region-EU": "Європа",
+	"uls-region-AS": "Азія",
+	"uls-region-ME": "Близький Схід",
+	"uls-region-PA": "Океанія",
+	"uls-no-results-found": "Не знайдено результатів",
+	"uls-common-languages": "Поширені мови",
+	"uls-no-results-suggestion-title": "Ви можете бути зацікавленими у:",
+	"uls-search-help": "Ви можете шукати за назвою мови або писемності, ISO-коду мови, або Ви можете переглянути за регіонами:",
+	"uls-search-placeholder": "Мова пошуку"
 }

@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Santhosh.thottingal",
-            "Siddhartha Ghai"
-        ]
-    },
-    "uls-select-language": "भाषा चुनें",
-    "uls-region-WW": "वैश्विक",
-    "uls-region-SP": "विशेष",
-    "uls-region-AM": "अमेरिका",
-    "uls-region-AF": "अफ़्रीका",
-    "uls-region-EU": "यूरोप",
-    "uls-region-AS": "एशिया",
-    "uls-region-ME": "मध्य पूर्व",
-    "uls-region-PA": "प्रशांत",
-    "uls-no-results-found": "कोई परिणाम नहीं मिले",
-    "uls-common-languages": "आम भाषाएँ",
-    "uls-no-results-suggestion-title": "आपके लिये संभवतः उपयोगी:",
-    "uls-search-help": "आप भाषा के नाम, लिपि के नाम एवं भाषा के ISO कोड से खोज कर सकते हैं, और क्षेत्र अनुसार ब्राउज़ भी कर सकते हैं:",
-    "uls-search-placeholder": "भाषा खोज"
+	"@metadata": {
+		"authors": [
+			"Santhosh.thottingal",
+			"Siddhartha Ghai"
+		]
+	},
+	"uls-select-language": "भाषा चुनें",
+	"uls-region-WW": "वैश्विक",
+	"uls-region-SP": "विशेष",
+	"uls-region-AM": "अमेरिका",
+	"uls-region-AF": "अफ़्रीका",
+	"uls-region-EU": "यूरोप",
+	"uls-region-AS": "एशिया",
+	"uls-region-ME": "मध्य पूर्व",
+	"uls-region-PA": "प्रशांत",
+	"uls-no-results-found": "कोई परिणाम नहीं मिले",
+	"uls-common-languages": "आम भाषाएँ",
+	"uls-no-results-suggestion-title": "आपके लिये संभवतः उपयोगी:",
+	"uls-search-help": "आप भाषा के नाम, लिपि के नाम एवं भाषा के ISO कोड से खोज कर सकते हैं, और क्षेत्र अनुसार ब्राउज़ भी कर सकते हैं:",
+	"uls-search-placeholder": "भाषा खोज"
 }

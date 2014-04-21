@@ -1,23 +1,23 @@
 {
-    "@metadata": {
-        "authors": [
-            "Nedergard",
-            "Nike",
-            "VezonThunder"
-        ]
-    },
-    "uls-select-language": "Valitse kieli",
-    "uls-region-WW": "Ympäri maailmaa",
-    "uls-region-SP": "Erikoiskielet",
-    "uls-region-AM": "Amerikka",
-    "uls-region-AF": "Afrikka",
-    "uls-region-EU": "Eurooppa",
-    "uls-region-AS": "Aasia",
-    "uls-region-ME": "Lähi-Itä",
-    "uls-region-PA": "Tyynimeri",
-    "uls-no-results-found": "Ei tuloksia",
-    "uls-common-languages": "Yleiset kielet",
-    "uls-no-results-suggestion-title": "Etsitkö jotakin näistä:",
-    "uls-search-help": "Voit hakea kielen nimellä, kirjoitusjärjestelmän nimellä tai kielen ISO-koodilla tai selata alueittain:",
-    "uls-search-placeholder": "Kielihaku"
+	"@metadata": {
+		"authors": [
+			"Nedergard",
+			"Nike",
+			"VezonThunder"
+		]
+	},
+	"uls-select-language": "Valitse kieli",
+	"uls-region-WW": "Ympäri maailmaa",
+	"uls-region-SP": "Erikoiskielet",
+	"uls-region-AM": "Amerikka",
+	"uls-region-AF": "Afrikka",
+	"uls-region-EU": "Eurooppa",
+	"uls-region-AS": "Aasia",
+	"uls-region-ME": "Lähi-Itä",
+	"uls-region-PA": "Tyynimeri",
+	"uls-no-results-found": "Ei tuloksia",
+	"uls-common-languages": "Yleiset kielet",
+	"uls-no-results-suggestion-title": "Etsitkö jotakin näistä:",
+	"uls-search-help": "Voit hakea kielen nimellä, kirjoitusjärjestelmän nimellä tai kielen ISO-koodilla tai selata alueittain:",
+	"uls-search-placeholder": "Kielihaku"
 }

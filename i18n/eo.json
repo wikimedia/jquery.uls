@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Objectivesea",
-            "KuboF"
-        ]
-    },
-    "uls-select-language": "Elekti lingvon",
-    "uls-region-WW": "Tutmonda",
-    "uls-region-SP": "Speciala",
-    "uls-region-AM": "Ameriko",
-    "uls-region-AF": "Afriko",
-    "uls-region-EU": "Eŭropo",
-    "uls-region-AS": "Azio",
-    "uls-region-ME": "Mezoriento",
-    "uls-region-PA": "Pacifiko",
-    "uls-no-results-found": "Neniu rezulto estis trovita",
-    "uls-common-languages": "Komunaj lingvoj",
-    "uls-no-results-suggestion-title": "Vi eble interesiĝas pri:",
-    "uls-search-help": "Vi povas serĉi laŭ la lingvonomo, la skriptnomo aŭ la lingva ISO-kodo, aŭ vi povas abeli laŭ regiono:",
-    "uls-search-placeholder": "Lingvoserĉo"
+	"@metadata": {
+		"authors": [
+			"Objectivesea",
+			"KuboF"
+		]
+	},
+	"uls-select-language": "Elekti lingvon",
+	"uls-region-WW": "Tutmonda",
+	"uls-region-SP": "Speciala",
+	"uls-region-AM": "Ameriko",
+	"uls-region-AF": "Afriko",
+	"uls-region-EU": "Eŭropo",
+	"uls-region-AS": "Azio",
+	"uls-region-ME": "Mezoriento",
+	"uls-region-PA": "Pacifiko",
+	"uls-no-results-found": "Neniu rezulto estis trovita",
+	"uls-common-languages": "Komunaj lingvoj",
+	"uls-no-results-suggestion-title": "Vi eble interesiĝas pri:",
+	"uls-search-help": "Vi povas serĉi laŭ la lingvonomo, la skriptnomo aŭ la lingva ISO-kodo, aŭ vi povas abeli laŭ regiono:",
+	"uls-search-placeholder": "Lingvoserĉo"
 }

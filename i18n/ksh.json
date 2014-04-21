@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Purodha"
-        ]
-    },
-    "uls-select-language": "En Schprooch ußwähle",
-    "uls-region-WW": "Fö de jannze Ääd",
-    "uls-region-SP": "Extras - kein Schprooche",
-    "uls-region-AM": "Ammärrika",
-    "uls-region-AF": "Affrikka",
-    "uls-region-EU": "Europpa",
-    "uls-region-AS": "Aasije",
-    "uls-region-ME": "der meddlere Oßte",
-    "uls-region-PA": "der Paziffesche Oozejaan",
-    "uls-no-results-found": "Nix jefonge",
-    "uls-common-languages": "Jemeinsamm Schprooche",
-    "uls-no-results-suggestion-title": "Do künnts Schpaßß hann aan:",
-    "uls-search-help": "Do kanns noh Schprooche söhke övver der Name, dä Schreff iehre name, et Köözel noh dä ISO-Norrm udder övver övver Rejuhne:",
-    "uls-search-placeholder": "En Schprooch Söhke"
+	"@metadata": {
+		"authors": [
+			"Purodha"
+		]
+	},
+	"uls-select-language": "En Schprooch ußwähle",
+	"uls-region-WW": "Fö de jannze Ääd",
+	"uls-region-SP": "Extras - kein Schprooche",
+	"uls-region-AM": "Ammärrika",
+	"uls-region-AF": "Affrikka",
+	"uls-region-EU": "Europpa",
+	"uls-region-AS": "Aasije",
+	"uls-region-ME": "der meddlere Oßte",
+	"uls-region-PA": "der Paziffesche Oozejaan",
+	"uls-no-results-found": "Nix jefonge",
+	"uls-common-languages": "Jemeinsamm Schprooche",
+	"uls-no-results-suggestion-title": "Do künnts Schpaßß hann aan:",
+	"uls-search-help": "Do kanns noh Schprooche söhke övver der Name, dä Schreff iehre name, et Köözel noh dä ISO-Norrm udder övver övver Rejuhne:",
+	"uls-search-placeholder": "En Schprooch Söhke"
 }

@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "John Reid"
-        ]
-    },
-    "uls-select-language": "Pick yer leid",
-    "uls-region-WW": "Worldwide",
-    "uls-region-SP": "Speecial",
-    "uls-region-AM": "Americae",
-    "uls-region-AF": "Afreeca",
-    "uls-region-EU": "Europ",
-    "uls-region-AS": "Asia",
-    "uls-region-ME": "Middle Eist",
-    "uls-region-PA": "Paceefic",
-    "uls-no-results-found": "Nae results foond",
-    "uls-common-languages": "Commyn leids",
-    "uls-no-results-suggestion-title": "Ye micht hae aen intrest in:",
-    "uls-search-help": "Ye can rake bi leid name, script name, ISO code o leid or ye can brouse bi region:",
-    "uls-search-placeholder": "Leid rake"
+	"@metadata": {
+		"authors": [
+			"John Reid"
+		]
+	},
+	"uls-select-language": "Pick yer leid",
+	"uls-region-WW": "Worldwide",
+	"uls-region-SP": "Speecial",
+	"uls-region-AM": "Americae",
+	"uls-region-AF": "Afreeca",
+	"uls-region-EU": "Europ",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Middle Eist",
+	"uls-region-PA": "Paceefic",
+	"uls-no-results-found": "Nae results foond",
+	"uls-common-languages": "Commyn leids",
+	"uls-no-results-suggestion-title": "Ye micht hae aen intrest in:",
+	"uls-search-help": "Ye can rake bi leid name, script name, ISO code o leid or ye can brouse bi region:",
+	"uls-search-placeholder": "Leid rake"
 }

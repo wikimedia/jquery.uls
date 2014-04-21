@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Tuliouel",
-            "Amgauna"
-        ]
-    },
-    "uls-select-language": "Selecionar um idioma",
-    "uls-region-WW": "Global",
-    "uls-region-SP": "Especiais",
-    "uls-region-AM": "América",
-    "uls-region-AF": "África",
-    "uls-region-EU": "Europa",
-    "uls-region-AS": "Ásia",
-    "uls-region-ME": "Oriente Médio",
-    "uls-region-PA": "Pacífico",
-    "uls-no-results-found": "Nenhum resultado encontrado",
-    "uls-common-languages": "Idiomas comuns",
-    "uls-no-results-suggestion-title": "Você pode interessar-se por:",
-    "uls-search-help": "Você pode procurar por idioma, família linguística, código ISO do idioma ou área geográfica:",
-    "uls-search-placeholder": "Procurar idioma"
+	"@metadata": {
+		"authors": [
+			"Tuliouel",
+			"Amgauna"
+		]
+	},
+	"uls-select-language": "Selecionar um idioma",
+	"uls-region-WW": "Global",
+	"uls-region-SP": "Especiais",
+	"uls-region-AM": "América",
+	"uls-region-AF": "África",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Ásia",
+	"uls-region-ME": "Oriente Médio",
+	"uls-region-PA": "Pacífico",
+	"uls-no-results-found": "Nenhum resultado encontrado",
+	"uls-common-languages": "Idiomas comuns",
+	"uls-no-results-suggestion-title": "Você pode interessar-se por:",
+	"uls-search-help": "Você pode procurar por idioma, família linguística, código ISO do idioma ou área geográfica:",
+	"uls-search-placeholder": "Procurar idioma"
 }

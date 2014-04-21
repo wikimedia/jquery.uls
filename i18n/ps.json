@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Ahmed-Najib-Biabani-Ibrahimkhel"
-        ]
-    },
-    "uls-select-language": "ژبه ټاکل",
-    "uls-region-WW": "نړېوال",
-    "uls-region-SP": "ځانگړی",
-    "uls-region-AM": "امريکا",
-    "uls-region-AF": "افريقا",
-    "uls-region-EU": "اروپا",
-    "uls-region-AS": "آسيا",
-    "uls-region-ME": "منځنی ختيځ",
-    "uls-region-PA": "غلی سمندر",
-    "uls-no-results-found": "پايلې و  نه موندل شوې",
-    "uls-common-languages": "دودې ژبې",
-    "uls-no-results-suggestion-title": "کېدای شي تاسې يې لېواله اوسۍ:",
-    "uls-search-help": "تاسې د  ژبې د نوم له مخې، د سکرېپټ نوم، د ژبې د ISO کوډ له مخې او يا هم د سيمې له مخې پلټنې کړلی شی:",
-    "uls-search-placeholder": "د ژبې پلټنه"
+	"@metadata": {
+		"authors": [
+			"Ahmed-Najib-Biabani-Ibrahimkhel"
+		]
+	},
+	"uls-select-language": "ژبه ټاکل",
+	"uls-region-WW": "نړېوال",
+	"uls-region-SP": "ځانگړی",
+	"uls-region-AM": "امريکا",
+	"uls-region-AF": "افريقا",
+	"uls-region-EU": "اروپا",
+	"uls-region-AS": "آسيا",
+	"uls-region-ME": "منځنی ختيځ",
+	"uls-region-PA": "غلی سمندر",
+	"uls-no-results-found": "پايلې و  نه موندل شوې",
+	"uls-common-languages": "دودې ژبې",
+	"uls-no-results-suggestion-title": "کېدای شي تاسې يې لېواله اوسۍ:",
+	"uls-search-help": "تاسې د  ژبې د نوم له مخې، د سکرېپټ نوم، د ژبې د ISO کوډ له مخې او يا هم د سيمې له مخې پلټنې کړلی شی:",
+	"uls-search-placeholder": "د ژبې پلټنه"
 }

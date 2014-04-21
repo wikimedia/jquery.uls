@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Amazigh84",
-            "Mmistmurt"
-        ]
-    },
-    "uls-select-language": "Xtiṛ Tutlayt",
-    "uls-region-WW": "Deg umaḍal ummid",
-    "uls-region-SP": "Uslig",
-    "uls-region-AM": "Tamrikt",
-    "uls-region-AF": "Tafriqt",
-    "uls-region-EU": "Turuft",
-    "uls-region-AS": "Asya",
-    "uls-region-ME": "Ccerq Alemmas",
-    "uls-region-PA": "Amelwi",
-    "uls-no-results-found": "Ulac d acu id yufa.",
-    "uls-common-languages": "Tutlayin tinmilitin",
-    "uls-no-results-suggestion-title": "Ma tebɣiḍ ad isineḍ ayen nniḍen ɣef :",
-    "uls-search-help": "Tzemreḍ ad tḥffeḍ s tutlayt, s uskript, s tangalt ISO n tutlayt naγ inig s tama.",
-    "uls-search-placeholder": "Anadi n tutlayt"
+	"@metadata": {
+		"authors": [
+			"Amazigh84",
+			"Mmistmurt"
+		]
+	},
+	"uls-select-language": "Xtiṛ Tutlayt",
+	"uls-region-WW": "Deg umaḍal ummid",
+	"uls-region-SP": "Uslig",
+	"uls-region-AM": "Tamrikt",
+	"uls-region-AF": "Tafriqt",
+	"uls-region-EU": "Turuft",
+	"uls-region-AS": "Asya",
+	"uls-region-ME": "Ccerq Alemmas",
+	"uls-region-PA": "Amelwi",
+	"uls-no-results-found": "Ulac d acu id yufa.",
+	"uls-common-languages": "Tutlayin tinmilitin",
+	"uls-no-results-suggestion-title": "Ma tebɣiḍ ad isineḍ ayen nniḍen ɣef :",
+	"uls-search-help": "Tzemreḍ ad tḥffeḍ s tutlayt, s uskript, s tangalt ISO n tutlayt naγ inig s tama.",
+	"uls-search-placeholder": "Anadi n tutlayt"
 }

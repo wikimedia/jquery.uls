@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Sarilho1",
-            "Waldir"
-        ]
-    },
-    "uls-select-language": "Escolha a língua",
-    "uls-region-WW": "Global",
-    "uls-region-SP": "Especiais",
-    "uls-region-AM": "América",
-    "uls-region-AF": "África",
-    "uls-region-EU": "Europa",
-    "uls-region-AS": "Ásia",
-    "uls-region-ME": "Médio Oriente",
-    "uls-region-PA": "Pacífico",
-    "uls-no-results-found": "Não foram encontrados resultados",
-    "uls-common-languages": "Línguas comuns",
-    "uls-no-results-suggestion-title": "Você pode estar interessado em:",
-    "uls-search-help": "Você pode pesquisar pwlo nome da língua, o nome do alfabeto, código ISO da língua, ou você pode procurar por região:",
-    "uls-search-placeholder": "Procurar língua"
+	"@metadata": {
+		"authors": [
+			"Sarilho1",
+			"Waldir"
+		]
+	},
+	"uls-select-language": "Escolha a língua",
+	"uls-region-WW": "Global",
+	"uls-region-SP": "Especiais",
+	"uls-region-AM": "América",
+	"uls-region-AF": "África",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Ásia",
+	"uls-region-ME": "Médio Oriente",
+	"uls-region-PA": "Pacífico",
+	"uls-no-results-found": "Não foram encontrados resultados",
+	"uls-common-languages": "Línguas comuns",
+	"uls-no-results-suggestion-title": "Você pode estar interessado em:",
+	"uls-search-help": "Você pode pesquisar pwlo nome da língua, o nome do alfabeto, código ISO da língua, ou você pode procurar por região:",
+	"uls-search-placeholder": "Procurar língua"
 }

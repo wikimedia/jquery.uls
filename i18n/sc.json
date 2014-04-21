@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "L2212"
-        ]
-    },
-    "uls-select-language": "Issèbera sa limba",
-    "uls-region-WW": "Totu su mundu",
-    "uls-region-SP": "Ispetziales",
-    "uls-region-AM": "Amèrica",
-    "uls-region-AF": "Àfrica",
-    "uls-region-EU": "Europa",
-    "uls-region-AS": "Àsia",
-    "uls-region-ME": "Oriènte de mesu.",
-    "uls-region-PA": "Patzìficu",
-    "uls-no-results-found": "Mancu unu resurtu agatau",
-    "uls-common-languages": "Limbas prus isseberas.",
-    "uls-no-results-suggestion-title": "Podes essere interessadu in:",
-    "uls-search-help": "Podes chircare tràmite nùmene de sa limba, nùmene de su script, còdighe ISO de sa limba o navigare tràmite regione:",
-    "uls-search-placeholder": "Chirca de sa limba:"
+	"@metadata": {
+		"authors": [
+			"L2212"
+		]
+	},
+	"uls-select-language": "Issèbera sa limba",
+	"uls-region-WW": "Totu su mundu",
+	"uls-region-SP": "Ispetziales",
+	"uls-region-AM": "Amèrica",
+	"uls-region-AF": "Àfrica",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Àsia",
+	"uls-region-ME": "Oriènte de mesu.",
+	"uls-region-PA": "Patzìficu",
+	"uls-no-results-found": "Mancu unu resurtu agatau",
+	"uls-common-languages": "Limbas prus isseberas.",
+	"uls-no-results-suggestion-title": "Podes essere interessadu in:",
+	"uls-search-help": "Podes chircare tràmite nùmene de sa limba, nùmene de su script, còdighe ISO de sa limba o navigare tràmite regione:",
+	"uls-search-placeholder": "Chirca de sa limba:"
 }

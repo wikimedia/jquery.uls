@@ -1,24 +1,24 @@
 {
-    "@metadata": {
-        "authors": [
-            "Erdemaslancan",
-            "Gorizon",
-            "Marmase",
-            "Mirzali"
-        ]
-    },
-    "uls-select-language": "Zıwan weçine",
-    "uls-region-WW": "Heradınya",
-    "uls-region-SP": "Xısusi",
-    "uls-region-AM": "Amerika",
-    "uls-region-AF": "Afriqa",
-    "uls-region-EU": "Ewropa",
-    "uls-region-AS": "Asya",
-    "uls-region-ME": "Rocvetışê Miyani",
-    "uls-region-PA": "Pasifik",
-    "uls-no-results-found": "Netice nê vineya",
-    "uls-common-languages": "Wertax zıwani",
-    "uls-no-results-suggestion-title": "Belki şıma cıya eleqederi:",
-    "uls-search-help": "Şıma şenê name dê zıwaniya, skript kodiya, ISO qodiya yana mıntıqa heta cıgeyrayış bıkerê.",
-    "uls-search-placeholder": "Zıwan cıgeyrayış"
+	"@metadata": {
+		"authors": [
+			"Erdemaslancan",
+			"Gorizon",
+			"Marmase",
+			"Mirzali"
+		]
+	},
+	"uls-select-language": "Zıwan weçine",
+	"uls-region-WW": "Heradınya",
+	"uls-region-SP": "Xısusi",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afriqa",
+	"uls-region-EU": "Ewropa",
+	"uls-region-AS": "Asya",
+	"uls-region-ME": "Rocvetışê Miyani",
+	"uls-region-PA": "Pasifik",
+	"uls-no-results-found": "Netice nê vineya",
+	"uls-common-languages": "Wertax zıwani",
+	"uls-no-results-suggestion-title": "Belki şıma cıya eleqederi:",
+	"uls-search-help": "Şıma şenê name dê zıwaniya, skript kodiya, ISO qodiya yana mıntıqa heta cıgeyrayış bıkerê.",
+	"uls-search-placeholder": "Zıwan cıgeyrayış"
 }

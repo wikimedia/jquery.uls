@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Cedric31"
-        ]
-    },
-    "uls-select-language": "Causir la lenga",
-    "uls-region-WW": "Dins lo monde entièr",
-    "uls-region-SP": "Especial",
-    "uls-region-AM": "America",
-    "uls-region-AF": "Africa",
-    "uls-region-EU": "Euròpa",
-    "uls-region-AS": "Asia",
-    "uls-region-ME": "Orient Mejan",
-    "uls-region-PA": "Pacific",
-    "uls-no-results-found": "Cap de resultat pas trobat",
-    "uls-common-languages": "Lengas comunas",
-    "uls-no-results-suggestion-title": "Podètz èsser interessat per :",
-    "uls-search-help": "Podètz recercar per nom de lenga, per nom de l'escript, per còde ISO de la lenga, o podètz navigar per region :",
-    "uls-search-placeholder": "Recèrca de lenga"
+	"@metadata": {
+		"authors": [
+			"Cedric31"
+		]
+	},
+	"uls-select-language": "Causir la lenga",
+	"uls-region-WW": "Dins lo monde entièr",
+	"uls-region-SP": "Especial",
+	"uls-region-AM": "America",
+	"uls-region-AF": "Africa",
+	"uls-region-EU": "Euròpa",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Orient Mejan",
+	"uls-region-PA": "Pacific",
+	"uls-no-results-found": "Cap de resultat pas trobat",
+	"uls-common-languages": "Lengas comunas",
+	"uls-no-results-suggestion-title": "Podètz èsser interessat per :",
+	"uls-search-help": "Podètz recercar per nom de lenga, per nom de l'escript, per còde ISO de la lenga, o podètz navigar per region :",
+	"uls-search-placeholder": "Recèrca de lenga"
 }

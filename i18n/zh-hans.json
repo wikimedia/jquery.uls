@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Xiaomingyan",
-            "Yfdyh000"
-        ]
-    },
-    "uls-select-language": "选择语言",
-    "uls-region-WW": "世界性",
-    "uls-region-SP": "特别",
-    "uls-region-AM": "美洲",
-    "uls-region-AF": "非洲",
-    "uls-region-EU": "欧洲",
-    "uls-region-AS": "亚洲",
-    "uls-region-ME": "中东",
-    "uls-region-PA": "太平洋",
-    "uls-no-results-found": "无搜索结果",
-    "uls-common-languages": "常用语言",
-    "uls-no-results-suggestion-title": "你可能感兴趣：",
-    "uls-search-help": "你可以按语言名称、文字名称、语言的ISO代码搜索，或按地区浏览：",
-    "uls-search-placeholder": "语言搜索"
+	"@metadata": {
+		"authors": [
+			"Xiaomingyan",
+			"Yfdyh000"
+		]
+	},
+	"uls-select-language": "选择语言",
+	"uls-region-WW": "世界性",
+	"uls-region-SP": "特别",
+	"uls-region-AM": "美洲",
+	"uls-region-AF": "非洲",
+	"uls-region-EU": "欧洲",
+	"uls-region-AS": "亚洲",
+	"uls-region-ME": "中东",
+	"uls-region-PA": "太平洋",
+	"uls-no-results-found": "无搜索结果",
+	"uls-common-languages": "常用语言",
+	"uls-no-results-suggestion-title": "你可能感兴趣：",
+	"uls-search-help": "你可以按语言名称、文字名称、语言的ISO代码搜索，或按地区浏览：",
+	"uls-search-placeholder": "语言搜索"
 }

@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Omshivaprakash",
-            "Shankar"
-        ]
-    },
-    "uls-select-language": "ಭಾಷೆಯ ಆಯ್ಕೆ",
-    "uls-region-WW": "ಪ್ರಪಂಚದಾದ್ಯಂತ",
-    "uls-region-SP": "ವಿಶೇಷ",
-    "uls-region-AM": "ಅಮೇರಿಕ",
-    "uls-region-AF": "ಆಫ್ರಿಕ",
-    "uls-region-EU": "ಯುರೋಪ್",
-    "uls-region-AS": "ಏಷ್ಯಾ",
-    "uls-region-ME": "ಮಿಡಲ್ ಈಸ್ಟ್",
-    "uls-region-PA": "ಫೆಸಿಫಿಕ್",
-    "uls-no-results-found": "ಯಾವುದೇ ಫಲಿತಾಂಶಗಳಿಲ್ಲ",
-    "uls-common-languages": "ಸಾಮಾನ್ಯ ಭಾಷೆಗಳು",
-    "uls-no-results-suggestion-title": "ನಿಮಗೆ ಇದರಲ್ಲಿ ಆಸಕ್ತಿ ಇರಬಹುದು:",
-    "uls-search-help": "ನೀವು ಭಾಷೆಯ ಹೆಸರು, ಲಿಪಿಯ ಹೆಸರು,ಭಾಷೆಯ ಐಎಸ್‌ಓ ಸಂಖ್ಯೆ ಅಥವಾ ಪ್ರಾಂತದ ಮೂಲಕ ಹುಡುಕಬಹುದು:",
-    "uls-search-placeholder": "ಭಾಷೆಯ ಹುಡುಕು"
+	"@metadata": {
+		"authors": [
+			"Omshivaprakash",
+			"Shankar"
+		]
+	},
+	"uls-select-language": "ಭಾಷೆಯ ಆಯ್ಕೆ",
+	"uls-region-WW": "ಪ್ರಪಂಚದಾದ್ಯಂತ",
+	"uls-region-SP": "ವಿಶೇಷ",
+	"uls-region-AM": "ಅಮೇರಿಕ",
+	"uls-region-AF": "ಆಫ್ರಿಕ",
+	"uls-region-EU": "ಯುರೋಪ್",
+	"uls-region-AS": "ಏಷ್ಯಾ",
+	"uls-region-ME": "ಮಿಡಲ್ ಈಸ್ಟ್",
+	"uls-region-PA": "ಫೆಸಿಫಿಕ್",
+	"uls-no-results-found": "ಯಾವುದೇ ಫಲಿತಾಂಶಗಳಿಲ್ಲ",
+	"uls-common-languages": "ಸಾಮಾನ್ಯ ಭಾಷೆಗಳು",
+	"uls-no-results-suggestion-title": "ನಿಮಗೆ ಇದರಲ್ಲಿ ಆಸಕ್ತಿ ಇರಬಹುದು:",
+	"uls-search-help": "ನೀವು ಭಾಷೆಯ ಹೆಸರು, ಲಿಪಿಯ ಹೆಸರು,ಭಾಷೆಯ ಐಎಸ್‌ಓ ಸಂಖ್ಯೆ ಅಥವಾ ಪ್ರಾಂತದ ಮೂಲಕ ಹುಡುಕಬಹುದು:",
+	"uls-search-placeholder": "ಭಾಷೆಯ ಹುಡುಕು"
 }

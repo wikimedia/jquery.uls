@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "Event",
-            "Wouterkoch"
-        ]
-    },
-    "uls-select-language": "Velg språk",
-    "uls-region-WW": "Verdensomspennende",
-    "uls-region-SP": "Spesielle",
-    "uls-region-AM": "Amerika",
-    "uls-region-AF": "Afrika",
-    "uls-region-EU": "Europa",
-    "uls-region-AS": "Asia",
-    "uls-region-ME": "Midtøsten",
-    "uls-region-PA": "Stillehavsområdet",
-    "uls-no-results-found": "Ingen resultater funnet",
-    "uls-common-languages": "Vanlige språk",
-    "uls-no-results-suggestion-title": "Dette kan kanskje interessere deg:",
-    "uls-search-help": "Du kan søke basert på språkets navn, skriptnavn eller ISO-kode, eller bla basert på region:",
-    "uls-search-placeholder": "Språksøk"
+	"@metadata": {
+		"authors": [
+			"Event",
+			"Wouterkoch"
+		]
+	},
+	"uls-select-language": "Velg språk",
+	"uls-region-WW": "Verdensomspennende",
+	"uls-region-SP": "Spesielle",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Midtøsten",
+	"uls-region-PA": "Stillehavsområdet",
+	"uls-no-results-found": "Ingen resultater funnet",
+	"uls-common-languages": "Vanlige språk",
+	"uls-no-results-suggestion-title": "Dette kan kanskje interessere deg:",
+	"uls-search-help": "Du kan søke basert på språkets navn, skriptnavn eller ISO-kode, eller bla basert på region:",
+	"uls-search-placeholder": "Språksøk"
 }
