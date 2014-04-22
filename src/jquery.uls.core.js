@@ -299,7 +299,7 @@
 				}
 			} );
 
-			$( 'html' ).click( $.proxy( this.hide, this ) );
+			$( 'html' ).click( $.proxy( this.cancel, this ) );
 		},
 
 		/**
