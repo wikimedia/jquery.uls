@@ -149,8 +149,8 @@
 				height: this.$element[0].offsetHeight
 			} );
 			return {
-				top: this.top || pos.top + pos.height,
-				left: this.left || '25%'
+				top: this.top !== undefined ? this.top : pos.top + pos.height,
+				left: this.left !== undefined ? this.left : '25%'
 			};
 		},
 
