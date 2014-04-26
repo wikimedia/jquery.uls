@@ -396,7 +396,6 @@
 	};
 
 	$.fn.uls.defaults = {
-		menu: template,
 		onSelect: null, // Callback function to be called when a language is selected
 		searchAPI: null, // Language search API
 		languages: $.uls.data.getAutonyms(), // Languages to be used for ULS, default is all languages
