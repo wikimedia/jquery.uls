@@ -190,7 +190,7 @@ div.uls-region {
 	border: 1px solid #3366bb;
 }
 
-.uls-menu .search {
+.uls-menu .uls-search {
 	position: relative;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0F0F0', endColorstr='#FBFBFB');
 	background: #f8f8f8;
