@@ -64,8 +64,8 @@
 				</div>\
 				<div class="ten columns">\
 					<div id="uls-search-input-block" class="uls-search-input-block">\
-						<input type="text" class="filterinput filtersuggestion" id="filtersuggestion" disabled="true"\
-							autocomplete="off" /> <input type="text" class="filterinput languagefilter" id="languagefilter"\
+						<input type="text" class="uls-filterinput filtersuggestion" id="filtersuggestion" disabled="true"\
+							autocomplete="off" /> <input type="text" class="uls-filterinput languagefilter" id="languagefilter"\
 							data-clear="languagefilter-clear" data-suggestion="filtersuggestion"\
 							placeholder="Language search" autocomplete="off" />\
 					</div>\
