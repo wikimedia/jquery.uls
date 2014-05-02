@@ -208,7 +208,7 @@ div.uls-region {
 	border-bottom-color: #DDD;
 }
 
-.uls-menu .search-label {
+.uls-menu .uls-search-label {
 	/* @embed */
 	background: transparent url('../images/search.png') no-repeat scroll right center;
 	/* @embed */

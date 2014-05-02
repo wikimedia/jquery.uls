@@ -60,7 +60,7 @@
 			</div>\
 			<div id="search" class="row search"> \
 				<div class="one column">\
-					<span class="search-label"></span>\
+					<span class="uls-search-label"></span>\
 				</div>\
 				<div class="ten columns">\
 					<div id="search-input-block" class="search-input-block">\
