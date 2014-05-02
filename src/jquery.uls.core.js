@@ -63,7 +63,7 @@
 					<span class="uls-search-label"></span>\
 				</div>\
 				<div class="ten columns">\
-					<div id="search-input-block" class="search-input-block">\
+					<div id="uls-search-input-block" class="uls-search-input-block">\
 						<input type="text" class="filterinput filtersuggestion" id="filtersuggestion" disabled="true"\
 							autocomplete="off" /> <input type="text" class="filterinput languagefilter" id="languagefilter"\
 							data-clear="languagefilter-clear" data-suggestion="filtersuggestion"\
