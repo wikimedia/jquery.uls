@@ -172,7 +172,7 @@ div.uls-region {
 	cursor: pointer;
 }
 
-.uls-menu .languagefilter {
+.uls-menu .uls-languagefilter {
 	background-color: transparent;
 	border: 1px solid #c9c9c9;
 	border-radius: 2px 2px 2px 2px;
@@ -186,7 +186,7 @@ div.uls-region {
 	transition: border 0.15s linear 0s;
 }
 
-.uls-menu .languagefilter:focus {
+.uls-menu .uls-languagefilter:focus {
 	border: 1px solid #3366bb;
 }
 

@@ -65,7 +65,7 @@
 				<div class="ten columns">\
 					<div id="uls-search-input-block" class="uls-search-input-block">\
 						<input type="text" class="uls-filterinput uls-filtersuggestion" id="uls-filtersuggestion" disabled="true"\
-							autocomplete="off" /> <input type="text" class="uls-filterinput languagefilter" id="languagefilter"\
+							autocomplete="off" /> <input type="text" class="uls-filterinput uls-languagefilter" id="uls-languagefilter"\
 							data-clear="uls-languagefilter-clear" data-suggestion="uls-filtersuggestion"\
 							placeholder="Language search" autocomplete="off" />\
 					</div>\
@@ -100,7 +100,7 @@
 		this.shown = false;
 		this.initialized = false;
 
-		this.$languageFilter = this.$menu.find( '#languagefilter' );
+		this.$languageFilter = this.$menu.find( '#uls-languagefilter' );
 		this.$regionFilters = this.$menu.find( '.uls-region' );
 		this.$resultsView = this.$menu.find( 'div.uls-language-list' );
 
