@@ -75,7 +75,7 @@
 				</div>\
 			</div>\
 			<div class="row uls-language-list"></div>\
-			<div class="row" id="settings-block"></div>\
+			<div class="row" id="uls-settings-block"></div>\
 		</div> ';
 	/*jshint multistr:false */
 
