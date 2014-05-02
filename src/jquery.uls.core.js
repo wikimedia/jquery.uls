@@ -34,7 +34,7 @@
 				<div class="uls-title-region seven columns">\
 					<h1 data-i18n="uls-select-language" class="uls-title">Select Language</h1>\
 				</div>\
-				<div class="five columns map-block" id="map-block">\
+				<div class="five columns uls-map-block" id="uls-map-block">\
 					<div class="row">\
 						<div data-regiongroup="1" id="uls-region-1" class="three columns uls-region uls-region-1">\
 							<a data-i18n="uls-region-WW">Worldwide</a>\

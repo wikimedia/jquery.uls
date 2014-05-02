@@ -115,12 +115,12 @@ div.uls-region {
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb, endColorstr=#253366bb)";
 }
 
-.map-block .active {
+.uls-map-block .active {
 	border-bottom-color: #3366bb;
 	border-bottom-style: solid;
 }
 
-.uls-menu .row .map-block {
+.uls-menu .row .uls-map-block {
 	top: 1px;
 	margin-right: 0;
 	padding-right: 0;
@@ -133,7 +133,7 @@ div.uls-region {
 	transition: opacity 0.2s linear;
 }
 
-.map-block a {
+.uls-map-block a {
 	color: #333;
 	opacity: 0;
 	-moz-transition: opacity 0.15s linear;
@@ -142,21 +142,21 @@ div.uls-region {
 	transition: opacity 0.15s linear;
 }
 
-.uls-menu .map-block:hover,
-.uls-menu .map-block:hover a {
+.uls-menu .uls-map-block:hover,
+.uls-menu .uls-map-block:hover a {
 	opacity: 1;
 	color: #333;
 }
 
-.map-block .uls-region-1 {
+.uls-map-block .uls-region-1 {
 	border-color: transparent;
 }
 
-.map-block:hover .active {
+.uls-map-block:hover .active {
 	border-color: #3366bb;
 }
 
-.map-block .active a {
+.uls-map-block .active a {
 	font-weight: bold;
 }
 
