@@ -245,7 +245,7 @@ div.uls-region {
 	text-align: left;
 }
 
-.uls-menu .filtersuggestion {
+.uls-menu .uls-filtersuggestion {
 	padding: 6px;
 	background-color: white;
 	color: #888;
