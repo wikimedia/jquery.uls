@@ -66,12 +66,12 @@
 					<div id="uls-search-input-block" class="uls-search-input-block">\
 						<input type="text" class="uls-filterinput uls-filtersuggestion" id="uls-filtersuggestion" disabled="true"\
 							autocomplete="off" /> <input type="text" class="uls-filterinput languagefilter" id="languagefilter"\
-							data-clear="languagefilter-clear" data-suggestion="uls-filtersuggestion"\
+							data-clear="uls-languagefilter-clear" data-suggestion="uls-filtersuggestion"\
 							placeholder="Language search" autocomplete="off" />\
 					</div>\
 				</div>\
 				<div class="one column">\
-					<span id="languagefilter-clear" class="languagefilter-clear"></span>\
+					<span id="uls-languagefilter-clear" class="uls-languagefilter-clear"></span>\
 				</div>\
 			</div>\
 			<div class="row uls-language-list"></div>\

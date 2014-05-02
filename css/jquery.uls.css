@@ -221,7 +221,7 @@ div.uls-region {
 	float: right;
 }
 
-.uls-menu .languagefilter-clear {
+.uls-menu .uls-languagefilter-clear {
 	/* @embed */
 	background: transparent url('../images/clear.png') no-repeat scroll left center;
 	/* @embed */
