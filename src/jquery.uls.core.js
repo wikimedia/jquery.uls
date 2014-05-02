@@ -28,7 +28,7 @@
 	template = '\
 		<div class="grid uls-menu uls-wide"> \
 			<div class="row"> \
-				<span id="uls-close" class="icon-close"></span> \
+				<span id="uls-close" class="uls-icon-close"></span> \
 			</div> \
 			<div class="row"> \
 				<div class="uls-title-region seven columns">\

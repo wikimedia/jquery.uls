@@ -160,7 +160,7 @@ div.uls-region {
 	font-weight: bold;
 }
 
-.icon-close {
+.uls-icon-close {
 	/* @embed */
 	background: transparent url('../images/close.png') no-repeat scroll center center;
 	/* @embed */
