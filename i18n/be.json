@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Unomano"
+		]
+	},
+	"uls-select-language": "Выберыце мову",
+	"uls-region-WW": "Па ўсім свеце",
+	"uls-region-SP": "Спецыяльныя",
+	"uls-region-AM": "Амерыка",
+	"uls-region-AF": "Афрыка",
+	"uls-region-EU": "Еўропа",
+	"uls-region-AS": "Азія",
+	"uls-region-ME": "Блізкі Ўсход",
+	"uls-region-PA": "Ціхі акіян",
+	"uls-no-results-found": "Нічога не знойдзена",
+	"uls-common-languages": "Распаўсюджаныя мовы",
+	"uls-no-results-suggestion-title": "Вы можаце быць зацікаўлены ў:",
+	"uls-search-help": "Вы можаце шукаць па мове, назве сцэнара, ISO-коду мовы, або вы можаце праглядаць па рэгіенах:",
+	"uls-search-placeholder": "Ппошук мовы"
+}
