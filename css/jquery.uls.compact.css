@@ -10,22 +10,7 @@
 }
 
 .uls-compact .search {
-	background: white;
 	border-top: none;
-	padding: 0.8em 0;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #DDD;
-}
-
-.uls-compact .filterinput,
-.uls-compact .filterinput:focus {
-	background-color: transparent;
-	border: none;
-	box-shadow: none;
-	outline: none;
-	font-size: 18px;
-	left: 0;
 }
 
 .uls-compact .uls-language-list {
