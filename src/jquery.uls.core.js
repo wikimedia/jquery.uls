@@ -33,29 +33,6 @@
 				<div class="uls-title-region seven columns">\
 					<h1 data-i18n="uls-select-language" class="uls-title">Select Language</h1>\
 				</div>\
-				<div class="five columns map-block" id="map-block">\
-					<div class="row">\
-						<div data-regiongroup="1" id="uls-region-1" class="three columns uls-region uls-region-1">\
-							<a data-i18n="uls-region-WW">Worldwide</a>\
-						</div>\
-						<div class="nine columns">\
-							<div class="row uls-worldmap">\
-								<div data-regiongroup="2" id="uls-region-2" class="four columns uls-region">\
-									<a data-i18n="uls-region-AM">America</a>\
-								</div>\
-								<div data-regiongroup="3" id="uls-region-3" class="four columns uls-region">\
-									<a><span data-i18n="uls-region-EU">Europe</span><br>\
-									<span data-i18n="uls-region-ME">Middle East</span><br>\
-									<span data-i18n="uls-region-AF">Africa</span></a>\
-								</div>\
-								<div data-regiongroup="4" id="uls-region-4" class="four columns uls-region">\
-									<a><span data-i18n="uls-region-AS">Asia</span><br>\
-									<span data-i18n="uls-region-PA">Pacific</span></a>\
-								</div>\
-							</div>\
-						</div>\
-					</div>\
-				</div>\
 			</div>\
 			<div id="search" class="row search"> \
 				<div class="one column">\
