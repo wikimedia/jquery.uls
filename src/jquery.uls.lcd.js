@@ -25,8 +25,7 @@
 	var noResultsTemplate, LanguageCategoryDisplay;
 
 	/*jshint multistr:true */
-	noResultsTemplate = '\
-	<div class="twelve columns uls-no-results-view hide">\
+	noResultsTemplate = '<div class="twelve columns uls-no-results-view hide">\
 		<h2 data-i18n="uls-no-results-found" class="eleven columns offset-by-one uls-no-results-found-title">\
 		No results found\
 		</h2>\
