@@ -241,46 +241,46 @@
 				uls = this;
 
 			// Register all event listeners to the ULS here.
-			uls.$element.on( 'click', $.proxy( uls.click, uls ) );
+			this.$element.on( 'click', $.proxy( this.click, this ) );
 
-			uls.$languageFilter.on( 'searchclear.uls', $.proxy( uls.defaultSearch, uls ) );
-			uls.$languageFilter.on( 'noresults.uls', $.proxy( uls.noresults, uls ) );
-			uls.$languageFilter.on( 'resultsfound.uls', $.proxy( uls.success, uls ) );
+			this.$languageFilter.on( 'searchclear.uls', $.proxy( this.defaultSearch, this ) );
+			this.$languageFilter.on( 'noresults.uls', $.proxy( this.noresults, this ) );
+			this.$languageFilter.on( 'resultsfound.uls', $.proxy( this.success, this ) );
 
 			// Close when clicking on the close button
-			uls.$menu.find( '#uls-close' ).on( 'click', $.proxy( uls.cancel, uls ) );
+			this.$menu.find( '#uls-close' ).on( 'click', $.proxy( this.cancel, this ) );
 			// Don't do anything if pressing on empty space in the ULS
-			uls.$menu.on( 'click', function ( e ) {
+			this.$menu.on( 'click', function ( e ) {
 				e.stopPropagation();
 			} );
 
 			// Handle key press events on the menu
-			uls.$menu.on( 'keypress', $.proxy( this.keypress, this ) )
+			this.$menu.on( 'keypress', $.proxy( this.keypress, this ) )
 				.on( 'keyup', $.proxy( this.keyup, this ) );
 
 			if ( this.eventSupported( 'keydown' ) ) {
 				this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
 			}
 
-			lcd = uls.$resultsView.lcd( {
-				languages: uls.languages,
-				quickList: uls.options.quickList,
-				clickhandler: $.proxy( uls.select, uls ),
-				source: uls.$languageFilter,
-				showRegions: uls.options.showRegions
+			lcd = this.$resultsView.lcd( {
+				languages: this.languages,
+				quickList: this.options.quickList,
+				clickhandler: $.proxy( this.select, this ),
+				source: this.$languageFilter,
+				showRegions: this.options.showRegions
 			} ).data( 'lcd' );
 
-			uls.$languageFilter.languagefilter( {
+			this.$languageFilter.languagefilter( {
 				$target: lcd,
-				languages: uls.languages,
-				searchAPI: uls.options.searchAPI,
-				onSelect: $.proxy( uls.select, uls )
+				languages: this.languages,
+				searchAPI: this.options.searchAPI,
+				onSelect: $.proxy( this.select, this )
 			} );
 
 			// Create region selectors, one per region
 			this.$menu.find( '.uls-region, .uls-region-link' ).regionselector( {
 				$target: lcd,
-				languages: uls.languages,
+				languages: this.languages,
 				success: function ( regionfilter ) {
 					// Deactivate search filtering
 					uls.$languageFilter.languagefilter( 'deactivate' );
@@ -298,7 +298,7 @@
 				}
 			} );
 
-			$( 'html' ).click( $.proxy( this.hide, this ) );
+			$( 'html' ).click( $.proxy( this.cancel, this ) );
 		},
 
 		/**
