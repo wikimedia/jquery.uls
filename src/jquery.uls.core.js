@@ -27,13 +27,13 @@
 	/*jshint multistr:true */
 	template = '<div class="grid uls-menu uls-wide"> \
 			<div class="row"> \
-				<span id="uls-close" class="icon-close"></span> \
+				<span id="uls-close" class="uls-icon-close"></span> \
 			</div> \
 			<div class="row"> \
 				<div class="uls-title-region seven columns">\
 					<h1 data-i18n="uls-select-language" class="uls-title">Select Language</h1>\
 				</div>\
-				<div class="five columns map-block" id="map-block">\
+				<div class="five columns uls-map-block" id="uls-map-block">\
 					<div class="row">\
 						<div data-regiongroup="1" id="uls-region-1" class="three columns uls-region uls-region-1">\
 							<a data-i18n="uls-region-WW">Worldwide</a>\
@@ -57,15 +57,15 @@
 					</div>\
 				</div>\
 			</div>\
-			<div id="search" class="row search"> \
+			<div id="search" class="row uls-search"> \
 				<div class="one column">\
-					<span class="search-label"></span>\
+					<span class="uls-search-label"></span>\
 				</div>\
 				<div class="ten columns">\
-					<div id="search-input-block" class="search-input-block">\
-						<input type="text" class="filterinput filtersuggestion" id="filtersuggestion" disabled="true"\
-							autocomplete="off" /> <input type="text" class="filterinput languagefilter" id="languagefilter"\
-							data-clear="languagefilter-clear" data-suggestion="filtersuggestion"\
+					<div id="uls-search-input-block" class="uls-search-input-block">\
+						<input type="text" class="uls-filterinput uls-filtersuggestion" id="uls-filtersuggestion" disabled="true"\
+							autocomplete="off" /> <input type="text" class="uls-filterinput uls-languagefilter" id="uls-languagefilter"\
+							data-clear="uls-languagefilter-clear" data-suggestion="uls-filtersuggestion"\
 							placeholder="Language search" autocomplete="off" />\
 					</div>\
 				</div>\
@@ -74,7 +74,7 @@
 				</div>\
 			</div>\
 			<div class="row uls-language-list"></div>\
-			<div class="row" id="settings-block"></div>\
+			<div class="row" id="uls-settings-block"></div>\
 		</div>';
 	/*jshint multistr:false */
 
@@ -99,7 +99,7 @@
 		this.shown = false;
 		this.initialized = false;
 
-		this.$languageFilter = this.$menu.find( '#languagefilter' );
+		this.$languageFilter = this.$menu.find( '#uls-languagefilter' );
 		this.$regionFilters = this.$menu.find( '.uls-region' );
 		this.$resultsView = this.$menu.find( 'div.uls-language-list' );
 
@@ -400,13 +400,12 @@
 		languages: $.uls.data.getAutonyms(), // Languages to be used for ULS, default is all languages
 		quickList: null, // Array of language codes or function that returns such
 		compact: false, // Show ULS in compact mode
-		showRegions: ['WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA']
+		showRegions: [ 'WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA' ]
 	};
 
 	// Define a dummy i18n function, if jquery.i18n not integrated.
 	if ( !$.fn.i18n ) {
-		$.fn.i18n = function () {
-		};
+		$.fn.i18n = function () {};
 	}
 
 	/*
@@ -439,4 +438,4 @@
 	};
 
 	$.fn.uls.Constructor = ULS;
-} ( jQuery ) );
+}( jQuery ) );
