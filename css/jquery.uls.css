@@ -7,7 +7,6 @@
 	background-image: linear-gradient(transparent, transparent), url('../images/icon-language.svg');
 	padding-left: 30px;
 }
-
 .uls-menu {
 	position: absolute;
 	z-index: 1000;
@@ -25,27 +24,21 @@
 	-moz-background-clip: padding;
 	background-clip: padding-box;
 }
-
 .uls-wide {
 	min-width: 715px;
 	width: 45%;
 }
-
 .uls-title-region a {
 	padding-left: 15px;
 }
-
 .uls-menu .uls-title {
 	font-weight: normal;
 	border: none;
-	padding-top: 1.25em;
 	padding-left: 15px;
-	padding-bottom: 3px;
 	font-size: 18pt;
 	line-height: 1.25em;
 	color: #555;
 }
-
 .uls-menu .uls-no-results-found-title {
 	font-size: 16pt;
 	font-weight: bold;
@@ -57,7 +50,6 @@
 	border-bottom: none;
 	color: #555;
 }
-
 .uls-menu .uls-lcd-region-section .uls-lcd-region-title {
 	color: #777;
 	font-size: 14pt;
@@ -68,7 +60,6 @@
 	margin-bottom: 10px;
 	border-bottom: none;
 }
-
 div.uls-region {
 	cursor: pointer;
 	padding: 0;
@@ -90,60 +81,6 @@ div.uls-region {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	width: 99%;
-}
-
-.uls-region:hover {
-	/*Cross-browser background transparency*/
-	background: #3366bb;
-	background: rgba(51, 102, 187, 0.1);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb, endColorstr=#253366bb );
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#253366bb, endColorstr=#253366bb)";
-}
-
-<<<<<<< HEAD
-.uls-map-block .active {
-	border-bottom-color: #3366bb;
-	border-bottom-style: solid;
-}
-
-.uls-menu .row .uls-map-block {
-	top: 1px;
-	margin-right: 0;
-	padding-right: 0;
-	float: right;
-	overflow: hidden;
-	opacity: 0.7;
-	-moz-transition: opacity 0.2s linear;
-	-o-transition: opacity 0.2s linear;
-	-webkit-transition: opacity 0.2s linear;
-	transition: opacity 0.2s linear;
-}
-
-.uls-map-block a {
-	color: #333;
-	opacity: 0;
-	-moz-transition: opacity 0.15s linear;
-	-o-transition: opacity 0.15s linear;
-	-webkit-transition: opacity 0.15s linear;
-	transition: opacity 0.15s linear;
-}
-
-.uls-menu .uls-map-block:hover,
-.uls-menu .uls-map-block:hover a {
-	opacity: 1;
-	color: #333;
-}
-
-.uls-map-block .uls-region-1 {
-	border-color: transparent;
-}
-
-.uls-map-block:hover .active {
-	border-color: #3366bb;
-}
-
-.uls-map-block .active a {
-	font-weight: bold;
 }
 
 .uls-icon-close {
@@ -171,11 +108,9 @@ div.uls-region {
 	-webkit-transition: border 0.15s linear 0s;
 	transition: border 0.15s linear 0s;
 }
-
 .uls-menu .uls-languagefilter:focus {
 	border: 1px solid #3366bb;
 }
-
 .uls-menu .uls-search {
 	position: relative;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0F0F0', endColorstr='#FBFBFB');
@@ -193,7 +128,6 @@ div.uls-region {
 	border-bottom-style: solid;
 	border-bottom-color: #DDD;
 }
-
 .uls-menu .uls-search-label {
 	/* @embed */
 	background: transparent url('../images/search.png') no-repeat scroll right center;
@@ -206,7 +140,6 @@ div.uls-region {
 	width: 32px;
 	float: right;
 }
-
 .uls-menu .uls-languagefilter-clear {
 	/* @embed */
 	background: transparent url('../images/clear.png') no-repeat scroll left center;
@@ -220,7 +153,6 @@ div.uls-region {
 	width: 32px;
 	margin-left: -32px;
 }
-
 .uls-menu .uls-filterinput {
 	position: absolute;
 	top: 0;
@@ -230,7 +162,6 @@ div.uls-region {
 	width: 100%;
 	text-align: left;
 }
-
 .uls-menu .uls-filtersuggestion {
 	padding: 6px;
 	background-color: white;
@@ -240,7 +171,6 @@ div.uls-region {
 	box-shadow: 0 1px 2px transparent inset;
 	left: 1px;
 }
-
 .uls-menu .uls-search-input-block {
 	position: relative;
 }

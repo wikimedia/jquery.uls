@@ -34,14 +34,7 @@
 				<p>\
 					<span data-i18n="uls-search-help">You can search by language name, \
 					script name, ISO code of language or \
-					you can browse by region:</span>\
-					<a class="uls-region-link" data-i18n="uls-region-AM" data-region="AM">America</a>, \
-					<a class="uls-region-link" data-i18n="uls-region-EU" data-region="EU">Europe</a>, \
-					<a class="uls-region-link" data-i18n="uls-region-ME" data-region="ME">Middle East</a>, \
-					<a class="uls-region-link" data-i18n="uls-region-AF" data-region="AF">Africa</a>, \
-					<a class="uls-region-link" data-i18n="uls-region-AS" data-region="AS">Asia</a>, \
-					<a class="uls-region-link" data-i18n="uls-region-PA" data-region="PA">Pacific</a>, \
-					<a class="uls-region-link" data-i18n="uls-region-WW" data-region="WW">Worldwide</a>.\
+					you can browse by region.</span>\
 				</p>\
 			</div>\
 		</div>\
@@ -73,26 +66,27 @@
 		 * @return {bool} Whether the language was added.
 		 */
 		append: function ( langCode, regionCode ) {
-			var lcd = this, i, regions;
+			var lcd = this,
+				i, regions;
 
-			if ( !this.options.languages[langCode] ) {
+			if ( !this.options.languages[ langCode ] ) {
 				// Language is unknown or not in the list of languages for this context.
 				return false;
 			}
 
 			if ( regionCode ) {
-				regions = [regionCode];
+				regions = [ regionCode ];
 			} else {
 				regions = $.uls.data.getRegions( langCode );
 			}
 
 			// Worldwides only displayed once
 			if ( $.inArray( 'WW', regions ) > -1 ) {
-				regions = ['WW'];
+				regions = [ 'WW' ];
 			}
 
 			for ( i = 0; i < regions.length; i++ ) {
-				this.regionLanguages[regions[i]].push( langCode );
+				this.regionLanguages[ regions[ i ] ].push( langCode );
 			}
 
 			// Work around the bad interface, delay rendering until we have got
@@ -124,7 +118,7 @@
 			regions.push( this.buildQuicklist() );
 
 			$.each( $.uls.data.regiongroups, function ( regionCode ) {
-				lcd.regionLanguages[regionCode] = [];
+				lcd.regionLanguages[ regionCode ] = [];
 				// Don't show the region unless it was enabled
 				if ( $.inArray( regionCode, lcd.options.showRegions ) === -1 ) {
 					return;
@@ -137,8 +131,8 @@
 						$( '<h3>' )
 						.attr( 'data-i18n', 'uls-region-' + regionCode )
 						.addClass( 'eleven columns uls-lcd-region-title' )
-						.text( regionNames[regionCode] )
-					);
+						.text( regionNames[ regionCode ] )
+				);
 
 				regions.push( $section );
 			} );
@@ -152,7 +146,8 @@
 		 * Renders a region and displays it if it has content.
 		 */
 		renderRegions: function () {
-			var lcd = this, languages,
+			var lcd = this,
+				languages,
 				items = lcd.options.itemsPerColumn,
 				columns = 4;
 
@@ -167,7 +162,7 @@
 
 				$region.children( '.uls-language-block' ).remove();
 
-				languages = lcd.regionLanguages[regionCode];
+				languages = lcd.regionLanguages[ regionCode ];
 				if ( !languages || languages.length === 0 ) {
 					$region.addClass( 'hide' );
 					return;
@@ -176,7 +171,7 @@
 				lcd.renderRegion( $region, languages, items, columns );
 				$region.removeClass( 'hide' );
 
-				lcd.regionLanguages[regionCode] = [];
+				lcd.regionLanguages[ regionCode ] = [];
 			} );
 
 		},
@@ -188,7 +183,7 @@
 		 * @param {number} itemsPerColumn How many languages fit in a column.
 		 * @param {number} columnsPerRow How many columns fit in a row.
 		 */
-		renderRegion: function( $region, languages, itemsPerColumn, columnsPerRow ) {
+		renderRegion: function ( $region, languages, itemsPerColumn, columnsPerRow ) {
 			var i, lastItem, currentScript, nextScript, force,
 				len = languages.length,
 				items = [],
@@ -197,18 +192,18 @@
 
 			for ( i = 0; i < len; i++ ) {
 				force = false;
-				nextScript = $.uls.data.getScriptGroupOfLanguage( languages[i+1] );
+				nextScript = $.uls.data.getScriptGroupOfLanguage( languages[ i + 1 ] );
 
 				lastItem = len - i === 1;
 				// Force column break if script changes and column has more than one row already
 				if ( i === 0 ) {
-					currentScript = $.uls.data.getScriptGroupOfLanguage( languages[i] );
+					currentScript = $.uls.data.getScriptGroupOfLanguage( languages[ i ] );
 				} else if ( currentScript !== nextScript && items.length > 1 ) {
 					force = true;
 				}
 				currentScript = nextScript;
 
-				items.push( this.renderItem( languages[i] ) );
+				items.push( this.renderItem( languages[ i ] ) );
 
 				if ( items.length >= itemsPerColumn || lastItem || force ) {
 					columns.push( $( '<ul>' ).addClass( 'three columns' ).append( items ) );
@@ -228,10 +223,10 @@
 		 * @param {string} code Language code
 		 * @return {Element}
 		 */
-		renderItem: function( code ) {
+		renderItem: function ( code ) {
 			var a, name, autonym, li;
 
-			name = this.options.languages[code];
+			name = this.options.languages[ code ];
 			autonym = $.uls.data.getAutonym( code ) || name || code;
 
 			// Not using jQuery as this is performance hotspot
@@ -250,7 +245,7 @@
 			return li;
 		},
 
-		i18n: function ( ) {
+		i18n: function () {
 			this.$element.find( '[data-i18n]' ).i18n();
 		},
 
@@ -358,7 +353,7 @@
 				} );
 
 				// highlight the region visible while scrolling in the map.
-				inview = $.uls.data.regiongroups[inviewRegion];
+				inview = $.uls.data.regiongroups[ inviewRegion ];
 				if ( !$( '#uls-region-' + inview ).hasClass( 'active' ) ) {
 					$( '.regionselector' ).removeClass( 'active' );
 					$( '#uls-region-' + inview ).addClass( 'active' );
@@ -377,17 +372,17 @@
 				$this.data( 'lcd', ( data = new LanguageCategoryDisplay( this, options ) ) );
 			}
 
-			if ( typeof option === 'string') {
-				data[option]();
+			if ( typeof option === 'string' ) {
+				data[ option ]();
 			}
 		} );
 	};
 
 	$.fn.lcd.defaults = {
 		languages: null,
-		showRegions: ['WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA'],
+		showRegions: [ 'WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA' ],
 		itemsPerColumn: 8
 	};
 
 	$.fn.lcd.Constructor = LanguageCategoryDisplay;
-} ( jQuery ) );
+}( jQuery ) );

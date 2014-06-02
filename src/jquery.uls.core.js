@@ -33,29 +33,6 @@
 				<div class="uls-title-region seven columns">\
 					<h1 data-i18n="uls-select-language" class="uls-title">Select Language</h1>\
 				</div>\
-				<div class="five columns uls-map-block" id="uls-map-block">\
-					<div class="row">\
-						<div data-regiongroup="1" id="uls-region-1" class="three columns uls-region uls-region-1">\
-							<a data-i18n="uls-region-WW">Worldwide</a>\
-						</div>\
-						<div class="nine columns">\
-							<div class="row uls-worldmap">\
-								<div data-regiongroup="2" id="uls-region-2" class="four columns uls-region">\
-									<a data-i18n="uls-region-AM">America</a>\
-								</div>\
-								<div data-regiongroup="3" id="uls-region-3" class="four columns uls-region">\
-									<a><span data-i18n="uls-region-EU">Europe</span><br>\
-									<span data-i18n="uls-region-ME">Middle East</span><br>\
-									<span data-i18n="uls-region-AF">Africa</span></a>\
-								</div>\
-								<div data-regiongroup="4" id="uls-region-4" class="four columns uls-region">\
-									<a><span data-i18n="uls-region-AS">Asia</span><br>\
-									<span data-i18n="uls-region-PA">Pacific</span></a>\
-								</div>\
-							</div>\
-						</div>\
-					</div>\
-				</div>\
 			</div>\
 			<div id="search" class="row uls-search"> \
 				<div class="one column">\
@@ -88,9 +65,9 @@
 		this.languages = this.options.languages;
 
 		for ( var code in this.languages ) {
-			if ( $.uls.data.languages[code] === undefined ) {
+			if ( $.uls.data.languages[ code ] === undefined ) {
 				// Language is unknown to ULS.
-				delete this.languages[code];
+				delete this.languages[ code ];
 			}
 		}
 
@@ -145,7 +122,7 @@
 		 */
 		position: function () {
 			var pos = $.extend( {}, this.$element.offset(), {
-				height: this.$element[0].offsetHeight
+				height: this.$element[ 0 ].offsetHeight
 			} );
 			return {
 				top: this.top !== undefined ? this.top : pos.top + pos.height,
@@ -166,11 +143,6 @@
 			if ( !this.initialized ) {
 				$( 'body' ).prepend( this.$menu );
 				this.i18n();
-
-				// Initialize with a full search.
-				// This happens on first time click of uls trigger.
-				this.defaultSearch();
-
 				this.initialized = true;
 			}
 
@@ -195,12 +167,6 @@
 			}
 		},
 
-		defaultSearch: function () {
-			this.$resultsView.lcd( 'empty' );
-
-			this.$regionFilters.regionselector( 'show' );
-		},
-
 		/**
 		 * Hide the ULS window
 		 */
@@ -221,7 +187,6 @@
 		 * Callback for no results found context.
 		 */
 		noresults: function () {
-			$( '.regionselector' ).removeClass( 'active' );
 			this.$resultsView.lcd( 'noResults' );
 		},
 
@@ -229,10 +194,10 @@
 		 * callback for results found context.
 		 */
 		success: function () {
-			$( '.regionselector' ).removeClass( 'active' );
 			this.$resultsView.show();
 		},
 
+		/**
 		/**
 		 * Bind the UI elements with their event listeners
 		 */
@@ -242,10 +207,6 @@
 
 			// Register all event listeners to the ULS here.
 			this.$element.on( 'click', $.proxy( this.click, this ) );
-
-			this.$languageFilter.on( 'searchclear.uls', $.proxy( this.defaultSearch, this ) );
-			this.$languageFilter.on( 'noresults.uls', $.proxy( this.noresults, this ) );
-			this.$languageFilter.on( 'resultsfound.uls', $.proxy( this.success, this ) );
 
 			// Close when clicking on the close button
 			this.$menu.find( '#uls-close' ).on( 'click', $.proxy( this.cancel, this ) );
@@ -278,7 +239,7 @@
 			} );
 
 			// Create region selectors, one per region
-			this.$menu.find( '.uls-region, .uls-region-link' ).regionselector( {
+			this.regionFilter = new $.uls.RegionSelector( {
 				$target: lcd,
 				languages: this.languages,
 				success: function ( regionfilter ) {
@@ -297,6 +258,10 @@
 					uls.$languageFilter.languagefilter( 'clear' );
 				}
 			} );
+
+			this.$languageFilter.on( 'searchclear.uls', $.proxy( this.regionFilter.show, this.regionFilter ) );
+			this.$languageFilter.on( 'noresults.uls', $.proxy( this.noresults, this ) );
+			this.$languageFilter.on( 'resultsfound.uls', $.proxy( this.success, this ) );
 
 			$( 'html' ).click( $.proxy( this.cancel, this ) );
 		},
@@ -364,7 +329,7 @@
 
 			if ( !isSupported ) {
 				this.$element.setAttribute( eventName, 'return;' );
-				isSupported = typeof this.$element[eventName] === 'function';
+				isSupported = typeof this.$element[ eventName ] === 'function';
 			}
 
 			return isSupported;
@@ -389,7 +354,7 @@
 			}
 
 			if ( typeof option === 'string' ) {
-				data[option]();
+				data[ option ]();
 			}
 		} );
 	};
