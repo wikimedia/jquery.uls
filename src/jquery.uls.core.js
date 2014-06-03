@@ -70,7 +70,7 @@
 					</div>\
 				</div>\
 				<div class="one column">\
-					<span id="languagefilter-clear" class="languagefilter-clear"></span>\
+					<span id="uls-languagefilter-clear" class="uls-languagefilter-clear"></span>\
 				</div>\
 			</div>\
 			<div class="row uls-language-list"></div>\
