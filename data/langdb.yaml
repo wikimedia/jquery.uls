@@ -213,6 +213,7 @@ languages:
   ki: [Latn, [AF], Gĩkũyũ]
   kiu: [Latn, [EU, ME], Kırmancki]
   kj: [Latn, [AF], Kwanyama]
+  kjh: [Cyrl, [AS], хакас]
   kk: [kk-cyrl]
   kk-arab: [Arab, [EU, AS], قازاقشا (تٶتە)]
   kk-cn: [kk-arab]
