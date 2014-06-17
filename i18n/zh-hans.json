@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Xiaomingyan",
-			"Yfdyh000"
+			"Yfdyh000",
+			"Liuxinyu970226"
 		]
 	},
 	"uls-select-language": "选择语言",
-	"uls-region-WW": "世界性",
+	"uls-region-WW": "世界通用",
 	"uls-region-SP": "特别",
 	"uls-region-AM": "美洲",
 	"uls-region-AF": "非洲",
