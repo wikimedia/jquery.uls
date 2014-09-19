@@ -397,7 +397,7 @@
 
 	$.fn.uls.defaults = {
 		onSelect: null, // Callback function to be called when a language is selected
-		onShowRegions: null, // Callback function to be called when a regions are ready
+		onShowRegions: null, // Callback function to be called when regions are ready
 		searchAPI: null, // Language search API
 		languages: $.uls.data.getAutonyms(), // Languages to be used for ULS, default is all languages
 		quickList: null, // Array of language codes or function that returns such
