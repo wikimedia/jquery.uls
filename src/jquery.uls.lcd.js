@@ -179,6 +179,10 @@
 				lcd.regionLanguages[regionCode] = [];
 			} );
 
+			// trigger for customization
+			if ( this.options.onShowRegions ) {
+				this.options.onShowRegions.call( this );
+			}
 		},
 
 		/**
