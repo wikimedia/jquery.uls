@@ -267,7 +267,8 @@
 				quickList: this.options.quickList,
 				clickhandler: $.proxy( this.select, this ),
 				source: this.$languageFilter,
-				showRegions: this.options.showRegions
+				showRegions: this.options.showRegions,
+				languageDecorator: this.options.languageDecorator
 			} ).data( 'lcd' );
 
 			this.$languageFilter.languagefilter( {
@@ -400,7 +401,8 @@
 		languages: $.uls.data.getAutonyms(), // Languages to be used for ULS, default is all languages
 		quickList: null, // Array of language codes or function that returns such
 		compact: false, // Show ULS in compact mode
-		showRegions: [ 'WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA' ]
+		showRegions: [ 'WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA' ],
+		languageDecorator: null // Callback function to be called when a language link is prepared - for custom decoration.
 	};
 
 	// Define a dummy i18n function, if jquery.i18n not integrated.
