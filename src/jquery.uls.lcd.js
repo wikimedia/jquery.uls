@@ -246,7 +246,7 @@
 			a.className = 'autonym';
 
 			li.appendChild( a );
-			if( this.options.languageDecorator ) {
+			if ( this.options.languageDecorator ) {
 				this.options.languageDecorator( $( a ), code );
 			}
 			return li;

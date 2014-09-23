@@ -93,7 +93,7 @@ $( '.uls-trigger' ).uls( {
 | onCancel    | function to be handled when language selection is not done. ie. language selector is closed without selecting any |
 | showRegions | Regions to be shown in the language selector. Default: ['WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA'] |
 | itemsPerColumn | Number of languages per column. Default is 8 |
-| languageDecorator | Callback function to be called when a language link is prepared - for custom decoration. Arguments: (a) the $language - the language link jQuery object (b) languageCode. The function can do any styling, changing properites etc on the passed link. See examples/decorator.html for example usage.|
+| languageDecorator | Callback function to be called when a language link is prepared - for custom decoration. Arguments: (a) the $language - the language link jQuery object (b) languageCode. The function can do any styling, changing properties etc on the passed link. See examples/decorator.html for example usage.|
 
 
 Features
