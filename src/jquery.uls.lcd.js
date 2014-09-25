@@ -246,7 +246,9 @@
 			a.className = 'autonym';
 
 			li.appendChild( a );
-
+			if ( this.options.languageDecorator ) {
+				this.options.languageDecorator( $( a ), code );
+			}
 			return li;
 		},
 
@@ -386,7 +388,8 @@
 	$.fn.lcd.defaults = {
 		languages: null,
 		showRegions: ['WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA'],
-		itemsPerColumn: 8
+		itemsPerColumn: 8,
+		languageDecorator: null
 	};
 
 	$.fn.lcd.Constructor = LanguageCategoryDisplay;
