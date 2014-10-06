@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Reza1615"
+			"Reza1615",
+			"Alirezaaa"
 		]
 	},
 	"uls-select-language": "انتخاب زبان",
@@ -16,6 +17,6 @@
 	"uls-no-results-found": "نتیجه‌ای یافت نشد",
 	"uls-common-languages": "زبان‌های رایج",
 	"uls-no-results-suggestion-title": "ممکن است علاقه‌مند باشید:",
-	"uls-search-help": "شما می توانید بر پایه نام زبان، نام اسکریپت، کد استاندارد زبان یا بر پایه منطقه جستجو کنید:",
+	"uls-search-help": "شما می‌توانید بر پایه نام زبان، نام اسکریپت، کد استاندارد زبان یا بر پایه منطقه جستجو کنید:",
 	"uls-search-placeholder": "جستجوی زبان"
 }

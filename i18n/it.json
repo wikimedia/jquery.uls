@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Beta16"
+			"Beta16",
+			"Macofe"
 		]
 	},
 	"uls-select-language": "Seleziona lingua",
 	"uls-region-WW": "Tutto il mondo",
-	"uls-region-SP": "Speciali",
+	"uls-region-SP": "Speciale",
 	"uls-region-AM": "America",
 	"uls-region-AF": "Africa",
 	"uls-region-EU": "Europa",

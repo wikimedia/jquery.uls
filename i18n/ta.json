@@ -3,11 +3,13 @@
 		"authors": [
 			"Kanags",
 			"Logicwiki",
-			"Santhosh.thottingal"
+			"Santhosh.thottingal",
+			"ElangoRamanujam"
 		]
 	},
 	"uls-select-language": "மொழி தேர்வு",
 	"uls-region-WW": "உலகளாவிய",
+	"uls-region-SP": "சிறப்பு",
 	"uls-region-AM": "அமெரிக்கா",
 	"uls-region-AF": "ஆப்பிரிக்கா",
 	"uls-region-EU": "ஐரோப்பா",
