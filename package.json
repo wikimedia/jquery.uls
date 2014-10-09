@@ -43,7 +43,7 @@
     "url" : "http://github.com/wikimedia/jquery.uls/issues"
   },
   "engine": {
-    "node": ">=0.6.x"
+    "node": ">=0.10.x"
   },
   "licenses": [
     {
