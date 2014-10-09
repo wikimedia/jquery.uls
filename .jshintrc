@@ -1,26 +1,32 @@
 {
+	// Enforcing
+	"bitwise": true,
 	"camelcase": true,
 	"curly": true,
 	"eqeqeq": true,
+	"forin": false,
 	"immed": true,
 	"latedef": true,
 	"newcap": true,
 	"noarg": true,
 	"noempty": true,
 	"nonew": true,
+	"onevar": true,
 	"quotmark": "single",
+	"regexp": false,
+	"strict": true,
 	"trailing": true,
 	"undef": true,
 	"unused": true,
-	"onevar": true,
-	"bitwise": true,
-	"forin": false,
-	"regexp": false,
-	"strict": true,
+
+	// Relax
 	"laxbreak": true,
-	"smarttabs": true,
 	"multistr": true,
+	"smarttabs": true,
+
+	// Environment
 	"browser": true,
+
 	"predef": [
 		"_",
 		"jQuery",
