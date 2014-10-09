@@ -24,9 +24,6 @@
     "Santhosh Thottingal",
     "Siebrand Mazeland"
   ],
-  "dependencies": {
-   "jquery": "~1.7.3"
-  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-cli": "~0.1",
