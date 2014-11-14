@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robin0van0der0vliet"
+		]
+	},
+	"uls-select-language": "Kies taal",
+	"uls-region-WW": "Wrâldwiid",
+	"uls-region-SP": "Spesjaal",
+	"uls-region-AM": "Amearika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Jeropa",
+	"uls-region-AS": "Aazje",
+	"uls-region-ME": "Midden-Easten",
+	"uls-region-PA": "Pasifysk gebiet",
+	"uls-no-results-found": "Gjin resultaten fûn",
+	"uls-common-languages": "Taalsuggestjes",
+	"uls-no-results-suggestion-title": "Faaks bisto ynteressearre yn:",
+	"uls-search-help": "Do kinstst sykje op taalnamme, skriftnamme, ISO-koade fan de taal of do kinne blêden per regio:",
+	"uls-search-placeholder": "Taal sykje"
+}
