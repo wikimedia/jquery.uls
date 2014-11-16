@@ -92,7 +92,7 @@ languages:
   crh: [Latn, [EU], qırımtatarca]
   crh-cyrl: [Cyrl, [EU], къырымтатарджа]
   crh-latn: [crh]
-  cs: [Latn, [EU], česky]
+  cs: [Latn, [EU], čeština]
   csb: [Latn, [EU], kaszëbsczi]
  # FIXME: which script to prefer?..
   cu: [Cyrl, [EU], словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ]
@@ -177,6 +177,7 @@ languages:
   hne: [Deva, [AS], छत्तीसगढ़ी]
   ho: [Latn, [PA], Hiri Motu]
   hr: [Latn, [EU], hrvatski]
+  hrx: [Latn, [AM], Hunsrik]
   hsb: [Latn, [EU], hornjoserbsce]
   hsn: [Hans, [AS], 湘语]
   ht: [Latn, [AM], Kreyòl ayisyen]
@@ -321,7 +322,7 @@ languages:
   na: [Latn, [PA], Dorerin Naoero]
   nah: [Latn, [AM], Nāhuatl]
   nan: [Latn, [AS], Bân-lâm-gú]
-  nap: [Latn, [EU], Nnapulitano]
+  nap: [Latn, [EU], Napulitano]
   nb: [Latn, [EU], norsk (bokmål)]
   nds-nl: [Latn, [EU], Nedersaksisch]
   nds: [Latn, [EU], Plattdüütsch]
@@ -389,7 +390,7 @@ languages:
  # world?
   ru: [Cyrl, [EU, AS, ME], русский]
   rue: [Cyrl, [EU], русиньскый]
-  rup: [Latn, [EU], Armãneashce]
+  rup: [Latn, [EU], armãneashti]
   ruq: [Cyrl, [EU], Влахесте]
   ruq-cyrl: [ruq]
  # FIXME: broken autonym
@@ -482,7 +483,7 @@ languages:
   tum: [Latn, [AF], chiTumbuka]
   tw: [Latn, [AF], Twi]
   twd: [Latn, [EU], Tweants]
-  ty: [Latn, [PA], Reo Mā`ohi]
+  ty: [Latn, [PA], reo tahiti]
   tyv: [Cyrl, [AS], тыва дыл]
   tzm: [Tfng, [AF], ⵜⴰⵎⴰⵣⵉⵖⵜ]
   udm: [Cyrl, [EU], удмурт]
