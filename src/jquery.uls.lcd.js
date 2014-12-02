@@ -152,8 +152,8 @@
 		 * Renders a region and displays it if it has content.
 		 */
 		renderRegions: function () {
-			var lcd = this, languages,
-				items = lcd.options.itemsPerColumn;
+			var languages,
+				lcd = this;
 
 			this.$noResults.addClass( 'hide' );
 			this.$element.find( '.uls-lcd-region-section' ).each( function () {
@@ -172,7 +172,12 @@
 					return;
 				}
 
-				lcd.renderRegion( $region, languages, items, lcd.options.columns );
+				lcd.renderRegion(
+					$region,
+					languages,
+					lcd.options.itemsPerColumn,
+					lcd.options.columns
+				);
 				$region.removeClass( 'hide' );
 
 				lcd.regionLanguages[regionCode] = [];
@@ -293,7 +298,12 @@
 				.text( 'Common languages' ); // This is placeholder text if jquery.i18n not present
 			$quickListSection.append( $quickListSectionTitle );
 
-			this.renderRegion( $quickListSection, quickList, 4, 4 );
+			this.renderRegion(
+				$quickListSection,
+				quickList,
+				this.options.itemsPerColumn,
+				this.options.columns
+			);
 
 			$quickListSectionTitle.i18n();
 
@@ -385,10 +395,10 @@
 	};
 
 	$.fn.lcd.defaults = {
-		columns: 4,
 		languages: null,
 		showRegions: ['WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA'],
 		itemsPerColumn: 8,
+		columns: 4,
 		languageDecorator: null
 	};
 
