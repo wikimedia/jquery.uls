@@ -153,8 +153,7 @@
 		 */
 		renderRegions: function () {
 			var lcd = this, languages,
-				items = lcd.options.itemsPerColumn,
-				columns = 4;
+				items = lcd.options.itemsPerColumn;
 
 			this.$noResults.addClass( 'hide' );
 			this.$element.find( '.uls-lcd-region-section' ).each( function () {
@@ -173,7 +172,7 @@
 					return;
 				}
 
-				lcd.renderRegion( $region, languages, items, columns );
+				lcd.renderRegion( $region, languages, items, lcd.options.columns );
 				$region.removeClass( 'hide' );
 
 				lcd.regionLanguages[regionCode] = [];
@@ -386,6 +385,7 @@
 	};
 
 	$.fn.lcd.defaults = {
+		columns: 4,
 		languages: null,
 		showRegions: ['WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA'],
 		itemsPerColumn: 8,

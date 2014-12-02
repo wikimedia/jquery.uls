@@ -144,12 +144,20 @@
 		 * @returns {Object}
 		 */
 		position: function () {
-			var pos = $.extend( {}, this.$element.offset(), {
+			var width, minWidth, pos;
+
+			width = 11 * this.options.columns;
+			minWidth = 179 * this.options.columns;
+
+			pos = $.extend( {}, this.$element.offset(), {
 				height: this.$element[0].offsetHeight
 			} );
+
 			return {
-				top: this.top !== undefined ? this.top : pos.top + pos.height,
-				left: this.left !== undefined ? this.left : '25%'
+				'width': width + '%',
+				'min-width': minWidth,
+				'top': this.top !== undefined ? this.top : pos.top + pos.height,
+				'left': this.left !== undefined ? this.left : '25%'
 			};
 		},
 
@@ -264,6 +272,7 @@
 
 			lcd = this.$resultsView.lcd( {
 				languages: this.languages,
+				columns: this.options.columns,
 				quickList: this.options.quickList,
 				clickhandler: $.proxy( this.select, this ),
 				source: this.$languageFilter,
@@ -401,6 +410,7 @@
 		languages: $.uls.data.getAutonyms(), // Languages to be used for ULS, default is all languages
 		quickList: null, // Array of language codes or function that returns such
 		compact: false, // Show ULS in compact mode
+		columns: 2, // How many columns of languages to show
 		showRegions: [ 'WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA' ],
 		languageDecorator: null // Callback function to be called when a language link is prepared - for custom decoration.
 	};
