@@ -241,6 +241,10 @@ div.uls-region {
 	float: right;
 }
 
+.uls-menu.uls-narrow .uls-search-label {
+	background-size: 20px;
+}
+
 .uls-menu .uls-languagefilter-clear {
 	/* @embed */
 	background: transparent url('../images/clear.png') no-repeat scroll left center;

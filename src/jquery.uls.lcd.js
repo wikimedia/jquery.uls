@@ -193,11 +193,19 @@
 		 * @param {number} columnsPerRow How many columns fit in a row.
 		 */
 		renderRegion: function( $region, languages, itemsPerColumn, columnsPerRow ) {
-			var i, lastItem, currentScript, nextScript, force,
+			var columnsClasses, i, lastItem, currentScript, nextScript, force,
 				len = languages.length,
 				items = [],
 				columns = [],
 				rows = [];
+
+			if ( columnsPerRow === 1 ) {
+				columnsClasses = 'twelve columns';
+			} else if ( columnsPerRow < 4 ) {
+				columnsClasses = 'six columns';
+			} else {
+				columnsClasses = 'three columns';
+			}
 
 			for ( i = 0; i < len; i++ ) {
 				force = false;
@@ -215,7 +223,7 @@
 				items.push( this.renderItem( languages[i] ) );
 
 				if ( items.length >= itemsPerColumn || lastItem || force ) {
-					columns.push( $( '<ul>' ).addClass( 'three columns' ).append( items ) );
+					columns.push( $( '<ul>' ).addClass( columnsClasses ).append( items ) );
 					items = [];
 					if ( columns.length >= columnsPerRow || lastItem ) {
 						rows.push( $( '<div>' ).addClass( 'row uls-language-block' ).append( columns ) );
