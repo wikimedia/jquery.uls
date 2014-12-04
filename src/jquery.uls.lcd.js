@@ -152,9 +152,8 @@
 		 * Renders a region and displays it if it has content.
 		 */
 		renderRegions: function () {
-			var lcd = this, languages,
-				items = lcd.options.itemsPerColumn,
-				columns = 4;
+			var languages,
+				lcd = this;
 
 			this.$noResults.addClass( 'hide' );
 			this.$element.find( '.uls-lcd-region-section' ).each( function () {
@@ -173,7 +172,12 @@
 					return;
 				}
 
-				lcd.renderRegion( $region, languages, items, columns );
+				lcd.renderRegion(
+					$region,
+					languages,
+					lcd.options.itemsPerColumn,
+					lcd.options.columns
+				);
 				$region.removeClass( 'hide' );
 
 				lcd.regionLanguages[regionCode] = [];
@@ -189,11 +193,19 @@
 		 * @param {number} columnsPerRow How many columns fit in a row.
 		 */
 		renderRegion: function( $region, languages, itemsPerColumn, columnsPerRow ) {
-			var i, lastItem, currentScript, nextScript, force,
+			var columnsClasses, i, lastItem, currentScript, nextScript, force,
 				len = languages.length,
 				items = [],
 				columns = [],
 				rows = [];
+
+			if ( columnsPerRow === 1 ) {
+				columnsClasses = 'twelve columns';
+			} else if ( columnsPerRow < 4 ) {
+				columnsClasses = 'six columns';
+			} else {
+				columnsClasses = 'three columns';
+			}
 
 			for ( i = 0; i < len; i++ ) {
 				force = false;
@@ -211,7 +223,7 @@
 				items.push( this.renderItem( languages[i] ) );
 
 				if ( items.length >= itemsPerColumn || lastItem || force ) {
-					columns.push( $( '<ul>' ).addClass( 'three columns' ).append( items ) );
+					columns.push( $( '<ul>' ).addClass( columnsClasses ).append( items ) );
 					items = [];
 					if ( columns.length >= columnsPerRow || lastItem ) {
 						rows.push( $( '<div>' ).addClass( 'row uls-language-block' ).append( columns ) );
@@ -294,7 +306,12 @@
 				.text( 'Common languages' ); // This is placeholder text if jquery.i18n not present
 			$quickListSection.append( $quickListSectionTitle );
 
-			this.renderRegion( $quickListSection, quickList, 4, 4 );
+			this.renderRegion(
+				$quickListSection,
+				quickList,
+				this.options.itemsPerColumn,
+				this.options.columns
+			);
 
 			$quickListSectionTitle.i18n();
 
@@ -389,6 +406,7 @@
 		languages: null,
 		showRegions: ['WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA'],
 		itemsPerColumn: 8,
+		columns: 4,
 		languageDecorator: null
 	};
 

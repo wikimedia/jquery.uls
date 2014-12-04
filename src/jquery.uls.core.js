@@ -25,7 +25,7 @@
 
 	// Region numbers in id attributes also appear in the langdb.
 	/*jshint multistr:true */
-	template = '<div class="grid uls-menu uls-wide"> \
+	template = '<div class="grid uls-menu"> \
 			<div class="row"> \
 				<span id="uls-close" class="uls-icon-close"></span> \
 			</div> \
@@ -144,9 +144,12 @@
 		 * @returns {Object}
 		 */
 		position: function () {
-			var pos = $.extend( {}, this.$element.offset(), {
+			var pos;
+
+			pos = $.extend( {}, this.$element.offset(), {
 				height: this.$element[0].offsetHeight
 			} );
+
 			return {
 				top: this.top !== undefined ? this.top : pos.top + pos.height,
 				left: this.left !== undefined ? this.left : '25%'
@@ -157,6 +160,13 @@
 		 * Show the ULS window
 		 */
 		show: function () {
+			var widthClasses = {
+				wide: 'uls-wide',
+				medium: 'uls-medium',
+				narrow: 'uls-narrow'
+			};
+
+			this.$menu.addClass( widthClasses[this.options.menuWidth] );
 			this.$menu.css( this.position() );
 
 			if ( this.options.compact ) {
@@ -237,8 +247,14 @@
 		 * Bind the UI elements with their event listeners
 		 */
 		listen: function () {
-			var lcd,
+			var lcd, columnsOptions,
 				uls = this;
+
+			columnsOptions = {
+				wide: 4,
+				medium: 2,
+				narrow: 1
+			};
 
 			// Register all event listeners to the ULS here.
 			this.$element.on( 'click', $.proxy( this.click, this ) );
@@ -264,6 +280,7 @@
 
 			lcd = this.$resultsView.lcd( {
 				languages: this.languages,
+				columns: columnsOptions[this.options.menuWidth],
 				quickList: this.options.quickList,
 				clickhandler: $.proxy( this.select, this ),
 				source: this.$languageFilter,
@@ -401,6 +418,7 @@
 		languages: $.uls.data.getAutonyms(), // Languages to be used for ULS, default is all languages
 		quickList: null, // Array of language codes or function that returns such
 		compact: false, // Show ULS in compact mode
+		menuWidth: 'wide', // The options are wide (4 columns), medium (2 columns), and narrow (1 column)
 		showRegions: [ 'WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA' ],
 		languageDecorator: null // Callback function to be called when a language link is prepared - for custom decoration.
 	};
