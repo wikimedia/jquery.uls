@@ -395,21 +395,21 @@
 		getMenuWidth: function () {
 			var menuWidth, languagesCount;
 
-			menuWidth = this.options.menuWidth;
-
-			if ( !menuWidth ) {
-				languagesCount = Object.keys( this.options.languages ).length;
-
-				if ( languagesCount < 12 ) {
-					menuWidth = 'narrow';
-				} else if ( languagesCount < 100 ) {
-					menuWidth = 'medium';
-				} else {
-					menuWidth = 'wide';
-				}
+			if ( this.options.menuWidth ) {
+				return this.options.menuWidth;
 			}
 
-			return menuWidth;
+			languagesCount = Object.keys( this.options.languages ).length;
+
+			if ( languagesCount < 12 ) {
+				return 'narrow';
+			}
+
+			if ( languagesCount < 100 ) {
+				return 'medium';
+			}
+
+			return 'wide';
 		},
 
 		isMobile: function () {
