@@ -80,10 +80,21 @@
 				return false;
 			}
 
-			if ( regionCode ) {
-				regions = [regionCode];
+			// Show everything in one region when there is only one column
+			if ( lcd.options.columns === 1 ) {
+				regions = ['WW'];
+
+				// Languages are expected to be repeated in this case,
+				// and we only want to show them once
+				if ( $.inArray( langCode, this.regionLanguages['WW'] ) > -1 ) {
+					return true;
+				}
 			} else {
-				regions = $.uls.data.getRegions( langCode );
+				if ( regionCode ) {
+					regions = [regionCode];
+				} else {
+					regions = $.uls.data.getRegions( langCode );
+				}
 			}
 
 			// Worldwides only displayed once
@@ -124,7 +135,10 @@
 			regions.push( this.buildQuicklist() );
 
 			$.each( $.uls.data.regiongroups, function ( regionCode ) {
+				var $regionTitle;
+
 				lcd.regionLanguages[regionCode] = [];
+
 				// Don't show the region unless it was enabled
 				if ( $.inArray( regionCode, lcd.options.showRegions ) === -1 ) {
 					return;
@@ -132,13 +146,16 @@
 
 				$section = $( '<div>' )
 					.addClass( 'eleven columns offset-by-one uls-lcd-region-section hide' )
-					.attr( 'id', regionCode )
-					.append(
-						$( '<h3>' )
+					.attr( 'id', regionCode );
+
+				// Show a region heading, unless we are using a narrow ULS
+				if ( lcd.options.columns !== 1 ) {
+					$section.append( $( '<h3>' )
 						.attr( 'data-i18n', 'uls-region-' + regionCode )
 						.addClass( 'eleven columns uls-lcd-region-title' )
 						.text( regionNames[regionCode] )
 					);
+				};
 
 				regions.push( $section );
 			} );
@@ -194,7 +211,7 @@
 		 */
 		renderRegion: function( $region, languages, itemsPerColumn, columnsPerRow ) {
 			var columnsClasses, i, lastItem, currentScript, nextScript, force,
-				len = languages.length,
+				languagesCount = languages.length,
 				items = [],
 				columns = [],
 				rows = [];
@@ -207,27 +224,40 @@
 				columnsClasses = 'three columns';
 			}
 
-			for ( i = 0; i < len; i++ ) {
-				force = false;
-				nextScript = $.uls.data.getScriptGroupOfLanguage( languages[i+1] );
-
-				lastItem = len - i === 1;
-				// Force column break if script changes and column has more than one row already
-				if ( i === 0 ) {
-					currentScript = $.uls.data.getScriptGroupOfLanguage( languages[i] );
-				} else if ( currentScript !== nextScript && items.length > 1 ) {
-					force = true;
+			if ( this.options.columns === 1 ) {
+				// For one-column narrow ULS, just render all the languages
+				// in one simple list without separators or script groups
+				for ( i = 0; i < languagesCount; i++ ) {
+					items.push( this.renderItem( languages[i] ) );
 				}
-				currentScript = nextScript;
 
-				items.push( this.renderItem( languages[i] ) );
+				columns.push( $( '<ul>' ).addClass( columnsClasses ).append( items ) );
+				rows.push( $( '<div>' ).addClass( 'row uls-language-block' ).append( columns ) );
+			} else {
+				// For medium and wide ULS, clever column placement
+				for ( i = 0; i < languagesCount; i++ ) {
+					force = false;
+					nextScript = $.uls.data.getScriptGroupOfLanguage( languages[i+1] );
 
-				if ( items.length >= itemsPerColumn || lastItem || force ) {
-					columns.push( $( '<ul>' ).addClass( columnsClasses ).append( items ) );
-					items = [];
-					if ( columns.length >= columnsPerRow || lastItem ) {
-						rows.push( $( '<div>' ).addClass( 'row uls-language-block' ).append( columns ) );
-						columns = [];
+					lastItem = languagesCount - i === 1;
+					// Force column break if script changes and column has more than one row already
+					if ( i === 0 ) {
+						currentScript = $.uls.data.getScriptGroupOfLanguage( languages[i] );
+					} else if ( currentScript !== nextScript && items.length > 1 ) {
+						force = true;
+					}
+					currentScript = nextScript;
+
+					items.push( this.renderItem( languages[i] ) );
+
+					if ( items.length >= itemsPerColumn || lastItem || force ) {
+						columns.push( $( '<ul>' ).addClass( columnsClasses ).append( items ) );
+						items = [];
+
+						if ( columns.length >= columnsPerRow || lastItem ) {
+							rows.push( $( '<div>' ).addClass( 'row uls-language-block' ).append( columns ) );
+							columns = [];
+						}
 					}
 				}
 			}
