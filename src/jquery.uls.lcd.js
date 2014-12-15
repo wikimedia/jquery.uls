@@ -124,21 +124,25 @@
 			regions.push( this.buildQuicklist() );
 
 			$.each( $.uls.data.regiongroups, function ( regionCode ) {
+				var $regionTitle;
+
 				lcd.regionLanguages[regionCode] = [];
 				// Don't show the region unless it was enabled
 				if ( $.inArray( regionCode, lcd.options.showRegions ) === -1 ) {
 					return;
 				}
 
+				if ( lcd.options.columns > 1 ) {
+					// If there is only one column, Don't show region header
+					$regionTitle = $( '<h3>' )
+						.attr( 'data-i18n', 'uls-region-' + regionCode )
+						.addClass( 'eleven columns uls-lcd-region-title' )
+						.text( regionNames[regionCode] );
+				}
 				$section = $( '<div>' )
 					.addClass( 'eleven columns offset-by-one uls-lcd-region-section hide' )
 					.attr( 'id', regionCode )
-					.append(
-						$( '<h3>' )
-						.attr( 'data-i18n', 'uls-region-' + regionCode )
-						.addClass( 'eleven columns uls-lcd-region-title' )
-						.text( regionNames[regionCode] )
-					);
+					.append( $regionTitle );
 
 				regions.push( $section );
 			} );
@@ -216,7 +220,7 @@
 				if ( i === 0 ) {
 					currentScript = $.uls.data.getScriptGroupOfLanguage( languages[i] );
 				} else if ( currentScript !== nextScript && items.length > 1 ) {
-					force = true;
+					force = columnsPerRow === 1 ? false: true;
 				}
 				currentScript = nextScript;
 

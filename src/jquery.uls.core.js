@@ -248,6 +248,7 @@
 		 */
 		listen: function () {
 			var lcd, columnsOptions,
+				languageCodes, i,
 				uls = this;
 
 			columnsOptions = {
@@ -295,27 +296,37 @@
 				onSelect: $.proxy( this.select, this )
 			} );
 
+
 			// Create region selectors, one per region
-			this.$menu.find( '.uls-region, .uls-region-link' ).regionselector( {
-				$target: lcd,
-				languages: this.languages,
-				success: function ( regionfilter ) {
-					// Deactivate search filtering
-					uls.$languageFilter.languagefilter( 'deactivate' );
-
-					// If it is the WW region, show the quicklist
-					if ( regionfilter.regionGroup === 1 ) {
-						lcd.quicklist();
-					}
-
-					// Show 'results view' if we are in no results mode
-					uls.success();
-				},
-				noresults: function () {
-					uls.$languageFilter.languagefilter( 'clear' );
+			if ( this.getMenuWidth() === 'narrow' ) {
+				// For narrow class ULS, there is no region filter
+				languageCodes = Object.keys( this.languages );
+				for ( i = 0; i < languageCodes.length; i++ ) {
+					lcd.append( languageCodes[ i ], 'WW' );
 				}
-			} );
+				// And do not show the map
+				this.$menu.find( '.uls-worldmap, .uls-region' ).remove();
+			} else {
+				this.$menu.find( '.uls-region, .uls-region-link' ).regionselector( {
+					$target: lcd,
+					languages: this.languages,
+					success: function ( regionfilter ) {
+						// Deactivate search filtering
+						uls.$languageFilter.languagefilter( 'deactivate' );
 
+						// If it is the WW region, show the quicklist
+						if ( regionfilter.regionGroup === 1 ) {
+							lcd.quicklist();
+						}
+
+						// Show 'results view' if we are in no results mode
+						uls.success();
+					},
+					noresults: function () {
+						uls.$languageFilter.languagefilter( 'clear' );
+					}
+				} );
+			}
 			$( 'html' ).click( $.proxy( this.cancel, this ) );
 		},
 
