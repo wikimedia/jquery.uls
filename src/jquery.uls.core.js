@@ -298,7 +298,7 @@
 
 
 			// Create region selectors, one per region
-			if ( this.getMenuWidth() === 'narrow' ) {
+			if ( this.options.menuWidth === 'narrow' ) {
 				// For narrow class ULS, there is no region filter
 				languageCodes = Object.keys( this.languages );
 				for ( i = 0; i < languageCodes.length; i++ ) {
