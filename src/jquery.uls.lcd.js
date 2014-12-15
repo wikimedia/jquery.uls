@@ -201,7 +201,7 @@
 
 			if ( columnsPerRow === 1 ) {
 				columnsClasses = 'twelve columns';
-			} else if ( columnsPerRow < 4 ) {
+			} else if ( columnsPerRow === 2 ) {
 				columnsClasses = 'six columns';
 			} else {
 				columnsClasses = 'three columns';
@@ -406,6 +406,8 @@
 		languages: null,
 		showRegions: ['WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA'],
 		itemsPerColumn: 8,
+		// Other supported values are 1 and 2.
+		// Other values will have rendering issues.
 		columns: 4,
 		languageDecorator: null
 	};
