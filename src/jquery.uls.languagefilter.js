@@ -29,7 +29,7 @@
 
 	LanguageFilter = function( element, options ) {
 		this.$element = $( element );
-		this.options = $.extend( {}, $.fn.regionselector.defaults, options );
+		this.options = $.extend( {}, $.fn.languagefilter.defaults, options );
 		this.$element.addClass( 'languagefilter' );
 		this.resultCount = 0;
 		this.$suggestion = this.$element.parents().find( '#' + this.$element.data( 'suggestion' ) );
