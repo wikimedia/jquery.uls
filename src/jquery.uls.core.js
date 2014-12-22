@@ -75,7 +75,6 @@
 		this.initialized = false;
 
 		this.$languageFilter = this.$menu.find( '#uls-languagefilter' );
-		this.$regionFilters = this.$menu.find( '.uls-region' );
 		this.$resultsView = this.$menu.find( 'div.uls-language-list' );
 
 		this.render();
