@@ -166,7 +166,7 @@
 				narrow: 'uls-narrow'
 			};
 
-			this.$menu.addClass( widthClasses[this.options.menuWidth] );
+			this.$menu.addClass( widthClasses[this.getMenuWidth()] );
 			this.$menu.css( this.position() );
 
 			if ( this.options.compact ) {
@@ -280,7 +280,7 @@
 
 			lcd = this.$resultsView.lcd( {
 				languages: this.languages,
-				columns: columnsOptions[this.options.menuWidth],
+				columns: columnsOptions[ this.getMenuWidth() ],
 				quickList: this.options.quickList,
 				clickhandler: $.proxy( this.select, this ),
 				source: this.$languageFilter,
@@ -388,6 +388,30 @@
 			return isSupported;
 		},
 
+		/**
+		 * Get the panel menu width parameter
+		 * @return string
+		 */
+		getMenuWidth: function () {
+			var menuWidth, languagesCount;
+
+			if ( this.options.menuWidth ) {
+				return this.options.menuWidth;
+			}
+
+			languagesCount = Object.keys( this.options.languages ).length;
+
+			if ( languagesCount < 12 ) {
+				return 'narrow';
+			}
+
+			if ( languagesCount < 100 ) {
+				return 'medium';
+			}
+
+			return 'wide';
+		},
+
 		isMobile: function () {
 			return navigator.userAgent.match( /(iPhone|iPod|iPad|Android|BlackBerry)/ );
 		}
@@ -418,7 +442,9 @@
 		languages: $.uls.data.getAutonyms(), // Languages to be used for ULS, default is all languages
 		quickList: null, // Array of language codes or function that returns such
 		compact: false, // Show ULS in compact mode
-		menuWidth: 'wide', // The options are wide (4 columns), medium (2 columns), and narrow (1 column)
+		// The options are wide (4 columns), medium (2 columns), and narrow (1 column).
+		// If not specified, it will be set automatically.
+		menuWidth: null,
 		showRegions: [ 'WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA' ],
 		languageDecorator: null // Callback function to be called when a language link is prepared - for custom decoration.
 	};
