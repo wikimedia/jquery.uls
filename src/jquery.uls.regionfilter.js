@@ -1,5 +1,5 @@
 /**
- * jQuery region filter plugin.
+ * Region Filter for ULS
  *
  * Copyright (C) 2012 Alolita Sharma, Amir Aharoni, Arun Ganesh, Brandon Harris,
  * Niklas Laxström, Pau Giner, Santhosh Thottingal, Siebrand Mazeland and other
@@ -20,37 +20,23 @@
 ( function ( $ ) {
 	'use strict';
 
-	/* RegionSelector plugin definition */
-
-	var RegionSelector;
-
 	/**
 	 * Region selector is a language selector based on regions.
-	 * Usage: $( 'jqueryselector' ).regionselector( options );
-	 * The attached element should have data-regiongroup attribute
 	 * that defines the regiongroup for the selector.
 	 */
-	RegionSelector = function ( element, options ) {
-		this.$element = $( element );
-		this.options = $.extend( {}, $.fn.regionselector.defaults, options );
-		this.$element.addClass( 'regionselector' );
+	var RegionSelector = function ( options ) {
+		this.options = options;
 		this.regions = [];
 		this.cache = null;
-		this.regionGroup = this.$element.data( 'regiongroup' );
 		this.init();
-		this.listen();
 	};
 
 	RegionSelector.prototype = {
 		constructor: RegionSelector,
 
 		init: function () {
-			var region = this.$element.data( 'region' );
-			this.regions = $.uls.data.getRegionsInGroup( this.regionGroup );
-
-			if ( region ) {
-				this.regions.push( region );
-			}
+			this.regions = this.options.regions || $.uls.data.getAllRegions();
+			this.show();
 		},
 
 		test: function ( langCode ) {
@@ -58,11 +44,11 @@
 				langRegions = $.uls.data.getRegions( langCode );
 
 			for ( i = 0; i < this.regions.length; i++ ) {
-				region = this.regions[i];
+				region = this.regions[ i ];
 
 				if ( $.inArray( region, langRegions ) >= 0 ) {
 					this.render( langCode, region );
-					this.cache[langCode] = region;
+					this.cache[ langCode ] = region;
 
 					return;
 				}
@@ -71,14 +57,14 @@
 
 		show: function () {
 			var result, languagesByScriptGroup, scriptGroup, languages, i,
-				$element = this.options.$target && this.options.$target.$element,
-				$parent = $element && $element.parent(),
-				$prev = $element && $element.prev();
+				$target = this.options.$target && this.options.$target.$target,
+				$parent = $target && $target.parent(),
+				$prev = $target && $target.prev();
 
-			if ( $element && $parent ) {
+			if ( $target && $parent ) {
 				// Avoid reflows while adding new elements to the list
 				// Use .detach() to keep jQuery events and data associated with elements
-				$element.detach();
+				$target.detach();
 			}
 
 			if ( this.cache ) {
@@ -87,7 +73,7 @@
 				result = null;
 
 				for ( result in this.cache ) {
-					this.render( result, this.cache[result] );
+					this.render( result, this.cache[ result ] );
 				}
 			} else {
 				this.cache = {};
@@ -98,7 +84,7 @@
 				// of script groups
 				for ( scriptGroup in $.uls.data.scriptgroups ) {
 					// Get the languages for the script group
-					languages = languagesByScriptGroup[scriptGroup];
+					languages = languagesByScriptGroup[ scriptGroup ];
 
 					// It's possible that some script groups are missing
 					if ( !languages ) {
@@ -110,17 +96,17 @@
 
 					for ( i = 0; i < languages.length; i++ ) {
 						// Check whether it belongs to the region
-						this.test( languages[i] );
+						this.test( languages[ i ] );
 					}
 				}
 			}
 
-			if ( $element && $parent ) {
+			if ( $target && $parent ) {
 				// Restore the element to where we removed it from
 				if ( $prev ) {
-					$prev.after( $element );
+					$prev.after( $target );
 				} else {
-					$parent.append( $element );
+					$parent.append( $target );
 				}
 			}
 
@@ -138,61 +124,7 @@
 
 			$target.append( langCode, region );
 		},
-
-		listen: function () {
-			this.$element.on( 'click', $.proxy( this.click, this ) );
-		},
-
-		click: function () {
-			var $list, $firstTargetRegion;
-
-			// Don't do anything if a region is selected already
-			if ( this.$element.hasClass( 'active' ) ) {
-				return;
-			}
-
-			$list = this.options.$target.$element;
-			$firstTargetRegion = $list.find( '#' + this.regions[0] );
-
-			// Scroll to appropriate area
-			$list.scrollTop(
-				$firstTargetRegion.offset().top - $list.offset().top + $list.scrollTop()
-			);
-
-			// Make the selected region (and it only) active
-			$( '.regionselector' ).removeClass( 'active' );
-
-			if ( this.regionGroup ) {
-				// if there is a region group, make it active.
-				this.$element.addClass( 'active' );
-			}
-		}
 	};
 
-	/* RegionSelector plugin definition */
-
-	$.fn.regionselector = function ( option ) {
-		return this.each( function () {
-			var $this = $( this ),
-				data = $this.data( 'regionselector' ),
-				options = typeof option === 'object' && option;
-
-			if ( !data ) {
-				$this.data( 'regionselector', ( data = new RegionSelector( this, options ) ) );
-			}
-
-			if ( typeof option === 'string' ) {
-				data[option]();
-			}
-		} );
-	};
-
-	$.fn.regionselector.defaults = {
-		$target: null, // Where to render the results
-		success: null, // callback if any results found.
-		noresults: null, // callback when no results to show
-		languages: null
-	};
-
-	$.fn.regionselector.Constructor = RegionSelector;
-} ( jQuery ) );
+	$.uls.RegionSelector = RegionSelector;
+}( jQuery ) );

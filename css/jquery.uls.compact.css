@@ -1,7 +1,5 @@
 .uls-compact .uls-icon-close,
-.uls-compact .uls-title-region,
-.uls-compact .uls-map-block,
-.uls-compact #uls-settings-block {
+.uls-compact .uls-title-region {
 	display: none !important;
 }
 
