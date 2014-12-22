@@ -376,34 +376,6 @@
 					lcd.options.clickhandler.call( this, $( this ).data( 'code' ) );
 				} );
 			}
-
-			// The region section need to be in sync with the map filter.
-			lcd.$element.scroll( function () {
-				var inview, inviewRegion,
-					$ulsLanguageList = $( this ),
-					scrollTop = $ulsLanguageList.position().top,
-					scrollBottom = $ulsLanguageList.height();
-
-				// The region section need to be in sync with the map filter.
-				inviewRegion = 'WW';
-				lcd.$element.find( '.uls-lcd-region-section' ).each( function () {
-					var $lcdRegionSection = $( this ),
-						top = $lcdRegionSection.position().top,
-						height = $lcdRegionSection.height(),
-						padding = 10;
-
-					if ( top - padding <= scrollTop && height > scrollBottom ) {
-						inviewRegion = $lcdRegionSection.attr( 'id' );
-					}
-				} );
-
-				// highlight the region visible while scrolling in the map.
-				inview = $.uls.data.regiongroups[ inviewRegion ];
-				if ( !$( '#uls-region-' + inview ).hasClass( 'active' ) ) {
-					$( '.regionselector' ).removeClass( 'active' );
-					$( '#uls-region-' + inview ).addClass( 'active' );
-				}
-			} );
 		}
 	};
 
