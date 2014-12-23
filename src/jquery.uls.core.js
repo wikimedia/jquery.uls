@@ -205,7 +205,6 @@
 		},
 
 		/**
-		/**
 		 * Bind the UI elements with their event listeners
 		 */
 		listen: function () {
