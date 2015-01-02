@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Obaid Raza"
+		]
+	},
+	"uls-select-language": "زبان کا انتخاب کریں",
+	"uls-region-WW": "دنیا بھر میں",
+	"uls-region-SP": "خاص",
+	"uls-region-AM": "امریکہ",
+	"uls-region-AF": "افریقہ",
+	"uls-region-EU": "یورپ",
+	"uls-region-AS": "ایشیا",
+	"uls-region-ME": "مشرق وسطی",
+	"uls-region-PA": "بحرالکاہل",
+	"uls-no-results-found": "مطلوبہ نتائج نہیں ملے",
+	"uls-common-languages": "عمومی زبانیں",
+	"uls-no-results-suggestion-title": "آپ کو ان میں دلچسپی ہو سکتی ہے:",
+	"uls-search-help": "آپ زبان کے نام، اسکرپٹ، زبان کے آئی ایس او رمز سے بھی تلاش کر سکتے ہیں،یابلحاظ خطہ بھی ڈھونڈ سکتے ہیں:",
+	"uls-search-placeholder": "زبان تلاش کریں"
+}

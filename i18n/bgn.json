@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Baloch Afghanistan"
+		]
+	},
+	"uls-select-language": "زبانی انتخاب",
+	"uls-region-WW": "بی موچین دونیایی تا",
+	"uls-region-SP": "خاص",
+	"uls-region-AM": "آمریکا",
+	"uls-region-AF": "آفریقا",
+	"uls-region-EU": "اروپا",
+	"uls-region-AS": "آسیا",
+	"uls-region-ME": "خاورمیانه",
+	"uls-region-PA": "اقیانوس آرام",
+	"uls-no-results-found": "هیچ نتیجه ودئ نبوت",
+	"uls-common-languages": "رواجین زبانان",
+	"uls-no-results-suggestion-title": "ممکن اینت علاقه‌مند بئیت:",
+	"uls-search-help": "شما ئه توانیت بی زبانی نامی اساسا،اسکریپت نامی، استاندارتین زبانی کودی یا بی اساس منطقه ئه بگردیت:",
+	"uls-search-placeholder": "گَشتین په زبان خاتیرا"
+}

@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kghbln"
+			"Kghbln",
+			"Purodha"
 		]
 	},
 	"uls-select-language": "Wählen Sie eine Sprache",
 	"uls-region-WW": "",
+	"uls-region-SP": "Extras - kein Schprohche",
 	"uls-region-AM": "",
 	"uls-region-AF": "",
 	"uls-region-EU": "",
@@ -15,5 +17,6 @@
 	"uls-no-results-found": "",
 	"uls-common-languages": "",
 	"uls-no-results-suggestion-title": "Dies könnte Sie interessieren:",
-	"uls-search-help": "Sie können nach dem Namen der Sprache suchen, dem Namen der Schrift, dem ISO-Code der Sprache oder aber die Suche über eine Region durchführen:"
+	"uls-search-help": "Sie können nach dem Namen der Sprache suchen, dem Namen der Schrift, dem ISO-Code der Sprache oder aber die Suche über eine Region durchführen:",
+	"uls-search-placeholder": "Noh Schprohche söhke"
 }
