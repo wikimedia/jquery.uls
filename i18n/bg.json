@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Aquilax",
-			"DCLXVI"
+			"DCLXVI",
+			"Vodnokon4e"
 		]
 	},
 	"uls-select-language": "Избор на език",
@@ -16,7 +17,7 @@
 	"uls-region-PA": "Тихия океан",
 	"uls-no-results-found": "Не бяха открити резултати",
 	"uls-common-languages": "Често срещани езици",
-	"uls-no-results-suggestion-title": "Можете да се интересувате от:",
-	"uls-search-help": "Можете да търсите по име на език, име на скрипт, ISO кода на език или можете да разглеждате по региони:",
+	"uls-no-results-suggestion-title": "Може да се интересувате от:",
+	"uls-search-help": "Можете да търсите по име на език, име на скрипт, ISO кода на език или да разглеждате по региони.",
 	"uls-search-placeholder": "Търсене на език"
 }

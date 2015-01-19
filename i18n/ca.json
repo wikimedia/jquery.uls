@@ -6,7 +6,7 @@
 			"Toniher"
 		]
 	},
-	"uls-select-language": "Escolliu idioma",
+	"uls-select-language": "Tria de llengua",
 	"uls-region-WW": "Mundial",
 	"uls-region-SP": "Especials",
 	"uls-region-AM": "Amèrica",
@@ -17,7 +17,7 @@
 	"uls-region-PA": "Pacífic",
 	"uls-no-results-found": "Cap resultat",
 	"uls-common-languages": "Llengües comunes",
-	"uls-no-results-suggestion-title": "Potser estiguis interessat en:",
-	"uls-search-help": "Pots cercar el nom de la llengua, el nom de l'escriptura, el codi ISO de la llengua o la seva regió:",
+	"uls-no-results-suggestion-title": "Pot interessar-vos:",
+	"uls-search-help": "Podeu cercar per nom de llengua, nom d'alfabet, codi ISO de la llengua o podeu navegar per regió:",
 	"uls-search-placeholder": "Cerca de llengua"
 }

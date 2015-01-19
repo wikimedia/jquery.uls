@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Tuliouel",
-			"Amgauna"
+			"Amgauna",
+			"Webysther"
 		]
 	},
 	"uls-select-language": "Selecionar um idioma",
-	"uls-region-WW": "Globais",
-	"uls-region-SP": "Especiais",
+	"uls-region-WW": "Global",
+	"uls-region-SP": "Especial",
 	"uls-region-AM": "América",
 	"uls-region-AF": "África",
 	"uls-region-EU": "Europa",
@@ -17,6 +18,6 @@
 	"uls-no-results-found": "Nenhum resultado encontrado",
 	"uls-common-languages": "Idiomas comuns",
 	"uls-no-results-suggestion-title": "Você pode interessar-se por:",
-	"uls-search-help": "Você pode procurar por idioma, família linguística, código ISO do idioma ou área geográfica:",
+	"uls-search-help": "Você pode pesquisar pelo nome da língua, o nome do alfabeto, código ISO da língua, ou você pode procurar por região.",
 	"uls-search-placeholder": "Procurar idioma"
 }

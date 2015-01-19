@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Sarilho1",
-			"Waldir"
+			"Waldir",
+			"Ti4goc"
 		]
 	},
 	"uls-select-language": "Escolha a língua",
@@ -17,6 +18,6 @@
 	"uls-no-results-found": "Não foram encontrados resultados",
 	"uls-common-languages": "Línguas comuns",
 	"uls-no-results-suggestion-title": "Você pode estar interessado em:",
-	"uls-search-help": "Você pode pesquisar pwlo nome da língua, o nome do alfabeto, código ISO da língua, ou você pode procurar por região:",
+	"uls-search-help": "Você pode pesquisar pelo nome da língua, o nome do alfabeto, código ISO da língua, ou você pode procurar por região.",
 	"uls-search-placeholder": "Procurar língua"
 }
