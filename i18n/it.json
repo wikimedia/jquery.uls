@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Macofe"
+			"Macofe",
+			"Gianfranco"
 		]
 	},
 	"uls-select-language": "Seleziona lingua",
@@ -17,6 +18,6 @@
 	"uls-no-results-found": "Nessun risultato",
 	"uls-common-languages": "Lingue più scelte",
 	"uls-no-results-suggestion-title": "Puoi essere interessato a:",
-	"uls-search-help": "È possibile cercare per nome, nome dello script, codice ISO della lingua o si può navigare tramite regione:",
+	"uls-search-help": "È possibile cercare per nome, nome dello script, codice ISO della lingua o si può navigare tramite regione.",
 	"uls-search-placeholder": "Ricerca lingua"
 }
