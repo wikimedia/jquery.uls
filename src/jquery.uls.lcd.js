@@ -24,22 +24,25 @@
 
 	var noResultsTemplate, LanguageCategoryDisplay;
 
-	/*jshint multistr:true */
-	noResultsTemplate = '<div class="twelve columns uls-no-results-view hide">\
-		<h2 data-i18n="uls-no-results-found" class="eleven columns offset-by-one uls-no-results-found-title">\
-		No results found\
-		</h2>\
-		<div id="uls-no-found-more" class="uls-no-found-more">\
-			<div class="ten columns offset-by-one">\
-				<p>\
-					<span data-i18n="uls-search-help">You can search by language name, \
-					script name, ISO code of language or \
-					you can browse by region.</span>\
-				</p>\
-			</div>\
-		</div>\
-	</div>';
-	/*jshint multistr:false */
+	noResultsTemplate = $( '<div>' ).addClass( 'twelve columns uls-no-results-view hide' );
+	noResultsTemplate.append(
+		$( '<h2>' )
+			.attr( 'data-i18n', 'uls-no-results-found' )
+			.addClass( 'eleven columns offset-by-one uls-no-results-found-title' )
+			.text( 'No results found' ),
+		$( '<div>' )
+			.attr( 'id', 'uls-no-found-more' )
+			.addClass( 'uls-no-found-more' )
+			.append(
+				$( '<div>' )
+					.addClass( 'ten columns offset-by-one' )
+					.append(
+						$( '<p>' ).append(
+							$( '<span>' ).text( 'You can search by language name, script name, ISO code of language or you can browse by region.' )
+						)
+					)
+			)
+	);
 
 	LanguageCategoryDisplay = function ( element, options ) {
 		this.$element = $( element );
