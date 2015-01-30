@@ -34,7 +34,7 @@
 			</div>\
 			<div id="search" class="row uls-search"> \
 				<div class="one column">\
-					<span class="uls-search-label"></span>\
+					<label class="uls-search-label" for="uls-languagefilter"></label>\
 				</div>\
 				<div class="ten columns">\
 					<div id="uls-search-input-block" class="uls-search-input-block">\
