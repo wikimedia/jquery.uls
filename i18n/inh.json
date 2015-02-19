@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sapral Mikail"
+		]
+	},
+	"uls-select-language": "Мотт харжар",
+	"uls-region-WW": "Дерригача дунен",
+	"uls-region-SP": "Ховра",
+	"uls-region-AM": "Aьмрик",
+	"uls-region-AF": "Аьприк",
+	"uls-region-EU": "Аьроп",
+	"uls-region-AS": "Aьзик",
+	"uls-region-ME": "Гаргара Малхбоале",
+	"uls-region-PA": "Г|айрегуллам",
+	"uls-no-results-found": "Кора яь яц",
+	"uls-common-languages": "Шоай ло|амаца нийсаденна метташ",
+	"uls-no-results-suggestion-title": "Ер метташ шун теркдар т|алаца мега:",
+	"uls-search-help": "Меттай ц|ераца е йоазувдарца лаха тарло, иззамо ISO-меттач|егаца е купаца тахка а.",
+	"uls-search-placeholder": "Мотт лаха"
+}
