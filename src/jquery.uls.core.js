@@ -354,13 +354,26 @@
 		 * @return string
 		 */
 		getMenuWidth: function () {
-			var languagesCount;
+			var language,
+				languagesCount = 0;
 
 			if ( this.options.menuWidth ) {
 				return this.options.menuWidth;
 			}
 
-			languagesCount = Object.keys( this.options.languages ).length;
+			// IE8 does not support Object.keys
+			if ( Object.keys ) {
+				languagesCount = Object.keys( this.options.languages ).length;
+			} else {
+				for ( language in this.options.languages ) {
+					if ( Object.prototype.hasOwnProperty.call(
+						this.options.languages,
+						language
+					) ) {
+						languagesCount++;
+					}
+				}
+			}
 
 			if ( languagesCount < 12 ) {
 				return 'narrow';
