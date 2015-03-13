@@ -115,6 +115,8 @@
 
 		render: function () {
 			var $section,
+				language,
+				languagesCount = 0,
 				lcd = this,
 				regions = [],
 				regionNames = {
@@ -129,7 +131,24 @@
 					PA: 'Pacific'
 				};
 
-			regions.push( this.buildQuicklist() );
+			// IE8 does not support Object.keys
+			if ( Object.keys ) {
+				languagesCount = Object.keys( this.options.languages ).length;
+			} else {
+				for ( language in this.options.languages ) {
+					if ( Object.prototype.hasOwnProperty.call(
+						this.options.languages,
+						language
+					) ) {
+						languagesCount++;
+					}
+				}
+			}
+
+			// Show the Common languages section, unless the list is very short
+			if ( languagesCount > 12 ) {
+				regions.push( this.buildQuicklist() );
+			}
 
 			$.each( $.uls.data.regiongroups, function ( regionCode ) {
 				lcd.regionLanguages[ regionCode ] = [];
