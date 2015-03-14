@@ -115,8 +115,7 @@
 
 		render: function () {
 			var $section,
-				language,
-				languagesCount = 0,
+				languagesCount,
 				lcd = this,
 				regions = [],
 				regionNames = {
@@ -131,19 +130,7 @@
 					PA: 'Pacific'
 				};
 
-			// IE8 does not support Object.keys
-			if ( Object.keys ) {
-				languagesCount = Object.keys( this.options.languages ).length;
-			} else {
-				for ( language in this.options.languages ) {
-					if ( Object.prototype.hasOwnProperty.call(
-						this.options.languages,
-						language
-					) ) {
-						languagesCount++;
-					}
-				}
-			}
+			languagesCount = $.uls.utils.objectLength( this.options.languages );
 
 			// Show the Common languages section, unless the list is very short
 			if ( languagesCount > 12 ) {
