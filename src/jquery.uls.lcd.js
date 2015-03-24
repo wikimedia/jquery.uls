@@ -115,7 +115,6 @@
 
 		render: function () {
 			var $section,
-				languagesCount,
 				lcd = this,
 				regions = [],
 				regionNames = {
@@ -130,12 +129,7 @@
 					PA: 'Pacific'
 				};
 
-			languagesCount = $.uls.utils.objectLength( this.options.languages );
-
-			// Show the Common languages section, unless the list is very short
-			if ( languagesCount > 12 ) {
-				regions.push( this.buildQuicklist() );
-			}
+			regions.push( this.buildQuicklist() );
 
 			$.each( $.uls.data.regiongroups, function ( regionCode ) {
 				lcd.regionLanguages[ regionCode ] = [];

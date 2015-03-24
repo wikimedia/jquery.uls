@@ -53,16 +53,12 @@
 		</div>';
 	/*jshint multistr:false */
 
-	$.uls = $.uls || {};
-
-	$.uls.utils = {};
-
 	/**
 	 * Count the number of keys in an object.
 	 * Works in a cross-browser way.
 	 * @param {Object} The object.
 	 */
-	$.uls.utils.objectLength = function ( obj ) {
+	function objectLength ( obj ) {
 		var count, key;
 
 		// Some old browsers don't support Object.keys
@@ -236,7 +232,7 @@
 		 * Bind the UI elements with their event listeners
 		 */
 		listen: function () {
-			var lcd, columnsOptions,
+			var lcd, columnsOptions, languagesCount,
 				uls = this;
 
 			columnsOptions = {
@@ -263,10 +259,12 @@
 				this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
 			}
 
+			languagesCount = objectLength( this.options.languages );
 			lcd = this.$resultsView.lcd( {
 				languages: this.languages,
 				columns: columnsOptions[ this.getMenuWidth() ],
-				quickList: this.options.quickList,
+
+				quickList: languagesCount > 12 ? this.options.quickList : false,
 				clickhandler: $.proxy( this.select, this ),
 				source: this.$languageFilter,
 				showRegions: this.options.showRegions,
@@ -388,7 +386,7 @@
 				return this.options.menuWidth;
 			}
 
-			languagesCount = $.uls.utils.objectLength( this.options.languages );
+			languagesCount = objectLength( this.options.languages );
 
 			if ( languagesCount < 12 ) {
 				return 'narrow';

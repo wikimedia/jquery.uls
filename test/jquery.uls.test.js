@@ -271,26 +271,4 @@
 		assert.strictEqual( $.uls.data.languages['qqq'], undefined, 'Data about qqq is undefined after being deleted.' );
 		assert.ok( !$.uls.data.deleteLanguage( 'qqr' ), 'Deleting language qqr, which was never added, returns false.' );
 	} );
-
-	test( '-- $.uls.utils testing', 4, function ( assert ) {
-		var languages, saveObjectKeys;
-
-		languages = {
-			mn: 'монгол',
-			sah: 'саха',
-			udm: 'удмурт'
-		};
-
-		assert.strictEqual( $.uls.utils.objectLength( {} ), 0 );
-		assert.strictEqual( $.uls.utils.objectLength( languages ), 3 );
-
-		// Simulate a browser without Object.keys
-		saveObjectKeys = Object.keys;
-		Object.keys = undefined;
-
-		assert.strictEqual( $.uls.utils.objectLength( {} ), 0 );
-		assert.strictEqual( $.uls.utils.objectLength( languages ), 3 );
-
-		Object.keys = saveObjectKeys;
-	} );
 }( jQuery ) );
