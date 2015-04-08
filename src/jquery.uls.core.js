@@ -54,6 +54,30 @@
 	/*jshint multistr:false */
 
 	/**
+	 * Count the number of keys in an object.
+	 * Works in a cross-browser way.
+	 * @param {Object} The object.
+	 */
+	function objectLength ( obj ) {
+		var count, key;
+
+		// Some old browsers don't support Object.keys
+		if ( Object.keys ) {
+			return Object.keys( obj ).length;
+		}
+
+		count = 0;
+
+		for ( key in obj ) {
+			if ( Object.prototype.hasOwnProperty.call( obj, key ) ) {
+				count++;
+			}
+		}
+
+		return count;
+	}
+
+	/**
 	 * ULS Public class definition
 	 */
 	ULS = function ( element, options ) {
@@ -208,7 +232,7 @@
 		 * Bind the UI elements with their event listeners
 		 */
 		listen: function () {
-			var lcd, columnsOptions,
+			var lcd, columnsOptions, languagesCount,
 				uls = this;
 
 			columnsOptions = {
@@ -235,10 +259,12 @@
 				this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
 			}
 
+			languagesCount = objectLength( this.options.languages );
 			lcd = this.$resultsView.lcd( {
 				languages: this.languages,
 				columns: columnsOptions[ this.getMenuWidth() ],
-				quickList: this.options.quickList,
+
+				quickList: languagesCount > 12 ? this.options.quickList : false,
 				clickhandler: $.proxy( this.select, this ),
 				source: this.$languageFilter,
 				showRegions: this.options.showRegions,
@@ -354,26 +380,13 @@
 		 * @return string
 		 */
 		getMenuWidth: function () {
-			var language,
-				languagesCount = 0;
+			var languagesCount;
 
 			if ( this.options.menuWidth ) {
 				return this.options.menuWidth;
 			}
 
-			// IE8 does not support Object.keys
-			if ( Object.keys ) {
-				languagesCount = Object.keys( this.options.languages ).length;
-			} else {
-				for ( language in this.options.languages ) {
-					if ( Object.prototype.hasOwnProperty.call(
-						this.options.languages,
-						language
-					) ) {
-						languagesCount++;
-					}
-				}
-			}
+			languagesCount = objectLength( this.options.languages );
 
 			if ( languagesCount < 12 ) {
 				return 'narrow';

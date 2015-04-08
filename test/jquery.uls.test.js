@@ -271,5 +271,4 @@
 		assert.strictEqual( $.uls.data.languages['qqq'], undefined, 'Data about qqq is undefined after being deleted.' );
 		assert.ok( !$.uls.data.deleteLanguage( 'qqr' ), 'Deleting language qqr, which was never added, returns false.' );
 	} );
-
 }( jQuery ) );
