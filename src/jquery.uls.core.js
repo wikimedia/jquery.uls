@@ -75,7 +75,7 @@
 		}
 
 		return count;
-	};
+	}
 
 	/**
 	 * ULS Public class definition
