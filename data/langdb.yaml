@@ -488,6 +488,7 @@ languages:
   twd: [Latn, [EU], Tweants]
   ty: [Latn, [PA], reo tahiti]
   tyv: [Cyrl, [AS], тыва дыл]
+  tzl: [Latn, [WW], Talossan]
   tzm: [Tfng, [AF], ⵜⴰⵎⴰⵣⵉⵖⵜ]
   udm: [Cyrl, [EU], удмурт]
  # CLDR uses ug-arab, ug-latn and ug-cyrl.
