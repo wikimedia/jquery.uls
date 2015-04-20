@@ -175,7 +175,7 @@
 				'en', 'eo', 'es-419', 'es-formal', 'es', 'esu', 'fr', 'frc', 'gcf', 'gn', 'guc', 'haw', 'hrx', 'ht', 'ia',
 				'ie', 'ik', 'ike-cans', 'ike-latn', 'io', 'iu', 'jam', 'jbo', 'kgp', 'kl', 'lad-latn', 'lad-hebr', 'lfn',
 				'lkt', 'lut', 'mfe', 'mic', 'miq', 'mus', 'nah', 'nl-informal', 'nl', 'nov', 'nv', 'pap', 'pbb', 'pdc',
-				'pdt', 'ppl', 'pt-br', 'pt', 'qu', 'qug', 'rap', 'sei', 'simple', 'srn', 'tokipona', 'vo', 'yi', 'yrl', 'yua'
+				'pdt', 'ppl', 'pt-br', 'pt', 'qu', 'qug', 'rap', 'sei', 'simple', 'srn', 'tokipona', 'tzl', 'vo', 'yi', 'yrl', 'yua'
 			],
 			'languages of regions AM and WW are selected correctly'
 		);
