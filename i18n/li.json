@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robin0van0der0vliet"
+		]
+	},
+	"uls-region-WW": "Waereldwied",
+	"uls-region-SP": "Sjpesjaal",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Azië",
+	"uls-region-ME": "Midde-Ooste",
+	"uls-region-PA": "Pacifisch gebied",
+	"uls-search-placeholder": "Taol zeuke"
+}

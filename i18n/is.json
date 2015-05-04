@@ -15,6 +15,7 @@
 	"uls-region-PA": "Kyrrahaf",
 	"uls-no-results-found": "Ekkert fannst",
 	"uls-common-languages": "Algeng tungumál",
-	"uls-search-help": "Þú getur leitað eftir nafni tungumáls, nafni skriftunar, ISO kóða tungumálsins eða þú getur leitað eftir svæði:",
+	"uls-no-results-suggestion-title": "Þú gætir haft áhuga á:",
+	"uls-search-help": "Þú getur leitað eftir nafni tungumáls, nafni skriftunar, ISO kóða tungumálsins eða þú getur leitað eftir svæði.",
 	"uls-search-placeholder": "Tungumála leit"
 }

@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Csisc"
+		]
+	},
+	"uls-select-language": "Axţâr lûğa",
+	"uls-region-WW": "Ģâlemîye",
+	"uls-region-SP": "Spêsyâl",
+	"uls-region-AM": "Emerîke",
+	"uls-region-AF": "Ifrîqye",
+	"uls-region-EU": "Ûrûppe",
+	"uls-region-AS": "Êsye",
+	"uls-region-ME": "Ic-carq il-awsaţ",
+	"uls-region-PA": "Il-Mûḩiţ il-hêdî",
+	"uls-no-results-found": "Mê fammêc ḩattâ rêzülta",
+	"uls-common-languages": "Lûğât muntacra",
+	"uls-no-results-suggestion-title": "Tnejjim tkûn muhtam b-:",
+	"uls-search-help": "Tnejjim tlawwij ḩasb ism il-lûğe, ism il-kod, il-kod ISO mtêģ il-lûğe wa illê ḩasb ij-jîhe",
+	"uls-search-placeholder": "Lawwij ģlâ- il-lûğe"
+}

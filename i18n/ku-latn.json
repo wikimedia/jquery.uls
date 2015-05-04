@@ -1,16 +1,22 @@
 {
 	"@metadata": {
 		"authors": [
-			"George Animal"
+			"George Animal",
+			"Bikarhêner"
 		]
 	},
 	"uls-select-language": "Zimanekî hilbijêre",
+	"uls-region-WW": "Li hemû cîhanê",
 	"uls-region-SP": "Taybet",
 	"uls-region-AM": "Amerîka",
 	"uls-region-AF": "Afrîqa",
 	"uls-region-EU": "Ewropa",
 	"uls-region-AS": "Asya",
 	"uls-region-ME": "Rojhilata Navîn",
+	"uls-region-PA": "Pasîfîk",
 	"uls-no-results-found": "Ti encam nehatin dîtin",
+	"uls-common-languages": "Zimanên belavbûyî",
+	"uls-no-results-suggestion-title": "Pêwendîya we dikara bikişîne:",
+	"uls-search-help": "Hûn lêgerîna xwe li gor nava zimanê, koda ISOyê an jî li gor herêmê dikarin bikin.",
 	"uls-search-placeholder": "Lêgerîna li ziman"
 }

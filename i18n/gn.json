@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"P. S. F. Freitas"
+			"P. S. F. Freitas",
+			"Fitoschido"
 		]
 	},
-	"uls-select-language": "Eiporavo ñe'ẽ",
+	"uls-select-language": "Eiporavo ñe’ẽ",
 	"uls-region-WW": "Yvóra",
-	"uls-region-SP": "Mba'echĩchĩ",
+	"uls-region-SP": "Mba’echĩchĩ",
 	"uls-region-AM": "Amérika",
 	"uls-region-AF": "Afrika",
 	"uls-region-EU": "Europa",
@@ -14,8 +15,8 @@
 	"uls-region-ME": "Mbyte Kuarahyresẽ",
 	"uls-region-PA": "Paraguasu Py'aguapy",
 	"uls-no-results-found": "Ndojuhu mba'e",
-	"uls-common-languages": "Ñe'ẽ jeipuruveva",
+	"uls-common-languages": "Ñe’ẽ jeipuruveva",
 	"uls-no-results-suggestion-title": "Nde ikatu reipotaː",
-	"uls-search-help": "Nde ikatu reheka ñe'ẽ héra, tai ysaja, ISO ñe'ẽ héra térã ñe'ẽ renda:",
-	"uls-search-placeholder": "Ñe'ẽ heka"
+	"uls-search-help": "Nde ikatu reheka ñe’ẽ héra, tai ysaja, ISO ñe’ẽ héra térã ñe’ẽ renda.",
+	"uls-search-placeholder": "Ñe’ẽ heka"
 }
