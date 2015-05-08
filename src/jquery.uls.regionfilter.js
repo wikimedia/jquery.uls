@@ -102,6 +102,8 @@
 			}
 
 			if ( $target && $parent ) {
+				$target.renderRegions();
+
 				// Restore the element to where we removed it from
 				if ( $prev ) {
 					$prev.after( $target );

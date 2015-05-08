@@ -103,13 +103,6 @@
 				this.regionLanguages[ regions[ i ] ].push( langCode );
 			}
 
-			// Work around the bad interface, delay rendering until we have got
-			// all the languages to speed up performance.
-			window.clearTimeout( this.renderTimeout );
-			this.renderTimeout = window.setTimeout( function () {
-				lcd.renderRegions();
-			}, 50 );
-
 			return true;
 		},
 
