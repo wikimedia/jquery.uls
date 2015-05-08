@@ -34,10 +34,8 @@ languages:
  # CLDR uses az-latn and az-arab
   az: [az-latn]
   az-latn: [Latn, [EU, ME], azərbaycanca]
-  az-arab: [Arab, [EU, ME], آذربايجانجا]
-  az-cyrl: [Latn, [EU, ME], азәрбајҹанҹа]
- # CLDR uses az-arab for the Arabic-script Azerbaijani of Iran
-  azb: [az-arab]
+  az-cyrl: [Cyrl, [EU, ME], азәрбајҹанҹа]
+  azb: [Arab, [AS, ME], تۆرکجه]
   ba: [Cyrl, [EU], башҡортса]
   ban: [Bali, [AS], ᬩᬲᬩᬮᬶ]
   bar: [Latn, [EU], Boarisch]
