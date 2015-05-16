@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Calak"
+			"Calak",
+			"Asoxor"
 		]
 	},
 	"uls-select-language": "زمان ھەڵبژێرە",
@@ -15,7 +16,7 @@
 	"uls-region-PA": "ئۆقیانووسی ئارام",
 	"uls-no-results-found": "ھیچ ئاکامێک نەدۆزرایەوە",
 	"uls-common-languages": "زمانە ھاوبەشەکان",
-	"uls-no-results-suggestion-title": "ڕەنگە خۆشیت بێ لە:",
-	"uls-search-help": "دەتوانی بە پێی زمان، ناوی سکریپت، کۆدی ئای ئێس ئۆی زمان یان بە پێی ھەرێم بگەڕێی:",
+	"uls-no-results-suggestion-title": "ڕەنگە ئەمانەت پێ خۆش بێت:",
+	"uls-search-help": "دەتوانیت بە پێی ناوی زمان، جۆری ئەلفوبێ، کۆدی ISOی زمان یان بە پێی ناوچە بگەڕێی.",
 	"uls-search-placeholder": "گەڕانی زمان"
 }
