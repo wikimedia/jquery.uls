@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Cybjit",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Jopparn"
 		]
 	},
 	"uls-select-language": "Välj språk",
@@ -17,6 +18,6 @@
 	"uls-no-results-found": "Inga resultat hittades",
 	"uls-common-languages": "Vanliga språk",
 	"uls-no-results-suggestion-title": "Du kan vara intresserad av:",
-	"uls-search-help": "Du kan söka efter språkets namn, skriptnamn, ISO-koden för språket eller bläddra efter region:",
+	"uls-search-help": "Du kan söka efter språkets namn, skriptnamn, ISO-kod för språket eller bläddra efter region.",
 	"uls-search-placeholder": "Språksökning"
 }

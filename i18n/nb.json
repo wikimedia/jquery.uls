@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Event",
-			"Wouterkoch"
+			"Wouterkoch",
+			"Danmichaelo"
 		]
 	},
 	"uls-select-language": "Velg språk",
@@ -17,6 +18,6 @@
 	"uls-no-results-found": "Ingen resultater funnet",
 	"uls-common-languages": "Vanlige språk",
 	"uls-no-results-suggestion-title": "Dette kan kanskje interessere deg:",
-	"uls-search-help": "Du kan søke basert på språkets navn, skriptnavn eller ISO-kode, eller bla basert på region:",
+	"uls-search-help": "Du kan søke etter språkets navn, alfabet (skriftnavn) eller ISO-kode, eller du kan bla etter region.",
 	"uls-search-placeholder": "Språksøk"
 }

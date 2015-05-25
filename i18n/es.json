@@ -6,7 +6,8 @@
 			"McDutchie",
 			"Pginer",
 			"Santhosh.thottingal",
-			"Vivaelcelta"
+			"Vivaelcelta",
+			"Macofe"
 		]
 	},
 	"uls-select-language": "Seleccione el idioma",
@@ -21,6 +22,6 @@
 	"uls-no-results-found": "No se encontraron resultados",
 	"uls-common-languages": "Idiomas comunes",
 	"uls-no-results-suggestion-title": "Puedes estar interesado en:",
-	"uls-search-help": "Puedes buscar por el nombre del idioma, su tipo de escritura, el código ISO del idioma o su área geográfica:",
+	"uls-search-help": "Puedes buscar por el nombre del idioma, su tipo de escritura, el código ISO del idioma o buscar por región.",
 	"uls-search-placeholder": "Buscar un idioma"
 }
