@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"रमेश सिंह बोहरा"
+		]
+	},
+	"uls-select-language": "भाषा छाट",
+	"uls-region-WW": "विश्वभर",
+	"uls-region-SP": "खास",
+	"uls-region-AM": "अमेरिका",
+	"uls-region-AF": "अफ्रिका",
+	"uls-region-EU": "युरोप",
+	"uls-region-AS": "एसिया",
+	"uls-region-ME": "मध्य पूर्व",
+	"uls-region-PA": "प्रशान्त",
+	"uls-no-results-found": "कोइ पन नतिजाहरू नाइभेटिया",
+	"uls-common-languages": "साझो भाषा",
+	"uls-no-results-suggestion-title": "तमलाई यैमी मन लाग्गसकन्छ:",
+	"uls-search-placeholder": "भाषा खोज अर"
+}

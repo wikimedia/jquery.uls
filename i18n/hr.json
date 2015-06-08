@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"MaGa"
+		]
+	},
+	"uls-region-WW": "Svjetski jezici",
+	"uls-region-SP": "Posebno",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Azija",
+	"uls-region-ME": "Srednji istok",
+	"uls-region-PA": "Pacifik",
+	"uls-common-languages": "Najčešći jezici",
+	"uls-search-placeholder": "Pretraga jezika"
+}
