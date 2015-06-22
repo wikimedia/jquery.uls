@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Andriykopanytsia",
-			"Base"
+			"Base",
+			"Alex Khimich"
 		]
 	},
 	"uls-select-language": "Оберіть мову",
@@ -17,6 +18,6 @@
 	"uls-no-results-found": "Не знайдено результатів",
 	"uls-common-languages": "Поширені мови",
 	"uls-no-results-suggestion-title": "Ви можете бути зацікавленими у:",
-	"uls-search-help": "Ви можете шукати за назвою мови або писемності, ISO-коду мови, або Ви можете переглянути за регіонами:",
+	"uls-search-help": "Ви можете шукати за назвою мови або писемності, ISO-коду мови, або можете вказати регіон.",
 	"uls-search-placeholder": "Мова пошуку"
 }

@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Geopoet"
+		]
+	},
+	"uls-select-language": "Pumili nin lengguwahe",
+	"uls-region-WW": "Pankinaban",
+	"uls-region-SP": "Espesyal",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Aprika",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Asya",
+	"uls-region-ME": "Katahawang Sirangan",
+	"uls-region-PA": "Pasipiko",
+	"uls-no-results-found": "Mayong mga resultang nanumpungan",
+	"uls-common-languages": "Komun na mga lengguwahe",
+	"uls-no-results-suggestion-title": "Ika gayod interesado sa:",
+	"uls-search-help": "Ika makakahanap sa pangaran nin lengguwahe, pangaran nin eskrip, ISO kodigo nin lengguwahe o kaya ika makakabuklat sa paagi nin rehiyon.",
+	"uls-search-placeholder": "Paghahanap nin Lengguwahe"
+}

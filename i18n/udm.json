@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"AlnashPiyash2"
+		]
+	},
+	"uls-select-language": "Кылэз быръён",
+	"uls-region-AM": "Америка",
+	"uls-region-AF": "Африка",
+	"uls-region-EU": "Европа",
+	"uls-region-AS": "Азия",
+	"uls-region-PA": "Океания",
+	"uls-no-results-found": "Шедьтэмын ӧвӧл",
+	"uls-search-placeholder": "Кылэз утчан"
+}
