@@ -32,12 +32,17 @@ languages:
   av: [Cyrl, [EU], авар]
   avk: [Latn, [WW], Kotava]
   ay: [Latn, [AM], Aymar aru]
- # Latin is the default in Azerbaijani Wikipedia
- # CLDR uses az-latn and az-arab
+ # The Latin script is the default in the North Azerbaijani Wikipedia,
+ # which uses the macro code 'az'. Its own standard code is 'azj'.
+ # The Arabic script is the default in the South Azerbaijani Wikipedia,
+ # which correctly uses the code 'azb'.
+ # CLDR uses az-latn and az-arab.
   az: [az-latn]
+  az-arab: [Arab, [AS, ME], تۆرکجه]
   az-latn: [Latn, [EU, ME], azərbaycanca]
   az-cyrl: [Cyrl, [EU, ME], азәрбајҹанҹа]
-  azb: [Arab, [AS, ME], تۆرکجه]
+  azb: [az-arab]
+  azj: [az-latn]
   ba: [Cyrl, [EU], башҡортса]
   ban: [Bali, [AS], ᬩᬲᬩᬮᬶ]
   bar: [Latn, [EU], Boarisch]
