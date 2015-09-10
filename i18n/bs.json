@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"DzWiki",
-			"Edinwiki"
+			"Edinwiki",
+			"Srdjan m"
 		]
 	},
 	"uls-select-language": "Izaberite jezik",
@@ -17,6 +18,6 @@
 	"uls-no-results-found": "Nema pronađenih rezultata",
 	"uls-common-languages": "Prijedlozi za jezik",
 	"uls-no-results-suggestion-title": "Možda vas interesuje:",
-	"uls-search-help": "Možete da tražite po imenu jezika ili pisma, po ISO kodu jezika ili po regionu:",
+	"uls-search-help": "Možete da tražite po imenu jezika ili pisma, po ISO kodu jezika ili po regionu.",
 	"uls-search-placeholder": "Pretraga jezika"
 }
