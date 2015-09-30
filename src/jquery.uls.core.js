@@ -158,7 +158,7 @@
 		 * Show the ULS window
 		 */
 		show: function () {
-			var widthClasses = {
+			var hider, widthClasses = {
 				wide: 'uls-wide',
 				medium: 'uls-medium',
 				narrow: 'uls-narrow'
@@ -189,6 +189,10 @@
 			}
 
 			this.visible();
+
+			// Hide the selector panel when clicking outside of it
+			hider = $.proxy( this.cancel, this );
+			setTimeout( function() { $( 'html' ).one( 'click', hider ); } );
 		},
 
 		i18n: function () {
@@ -302,8 +306,6 @@
 			this.$languageFilter.on( 'searchclear.uls', $.proxy( this.regionFilter.show, this.regionFilter ) );
 			this.$languageFilter.on( 'noresults.uls', $.proxy( this.noresults, this ) );
 			this.$languageFilter.on( 'resultsfound.uls', $.proxy( this.success, this ) );
-
-			$( 'html' ).click( $.proxy( this.cancel, this ) );
 		},
 
 		/**
@@ -354,7 +356,6 @@
 		},
 
 		click: function ( e ) {
-			e.stopPropagation();
 			e.preventDefault();
 
 			if ( this.shown ) {
