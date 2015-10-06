@@ -177,9 +177,6 @@
 				this.initialized = true;
 			}
 
-			// hide any other visible ULS
-			$( '.uls-menu' ).hide();
-
 			this.$menu.show();
 			this.$menu.scrollIntoView();
 			this.shown = true;
@@ -321,7 +318,11 @@
 		/**
 		 * On cancel handler for the uls menu
 		 */
-		cancel: function () {
+		cancel: function ( e ) {
+			if ( e && this.$element.is( e.target ) ) {
+				return;
+			}
+
 			this.hide();
 
 			if ( this.options.onCancel ) {
@@ -353,10 +354,7 @@
 			}
 		},
 
-		click: function ( e ) {
-			e.stopPropagation();
-			e.preventDefault();
-
+		click: function () {
 			if ( this.shown ) {
 				this.hide();
 			} else {
