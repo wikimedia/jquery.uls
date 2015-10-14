@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Santhosh.thottingal",
-			"Shirayuki"
+			"Shirayuki",
+			"Otokoume"
 		]
 	},
 	"uls-select-language": "言語の選択",
@@ -17,6 +18,6 @@
 	"uls-no-results-found": "見つかりませんでした",
 	"uls-common-languages": "よく使用する言語",
 	"uls-no-results-suggestion-title": "もしかして:",
-	"uls-search-help": "言語名、文字体系名、言語の ISO コードで検索できます。地域別の一覧から選択することもできます:",
+	"uls-search-help": "言語名、文字体系名、言語の ISO コードで検索できます。地域別の一覧から選択することもできます。",
 	"uls-search-placeholder": "言語の検索"
 }

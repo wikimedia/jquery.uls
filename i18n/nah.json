@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Taresi"
+		]
+	},
+	"uls-select-language": "Xicpehpena tlahtōlli",
+	"uls-region-WW": "Nōhuiyān",
+	"uls-region-SP": "Occecni",
+	"uls-region-AM": "Ixachitlān",
+	"uls-region-AF": "Āpeliccān",
+	"uls-region-EU": "Īxpatlāxtlān",
+	"uls-region-AS": "Āciyān",
+	"uls-region-ME": "Tlahco Tlāpco",
+	"uls-region-PA": "Huēyiātlālco",
+	"uls-no-results-found": "Ahmō onquīzaliztli ōmonāmic",
+	"uls-common-languages": "Hueli ītlahtōl",
+	"uls-no-results-suggestion-title": "Huel timoyōlēhuaz:",
+	"uls-search-help": "Huel tictēmōz in tlahtōlli iniuh ītōcā, iniuh ītlahcuilōl, iniuh ISO īpal īmachiyōnecaquiliz, ahnozo huel tāmapōhuaz iniuh tlālpan.",
+	"uls-search-placeholder": "Tlahtōllatēmoliztli"
+}

@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Amazigh84",
-			"Mmistmurt"
+			"Mmistmurt",
+			"Mezgoug"
 		]
 	},
 	"uls-select-language": "Xtiṛ Tutlayt",
@@ -12,11 +13,11 @@
 	"uls-region-AF": "Tafriqt",
 	"uls-region-EU": "Turuft",
 	"uls-region-AS": "Asya",
-	"uls-region-ME": "Ccerq Alemmas",
+	"uls-region-ME": "Asamar Alemmas",
 	"uls-region-PA": "Amelwi",
-	"uls-no-results-found": "Ulac d acu id yufa.",
+	"uls-no-results-found": "Ulac d acu i d-yufa.",
 	"uls-common-languages": "Tutlayin tinmilitin",
-	"uls-no-results-suggestion-title": "Ma tebɣiḍ ad isineḍ ayen nniḍen ɣef :",
+	"uls-no-results-suggestion-title": "Ma tebɣiḍ ad tisineḍ ayen nniḍen ɣef :",
 	"uls-search-help": "Tzemreḍ ad tḥffeḍ s tutlayt, s uskript, s tangalt ISO n tutlayt naγ inig s tama.",
 	"uls-search-placeholder": "Anadi n tutlayt"
 }

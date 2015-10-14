@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wizardist"
+			"Wizardist",
+			"Red Winged Duck"
 		]
 	},
 	"uls-select-language": "Выбар мовы",
@@ -16,6 +17,6 @@
 	"uls-no-results-found": "Нічога ня знойдзена",
 	"uls-common-languages": "Прапанаваныя мовы",
 	"uls-no-results-suggestion-title": "Магчыма, вас зацікавяць:",
-	"uls-search-help": "Вы можаце шукаць па назьве мовы ці пісьменнасьці, а таксама ISO-коду мовы, або выбраць рэгіён:",
+	"uls-search-help": "Вы можаце шукаць паводле назвы мовы ці пісьменнасьці, а таксама паводле ISO-коду мовы, або выбраць рэгіён.",
 	"uls-search-placeholder": "Шукайце мову тут"
 }
