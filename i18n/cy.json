@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lloffiwr"
+			"Lloffiwr",
+			"Robin Owain"
 		]
 	},
 	"uls-select-language": "Dewis iaith",
@@ -16,6 +17,6 @@
 	"uls-no-results-found": "Ni chafwyd unrhyw ganlyniadau",
 	"uls-common-languages": "Awgrymiadau o ieithoedd",
 	"uls-no-results-suggestion-title": "Hwyrach bod y rhai sy'n dilyn o ddiddordeb i chi:",
-	"uls-search-help": "Gallwch chwilio am enw iaith, enw sgript, côd ISO rhyw iaith neu gallwch bori fesul rhanbarth:",
+	"uls-search-help": "Gallwch chwilio gan ddefnyddio enw iaith, enw sgript, côd ISO'r iaith neu gallwch bori fesul rhanbarth.",
 	"uls-search-placeholder": "Chwilio am iaith"
 }
