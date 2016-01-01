@@ -319,7 +319,7 @@
 		 * On cancel handler for the uls menu
 		 */
 		cancel: function ( e ) {
-			if ( e && this.$element.is( e.target ) ) {
+			if ( e && ( this.$element.is( e.target ) || $.contains( this.$element[0], e.target ) ) ) {
 				return;
 			}
 
