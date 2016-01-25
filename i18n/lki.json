@@ -6,7 +6,7 @@
 		]
 	},
 	"uls-select-language": "زوون انتخاب کۀ",
-	"uls-region-WW": "کؤل جئ هان",
+	"uls-region-WW": "کؤل(گشت)جەهان",
 	"uls-region-SP": "ویژە",
 	"uls-region-AM": "ئآمریکا",
 	"uls-region-AF": "ئآفریقا",
@@ -18,5 +18,5 @@
 	"uls-common-languages": "زوونەل رایج",
 	"uls-no-results-suggestion-title": ":هائر خووۀشته یۀ بآئ",
 	"uls-search-help": "، مةتۆنین ئۀ وسیلة نؤم زوون مِنی کِین\n  نؤم اسکریپت،کد ISO زوونۀ یا مةتۆنین ناحیة(تؤئة) بگئردینو",
-	"uls-search-placeholder": " مِه نِی زوون"
+	"uls-search-placeholder": "مِنِی کردن زوون"
 }
