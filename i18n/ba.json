@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sagan"
+		]
+	},
+	"uls-select-language": "Тел һайлау:",
+	"uls-region-WW": "Бөтә донъя",
+	"uls-region-SP": "Махсус",
+	"uls-region-AM": "Америка",
+	"uls-region-AF": "Африка",
+	"uls-region-EU": "Европа",
+	"uls-region-AS": "Азия",
+	"uls-region-ME": "Яҡын Көнсығыш",
+	"uls-region-PA": "Океания",
+	"uls-no-results-found": "Бер нимә лә табылманы",
+	"uls-common-languages": "Уртаҡ телдәр",
+	"uls-no-results-suggestion-title": "Бәлки, ошо телдәрҙе һайларһығыҙ:",
+	"uls-search-help": "Телдең исеме, яҙмаһы, ISO коды йәки регионы буйынса эҙләй алаһығыҙ.",
+	"uls-search-placeholder": "Эҙләү теле"
+}
