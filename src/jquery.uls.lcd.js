@@ -66,13 +66,13 @@
 		 * Adds language to the language list.
 		 * @param {string} langCode
 		 * @param {string} [regionCode]
-		 * @return {bool} Whether the language was added.
+		 * @return {boolean} Whether the language was added.
 		 */
 		append: function ( langCode, regionCode ) {
 			var lcd = this,
 				i, regions;
 
-			if ( !this.options.languages[ langCode ] ) {
+			if ( !$.uls.data.languages[ langCode ] ) {
 				// Language is unknown or not in the list of languages for this context.
 				return false;
 			}

@@ -227,8 +227,8 @@
 			'vro': 'Võro' // Target after alias
 		};
 		groupedLanguages = {
-			Latin: [ 'en', 'vro', 'sr-latn' ],
-			Cyrillic: [ 'ru', 'sr-cyrl' ]
+			Latin: [ 'en', 'fiu-vro', 'sr-latn', 'sr-el', 'vro' ],
+			Cyrillic: [ 'ru', 'sr', 'sr-cyrl' ]
 		};
 
 		assert.deepEqual( $.uls.data.getLanguagesByScriptGroup( languagesToGroup ), groupedLanguages,
