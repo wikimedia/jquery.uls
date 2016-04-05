@@ -245,21 +245,18 @@
 	 */
 	$.uls.data.getLanguagesByScriptGroup = function ( languages ) {
 		var languagesByScriptGroup = {},
-			language, codeToAdd, langScriptGroup;
+			language, resolvedRedirect, langScriptGroup;
 
 		for ( language in languages ) {
-			codeToAdd = $.uls.data.isRedirect( language ) || language;
+			resolvedRedirect = $.uls.data.isRedirect( language ) || language;
 
-			langScriptGroup = $.uls.data.getScriptGroupOfLanguage( codeToAdd );
+			langScriptGroup = $.uls.data.getScriptGroupOfLanguage( resolvedRedirect );
 
 			if ( !languagesByScriptGroup[langScriptGroup] ) {
 				languagesByScriptGroup[langScriptGroup] = [];
 			}
 
-			// Prevent duplicate adding of redirects
-			if ( $.inArray( codeToAdd, languagesByScriptGroup[langScriptGroup] ) === -1 ) {
-				languagesByScriptGroup[langScriptGroup].push( codeToAdd );
-			}
+			languagesByScriptGroup[langScriptGroup].push( language );
 		}
 
 		return languagesByScriptGroup;
