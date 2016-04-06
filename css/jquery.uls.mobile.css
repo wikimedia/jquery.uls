@@ -27,11 +27,6 @@
 		float: left !important;
 	}
 
-	.uls-mobile .uls-map-block a,
-	.uls-mobile .uls-map-block {
-		opacity: 1 !important;
-	}
-
 	.uls-mobile .row {
 		width: auto;
 		min-width: 0;
