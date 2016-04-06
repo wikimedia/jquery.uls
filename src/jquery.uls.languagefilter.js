@@ -213,7 +213,9 @@
 						languageFilter.autofill( code, name );
 					}
 
-					if ( languageFilter.render( code ) ) {
+					if ( languageFilter.options.languages[ code ] &&
+						languageFilter.render( code )
+					) {
 						languageFilter.resultCount++;
 					}
 				} );
