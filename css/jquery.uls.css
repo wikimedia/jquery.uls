@@ -49,6 +49,16 @@
 	min-width: 150px;
 }
 
+/* Leave more space for search input */
+.uls-narrow .uls-search-label {
+	background-size: 15px;
+	width: 20px;
+}
+
+.uls-narrow .uls-search-wrapper {
+	padding-left: 20px;
+}
+
 .uls-title-region a {
 	padding-left: 15px;
 }
@@ -116,24 +126,7 @@ div.uls-region {
 	cursor: pointer;
 }
 
-.uls-menu .uls-languagefilter {
-	background-color: transparent;
-	border: 1px solid #c9c9c9;
-	border-radius: 2px 2px 2px 2px;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
-	color: #333;
-	display: block;
-	padding: 6px;
-	-moz-transition: border 0.15s linear 0s;
-	-o-transition: border 0.15s linear 0s;
-	-webkit-transition: border 0.15s linear 0s;
-	transition: border 0.15s linear 0s;
-}
-.uls-menu .uls-languagefilter:focus {
-	border: 1px solid #3366bb;
-}
-.uls-menu .uls-search {
-	position: relative;
+.uls-search {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0F0F0', endColorstr='#FBFBFB');
 	background: #f8f8f8;
 	background: -webkit-gradient(linear, left top, left bottom, from(#F0F0F0), to(#FBFBFB));
@@ -149,54 +142,87 @@ div.uls-region {
 	border-bottom-style: solid;
 	border-bottom-color: #DDD;
 }
-.uls-menu .uls-search-label {
-	/* @embed */
+
+/* Make space for magnifying class on the front */
+.uls-search-wrapper {
+	position: relative;
+	padding-left: 40px;
+	margin-right: 5px;
+	height: 32px;
+}
+
+.uls-search-label {
 	background: transparent url('../images/search.png') no-repeat scroll right center;
-	/* @embed */
 	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/search.svg');
 	/* @embed */
 	background-image: linear-gradient(transparent, transparent), url('../images/search.svg');
 	background-size: 30px;
+	background-position: center center;
 	height: 32px;
-	width: 32px;
-	float: right;
-}
-
-.uls-menu.uls-narrow .uls-search-label {
-	background-size: 18px;
-}
-
-.uls-menu .uls-languagefilter-clear {
-	/* @embed */
-	background: transparent url('../images/clear.png') no-repeat scroll left center;
-	/* @embed */
-	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/clear.svg');
-	/* @embed */
-	background-image: linear-gradient(transparent, transparent), url('../images/clear.svg');
-	cursor: pointer;
-	height: 32px;
+	width: 40px;
+	display: block;
 	position: absolute;
-	width: 32px;
-	margin-left: -32px;
-}
-.uls-menu .uls-filterinput {
-	position: absolute;
-	top: 0;
 	left: 0;
+}
+
+.uls-search-input-wrapper {
+	position: relative;
+}
+
+/* There are two input boxes. This class applies to both of them */
+.uls-filterinput {
 	font-size: 14px;
 	height: 32px;
 	width: 100%;
-	text-align: left;
+	/* For the custom clear (X) icon */
+	padding: 6px 25px 6px 6px;
+	border-width: 1px;
+
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
-.uls-menu .uls-filtersuggestion {
-	padding: 6px;
+
+/* This is the actual input */
+.uls-languagefilter {
+	background-color: transparent;
+	border: 1px solid #c9c9c9;
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+	color: #333;
+	-moz-transition: border 0.15s linear 0s;
+	-o-transition: border 0.15s linear 0s;
+	-webkit-transition: border 0.15s linear 0s;
+	transition: border 0.15s linear 0s;
+}
+
+.uls-languagefilter:focus {
+	border: 1px solid #3366bb;
+}
+
+/* This is the shadow input box showing completion suggestions */
+.uls-filtersuggestion {
 	background-color: white;
 	color: #888;
-	border: 1px transparent;
 	border-radius: 2px 2px 2px 2px;
 	box-shadow: 0 1px 2px transparent inset;
-	left: 1px;
 }
-.uls-menu .uls-search-input-block {
-	position: relative;
+
+.uls-languagefilter-clear {
+	background: transparent url('../images/clear.png') no-repeat scroll left center;
+	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/clear.svg');
+	/* @embed */
+	background-image: linear-gradient(transparent, transparent), url('../images/clear.svg');
+	background-size: 15px;
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+
+	/* Vertical margins: (32 - 15) / 2 */
+	margin: 8.5px 5px;
+	position: absolute;
+	right: 0;
+	/* Make it appear above the input boxes */
+	z-index: 1;
 }

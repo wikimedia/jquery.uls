@@ -33,19 +33,17 @@
 				</div>\
 			</div>\
 			<div id="search" class="row uls-search"> \
-				<div class="one column">\
+				<div class="uls-search-wrapper"> \
 					<label class="uls-search-label" for="uls-languagefilter"></label>\
-				</div>\
-				<div class="ten columns">\
-					<div id="uls-search-input-block" class="uls-search-input-block">\
-						<input type="text" class="uls-filterinput uls-filtersuggestion" id="uls-filtersuggestion" disabled="true"\
-							autocomplete="off" /> <input type="text" class="uls-filterinput uls-languagefilter" id="uls-languagefilter"\
-							data-clear="uls-languagefilter-clear" data-suggestion="uls-filtersuggestion"\
-							placeholder="Language search" autocomplete="off" />\
+					<div class="uls-search-input-wrapper">\
+						<span id="uls-languagefilter-clear" class="uls-languagefilter-clear"></span>\
+						<input type="text" class="uls-filterinput uls-filtersuggestion"\
+							id="uls-filtersuggestion" disabled="true" autocomplete="off">\
+						<input type="text" class="uls-filterinput uls-languagefilter"\
+							id="uls-languagefilter" data-clear="uls-languagefilter-clear"\
+							data-suggestion="uls-filtersuggestion"\
+							placeholder="Language search" autocomplete="off">\
 					</div>\
-				</div>\
-				<div class="one column">\
-					<span id="uls-languagefilter-clear" class="uls-languagefilter-clear"></span>\
 				</div>\
 			</div>\
 			<div class="row uls-language-list"></div>\
