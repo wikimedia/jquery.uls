@@ -162,35 +162,25 @@
 			}
 		},
 
-		search: function() {
-			var languagesInScript,
-				query = $.trim( this.$element.val() ),
-				languages = $.uls.data.getLanguagesByScriptGroup( this.options.languages ),
-				scriptGroup, langNum, langCode;
+		search: function () {
+			var langCode,
+				query = $.trim( this.$element.val() );
 
 			this.resultCount = 0;
 
-			for ( scriptGroup in languages ) {
-				languagesInScript = languages[scriptGroup];
+			for ( langCode in this.options.languages ) {
+				if ( query === '' || this.filter( langCode, query ) ) {
+					if ( this.resultCount === 0 ) {
+						// Autofill the first result.
+						this.autofill( langCode );
+					}
 
-				languagesInScript.sort( $.uls.data.sortByAutonym );
+					if ( query.toLowerCase() === langCode ) {
+						this.selectedLanguage = langCode;
+					}
 
-				for ( langNum = 0; langNum < languagesInScript.length; langNum++ ) {
-					langCode = languagesInScript[langNum];
-
-					if ( query === '' || this.filter( langCode, query ) ) {
-						if ( this.resultCount === 0 ) {
-							// Autofill the first result.
-							this.autofill( langCode );
-						}
-
-						if ( query.toLowerCase() === langCode ) {
-							this.selectedLanguage = langCode;
-						}
-
-						if ( this.render( langCode ) ) {
-							this.resultCount++;
-						}
+					if ( this.render( langCode ) ) {
+						this.resultCount++;
 					}
 				}
 			}
