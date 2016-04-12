@@ -227,6 +227,7 @@ languages:
   kbd-cyrl: [kbd]
   kbd-latn: [Latn, [EU], Qabardjajəbza]
   kbd: [Cyrl, [EU, ME], Адыгэбзэ]
+  kbp: [Latn, [AF], Kabɩyɛ]
   kea: [Latn, [AF], Kabuverdianu]
   kg: [Latn, [AF], Kongo]
   kgp: [Latn, [AM], Kaingáng]
