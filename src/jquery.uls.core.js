@@ -28,8 +28,8 @@
 	template = '<div class="grid uls-menu"> \
 			<div class="row"> \
 				<span id="uls-close" class="uls-icon-close"></span> \
-				<div class="uls-title-region seven columns">\
-					<h1 data-i18n="uls-select-language" class="uls-title">Select Language</h1>\
+				<div class="uls-title-region">\
+					<h1 data-i18n="uls-select-language" class="uls-title">Select language</h1>\
 				</div>\
 			</div>\
 			<div id="search" class="row uls-search"> \
