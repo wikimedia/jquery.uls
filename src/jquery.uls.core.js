@@ -26,12 +26,6 @@
 	// Region numbers in id attributes also appear in the langdb.
 	/*jshint multistr:true */
 	template = '<div class="grid uls-menu"> \
-			<div class="row"> \
-				<span id="uls-close" class="uls-icon-close"></span> \
-				<div class="uls-title-region seven columns">\
-					<h1 data-i18n="uls-select-language" class="uls-title">Select Language</h1>\
-				</div>\
-			</div>\
 			<div id="search" class="row uls-search"> \
 				<div class="uls-search-wrapper"> \
 					<label class="uls-search-label" for="uls-languagefilter"></label>\
@@ -165,10 +159,6 @@
 			this.$menu.addClass( widthClasses[this.getMenuWidth()] );
 			this.$menu.css( this.position() );
 
-			if ( this.options.compact ) {
-				this.$menu.addClass( 'uls-compact' );
-			}
-
 			if ( !this.initialized ) {
 				$( 'body' ).prepend( this.$menu );
 				this.i18n();
@@ -239,8 +229,6 @@
 			// Register all event listeners to the ULS here.
 			this.$element.on( 'click', $.proxy( this.click, this ) );
 
-			// Close when clicking on the close button
-			this.$menu.find( '#uls-close' ).on( 'click', $.proxy( this.cancel, this ) );
 			// Don't do anything if pressing on empty space in the ULS
 			this.$menu.on( 'click', function ( e ) {
 				e.stopPropagation();
@@ -424,7 +412,6 @@
 		searchAPI: null, // Language search API
 		languages: $.uls.data.getAutonyms(), // Languages to be used for ULS, default is all languages
 		quickList: null, // Array of language codes or function that returns such
-		compact: false, // Show ULS in compact mode
 		// The options are wide (4 columns), medium (2 columns), and narrow (1 column).
 		// If not specified, it will be set automatically.
 		menuWidth: null,
