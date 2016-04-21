@@ -49,16 +49,6 @@
 	min-width: 150px;
 }
 
-/* Leave more space for search input */
-.uls-narrow .uls-search-label {
-	background-size: 15px;
-	width: 20px;
-}
-
-.uls-narrow .uls-search-wrapper {
-	padding-left: 20px;
-}
-
 .uls-title-region a {
 	padding-left: 15px;
 }
@@ -156,7 +146,7 @@ div.uls-region {
 	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/search.svg');
 	/* @embed */
 	background-image: linear-gradient(transparent, transparent), url('../images/search.svg');
-	background-size: 30px;
+	background-size: 32px;
 	background-position: center center;
 	height: 32px;
 	width: 40px;
