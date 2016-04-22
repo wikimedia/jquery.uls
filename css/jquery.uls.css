@@ -1,3 +1,4 @@
+
 .uls-trigger {
 	/* @embed */
 	background: transparent url('../images/icon-language.png') no-repeat scroll left center;
@@ -7,6 +8,7 @@
 	background-image: linear-gradient(transparent, transparent), url('../images/icon-language.svg');
 	padding-left: 30px;
 }
+
 .uls-menu {
 	position: absolute;
 	z-index: 1000;
@@ -16,7 +18,6 @@
 	background-color: #ffffff;
 	border: 1px solid #ccc;
 	border: 1px solid rgba(0, 0, 0, 0.2);
-	border-radius: 5px;
 	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -24,6 +25,7 @@
 	-moz-background-clip: padding;
 	background-clip: padding-box;
 }
+
 .uls-wide {
 	min-width: 715px;
 	width: 45%;
@@ -104,30 +106,9 @@ div.uls-region {
 	width: 99%;
 }
 
-.uls-icon-close {
-	/* @embed */
-	background: transparent url('../images/close.png') no-repeat scroll center center;
-	/* @embed */
-	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/close.svg');
-	/* @embed */
-	background-image: linear-gradient(transparent, transparent), url('../images/close.svg');
-	float: right;
-	padding: 15px;
-	cursor: pointer;
-}
-
 .uls-search {
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0F0F0', endColorstr='#FBFBFB');
-	background: #f8f8f8;
-	background: -webkit-gradient(linear, left top, left bottom, from(#F0F0F0), to(#FBFBFB));
-	background: -webkit-linear-gradient(top, #F0F0F0, #FBFBFB);
-	background: -moz-linear-gradient(top, #F0F0F0, #FBFBFB);
-	background: -o-linear-gradient(top, #F0F0F0, #FBFBFB);
-	background: linear-gradient(#F0F0F0, #FBFBFB);
-	border-top-color: #AAA;
-	border-top-style: solid;
-	border-top-width: 1px;
-	padding: 0.8em 0;
+	background-color: white;
+	padding: 5px;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: #DDD;
@@ -161,12 +142,14 @@ div.uls-region {
 
 /* There are two input boxes. This class applies to both of them */
 .uls-filterinput {
-	font-size: 14px;
+	font-size: 18px;
 	height: 32px;
 	width: 100%;
 	/* For the custom clear (X) icon */
 	padding: 6px 25px 6px 6px;
-	border-width: 1px;
+
+	outline: none;
+	border: none;
 
 	display: block;
 	position: absolute;
@@ -177,26 +160,14 @@ div.uls-region {
 /* This is the actual input */
 .uls-languagefilter {
 	background-color: transparent;
-	border: 1px solid #c9c9c9;
-	border-radius: 2px 2px 2px 2px;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+	border: none;
 	color: #333;
-	-moz-transition: border 0.15s linear 0s;
-	-o-transition: border 0.15s linear 0s;
-	-webkit-transition: border 0.15s linear 0s;
-	transition: border 0.15s linear 0s;
-}
-
-.uls-languagefilter:focus {
-	border: 1px solid #3366bb;
 }
 
 /* This is the shadow input box showing completion suggestions */
 .uls-filtersuggestion {
 	background-color: white;
 	color: #888;
-	border-radius: 2px 2px 2px 2px;
-	box-shadow: 0 1px 2px transparent inset;
 }
 
 .uls-languagefilter-clear {
