@@ -62,7 +62,7 @@ languages:
   bg: [Cyrl, [EU], български]
   bgn: [Arab, [AS, ME], روچ کپتین بلوچی]
  # FIXME - currently says Bhojpuri, but it's a macrolanguage.
-  bh: [Deva, [AS], भोजपुरी]
+  bh: [bho]
   bho: [Deva, [AS], भोजपुरी]
   bi: [Latn, [PA], Bislama]
   bjn: [Latn, [AS], Bahasa Banjar]
