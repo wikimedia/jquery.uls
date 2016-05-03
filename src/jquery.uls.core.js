@@ -189,6 +189,10 @@
 		hide: function () {
 			this.$menu.hide();
 			this.shown = false;
+
+			if ( this.options.onCancel ) {
+				this.options.onCancel.call( this );
+			}
 		},
 
 		/**
@@ -310,10 +314,6 @@
 			}
 
 			this.hide();
-
-			if ( this.options.onCancel ) {
-				this.options.onCancel.call( this );
-			}
 		},
 
 		keyup: function ( e ) {
