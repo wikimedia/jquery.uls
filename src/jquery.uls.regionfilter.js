@@ -123,7 +123,7 @@
 			}
 
 			$target.append( langCode, region );
-		},
+		}
 	};
 
 	$.uls.RegionSelector = RegionSelector;
