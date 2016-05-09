@@ -221,8 +221,7 @@
 		 * Bind the UI elements with their event listeners
 		 */
 		listen: function () {
-			var lcd, columnsOptions, languagesCount,
-				uls = this;
+			var lcd, columnsOptions, languagesCount;
 
 			columnsOptions = {
 				wide: 4,
@@ -265,28 +264,6 @@
 				onSelect: $.proxy( this.select, this )
 			} );
 
-			// Create region selectors, one per region
-			this.regionFilter = new $.uls.RegionSelector( {
-				$target: lcd,
-				languages: this.languages,
-				success: function ( regionfilter ) {
-					// Deactivate search filtering
-					uls.$languageFilter.languagefilter( 'deactivate' );
-
-					// If it is the WW region, show the quicklist
-					if ( regionfilter.regionGroup === 1 ) {
-						lcd.quicklist();
-					}
-
-					// Show 'results view' if we are in no results mode
-					uls.success();
-				},
-				noresults: function () {
-					uls.$languageFilter.languagefilter( 'clear' );
-				}
-			} );
-
-			this.$languageFilter.on( 'searchclear.uls', $.proxy( this.regionFilter.show, this.regionFilter ) );
 			this.$languageFilter.on( 'noresults.uls', $.proxy( this.noresults, this ) );
 			this.$languageFilter.on( 'resultsfound.uls', $.proxy( this.success, this ) );
 
@@ -299,7 +276,6 @@
 		 */
 		select: function ( langCode ) {
 			this.hide();
-			this.$languageFilter.trigger( 'searchclear' );
 			if ( this.options.onSelect ) {
 				this.options.onSelect.call( this, langCode );
 			}

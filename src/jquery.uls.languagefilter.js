@@ -35,7 +35,7 @@
 		this.$suggestion = this.$element.parents().find( '#' + this.$element.data( 'suggestion' ) );
 		this.$clear = this.$element.parents().find( '#' + this.$element.data( 'clear' ) );
 		this.selectedLanguage = null;
-
+		this.init();
 		this.listen();
 	};
 
@@ -49,6 +49,10 @@
 	}() );
 
 	LanguageFilter.prototype = {
+		init: function () {
+			this.search();
+		},
+
 		listen: function () {
 			this.$element.on( 'keypress', $.proxy( this.keyup, this ) )
 				.on( 'keyup', $.proxy( this.keyup, this ) );
@@ -143,7 +147,7 @@
 		 */
 		clear: function () {
 			this.deactivate();
-			this.$element.trigger( 'searchclear.uls' );
+			this.search();
 		},
 
 		/**
@@ -163,33 +167,38 @@
 		},
 
 		search: function () {
-			var langCode,
+			var langCode, scriptGroup, langNum, languagesInScript,
+				languages = $.uls.data.getLanguagesByScriptGroup( this.options.languages ),
 				query = $.trim( this.$element.val() );
 
 			this.resultCount = 0;
+			for ( scriptGroup in languages ) {
+				languagesInScript = languages[ scriptGroup ];
+				languagesInScript.sort( $.uls.data.sortByAutonym );
+				for ( langNum = 0; langNum < languagesInScript.length; langNum++ ) {
+					langCode = languagesInScript[ langNum ];
+					if ( query === '' || this.filter( langCode, query ) ) {
+						if ( this.resultCount === 0 ) {
+							// Autofill the first result.
+							this.autofill( langCode );
+						}
 
-			for ( langCode in this.options.languages ) {
-				if ( query === '' || this.filter( langCode, query ) ) {
-					if ( this.resultCount === 0 ) {
-						// Autofill the first result.
-						this.autofill( langCode );
-					}
+						if ( query.toLowerCase() === langCode ) {
+							this.selectedLanguage = langCode;
+						}
 
-					if ( query.toLowerCase() === langCode ) {
-						this.selectedLanguage = langCode;
-					}
-
-					if ( this.render( langCode ) ) {
-						this.resultCount++;
+						if ( this.render( langCode ) ) {
+							this.resultCount++;
+						}
 					}
 				}
-			}
 
-			// Also do a search by search API
-			if ( !this.resultCount && this.options.searchAPI && query ) {
-				this.searchAPI( query );
-			} else {
-				this.resultHandler( query );
+				// Also do a search by search API
+				if ( !this.resultCount && this.options.searchAPI && query ) {
+					this.searchAPI( query );
+				} else {
+					this.resultHandler( query );
+				}
 			}
 		},
 
