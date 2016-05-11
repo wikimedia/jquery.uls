@@ -368,7 +368,7 @@
 				.data( 'i18n', 'uls-no-results-suggestion-title' )
 				.text( 'You may be interested in:' )
 				.i18n();
-			this.$noResults.find( 'h2' ).after( $suggestions );
+			this.$noResults.find( 'h2' ).after( $suggestions.show() );
 		},
 
 		listen: function () {
