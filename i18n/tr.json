@@ -3,10 +3,10 @@
 		"authors": [
 			"Emperyan",
 			"Erdemaslancan",
-			"Sadrettin"
+			"Sadrettin",
+			"Kumkumuk"
 		]
 	},
-	"uls-select-language": "Dil Seçin",
 	"uls-region-WW": "Dünya çapında",
 	"uls-region-SP": "Özel",
 	"uls-region-AM": "Amerika",
@@ -18,6 +18,6 @@
 	"uls-no-results-found": "Sonuç bulunamadı",
 	"uls-common-languages": "Ortak diller",
 	"uls-no-results-suggestion-title": "İlginizi çekebilir:",
-	"uls-search-help": "Dil adına, betik adına, dilin ISO koduna göre arama yapabilirsiniz ya da bölgeye göre tarayabilirsiniz:",
+	"uls-search-help": "Dil adına, betik adına, dilin ISO koduna göre arama yapabilirsiniz ya da bölgeye göre tarayabilirsiniz.",
 	"uls-search-placeholder": "Dil ara"
 }

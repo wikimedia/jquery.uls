@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Toliño"
+			"Toliño",
+			"Elisardojm"
 		]
 	},
-	"uls-select-language": "Seleccione unha lingua",
 	"uls-region-WW": "Mundial",
 	"uls-region-SP": "Especial",
 	"uls-region-AM": "América",
@@ -16,6 +16,6 @@
 	"uls-no-results-found": "Non se atopou ningún resultado",
 	"uls-common-languages": "Linguas comúns",
 	"uls-no-results-suggestion-title": "Poida que estea buscando:",
-	"uls-search-help": "Pode procurar polo nome da lingua, o tipo de escritura ou o código ISO. Tamén pode explorar as rexións:",
+	"uls-search-help": "Pode procurar polo nome da lingua, o tipo de escritura ou o código ISO. Tamén pode explorar as rexións.",
 	"uls-search-placeholder": "Procurar unha lingua"
 }

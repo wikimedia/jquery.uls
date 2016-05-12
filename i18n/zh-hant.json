@@ -2,10 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Justincheng12345",
-			"Simon Shek"
+			"Simon Shek",
+			"LNDDYL"
 		]
 	},
-	"uls-select-language": "選擇語言",
 	"uls-region-WW": "全世界",
 	"uls-region-SP": "特別",
 	"uls-region-AM": "美洲",
@@ -17,6 +17,6 @@
 	"uls-no-results-found": "找不到任何結果",
 	"uls-common-languages": "常用語言",
 	"uls-no-results-suggestion-title": "您可能感興趣：",
-	"uls-search-help": "您可以按語言名稱、程式碼名稱、語言ISO代碼搜索，或您亦可按區域瀏覽：",
+	"uls-search-help": "您可以按語言名稱、程式碼名稱、語言 ISO 代碼搜尋，或您亦可按區域瀏覽。",
 	"uls-search-placeholder": "搜尋語言"
 }
