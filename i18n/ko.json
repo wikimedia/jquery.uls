@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"IRTC1015",
-			"아라"
+			"아라",
+			"Ykhwong"
 		]
 	},
-	"uls-region-WW": "전세계",
+	"uls-region-WW": "전 세계",
 	"uls-region-SP": "특수",
 	"uls-region-AM": "아메리카",
 	"uls-region-AF": "아프리카",
