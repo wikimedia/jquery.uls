@@ -100,21 +100,6 @@
 	};
 
 	/**
-	 * Returns an array of all region codes.
-	 * @return array
-	 */
-	$.uls.data.getAllRegions = function () {
-		var region,
-			allRegions = [];
-
-		for ( region in $.uls.data.regiongroups ) {
-			allRegions.push( region );
-		}
-
-		return allRegions;
-	};
-
-	/**
 	 * Returns all languages written in script.
 	 * @param script string
 	 * @return array of strings (languages codes)
@@ -149,77 +134,6 @@
 	};
 
 	/**
-	 * Returns all languages in a given region.
-	 * @param region string
-	 * @return array of strings (languages codes)
-	 */
-	$.uls.data.getLanguagesInRegion = function ( region ) {
-		return $.uls.data.getLanguagesInRegions( [ region ] );
-	};
-
-	/**
-	 * Returns all languages in given regions.
-	 * @param regions array of strings.
-	 * @return array of strings (languages codes)
-	 */
-	$.uls.data.getLanguagesInRegions = function ( regions ) {
-		var language, i,
-			languagesInRegions = [];
-
-		for ( language in $.uls.data.languages ) {
-			if ( $.uls.data.isRedirect( language ) ) {
-				continue;
-			}
-
-			for ( i = 0; i < regions.length; i++ ) {
-				if ( $.inArray( regions[i], $.uls.data.getRegions( language ) ) !== -1 ) {
-					languagesInRegions.push( language );
-					break;
-				}
-			}
-		}
-
-		return languagesInRegions;
-	};
-
-	/**
-	 * Returns all languages in a region group.
-	 * @param groupNum number.
-	 * @return array of strings (languages codes)
-	 */
-	$.uls.data.getLanguagesInRegionGroup = function ( groupNum ) {
-		return $.uls.data.getLanguagesInRegions( $.uls.data.getRegionsInGroup( groupNum ) );
-	};
-
-	/**
-	 * Returns an associative array of languages in a region,
-	 * grouped by script.
-	 * @param region string Region code
-	 * @return associative array
-	 */
-	$.uls.data.getLanguagesByScriptInRegion = function ( region ) {
-		var language, script,
-			languagesByScriptInRegion = {};
-
-		for ( language in $.uls.data.languages ) {
-			if ( $.uls.data.isRedirect( language ) ) {
-				continue;
-			}
-
-			if ( $.inArray( region, $.uls.data.getRegions( language ) ) !== -1 ) {
-				script = $.uls.data.getScript( language );
-
-				if ( languagesByScriptInRegion[script] === undefined ) {
-					languagesByScriptInRegion[script] = [];
-				}
-				languagesByScriptInRegion[script].push( language );
-			}
-		}
-
-		return languagesByScriptInRegion;
-	};
-
-	/**
 	 * Returns an associative array of languages in a region,
 	 * grouped by script group.
 	 * @param region string Region code
@@ -227,15 +141,6 @@
 	 */
 	$.uls.data.getLanguagesByScriptGroupInRegion = function ( region ) {
 		return $.uls.data.getLanguagesByScriptGroupInRegions( [ region ] );
-	};
-
-	/**
-	 * Returns an associative array of all languages,
-	 * grouped by script group.
-	 * @return associative array
-	 */
-	$.uls.data.getAllLanguagesByScriptGroup = function () {
-		return $.uls.data.getLanguagesByScriptGroupInRegions( $.uls.data.getAllRegions() );
 	};
 
 	/**
@@ -292,72 +197,6 @@
 		}
 
 		return languagesByScriptGroupInRegions;
-	};
-
-	/**
-	 * Returns an array of languages grouped by region group,
-	 * region, script group and script.
-	 * @return associative array
-	 */
-	$.uls.data.getAllLanguagesByRegionAndScript = function () {
-		var region, regionGroup, language,
-			script, scriptGroup, regions, regionNum,
-			allLanguagesByRegionAndScript = {};
-
-		for ( region in $.uls.data.regiongroups ) {
-			regionGroup = $.uls.data.regiongroups[region];
-
-			if ( allLanguagesByRegionAndScript[regionGroup] === undefined ) {
-				allLanguagesByRegionAndScript[regionGroup] = {};
-			}
-
-			allLanguagesByRegionAndScript[regionGroup][region] = {};
-		}
-
-		for ( language in $.uls.data.languages ) {
-			if ( $.uls.data.isRedirect( language ) ) {
-				continue;
-			}
-
-			script = $.uls.data.getScript( language );
-			scriptGroup = $.uls.data.getGroupOfScript( script );
-			regions = $.uls.data.getRegions( language );
-
-			for ( regionNum = 0; regionNum < regions.length; regionNum++ ) {
-				region = regions[regionNum];
-				regionGroup = $.uls.data.regiongroups[region];
-
-				if ( allLanguagesByRegionAndScript[regionGroup][region][scriptGroup] === undefined ) {
-					allLanguagesByRegionAndScript[regionGroup][region][scriptGroup] = {};
-				}
-
-				if ( allLanguagesByRegionAndScript[regionGroup][region][scriptGroup][script] === undefined ) {
-					allLanguagesByRegionAndScript[regionGroup][region][scriptGroup][script] = [];
-				}
-
-				allLanguagesByRegionAndScript[regionGroup][region][scriptGroup][script].push( language );
-			}
-		}
-
-		return allLanguagesByRegionAndScript;
-	};
-
-	/**
-	 * Returns all regions in a region group.
-	 * @param groupNum int
-	 * @return array of strings
-	 */
-	$.uls.data.getRegionsInGroup = function ( groupNum ) {
-		var region,
-			regionsInGroup = [];
-
-		for ( region in $.uls.data.regiongroups ) {
-			if ( $.uls.data.regiongroups[region] === groupNum ) {
-				regionsInGroup.push( region );
-			}
-		}
-
-		return regionsInGroup;
 	};
 
 	/**
