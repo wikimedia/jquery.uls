@@ -192,13 +192,13 @@
 						}
 					}
 				}
+			}
 
-				// Also do a search by search API
-				if ( !this.resultCount && this.options.searchAPI && query ) {
-					this.searchAPI( query );
-				} else {
-					this.resultHandler( query );
-				}
+			// Also do a search by search API
+			if ( !this.resultCount && this.options.searchAPI && query ) {
+				this.searchAPI( query );
+			} else {
+				this.resultHandler( query );
 			}
 		},
 
