@@ -114,6 +114,10 @@ div.uls-region {
 	border-bottom-color: #DDD;
 }
 
+.grid .uls-search {
+	padding-left: 0;
+}
+
 /* Make space for magnifying class on the front */
 .uls-search-wrapper {
 	position: relative;
@@ -127,13 +131,14 @@ div.uls-region {
 	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/search.svg');
 	/* @embed */
 	background-image: linear-gradient(transparent, transparent), url('../images/search.svg');
-	background-size: 32px;
+	background-size: 28px;
 	background-position: center center;
 	height: 32px;
 	width: 40px;
 	display: block;
 	position: absolute;
 	left: 0;
+	opacity: 0.8;
 }
 
 .uls-search-input-wrapper {
@@ -146,7 +151,7 @@ div.uls-region {
 	height: 32px;
 	width: 100%;
 	/* For the custom clear (X) icon */
-	padding: 6px 25px 6px 6px;
+	padding: 6px 25px 6px 0;
 
 	outline: none;
 	border: none;
