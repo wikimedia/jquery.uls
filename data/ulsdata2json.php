@@ -70,17 +70,20 @@ foreach ( $supplementalData->territoryInfo->territory as $territoryRecord ) {
 }
 
 print "Writing JSON langdb...\n";
-$json = json_encode( $parsedLangdb, JSON_UNESCAPED_UNICODE );
+$jsonVerbose = json_encode( $parsedLangdb, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE );
+$jsonSlim = json_encode( $parsedLangdb, JSON_UNESCAPED_UNICODE );
 $js = <<<JAVASCRIPT
 // Please do not edit. This file is generated from data/langdb.yaml by ulsdata2json.php
 ( function ( $ ) {
 	'use strict';
 	$.uls = $.uls || {};
 	//noinspection JSHint
-	$.uls.data = $json;
+	$.uls.data = $jsonSlim;
 } ( jQuery ) );
 
 JAVASCRIPT;
 file_put_contents( '../src/jquery.uls.data.js', $js );
+// For making diff review easier.
+file_put_contents( 'generated-langdb.json', $jsonVerbose );
 
 print "Done.\n";
