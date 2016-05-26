@@ -3714,9 +3714,12 @@
         "AF": [
             "fa",
             "ps",
+            "uz",
+            "tk",
             "bgn",
             "ug-arab",
-            "kk-arab"
+            "kk-arab",
+            "kk-cyrl"
         ],
         "AG": [
             "en",
@@ -3760,6 +3763,7 @@
         "AU": [
             "en",
             "zh-hant",
+            "zh",
             "it"
         ],
         "AW": [
@@ -3773,9 +3777,13 @@
         "AZ": [
             "az-latn",
             "az-cyrl",
-            "ku-latn"
+            "tly",
+            "ku-latn",
+            "ttt",
+            "tkr"
         ],
         "BA": [
+            "bs",
             "en",
             "hr",
             "sr-cyrl",
@@ -3827,7 +3835,9 @@
             "en"
         ],
         "BN": [
+            "ms",
             "zh-hant",
+            "zh",
             "en"
         ],
         "BO": [
@@ -3880,9 +3890,11 @@
             "de",
             "pdt",
             "cr",
-            "yi"
+            "yi",
+            "iu"
         ],
         "CC": [
+            "ms",
             "en"
         ],
         "CD": [
@@ -3928,11 +3940,13 @@
             "ff",
             "ar",
             "ksf",
-            "ha-arab"
+            "ha-arab",
+            "ha-latn"
         ],
         "CN": [
             "yue",
             "zh-hans",
+            "zh",
             "wuu",
             "hsn",
             "hak",
@@ -3941,12 +3955,16 @@
             "ii",
             "ug-arab",
             "za",
+            "mn",
             "bo",
             "ko",
             "kk-arab",
+            "kk-cyrl",
+            "ky",
             "en",
             "ru",
             "vi",
+            "uz",
             "lzh"
         ],
         "CO": [
@@ -4137,9 +4155,11 @@
             "cy",
             "bn",
             "zh-hant",
+            "zh",
             "el",
             "it",
             "ks-arab",
+            "ks",
             "gd",
             "yi",
             "ml",
@@ -4161,7 +4181,8 @@
         ],
         "GF": [
             "fr",
-            "zh-hant"
+            "zh-hant",
+            "zh"
         ],
         "GG": [
             "en"
@@ -4200,6 +4221,7 @@
         "GR": [
             "el",
             "en",
+            "pnt",
             "mk",
             "tr",
             "bg",
@@ -4221,6 +4243,7 @@
         ],
         "HK": [
             "zh-hant",
+            "zh",
             "yue",
             "en",
             "zh-hans"
@@ -4254,6 +4277,7 @@
             "id",
             "jv",
             "su",
+            "ms",
             "min",
             "bew",
             "ban",
@@ -4262,6 +4286,7 @@
             "ace",
             "bbc",
             "zh-hant",
+            "zh",
             "sly",
             "mwv"
         ],
@@ -4307,7 +4332,9 @@
             "ne",
             "sat",
             "ks-arab",
+            "ks",
             "gom-deva",
+            "sd",
             "tcy",
             "brx",
             "mni",
@@ -4328,16 +4355,19 @@
             "en",
             "ckb",
             "az-arab",
+            "az-latn",
             "fa",
             "lrc"
         ],
         "IR": [
             "fa",
             "az-arab",
+            "az-latn",
             "mzn",
             "glk",
             "ckb",
             "sdh",
+            "tk",
             "lrc",
             "ar",
             "bqi",
@@ -4348,7 +4378,8 @@
             "ps",
             "ka",
             "gbz",
-            "kk-arab"
+            "kk-arab",
+            "kk-cyrl"
         ],
         "IS": [
             "is",
@@ -4403,6 +4434,7 @@
             "gu"
         ],
         "KG": [
+            "ky",
             "ru"
         ],
         "KH": [
@@ -4435,7 +4467,8 @@
             "kk-cyrl",
             "en",
             "de",
-            "ug-cyrl"
+            "ug-cyrl",
+            "ug-arab"
         ],
         "LA": [
             "lo"
@@ -4445,6 +4478,7 @@
             "en",
             "hy",
             "ku-arab",
+            "ku-latn",
             "fr"
         ],
         "LC": [
@@ -4495,8 +4529,10 @@
             "zgh",
             "fr",
             "en",
+            "tzm",
             "shi-latn",
             "shi-tfng",
+            "rif",
             "es"
         ],
         "MC": [
@@ -4511,8 +4547,8 @@
         ],
         "ME": [
             "sr-latn",
-            "sq",
-            "sr-cyrl"
+            "sr-cyrl",
+            "sq"
         ],
         "MF": [
             "fr"
@@ -4532,6 +4568,7 @@
             "tr"
         ],
         "ML": [
+            "bm",
             "fr",
             "ses",
             "ar"
@@ -4543,13 +4580,18 @@
             "mnw"
         ],
         "MN": [
+            "mn",
             "kk-arab",
+            "kk-cyrl",
             "zh-hans",
+            "zh",
             "ru",
-            "ug-cyrl"
+            "ug-cyrl",
+            "ug-arab"
         ],
         "MO": [
             "zh-hant",
+            "zh",
             "pt",
             "zh-hans",
             "en"
@@ -4598,8 +4640,10 @@
             "sei"
         ],
         "MY": [
+            "ms",
             "en",
             "zh-hant",
+            "zh",
             "ta",
             "jv",
             "dtp",
@@ -4655,6 +4699,7 @@
             "fy",
             "id",
             "zea",
+            "rif",
             "tr"
         ],
         "NO": [
@@ -4692,7 +4737,8 @@
         "PA": [
             "es",
             "en",
-            "zh-hant"
+            "zh-hant",
+            "zh"
         ],
         "PE": [
             "es",
@@ -4702,7 +4748,8 @@
         "PF": [
             "fr",
             "ty",
-            "zh-hant"
+            "zh-hant",
+            "zh"
         ],
         "PG": [
             "tpi",
@@ -4720,19 +4767,24 @@
             "pam",
             "pag",
             "zh-hant",
+            "zh",
             "cps",
             "krj",
             "bto"
         ],
         "PK": [
             "ur",
+            "pa-guru",
             "en",
             "ps",
+            "sd",
             "brh",
             "fa",
             "bgn",
+            "tg",
             "khw",
-            "ks-arab"
+            "ks-arab",
+            "ks"
         ],
         "PL": [
             "pl",
@@ -4790,6 +4842,7 @@
             "de",
             "tr",
             "sr-latn",
+            "sr-cyrl",
             "bg",
             "el",
             "pl"
@@ -4824,6 +4877,7 @@
             "inh",
             "tyv",
             "az-cyrl",
+            "az-latn",
             "ady",
             "krl",
             "lbe",
@@ -4831,7 +4885,9 @@
             "mrj",
             "fi",
             "sr-latn",
+            "sr-cyrl",
             "vep",
+            "mn",
             "vot",
             "cu"
         ],
@@ -4853,7 +4909,8 @@
         "SD": [
             "ar",
             "en",
-            "ha-arab"
+            "ha-arab",
+            "ha-latn"
         ],
         "SE": [
             "sv",
@@ -4869,6 +4926,8 @@
         "SG": [
             "en",
             "zh-hans",
+            "zh",
+            "ms",
             "ta",
             "ml",
             "pa-guru"
@@ -4916,7 +4975,8 @@
         "SR": [
             "nl",
             "srn",
-            "zh-hant"
+            "zh-hant",
+            "zh"
         ],
         "SS": [
             "ar",
@@ -4966,11 +5026,13 @@
             "th",
             "en",
             "zh-hant",
+            "zh",
             "mnw",
             "shn"
         ],
         "TJ": [
             "tg-cyrl",
+            "tg",
             "ru",
             "fa",
             "ar"
@@ -4983,7 +5045,9 @@
             "tet"
         ],
         "TM": [
+            "tk",
             "ru",
+            "uz",
             "ku-latn"
         ],
         "TN": [
@@ -5009,10 +5073,14 @@
             "hy",
             "ka",
             "sr-latn",
+            "sr-cyrl",
+            "lzz",
             "sq",
             "ab",
             "el",
             "tru",
+            "uz",
+            "ky",
             "kk-cyrl"
         ],
         "TT": [
@@ -5023,7 +5091,8 @@
             "en"
         ],
         "TW": [
-            "zh-hant"
+            "zh-hant",
+            "zh"
         ],
         "TZ": [
             "sw",
@@ -5056,6 +5125,7 @@
             "en",
             "es",
             "zh-hant",
+            "zh",
             "fr",
             "de",
             "tl",
@@ -5079,6 +5149,7 @@
             "es"
         ],
         "UZ": [
+            "uz",
             "ru",
             "kaa",
             "tr"
@@ -5101,7 +5172,8 @@
         ],
         "VN": [
             "vi",
-            "zh-hant"
+            "zh-hant",
+            "zh"
         ],
         "VU": [
             "bi",

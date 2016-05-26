@@ -64,8 +64,17 @@ foreach ( $supplementalData->territoryInfo->territory as $territoryRecord ) {
 		$languageCodeAttr = $languageAttributes['type'];
 		// Lower case is a convention for language codes in ULS.
 		// '_' is used in CLDR for compound codes and it's replaced with '-' here.
-		$parsedLangdb['territories'][$territoryCode][] =
-			strtr( strtolower( (string) $languageCodeAttr[0] ), '_', '-' );
+
+		$normalisedCode = strtr( strtolower( (string) $languageCodeAttr[0] ), '_', '-' );
+
+		$parsedLangdb['territories'][$territoryCode][] = $normalisedCode;
+
+		// In case of codes with variants, also add the base because ULS might consider
+		// them as separate languages, e.g. zh, zh-hant and zh-hans.
+		if ( strpos( $normalisedCode, '-' ) !== false ) {
+			$parts = explode( '-', $normalisedCode );
+			$parsedLangdb['territories'][$territoryCode][] = $parts[0];
+		}
 	}
 }
 
@@ -90,6 +99,11 @@ foreach ( $parsedLangdb['territories'] as $territoryCode => $languages ) {
 		unset( $parsedLangdb['territories'][$territoryCode] );
 		continue;
 	}
+
+	// Remove duplicates we might have created
+	$parsedLangdb['territories'][$territoryCode] =
+		array_unique( $parsedLangdb['territories'][$territoryCode] );
+
 
 	// We need to renumber or json conversion thinks these are objects
 	$parsedLangdb['territories'][$territoryCode] =
