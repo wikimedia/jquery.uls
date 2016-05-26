@@ -3879,7 +3879,7 @@
             "it",
             "de",
             "pdt",
-            "cr-cans",
+            "cr",
             "yi"
         ],
         "CC": [
@@ -4098,7 +4098,7 @@
         "FJ": [
             "en",
             "hi",
-            "hif-latn",
+            "hif",
             "fj",
             "rtm"
         ],
@@ -4277,7 +4277,7 @@
             "ro",
             "yi",
             "pl",
-            "lad",
+            "lad-latn",
             "hu",
             "am",
             "ti",
@@ -4307,7 +4307,7 @@
             "ne",
             "sat",
             "ks-arab",
-            "gom",
+            "gom-deva",
             "tcy",
             "brx",
             "mni",
@@ -4711,7 +4711,7 @@
         ],
         "PH": [
             "en",
-            "fil",
+            "tl",
             "es",
             "ceb",
             "ilo",
@@ -4987,7 +4987,7 @@
             "ku-latn"
         ],
         "TN": [
-            "aeb",
+            "aeb-arab",
             "ar",
             "fr"
         ],
@@ -5058,7 +5058,7 @@
             "zh-hant",
             "fr",
             "de",
-            "fil",
+            "tl",
             "it",
             "vi",
             "ko",

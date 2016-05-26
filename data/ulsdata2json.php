@@ -76,6 +76,13 @@ foreach ( $parsedLangdb['territories'] as $territoryCode => $languages ) {
 			unset( $parsedLangdb['territories'][$territoryCode][$index] );
 			continue;
 		}
+
+		$data = $parsedLangdb['languages'][$language];
+		if ( count( $data ) === 1 ) {
+			echo "Redirect for language $language to {$data[0]} territory $territoryCode\n";
+			$parsedLangdb['territories'][$territoryCode][$index] = $data[0];
+			continue;
+		}
 	}
 
 	// Clean-up to save space
