@@ -69,6 +69,26 @@ foreach ( $supplementalData->territoryInfo->territory as $territoryRecord ) {
 	}
 }
 
+foreach ( $parsedLangdb['territories'] as $territoryCode => $languages ) {
+	foreach ( $languages as $index => $language ) {
+		if ( !isset( $parsedLangdb['languages'][$language] ) ) {
+			echo "Unknown language $language for territory $territoryCode\n";
+			unset( $parsedLangdb['territories'][$territoryCode][$index] );
+			continue;
+		}
+	}
+
+	// Clean-up to save space
+	if ( count( $parsedLangdb['territories'][$territoryCode] ) === 0 ) {
+		unset( $parsedLangdb['territories'][$territoryCode] );
+		continue;
+	}
+
+	// We need to renumber or json conversion thinks these are objects
+	$parsedLangdb['territories'][$territoryCode] =
+		array_values( $parsedLangdb['territories'][$territoryCode] );
+}
+
 print "Writing JSON langdb...\n";
 $jsonVerbose = json_encode( $parsedLangdb, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE );
 $jsonSlim = json_encode( $parsedLangdb, JSON_UNESCAPED_UNICODE );
