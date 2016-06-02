@@ -64,23 +64,67 @@ foreach ( $supplementalData->territoryInfo->territory as $territoryRecord ) {
 		$languageCodeAttr = $languageAttributes['type'];
 		// Lower case is a convention for language codes in ULS.
 		// '_' is used in CLDR for compound codes and it's replaced with '-' here.
-		$parsedLangdb['territories'][$territoryCode][] =
-			strtr( strtolower( (string) $languageCodeAttr[0] ), '_', '-' );
+
+		$normalisedCode = strtr( strtolower( (string) $languageCodeAttr[0] ), '_', '-' );
+
+		$parsedLangdb['territories'][$territoryCode][] = $normalisedCode;
+
+		// In case of codes with variants, also add the base because ULS might consider
+		// them as separate languages, e.g. zh, zh-hant and zh-hans.
+		if ( strpos( $normalisedCode, '-' ) !== false ) {
+			$parts = explode( '-', $normalisedCode );
+			$parsedLangdb['territories'][$territoryCode][] = $parts[0];
+		}
 	}
 }
 
+foreach ( $parsedLangdb['territories'] as $territoryCode => $languages ) {
+	foreach ( $languages as $index => $language ) {
+		if ( !isset( $parsedLangdb['languages'][$language] ) ) {
+			echo "Unknown language $language for territory $territoryCode\n";
+			unset( $parsedLangdb['territories'][$territoryCode][$index] );
+			continue;
+		}
+
+		$data = $parsedLangdb['languages'][$language];
+		if ( count( $data ) === 1 ) {
+			echo "Redirect for language $language to {$data[0]} territory $territoryCode\n";
+			$parsedLangdb['territories'][$territoryCode][$index] = $data[0];
+			continue;
+		}
+	}
+
+	// Clean-up to save space
+	if ( count( $parsedLangdb['territories'][$territoryCode] ) === 0 ) {
+		unset( $parsedLangdb['territories'][$territoryCode] );
+		continue;
+	}
+
+	// Remove duplicates we might have created
+	$parsedLangdb['territories'][$territoryCode] =
+		array_unique( $parsedLangdb['territories'][$territoryCode] );
+
+
+	// We need to renumber or json conversion thinks these are objects
+	$parsedLangdb['territories'][$territoryCode] =
+		array_values( $parsedLangdb['territories'][$territoryCode] );
+}
+
 print "Writing JSON langdb...\n";
-$json = json_encode( $parsedLangdb, JSON_UNESCAPED_UNICODE );
+$jsonVerbose = json_encode( $parsedLangdb, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE );
+$jsonSlim = json_encode( $parsedLangdb, JSON_UNESCAPED_UNICODE );
 $js = <<<JAVASCRIPT
 // Please do not edit. This file is generated from data/langdb.yaml by ulsdata2json.php
 ( function ( $ ) {
 	'use strict';
 	$.uls = $.uls || {};
 	//noinspection JSHint
-	$.uls.data = $json;
+	$.uls.data = $jsonSlim;
 } ( jQuery ) );
 
 JAVASCRIPT;
 file_put_contents( '../src/jquery.uls.data.js', $js );
+// For making diff review easier.
+file_put_contents( 'generated-langdb.json', $jsonVerbose );
 
 print "Done.\n";
