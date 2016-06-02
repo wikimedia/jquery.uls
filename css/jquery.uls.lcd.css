@@ -9,7 +9,10 @@
 /* Language list */
 .uls-language-list {
 	height: 20em;
-	overflow: auto;
+	/* Work around Chrome bug where it places scrollbar on the left in
+	 * in RTL mode but actually reserves the place on the right side */
+	overflow-x: hidden;
+	overflow-y: auto;
 	width: auto;
 	background: #FCFCFC;
 }
