@@ -21,11 +21,19 @@
 		$( document ).ready( function () {
 			$( '.uls-trigger' ).uls( {
 				languageDecorator: function ( $language, languageCode ) {
+					if ( languageCode.indexOf( 'm' ) >= 0 ) {
+						$language.parent().addClass( 'badge' );
+					}
 					$language.prop( 'href', '//' + languageCode + '.wikipedia.org' );
 				},
 			} );
 		} );
 	</script>
+	<style>
+		.badge {
+			list-style-type: square;
+		}
+	</style>
 </head>
 
 <body>

@@ -273,13 +273,14 @@
 			// Not using jQuery as this is performance hotspot
 			li = document.createElement( 'li' );
 			li.title = name;
-			li.lang = code;
-			li.dir = $.uls.data.getDir( code );
 			li.setAttribute( 'data-code', code );
 
 			a = document.createElement( 'a' );
 			a.appendChild( document.createTextNode( autonym ) );
 			a.className = 'autonym';
+			a.lang = code;
+			a.dir = $.uls.data.getDir( code );
+
 
 			li.appendChild( a );
 			if ( this.options.languageDecorator ) {
