@@ -205,6 +205,13 @@
             ],
             "asturianu"
         ],
+        "atj": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "atikamekw"
+        ],
         "av": [
             "Cyrl",
             [
@@ -3891,7 +3898,8 @@
             "pdt",
             "cr",
             "yi",
-            "iu"
+            "iu",
+            "atj"
         ],
         "CC": [
             "ms",
