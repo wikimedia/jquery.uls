@@ -2,20 +2,21 @@
 	"@metadata": {
 		"authors": [
 			"Arjanizary",
-			"Mousa"
+			"Mousa",
+			"Alp Er Tunqa"
 		]
 	},
 	"uls-region-WW": "دونیا بویو",
-	"uls-region-SP": "اؤزل",
+	"uls-region-SP": "مخصوص",
 	"uls-region-AM": "آمریکا",
 	"uls-region-AF": "آفریقا",
 	"uls-region-EU": "اوروپا",
 	"uls-region-AS": "آسیا",
 	"uls-region-ME": "اورتادوغو",
 	"uls-region-PA": "بؤیوک اوقیانوس",
-	"uls-no-results-found": "هئچ سونوچ تاپیلمادی",
+	"uls-no-results-found": "هئچ نتیجه تاپیلمادی",
 	"uls-common-languages": "اورتاق دیل‌لر",
 	"uls-no-results-suggestion-title": "بونلارا ماراقلی اولابیلرسینیز:",
-	"uls-search-help": "سیز دیل آدی، یازی آدی، دیلین ISO کودو، یوخسا بؤلگه ایله آختارا بیلرسینیز:",
+	"uls-search-help": "سیز دیل آدی، یازی آدی، دیلین ISO کودو، یوخسا بؤلگه ایله آختارا بیلرسینیز.",
 	"uls-search-placeholder": "دیل آختاریشی"
 }
