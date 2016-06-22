@@ -138,6 +138,7 @@ languages:
   eu: [Latn, [EU], euskara]
   ext: [Latn, [EU], estremeñu]
   fa: [Arab, [AS, ME], فارسی]
+  fax: [Latn, [EU], Fala]
   ff: [Latn, [AF], Fulfulde]
   fi: [Latn, [EU], suomi]
   fil: [tl]
