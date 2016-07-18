@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Christian List",
-			"Peter Alberti"
+			"Peter Alberti",
+			"Jubber"
 		]
 	},
 	"uls-region-WW": "Verdensomspændende",
@@ -14,7 +15,7 @@
 	"uls-region-ME": "Mellemøsten",
 	"uls-region-PA": "Stillehavet",
 	"uls-no-results-found": "Ingen resultater fundet",
-	"uls-common-languages": "Almindelige sprog",
+	"uls-common-languages": "Foreslåede sprog",
 	"uls-no-results-suggestion-title": "Du er måske interesseret i:",
 	"uls-search-help": "Du kan søge på sprogets navn, skriftens navn eller sprogets ISO-kode, eller du kan bladre hen til sproget efter regionen:",
 	"uls-search-placeholder": "Sprogsøgning"

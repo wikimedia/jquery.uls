@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
-			"Ultimate"
+			"Ultimate",
+			"Wladek92"
 		]
 	},
 	"uls-region-WW": "Dans le monde entier",
@@ -14,7 +15,7 @@
 	"uls-region-ME": "Moyen-Orient",
 	"uls-region-PA": "Pacifique",
 	"uls-no-results-found": "Aucun résultat trouvé",
-	"uls-common-languages": "Langues communes",
+	"uls-common-languages": "Langues suggérées",
 	"uls-no-results-suggestion-title": "Vous pouvez être intéressé par:",
 	"uls-search-help": "Vous pouvez rechercher par nom de langue, par nom du script, par code ISO de la langue, ou vous pouvez naviguer par région.",
 	"uls-search-placeholder": "Recherche de langue"

@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Cyklopas",
-			"Mantak111"
+			"Mantak111",
+			"Eitvys200"
 		]
 	},
 	"uls-region-WW": "Visame pasaulyje",
@@ -14,7 +15,7 @@
 	"uls-region-ME": "Artimieji Rytai",
 	"uls-region-PA": "Ramiojo vandenyno zona",
 	"uls-no-results-found": "Rezultatų nerasta",
-	"uls-common-languages": "Bendros kalbos",
+	"uls-common-languages": "Siūlomos kalbos",
 	"uls-no-results-suggestion-title": "Jums gali būti įdomu:",
 	"uls-search-help": "Galite ieškoti informacijos pagal kalbos pavadinimą, scenarijaus pavadinimą, ISO kalbos kodą arba galite naršyti pagal regionus:",
 	"uls-search-placeholder": "Kalbos ieška"

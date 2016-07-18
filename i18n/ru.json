@@ -5,7 +5,8 @@
 			"Bouron",
 			"Eleferen",
 			"Kaganer",
-			"Kopcap94"
+			"Kopcap94",
+			"Okras"
 		]
 	},
 	"uls-region-WW": "Всемирные",
@@ -17,7 +18,7 @@
 	"uls-region-ME": "Ближний Восток",
 	"uls-region-PA": "Океания",
 	"uls-no-results-found": "Не найдено",
-	"uls-common-languages": "Автоматически подобранные языки",
+	"uls-common-languages": "Предложенные языки",
 	"uls-no-results-suggestion-title": "Может быть вас заинтересуют эти языки:",
 	"uls-search-help": "Вы можете искать по названию языка или письменности, по ISO-коду языка или просмотреть по региону.",
 	"uls-search-placeholder": "Поиск языка"

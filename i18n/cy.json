@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Lloffiwr",
-			"Robin Owain"
+			"Robin Owain",
+			"Dafyddt"
 		]
 	},
-	"uls-region-WW": "Aml i fan",
+	"uls-region-WW": "Byd-eang",
 	"uls-region-SP": "Neilltuol",
 	"uls-region-AM": "America",
 	"uls-region-AF": "Affrica",
@@ -14,7 +15,7 @@
 	"uls-region-ME": "Y Dwyrain Canol",
 	"uls-region-PA": "Y Pasiffig",
 	"uls-no-results-found": "Ni chafwyd unrhyw ganlyniadau",
-	"uls-common-languages": "Awgrymiadau o ieithoedd",
+	"uls-common-languages": "Ieithoedd awgrymedig",
 	"uls-no-results-suggestion-title": "Hwyrach bod y rhai sy'n dilyn o ddiddordeb i chi:",
 	"uls-search-help": "Gallwch chwilio gan ddefnyddio enw iaith, enw sgript, côd ISO'r iaith neu gallwch bori fesul rhanbarth.",
 	"uls-search-placeholder": "Chwilio am iaith"
