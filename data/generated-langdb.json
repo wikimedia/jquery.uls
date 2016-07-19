@@ -538,6 +538,9 @@
             ],
             "Chamoru"
         ],
+        "chm": [
+            "mhr"
+        ],
         "cho": [
             "Latn",
             [
@@ -4890,6 +4893,7 @@
             "ce",
             "av",
             "udm",
+            "mhr",
             "sah",
             "os",
             "kbd",
