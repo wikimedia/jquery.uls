@@ -86,6 +86,13 @@ languages:
   ce: [Cyrl, [EU], нохчийн]
   ceb: [Latn, [AS], Cebuano]
   ch: [Latn, [PA], Chamoru]
+ # FIXME chm is actually a macro language that includes
+ # mhr and mrj, but CLDR Territory-Language information
+ # uses chm instead of mhr, so for practical reasons
+ # it should redirect there.
+ # A better fix would be this:
+ # https://phabricator.wikimedia.org/T136164
+  chm: [mhr]
   cho: [Latn, [AM], Choctaw]
   chr: [Cher, [AM], ᏣᎳᎩ]
   chy: [Latn, [AM], Tsetsêhestâhese]
