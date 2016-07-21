@@ -3,7 +3,8 @@
 		"authors": [
 			"Justincheng12345",
 			"Simon Shek",
-			"LNDDYL"
+			"LNDDYL",
+			"Kly"
 		]
 	},
 	"uls-region-WW": "全世界",
@@ -15,7 +16,7 @@
 	"uls-region-ME": "中東",
 	"uls-region-PA": "太平洋",
 	"uls-no-results-found": "找不到任何結果",
-	"uls-common-languages": "常用語言",
+	"uls-common-languages": "推薦語言",
 	"uls-no-results-suggestion-title": "您可能感興趣：",
 	"uls-search-help": "您可以按語言名稱、程式碼名稱、語言 ISO 代碼搜尋，或您亦可按區域瀏覽。",
 	"uls-search-placeholder": "搜尋語言"

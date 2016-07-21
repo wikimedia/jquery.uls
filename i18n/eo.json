@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Objectivesea",
-			"KuboF"
+			"KuboF",
+			"Orikrin1998"
 		]
 	},
 	"uls-region-WW": "Tutmonda",
@@ -14,7 +15,7 @@
 	"uls-region-ME": "Mezoriento",
 	"uls-region-PA": "Pacifiko",
 	"uls-no-results-found": "Neniu rezulto estis trovita",
-	"uls-common-languages": "Komunaj lingvoj",
+	"uls-common-languages": "Sugestataj lingvoj",
 	"uls-no-results-suggestion-title": "Vi eble interesiĝas pri:",
 	"uls-search-help": "Vi povas serĉi laŭ la lingvonomo, la skriptnomo aŭ la lingva ISO-kodo, aŭ vi povas foliumi laŭ regiono.",
 	"uls-search-placeholder": "Lingvoserĉo"
