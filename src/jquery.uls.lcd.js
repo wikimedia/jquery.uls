@@ -94,11 +94,6 @@
 				}
 			}
 
-			// Worldwides only displayed once
-			if ( $.inArray( 'WW', regions ) > -1 ) {
-				regions = [ 'WW' ];
-			}
-
 			for ( i = 0; i < regions.length; i++ ) {
 				this.regionLanguages[ regions[ i ] ].push( langCode );
 			}
