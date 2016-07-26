@@ -273,7 +273,6 @@
 	 *
 	 * @param code string New language code.
 	 * @param options Object Language properties.
-	 * @return list of language codes
 	 */
 	$.uls.data.addLanguage = function( code, options ) {
 		if ( options.target ) {
