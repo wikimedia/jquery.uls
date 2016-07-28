@@ -3,7 +3,8 @@
 		"authors": [
 			"Santhosh.thottingal",
 			"Shirayuki",
-			"Otokoume"
+			"Otokoume",
+			"Fryed-peach"
 		]
 	},
 	"uls-region-WW": "全世界",
@@ -15,7 +16,7 @@
 	"uls-region-ME": "中東",
 	"uls-region-PA": "太平洋地域",
 	"uls-no-results-found": "見つかりませんでした",
-	"uls-common-languages": "よく使用する言語",
+	"uls-common-languages": "提案された言語",
 	"uls-no-results-suggestion-title": "もしかして:",
 	"uls-search-help": "言語名、文字体系名、言語の ISO コードで検索できます。地域別の一覧から選択することもできます。",
 	"uls-search-placeholder": "言語の検索"

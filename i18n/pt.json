@@ -4,7 +4,8 @@
 			"Sarilho1",
 			"Waldir",
 			"Ti4goc",
-			"Cainamarques"
+			"Cainamarques",
+			"Vitorvicentevalente"
 		]
 	},
 	"uls-region-WW": "Global",
@@ -16,7 +17,7 @@
 	"uls-region-ME": "Médio Oriente",
 	"uls-region-PA": "Pacífico",
 	"uls-no-results-found": "Não foram encontrados resultados",
-	"uls-common-languages": "Línguas comuns",
+	"uls-common-languages": "Idiomas sugeridos",
 	"uls-no-results-suggestion-title": "Você pode estar interessado em:",
 	"uls-search-help": "Você pode pesquisar pelo nome do idioma, pelo tipo de alfabeto, código ISO do idioma, ou você pode navegar por região.",
 	"uls-search-placeholder": "Procurar língua"
