@@ -22,11 +22,6 @@
 		line-height: 1.7em;
 	}
 
-	.uls-mobile div.uls-region {
-		width: 33% !important;
-		float: left !important;
-	}
-
 	.uls-mobile .row {
 		width: auto;
 		min-width: 0;

@@ -91,7 +91,7 @@
 		this.initialized = false;
 
 		this.$languageFilter = this.$menu.find( '#uls-languagefilter' );
-		this.$resultsView = this.$menu.find( 'div.uls-language-list' );
+		this.$resultsView = this.$menu.find( '.uls-language-list' );
 
 		this.render();
 		this.listen();

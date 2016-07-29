@@ -24,18 +24,18 @@
 
 	var noResultsTemplate, LanguageCategoryDisplay;
 
-	noResultsTemplate = $( '<div>' ).addClass( 'twelve columns uls-no-results-view hide' );
+	noResultsTemplate = $( '<div>' ).addClass( 'uls-no-results-view hide' );
 	noResultsTemplate.append(
 		$( '<h2>' )
 			.attr( 'data-i18n', 'uls-no-results-found' )
-			.addClass( 'eleven columns offset-by-one uls-no-results-found-title' )
+			.addClass( 'uls-no-results-found-title' )
 			.text( 'No results found' ),
 		$( '<div>' )
 			.attr( 'id', 'uls-no-found-more' )
 			.addClass( 'uls-no-found-more' )
 			.append(
 				$( '<div>' )
-					.addClass( 'ten columns offset-by-one' )
+					.addClass( '' )
 					.append(
 						$( '<p>' ).append(
 							$( '<span>' ).text( 'You can search by language name, script name, ISO code of language or you can browse by region.' )
@@ -47,7 +47,7 @@
 	LanguageCategoryDisplay = function ( element, options ) {
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.lcd.defaults, options );
-		this.$element.addClass( 'lcd' );
+		this.$element.addClass( 'uls-lcd' );
 		this.regionLanguages = {};
 		this.renderTimeout = null;
 		this.cachedQuicklist = null;
@@ -135,14 +135,14 @@
 				}
 
 				$section = $( '<div>' )
-					.addClass( 'eleven columns offset-by-one uls-lcd-region-section hide' )
+					.addClass( 'uls-lcd-region-section hide' )
 					.attr( 'id', regionCode );
 
 				// Show a region heading, unless we are using a narrow ULS
 				if ( lcd.options.columns !== 1 ) {
 					$section.append( $( '<h3>' )
 						.attr( 'data-i18n', 'uls-region-' + regionCode )
-						.addClass( 'eleven columns uls-lcd-region-title' )
+						.addClass( 'uls-lcd-region-title' )
 						.text( regionNames[ regionCode ] )
 					);
 				}
@@ -317,12 +317,12 @@
 			quickList.sort( $.uls.data.sortByAutonym );
 
 			$quickListSection = $( '<div>' )
-				.addClass( 'eleven columns offset-by-one uls-lcd-region-section' )
+				.addClass( 'uls-lcd-region-section' )
 				.attr( 'id', 'uls-lcd-quicklist' );
 
 			$quickListSectionTitle = $( '<h3>' )
 				.attr( 'data-i18n', 'uls-common-languages' )
-				.addClass( 'eleven columns uls-lcd-region-title' )
+				.addClass( 'uls-lcd-region-title' )
 				.text( 'Common languages' ); // This is placeholder text if jquery.i18n not present
 			$quickListSection.append( $quickListSectionTitle );
 

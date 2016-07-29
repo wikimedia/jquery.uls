@@ -1,13 +1,12 @@
-.uls-lcd-region-section ul li:hover {
-	background-color: #eaeff7;
-}
+/*
+ * Language Category Display (LCD) consists of multiple sections:
+ * - one to display when there are no search results (which might display suggested languages)
+ * - one for each region of the world, plus regions for world languages and suggested languages
+ * The regions consist of one or more rows (blocks) which consist of one-to-four columns. Each
+ * column is an ul element, and contains up to 8 li elements, each containing a link.
+ */
 
-.uls-lcd-region-section {
-	margin-top: 10px;
-}
-
-/* Language list */
-.uls-language-list {
+.uls-lcd {
 	height: 20em;
 	/* Work around Chrome bug where it places scrollbar on the left in
 	 * in RTL mode but actually reserves the place on the right side */
@@ -15,13 +14,47 @@
 	overflow-y: auto;
 	width: auto;
 	background: #FCFCFC;
+	padding: 0 16px;
 }
 
-.uls-language-block ul {
-	margin: 0 0 1.5em;
+.uls-lcd-region-section {
+	margin-top: 10px;
 }
 
-.uls-language-list ul {
+.uls-lcd-region-title {
+	color: #777;
+	font-size: 14px;
+	padding-left: 28px;
+}
+
+/*
+ * We need to have this as a grid row to push rest of the content below it, but resetting
+ * padding and margin so that calculating them for children is easier.
+ */
+.grid .uls-language-block.row {
+	padding: 0;
+	margin: 0;
+}
+
+/*
+ * Each block should have 16px padding on both sides. But because we already gave
+ * 16px for the whole menu, we need to remove it for first and last items the blocks.
+ */
+.grid .uls-language-block > ul {
+	margin: 0 0 20px 0;
+	padding: 0 16px;
+}
+
+.grid .uls-language-block > ul:first-child {
+	padding-left: 0;
+}
+
+.grid .uls-language-block > ul:last-child {
+	padding-right: 0;
+}
+
+
+.uls-language-block > ul {
 	/*
 	 * We don't want any visible bullets in this list. Not by default anyway.
 	 * Using very unspecific selector here to allow other classes to override.
@@ -32,8 +65,10 @@
 	list-style-type: none;
 }
 
-.uls-language-list li {
+.uls-language-block > ul > li {
 	cursor: pointer;
+	margin-left: 20px;
+	padding: 8px;
 	/*
 	 * The directionality (ltr/rtl) for each list item is set dynamically
 	 * as HTML attributes in JavaScript. Setting directionality also applies
@@ -46,17 +81,15 @@
 	text-align: left;
 }
 
-/* TODO: looks unused */
-.uls-language-list strong {
-	text-decoration: underline;
+.uls-language-block > ul > li:hover {
+	background-color: #eaeff7;
 }
 
-.uls-language-list a {
-	font-weight: normal;
+.uls-language-block a {
+	cursor: pointer;
 	text-decoration: none;
 	color: #3366bb;
 	font-size: 14px;
-	line-height: 1.6em;
 	display: inline-block;
 	width: 100%;
 	overflow: hidden;
@@ -71,16 +104,22 @@
 	vertical-align: middle;
 }
 
-.uls-language-block {
-	width: 100%;
-}
-
+/* TODO: ugly hack that forces last matching search results to shift down.
+ * They should be hidden properly.
+ */
 .uls-no-results-view {
-	color: #555;
 	height: 100%;
 }
 
+.uls-no-results-found-title {
+	font-size: 16px;
+	padding: 0 16px 0 28px;
+	border-bottom: none;
+	color: #555;
+}
+
 .uls-no-found-more {
+	padding: 0 16px 0 44px;
 	font-size: 0.9em;
 	background: #F8F8F8;
 	width: 100%;
@@ -89,8 +128,4 @@
 	position: absolute;
 	bottom: 0;
 	left: 0;
-}
-
-.uls-no-found-more a {
-	cursor: pointer;
 }
