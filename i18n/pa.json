@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Babanwalia"
+			"Babanwalia",
+			"Tow"
 		]
 	},
 	"uls-region-WW": "ਵਿਸ਼ਵਵਿਆਪੀ",
@@ -13,8 +14,8 @@
 	"uls-region-ME": "ਮੱਧ ਪੂਰਬ",
 	"uls-region-PA": "ਪ੍ਰਸ਼ਾਂਤ",
 	"uls-no-results-found": "ਕੋਈ ਨਤੀਜਾ ਨਹੀਂ ਲੱਭਾ",
-	"uls-common-languages": "ਪ੍ਰਚੱਲਤ ਬੋਲੀਆਂ",
+	"uls-common-languages": "ਸੁਝਾਈਆੰ ਭਾਸ਼ਾਵਾੰ",
 	"uls-no-results-suggestion-title": "ਤੁਹਾਨੂੰ ਇਹਨਾਂ ਵਿੱਚ ਦਿਲਚਸਪੀ ਹੋ ਸਕਦੀ ਹੋ:",
-	"uls-search-help": "ਤੁਸੀਂ ਭਾਸ਼ਾ ਦੇ ਨਾਂ, ਲਿਪੀ ਦੇ ਨਾਂ, ਭਾਸ਼ਾ ਦੇ ISO ਕੋਡ ਰਾਹੀਂ ਖੋਜ ਸਕਦੇ ਹੋ ਜਾਂ ਖੇਤਰ ਪੱਖੋਂ ਸਫ਼ੇ ਪਲਟ ਸਕਦੇ ਹੋ:",
+	"uls-search-help": "ਤੁਸੀਂ ਭਾਸ਼ਾ ਦੇ ਨਾਂ, ਲਿਪੀ ਦੇ ਨਾਂ, ਭਾਸ਼ਾ ਦੇ ISO ਕੋਡ ਰਾਹੀਂ ਖੋਜ ਸਕਦੇ ਹੋ ਜਾਂ ਖੇਤਰ ਪੱਖੋਂ ਸਫ਼ੇ ਪਲਟ ਸਕਦੇ ਹੋ।",
 	"uls-search-placeholder": "ਭਾਸ਼ਾ ਖੋਜ"
 }
