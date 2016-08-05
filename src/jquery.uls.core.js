@@ -25,8 +25,8 @@
 
 	// Region numbers in id attributes also appear in the langdb.
 	/*jshint multistr:true */
-	template = '<div class="grid uls-menu"> \
-			<div id="search" class="row uls-search"> \
+	template = '<div class="uls-grid uls-menu"> \
+			<div id="search" class="uls-row uls-search"> \
 				<div class="uls-search-wrapper"> \
 					<label class="uls-search-label" for="uls-languagefilter"></label>\
 					<div class="uls-search-input-wrapper">\
@@ -40,8 +40,8 @@
 					</div>\
 				</div>\
 			</div>\
-			<div class="row uls-language-list"></div>\
-			<div class="row" id="uls-settings-block"></div>\
+			<div class="uls-row uls-language-list"></div>\
+			<div class="uls-row" id="uls-settings-block"></div>\
 		</div>';
 	/*jshint multistr:false */
 

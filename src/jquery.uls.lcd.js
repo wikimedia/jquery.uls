@@ -24,18 +24,18 @@
 
 	var noResultsTemplate, LanguageCategoryDisplay;
 
-	noResultsTemplate = $( '<div>' ).addClass( 'twelve columns uls-no-results-view hide' );
+	noResultsTemplate = $( '<div>' ).addClass( 'uls-twelve uls-columns uls-no-results-view uls-hide' );
 	noResultsTemplate.append(
 		$( '<h2>' )
 			.attr( 'data-i18n', 'uls-no-results-found' )
-			.addClass( 'eleven columns offset-by-one uls-no-results-found-title' )
+			.addClass( 'uls-eleven uls-columns uls-offset-by-one uls-no-results-found-title' )
 			.text( 'No results found' ),
 		$( '<div>' )
 			.attr( 'id', 'uls-no-found-more' )
 			.addClass( 'uls-no-found-more' )
 			.append(
 				$( '<div>' )
-					.addClass( 'ten columns offset-by-one' )
+					.addClass( 'uls-ten uls-columns uls-offset-by-one' )
 					.append(
 						$( '<p>' ).append(
 							$( '<span>' ).text( 'You can search by language name, script name, ISO code of language or you can browse by region.' )
@@ -47,7 +47,7 @@
 	LanguageCategoryDisplay = function ( element, options ) {
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.lcd.defaults, options );
-		this.$element.addClass( 'lcd' );
+		this.$element.addClass( 'uls-lcd' );
 		this.regionLanguages = {};
 		this.renderTimeout = null;
 		this.cachedQuicklist = null;
@@ -135,14 +135,14 @@
 				}
 
 				$section = $( '<div>' )
-					.addClass( 'eleven columns offset-by-one uls-lcd-region-section hide' )
+					.addClass( 'uls-eleven uls-columns uls-offset-by-one uls-lcd-region-section uls-hide' )
 					.attr( 'id', regionCode );
 
 				// Show a region heading, unless we are using a narrow ULS
 				if ( lcd.options.columns !== 1 ) {
 					$section.append( $( '<h3>' )
 						.attr( 'data-i18n', 'uls-region-' + regionCode )
-						.addClass( 'eleven columns uls-lcd-region-title' )
+						.addClass( 'uls-eleven uls-columns uls-lcd-region-title' )
 						.text( regionNames[ regionCode ] )
 					);
 				}
@@ -162,7 +162,7 @@
 			var languages,
 				lcd = this;
 
-			this.$noResults.addClass( 'hide' );
+			this.$noResults.addClass( 'uls-hide' );
 			this.$element.find( '.uls-lcd-region-section' ).each( function () {
 				var $region = $( this ),
 					regionCode = $region.attr( 'id' );
@@ -175,7 +175,7 @@
 
 				languages = lcd.regionLanguages[ regionCode ];
 				if ( !languages || languages.length === 0 ) {
-					$region.addClass( 'hide' );
+					$region.addClass( 'uls-hide' );
 					return;
 				}
 
@@ -185,7 +185,7 @@
 					lcd.options.itemsPerColumn,
 					lcd.options.columns
 				);
-				$region.removeClass( 'hide' );
+				$region.removeClass( 'uls-hide' );
 
 				lcd.regionLanguages[ regionCode ] = [];
 			} );
@@ -207,11 +207,11 @@
 				rows = [];
 
 			if ( columnsPerRow === 1 ) {
-				columnsClasses = 'twelve columns';
+				columnsClasses = 'uls-twelve uls-columns';
 			} else if ( columnsPerRow === 2 ) {
-				columnsClasses = 'six columns';
+				columnsClasses = 'uls-six uls-columns';
 			} else {
-				columnsClasses = 'three columns';
+				columnsClasses = 'uls-three uls-columns';
 			}
 
 			if ( this.options.columns === 1 ) {
@@ -222,7 +222,7 @@
 				}
 
 				columns.push( $( '<ul>' ).addClass( columnsClasses ).append( items ) );
-				rows.push( $( '<div>' ).addClass( 'row uls-language-block' ).append( columns ) );
+				rows.push( $( '<div>' ).addClass( 'uls-row uls-language-block' ).append( columns ) );
 			} else {
 				// For medium and wide ULS, clever column placement
 				for ( i = 0; i < languagesCount; i++ ) {
@@ -244,7 +244,7 @@
 						columns.push( $( '<ul>' ).addClass( columnsClasses ).append( items ) );
 						items = [];
 						if ( columns.length >= columnsPerRow || lastItem ) {
-							rows.push( $( '<div>' ).addClass( 'row uls-language-block' ).append( columns ) );
+							rows.push( $( '<div>' ).addClass( 'uls-row uls-language-block' ).append( columns ) );
 							columns = [];
 						}
 					}
@@ -292,7 +292,7 @@
 		 * Adds quicklist as a region.
 		 */
 		quicklist: function () {
-			this.$element.find( '#uls-lcd-quicklist' ).removeClass( 'hide' );
+			this.$element.find( '#uls-lcd-quicklist' ).removeClass( 'uls-hide' );
 		},
 
 		buildQuicklist: function () {
@@ -317,12 +317,12 @@
 			quickList.sort( $.uls.data.sortByAutonym );
 
 			$quickListSection = $( '<div>' )
-				.addClass( 'eleven columns offset-by-one uls-lcd-region-section' )
+				.addClass( 'uls-eleven uls-columns uls-offset-by-one uls-lcd-region-section' )
 				.attr( 'id', 'uls-lcd-quicklist' );
 
 			$quickListSectionTitle = $( '<h3>' )
 				.attr( 'data-i18n', 'uls-common-languages' )
-				.addClass( 'eleven columns uls-lcd-region-title' )
+				.addClass( 'uls-eleven uls-columns uls-lcd-region-title' )
 				.text( 'Common languages' ); // This is placeholder text if jquery.i18n not present
 			$quickListSection.append( $quickListSectionTitle );
 
@@ -346,7 +346,7 @@
 		},
 
 		empty: function () {
-			this.$element.find( '#uls-lcd-quicklist' ).addClass( 'hide' );
+			this.$element.find( '#uls-lcd-quicklist' ).addClass( 'uls-hide' );
 		},
 
 		focus: function () {
@@ -354,7 +354,7 @@
 		},
 
 		noResults: function () {
-			this.$noResults.removeClass( 'hide' );
+			this.$noResults.removeClass( 'uls-hide' );
 			if ( this.$noResults.find( '.uls-lcd-region-title' ).length ) {
 				return;
 			}
@@ -371,7 +371,7 @@
 			var lcd = this;
 
 			if ( this.options.clickhandler ) {
-				this.$element.on( 'click', '.row li', function () {
+				this.$element.on( 'click', '.uls-row li', function () {
 					lcd.options.clickhandler.call( this, $( this ).data( 'code' ) );
 				} );
 			}
