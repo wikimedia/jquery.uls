@@ -2,19 +2,20 @@
 	"@metadata": {
 		"authors": [
 			"Taresi",
-			"Teòtlalili"
+			"Teòtlalili",
+			"Ricardo gs"
 		]
 	},
 	"uls-region-WW": "Nōhuiyān",
 	"uls-region-SP": "Occecni",
 	"uls-region-AM": "Ixachitlān",
-	"uls-region-AF": "Āpeliccān",
-	"uls-region-EU": "Īxpatlāxtlān",
-	"uls-region-AS": "Āciyān",
+	"uls-region-AF": "Āpica",
+	"uls-region-EU": "Europan",
+	"uls-region-AS": "Acia",
 	"uls-region-ME": "Tlahco Tlāpco",
-	"uls-region-PA": "Huēyiātlālco",
+	"uls-region-PA": "Pacīpico",
 	"uls-no-results-found": "Âmo òmâsik tlèn motèmowa",
-	"uls-common-languages": "Hueli ītlahtōl",
+	"uls-common-languages": "Hueli tlahtōlli",
 	"uls-no-results-suggestion-title": "Huel timoyōlēhuaz:",
 	"uls-search-help": "Huel tictēmōz in tlahtōlli iniuh ītōcā, iniuh ītlahcuilōl, iniuh ISO īpal īmachiyōnecaquiliz, ahnozo huel tāmapōhuaz iniuh tlālpan.",
 	"uls-search-placeholder": "Tlahtōllatēmoliztli"

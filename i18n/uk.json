@@ -3,7 +3,8 @@
 		"authors": [
 			"Andriykopanytsia",
 			"Base",
-			"Alex Khimich"
+			"Alex Khimich",
+			"Piramidion"
 		]
 	},
 	"uls-region-WW": "Всесвітні",
@@ -15,7 +16,7 @@
 	"uls-region-ME": "Близький Схід",
 	"uls-region-PA": "Океанія",
 	"uls-no-results-found": "Не знайдено результатів",
-	"uls-common-languages": "Поширені мови",
+	"uls-common-languages": "Пропоновані мови",
 	"uls-no-results-suggestion-title": "Ви можете бути зацікавленими у:",
 	"uls-search-help": "Ви можете шукати за назвою мови або писемності, ISO-коду мови, або можете вказати регіон.",
 	"uls-search-placeholder": "Пошук мови"
