@@ -3,7 +3,8 @@
 		"authors": [
 			"Aquilax",
 			"DCLXVI",
-			"Vodnokon4e"
+			"Vodnokon4e",
+			"StanProg"
 		]
 	},
 	"uls-region-WW": "Световни",
@@ -15,7 +16,7 @@
 	"uls-region-ME": "Близкия изток",
 	"uls-region-PA": "Тихия океан",
 	"uls-no-results-found": "Не бяха открити резултати",
-	"uls-common-languages": "Често срещани езици",
+	"uls-common-languages": "Предложени езици",
 	"uls-no-results-suggestion-title": "Може да се интересувате от:",
 	"uls-search-help": "Можете да търсите по име на език, име на скрипт, ISO кода на език или да разглеждате по региони.",
 	"uls-search-placeholder": "Търсене на език"

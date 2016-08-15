@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"JVRKPRASAD",
-			"Veeven"
+			"Veeven",
+			"WP MANIKHANTA"
 		]
 	},
 	"uls-region-WW": "ప్రపంచవ్యాప్తం",
@@ -14,8 +15,8 @@
 	"uls-region-ME": "మధ్య తూర్పు",
 	"uls-region-PA": "పసిఫిక్",
 	"uls-no-results-found": "ఫలితాలేమీ దొరకలేదు",
-	"uls-common-languages": "సామాన్య భాషలు",
+	"uls-common-languages": "సూచించిన భాషలు",
 	"uls-no-results-suggestion-title": "మీకు దీనిలో ఆసక్తి ఉండవచ్చు:",
-	"uls-search-help": "మీరు భాష పేరు, స్క్రిప్ట్ పేరు, భాష యొక్క ISO కోడ్ ద్వారా శోధించవచ్చు లేదా మీరు ప్రాంతము ద్వారా బ్రౌజ్ చెయ్యవచ్చు(ను):",
+	"uls-search-help": "మీరు భాష పేరు, లిపి పేరు, భాష యొక్క ISO కోడ్ ద్వారా శోధించవచ్చు లేదా మీరు ప్రాంతము ద్వారా బ్రౌజ్ చెయ్యవచ్చు(ను):",
 	"uls-search-placeholder": "భాష కొరకు వెతకండి"
 }
