@@ -15,8 +15,8 @@
 	"uls-region-ME": "الشرق الأوسط",
 	"uls-region-PA": "المحيط الهادئ",
 	"uls-no-results-found": "لم يتم العثور على نتائج",
-	"uls-common-languages": "لغات مشتركة",
+	"uls-common-languages": "اللغات المقترحة",
 	"uls-no-results-suggestion-title": "قد تكون مهتم في:",
-	"uls-search-help": "يمكنك البحث بواسطة اسم اللغة, اسم السكريبت, رمز اللغة القياسي أو يمكنك تصفح حسب المنطقة:",
+	"uls-search-help": "يمكنك البحث بواسطة اسم اللغة, اسم السكريبت, رمز اللغة القياسي أو يمكنك التصفح حسب المنطقة.",
 	"uls-search-placeholder": "بحث عن لغة"
 }
