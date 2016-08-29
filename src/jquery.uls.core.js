@@ -135,7 +135,7 @@
 		 */
 		position: function () {
 			var pos,
-  				top = this.top,
+				top = this.top,
 				left = this.left;
 
 			if ( top === undefined ) {
@@ -362,7 +362,7 @@
 				return 'narrow';
 			}
 
-			if ( languagesCount < 400 ) {
+			if ( languagesCount < 100 ) {
 				return 'medium';
 			}
 
