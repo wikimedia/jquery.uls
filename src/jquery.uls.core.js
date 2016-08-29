@@ -91,7 +91,7 @@
 		this.initialized = false;
 
 		this.$languageFilter = this.$menu.find( '#uls-languagefilter' );
-		this.$resultsView = this.$menu.find( 'div.uls-language-list' );
+		this.$resultsView = this.$menu.find( '.uls-language-list' );
 
 		this.render();
 		this.listen();
@@ -134,15 +134,25 @@
 		 * @returns {Object}
 		 */
 		position: function () {
-			var pos;
+			var pos,
+				top = this.top,
+				left = this.left;
 
-			pos = $.extend( {}, this.$element.offset(), {
-				height: this.$element[ 0 ].offsetHeight
-			} );
+			if ( top === undefined ) {
+				pos = $.extend( {}, this.$element.offset(), {
+					height: this.$element[ 0 ].offsetHeight
+				} );
+				top =  pos.top + pos.height;
+			}
+
+			if ( left === undefined ) {
+				left = $( window ).width() / 2 - this.$menu.outerWidth() / 2;
+			}
+
 
 			return {
-				top: this.top !== undefined ? this.top : pos.top + pos.height,
-				left: this.left !== undefined ? this.left : '25%'
+				top: top,
+				left: left
 			};
 		},
 
@@ -157,7 +167,6 @@
 			};
 
 			this.$menu.addClass( widthClasses[this.getMenuWidth()] );
-			this.$menu.css( this.position() );
 
 			if ( !this.initialized ) {
 				$( 'body' ).prepend( this.$menu );
@@ -165,6 +174,7 @@
 				this.initialized = true;
 			}
 
+			this.$menu.css( this.position() );
 			this.$menu.show();
 			this.$menu.scrollIntoView();
 			this.shown = true;
@@ -348,7 +358,7 @@
 
 			languagesCount = objectLength( this.options.languages );
 
-			if ( languagesCount < 12 ) {
+			if ( languagesCount < 25 ) {
 				return 'narrow';
 			}
 
