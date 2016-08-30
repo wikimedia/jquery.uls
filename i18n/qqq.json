@@ -14,6 +14,7 @@
 	"uls-region-AS": "Label for Asia",
 	"uls-region-ME": "Label for Middle East",
 	"uls-region-PA": "Label for Pacific",
+	"uls-region-all": "Label for all languages in narrow mode, where languages are not split by region.",
 	"uls-no-results-found": "Title text for 'No results found' section",
 	"uls-common-languages": "The ULS tries to guess the langugages that the user is most likely to pick. They are taken from geolocation (languages of the current country according to the IP address), previously selected languages, and the browser's accept-language. The list of these languages appears at the top of the ULS languages list, above the geographical regions. This is the title of that list.\n\nSee also {{msg-mw|Mobile-frontend-languages-structured-overlay-suggested-languages-header}}",
 	"uls-no-results-suggestion-title": "Title for language suggestion in 'no results found' screen",
