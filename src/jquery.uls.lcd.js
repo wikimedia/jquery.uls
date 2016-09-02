@@ -316,7 +316,7 @@
 				this.options.quickList = this.options.quickList();
 			}
 
-			if ( !this.options.quickList ) {
+			if ( !this.options.quickList.length ) {
 				this.cachedQuicklist = $( [] );
 				return this.cachedQuicklist;
 			}
@@ -411,7 +411,8 @@
 		// Other supported values are 1 and 2.
 		// Other values will have rendering issues.
 		columns: 4,
-		languageDecorator: null
+		languageDecorator: null,
+		quicklist: []
 	};
 
 	$.fn.lcd.Constructor = LanguageCategoryDisplay;
