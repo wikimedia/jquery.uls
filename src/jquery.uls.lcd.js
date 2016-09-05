@@ -109,8 +109,9 @@
 		},
 
 		render: function () {
-			var $section,
+			var $section, $quicklist,
 				lcd = this,
+				narrowMode = this.options.columns === 1,
 				regions = [],
 				regionNames = {
 					// These are fallback text when i18n library not present
@@ -124,7 +125,16 @@
 					PA: 'Pacific'
 				};
 
-			regions.push( this.buildQuicklist() );
+			$quicklist = this.buildQuicklist();
+			regions.push( $quicklist );
+
+			if ( narrowMode && $quicklist.length ) {
+				regions.push( $( '<h3>' )
+					.attr( 'data-i18n', 'uls-region-all' )
+					.addClass( 'uls-lcd-region-title' )
+					.text( 'All languages' )
+				);
+			}
 
 			$.each( $.uls.data.regiongroups, function ( regionCode ) {
 				lcd.regionLanguages[ regionCode ] = [];
@@ -139,7 +149,7 @@
 					.attr( 'id', regionCode );
 
 				// Show a region heading, unless we are using a narrow ULS
-				if ( lcd.options.columns !== 1 ) {
+				if ( !narrowMode ) {
 					$section.append( $( '<h3>' )
 						.attr( 'data-i18n', 'uls-region-' + regionCode )
 						.addClass( 'uls-lcd-region-title' )
@@ -306,7 +316,7 @@
 				this.options.quickList = this.options.quickList();
 			}
 
-			if ( !this.options.quickList ) {
+			if ( !this.options.quickList.length ) {
 				this.cachedQuicklist = $( [] );
 				return this.cachedQuicklist;
 			}
@@ -323,7 +333,7 @@
 			$quickListSectionTitle = $( '<h3>' )
 				.attr( 'data-i18n', 'uls-common-languages' )
 				.addClass( 'uls-lcd-region-title' )
-				.text( 'Common languages' ); // This is placeholder text if jquery.i18n not present
+				.text( 'Suggested languages' ); // This is placeholder text if jquery.i18n not present
 			$quickListSection.append( $quickListSectionTitle );
 
 			this.renderRegion(
@@ -401,7 +411,8 @@
 		// Other supported values are 1 and 2.
 		// Other values will have rendering issues.
 		columns: 4,
-		languageDecorator: null
+		languageDecorator: null,
+		quicklist: []
 	};
 
 	$.fn.lcd.Constructor = LanguageCategoryDisplay;
