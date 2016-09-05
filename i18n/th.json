@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Octahedron80"
+			"Octahedron80",
+			"Pon44695"
 		]
 	},
 	"uls-region-WW": "ทั่วโลก",
@@ -13,8 +14,8 @@
 	"uls-region-ME": "ตะวันออกกลาง",
 	"uls-region-PA": "แปซิฟิก",
 	"uls-no-results-found": "ไม่พบผลลัพธ์",
-	"uls-common-languages": "ภาษาสามัญ",
+	"uls-common-languages": "ภาษาที่แนะนำ",
 	"uls-no-results-suggestion-title": "คุณอาจสนใจใน:",
-	"uls-search-help": "คุณสามารถค้นหาด้วยชื่อภาษา ชื่ออักษร รหัส ISO ของภาษา หรือสามารถเรียกดูตามภูมิภาค:",
+	"uls-search-help": "คุณสามารถค้นหาด้วยชื่อภาษา ชื่ออักษร รหัส ISO ของภาษา หรือสามารถเรียกดูตามภูมิภาค",
 	"uls-search-placeholder": "ค้นหาภาษา"
 }
