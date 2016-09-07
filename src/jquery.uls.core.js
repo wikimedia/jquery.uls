@@ -260,7 +260,7 @@
 				languages: this.languages,
 				columns: columnsOptions[ this.getMenuWidth() ],
 
-				quickList: languagesCount > 12 ? this.options.quickList : false,
+				quickList: languagesCount > 12 ? this.options.quickList : [],
 				clickhandler: $.proxy( this.select, this ),
 				source: this.$languageFilter,
 				showRegions: this.options.showRegions,
@@ -397,7 +397,7 @@
 		onSelect: null, // Callback function to be called when a language is selected
 		searchAPI: null, // Language search API
 		languages: $.uls.data.getAutonyms(), // Languages to be used for ULS, default is all languages
-		quickList: null, // Array of language codes or function that returns such
+		quickList: [], // Array of language codes or function that returns such
 		// The options are wide (4 columns), medium (2 columns), and narrow (1 column).
 		// If not specified, it will be set automatically.
 		menuWidth: null,

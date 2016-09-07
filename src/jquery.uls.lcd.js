@@ -412,7 +412,7 @@
 		// Other values will have rendering issues.
 		columns: 4,
 		languageDecorator: null,
-		quicklist: []
+		quickList: []
 	};
 
 	$.fn.lcd.Constructor = LanguageCategoryDisplay;
