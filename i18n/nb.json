@@ -3,7 +3,9 @@
 		"authors": [
 			"Event",
 			"Wouterkoch",
-			"Danmichaelo"
+			"Danmichaelo",
+			"Amire80",
+			"Telaneo"
 		]
 	},
 	"uls-region-WW": "Verdensomspennende",
@@ -14,8 +16,9 @@
 	"uls-region-AS": "Asia",
 	"uls-region-ME": "Midtøsten",
 	"uls-region-PA": "Stillehavsområdet",
+	"uls-region-all": "Alle språk",
 	"uls-no-results-found": "Ingen resultater funnet",
-	"uls-common-languages": "Vanlige språk",
+	"uls-common-languages": "Foreslåtte språk",
 	"uls-no-results-suggestion-title": "Dette kan kanskje interessere deg:",
 	"uls-search-help": "Du kan søke etter språkets navn, alfabet (skriftnavn) eller ISO-kode, eller du kan bla etter region.",
 	"uls-search-placeholder": "Språksøk"

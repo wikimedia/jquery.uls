@@ -3,7 +3,8 @@
 		"authors": [
 			"IRTC1015",
 			"아라",
-			"Ykhwong"
+			"Ykhwong",
+			"Hibm98"
 		]
 	},
 	"uls-region-WW": "전 세계",
@@ -14,6 +15,7 @@
 	"uls-region-AS": "아시아",
 	"uls-region-ME": "중동",
 	"uls-region-PA": "태평양",
+	"uls-region-all": "모든 언어",
 	"uls-no-results-found": "결과가 없습니다",
 	"uls-common-languages": "제안 언어",
 	"uls-no-results-suggestion-title": "이것을 찾으셨나요:",

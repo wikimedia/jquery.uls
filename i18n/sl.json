@@ -3,7 +3,8 @@
 		"authors": [
 			"Dbc334",
 			"Irena Plahuta",
-			"Mateju"
+			"Mateju",
+			"Amire80"
 		]
 	},
 	"uls-region-WW": "Svetovni jeziki",
@@ -14,6 +15,7 @@
 	"uls-region-AS": "Azija",
 	"uls-region-ME": "Bližnji vzhod",
 	"uls-region-PA": "Tihi ocean",
+	"uls-region-all": "Vsi jeziki",
 	"uls-no-results-found": "Ni zadetkov",
 	"uls-common-languages": "Splošni jeziki",
 	"uls-no-results-suggestion-title": "Morda vas zanima:",

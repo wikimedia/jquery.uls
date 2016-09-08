@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Njardarlogar"
+			"Njardarlogar",
+			"Amire80"
 		]
 	},
 	"uls-region-WW": "Verdsfemnande",
@@ -12,6 +13,7 @@
 	"uls-region-AS": "Asia",
 	"uls-region-ME": "Midtausten",
 	"uls-region-PA": "Stillehavsområdet",
+	"uls-region-all": "Alle språk",
 	"uls-no-results-found": "Ingen resultat funne",
 	"uls-common-languages": "Vanlege språk",
 	"uls-no-results-suggestion-title": "Kan henda er du interessert i:",

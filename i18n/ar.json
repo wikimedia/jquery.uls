@@ -3,7 +3,9 @@
 		"authors": [
 			"Amire80",
 			"DRIHEM",
-			"ترجمان05"
+			"ترجمان05",
+			"Hhaboh162002",
+			"Meno25"
 		]
 	},
 	"uls-region-WW": "في جميع أنحاء العالم",
@@ -14,9 +16,10 @@
 	"uls-region-AS": "آسيا",
 	"uls-region-ME": "الشرق الأوسط",
 	"uls-region-PA": "المحيط الهادئ",
+	"uls-region-all": "جميع اللغات",
 	"uls-no-results-found": "لم يتم العثور على نتائج",
 	"uls-common-languages": "اللغات المقترحة",
-	"uls-no-results-suggestion-title": "قد تكون مهتم في:",
-	"uls-search-help": "يمكنك البحث بواسطة اسم اللغة, اسم السكريبت, رمز اللغة القياسي أو يمكنك التصفح حسب المنطقة.",
+	"uls-no-results-suggestion-title": "قد تكون مهتما بما يلي:",
+	"uls-search-help": "يمكنك البحث مستخدما اسم اللغة، اسم السكريبت، رمز اللغة القياسي أو يمكنك التصفح حسب المنطقة.",
 	"uls-search-placeholder": "بحث عن لغة"
 }

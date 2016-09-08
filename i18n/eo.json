@@ -3,7 +3,8 @@
 		"authors": [
 			"Objectivesea",
 			"KuboF",
-			"Orikrin1998"
+			"Orikrin1998",
+			"Amire80"
 		]
 	},
 	"uls-region-WW": "Tutmonda",
@@ -14,6 +15,7 @@
 	"uls-region-AS": "Azio",
 	"uls-region-ME": "Mezoriento",
 	"uls-region-PA": "Pacifiko",
+	"uls-region-all": "Ĉiuj lingvoj",
 	"uls-no-results-found": "Neniu rezulto estis trovita",
 	"uls-common-languages": "Sugestataj lingvoj",
 	"uls-no-results-suggestion-title": "Vi eble interesiĝas pri:",

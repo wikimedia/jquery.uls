@@ -3,7 +3,8 @@
 		"authors": [
 			"Beta16",
 			"Macofe",
-			"Gianfranco"
+			"Gianfranco",
+			"Amire80"
 		]
 	},
 	"uls-region-WW": "Tutto il mondo",
@@ -14,6 +15,7 @@
 	"uls-region-AS": "Asia",
 	"uls-region-ME": "Medio oriente",
 	"uls-region-PA": "Pacifico",
+	"uls-region-all": "Tutte le lingue",
 	"uls-no-results-found": "Nessun risultato trovato",
 	"uls-common-languages": "Lingue suggerite",
 	"uls-no-results-suggestion-title": "Puoi essere interessato a:",

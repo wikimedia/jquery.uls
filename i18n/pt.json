@@ -5,7 +5,8 @@
 			"Waldir",
 			"Ti4goc",
 			"Cainamarques",
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Amire80"
 		]
 	},
 	"uls-region-WW": "Global",
@@ -16,6 +17,7 @@
 	"uls-region-AS": "Ásia",
 	"uls-region-ME": "Médio Oriente",
 	"uls-region-PA": "Pacífico",
+	"uls-region-all": "Todos os idiomas",
 	"uls-no-results-found": "Não foram encontrados resultados",
 	"uls-common-languages": "Idiomas sugeridos",
 	"uls-no-results-suggestion-title": "Você pode estar interessado em:",

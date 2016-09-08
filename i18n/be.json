@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Unomano"
+			"Unomano",
+			"Amire80"
 		]
 	},
 	"uls-region-WW": "Па ўсім свеце",
@@ -12,9 +13,10 @@
 	"uls-region-AS": "Азія",
 	"uls-region-ME": "Блізкі Ўсход",
 	"uls-region-PA": "Ціхі акіян",
+	"uls-region-all": "Усе мовы",
 	"uls-no-results-found": "Нічога не знойдзена",
-	"uls-common-languages": "Распаўсюджаныя мовы",
+	"uls-common-languages": "Прапанаваныя мовы",
 	"uls-no-results-suggestion-title": "Вы можаце быць зацікаўлены ў:",
-	"uls-search-help": "Вы можаце шукаць па мове, назве сцэнара, ISO-коду мовы, або вы можаце праглядаць па рэгіенах:",
+	"uls-search-help": "Вы можаце шукаць па мове, назве сцэнара, ISO-коду мовы, або вы можаце праглядаць па рэгіенах.",
 	"uls-search-placeholder": "Пошук мовы"
 }

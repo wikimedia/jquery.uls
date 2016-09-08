@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Minisarm"
+			"Minisarm",
+			"Amire80"
 		]
 	},
 	"uls-region-WW": "La nivel mondial",
@@ -12,9 +13,10 @@
 	"uls-region-AS": "Asia",
 	"uls-region-ME": "Orientul Mijlociu",
 	"uls-region-PA": "Oceania",
+	"uls-region-all": "Toate limbile",
 	"uls-no-results-found": "Niciun rezultat găsit",
-	"uls-common-languages": "Limbi comune",
+	"uls-common-languages": "Limbi sugerate",
 	"uls-no-results-suggestion-title": "Ați putea fi interesat de:",
-	"uls-search-help": "Puteți căuta după numele limbii, numele scrierii, codul ISO al limbii sau puteți răsfoi în funcție de regiune:",
+	"uls-search-help": "Puteți căuta după numele limbii, numele scrierii, codul ISO al limbii sau puteți răsfoi în funcție de regiune.",
 	"uls-search-placeholder": "Căutare limbă"
 }

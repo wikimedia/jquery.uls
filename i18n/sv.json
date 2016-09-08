@@ -3,7 +3,8 @@
 		"authors": [
 			"Cybjit",
 			"WikiPhoenix",
-			"Jopparn"
+			"Jopparn",
+			"Johan"
 		]
 	},
 	"uls-region-WW": "Världsomfattande",
@@ -14,6 +15,7 @@
 	"uls-region-AS": "Asien",
 	"uls-region-ME": "Mellanöstern",
 	"uls-region-PA": "Stilla havet",
+	"uls-region-all": "Alla språk",
 	"uls-no-results-found": "Inga resultat hittades",
 	"uls-common-languages": "Föreslagna språk",
 	"uls-no-results-suggestion-title": "Du kan vara intresserad av:",

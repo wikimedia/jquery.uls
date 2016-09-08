@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Wizardist",
-			"Red Winged Duck"
+			"Red Winged Duck",
+			"Amire80"
 		]
 	},
 	"uls-region-WW": "Сусьветныя",
@@ -13,6 +14,7 @@
 	"uls-region-AS": "Азія",
 	"uls-region-ME": "Блізкі Ўсход",
 	"uls-region-PA": "Акіянія",
+	"uls-region-all": "Усе мовы",
 	"uls-no-results-found": "Нічога ня знойдзена",
 	"uls-common-languages": "Прапанаваныя мовы",
 	"uls-no-results-suggestion-title": "Магчыма, вас зацікавяць:",

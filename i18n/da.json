@@ -3,7 +3,8 @@
 		"authors": [
 			"Christian List",
 			"Peter Alberti",
-			"Jubber"
+			"Jubber",
+			"Amire80"
 		]
 	},
 	"uls-region-WW": "Verdensomspændende",
@@ -14,6 +15,7 @@
 	"uls-region-AS": "Asien",
 	"uls-region-ME": "Mellemøsten",
 	"uls-region-PA": "Stillehavet",
+	"uls-region-all": "Alle sprog",
 	"uls-no-results-found": "Ingen resultater fundet",
 	"uls-common-languages": "Foreslåede sprog",
 	"uls-no-results-suggestion-title": "Du er måske interesseret i:",

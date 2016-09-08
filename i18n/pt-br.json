@@ -3,7 +3,8 @@
 		"authors": [
 			"Tuliouel",
 			"Amgauna",
-			"Webysther"
+			"Webysther",
+			"Cristofer Alves"
 		]
 	},
 	"uls-region-WW": "Global",
@@ -14,6 +15,7 @@
 	"uls-region-AS": "Ásia",
 	"uls-region-ME": "Oriente Médio",
 	"uls-region-PA": "Pacífico",
+	"uls-region-all": "Todos os idiomas",
 	"uls-no-results-found": "Nenhum resultado encontrado",
 	"uls-common-languages": "Idiomas comuns",
 	"uls-no-results-suggestion-title": "Você pode interessar-se por:",

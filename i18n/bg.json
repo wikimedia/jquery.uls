@@ -4,7 +4,8 @@
 			"Aquilax",
 			"DCLXVI",
 			"Vodnokon4e",
-			"StanProg"
+			"StanProg",
+			"Amire80"
 		]
 	},
 	"uls-region-WW": "Световни",
@@ -15,6 +16,7 @@
 	"uls-region-AS": "Азия",
 	"uls-region-ME": "Близкия изток",
 	"uls-region-PA": "Тихия океан",
+	"uls-region-all": "Всички езици",
 	"uls-no-results-found": "Не бяха открити резултати",
 	"uls-common-languages": "Предложени езици",
 	"uls-no-results-suggestion-title": "Може да се интересувате от:",

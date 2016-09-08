@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Rudko",
-			"Jaroslav.micek"
+			"Jaroslav.micek",
+			"Amire80"
 		]
 	},
 	"uls-region-WW": "Po celom svete",
@@ -13,6 +14,7 @@
 	"uls-region-AS": "Ázia",
 	"uls-region-ME": "Blízky východ",
 	"uls-region-PA": "Pacifik",
+	"uls-region-all": "Všetky jazyky",
 	"uls-no-results-found": "Neboli nájdené žiadne výsledky",
 	"uls-common-languages": "Jazyky",
 	"uls-no-results-suggestion-title": "Mohlo by Vás zaujímať:",

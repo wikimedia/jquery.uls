@@ -4,7 +4,8 @@
 			"Andriykopanytsia",
 			"Base",
 			"Alex Khimich",
-			"Piramidion"
+			"Piramidion",
+			"Amire80"
 		]
 	},
 	"uls-region-WW": "Всесвітні",
@@ -15,6 +16,7 @@
 	"uls-region-AS": "Азія",
 	"uls-region-ME": "Близький Схід",
 	"uls-region-PA": "Океанія",
+	"uls-region-all": "Усі мови",
 	"uls-no-results-found": "Не знайдено результатів",
 	"uls-common-languages": "Пропоновані мови",
 	"uls-no-results-suggestion-title": "Ви можете бути зацікавленими у:",

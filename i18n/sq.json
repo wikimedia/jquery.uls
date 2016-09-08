@@ -3,7 +3,8 @@
 		"authors": [
 			"Ammartivari",
 			"Liridon",
-			"Kosovastar"
+			"Kosovastar",
+			"Amire80"
 		]
 	},
 	"uls-region-WW": "Në mbarë botën",
@@ -14,6 +15,7 @@
 	"uls-region-AS": "Azi",
 	"uls-region-ME": "Lindje e Mesme",
 	"uls-region-PA": "Paqësor",
+	"uls-region-all": "Të gjitha gjuhët",
 	"uls-no-results-found": "Nuk është gjetur asnjë rezultat",
 	"uls-common-languages": "Gjuhë të sugjeruara",
 	"uls-no-results-suggestion-title": "Ju mund të jeni të interesuar në:",

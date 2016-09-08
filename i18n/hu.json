@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Dj",
-			"Tacsipacsi"
+			"Tacsipacsi",
+			"Amire80"
 		]
 	},
 	"uls-region-WW": "Világszerte",
@@ -13,6 +14,7 @@
 	"uls-region-AS": "Ázsia",
 	"uls-region-ME": "Közel-Kelet",
 	"uls-region-PA": "Csendes-óceáni",
+	"uls-region-all": "Minden nyelv",
 	"uls-no-results-found": "Nincs találat",
 	"uls-common-languages": "Javasolt nyelvek",
 	"uls-no-results-suggestion-title": "Lehet, hogy érdekel:",

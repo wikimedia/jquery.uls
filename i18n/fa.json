@@ -3,7 +3,8 @@
 		"authors": [
 			"Reza1615",
 			"Alirezaaa",
-			"Namo"
+			"Namo",
+			"Amire80"
 		]
 	},
 	"uls-region-WW": "در سراسر جهان",
@@ -14,6 +15,7 @@
 	"uls-region-AS": "آسیا",
 	"uls-region-ME": "خاورمیانه",
 	"uls-region-PA": "اقیانوس آرام",
+	"uls-region-all": "همۀ زبان‌ها",
 	"uls-no-results-found": "نتیجه‌ای یافت نشد",
 	"uls-common-languages": "زبان‌های پیشنهادشده",
 	"uls-no-results-suggestion-title": "ممکن است علاقه‌مند باشید:",

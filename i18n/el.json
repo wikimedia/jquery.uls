@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Evropi",
-			"Geraki"
+			"Geraki",
+			"Amire80"
 		]
 	},
 	"uls-region-WW": "Παγκόσμιες",
@@ -13,6 +14,7 @@
 	"uls-region-AS": "Ασία",
 	"uls-region-ME": "Μέση Ανατολή",
 	"uls-region-PA": "Ειρηνικός",
+	"uls-region-all": "Όλες οι γλώσσες",
 	"uls-no-results-found": "Δε βρέθηκαν αποτελέσματα",
 	"uls-common-languages": "Προτεινόμενες γλώσσες",
 	"uls-no-results-suggestion-title": "Μπορεί να σας ενδιαφέρουν:",

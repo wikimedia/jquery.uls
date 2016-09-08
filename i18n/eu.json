@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Theklan"
+			"Theklan",
+			"Sator"
 		]
 	},
 	"uls-region-WW": "Mundu osoa",
@@ -12,9 +13,10 @@
 	"uls-region-AS": "Asia",
 	"uls-region-ME": "Ekialde Hurbila",
 	"uls-region-PA": "Pazifikoa",
+	"uls-region-all": "Hizkuntza guztiak",
 	"uls-no-results-found": "Ez da emaitzarik aurkitu",
-	"uls-common-languages": "Hizkuntza komuna",
+	"uls-common-languages": "Proposatutako hizkuntzak",
 	"uls-no-results-suggestion-title": "Agian interesa duzu:",
-	"uls-search-help": "Bilaketa egin ahal duzu hizkuntzaren izena, script izena, hizkuntzaren ISO kodea edo eskualdeka bilaketa egin ahal duzu:",
+	"uls-search-help": "Bilaketa egin ahal duzu hizkuntzaren izena, script izena, hizkuntzaren ISO kodea edo eskualdeka bilaketa egin ahal duzu.",
 	"uls-search-placeholder": "Hizkuntza bilaketa"
 }
