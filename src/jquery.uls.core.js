@@ -36,7 +36,7 @@
 						<input type="text" class="uls-filterinput uls-languagefilter"\
 							id="uls-languagefilter" data-clear="uls-languagefilter-clear"\
 							data-suggestion="uls-filtersuggestion"\
-							placeholder="Language search" autocomplete="off">\
+							placeholder="Search for a language" autocomplete="off">\
 					</div>\
 				</div>\
 			</div>\
