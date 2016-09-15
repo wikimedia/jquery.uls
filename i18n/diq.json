@@ -5,7 +5,8 @@
 			"Gorizon",
 			"Marmase",
 			"Mirzali",
-			"Kumkumuk"
+			"Kumkumuk",
+			"Asmen"
 		]
 	},
 	"uls-region-WW": "Heradınya",
@@ -21,5 +22,5 @@
 	"uls-common-languages": "Wesıbyaye zıwani",
 	"uls-no-results-suggestion-title": "Belki şıma cıya eleqederi:",
 	"uls-search-help": "Şıma şenê name dê zıwaniya, skript kodiya, ISO qodiya yana mıntıqa heta cıgeyrayış bıkerê.",
-	"uls-search-placeholder": "Zıwan cıgeyrayış"
+	"uls-search-placeholder": "Yew zıwani cı geyre"
 }
