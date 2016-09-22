@@ -6,7 +6,8 @@
 			"Sadrettin",
 			"Kumkumuk",
 			"Marmase",
-			"MrSchipunov"
+			"MrSchipunov",
+			"1917 Ekim Devrimi"
 		]
 	},
 	"uls-region-WW": "Dünya çapında",
@@ -17,9 +18,10 @@
 	"uls-region-AS": "Asya",
 	"uls-region-ME": "Orta Doğu",
 	"uls-region-PA": "Pasifik",
+	"uls-region-all": "Tüm diller",
 	"uls-no-results-found": "Sonuç bulunamadı",
 	"uls-common-languages": "Önerilen diller",
 	"uls-no-results-suggestion-title": "İlginizi çekebilir:",
 	"uls-search-help": "Dil adına, betik adına, dilin ISO koduna göre arama yapabilirsiniz ya da bölgeye göre tarayabilirsiniz.",
-	"uls-search-placeholder": "Dil ara"
+	"uls-search-placeholder": "Bu dilde ara"
 }

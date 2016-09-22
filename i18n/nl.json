@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand"
+			"Siebrand",
+			"Sjoerddebruin"
 		]
 	},
 	"uls-region-WW": "Wereldwijd",
@@ -16,5 +17,5 @@
 	"uls-common-languages": "Taalsuggesties",
 	"uls-no-results-suggestion-title": "Wellicht wilt u een van de volgende talen kiezen:",
 	"uls-search-help": "U kunt zoeken op taalnaam, schriftnaam, ISO-code van de taal of u kunt bladeren per regio.",
-	"uls-search-placeholder": "Taal zoeken"
+	"uls-search-placeholder": "Zoeken naar een taal"
 }

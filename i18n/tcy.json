@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"VASANTH S.N."
+			"VASANTH S.N.",
+			"BHARATHESHA ALASANDEMAJALU"
 		]
 	},
 	"uls-region-WW": "ಪ್ರಪಂಚದಾದ್ಯಂತ",
@@ -10,5 +11,6 @@
 	"uls-region-AF": "ಆಫ್ರಿಕ",
 	"uls-region-EU": "ಯುರೋಪ್",
 	"uls-region-AS": "ಏಷ್ಯಾ",
-	"uls-region-PA": "ಫೆಸಿಫಿಕ್"
+	"uls-region-PA": "ಫೆಸಿಫಿಕ್",
+	"uls-search-placeholder": "ಬಾಸೆಲೆನ್ ನಡ್ಲೆ"
 }
