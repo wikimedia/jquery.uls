@@ -3,20 +3,22 @@
 		"authors": [
 			"Taresi",
 			"Teòtlalili",
-			"Ricardo gs"
+			"Ricardo gs",
+			"Akapochtli"
 		]
 	},
-	"uls-region-WW": "Nōhuiyān",
-	"uls-region-SP": "Nōncuahquīzqui",
-	"uls-region-AM": "Ixachitlān",
-	"uls-region-AF": "Āpica",
-	"uls-region-EU": "Europan",
-	"uls-region-AS": "Acia",
-	"uls-region-ME": "Tlahco Tlāpco",
-	"uls-region-PA": "Pacīpico",
-	"uls-no-results-found": "Âmo òmâsik tlèn motèmowa",
-	"uls-common-languages": "Hueli tlahtōlli",
-	"uls-no-results-suggestion-title": "Huel timoyōlēhuaz:",
-	"uls-search-help": "Huel tictēmōz in tlahtōlli iniuh ītōcā, iniuh ītlahcuilōl, iniuh ISO īpal īmachiyōnecaquiliz, ahnozo huel tictēmōz iniuh tlālpan.",
-	"uls-search-placeholder": "Tlahtōllatēmoliztli"
+	"uls-region-WW": "Nohuiyanyoh",
+	"uls-region-SP": "Noncuahquizqui",
+	"uls-region-AM": "America",
+	"uls-region-AF": "Africa",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Ihuic Tlahuiztlampa",
+	"uls-region-PA": "Pacifico",
+	"uls-region-all": "Ipan mochi tlahtolli",
+	"uls-no-results-found": "Ahmo omahcic tlen motemoa",
+	"uls-common-languages": "Mitzhuelittaz inin tlahtolli",
+	"uls-no-results-suggestion-title": "Ahzo timoyolehuaz ica inin:",
+	"uls-search-help": "Huel tictemoz in tlahtolli ipal tlahtolli itoca, nozo itlahcuilol, nozo ipal ISO imachiyonecaquiliz, nozo huel tictemoz zan iuh itlalpan.",
+	"uls-search-placeholder": "Tlatemoliztli itech ce tlahtolli"
 }
