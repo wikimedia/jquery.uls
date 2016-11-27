@@ -472,6 +472,7 @@ languages:
   ss: [Latn, [AF], SiSwati]
   st: [Latn, [AF], Sesotho]
   stq: [Latn, [EU], Seeltersk]
+  sty: [Cyrl, [EU, AS], себертатар]
   su: [Latn, [AS], Basa Sunda]
   sv: [Latn, [EU], svenska]
   sw: [Latn, [AF], Kiswahili]
