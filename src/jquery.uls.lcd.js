@@ -35,6 +35,7 @@
 			.addClass( 'uls-no-found-more' )
 			.append(
 				$( '<div>' )
+					.attr( 'data-i18n', 'uls-search-help' )
 					.addClass( '' )
 					.append(
 						$( '<p>' ).append(
