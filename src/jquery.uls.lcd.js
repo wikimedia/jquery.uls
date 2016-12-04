@@ -35,11 +35,12 @@
 			.addClass( 'uls-no-found-more' )
 			.append(
 				$( '<div>' )
-					.attr( 'data-i18n', 'uls-search-help' )
 					.addClass( '' )
 					.append(
 						$( '<p>' ).append(
-							$( '<span>' ).text( 'You can search by language name, script name, ISO code of language or you can browse by region.' )
+							$( '<span>' )
+								.attr( 'data-i18n', 'uls-search-help' )
+								.text( 'You can search by language name, script name, ISO code of language or you can browse by region.' )
 						)
 					)
 			)
