@@ -1,14 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"AlnashPiyash2"
+			"AlnashPiyash2",
+			"Wadorgurt"
 		]
 	},
+	"uls-region-WW": "Быдэс дуннеысь",
+	"uls-region-SP": "Нимысьтыз",
 	"uls-region-AM": "Америка",
 	"uls-region-AF": "Африка",
 	"uls-region-EU": "Европа",
 	"uls-region-AS": "Азия",
+	"uls-region-ME": "Матысь Восток",
 	"uls-region-PA": "Океания",
+	"uls-region-all": "Вань кылъёс",
 	"uls-no-results-found": "Шедьтэмын ӧвӧл",
+	"uls-common-languages": "Ӵектэм кылъёс",
 	"uls-search-placeholder": "Кылэз утчан"
 }
