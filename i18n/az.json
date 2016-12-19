@@ -13,9 +13,10 @@
 	"uls-region-AS": "Asiya",
 	"uls-region-ME": "Orta Şərq",
 	"uls-region-PA": "Okeaniya",
+	"uls-region-all": "Bütün dillər",
 	"uls-no-results-found": "Nəticələr tapılmadı",
-	"uls-common-languages": "Ümumi dillər",
+	"uls-common-languages": "Təkliflənən dillər",
 	"uls-no-results-suggestion-title": "Sizin üçün maraqlı ola bilər:",
-	"uls-search-help": "Dilin və ya yazının adları üzrə axtarmaq olar, dilin ISO-kodu üzrə və ya region üzrə gözdən keçirə bilərsiniz:",
-	"uls-search-placeholder": "Dil axtar"
+	"uls-search-help": "Siz dilin adı, yazısı və ISO-kodu üzrə və ya region üzrə axtarış edə bilərsiz.",
+	"uls-search-placeholder": "Dili axtar"
 }
