@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Theklan",
-			"Sator"
+			"Sator",
+			"An13sa"
 		]
 	},
 	"uls-region-WW": "Mundu osoa",
@@ -18,5 +19,5 @@
 	"uls-common-languages": "Proposatutako hizkuntzak",
 	"uls-no-results-suggestion-title": "Agian interesa duzu:",
 	"uls-search-help": "Bilaketa egin ahal duzu hizkuntzaren izena, script izena, hizkuntzaren ISO kodea edo eskualdeka bilaketa egin ahal duzu.",
-	"uls-search-placeholder": "Hizkuntza bilaketa"
+	"uls-search-placeholder": "Hizkuntza bat bilatu"
 }

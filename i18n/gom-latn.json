@@ -12,9 +12,10 @@
 	"uls-region-AS": "Asia",
 	"uls-region-ME": "Modlem Udent",
 	"uls-region-PA": "Pacifik",
+	"uls-region-all": "Soglleo bhaso",
 	"uls-no-results-found": "Porinam mellunk nam",
-	"uls-common-languages": "Khup uzar kelele bhaso",
+	"uls-common-languages": "Suchoiloeo bhaso",
 	"uls-no-results-suggestion-title": "Tuka avdot:",
 	"uls-search-help": "Tujean bhase, lipie, bhaseche ISO code vo zagea vorvim sodunk zata.",
-	"uls-search-placeholder": "Bhas sod"
+	"uls-search-placeholder": "Eke bhase khatir sod"
 }
