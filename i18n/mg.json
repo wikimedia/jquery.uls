@@ -12,9 +12,10 @@
 	"uls-region-AS": "Azia",
 	"uls-region-ME": "Afovoany Atsinanana",
 	"uls-region-PA": "Pasifika",
+	"uls-region-all": "Fiteny rehetra",
 	"uls-no-results-found": "Tsy nahitana valiny",
-	"uls-common-languages": "Tenim-pirenena fampiasa matetika",
+	"uls-common-languages": "Fiteny atao soson-kevitra",
 	"uls-no-results-suggestion-title": "Mety ahitanao tombon-tsoa:",
 	"uls-search-help": "Afaka mikaroka araka ny anaran'ny tenim-pirena, anaran-tsoratra, kaody ISO-n'ny teny na afaka mifidy araky ny faritra.",
-	"uls-search-placeholder": "Fikarohana tenim-pirenena"
+	"uls-search-placeholder": "Hitady fiteny"
 }
