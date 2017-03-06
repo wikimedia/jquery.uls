@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Calak",
-			"Asoxor"
+			"Asoxor",
+			"Lost Whispers"
 		]
 	},
 	"uls-region-WW": "لە گشت جیھاندا",
@@ -13,9 +14,10 @@
 	"uls-region-AS": "ئاسیا",
 	"uls-region-ME": "ڕۆژھەڵاتی ناوین",
 	"uls-region-PA": "ئۆقیانووسی ئارام",
+	"uls-region-all": "ھەموو زمانەکان",
 	"uls-no-results-found": "ھیچ ئاکامێک نەدۆزرایەوە",
-	"uls-common-languages": "زمانە ھاوبەشەکان",
+	"uls-common-languages": "زمانە پێشنیارکراوەکان",
 	"uls-no-results-suggestion-title": "ڕەنگە ئەمانەت پێ خۆش بێت:",
 	"uls-search-help": "دەتوانیت بە پێی ناوی زمان، جۆری ئەلفوبێ، کۆدی ISOی زمان یان بە پێی ناوچە بگەڕێی.",
-	"uls-search-placeholder": "گەڕانی زمان"
+	"uls-search-placeholder": "گەڕان بەدوای زمانێکدا"
 }
