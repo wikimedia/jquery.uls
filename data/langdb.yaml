@@ -493,6 +493,7 @@ languages:
   tl: [Latn, [AS], Tagalog]
  # A very complicated case. Names.php is Cyrl. In TWN they argue about Cyrl, Latn, and Arab. I can't find reliable external sources. --Amir
   tly: [Cyrl, [EU, AS, ME], толышә зывон]
+  tmr: [Hebr, [ME, EU, AM], ארמית בבלית]
   tn: [Latn, [AF], Setswana]
   to: [Latn, [PA], lea faka-Tonga]
   tokipona: [Latn, [WW], Toki Pona]
