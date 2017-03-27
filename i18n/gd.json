@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"GunChleoc"
+			"GunChleoc",
+			"Akerbeltz"
 		]
 	},
 	"uls-region-WW": "Mòr-chànan",
@@ -12,9 +13,10 @@
 	"uls-region-AS": "Àisia",
 	"uls-region-ME": "An Ear-mheadhan",
 	"uls-region-PA": "An Cuan Sèimh",
+	"uls-region-all": "A h-uile cànan",
 	"uls-no-results-found": "Cha deach toradh a lorg",
-	"uls-common-languages": "Cànanan cumanta",
-	"uls-no-results-suggestion-title": "'S dòcha gum bu mhiann leat:",
+	"uls-common-languages": "Cànain a mholamaid",
+	"uls-no-results-suggestion-title": "’S dòcha gum bi ùidh agad sna leanas:",
 	"uls-search-help": "'S urrainn dhut lorg le ainm a' chànain, ainm an sgriobt, còd ISO a' chànain no brabhsadh a-rèir roinn-dùthcha.",
 	"uls-search-placeholder": "Lorg cànan"
 }

@@ -5,7 +5,8 @@
 			"Amgauna",
 			"Webysther",
 			"Cristofer Alves",
-			"TheEduGobi"
+			"TheEduGobi",
+			"Eduardo Addad de Oliveira"
 		]
 	},
 	"uls-region-WW": "Global",
@@ -21,5 +22,5 @@
 	"uls-common-languages": "Idiomas sugeridos",
 	"uls-no-results-suggestion-title": "Você pode interessar-se por:",
 	"uls-search-help": "Você pode pesquisar pelo nome da língua, o nome do alfabeto, código ISO da língua, ou você pode procurar por região.",
-	"uls-search-placeholder": "Procurar idioma"
+	"uls-search-placeholder": "Procurar um idioma"
 }
