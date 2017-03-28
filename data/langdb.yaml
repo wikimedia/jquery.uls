@@ -180,6 +180,7 @@ languages:
   gsw: [Latn, [EU], Alemannisch]
   gu: [Gujr, [AS], ગુજરાતી]
   guc: [Latn, [AM], Wayúu]
+  gum: [Latn, [AM], Namtrik]
   gur: [Latn, [AF], Gurenɛ]
   gv: [Latn, [EU], Gaelg]
  # CLDR uses ha-latn and ha-arab. Latin is more common and is used in Wikipedia.
