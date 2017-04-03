@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"John Reid"
+			"John Reid",
+			"AmaryllisGardener"
 		]
 	},
 	"uls-region-WW": "Worldwide",
@@ -12,9 +13,10 @@
 	"uls-region-AS": "Asia",
 	"uls-region-ME": "Middle Eist",
 	"uls-region-PA": "Paceefic",
+	"uls-region-all": "Aw leids",
 	"uls-no-results-found": "Nae results foond",
-	"uls-common-languages": "Commyn leids",
+	"uls-common-languages": "Suggestit leids",
 	"uls-no-results-suggestion-title": "Ye micht hae aen intrest in:",
-	"uls-search-help": "Ye can rake bi leid name, script name, ISO code o leid or ye can brouse bi region:",
-	"uls-search-placeholder": "Leid rake"
+	"uls-search-help": "Ye can sairch bi leid name, script name, ISO code o leid or ye can brouse bi region.",
+	"uls-search-placeholder": "Sairch for a leid"
 }
