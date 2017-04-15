@@ -157,6 +157,39 @@
 		},
 
 		/**
+		 * If the ULS panel is out of the viewport,
+		 * scroll the window to show it.
+		 */
+		scrollIntoView: function () {
+			var scrollPosition,
+				padding,
+				$window = $( window ),
+				windowHeight = $window.height(),
+				windowScrollTop = $window.scrollTop(),
+				windowBottom = windowScrollTop + windowHeight,
+				panelHeight = this.$menu.height(),
+				panelTop = this.$menu.offset().top,
+				panelBottom = panelTop + panelHeight;
+
+			if ( ( panelTop < windowScrollTop ) || ( panelBottom > windowBottom ) ) {
+				padding = 10;
+
+				if ( panelHeight > windowHeight ) {
+					// Scroll to show as much of the upper
+					// part of ULS as possible
+					scrollPosition = panelTop - padding;
+				} else {
+					// Scroll just enough to show the ULS panel
+					scrollPosition = panelBottom - windowHeight + padding;
+				}
+
+				$( 'html, body' ).stop().animate( {
+					scrollTop: scrollPosition
+				}, 500 );
+			}
+		},
+
+		/**
 		 * Show the ULS window
 		 */
 		show: function () {
