@@ -410,34 +410,5 @@
 		$.fn.i18n = function () {};
 	}
 
-	/*
-	 * Simple scrollIntoView plugin.
-	 * Scrolls the element to the viewport smoothly if it is not already.
-	 */
-	$.fn.scrollIntoView = function () {
-		return this.each( function () {
-			var scrollPosition,
-				$window = $( window ),
-				windowHeight = $window.height(),
-				windowTop = $window.scrollTop(),
-				windowBottom = windowTop + windowHeight,
-				$element = $( this ),
-				panelHeight = $element.height(),
-				panelTop = $element.offset().top,
-				panelBottom = panelTop + panelHeight;
-
-			if ( ( panelTop < windowTop ) || ( panelBottom > windowBottom ) ) {
-				if ( windowTop > panelTop ) {
-					scrollPosition = panelTop;
-				} else {
-					scrollPosition = panelBottom - windowHeight;
-				}
-				$( 'html, body' ).stop().animate( {
-					scrollTop: scrollPosition
-				}, 500 );
-			}
-		} );
-	};
-
 	$.fn.uls.Constructor = ULS;
 }( jQuery ) );
