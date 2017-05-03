@@ -286,6 +286,7 @@ languages:
   lad: [lad-latn]
   lad-latn: [Latn, [ME, EU, AM], Ladino]
   lad-hebr: [Hebr, [ME, EU, AM], לאדינו]
+  lag: [Latn, [AF], Kilaangi]
   lb: [Latn, [EU], Lëtzebuergesch]
   lbe: [Cyrl, [EU], лакку]
   lez: [Cyrl, [EU], лезги]
