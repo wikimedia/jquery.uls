@@ -18,7 +18,7 @@
  * @licence MIT License
  */
 
-include __DIR__ . '/spyc.php';
+include __DIR__ . '/Spyc.php';
 
 print "Reading langdb.yaml...\n";
 $yamlLangdb = file_get_contents( 'langdb.yaml' );
