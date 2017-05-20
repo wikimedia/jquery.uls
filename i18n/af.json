@@ -3,7 +3,8 @@
 		"authors": [
 			"Naudefj",
 			"Amire80",
-			"Puvircho"
+			"Puvircho",
+			"Fwolff"
 		]
 	},
 	"uls-region-WW": "Wêreldwyd",
@@ -18,6 +19,6 @@
 	"uls-no-results-found": "Geen resultate gevind nie",
 	"uls-common-languages": "Taalvoorstelle",
 	"uls-no-results-suggestion-title": "U mag geïnteresseerd wees in:",
-	"uls-search-help": "U kan soek volgens taalnaam, skripnaam, ISO-kode van die taal of u kan per streek deurblaai.",
+	"uls-search-help": "U kan soek volgens taalnaam, skrifnaam, ISO-kode van die taal of u kan per streek deurblaai.",
 	"uls-search-placeholder": "Soek na ’n taal"
 }
