@@ -143,6 +143,7 @@ languages:
   es-formal: [Latn, [EU, AM, AF, WW], español (formal)]
  # world?
   es: [Latn, [EU, AM, AF, WW], español]
+  es-ni: [Latn, [AM], español nicaragüense]
   esu: [Latn, [AM], "Yup'ik"]
   et: [Latn, [EU], eesti]
   eu: [Latn, [EU], euskara]
@@ -362,6 +363,7 @@ languages:
   nn: [Latn, [EU], norsk (nynorsk)]
  # There's also nb for Bokmål and nn for Nynorsk
   "no": [Latn, [EU], norsk]
+  nod: [Thai, [AS], คำเมือง]
   nov: [Latn, [WW], Novial]
   nqo: [Nkoo, [AF], ߒߞߏ]
   nrm: [Latn, [EU], Nouormand]
@@ -376,6 +378,7 @@ languages:
   os: [Cyrl, [EU], Ирон]
  # Bug: 60815
   ota: [Arab, [AS, EU], لسان عثمانى]
+  ovd: [Latn, [EU], övdalsk]
   pa: [pa-guru]
   pa-guru: [Guru, [AS], ਪੰਜਾਬੀ]
   pag: [Latn, [AS], Pangasinan]
@@ -458,6 +461,7 @@ languages:
   sli: [Latn, [EU], Schläsch]
   slr: [Latn, [AS], Salırça]
   sly: [Latn, [AS], Bahasa Selayar]
+  skr-arab: [Arab, [AS], سرائیکی]
   syc: [Syrc, [ME], ܣܘܪܝܝܐ]
   sm: [Latn, [PA], Gagana Samoa]
   sma: [Latn, [EU], åarjelsaemien]

@@ -873,6 +873,13 @@
             ],
             "español"
         ],
+        "es-ni": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "español nicaragüense"
+        ],
         "esu": [
             "Latn",
             [
@@ -2310,6 +2317,13 @@
             ],
             "norsk"
         ],
+        "nod": [
+            "Thai",
+            [
+                "AS"
+            ],
+            "คำเมือง"
+        ],
         "nov": [
             "Latn",
             [
@@ -2402,6 +2416,13 @@
                 "EU"
             ],
             "لسان عثمانى"
+        ],
+        "ovd": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "övdalsk"
         ],
         "pa": [
             "pa-guru"
@@ -2938,6 +2959,13 @@
                 "AS"
             ],
             "Bahasa Selayar"
+        ],
+        "skr-arab": [
+            "Arab",
+            [
+                "AS"
+            ],
+            "سرائیکی"
         ],
         "syc": [
             "Syrc",
@@ -5147,6 +5175,7 @@
         "TH": [
             "th",
             "en",
+            "nod",
             "zh-hant",
             "zh",
             "mnw",
