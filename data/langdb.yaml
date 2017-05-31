@@ -194,6 +194,8 @@ languages:
   hak: [Latn, [AS], Hak-kâ-fa]
   haw: [Latn, [AM, PA], Hawai`i]
   he: [Hebr, [ME], עברית]
+  hak-hans: [Hans, [AS], 客家语（简体）]
+  hak-hant: [Hant, [AS], 客家語（繁體）]
   hi: [Deva, [AS], हिन्दी]
   hif: [Latn, [PA, AS], Fiji Hindi]
   hif-deva: [Deva, [AS], फ़ीजी हिन्दी]
