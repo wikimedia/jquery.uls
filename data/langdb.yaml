@@ -119,6 +119,7 @@ languages:
   cv: [Cyrl, [EU], Чӑвашла]
   cy: [Latn, [EU], Cymraeg]
   da: [Latn, [EU], dansk]
+  dag: [Latn, [AF], dagbanli]
   de-at: [Latn, [EU], Österreichisches Deutsch]
   de-ch: [Latn, [EU], Schweizer Hochdeutsch]
   de-formal: [Latn, [EU], Deutsch (Sie-Form)]
