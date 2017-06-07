@@ -507,7 +507,7 @@ languages:
   ti: [Ethi, [AF], ትግርኛ]
   tig: [Ethi, [AF], ትግረ]
   tk: [Latn, [AS], Türkmençe]
-  tkr: [Cyrl, [AS], ЦӀаьхна миз]
+  tkr: [Cyrl, [AS], ЦӀаӀхна миз]
   tl: [Latn, [AS], Tagalog]
  # A very complicated case. Names.php is Cyrl. In TWN they argue about Cyrl, Latn, and Arab. I can't find reliable external sources. --Amir
   tly: [Cyrl, [EU, AS, ME], толышә зывон]
