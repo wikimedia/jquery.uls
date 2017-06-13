@@ -20,7 +20,7 @@
 
 	module( 'jquery.uls' );
 
-	var orphanScripts, badRedirects, doubleRedirects, languagesWithoutAutonym;
+	var orphanScripts, badRedirects, doubleRedirects, doubleAutonyms, languagesWithoutAutonym;
 
 	/*
 	 * Runs over all script codes mentioned in langdb and checks whether
@@ -57,6 +57,31 @@
 		}
 
 		return result;
+	};
+
+	/*
+	 * Runs over all languages and checks that all autonyms are unique.
+	 */
+	doubleAutonyms = function () {
+		var language, autonym,
+			autonyms = [],
+			duplicateAutonyms = [];
+
+		for ( language in $.uls.data.languages ) {
+			if ( $.uls.data.isRedirect( language ) ) {
+				continue;
+			}
+
+			autonym = $.uls.data.getAutonym( language );
+
+			if ( $.inArray( autonym, autonyms ) > -1 ) {
+				duplicateAutonyms.push( language );
+			}
+
+			autonyms.push( autonym );
+		}
+
+		return duplicateAutonyms;
 	};
 
 	/*
@@ -99,7 +124,7 @@
 		assert.ok( $.fn.uls, '$.fn.uls is defined' );
 	} );
 
-	test( '-- $.uls.data testing', 30, function ( assert ) {
+	test( '-- $.uls.data testing', 31, function ( assert ) {
 		var autonyms,
 			languagesToGroup, groupedLanguages;
 
@@ -126,6 +151,7 @@
 		assert.deepEqual( badRedirects(), [], 'All redirects have valid targets.' );
 		assert.deepEqual( doubleRedirects(), [], 'There are no double redirects.' );
 		assert.deepEqual( languagesWithoutAutonym(), [], 'All languages have autonyms.' );
+		assert.deepEqual( doubleAutonyms(), [], 'All languages have distinct autonyms.' );
 
 		assert.strictEqual(
 			$.uls.data.getGroupOfScript( 'Beng' ),

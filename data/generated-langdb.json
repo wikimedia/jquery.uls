@@ -316,14 +316,10 @@
             [
                 "AS"
             ],
-            "Batak Toba"
+            "ᯅᯖᯂ᯲ ᯖᯬᯅ"
         ],
         "bbc": [
-            "Latn",
-            [
-                "AS"
-            ],
-            "Batak Toba"
+            "bbc-latn"
         ],
         "bcc": [
             "Arab",
@@ -1445,11 +1441,7 @@
             "italiano"
         ],
         "iu": [
-            "Cans",
-            [
-                "AM"
-            ],
-            "ᐃᓄᒃᑎᑐᑦ"
+            "ike-cans"
         ],
         "ja": [
             "Jpan",
@@ -1756,11 +1748,7 @@
             "कॉशुर"
         ],
         "ks": [
-            "Arab",
-            [
-                "AS"
-            ],
-            "کٲشُر"
+            "ks-arab"
         ],
         "ksf": [
             "Latn",
@@ -3239,11 +3227,7 @@
             "tojikī"
         ],
         "tg": [
-            "Cyrl",
-            [
-                "AS"
-            ],
-            "тоҷикӣ"
+            "tg-cyrl"
         ],
         "th": [
             "Thai",
@@ -3700,7 +3684,7 @@
             [
                 "AF"
             ],
-            "ⵜⴰⵎⴰⵣⵉⵖⵜ"
+            "ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ"
         ],
         "zh": [
             "Hans",
@@ -3710,11 +3694,7 @@
             "中文"
         ],
         "zh-classical": [
-            "Hant",
-            [
-                "AS"
-            ],
-            "文言"
+            "lzh"
         ],
         "zh-cn": [
             "Hans",
@@ -4076,7 +4056,7 @@
             "pdt",
             "cr",
             "yi",
-            "iu",
+            "ike-cans",
             "atj"
         ],
         "CC": [
@@ -4356,7 +4336,7 @@
             "zh",
             "el",
             "it",
-            "ks",
+            "ks-arab",
             "gd",
             "yi",
             "ml",
@@ -4483,7 +4463,7 @@
             "bug",
             "bjn",
             "ace",
-            "bbc",
+            "bbc-latn",
             "zh-hant",
             "zh",
             "sly",
@@ -4531,7 +4511,7 @@
             "hne",
             "ne",
             "sat",
-            "ks",
+            "ks-arab",
             "gom-deva",
             "sd",
             "doi",
@@ -4984,10 +4964,10 @@
             "brh",
             "fa",
             "bgn",
-            "tg",
+            "tg-cyrl",
             "bft",
             "khw",
-            "ks"
+            "ks-arab"
         ],
         "PL": [
             "pl",
@@ -5242,7 +5222,7 @@
             "shn"
         ],
         "TJ": [
-            "tg",
+            "tg-cyrl",
             "ru",
             "fa",
             "ar"
