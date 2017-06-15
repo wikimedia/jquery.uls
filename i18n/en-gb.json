@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chase me ladies, I'm the Cavalry"
+			"Chase me ladies, I'm the Cavalry",
+			"Andibing"
 		]
 	},
 	"uls-region-WW": "Worldwide",
@@ -12,9 +13,10 @@
 	"uls-region-AS": "Asia",
 	"uls-region-ME": "Middle East",
 	"uls-region-PA": "Pacific",
+	"uls-region-all": "All languages",
 	"uls-no-results-found": "No results found",
 	"uls-common-languages": "Suggested languages",
 	"uls-no-results-suggestion-title": "You may be interested in:",
 	"uls-search-help": "You can search by language name, script name, ISO code of language or you can browse by region.",
-	"uls-search-placeholder": "Language search"
+	"uls-search-placeholder": "Search for a language"
 }
