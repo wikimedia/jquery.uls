@@ -124,7 +124,7 @@
 		assert.ok( $.fn.uls, '$.fn.uls is defined' );
 	} );
 
-	test( '-- $.uls.data testing', 31, function ( assert ) {
+	test( '-- $.uls.data testing', 32, function ( assert ) {
 		var autonyms,
 			languagesToGroup, groupedLanguages;
 
@@ -217,6 +217,13 @@
 		assert.ok(
 			$.inArray( 'sah', $.uls.data.getLanguagesInTerritory( 'RU' ) ) > -1,
 			'Sakha language is spoken in Russia'
+		);
+
+		$.uls.data.addLanguagesToTerritory( 'BY', [ 'be-tarask' ] );
+
+		assert.ok(
+			$.inArray( 'be-tarask', $.uls.data.getLanguagesInTerritory( 'BY' ) ) > -1,
+			'Belarusian (Taraskevica) language is spoken in Belarus'
 		);
 
 		assert.ok( $.uls.data.deleteLanguage( 'qqq' ), 'Deleting language qqq, which was added earlier, returns true.' );

@@ -267,6 +267,18 @@
 	};
 
 	/**
+	 * Adds languages to a territory.
+	 * Useful for customizing CLDR Territory-Language information,
+	 * although ideally it's better to make sure that it's correct
+	 * upstream in CLDR.
+	 * @param territory string Territory code
+	 * @return list of language codes
+	 */
+	$.uls.data.addLanguagesToTerritory = function ( territory, languages ) {
+		$.uls.data.territories[territory] = $.uls.data.territories[territory].concat( languages );
+	};
+
+	/**
 	 * Adds a language in run time and sets its options as provided.
 	 * If the target option is provided, the language is defined as a redirect.
 	 * Other possible options are script, regions and autonym.
