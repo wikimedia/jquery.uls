@@ -1285,6 +1285,13 @@
             ],
             "Hiri Motu"
         ],
+        "hoc": [
+            "Wara",
+            [
+                "AS"
+            ],
+            "𑢹𑣉𑣉"
+        ],
         "hr": [
             "Latn",
             [
@@ -3803,7 +3810,8 @@
             "Taml",
             "Telu",
             "Tibt",
-            "Thaa"
+            "Thaa",
+            "Wara"
         ],
         "Cyrillic": [
             "Cyrl"
@@ -4518,6 +4526,7 @@
             "tcy",
             "brx",
             "mni",
+            "hoc",
             "saz",
             "bfq",
             "njo",
