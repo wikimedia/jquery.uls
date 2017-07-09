@@ -102,7 +102,7 @@ languages:
   cjy: [cjy-hant]
   cjy-hans: [Hans, [AS], 晋语（简化字)]
   cjy-hant: [Hant, [AS], 晉語]
-  ckb: [Arab, [ME], کوردیی ناوەندی]
+  ckb: [Arab, [ME], کوردی]
   cnh: [Latn, [AS], Lai holh]
   co: [Latn, [EU], corsu]
   cps: [Latn, [AS], Capiceño]
