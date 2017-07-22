@@ -469,6 +469,7 @@ languages:
   slr: [Latn, [AS], Salırça]
   sly: [Latn, [AS], Bahasa Selayar]
   skr-arab: [Arab, [AS], سرائیکی]
+  skr: [skr-arab]
   syc: [Syrc, [ME], ܣܘܪܝܝܐ]
   sm: [Latn, [PA], Gagana Samoa]
   sma: [Latn, [EU], åarjelsaemien]
