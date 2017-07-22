@@ -105,6 +105,7 @@ languages:
   ckb: [Arab, [ME], کوردی]
   cnh: [Latn, [AS], Lai holh]
   co: [Latn, [EU], corsu]
+  cop: [Copt, [AF, ME], ϯⲙⲉⲧⲣⲉⲙⲛ̀ⲭⲏⲙⲓ]
   cps: [Latn, [AS], Capiceño]
   cr: [Cans, [AM], ᓀᐦᐃᔭᐍᐏᐣ]
   cr-cans: [cr]
@@ -609,7 +610,7 @@ scriptgroups:
  # Maybe Thaana can be moved here from SouthAsian.
  # Maybe it can be unified with African.
   MiddleEastern: [Hebr, Syrc]
-  African: [Ethi, Nkoo, Tfng]
+  African: [Ethi, Nkoo, Tfng, Copt]
  # India, Nepal, Bangladesh, Sri-Lanka, Bhutan, Maldives.
  #
  # Thaana (Thaa, the script of Maldives) is here, even though it's RTL,

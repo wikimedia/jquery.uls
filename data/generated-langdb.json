@@ -624,6 +624,14 @@
             ],
             "corsu"
         ],
+        "cop": [
+            "Copt",
+            [
+                "AF",
+                "ME"
+            ],
+            "ϯⲙⲉⲧⲣⲉⲙⲛ̀ⲭⲏⲙⲓ"
+        ],
         "cps": [
             "Latn",
             [
@@ -3795,7 +3803,8 @@
         "African": [
             "Ethi",
             "Nkoo",
-            "Tfng"
+            "Tfng",
+            "Copt"
         ],
         "SouthAsian": [
             "Beng",
