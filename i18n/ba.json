@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sagan"
+			"Sagan",
+			"Ләйсән"
 		]
 	},
 	"uls-region-WW": "Бөтә донъя",
@@ -12,9 +13,10 @@
 	"uls-region-AS": "Азия",
 	"uls-region-ME": "Яҡын Көнсығыш",
 	"uls-region-PA": "Океания",
+	"uls-region-all": "Бөтә телдәр",
 	"uls-no-results-found": "Бер нимә лә табылманы",
-	"uls-common-languages": "Уртаҡ телдәр",
+	"uls-common-languages": "Тәҡдим ителгән телдәр",
 	"uls-no-results-suggestion-title": "Бәлки, ошо телдәрҙе һайларһығыҙ:",
 	"uls-search-help": "Телдең исеме, яҙмаһы, ISO коды йәки регионы буйынса эҙләй алаһығыҙ.",
-	"uls-search-placeholder": "Эҙләү теле"
+	"uls-search-placeholder": "Тел буйынса эҙләү"
 }

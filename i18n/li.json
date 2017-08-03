@@ -3,7 +3,8 @@
 		"authors": [
 			"Robin0van0der0vliet",
 			"Robin van der Vliet",
-			"Pahles"
+			"Pahles",
+			"Ooswesthoesbes"
 		]
 	},
 	"uls-region-WW": "Waereldwied",
@@ -14,5 +15,10 @@
 	"uls-region-AS": "Azië",
 	"uls-region-ME": "Midde-Ooste",
 	"uls-region-PA": "Pacifisch gebied",
+	"uls-region-all": "Al spraoke",
+	"uls-no-results-found": "Gein rizzeltaote gevónje",
+	"uls-common-languages": "Spraoksuggesties",
+	"uls-no-results-suggestion-title": "Doe bös mesjiens geïnterseerdj in:",
+	"uls-search-help": "Doe kans zeuken op spraoknaam, sjrifnaam, ISO-code vanne spraok of doe kans blajere de regio.",
 	"uls-search-placeholder": "Sjpraok zeuke"
 }

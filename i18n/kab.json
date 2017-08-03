@@ -3,20 +3,22 @@
 		"authors": [
 			"Amazigh84",
 			"Mmistmurt",
-			"Mezgoug"
+			"Mezgoug",
+			"Belkacem77"
 		]
 	},
-	"uls-region-WW": "Deg umaḍal ummid",
-	"uls-region-SP": "Uslig",
+	"uls-region-WW": "Deg umaḍal meṛṛa",
+	"uls-region-SP": "Uzzig",
 	"uls-region-AM": "Tamrikt",
 	"uls-region-AF": "Tafriqt",
 	"uls-region-EU": "Turuft",
 	"uls-region-AS": "Asya",
 	"uls-region-ME": "Asamar Alemmas",
 	"uls-region-PA": "Amelwi",
+	"uls-region-all": "Akk tutlayin",
 	"uls-no-results-found": "Ulac d acu i d-yufa.",
-	"uls-common-languages": "Tutlayin tinmilitin",
+	"uls-common-languages": "Tutlayin yettusumren",
 	"uls-no-results-suggestion-title": "Ma tebɣiḍ ad tisineḍ ayen nniḍen ɣef :",
-	"uls-search-help": "Tzemreḍ ad tḥffeḍ s tutlayt, s uskript, s tangalt ISO n tutlayt naγ inig s tama.",
+	"uls-search-help": "Tzemreḍ ad tnadiḍ s yisem n tutlayt, s uskript, s tengalt ISO n tutlayt neγ inig s tmnaḍt.",
 	"uls-search-placeholder": "Anadi n tutlayt"
 }
