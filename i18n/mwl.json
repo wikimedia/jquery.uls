@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"MokaAkashiyaPT"
+		]
+	},
+	"uls-region-WW": "Global",
+	"uls-region-SP": "Special",
+	"uls-region-AM": "América",
+	"uls-region-AF": "África",
+	"uls-region-EU": "Ouropa",
+	"uls-region-AS": "Ásia",
+	"uls-region-ME": "Médio Ouriente",
+	"uls-region-PA": "Pacífico",
+	"uls-common-languages": "Lhénguas sugeridas",
+	"uls-search-placeholder": "Percurar por lhéngua"
+}
