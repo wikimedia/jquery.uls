@@ -31,7 +31,6 @@
 			.addClass( 'uls-no-results-found-title' )
 			.text( 'No results found' ),
 		$( '<div>' )
-			.attr( 'id', 'uls-no-found-more' )
 			.addClass( 'uls-no-found-more' )
 			.append(
 				$( '<div>' )
@@ -54,7 +53,7 @@
 		this.renderTimeout = null;
 		this.cachedQuicklist = null;
 
-		this.$element.append( $( noResultsTemplate ) );
+		this.$element.append( noResultsTemplate.clone() );
 		this.$noResults = this.$element.children( '.uls-no-results-view' );
 
 		this.render();
@@ -175,7 +174,7 @@
 				lcd = this;
 
 			this.$noResults.addClass( 'hide' );
-			this.$element.find( '.uls-lcd-region-section' ).each( function () {
+			this.$element.children( '.uls-lcd-region-section' ).each( function () {
 				var $region = $( this ),
 					regionCode = $region.attr( 'id' );
 
@@ -367,16 +366,20 @@
 
 		noResults: function () {
 			this.$noResults.removeClass( 'hide' );
+			this.$noResults.siblings( '.uls-lcd-region-section' ).addClass( 'hide' );
+
+			// Only build the data once
 			if ( this.$noResults.find( '.uls-lcd-region-title' ).length ) {
 				return;
 			}
 
 			var $suggestions = this.buildQuicklist().clone();
+			$suggestions.removeClass( 'hide' ).removeAttr( 'id' );
 			$suggestions.find( 'h3' )
 				.data( 'i18n', 'uls-no-results-suggestion-title' )
 				.text( 'You may be interested in:' )
 				.i18n();
-			this.$noResults.find( 'h2' ).after( $suggestions.show() );
+			this.$noResults.find( 'h2' ).after( $suggestions );
 		},
 
 		listen: function () {

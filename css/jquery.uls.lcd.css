@@ -104,13 +104,6 @@
 	vertical-align: middle;
 }
 
-/* TODO: ugly hack that forces last matching search results to shift down.
- * They should be hidden properly.
- */
-.uls-no-results-view {
-	height: 100%;
-}
-
 .uls-no-results-found-title {
 	font-size: 16px;
 	padding: 0 16px 0 28px;
