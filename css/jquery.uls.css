@@ -1,6 +1,6 @@
 .uls-trigger {
 	/* @embed */
-	background: transparent url('../images/icon-language.png') no-repeat scroll left center;
+	background: url('../images/icon-language.png') no-repeat left center;
 	/* @embed */
 	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/icon-language.svg');
 	/* @embed */
@@ -13,10 +13,9 @@
 	z-index: 1000;
 	display: none;
 	margin-top: 1px;
-	/* Styling */
-	background-color: #ffffff;
+	background-color: #fff;
 	border: 1px solid #ccc;
-	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-color: rgba(0, 0, 0, 0.2);
 	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -51,11 +50,9 @@
 }
 
 .uls-search {
-	background-color: white;
+	background-color: #fff;
 	padding: 5px 16px;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #DDD;
+	border-bottom: 1px solid #ddd;
 }
 
 .grid .uls-search {
@@ -71,12 +68,11 @@
 }
 
 .uls-search-label {
-	background: transparent url('../images/search.png') no-repeat scroll right center;
+	background: url('../images/search.png') no-repeat center center;
 	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/search.svg');
 	/* @embed */
 	background-image: linear-gradient(transparent, transparent), url('../images/search.svg');
 	background-size: 20px;
-	background-position: center center;
 	height: 32px;
 	width: 44px;
 	display: block;
@@ -96,10 +92,8 @@
 	width: 100%;
 	/* For the custom clear (X) icon */
 	padding: 6px 25px 6px 0;
-
 	outline: none;
-	border: none;
-
+	border: 0;
 	display: block;
 	position: absolute;
 	top: 0;
@@ -109,18 +103,18 @@
 /* This is the actual input */
 .uls-languagefilter {
 	background-color: transparent;
-	border: none;
-	color: #333;
+	border: 0;
+	color: #222;
 }
 
 /* This is the shadow input box showing completion suggestions */
 .uls-filtersuggestion {
-	background-color: white;
-	color: #888;
+	background-color: #fff;
+	color: #777;
 }
 
 .uls-languagefilter-clear {
-	background: transparent url('../images/clear.png') no-repeat scroll left center;
+	background: url('../images/clear.png') no-repeat left center;
 	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/clear.svg');
 	/* @embed */
 	background-image: linear-gradient(transparent, transparent), url('../images/clear.svg');

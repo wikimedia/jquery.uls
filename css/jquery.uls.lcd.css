@@ -7,13 +7,13 @@
  */
 
 .uls-lcd {
+	background-color: #fcfcfc;
 	height: 20em;
 	/* Work around Chrome bug where it places scrollbar on the left in
 	 * in RTL mode but actually reserves the place on the right side */
 	overflow-x: hidden;
 	overflow-y: auto;
 	width: auto;
-	background: #FCFCFC;
 	padding: 0 16px;
 }
 
@@ -61,8 +61,7 @@
 	 * Bug because overflow: hidden is incompatible with bullets, also render
 	 * the bullets inside the list in case there should be any.
 	 */
-	list-style-image: none;
-	list-style-type: none;
+	list-style: none none;
 }
 
 .uls-language-block > ul > li {
@@ -88,7 +87,7 @@
 .uls-language-block a {
 	cursor: pointer;
 	text-decoration: none;
-	color: #3366bb;
+	color: #36c;
 	font-size: 14px;
 	display: inline-block;
 	width: 100%;
@@ -114,14 +113,14 @@
 .uls-no-results-found-title {
 	font-size: 16px;
 	padding: 0 16px 0 28px;
-	border-bottom: none;
+	border-bottom: 0;
 	color: #555;
 }
 
 .uls-no-found-more {
+	background: #f8f8f8;
 	padding: 0 16px 0 44px;
 	font-size: 0.9em;
-	background: #F8F8F8;
 	width: 100%;
 	margin-top: 1.6em;
 	line-height: 1.6em;
