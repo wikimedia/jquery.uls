@@ -198,7 +198,6 @@
 
 /* Very large display targeting */
 @media only screen and (min-width: 1441px) {
-
 	.uls-mobile .hide-for-small,
 	.uls-mobile .hide-for-medium,
 	.uls-mobile .hide-for-medium-down,
@@ -216,9 +215,9 @@
 		display: none !important;
 	}
 }
+
 /* Medium display targeting */
 @media only screen and (max-width: 1279px) and (min-width: 768px) {
-
 	.uls-mobile .hide-for-small,
 	.uls-mobile .show-for-medium,
 	.uls-mobile .show-for-medium-down,
@@ -237,9 +236,9 @@
 		display: none !important;
 	}
 }
+
 /* Small display targeting */
 @media only screen and (max-width: 767px) {
-
 	.uls-mobile .show-for-small,
 	.uls-mobile .hide-for-medium,
 	.uls-mobile .show-for-medium-down,
@@ -292,18 +291,12 @@
 }
 
 /* Touch-enabled device targeting */
-.uls-mobile .show-for-touch {
-	display: none !important;
-}
-
-.uls-mobile .hide-for-touch {
-	display: block !important;
-}
-
-.uls-mobile .touch .show-for-touch {
-	display: block !important;
-}
-
+.uls-mobile .show-for-touch,
 .uls-mobile .touch .hide-for-touch {
 	display: none !important;
+}
+
+.uls-mobile .hide-for-touch,
+.uls-mobile .touch .show-for-touch {
+	display: block !important;
 }
