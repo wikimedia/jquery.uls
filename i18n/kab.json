@@ -4,7 +4,8 @@
 			"Amazigh84",
 			"Mmistmurt",
 			"Mezgoug",
-			"Belkacem77"
+			"Belkacem77",
+			"SlimaneAmiri"
 		]
 	},
 	"uls-region-WW": "Deg umaḍal meṛṛa",
@@ -20,5 +21,5 @@
 	"uls-common-languages": "Tutlayin yettusumren",
 	"uls-no-results-suggestion-title": "Ma tebɣiḍ ad tisineḍ ayen nniḍen ɣef :",
 	"uls-search-help": "Tzemreḍ ad tnadiḍ s yisem n tutlayt, s uskript, s tengalt ISO n tutlayt neγ inig s tmnaḍt.",
-	"uls-search-placeholder": "Anadi n tutlayt"
+	"uls-search-placeholder": "Anadi γef tutlayt"
 }
