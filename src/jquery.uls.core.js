@@ -221,7 +221,7 @@
 		},
 
 		/**
-		 * callback for results found context.
+		 * Callback for results found context.
 		 */
 		success: function () {
 			this.$resultsView.show();

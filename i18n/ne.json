@@ -13,9 +13,10 @@
 	"uls-region-AS": "एसिया",
 	"uls-region-ME": "मध्य पूर्व",
 	"uls-region-PA": "प्रशान्त",
+	"uls-region-all": "सबै भाषाहरू",
 	"uls-no-results-found": "कुनै पनि नतिजाहरू भेटिएन",
-	"uls-common-languages": "साझा भाषा",
+	"uls-common-languages": "सुझाव दिइएका भाषाहरू",
 	"uls-no-results-suggestion-title": "तपाईंलाई यसमा चाख लाग्नसक्छ:",
-	"uls-search-help": "तपाईं भाषाको नाम, लिपीको नाम, आइएसओ कोड वा क्षेत्रको आधारमा खोज्न सक्नुहुन्छ:",
-	"uls-search-placeholder": "भाषा खोज्नुहोस"
+	"uls-search-help": "तपाईं भाषाको नाम, लिपीको नाम, आइएसओ कोड वा क्षेत्रको आधारमा खोज्न सक्नुहुन्छ या क्षेत्रको आधारमा अन्वेषण गर्न सक्नुहुन्छ:",
+	"uls-search-placeholder": "भाषा खोज्नुहोस्"
 }
