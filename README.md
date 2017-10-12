@@ -98,7 +98,7 @@ $( '.uls-trigger' ).uls( {
 
 Features
 --------
-jQuery.uls has an elaborative language information collection. It knows about
+jQuery.uls has an elaborative language information collection and it is based on https://github.com/wikimedia/language-data.git. It knows about
 
 1. The script in which a language is written.
 2. The script code
@@ -151,4 +151,3 @@ Coding style
 -------------
 
 Please follow [jQuery coding guidelines](http://docs.jquery.com/JQuery_Core_Style_Guidelines)
-
