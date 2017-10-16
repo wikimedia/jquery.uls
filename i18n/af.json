@@ -4,7 +4,8 @@
 			"Naudefj",
 			"Amire80",
 			"Puvircho",
-			"Fwolff"
+			"Fwolff",
+			"Biggs ZA"
 		]
 	},
 	"uls-region-WW": "Wêreldwyd",
@@ -14,11 +15,11 @@
 	"uls-region-EU": "Europa",
 	"uls-region-AS": "Asië",
 	"uls-region-ME": "Midde-Ooste",
-	"uls-region-PA": "Pasifiese gebied",
+	"uls-region-PA": "Stille Oseaan",
 	"uls-region-all": "Alle tale",
 	"uls-no-results-found": "Geen resultate gevind nie",
-	"uls-common-languages": "Taalvoorstelle",
+	"uls-common-languages": "Voorgestelde Tale",
 	"uls-no-results-suggestion-title": "U mag geïnteresseerd wees in:",
-	"uls-search-help": "U kan soek volgens taalnaam, skrifnaam, ISO-kode van die taal of u kan per streek deurblaai.",
+	"uls-search-help": "Soektogte kan volgende taalnaam, skripnaam, ISO-kode, of volgens streek geskied.",
 	"uls-search-placeholder": "Soek na ’n taal"
 }
