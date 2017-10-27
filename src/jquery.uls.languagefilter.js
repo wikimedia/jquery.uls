@@ -209,6 +209,8 @@
 				search: query
 			}, function ( result ) {
 				$.each( result.languagesearch, function ( code, name ) {
+					var target;
+
 					if ( languageFilter.resultCount === 0 ) {
 						// Autofill the first result.
 						languageFilter.autofill( code, name );
@@ -216,6 +218,14 @@
 
 					if ( languageFilter.options.languages[ code ] &&
 						languageFilter.render( code )
+					) {
+						languageFilter.resultCount++;
+					}
+
+					// Try to hide issues caused by inconsistent language codes
+					target = $.uls.data.isRedirect( code );
+					if ( languageFilter.options.languages[ target ] &&
+						languageFilter.render( target )
 					) {
 						languageFilter.resultCount++;
 					}
