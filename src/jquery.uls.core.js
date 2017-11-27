@@ -186,6 +186,16 @@
 			this.visible();
 		},
 
+		/**
+	         * Call the css() method on the internal jquery object that represents the uls menu
+	         *
+	         * @return {String|Array}
+	         */
+	        css: function () {
+	            var argArray = Array.prototype.slice.call( arguments );
+	            return this.$menu.css.apply( this.$menu, argArray );
+	        },
+
 		i18n: function () {
 			if ( $.i18n ) {
 				this.$menu.find( '[data-i18n]' ).i18n();
