@@ -167,76 +167,69 @@
 		},
 
 		search: function () {
-			var langCode, scriptGroup, langNum, languagesInScript,
-				languages = $.uls.data.getLanguagesByScriptGroup( this.options.languages ),
-				query = $.trim( this.$element.val() );
+			var languages = Object.keys( this.options.languages ),
+				results = [],
+				query = $.trim( this.$element.val() ).toLowerCase();
 
-			this.resultCount = 0;
-			for ( scriptGroup in languages ) {
-				languagesInScript = languages[ scriptGroup ];
-				languagesInScript.sort( $.uls.data.sortByAutonym );
-				for ( langNum = 0; langNum < languagesInScript.length; langNum++ ) {
-					langCode = languagesInScript[ langNum ];
-					if ( query === '' || this.filter( langCode, query ) ) {
-						if ( this.resultCount === 0 ) {
-							// Autofill the first result.
-							this.autofill( langCode );
-						}
-
-						if ( query.toLowerCase() === langCode ) {
-							this.selectedLanguage = langCode;
-						}
-
-						if ( this.render( langCode ) ) {
-							this.resultCount++;
-						}
-					}
-				}
+			if ( query === '' ) {
+				languages.map( this.render.bind( this ) );
+				this.resultHandler( query, languages );
+				return;
 			}
 
-			// Also do a search by search API
-			if ( !this.resultCount && this.options.searchAPI && query ) {
-				this.searchAPI( query );
+			// Local search results
+			results = languages.filter( function ( langCode ) {
+				return this.filter( langCode, query );
+			}.bind( this ) );
+
+			// Use the searchAPI if available, assuming that it has superior search results.
+			if ( this.options.searchAPI ) {
+				this.searchAPI( query )
+					.done( this.resultHandler.bind( this ) )
+					.fail( this.resultHandler.bind( this, query, results ) );
 			} else {
-				this.resultHandler( query );
+				this.resultHandler( query, results );
 			}
 		},
 
 		searchAPI: function ( query ) {
-			var languageFilter = this;
+			return $.get( this.options.searchAPI, { search: query } ).then( function ( result ) {
+				var autofillLabel,
+					results = [];
 
-			$.get( languageFilter.options.searchAPI, {
-				search: query
-			}, function ( result ) {
 				$.each( result.languagesearch, function ( code, name ) {
-					if ( languageFilter.resultCount === 0 ) {
-						// Autofill the first result.
-						languageFilter.autofill( code, name );
+					if ( this.options.languages[ code ] ) {
+						autofillLabel = autofillLabel || name;
+						results.push( code );
 					}
+				}.bind( this ) );
 
-					if ( languageFilter.options.languages[ code ] &&
-						languageFilter.render( code )
-					) {
-						languageFilter.resultCount++;
-					}
-				} );
+				return $.Deferred().resolve( query, results, autofillLabel );
 
-				languageFilter.resultHandler( query );
-			} );
+			}.bind( this ) );
 		},
 
 		/**
 		 * Handler method to be called once search is over.
 		 * Based on search result triggers resultsfound or noresults events
-		 * @param query string
+		 * @param {string} query
+		 * @param {number} resultCount
+		 * @param {string} [autofillLabel]
 		 */
-		resultHandler: function ( query ) {
-			if ( this.resultCount === 0 ) {
+		resultHandler: function ( query, results, autofillLabel ) {
+			if ( results.length === 0 ) {
 				this.$suggestion.val( '' );
 				this.$element.trigger( 'noresults.uls', query );
-			} else {
-				this.$element.trigger( 'resultsfound.uls', [ query, this.resultCount ] );
+				return;
 			}
+
+			if ( query ) {
+				this.selectedLanguage = results[ 0 ];
+				this.autofill( results[ 0 ], autofillLabel );
+			}
+
+			results.map( this.render.bind( this ) );
+			this.$element.trigger( 'resultsfound.uls', [ query, results.length ] );
 		},
 
 		autofill: function ( langCode, languageName ) {
@@ -251,7 +244,6 @@
 				return;
 			}
 
-			this.selectedLanguage = langCode;
 			languageName = languageName || this.options.languages[ langCode ];
 
 			if ( !languageName ) {
@@ -281,6 +273,7 @@
 		},
 
 		render: function ( langCode ) {
+			// This is actually instance of LanguageCategoryDisplay and not jQuery!
 			var $target = this.options.$target;
 
 			if ( !$target ) {
