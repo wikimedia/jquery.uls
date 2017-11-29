@@ -1,8 +1,5 @@
 .uls-trigger {
-	/* @embed */
 	background: url('../images/icon-language.png') no-repeat left center;
-	/* @embed */
-	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/icon-language.svg');
 	/* @embed */
 	background-image: linear-gradient(transparent, transparent), url('../images/icon-language.svg');
 	padding-left: 30px;
@@ -69,7 +66,6 @@
 
 .uls-search-label {
 	background: url('../images/search.png') no-repeat center center;
-	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/search.svg');
 	/* @embed */
 	background-image: linear-gradient(transparent, transparent), url('../images/search.svg');
 	background-size: 20px;
@@ -115,7 +111,6 @@
 
 .uls-languagefilter-clear {
 	background: url('../images/clear.png') no-repeat left center;
-	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/clear.svg');
 	/* @embed */
 	background-image: linear-gradient(transparent, transparent), url('../images/clear.svg');
 	background-size: 15px;
