@@ -186,7 +186,7 @@
 			if ( this.options.searchAPI ) {
 				this.searchAPI( query )
 					.done( this.resultHandler.bind( this ) )
-					.fail( this.resultHandler.bind( this, query, results ) );
+					.fail( this.resultHandler.bind( this, query, results, undefined ) );
 			} else {
 				this.resultHandler( query, results );
 			}
