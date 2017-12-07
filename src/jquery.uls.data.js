@@ -897,7 +897,8 @@ module.exports=( function ( $ ) {
                 "EU",
                 "AM",
                 "AF",
-                "WW"
+                "WW",
+                "PA"
             ],
             "español"
         ],
@@ -1800,6 +1801,13 @@ module.exports=( function ( $ ) {
                 "ME"
             ],
             "Kurdî"
+        ],
+        "kum": [
+            "Cyrl",
+            [
+                "EU"
+            ],
+            "къумукъ"
         ],
         "kv": [
             "Cyrl",
@@ -5084,6 +5092,7 @@ module.exports=( function ( $ ) {
             "kbd",
             "myv",
             "mdf",
+            "kum",
             "kv",
             "lez",
             "krc",
@@ -5449,6 +5458,5 @@ module.exports=( function ( $ ) {
         ]
     }
 }
-
 } ( jQuery ) );
 },{}]},{},[1]);
