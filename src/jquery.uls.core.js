@@ -24,7 +24,7 @@
 	var template, ULS;
 
 	// Region numbers in id attributes also appear in the langdb.
-	/*jshint multistr:true */
+	// eslint-disable-next-line no-multi-str
 	template = '<div class="grid uls-menu"> \
 			<div id="search" class="row uls-search"> \
 				<div class="uls-search-wrapper"> \
@@ -43,42 +43,20 @@
 			<div class="row uls-language-list"></div>\
 			<div class="row" id="uls-settings-block"></div>\
 		</div>';
-	/*jshint multistr:false */
-
-	/**
-	 * Count the number of keys in an object.
-	 * Works in a cross-browser way.
-	 * @param {Object} The object.
-	 */
-	function objectLength ( obj ) {
-		var count, key;
-
-		// Some old browsers don't support Object.keys
-		if ( Object.keys ) {
-			return Object.keys( obj ).length;
-		}
-
-		count = 0;
-
-		for ( key in obj ) {
-			if ( Object.prototype.hasOwnProperty.call( obj, key ) ) {
-				count++;
-			}
-		}
-
-		return count;
-	}
 
 	/**
 	 * ULS Public class definition
+	 * @param {Element} element
+	 * @param {Object} options
 	 */
 	ULS = function ( element, options ) {
+		var code;
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.uls.defaults, options );
 		this.$menu = $( template );
 		this.languages = this.options.languages;
 
-		for ( var code in this.languages ) {
+		for ( code in this.languages ) {
 			if ( $.uls.data.languages[ code ] === undefined ) {
 				// Language is unknown to ULS.
 				delete this.languages[ code ];
@@ -131,7 +109,7 @@
 		/**
 		 * Calculate the position of ULS
 		 * Returns an object with top and left properties.
-		 * @returns {Object}
+		 * @return {Object}
 		 */
 		position: function () {
 			var pos,
@@ -142,13 +120,12 @@
 				pos = $.extend( {}, this.$element.offset(), {
 					height: this.$element[ 0 ].offsetHeight
 				} );
-				top =  pos.top + pos.height;
+				top = pos.top + pos.height;
 			}
 
 			if ( left === undefined ) {
 				left = $( window ).width() / 2 - this.$menu.outerWidth() / 2;
 			}
-
 
 			return {
 				top: top,
@@ -166,7 +143,7 @@
 				narrow: 'uls-narrow'
 			};
 
-			this.$menu.addClass( widthClasses[this.getMenuWidth()] );
+			this.$menu.addClass( widthClasses[ this.getMenuWidth() ] );
 
 			if ( !this.initialized ) {
 				$( 'body' ).prepend( this.$menu );
@@ -255,7 +232,7 @@
 				this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
 			}
 
-			languagesCount = objectLength( this.options.languages );
+			languagesCount = Object.keys( this.options.languages ).length;
 			lcd = this.$resultsView.lcd( {
 				languages: this.languages,
 				columns: columnsOptions[ this.getMenuWidth() ],
@@ -282,7 +259,7 @@
 
 		/**
 		 * On select handler for search results
-		 * @param langCode
+		 * @param {string} langCode
 		 */
 		select: function ( langCode ) {
 			this.hide();
@@ -293,9 +270,10 @@
 
 		/**
 		 * On cancel handler for the uls menu
+		 * @param {Event} e
 		 */
 		cancel: function ( e ) {
-			if ( e && ( this.$element.is( e.target ) || $.contains( this.$element[0], e.target ) ) ) {
+			if ( e && ( this.$element.is( e.target ) || $.contains( this.$element[ 0 ], e.target ) ) ) {
 				return;
 			}
 
@@ -347,7 +325,7 @@
 
 		/**
 		 * Get the panel menu width parameter
-		 * @return string
+		 * @return {string}
 		 */
 		getMenuWidth: function () {
 			var languagesCount;
@@ -356,7 +334,7 @@
 				return this.options.menuWidth;
 			}
 
-			languagesCount = objectLength( this.options.languages );
+			languagesCount = Object.keys( this.options.languages ).length;
 
 			if ( languagesCount < 25 ) {
 				return 'narrow';

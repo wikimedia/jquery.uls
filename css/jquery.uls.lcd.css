@@ -36,6 +36,16 @@
 	margin: 0;
 }
 
+.uls-language-block > ul {
+	/*
+	 * We don't want any visible bullets in this list. Not by default anyway.
+	 * Using very unspecific selector here to allow other classes to override.
+	 * Bug because overflow: hidden is incompatible with bullets, also render
+	 * the bullets inside the list in case there should be any.
+	 */
+	list-style: none none;
+}
+
 /*
  * Each block should have 16px padding on both sides. But because we already gave
  * 16px for the whole menu, we need to remove it for first and last items the blocks.
@@ -51,17 +61,6 @@
 
 .grid .uls-language-block > ul:last-child {
 	padding-right: 0;
-}
-
-
-.uls-language-block > ul {
-	/*
-	 * We don't want any visible bullets in this list. Not by default anyway.
-	 * Using very unspecific selector here to allow other classes to override.
-	 * Bug because overflow: hidden is incompatible with bullets, also render
-	 * the bullets inside the list in case there should be any.
-	 */
-	list-style: none none;
 }
 
 .uls-language-block > ul > li {

@@ -32,15 +32,18 @@
 }
 
 .grid .highlight {
-	background: #ffff99;
+	background: #ff9;
 }
 
 /* The Grid ---------------------- */
+
 .grid .row {
 	width: 100%;
 	max-width: none;
 	min-width: 600px;
 	margin: 0 auto;
+	/* Nicolas Gallagher's micro clearfix */
+	*zoom: 1;
 }
 
 .grid .row .row {
@@ -48,6 +51,14 @@
 	max-width: none;
 	min-width: 0;
 	margin: 0 -5px;
+}
+
+.grid .column,
+.grid .columns {
+	float: left;
+	min-height: 1px;
+	padding: 0 5px;
+	position: relative;
 }
 
 .grid .row.collapse .column,
@@ -55,25 +66,12 @@
 	padding: 0;
 }
 
-.grid .row .row {
-	width: auto;
-	max-width: none;
-	min-width: 0;
-	margin: 0 -5px;
-}
-
 .grid .row .row.collapse {
 	margin: 0;
 }
 
-.grid .column, .grid .columns {
-	float: left;
-	min-height: 1px;
-	padding: 0 5px;
-	position: relative;
-}
-
-.grid .column.centered, .grid .columns.centered {
+.grid .column.centered,
+.grid .columns.centered {
 	float: none;
 	margin: 0 auto;
 }
@@ -238,13 +236,9 @@
 	right: 83.333%;
 }
 
-/* Nicolas Gallagher's micro clearfix */
-.grid .row {
-	*zoom: 1;
-}
-
-.grid .row:before, .grid .row:after {
-	content: "";
+.grid .row:before,
+.grid .row:after {
+	content: '';
 	display: table;
 }
 
