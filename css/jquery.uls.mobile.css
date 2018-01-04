@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px) {
+@media only screen and ( max-width: 767px ) {
 
 	.uls-mobile.uls-menu {
 		width: 95%;
@@ -40,7 +40,7 @@
 		float: none;
 	}
 
-	.uls-mobile [class*="column"] + [class*="column"]:last-child {
+	.uls-mobile [ class*='column' ] + [ class*='column' ]:last-child {
 		float: none;
 	}
 
@@ -48,7 +48,7 @@
 	.uls-mobile .uls-mobile .columns:before,
 	.uls-mobile .column:after,
 	.columns:after {
-		content: "";
+		content: '';
 		display: table;
 	}
 
@@ -197,11 +197,12 @@
 }
 
 /* Very large display targeting */
-@media only screen and (min-width: 1441px) {
+@media only screen and ( min-width: 1441px ) {
 	.uls-mobile .hide-for-small,
 	.uls-mobile .hide-for-medium,
 	.uls-mobile .hide-for-medium-down,
-	.hide-for-large, .show-for-large-up,
+	.hide-for-large,
+	.show-for-large-up,
 	.show-for-xlarge {
 		display: block !important;
 	}
@@ -217,7 +218,7 @@
 }
 
 /* Medium display targeting */
-@media only screen and (max-width: 1279px) and (min-width: 768px) {
+@media only screen and ( max-width: 1279px ) and ( min-width: 768px ) {
 	.uls-mobile .hide-for-small,
 	.uls-mobile .show-for-medium,
 	.uls-mobile .show-for-medium-down,
@@ -238,7 +239,7 @@
 }
 
 /* Small display targeting */
-@media only screen and (max-width: 767px) {
+@media only screen and ( max-width: 767px ) {
 	.uls-mobile .show-for-small,
 	.uls-mobile .hide-for-medium,
 	.uls-mobile .show-for-medium-down,
@@ -268,7 +269,7 @@
 	display: none !important;
 }
 
-@media screen and (orientation: landscape) {
+@media screen and ( orientation: landscape ) {
 	.uls-mobile .show-for-landscape,
 	.uls-mobile .hide-for-portrait {
 		display: block !important;
@@ -279,7 +280,7 @@
 	}
 }
 
-@media screen and (orientation: portrait) {
+@media screen and ( orientation: portrait ) {
 	.uls-mobile .show-for-portrait,
 	.uls-mobile .hide-for-landscape {
 		display: block !important;

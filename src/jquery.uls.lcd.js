@@ -287,7 +287,6 @@
 			a.lang = code;
 			a.dir = $.uls.data.getDir( code );
 
-
 			li.appendChild( a );
 			if ( this.options.languageDecorator ) {
 				this.options.languageDecorator( $( a ), code );
@@ -365,6 +364,7 @@
 		},
 
 		noResults: function () {
+			var $suggestions;
 			this.$noResults.removeClass( 'hide' );
 			this.$noResults.siblings( '.uls-lcd-region-section' ).addClass( 'hide' );
 
@@ -373,7 +373,7 @@
 				return;
 			}
 
-			var $suggestions = this.buildQuicklist().clone();
+			$suggestions = this.buildQuicklist().clone();
 			$suggestions.removeClass( 'hide' ).removeAttr( 'id' );
 			$suggestions.find( 'h3' )
 				.data( 'i18n', 'uls-no-results-suggestion-title' )

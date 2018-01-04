@@ -1,10 +1,11 @@
-var through = require( 'through' );
+var through = require( 'through' ); // eslint-disable-line no-implicit-globals
 
-module.exports = function ( file ) {
+module.exports = function () {
 	var data, end, write;
 	data = '( function ( $ ) {\n\t$.uls = $.uls || {};\n\t$.uls.data = ';
 	write = function ( buf ) {
-		return data += buf;
+		data += buf;
+		return data;
 	};
 	end = function () {
 		data += '\n} ( jQuery ) );';

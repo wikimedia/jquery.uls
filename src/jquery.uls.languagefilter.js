@@ -27,6 +27,20 @@
 
 	var LanguageFilter, delay;
 
+	/**
+	 * Check if a prefix is visually prefix of a string
+	 *
+	 * @param {string} prefix
+	 * @param {string} string
+	 * @return {boolean}
+	 */
+	function isVisualPrefix( prefix, string ) {
+		// Pre-base vowel signs of Indic languages. A vowel sign is called pre-base if
+		// consonant + vowel becomes [vowel][consonant] when rendered. Eg: ക + െ => കെ
+		var prebases = 'െേൈൊോൌெேைொோௌେୈୋୌિਿिিেৈোৌෙේෛොෝෞ';
+		return prebases.indexOf( string[ prefix.length ] ) <= 0;
+	}
+
 	LanguageFilter = function ( element, options ) {
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.languagefilter.defaults, options );
@@ -72,58 +86,58 @@
 			var suggestion, query, languageFilter;
 
 			switch ( e.keyCode ) {
-			case 9: // Tab -> Autocomplete
-				suggestion = this.$suggestion.val();
+				case 9: // Tab -> Autocomplete
+					suggestion = this.$suggestion.val();
 
-				if ( suggestion && suggestion !== this.$element.val() ) {
-					this.$element.val( suggestion );
+					if ( suggestion && suggestion !== this.$element.val() ) {
+						this.$element.val( suggestion );
+						e.preventDefault();
+						e.stopPropagation();
+					}
+					break;
+				case 13: // Enter
+					if ( !this.options.onSelect ) {
+						break;
+					}
+
+					// Avoid bubbling this 'enter' to background page elements
 					e.preventDefault();
 					e.stopPropagation();
-				}
-				break;
-			case 13: // Enter
-				if ( !this.options.onSelect ) {
-					break;
-				}
 
-				// Avoid bubbling this 'enter' to background page elements
-				e.preventDefault();
-				e.stopPropagation();
+					query = $.trim( this.$element.val() ).toLowerCase();
 
-				query = $.trim( this.$element.val() ).toLowerCase();
-
-				if ( this.selectedLanguage ) {
+					if ( this.selectedLanguage ) {
 					// this.selectLanguage will be populated from a matching search
-					this.options.onSelect( this.selectedLanguage );
-				} else if ( this.options.languages[ query ] ) {
+						this.options.onSelect( this.selectedLanguage );
+					} else if ( this.options.languages[ query ] ) {
 					// Search is yet to happen (in timeout delay),
 					// but we have a matching language code.
-					this.options.onSelect( query );
-				}
-
-				break;
-			default:
-				languageFilter = this;
-
-				if ( e.which < 32 &&
-					e.which !== 8 // Backspace
-				) {
-					// ignore any ASCII control characters
-					break;
-				}
-
-				this.selectedLanguage = null;
-
-				delay( function () {
-					if ( !languageFilter.$element.val() ) {
-						languageFilter.clear();
-					} else {
-						languageFilter.options.$target.empty();
-						languageFilter.search();
+						this.options.onSelect( query );
 					}
-				}, 300 );
 
-				this.toggleClear();
+					break;
+				default:
+					languageFilter = this;
+
+					if ( e.which < 32 &&
+					e.which !== 8 // Backspace
+					) {
+					// ignore any ASCII control characters
+						break;
+					}
+
+					this.selectedLanguage = null;
+
+					delay( function () {
+						if ( !languageFilter.$element.val() ) {
+							languageFilter.clear();
+						} else {
+							languageFilter.options.$target.empty();
+							languageFilter.search();
+						}
+					}, 300 );
+
+					this.toggleClear();
 			}
 		},
 
@@ -213,7 +227,7 @@
 		 * Handler method to be called once search is over.
 		 * Based on search result triggers resultsfound or noresults events
 		 * @param {string} query
-		 * @param {number} resultCount
+		 * @param {string[]} results
 		 * @param {string} [autofillLabel]
 		 */
 		resultHandler: function ( query, results, autofillLabel ) {
@@ -284,7 +298,7 @@
 		},
 
 		escapeRegex: function ( value ) {
-			return value.replace( /[\-\[\]{}()*+?.,\\\^$\|#\s]/g, '\\$&' );
+			return value.replace( /[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&' );
 		},
 
 		/**
@@ -294,6 +308,9 @@
 		 * b) Language autonym 'starts with' search string.
 		 * c) ISO 639 code match with search string.
 		 * d) ISO 15924 code for the script match the search string.
+		 * @param {string} langCode
+		 * @param {string} searchTerm
+		 * @return {boolean}
 		 */
 		filter: function ( langCode, searchTerm ) {
 			// FIXME script is ISO 15924 code. We might need actual name of script.
@@ -343,16 +360,4 @@
 
 	$.fn.languagefilter.Constructor = LanguageFilter;
 
-	/**
-	 * Check if a prefix is visually prefix of a string
-	 *
-	 * @param {string} prefix
-	 * @param {string} string
-	 */
-	function isVisualPrefix( prefix, string ) {
-		// Pre-base vowel signs of Indic languages. A vowel sign is called pre-base if
-		// consonant + vowel becomes [vowel][consonant] when rendered. Eg: ക + െ => കെ
-		var prebases = 'െേൈൊോൌெேைொோௌେୈୋୌિਿिিেৈোৌෙේෛොෝෞ';
-		return prebases.indexOf( string[ prefix.length ] ) <= 0;
-	}
 }( jQuery ) );

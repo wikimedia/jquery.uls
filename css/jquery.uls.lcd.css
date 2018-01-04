@@ -43,6 +43,13 @@
 .grid .uls-language-block > ul {
 	margin: 0 0 20px 0;
 	padding: 0 16px;
+	/*
+	 * We don't want any visible bullets in this list. Not by default anyway.
+	 * Using very unspecific selector here to allow other classes to override.
+	 * Bug because overflow: hidden is incompatible with bullets, also render
+	 * the bullets inside the list in case there should be any.
+	 */
+	list-style: none none;
 }
 
 .grid .uls-language-block > ul:first-child {
@@ -51,17 +58,6 @@
 
 .grid .uls-language-block > ul:last-child {
 	padding-right: 0;
-}
-
-
-.uls-language-block > ul {
-	/*
-	 * We don't want any visible bullets in this list. Not by default anyway.
-	 * Using very unspecific selector here to allow other classes to override.
-	 * Bug because overflow: hidden is incompatible with bullets, also render
-	 * the bullets inside the list in case there should be any.
-	 */
-	list-style: none none;
 }
 
 .uls-language-block > ul > li {
