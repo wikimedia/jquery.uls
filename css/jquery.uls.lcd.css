@@ -36,13 +36,7 @@
 	margin: 0;
 }
 
-/*
- * Each block should have 16px padding on both sides. But because we already gave
- * 16px for the whole menu, we need to remove it for first and last items the blocks.
- */
-.grid .uls-language-block > ul {
-	margin: 0 0 20px 0;
-	padding: 0 16px;
+.uls-language-block > ul {
 	/*
 	 * We don't want any visible bullets in this list. Not by default anyway.
 	 * Using very unspecific selector here to allow other classes to override.
@@ -50,6 +44,15 @@
 	 * the bullets inside the list in case there should be any.
 	 */
 	list-style: none none;
+}
+
+/*
+ * Each block should have 16px padding on both sides. But because we already gave
+ * 16px for the whole menu, we need to remove it for first and last items the blocks.
+ */
+.grid .uls-language-block > ul {
+	margin: 0 0 20px 0;
+	padding: 0 16px;
 }
 
 .grid .uls-language-block > ul:first-child {

@@ -1,5 +1,5 @@
-/* jshint node:true */
 'use strict';
+
 module.exports = function ( grunt ) {
 	grunt.loadNpmTasks( 'grunt-eslint' );
 	grunt.loadNpmTasks( 'grunt-stylelint' );
@@ -17,7 +17,7 @@ module.exports = function ( grunt ) {
 		},
 		stylelint: {
 			options: {
-				syntax: 'less'
+				syntax: 'css'
 			},
 			src: [
 				'**/*.css',
