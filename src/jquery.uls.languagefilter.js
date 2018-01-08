@@ -69,7 +69,7 @@
 
 		listen: function () {
 
-			this.$element.keydown( $.proxy( this.keypress, this ) );
+			this.$element.on( 'keydown', $.proxy( this.keypress, this ) );
 
 			if ( this.$clear.length ) {
 				this.$clear.on( 'click', $.proxy( this.clear, this ) );

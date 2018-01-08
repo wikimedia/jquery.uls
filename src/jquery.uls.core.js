@@ -225,7 +225,7 @@
 			} );
 
 			// Handle key press events on the menu
-			this.$menu.keydown( $.proxy( this.keypress, this ) );
+			this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
 
 			languagesCount = Object.keys( this.options.languages ).length;
 			lcd = this.$resultsView.lcd( {
