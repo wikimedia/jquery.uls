@@ -147,7 +147,7 @@
 
 				$section = $( '<div>' )
 					.addClass( 'uls-lcd-region-section hide' )
-					.attr( 'id', regionCode );
+					.attr( 'data-region', regionCode );
 
 				// Show a region heading, unless we are using a narrow ULS
 				if ( !narrowMode ) {
@@ -176,9 +176,9 @@
 			this.$noResults.addClass( 'hide' );
 			this.$element.children( '.uls-lcd-region-section' ).each( function () {
 				var $region = $( this ),
-					regionCode = $region.attr( 'id' );
+					regionCode = $region.data( 'region' );
 
-				if ( $region.is( '#uls-lcd-quicklist' ) ) {
+				if ( $region.is( '.uls-lcd-quicklist' ) ) {
 					return;
 				}
 
@@ -302,7 +302,7 @@
 		 * Adds quicklist as a region.
 		 */
 		quicklist: function () {
-			this.$element.find( '#uls-lcd-quicklist' ).removeClass( 'hide' );
+			this.$element.find( '.uls-lcd-quicklist' ).removeClass( 'hide' );
 		},
 
 		buildQuicklist: function () {
@@ -327,8 +327,7 @@
 			quickList.sort( $.uls.data.sortByAutonym );
 
 			$quickListSection = $( '<div>' )
-				.addClass( 'uls-lcd-region-section' )
-				.attr( 'id', 'uls-lcd-quicklist' );
+				.addClass( 'uls-lcd-region-section uls-lcd-quicklist' );
 
 			$quickListSectionTitle = $( '<h3>' )
 				.attr( 'data-i18n', 'uls-common-languages' )
@@ -356,7 +355,7 @@
 		},
 
 		empty: function () {
-			this.$element.find( '#uls-lcd-quicklist' ).addClass( 'hide' );
+			this.$element.find( '.uls-lcd-quicklist' ).addClass( 'hide' );
 		},
 
 		focus: function () {
@@ -374,7 +373,7 @@
 			}
 
 			$suggestions = this.buildQuicklist().clone();
-			$suggestions.removeClass( 'hide' ).removeAttr( 'id' );
+			$suggestions.removeClass( 'hide' );
 			$suggestions.find( 'h3' )
 				.data( 'i18n', 'uls-no-results-suggestion-title' )
 				.text( 'You may be interested in:' )
