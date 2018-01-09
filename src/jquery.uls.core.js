@@ -30,11 +30,11 @@
 				<div class="uls-search-wrapper"> \
 					<label class="uls-search-label" for="uls-languagefilter"></label>\
 					<div class="uls-search-input-wrapper">\
-						<span id="uls-languagefilter-clear" class="uls-languagefilter-clear"></span>\
+						<span class="uls-languagefilter-clear"></span>\
 						<input type="text" class="uls-filterinput uls-filtersuggestion"\
-							id="uls-filtersuggestion" disabled="true" autocomplete="off">\
+							disabled="true" autocomplete="off">\
 						<input type="text" class="uls-filterinput uls-languagefilter"\
-							id="uls-languagefilter" data-clear="uls-languagefilter-clear"\
+							data-clear="uls-languagefilter-clear"\
 							data-suggestion="uls-filtersuggestion"\
 							placeholder="Search for a language" autocomplete="off">\
 					</div>\
@@ -68,7 +68,7 @@
 		this.shown = false;
 		this.initialized = false;
 
-		this.$languageFilter = this.$menu.find( '#uls-languagefilter' );
+		this.$languageFilter = this.$menu.find( '.uls-languagefilter' );
 		this.$resultsView = this.$menu.find( '.uls-language-list' );
 
 		this.render();
