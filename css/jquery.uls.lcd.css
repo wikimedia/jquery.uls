@@ -102,6 +102,18 @@
 	vertical-align: middle;
 }
 
+.uls-no-results-view {
+	display: none;
+}
+
+.uls-lcd.uls-no-results > .uls-lcd-region-section {
+	display: none;
+}
+
+.uls-lcd.uls-no-results > .uls-no-results-view {
+	display: block;
+}
+
 .uls-no-results-found-title {
 	font-size: 16px;
 	padding: 0 16px 0 28px;

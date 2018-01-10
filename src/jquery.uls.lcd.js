@@ -22,30 +22,30 @@
 ( function ( $ ) {
 	'use strict';
 
-	var noResultsTemplate, LanguageCategoryDisplay;
+	// eslint-disable-next-line no-multi-str
+	var noResultsTemplate = '<div class="uls-no-results-view"> \
+		<h2 data-i18n="uls-no-results-found" class="uls-no-results-found-title">No results found</h2> \
+		<div class="uls-no-found-more"> \
+		<div><p> \
+		<span data-i18n="uls-search-help">You can search by language name, script name, ISO code of language or you can browse by region.</span>\
+		</p></div> \
+		</div></div>';
 
-	noResultsTemplate = $( '<div>' ).addClass( 'uls-no-results-view hide' );
-	noResultsTemplate.append(
-		$( '<h2>' )
-			.attr( 'data-i18n', 'uls-no-results-found' )
-			.addClass( 'uls-no-results-found-title' )
-			.text( 'No results found' ),
-		$( '<div>' )
-			.addClass( 'uls-no-found-more' )
-			.append(
-				$( '<div>' )
-					.addClass( '' )
-					.append(
-						$( '<p>' ).append(
-							$( '<span>' )
-								.attr( 'data-i18n', 'uls-search-help' )
-								.text( 'You can search by language name, script name, ISO code of language or you can browse by region.' )
-						)
-					)
-			)
-	);
-
-	LanguageCategoryDisplay = function ( element, options ) {
+	/**
+	 * Language category display
+	 * @param {Element} element The container element to which the languages to be displayed
+	 * @param {Object} [options] Configuration object
+	 * @cfg {Object} [languages] Languages known to the ULS. Keyed by language code, values are autonyms.
+	 * @cfg {string[]} [showRegions] Array of region codes to show. Default is
+	 *  [ 'WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA' ],
+	 * @cfg {number} [itemsPerColumn] Number of languages per column.
+	 * @cfg {number} [columns] Number of columns for languages. Default is 4.
+	 * @cfg {function} [languageDecorator] Callback function to be called when a language
+	 *  link is prepared - for custom decoration.
+	 * @cfg {function|string[]} [quickList] The languages to display as suggestions for quick selectoin.
+	 * @cfg {string|jQuery} [noResultsTemplate]
+	 */
+	function LanguageCategoryDisplay( element, options ) {
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.lcd.defaults, options );
 		this.$element.addClass( 'uls-lcd' );
@@ -53,12 +53,9 @@
 		this.renderTimeout = null;
 		this.cachedQuicklist = null;
 
-		this.$element.append( noResultsTemplate.clone() );
-		this.$noResults = this.$element.children( '.uls-no-results-view' );
-
 		this.render();
 		this.listen();
-	};
+	}
 
 	LanguageCategoryDisplay.prototype = {
 		constructor: LanguageCategoryDisplay,
@@ -163,6 +160,8 @@
 
 			lcd.$element.append( regions );
 
+			this.$element.append( $( this.options.noResultsTemplate ) );
+
 			this.i18n();
 		},
 
@@ -173,7 +172,7 @@
 			var languages,
 				lcd = this;
 
-			this.$noResults.addClass( 'hide' );
+			this.$element.removeClass( 'uls-no-results' );
 			this.$element.children( '.uls-lcd-region-section' ).each( function () {
 				var $region = $( this ),
 					regionCode = $region.data( 'region' );
@@ -363,22 +362,20 @@
 		},
 
 		noResults: function () {
-			var $suggestions;
-			this.$noResults.removeClass( 'hide' );
-			this.$noResults.siblings( '.uls-lcd-region-section' ).addClass( 'hide' );
+			var $suggestions, $noResults;
 
-			// Only build the data once
-			if ( this.$noResults.find( '.uls-lcd-region-title' ).length ) {
-				return;
-			}
+			this.$element.addClass( 'uls-no-results' );
+			$noResults = this.$element.children( '.uls-no-results-view' );
 
 			$suggestions = this.buildQuicklist().clone();
-			$suggestions.removeClass( 'hide' );
-			$suggestions.find( 'h3' )
+			$suggestions
+				.removeClass( 'hide' )
+				.find( 'h3' )
 				.data( 'i18n', 'uls-no-results-suggestion-title' )
 				.text( 'You may be interested in:' )
 				.i18n();
-			this.$noResults.find( 'h2' ).after( $suggestions );
+
+			$noResults.find( 'h2' ).after( $suggestions );
 		},
 
 		listen: function () {
@@ -416,8 +413,8 @@
 		// Other values will have rendering issues.
 		columns: 4,
 		languageDecorator: null,
-		quickList: []
+		quickList: [],
+		noResultsTemplate: noResultsTemplate
 	};
 
-	$.fn.lcd.Constructor = LanguageCategoryDisplay;
 }( jQuery ) );
