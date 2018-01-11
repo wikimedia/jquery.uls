@@ -25,6 +25,7 @@
 	// eslint-disable-next-line no-multi-str
 	var noResultsTemplate = '<div class="uls-no-results-view"> \
 		<h2 data-i18n="uls-no-results-found" class="uls-no-results-found-title">No results found</h2> \
+		<div class="uls-no-results-suggestions"></div> \
 		<div class="uls-no-found-more"> \
 		<div><p> \
 		<span data-i18n="uls-search-help">You can search by language name, script name, ISO code of language or you can browse by region.</span>\
@@ -40,10 +41,10 @@
 	 *  [ 'WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA' ],
 	 * @cfg {number} [itemsPerColumn] Number of languages per column.
 	 * @cfg {number} [columns] Number of columns for languages. Default is 4.
-	 * @cfg {function} [languageDecorator] Callback function to be called when a language
+	 * @cfg {Function} [languageDecorator] Callback function to be called when a language
 	 *  link is prepared - for custom decoration.
-	 * @cfg {function|string[]} [quickList] The languages to display as suggestions for quick selectoin.
-	 * @cfg {string|jQuery} [noResultsTemplate]
+	 * @cfg {Function|string[]} [quickList] The languages to display as suggestions for quick selectoin.
+	 * @cfg {jQuery} [noResultsTemplate]
 	 */
 	function LanguageCategoryDisplay( element, options ) {
 		this.$element = $( element );
@@ -159,8 +160,6 @@
 			} );
 
 			lcd.$element.append( regions );
-
-			this.$element.append( $( this.options.noResultsTemplate ) );
 
 			this.i18n();
 		},
@@ -353,6 +352,9 @@
 			}
 		},
 
+		/**
+		 * Called when a fresh search is started
+		 */
 		empty: function () {
 			this.$element.find( '.uls-lcd-quicklist' ).addClass( 'hide' );
 		},
@@ -361,21 +363,29 @@
 			this.$element.focus();
 		},
 
-		noResults: function () {
-			var $suggestions, $noResults;
+		/**
+		 * No-results event handler
+		 * @param {Event} event
+		 * @param {string} [currentSearchQuery] Current search query that gave mp results
+		 */
+		noResults: function ( event, currentSearchQuery ) {
+			var $noResults;
 
 			this.$element.addClass( 'uls-no-results' );
-			$noResults = this.$element.children( '.uls-no-results-view' );
 
-			$suggestions = this.buildQuicklist().clone();
-			$suggestions
-				.removeClass( 'hide' )
-				.find( 'h3' )
-				.data( 'i18n', 'uls-no-results-suggestion-title' )
-				.text( 'You may be interested in:' )
-				.i18n();
+			this.$element.find( '.uls-no-results-view' ).remove();
 
-			$noResults.find( 'h2' ).after( $suggestions );
+			if ( typeof this.options.noResultsTemplate === 'function' ) {
+				$noResults =
+						this.options.noResultsTemplate.call( this, currentSearchQuery );
+			} else if ( this.options.noResultsTemplate instanceof jQuery ) {
+				$noResults = this.options.noResultsTemplate;
+			} else {
+				throw new Error( 'noResultsTemplate option must be ' +
+					'either jQuery or function returning jQuery' );
+			}
+
+			this.$element.append( $noResults.addClass( 'uls-no-results-view' ) );
 		},
 
 		listen: function () {
@@ -414,7 +424,20 @@
 		columns: 4,
 		languageDecorator: null,
 		quickList: [],
-		noResultsTemplate: noResultsTemplate
+		noResultsTemplate: function () {
+			var $suggestionsContainer, $suggestions,
+				$noResultsTemplate = $( noResultsTemplate );
+
+			$suggestions = this.buildQuicklist().clone();
+			$suggestions.removeClass( 'hide' )
+				.find( 'h3' )
+				.data( 'i18n', 'uls-no-results-suggestion-title' )
+				.text( 'You may be interested in:' )
+				.i18n();
+			$suggestionsContainer = $noResultsTemplate.find( '.uls-no-results-suggestions' );
+			$suggestionsContainer.append( $suggestions );
+			return $noResultsTemplate;
+		}
 	};
 
 }( jQuery ) );
