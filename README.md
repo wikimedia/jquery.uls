@@ -72,6 +72,7 @@ $( '.uls-trigger' ).uls( {
 | searchAPI   | API URL. Parameter query with the user query is appened to it. |
 | menuWidth   | Override the automatic choice of menu width. One of narrow, medium, wide (1, 2, 4 columns respectively). |
 | showRegions | Regions to be shown in the language selector. Defaults to [ WW, AM, EU, ME, AF, AS, PA ] |
+| groupByRegion | Whether to group languages by the regions. Defaults to true, ecxept if menuWidth is narrow. |
 | itemsPerColumn | Number of languages per column. Default is 8 |
 | languageDecorator | Callback function to be called when a language link is prepared - for custom decoration. Arguments: (a) the $language - the language link jQuery object (b) languageCode. The function can do any styling, changing properties etc on the passed link. See examples/decorator.html for example usage.|
 

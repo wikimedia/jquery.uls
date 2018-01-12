@@ -131,7 +131,7 @@
 						if ( !languageFilter.$element.val() ) {
 							languageFilter.clear();
 						} else {
-							languageFilter.options.$target.empty();
+							languageFilter.options.lcd.empty();
 							languageFilter.search();
 						}
 					}, 300 );
@@ -185,11 +185,13 @@
 				query = $.trim( this.$element.val() ).toLowerCase();
 
 			if ( query === '' ) {
+				this.options.lcd.setGroupByRegionOverride( undefined );
 				languages.map( this.render.bind( this ) );
 				this.resultHandler( query, languages );
 				return;
 			}
 
+			this.options.lcd.setGroupByRegionOverride( false );
 			// Local search results
 			results = languages.filter( function ( langCode ) {
 				return this.filter( langCode, query );
@@ -286,14 +288,7 @@
 		},
 
 		render: function ( langCode ) {
-			// This is actually instance of LanguageCategoryDisplay and not jQuery!
-			var $target = this.options.$target;
-
-			if ( !$target ) {
-				return false;
-			}
-
-			return $target.append( langCode );
+			return this.options.lcd.append( langCode );
 		},
 
 		escapeRegex: function ( value ) {
@@ -352,7 +347,7 @@
 
 	$.fn.languagefilter.defaults = {
 		// LanguageCategoryDisplay
-		$target: undefined,
+		lcd: undefined,
 		// URL to which we append query parameter with the query value
 		searchAPI: undefined,
 		// Object of language tags to language names

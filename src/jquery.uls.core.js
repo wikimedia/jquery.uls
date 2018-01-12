@@ -235,11 +235,12 @@
 				showRegions: this.options.showRegions,
 				languageDecorator: this.options.languageDecorator,
 				noResultsTemplate: this.options.noResultsTemplate,
-				itemsPerColumn: this.options.itemsPerColumn
+				itemsPerColumn: this.options.itemsPerColumn,
+				groupByRegion: this.options.groupByRegion
 			} ).data( 'lcd' );
 
 			this.$languageFilter.languagefilter( {
-				$target: lcd,
+				lcd: lcd,
 				languages: this.languages,
 				searchAPI: this.options.searchAPI,
 				onSelect: $.proxy( this.select, this )
@@ -391,6 +392,8 @@
 		languageDecorator: undefined,
 		// Used by LCD
 		itemsPerColumn: undefined,
+		// Used by LCD
+		groupByRegion: undefined,
 		// Used by LanguageFilter
 		searchAPI: undefined
 	};
