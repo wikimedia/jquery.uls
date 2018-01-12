@@ -191,13 +191,6 @@
 		},
 
 		/**
-		 * Callback for no results found context.
-		 */
-		noresults: function () {
-			this.$resultsView.lcd( 'noResults' );
-		},
-
-		/**
 		 * Callback for results found context.
 		 */
 		success: function () {
@@ -241,7 +234,8 @@
 				clickhandler: $.proxy( this.select, this ),
 				source: this.$languageFilter,
 				showRegions: this.options.showRegions,
-				languageDecorator: this.options.languageDecorator
+				languageDecorator: this.options.languageDecorator,
+				noResultsTemplate: this.options.noResultsTemplate
 			} ).data( 'lcd' );
 
 			this.$languageFilter.languagefilter( {
@@ -251,7 +245,7 @@
 				onSelect: $.proxy( this.select, this )
 			} );
 
-			this.$languageFilter.on( 'noresults.uls', $.proxy( this.noresults, this ) );
+			this.$languageFilter.on( 'noresults.uls', $.proxy( lcd.noResults, lcd ) );
 			this.$languageFilter.on( 'resultsfound.uls', $.proxy( this.success, this ) );
 
 			$( 'html' ).click( $.proxy( this.cancel, this ) );

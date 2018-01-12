@@ -34,7 +34,9 @@
 						var languageName = $.uls.data.getAutonym( language );
 						$( '.uls-trigger' ).text( languageName );
 					},
-					quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr'] //FIXME
+					noResultsTemplate: function( query ) {
+						return $( '<div>No article exists in the language ' + query + '</div>' )
+					}
 				} );
 			} );
 		</script>
