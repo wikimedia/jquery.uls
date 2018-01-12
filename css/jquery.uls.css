@@ -1,8 +1,8 @@
 .uls-trigger {
-	background: url( ../images/icon-language.png ) no-repeat left center;
+	background: url( ../images/language-ltr.png ) no-repeat left center;
 	/* @embed */
-	background-image: linear-gradient( transparent, transparent ), url( ../images/icon-language.svg );
-	padding-left: 30px;
+	background-image: linear-gradient( transparent, transparent ), url( ../images/language-ltr.svg );
+	padding-left: 25px;
 }
 
 .uls-menu {
