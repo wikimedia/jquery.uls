@@ -19,8 +19,7 @@
 
 /**
  * Usage: $( 'inputbox' ).languagefilter();
- * The values for autocompletion is from the options.languages.
- * The data is in the format of languagecode:languagename.
+ * The values for autocompletion is from the options.languages or options.searchAPI.
  */
 ( function ( $ ) {
 	'use strict';
@@ -352,10 +351,14 @@
 	};
 
 	$.fn.languagefilter.defaults = {
-		$target: null, // Where to append the results
-		searchAPI: null,
-		languages: null, // Languages as code:name format.
-		onSelect: null // Language select handler - like enter in filter textbox.
+		// LanguageCategoryDisplay
+		$target: undefined,
+		// URL to which we append query parameter with the query value
+		searchAPI: undefined,
+		// Object of language tags to language names
+		languages: [],
+		// Callback function when language is selected
+		onSelect: undefined
 	};
 
 	$.fn.languagefilter.Constructor = LanguageFilter;

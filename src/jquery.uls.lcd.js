@@ -36,14 +36,15 @@
 	 * Language category display
 	 * @param {Element} element The container element to which the languages to be displayed
 	 * @param {Object} [options] Configuration object
-	 * @cfg {Object} [languages] Languages known to the ULS. Keyed by language code, values are autonyms.
+	 * @cfg {Object} [languages] Selectable languages. Keyed by language code, values are autonyms.
 	 * @cfg {string[]} [showRegions] Array of region codes to show. Default is
-	 *  [ 'WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA' ],
+	 *  [ 'WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA' ]
 	 * @cfg {number} [itemsPerColumn] Number of languages per column.
 	 * @cfg {number} [columns] Number of columns for languages. Default is 4.
 	 * @cfg {Function} [languageDecorator] Callback function to be called when a language
 	 *  link is prepared - for custom decoration.
-	 * @cfg {Function|string[]} [quickList] The languages to display as suggestions for quick selectoin.
+	 * @cfg {Function|string[]} [quickList] The languages to display as suggestions for quick selection.
+	 * @cfg {Function} [clickhandler] Callback when language is selected.
 	 * @cfg {jQuery|Function} [noResultsTemplate]
 	 */
 	function LanguageCategoryDisplay( element, options ) {
@@ -416,14 +417,21 @@
 	};
 
 	$.fn.lcd.defaults = {
-		languages: null,
+		// List of languages to show
+		languages: [],
+		// List of regions to show
 		showRegions: [ 'WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA' ],
+		// How many items per column until new "row" starts
 		itemsPerColumn: 8,
-		// Other supported values are 1 and 2.
-		// Other values will have rendering issues.
+		// Number of columns, only 1, 2 and 4 are supported
 		columns: 4,
-		languageDecorator: null,
+		// Callback function for language item styling
+		languageDecorator: undefined,
+		// Likely candidates, ignored if languages.length < 12
 		quickList: [],
+		// Callback function for language selection
+		clickhandler: undefined,
+		// Callback function when no search results
 		noResultsTemplate: function () {
 			var $suggestionsContainer, $suggestions,
 				$noResultsTemplate = $( noResultsTemplate );
