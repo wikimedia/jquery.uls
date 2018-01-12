@@ -44,7 +44,7 @@
 	 * @cfg {Function} [languageDecorator] Callback function to be called when a language
 	 *  link is prepared - for custom decoration.
 	 * @cfg {Function|string[]} [quickList] The languages to display as suggestions for quick selectoin.
-	 * @cfg {jQuery} [noResultsTemplate]
+	 * @cfg {jQuery|Function} [noResultsTemplate]
 	 */
 	function LanguageCategoryDisplay( element, options ) {
 		this.$element = $( element );
@@ -377,7 +377,7 @@
 
 			if ( typeof this.options.noResultsTemplate === 'function' ) {
 				$noResults =
-						this.options.noResultsTemplate.call( this, currentSearchQuery );
+					this.options.noResultsTemplate.call( this, currentSearchQuery );
 			} else if ( this.options.noResultsTemplate instanceof jQuery ) {
 				$noResults = this.options.noResultsTemplate;
 			} else {
