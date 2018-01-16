@@ -213,7 +213,7 @@
 					narrow: 1
 				};
 
-			languagesCount = objectLength( this.options.languages );
+			languagesCount = Object.keys( this.options.languages ).length;
 			lcd = this.$resultsView.lcd( {
 				languages: this.languages,
 				columns: columnsOptions[ this.menuWidth ],
@@ -231,6 +231,8 @@
 				searchAPI: this.options.searchAPI,
 				onSelect: $.proxy( this.select, this )
 			} );
+
+			this.$languageFilter.on( 'noresults.uls', $.proxy( lcd.noResults, lcd ) );
 		},
 
 		recreateLanguageFilter: function () {
@@ -264,7 +266,6 @@
 
 			this.createLanguageFilter();
 
-			this.$languageFilter.on( 'noresults.uls', $.proxy( lcd.noResults, lcd ) );
 			this.$languageFilter.on( 'resultsfound.uls', $.proxy( this.success, this ) );
 
 			$( 'html' ).click( $.proxy( this.cancel, this ) );
