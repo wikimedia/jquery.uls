@@ -67,6 +67,8 @@
 		this.top = this.options.top;
 		this.shown = false;
 		this.initialized = false;
+		this.shouldRecreate = false;
+		this.menuWidth = this.getMenuWidth();
 
 		this.$languageFilter = this.$menu.find( '.uls-languagefilter' );
 		this.$resultsView = this.$menu.find( '.uls-language-list' );
@@ -143,7 +145,7 @@
 				narrow: 'uls-narrow'
 			};
 
-			this.$menu.addClass( widthClasses[ this.getMenuWidth() ] );
+			this.$menu.addClass( widthClasses[ this.menuWidth ] );
 
 			if ( !this.initialized ) {
 				$( 'body' ).prepend( this.$menu );
@@ -177,6 +179,12 @@
 			this.$menu.hide();
 			this.shown = false;
 
+			this.$menu.removeClass( 'uls-wide uls-medium uls-narrow' );
+
+			if ( this.shouldRecreate ) {
+				this.recreateLanguageFilter();
+			}
+
 			if ( this.options.onCancel ) {
 				this.options.onCancel.call( this );
 			}
@@ -197,18 +205,47 @@
 			this.$resultsView.show();
 		},
 
+		createLanguageFilter: function () {
+			var lcd, languagesCount,
+				columnsOptions = {
+					wide: 4,
+					medium: 2,
+					narrow: 1
+				};
+
+			languagesCount = objectLength( this.options.languages );
+			lcd = this.$resultsView.lcd( {
+				languages: this.languages,
+				columns: columnsOptions[ this.menuWidth ],
+
+				quickList: languagesCount > 12 ? this.options.quickList : [],
+				clickhandler: $.proxy( this.select, this ),
+				source: this.$languageFilter,
+				showRegions: this.options.showRegions,
+				languageDecorator: this.options.languageDecorator
+			} ).data( 'lcd' );
+
+			this.$languageFilter.languagefilter( {
+				$target: lcd,
+				languages: this.languages,
+				searchAPI: this.options.searchAPI,
+				onSelect: $.proxy( this.select, this )
+			} );
+		},
+
+		recreateLanguageFilter: function () {
+			this.$resultsView.removeData( 'lcd' );
+			this.$resultsView.empty();
+			this.$languageFilter.removeData( 'languagefilter' );
+			this.createLanguageFilter();
+
+			this.shouldRecreate = false;
+		},
+
 		/**
 		 * Bind the UI elements with their event listeners
 		 */
 		listen: function () {
-			var lcd, columnsOptions, languagesCount;
-
-			columnsOptions = {
-				wide: 4,
-				medium: 2,
-				narrow: 1
-			};
-
 			// Register all event listeners to the ULS here.
 			this.$element.on( 'click', $.proxy( this.click, this ) );
 
@@ -225,30 +262,27 @@
 				this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
 			}
 
-			languagesCount = Object.keys( this.options.languages ).length;
-			lcd = this.$resultsView.lcd( {
-				languages: this.languages,
-				columns: columnsOptions[ this.getMenuWidth() ],
-
-				quickList: languagesCount > 12 ? this.options.quickList : [],
-				clickhandler: $.proxy( this.select, this ),
-				source: this.$languageFilter,
-				showRegions: this.options.showRegions,
-				languageDecorator: this.options.languageDecorator,
-				noResultsTemplate: this.options.noResultsTemplate
-			} ).data( 'lcd' );
-
-			this.$languageFilter.languagefilter( {
-				$target: lcd,
-				languages: this.languages,
-				searchAPI: this.options.searchAPI,
-				onSelect: $.proxy( this.select, this )
-			} );
+			this.createLanguageFilter();
 
 			this.$languageFilter.on( 'noresults.uls', $.proxy( lcd.noResults, lcd ) );
 			this.$languageFilter.on( 'resultsfound.uls', $.proxy( this.success, this ) );
 
 			$( 'html' ).click( $.proxy( this.cancel, this ) );
+			$( window ).resize( $.debounce( 250, this.resize.bind( this ) ) );
+		},
+
+		resize: function () {
+			var menuWidth = this.getMenuWidth();
+
+			if ( this.menuWidth === menuWidth ) {
+				return;
+			}
+
+			this.menuWidth = menuWidth;
+			this.shouldRecreate = true;
+			if ( !this.shown ) {
+				this.recreateLanguageFilter();
+			}
 		},
 
 		/**
@@ -322,7 +356,8 @@
 		 * @return {string}
 		 */
 		getMenuWidth: function () {
-			var languagesCount;
+			var languagesCount,
+				screenWidth = document.documentElement.clientWidth;
 
 			if ( this.options.menuWidth ) {
 				return this.options.menuWidth;
@@ -330,15 +365,15 @@
 
 			languagesCount = Object.keys( this.options.languages ).length;
 
-			if ( languagesCount < 25 ) {
-				return 'narrow';
+			if ( screenWidth > 900 && languagesCount >= 48 ) {
+				return 'wide';
 			}
 
-			if ( languagesCount < 100 ) {
+			if ( screenWidth > 500 && languagesCount >= 24 ) {
 				return 'medium';
 			}
 
-			return 'wide';
+			return 'narrow';
 		},
 
 		isMobile: function () {
