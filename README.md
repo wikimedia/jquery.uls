@@ -75,6 +75,7 @@ $( '.uls-trigger' ).uls( {
 | groupByRegion | Whether to group languages by the regions: true of false. Default value depends on the menu width. |
 | itemsPerColumn | Number of languages per column. Default is 8 |
 | languageDecorator | Callback function to be called when a language link is prepared - for custom decoration. Arguments: (a) the $language - the language link jQuery object (b) languageCode. The function can do any styling, changing properties etc on the passed link. See examples/decorator.html for example usage.|
+| noResultsTemplate | A jQuery object or a function that returns a jQuery object. This will be used as the template to display when no results found from the search. The function will receive the current search query as argument|
 
 
 Features
