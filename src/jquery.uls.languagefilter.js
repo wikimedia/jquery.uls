@@ -185,7 +185,7 @@
 				query = $.trim( this.$element.val() ).toLowerCase();
 
 			if ( query === '' ) {
-				this.options.lcd.setGroupByRegionOverride( undefined );
+				this.options.lcd.setGroupByRegionOverride( null );
 				languages.map( this.render.bind( this ) );
 				this.resultHandler( query, languages );
 				return;

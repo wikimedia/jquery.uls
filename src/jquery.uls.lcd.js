@@ -59,6 +59,7 @@
 		this.regionLanguages = {};
 		this.renderTimeout = null;
 		this.cachedQuicklist = null;
+		this.groupByRegionOverride = null;
 
 		this.render();
 		this.listen();
@@ -81,7 +82,7 @@
 				return false;
 			}
 
-			if ( !this.groupByRegion() ) {
+			if ( !this.isGroupingByRegionEnabled() ) {
 				regions = [ 'all' ];
 
 				// Make sure we do not get duplicates
@@ -110,16 +111,26 @@
 			return true;
 		},
 
-		groupByRegion: function () {
-			if ( this.groupByRegionOverride !== undefined ) {
+		/**
+		 * Whether we should render languages grouped to geographic regions.
+		 * @return {bool}
+		 */
+		isGroupingByRegionEnabled: function () {
+			if ( this.groupByRegionOverride !== null ) {
 				return this.groupByRegionOverride;
-			} else if ( this.options.groupByRegion !== undefined ) {
+			} else if ( this.options.groupByRegion !== 'auto' ) {
 				return this.options.groupByRegion;
 			} else {
 				return this.options.columns > 1;
 			}
 		},
 
+		/**
+		 * Override the default region grouping setting.
+		 * This is to allow LanguageFilter to disable grouping when displaying search results.
+		 *
+		 * @param {bool|null} val True to force grouping, false to disable, null to undo override.
+		 */
 		setGroupByRegionOverride: function ( val ) {
 			this.groupByRegionOverride = val;
 		},
@@ -246,7 +257,7 @@
 					lastItem = languagesCount - i === 1;
 					// Force column break if script changes and column has more than one row already,
 					// but only if grouping by region
-					if ( i === 0 || !this.groupByRegion() ) {
+					if ( i === 0 || !this.isGroupingByRegionEnabled() ) {
 						currentScript = $.uls.data.getScriptGroupOfLanguage( languages[ i ] );
 					} else if ( currentScript !== nextScript && items.length > 1 ) {
 						force = true;
@@ -428,7 +439,7 @@
 		// List of regions to show
 		showRegions: [ 'WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA' ],
 		// Whether to group by region, defaults to true when columns > 1
-		groupByRegion: undefined,
+		groupByRegion: 'auto',
 		// How many items per column until new "row" starts
 		itemsPerColumn: 8,
 		// Number of columns, only 1, 2 and 4 are supported
