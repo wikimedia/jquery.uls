@@ -36,23 +36,30 @@
 	 * Language category display
 	 * @param {Element} element The container element to which the languages to be displayed
 	 * @param {Object} [options] Configuration object
-	 * @cfg {Object} [languages] Languages known to the ULS. Keyed by language code, values are autonyms.
+	 * @cfg {Object} [languages] Selectable languages. Keyed by language code, values are autonyms.
 	 * @cfg {string[]} [showRegions] Array of region codes to show. Default is
-	 *  [ 'WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA' ],
+	 *  [ 'WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA' ]
 	 * @cfg {number} [itemsPerColumn] Number of languages per column.
 	 * @cfg {number} [columns] Number of columns for languages. Default is 4.
 	 * @cfg {Function} [languageDecorator] Callback function to be called when a language
 	 *  link is prepared - for custom decoration.
-	 * @cfg {Function|string[]} [quickList] The languages to display as suggestions for quick selectoin.
+	 * @cfg {Function|string[]} [quickList] The languages to display as suggestions for quick selection.
+	 * @cfg {Function} [clickhandler] Callback when language is selected.
 	 * @cfg {jQuery|Function} [noResultsTemplate]
 	 */
 	function LanguageCategoryDisplay( element, options ) {
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.lcd.defaults, options );
+		// Ensure the internal region 'all' is always present
+		if ( this.options.showRegions.indexOf( 'all' ) === -1 ) {
+			this.options.showRegions.push( 'all' );
+		}
+
 		this.$element.addClass( 'uls-lcd' );
 		this.regionLanguages = {};
 		this.renderTimeout = null;
 		this.cachedQuicklist = null;
+		this.groupByRegionOverride = null;
 
 		this.render();
 		this.listen();
@@ -65,24 +72,21 @@
 		 * Adds language to the language list.
 		 * @param {string} langCode
 		 * @param {string} [regionCode]
-		 * @return {boolean} Whether the language was added.
+		 * @return {boolean} Whether the language was known and accepted
 		 */
 		append: function ( langCode, regionCode ) {
-			var lcd = this,
-				i, regions;
+			var i, regions;
 
 			if ( !$.uls.data.languages[ langCode ] ) {
 				// Language is unknown or not in the list of languages for this context.
 				return false;
 			}
 
-			// Show everything in one region when there is only one column
-			if ( lcd.options.columns === 1 ) {
-				regions = [ 'WW' ];
+			if ( !this.isGroupingByRegionEnabled() ) {
+				regions = [ 'all' ];
 
-				// Languages are expected to be repeated in this case,
-				// and we only want to show them once
-				if ( $.inArray( langCode, this.regionLanguages.WW ) > -1 ) {
+				// Make sure we do not get duplicates
+				if ( this.regionLanguages.all.indexOf( langCode ) > -1 ) {
 					return true;
 				}
 			} else {
@@ -99,21 +103,45 @@
 
 			// Work around the bad interface, delay rendering until we have got
 			// all the languages to speed up performance.
-			window.clearTimeout( this.renderTimeout );
-			this.renderTimeout = window.setTimeout( function () {
-				lcd.renderRegions();
-			}, 50 );
+			clearTimeout( this.renderTimeout );
+			this.renderTimeout = setTimeout( function () {
+				this.renderRegions();
+			}.bind( this ), 50 );
 
 			return true;
 		},
 
+		/**
+		 * Whether we should render languages grouped to geographic regions.
+		 * @return {boolean}
+		 */
+		isGroupingByRegionEnabled: function () {
+			if ( this.groupByRegionOverride !== null ) {
+				return this.groupByRegionOverride;
+			} else if ( this.options.groupByRegion !== 'auto' ) {
+				return this.options.groupByRegion;
+			} else {
+				return this.options.columns > 1;
+			}
+		},
+
+		/**
+		 * Override the default region grouping setting.
+		 * This is to allow LanguageFilter to disable grouping when displaying search results.
+		 *
+		 * @param {boolean|null} val True to force grouping, false to disable, null to undo override.
+		 */
+		setGroupByRegionOverride: function ( val ) {
+			this.groupByRegionOverride = val;
+		},
+
 		render: function () {
-			var $section, $quicklist,
-				lcd = this,
-				narrowMode = this.options.columns === 1,
+			var $section,
+				$quicklist = this.buildQuicklist(),
 				regions = [],
 				regionNames = {
 					// These are fallback text when i18n library not present
+					all: 'All languages', // Used if there is quicklist and no region grouping
 					WW: 'Worldwide',
 					SP: 'Special',
 					AM: 'America',
@@ -124,42 +152,30 @@
 					PA: 'Pacific'
 				};
 
-			$quicklist = this.buildQuicklist();
-			regions.push( $quicklist );
-
-			if ( narrowMode && $quicklist.length ) {
-				regions.push( $( '<h3>' )
-					.attr( 'data-i18n', 'uls-region-all' )
-					.addClass( 'uls-lcd-region-title' )
-					.text( 'All languages' )
-				);
+			if ( $quicklist.length ) {
+				regions.push( $quicklist );
+			} else {
+				// We use CSS to hide the header for 'all' when quicklist is NOT present
+				this.$element.addClass( 'uls-lcd--no-quicklist' );
 			}
 
-			$.each( $.uls.data.regiongroups, function ( regionCode ) {
-				lcd.regionLanguages[ regionCode ] = [];
-
-				// Don't show the region unless it was enabled
-				if ( $.inArray( regionCode, lcd.options.showRegions ) === -1 ) {
-					return;
-				}
+			this.options.showRegions.forEach( function ( regionCode ) {
+				this.regionLanguages[ regionCode ] = [];
 
 				$section = $( '<div>' )
 					.addClass( 'uls-lcd-region-section hide' )
 					.attr( 'data-region', regionCode );
 
-				// Show a region heading, unless we are using a narrow ULS
-				if ( !narrowMode ) {
-					$section.append( $( '<h3>' )
-						.attr( 'data-i18n', 'uls-region-' + regionCode )
-						.addClass( 'uls-lcd-region-title' )
-						.text( regionNames[ regionCode ] )
-					);
-				}
+				$( '<h3>' )
+					.attr( 'data-i18n', 'uls-region-' + regionCode )
+					.addClass( 'uls-lcd-region-title' )
+					.text( regionNames[ regionCode ] )
+					.appendTo( $section );
 
 				regions.push( $section );
-			} );
+			}.bind( this ) );
 
-			lcd.$element.append( regions );
+			this.$element.append( regions );
 
 			this.i18n();
 		},
@@ -239,8 +255,9 @@
 					nextScript = $.uls.data.getScriptGroupOfLanguage( languages[ i + 1 ] );
 
 					lastItem = languagesCount - i === 1;
-					// Force column break if script changes and column has more than one row already
-					if ( i === 0 ) {
+					// Force column break if script changes and column has more than one row already,
+					// but only if grouping by region
+					if ( i === 0 || !this.isGroupingByRegionEnabled() ) {
 						currentScript = $.uls.data.getScriptGroupOfLanguage( languages[ i ] );
 					} else if ( currentScript !== nextScript && items.length > 1 ) {
 						force = true;
@@ -356,6 +373,7 @@
 		 * Called when a fresh search is started
 		 */
 		empty: function () {
+			this.$element.addClass( 'uls-lcd--no-quicklist' );
 			this.$element.find( '.uls-lcd-quicklist' ).addClass( 'hide' );
 		},
 
@@ -416,14 +434,23 @@
 	};
 
 	$.fn.lcd.defaults = {
-		languages: null,
+		// List of languages to show
+		languages: [],
+		// List of regions to show
 		showRegions: [ 'WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA' ],
+		// Whether to group by region, defaults to true when columns > 1
+		groupByRegion: 'auto',
+		// How many items per column until new "row" starts
 		itemsPerColumn: 8,
-		// Other supported values are 1 and 2.
-		// Other values will have rendering issues.
+		// Number of columns, only 1, 2 and 4 are supported
 		columns: 4,
-		languageDecorator: null,
+		// Callback function for language item styling
+		languageDecorator: undefined,
+		// Likely candidates
 		quickList: [],
+		// Callback function for language selection
+		clickhandler: undefined,
+		// Callback function when no search results
 		noResultsTemplate: function () {
 			var $suggestionsContainer, $suggestions,
 				$noResultsTemplate = $( noResultsTemplate );

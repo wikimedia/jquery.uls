@@ -17,6 +17,10 @@
 	padding: 0 16px;
 }
 
+.uls-lcd--no-quicklist [data-region="all"] .uls-lcd-region-title {
+	display: none;
+}
+
 .uls-lcd-region-section {
 	margin-top: 10px;
 }

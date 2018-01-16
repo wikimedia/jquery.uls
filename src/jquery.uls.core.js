@@ -402,15 +402,35 @@
 	};
 
 	$.fn.uls.defaults = {
-		onSelect: null, // Callback function to be called when a language is selected
-		searchAPI: null, // Language search API
-		languages: $.uls.data.getAutonyms(), // Languages to be used for ULS, default is all languages
-		quickList: [], // Array of language codes or function that returns such
+		// CSS top position for the dialog
+		top: undefined,
+		// CSS left position for the dialog
+		left: undefined,
+		// Callback function when user selects a language
+		onSelect: undefined,
+		// Callback function when the dialog is closed without selecting a language
+		onCancel: undefined,
+		// Callback function when ULS has initialized
+		onReady: undefined,
+		// Callback function when ULS dialog is shown
+		onVisible: undefined,
+		// Languages to be used for ULS, default is all languages
+		languages: $.uls.data.getAutonyms(),
 		// The options are wide (4 columns), medium (2 columns), and narrow (1 column).
 		// If not specified, it will be set automatically.
-		menuWidth: null,
-		showRegions: [ 'WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA' ],
-		languageDecorator: null // Callback function to be called when a language link is prepared - for custom decoration.
+		menuWidth: undefined,
+		// Used by LCD
+		quickList: [],
+		// Used by LCD
+		showRegions: undefined,
+		// Used by LCD
+		languageDecorator: undefined,
+		// Used by LCD
+		itemsPerColumn: undefined,
+		// Used by LCD
+		groupByRegion: undefined,
+		// Used by LanguageFilter
+		searchAPI: undefined
 	};
 
 	// Define a dummy i18n function, if jquery.i18n not integrated.

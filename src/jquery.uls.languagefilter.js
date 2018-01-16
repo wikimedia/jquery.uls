@@ -19,8 +19,7 @@
 
 /**
  * Usage: $( 'inputbox' ).languagefilter();
- * The values for autocompletion is from the options.languages.
- * The data is in the format of languagecode:languagename.
+ * The values for autocompletion is from the options.languages or options.searchAPI.
  */
 ( function ( $ ) {
 	'use strict';
@@ -132,7 +131,7 @@
 						if ( !languageFilter.$element.val() ) {
 							languageFilter.clear();
 						} else {
-							languageFilter.options.$target.empty();
+							languageFilter.options.lcd.empty();
 							languageFilter.search();
 						}
 					}, 300 );
@@ -186,11 +185,13 @@
 				query = $.trim( this.$element.val() ).toLowerCase();
 
 			if ( query === '' ) {
+				this.options.lcd.setGroupByRegionOverride( null );
 				languages.map( this.render.bind( this ) );
 				this.resultHandler( query, languages );
 				return;
 			}
 
+			this.options.lcd.setGroupByRegionOverride( false );
 			// Local search results
 			results = languages.filter( function ( langCode ) {
 				return this.filter( langCode, query );
@@ -287,14 +288,7 @@
 		},
 
 		render: function ( langCode ) {
-			// This is actually instance of LanguageCategoryDisplay and not jQuery!
-			var $target = this.options.$target;
-
-			if ( !$target ) {
-				return false;
-			}
-
-			return $target.append( langCode );
+			return this.options.lcd.append( langCode );
 		},
 
 		escapeRegex: function ( value ) {
@@ -352,10 +346,14 @@
 	};
 
 	$.fn.languagefilter.defaults = {
-		$target: null, // Where to append the results
-		searchAPI: null,
-		languages: null, // Languages as code:name format.
-		onSelect: null // Language select handler - like enter in filter textbox.
+		// LanguageCategoryDisplay
+		lcd: undefined,
+		// URL to which we append query parameter with the query value
+		searchAPI: undefined,
+		// Object of language tags to language names
+		languages: [],
+		// Callback function when language is selected
+		onSelect: undefined
 	};
 
 	$.fn.languagefilter.Constructor = LanguageFilter;
