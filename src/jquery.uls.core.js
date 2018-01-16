@@ -220,13 +220,15 @@
 
 				quickList: languagesCount > 12 ? this.options.quickList : [],
 				clickhandler: $.proxy( this.select, this ),
-				source: this.$languageFilter,
 				showRegions: this.options.showRegions,
-				languageDecorator: this.options.languageDecorator
+				languageDecorator: this.options.languageDecorator,
+				noResultsTemplate: this.options.noResultsTemplate,
+				itemsPerColumn: this.options.itemsPerColumn,
+				groupByRegion: this.options.groupByRegion
 			} ).data( 'lcd' );
 
 			this.$languageFilter.languagefilter( {
-				$target: lcd,
+				lcd: lcd,
 				languages: this.languages,
 				searchAPI: this.options.searchAPI,
 				onSelect: $.proxy( this.select, this )
@@ -242,6 +244,38 @@
 			this.createLanguageFilter();
 
 			this.shouldRecreate = false;
+		},
+
+		/**
+		 * Creates and returns a new debounced version of the passed function,
+		 * which will postpone its execution, until after wait milliseconds have elapsed
+		 * since the last time it was invoked.
+		 *
+		 * @param {Function} fn Function to be debounced.
+		 * @param {Number} wait Wait interval in milliseconds.
+		 * @param {boolean} [immediate] Trigger the function on the leading edge of the wait interval,
+		 * instead of the trailing edge.
+		 * @return {Function} Debounced function.
+		 */
+		debounce: function ( fn, wait, immediate ) {
+			var timeout;
+
+			return function () {
+				var callNow, self = this, later = function () {
+					timeout = null;
+					if ( !immediate ) {
+						fn.apply( self, arguments );
+					}
+				};
+
+				callNow = immediate && !timeout;
+				clearTimeout( timeout );
+				timeout = setTimeout( later, wait || 100 );
+
+				if ( callNow ) {
+					fn.apply( self, arguments );
+				}
+			};
 		},
 
 		/**
@@ -269,7 +303,7 @@
 			this.$languageFilter.on( 'resultsfound.uls', $.proxy( this.success, this ) );
 
 			$( 'html' ).click( $.proxy( this.cancel, this ) );
-			$( window ).resize( $.debounce( 250, this.resize.bind( this ) ) );
+			$( window ).resize( this.debounce( this.resize.bind( this ), 250 ) );
 		},
 
 		resize: function () {
