@@ -113,7 +113,7 @@
 
 		/**
 		 * Whether we should render languages grouped to geographic regions.
-		 * @return {bool}
+		 * @return {boolean}
 		 */
 		isGroupingByRegionEnabled: function () {
 			if ( this.groupByRegionOverride !== null ) {
@@ -129,7 +129,7 @@
 		 * Override the default region grouping setting.
 		 * This is to allow LanguageFilter to disable grouping when displaying search results.
 		 *
-		 * @param {bool|null} val True to force grouping, false to disable, null to undo override.
+		 * @param {boolean|null} val True to force grouping, false to disable, null to undo override.
 		 */
 		setGroupByRegionOverride: function ( val ) {
 			this.groupByRegionOverride = val;
