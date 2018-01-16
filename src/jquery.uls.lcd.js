@@ -244,8 +244,9 @@
 					nextScript = $.uls.data.getScriptGroupOfLanguage( languages[ i + 1 ] );
 
 					lastItem = languagesCount - i === 1;
-					// Force column break if script changes and column has more than one row already
-					if ( i === 0 ) {
+					// Force column break if script changes and column has more than one row already,
+					// but only if grouping by region
+					if ( i === 0 || !this.groupByRegion() ) {
 						currentScript = $.uls.data.getScriptGroupOfLanguage( languages[ i ] );
 					} else if ( currentScript !== nextScript && items.length > 1 ) {
 						force = true;
