@@ -186,7 +186,6 @@
 
 			if ( query === '' ) {
 				this.options.lcd.setGroupByRegionOverride( null );
-				languages.map( this.render.bind( this ) );
 				this.resultHandler( query, languages );
 				return;
 			}
