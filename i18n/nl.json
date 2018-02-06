@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Siebrand",
-			"Sjoerddebruin"
+			"Sjoerddebruin",
+			"Mar(c)"
 		]
 	},
 	"uls-region-WW": "Wereldwijd",
@@ -16,7 +17,7 @@
 	"uls-region-all": "Alle talen",
 	"uls-no-results-found": "Geen resultaten gevonden",
 	"uls-common-languages": "Taalsuggesties",
-	"uls-no-results-suggestion-title": "Wellicht wilt u een van de volgende talen kiezen:",
-	"uls-search-help": "U kunt zoeken op taalnaam, schriftnaam, ISO-code van de taal of u kunt bladeren per regio.",
+	"uls-no-results-suggestion-title": "Mogelijk bent u geïnteresseerd in:",
+	"uls-search-help": "U kunt zoeken op taalnaam, schriftnaam of ISO-code van de taal, of u kunt bladeren per regio.",
 	"uls-search-placeholder": "Zoeken naar een taal"
 }

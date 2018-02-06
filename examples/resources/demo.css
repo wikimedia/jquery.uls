@@ -1,18 +1,18 @@
 body {
 	padding-left: 10%;
 	padding-right: 10%;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Arial', 'Helvetica', sans-serif;
 }
 
 div.navbar {
 	background-color: #333;
-	color: #FFFFFF;
+	color: #fff;
 	padding: 20px;
 }
 
 span.uls-trigger {
 	float: right;
 	cursor: pointer;
-	color: #FFFFFF;
+	color: #fff;
 	font-weight: bold;
 }

@@ -20,7 +20,7 @@
 		<!-- demo -->
 		<link href="resources/demo.css" rel="stylesheet">
 		<!-- Libs -->
-		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<!-- Source -->
 		<script src="../src/jquery.uls.data.js"></script>
 		<script src="../src/jquery.uls.data.utils.js"></script>
@@ -30,7 +30,7 @@
 		<script>
 			$( document ).ready( function() {
 				$( '.uls-trigger' ).uls( {
-					onSelect : function( language ) {
+					onSelect: function( language ) {
 						var languageName = $.uls.data.getAutonym( language );
 						$( '.uls-trigger' ).text( languageName );
 					},
@@ -42,12 +42,11 @@
 
 	<body>
 		<div class="navbar navbar-fixed-top">
-			<span class="active uls-trigger">Select Language</span>
+			<span class="active uls-trigger">Select language</span>
 			<h1>Universal Language Selector</h1>
 			<p>
-				Demonstration of jQuery plugin
+				Demonstration of jQuery.uls plugin
 			</p>
 		</div>
-		<div class="container"></div>
 	</body>
 </html>

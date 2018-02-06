@@ -24,17 +24,17 @@
 	var template, ULS;
 
 	// Region numbers in id attributes also appear in the langdb.
-	/*jshint multistr:true */
+	// eslint-disable-next-line no-multi-str
 	template = '<div class="grid uls-menu"> \
 			<div id="search" class="row uls-search"> \
 				<div class="uls-search-wrapper"> \
 					<label class="uls-search-label" for="uls-languagefilter"></label>\
 					<div class="uls-search-input-wrapper">\
-						<span id="uls-languagefilter-clear" class="uls-languagefilter-clear"></span>\
+						<span class="uls-languagefilter-clear"></span>\
 						<input type="text" class="uls-filterinput uls-filtersuggestion"\
-							id="uls-filtersuggestion" disabled="true" autocomplete="off">\
+							disabled="true" autocomplete="off">\
 						<input type="text" class="uls-filterinput uls-languagefilter"\
-							id="uls-languagefilter" data-clear="uls-languagefilter-clear"\
+							data-clear="uls-languagefilter-clear"\
 							data-suggestion="uls-filtersuggestion"\
 							placeholder="Search for a language" autocomplete="off">\
 					</div>\
@@ -43,42 +43,20 @@
 			<div class="row uls-language-list"></div>\
 			<div class="row" id="uls-settings-block"></div>\
 		</div>';
-	/*jshint multistr:false */
-
-	/**
-	 * Count the number of keys in an object.
-	 * Works in a cross-browser way.
-	 * @param {Object} The object.
-	 */
-	function objectLength ( obj ) {
-		var count, key;
-
-		// Some old browsers don't support Object.keys
-		if ( Object.keys ) {
-			return Object.keys( obj ).length;
-		}
-
-		count = 0;
-
-		for ( key in obj ) {
-			if ( Object.prototype.hasOwnProperty.call( obj, key ) ) {
-				count++;
-			}
-		}
-
-		return count;
-	}
 
 	/**
 	 * ULS Public class definition
+	 * @param {Element} element
+	 * @param {Object} options
 	 */
 	ULS = function ( element, options ) {
+		var code;
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.uls.defaults, options );
 		this.$menu = $( template );
 		this.languages = this.options.languages;
 
-		for ( var code in this.languages ) {
+		for ( code in this.languages ) {
 			if ( $.uls.data.languages[ code ] === undefined ) {
 				// Language is unknown to ULS.
 				delete this.languages[ code ];
@@ -90,7 +68,7 @@
 		this.shown = false;
 		this.initialized = false;
 
-		this.$languageFilter = this.$menu.find( '#uls-languagefilter' );
+		this.$languageFilter = this.$menu.find( '.uls-languagefilter' );
 		this.$resultsView = this.$menu.find( '.uls-language-list' );
 
 		this.render();
@@ -131,7 +109,7 @@
 		/**
 		 * Calculate the position of ULS
 		 * Returns an object with top and left properties.
-		 * @returns {Object}
+		 * @return {Object}
 		 */
 		position: function () {
 			var pos,
@@ -142,13 +120,12 @@
 				pos = $.extend( {}, this.$element.offset(), {
 					height: this.$element[ 0 ].offsetHeight
 				} );
-				top =  pos.top + pos.height;
+				top = pos.top + pos.height;
 			}
 
 			if ( left === undefined ) {
 				left = $( window ).width() / 2 - this.$menu.outerWidth() / 2;
 			}
-
 
 			return {
 				top: top,
@@ -166,7 +143,7 @@
 				narrow: 'uls-narrow'
 			};
 
-			this.$menu.addClass( widthClasses[this.getMenuWidth()] );
+			this.$menu.addClass( widthClasses[ this.getMenuWidth() ] );
 
 			if ( !this.initialized ) {
 				$( 'body' ).prepend( this.$menu );
@@ -214,13 +191,6 @@
 		},
 
 		/**
-		 * Callback for no results found context.
-		 */
-		noresults: function () {
-			this.$resultsView.lcd( 'noResults' );
-		},
-
-		/**
 		 * Callback for results found context.
 		 */
 		success: function () {
@@ -248,33 +218,30 @@
 			} );
 
 			// Handle key press events on the menu
-			this.$menu.on( 'keypress', $.proxy( this.keypress, this ) )
-				.on( 'keyup', $.proxy( this.keyup, this ) );
+			this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
 
-			if ( this.eventSupported( 'keydown' ) ) {
-				this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
-			}
-
-			languagesCount = objectLength( this.options.languages );
+			languagesCount = Object.keys( this.options.languages ).length;
 			lcd = this.$resultsView.lcd( {
 				languages: this.languages,
 				columns: columnsOptions[ this.getMenuWidth() ],
 
 				quickList: languagesCount > 12 ? this.options.quickList : [],
 				clickhandler: $.proxy( this.select, this ),
-				source: this.$languageFilter,
 				showRegions: this.options.showRegions,
-				languageDecorator: this.options.languageDecorator
+				languageDecorator: this.options.languageDecorator,
+				noResultsTemplate: this.options.noResultsTemplate,
+				itemsPerColumn: this.options.itemsPerColumn,
+				groupByRegion: this.options.groupByRegion
 			} ).data( 'lcd' );
 
 			this.$languageFilter.languagefilter( {
-				$target: lcd,
+				lcd: lcd,
 				languages: this.languages,
 				searchAPI: this.options.searchAPI,
 				onSelect: $.proxy( this.select, this )
 			} );
 
-			this.$languageFilter.on( 'noresults.uls', $.proxy( this.noresults, this ) );
+			this.$languageFilter.on( 'noresults.uls', $.proxy( lcd.noResults, lcd ) );
 			this.$languageFilter.on( 'resultsfound.uls', $.proxy( this.success, this ) );
 
 			$( 'html' ).click( $.proxy( this.cancel, this ) );
@@ -282,7 +249,7 @@
 
 		/**
 		 * On select handler for search results
-		 * @param langCode
+		 * @param {string} langCode
 		 */
 		select: function ( langCode ) {
 			this.hide();
@@ -293,25 +260,14 @@
 
 		/**
 		 * On cancel handler for the uls menu
+		 * @param {Event} e
 		 */
 		cancel: function ( e ) {
-			if ( e && ( this.$element.is( e.target ) || $.contains( this.$element[0], e.target ) ) ) {
+			if ( e && ( this.$element.is( e.target ) || $.contains( this.$element[ 0 ], e.target ) ) ) {
 				return;
 			}
 
 			this.hide();
-		},
-
-		keyup: function ( e ) {
-			if ( !this.shown ) {
-				return;
-			}
-
-			if ( e.keyCode === 27 ) { // escape
-				this.cancel();
-				e.preventDefault();
-				e.stopPropagation();
-			}
 		},
 
 		keypress: function ( e ) {
@@ -334,20 +290,9 @@
 			}
 		},
 
-		eventSupported: function ( eventName ) {
-			var isSupported = eventName in this.$menu;
-
-			if ( !isSupported ) {
-				this.$element.setAttribute( eventName, 'return;' );
-				isSupported = typeof this.$element[ eventName ] === 'function';
-			}
-
-			return isSupported;
-		},
-
 		/**
 		 * Get the panel menu width parameter
-		 * @return string
+		 * @return {string}
 		 */
 		getMenuWidth: function () {
 			var languagesCount;
@@ -356,7 +301,7 @@
 				return this.options.menuWidth;
 			}
 
-			languagesCount = objectLength( this.options.languages );
+			languagesCount = Object.keys( this.options.languages ).length;
 
 			if ( languagesCount < 25 ) {
 				return 'narrow';
@@ -394,15 +339,35 @@
 	};
 
 	$.fn.uls.defaults = {
-		onSelect: null, // Callback function to be called when a language is selected
-		searchAPI: null, // Language search API
-		languages: $.uls.data.getAutonyms(), // Languages to be used for ULS, default is all languages
-		quickList: [], // Array of language codes or function that returns such
+		// CSS top position for the dialog
+		top: undefined,
+		// CSS left position for the dialog
+		left: undefined,
+		// Callback function when user selects a language
+		onSelect: undefined,
+		// Callback function when the dialog is closed without selecting a language
+		onCancel: undefined,
+		// Callback function when ULS has initialized
+		onReady: undefined,
+		// Callback function when ULS dialog is shown
+		onVisible: undefined,
+		// Languages to be used for ULS, default is all languages
+		languages: $.uls.data.getAutonyms(),
 		// The options are wide (4 columns), medium (2 columns), and narrow (1 column).
 		// If not specified, it will be set automatically.
-		menuWidth: null,
-		showRegions: [ 'WW', 'AM', 'EU', 'ME', 'AF', 'AS', 'PA' ],
-		languageDecorator: null // Callback function to be called when a language link is prepared - for custom decoration.
+		menuWidth: undefined,
+		// Used by LCD
+		quickList: [],
+		// Used by LCD
+		showRegions: undefined,
+		// Used by LCD
+		languageDecorator: undefined,
+		// Used by LCD
+		itemsPerColumn: undefined,
+		// Used by LCD
+		groupByRegion: undefined,
+		// Used by LanguageFilter
+		searchAPI: undefined
 	};
 
 	// Define a dummy i18n function, if jquery.i18n not integrated.

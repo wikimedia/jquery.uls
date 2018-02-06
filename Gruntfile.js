@@ -1,22 +1,35 @@
-/*jshint node:true */
 'use strict';
+
 module.exports = function ( grunt ) {
-	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
+	grunt.loadNpmTasks( 'grunt-eslint' );
+	grunt.loadNpmTasks( 'grunt-stylelint' );
 	grunt.loadNpmTasks( 'grunt-contrib-qunit' );
 
 	grunt.initConfig( {
-		jshint: {
+		eslint: {
+			all: [
+				'**/*.js',
+				'src/jquery.uls.data.js',
+				'!examples/**',
+				'!node_modules/**',
+				'!vendor/**'
+			]
+		},
+		stylelint: {
 			options: {
-				jshintrc: true
+				syntax: 'css'
 			},
-			all: ['*.js', 'src/*.js']
+			src: [
+				'**/*.css',
+				'!node_modules/**'
+			]
 		},
 		qunit: {
 			all: 'test/index.html'
 		}
 	} );
 
-	grunt.registerTask( 'lint', 'jshint' );
-	grunt.registerTask( 'test', ['lint', 'qunit'] );
+	grunt.registerTask( 'lint', [ 'eslint' ] );
+	grunt.registerTask( 'test', [ 'lint', 'qunit' ] );
 	grunt.registerTask( 'default', 'test' );
 };
