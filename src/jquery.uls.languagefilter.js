@@ -67,12 +67,8 @@
 		},
 
 		listen: function () {
-			this.$element.on( 'keypress', $.proxy( this.keyup, this ) )
-				.on( 'keyup', $.proxy( this.keyup, this ) );
 
-			if ( this.eventSupported( 'keydown' ) ) {
-				this.$element.on( 'keydown', $.proxy( this.keyup, this ) );
-			}
+			this.$element.on( 'keydown', $.proxy( this.keypress, this ) );
 
 			if ( this.$clear.length ) {
 				this.$clear.on( 'click', $.proxy( this.clear, this ) );
@@ -81,7 +77,7 @@
 			this.toggleClear();
 		},
 
-		keyup: function ( e ) {
+		keypress: function ( e ) {
 			var suggestion, query, languageFilter;
 
 			switch ( e.keyCode ) {
@@ -106,11 +102,11 @@
 					query = $.trim( this.$element.val() ).toLowerCase();
 
 					if ( this.selectedLanguage ) {
-					// this.selectLanguage will be populated from a matching search
+						// this.selectLanguage will be populated from a matching search
 						this.options.onSelect( this.selectedLanguage );
 					} else if ( this.options.languages[ query ] ) {
-					// Search is yet to happen (in timeout delay),
-					// but we have a matching language code.
+						// Search is yet to happen (in timeout delay),
+						// but we have a matching language code.
 						this.options.onSelect( query );
 					}
 
@@ -119,9 +115,9 @@
 					languageFilter = this;
 
 					if ( e.which < 32 &&
-					e.which !== 8 // Backspace
+						e.which !== 8 // Backspace
 					) {
-					// ignore any ASCII control characters
+						// ignore any ASCII control characters
 						break;
 					}
 
@@ -314,17 +310,6 @@
 				matcher.test( $.uls.data.getAutonym( langCode ) ) ||
 				matcher.test( langCode ) ||
 				matcher.test( $.uls.data.getScript( langCode ) );
-		},
-
-		eventSupported: function ( eventName ) {
-			var isSupported = eventName in this.$element;
-
-			if ( !isSupported ) {
-				this.$element.setAttribute( eventName, 'return;' );
-				isSupported = typeof this.$element[ eventName ] === 'function';
-			}
-
-			return isSupported;
 		}
 	};
 

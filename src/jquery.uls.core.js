@@ -218,12 +218,7 @@
 			} );
 
 			// Handle key press events on the menu
-			this.$menu.on( 'keypress', $.proxy( this.keypress, this ) )
-				.on( 'keyup', $.proxy( this.keyup, this ) );
-
-			if ( this.eventSupported( 'keydown' ) ) {
-				this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
-			}
+			this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
 
 			languagesCount = Object.keys( this.options.languages ).length;
 			lcd = this.$resultsView.lcd( {
@@ -275,18 +270,6 @@
 			this.hide();
 		},
 
-		keyup: function ( e ) {
-			if ( !this.shown ) {
-				return;
-			}
-
-			if ( e.keyCode === 27 ) { // escape
-				this.cancel();
-				e.preventDefault();
-				e.stopPropagation();
-			}
-		},
-
 		keypress: function ( e ) {
 			if ( !this.shown ) {
 				return;
@@ -305,17 +288,6 @@
 			} else {
 				this.show();
 			}
-		},
-
-		eventSupported: function ( eventName ) {
-			var isSupported = eventName in this.$menu;
-
-			if ( !isSupported ) {
-				this.$element.setAttribute( eventName, 'return;' );
-				isSupported = typeof this.$element[ eventName ] === 'function';
-			}
-
-			return isSupported;
 		},
 
 		/**
