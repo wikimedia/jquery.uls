@@ -208,6 +208,8 @@
 					results = [];
 
 				$.each( result.languagesearch, function ( code, name ) {
+					var target;
+
 					if ( this.options.languages[ code ] ) {
 						autofillLabel = autofillLabel || name;
 						results.push( code );
@@ -220,6 +222,8 @@
 						autofillLabel = autofillLabel || name;
 						results.push( target );
 					}
+				}.bind( this ) );
+
 				return $.Deferred().resolve( query, results, autofillLabel );
 			}.bind( this ) );
 		},
