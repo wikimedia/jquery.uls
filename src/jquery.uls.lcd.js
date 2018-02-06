@@ -27,9 +27,7 @@
 		<h2 data-i18n="uls-no-results-found" class="uls-no-results-found-title">No results found</h2> \
 		<div class="uls-no-results-suggestions"></div> \
 		<div class="uls-no-found-more"> \
-		<div><p> \
-		<span data-i18n="uls-search-help">You can search by language name, script name, ISO code of language or you can browse by region.</span>\
-		</p></div> \
+		<div data-i18n="uls-search-help">You can search by language name, script name, ISO code of language or you can browse by region.</div> \
 		</div></div>';
 
 	/**

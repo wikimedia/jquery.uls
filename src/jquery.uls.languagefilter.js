@@ -24,7 +24,7 @@
 ( function ( $ ) {
 	'use strict';
 
-	var LanguageFilter, delay;
+	var LanguageFilter;
 
 	/**
 	 * Check if a prefix is visually prefix of a string
@@ -52,27 +52,17 @@
 		this.listen();
 	};
 
-	delay = ( function () {
-		var timer = 0;
-
-		return function ( callback, milliseconds ) {
-			clearTimeout( timer );
-			timer = setTimeout( callback, milliseconds );
-		};
-	}() );
-
 	LanguageFilter.prototype = {
 		init: function () {
 			this.search();
 		},
 
 		listen: function () {
-			this.$element.on( 'keypress', $.proxy( this.keyup, this ) )
-				.on( 'keyup', $.proxy( this.keyup, this ) );
-
-			if ( this.eventSupported( 'keydown' ) ) {
-				this.$element.on( 'keydown', $.proxy( this.keyup, this ) );
-			}
+			this.$element.on( 'keydown', $.proxy( this.keypress, this ) );
+			this.$element.on(
+				'change textInput input',
+				$.fn.uls.debounce( $.proxy( this.onInputChange, this ), 300 )
+			);
 
 			if ( this.$clear.length ) {
 				this.$clear.on( 'click', $.proxy( this.clear, this ) );
@@ -81,8 +71,21 @@
 			this.toggleClear();
 		},
 
-		keyup: function ( e ) {
-			var suggestion, query, languageFilter;
+		onInputChange: function () {
+			this.selectedLanguage = null;
+
+			if ( !this.$element.val() ) {
+				this.clear();
+			} else {
+				this.options.lcd.empty();
+				this.search();
+			}
+
+			this.toggleClear();
+		},
+
+		keypress: function ( e ) {
+			var suggestion, query;
 
 			switch ( e.keyCode ) {
 				case 9: // Tab -> Autocomplete
@@ -106,37 +109,15 @@
 					query = $.trim( this.$element.val() ).toLowerCase();
 
 					if ( this.selectedLanguage ) {
-					// this.selectLanguage will be populated from a matching search
+						// this.selectLanguage will be populated from a matching search
 						this.options.onSelect( this.selectedLanguage );
 					} else if ( this.options.languages[ query ] ) {
-					// Search is yet to happen (in timeout delay),
-					// but we have a matching language code.
+						// Search is yet to happen (in timeout delay),
+						// but we have a matching language code.
 						this.options.onSelect( query );
 					}
 
 					break;
-				default:
-					languageFilter = this;
-
-					if ( e.which < 32 &&
-					e.which !== 8 // Backspace
-					) {
-					// ignore any ASCII control characters
-						break;
-					}
-
-					this.selectedLanguage = null;
-
-					delay( function () {
-						if ( !languageFilter.$element.val() ) {
-							languageFilter.clear();
-						} else {
-							languageFilter.options.lcd.empty();
-							languageFilter.search();
-						}
-					}, 300 );
-
-					this.toggleClear();
 			}
 		},
 
@@ -186,7 +167,6 @@
 
 			if ( query === '' ) {
 				this.options.lcd.setGroupByRegionOverride( null );
-				languages.map( this.render.bind( this ) );
 				this.resultHandler( query, languages );
 				return;
 			}
@@ -315,17 +295,6 @@
 				matcher.test( $.uls.data.getAutonym( langCode ) ) ||
 				matcher.test( langCode ) ||
 				matcher.test( $.uls.data.getScript( langCode ) );
-		},
-
-		eventSupported: function ( eventName ) {
-			var isSupported = eventName in this.$element;
-
-			if ( !isSupported ) {
-				this.$element.setAttribute( eventName, 'return;' );
-				isSupported = typeof this.$element[ eventName ] === 'function';
-			}
-
-			return isSupported;
 		}
 	};
 

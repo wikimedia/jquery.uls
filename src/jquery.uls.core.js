@@ -247,38 +247,6 @@
 		},
 
 		/**
-		 * Creates and returns a new debounced version of the passed function,
-		 * which will postpone its execution, until after wait milliseconds have elapsed
-		 * since the last time it was invoked.
-		 *
-		 * @param {Function} fn Function to be debounced.
-		 * @param {Number} wait Wait interval in milliseconds.
-		 * @param {boolean} [immediate] Trigger the function on the leading edge of the wait interval,
-		 * instead of the trailing edge.
-		 * @return {Function} Debounced function.
-		 */
-		debounce: function ( fn, wait, immediate ) {
-			var timeout;
-
-			return function () {
-				var callNow, self = this, later = function () {
-					timeout = null;
-					if ( !immediate ) {
-						fn.apply( self, arguments );
-					}
-				};
-
-				callNow = immediate && !timeout;
-				clearTimeout( timeout );
-				timeout = setTimeout( later, wait || 100 );
-
-				if ( callNow ) {
-					fn.apply( self, arguments );
-				}
-			};
-		},
-
-		/**
 		 * Bind the UI elements with their event listeners
 		 */
 		listen: function () {
@@ -291,19 +259,14 @@
 			} );
 
 			// Handle key press events on the menu
-			this.$menu.on( 'keypress', $.proxy( this.keypress, this ) )
-				.on( 'keyup', $.proxy( this.keyup, this ) );
-
-			if ( this.eventSupported( 'keydown' ) ) {
-				this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
-			}
+			this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
 
 			this.createLanguageFilter();
 
 			this.$languageFilter.on( 'resultsfound.uls', $.proxy( this.success, this ) );
 
 			$( 'html' ).click( $.proxy( this.cancel, this ) );
-			$( window ).resize( this.debounce( this.resize.bind( this ), 250 ) );
+			$( window ).resize( $.fn.uls.debounce( this.resize.bind( this ), 250 ) );
 		},
 
 		resize: function () {
@@ -343,18 +306,6 @@
 			this.hide();
 		},
 
-		keyup: function ( e ) {
-			if ( !this.shown ) {
-				return;
-			}
-
-			if ( e.keyCode === 27 ) { // escape
-				this.cancel();
-				e.preventDefault();
-				e.stopPropagation();
-			}
-		},
-
 		keypress: function ( e ) {
 			if ( !this.shown ) {
 				return;
@@ -373,17 +324,6 @@
 			} else {
 				this.show();
 			}
-		},
-
-		eventSupported: function ( eventName ) {
-			var isSupported = eventName in this.$menu;
-
-			if ( !isSupported ) {
-				this.$element.setAttribute( eventName, 'return;' );
-				isSupported = typeof this.$element[ eventName ] === 'function';
-			}
-
-			return isSupported;
 		},
 
 		/**
@@ -471,6 +411,39 @@
 	if ( !$.fn.i18n ) {
 		$.fn.i18n = function () {};
 	}
+
+	/**
+	 * Creates and returns a new debounced version of the passed function,
+	 * which will postpone its execution, until after wait milliseconds have elapsed
+	 * since the last time it was invoked.
+	 *
+	 * @param {Function} fn Function to be debounced.
+	 * @param {Number} wait Wait interval in milliseconds.
+	 * @param {boolean} [immediate] Trigger the function on the leading edge of the wait interval,
+	 * instead of the trailing edge.
+	 * @return {Function} Debounced function.
+	 */
+	$.fn.uls.debounce = function ( fn, wait, immediate ) {
+		var timeout;
+
+		return function () {
+			var callNow, self = this,
+				later = function () {
+					timeout = null;
+					if ( !immediate ) {
+						fn.apply( self, arguments );
+					}
+				};
+
+			callNow = immediate && !timeout;
+			clearTimeout( timeout );
+			timeout = setTimeout( later, wait || 100 );
+
+			if ( callNow ) {
+				fn.apply( self, arguments );
+			}
+		};
+	};
 
 	/*
 	 * Simple scrollIntoView plugin.

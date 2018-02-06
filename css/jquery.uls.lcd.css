@@ -121,13 +121,15 @@
 .uls-no-results-found-title {
 	font-size: 16px;
 	padding: 0 16px 0 28px;
+	margin: 20px 0;
 	border-bottom: 0;
-	color: #555;
+	color: #54595d;
 }
 
 .uls-no-found-more {
-	background: #f8f8f8;
-	padding: 0 16px 0 44px;
+	border-top: 1px solid #eaecf0;
+	color: #54595d;
+	padding: 12px 16px 12px 44px;
 	font-size: 0.9em;
 	width: 100%;
 	margin-top: 1.6em;

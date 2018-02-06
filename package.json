@@ -38,10 +38,10 @@
     "url": "git://github.com/wikimedia/jquery.uls.git"
   },
   "bugs": {
-    "url" : "http://github.com/wikimedia/jquery.uls/issues"
+    "url" : "https://github.com/wikimedia/jquery.uls/issues"
   },
   "engine": {
-    "node": ">=0.10.x"
+    "node": ">=6.11.1"
   },
  "license": "(MIT OR GPL-2.0+)",
  "scripts": {
