@@ -24,7 +24,7 @@
 ( function ( $ ) {
 	'use strict';
 
-	var LanguageFilter, delay;
+	var LanguageFilter;
 
 	/**
 	 * Check if a prefix is visually prefix of a string
@@ -52,23 +52,17 @@
 		this.listen();
 	};
 
-	delay = ( function () {
-		var timer = 0;
-
-		return function ( callback, milliseconds ) {
-			clearTimeout( timer );
-			timer = setTimeout( callback, milliseconds );
-		};
-	}() );
-
 	LanguageFilter.prototype = {
 		init: function () {
 			this.search();
 		},
 
 		listen: function () {
-
 			this.$element.on( 'keydown', $.proxy( this.keypress, this ) );
+			this.$element.on(
+				'change textInput input',
+				$.fn.uls.debounce( $.proxy( this.onInputChange, this ), 300 )
+			);
 
 			if ( this.$clear.length ) {
 				this.$clear.on( 'click', $.proxy( this.clear, this ) );
@@ -77,8 +71,21 @@
 			this.toggleClear();
 		},
 
+		onInputChange: function () {
+			this.selectedLanguage = null;
+
+			if ( !this.$element.val() ) {
+				this.clear();
+			} else {
+				this.options.lcd.empty();
+				this.search();
+			}
+
+			this.toggleClear();
+		},
+
 		keypress: function ( e ) {
-			var suggestion, query, languageFilter;
+			var suggestion, query;
 
 			switch ( e.keyCode ) {
 				case 9: // Tab -> Autocomplete
@@ -111,28 +118,6 @@
 					}
 
 					break;
-				default:
-					languageFilter = this;
-
-					if ( e.which < 32 &&
-						e.which !== 8 // Backspace
-					) {
-						// ignore any ASCII control characters
-						break;
-					}
-
-					this.selectedLanguage = null;
-
-					delay( function () {
-						if ( !languageFilter.$element.val() ) {
-							languageFilter.clear();
-						} else {
-							languageFilter.options.lcd.empty();
-							languageFilter.search();
-						}
-					}, 300 );
-
-					this.toggleClear();
 			}
 		},
 

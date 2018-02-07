@@ -67,6 +67,8 @@
 		this.top = this.options.top;
 		this.shown = false;
 		this.initialized = false;
+		this.shouldRecreate = false;
+		this.menuWidth = this.getMenuWidth();
 
 		this.$languageFilter = this.$menu.find( '.uls-languagefilter' );
 		this.$resultsView = this.$menu.find( '.uls-language-list' );
@@ -143,7 +145,7 @@
 				narrow: 'uls-narrow'
 			};
 
-			this.$menu.addClass( widthClasses[ this.getMenuWidth() ] );
+			this.$menu.addClass( widthClasses[ this.menuWidth ] );
 
 			if ( !this.initialized ) {
 				$( 'body' ).prepend( this.$menu );
@@ -177,6 +179,12 @@
 			this.$menu.hide();
 			this.shown = false;
 
+			this.$menu.removeClass( 'uls-wide uls-medium uls-narrow' );
+
+			if ( this.shouldRecreate ) {
+				this.recreateLanguageFilter();
+			}
+
 			if ( this.options.onCancel ) {
 				this.options.onCancel.call( this );
 			}
@@ -197,33 +205,18 @@
 			this.$resultsView.show();
 		},
 
-		/**
-		 * Bind the UI elements with their event listeners
-		 */
-		listen: function () {
-			var lcd, columnsOptions, languagesCount;
-
-			columnsOptions = {
-				wide: 4,
-				medium: 2,
-				narrow: 1
-			};
-
-			// Register all event listeners to the ULS here.
-			this.$element.on( 'click', $.proxy( this.click, this ) );
-
-			// Don't do anything if pressing on empty space in the ULS
-			this.$menu.on( 'click', function ( e ) {
-				e.stopPropagation();
-			} );
-
-			// Handle key press events on the menu
-			this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
+		createLanguageFilter: function () {
+			var lcd, languagesCount,
+				columnsOptions = {
+					wide: 4,
+					medium: 2,
+					narrow: 1
+				};
 
 			languagesCount = Object.keys( this.options.languages ).length;
 			lcd = this.$resultsView.lcd( {
 				languages: this.languages,
-				columns: columnsOptions[ this.getMenuWidth() ],
+				columns: columnsOptions[ this.menuWidth ],
 
 				quickList: languagesCount > 12 ? this.options.quickList : [],
 				clickhandler: $.proxy( this.select, this ),
@@ -242,9 +235,52 @@
 			} );
 
 			this.$languageFilter.on( 'noresults.uls', $.proxy( lcd.noResults, lcd ) );
+		},
+
+		recreateLanguageFilter: function () {
+			this.$resultsView.removeData( 'lcd' );
+			this.$resultsView.empty();
+			this.$languageFilter.removeData( 'languagefilter' );
+			this.createLanguageFilter();
+
+			this.shouldRecreate = false;
+		},
+
+		/**
+		 * Bind the UI elements with their event listeners
+		 */
+		listen: function () {
+			// Register all event listeners to the ULS here.
+			this.$element.on( 'click', $.proxy( this.click, this ) );
+
+			// Don't do anything if pressing on empty space in the ULS
+			this.$menu.on( 'click', function ( e ) {
+				e.stopPropagation();
+			} );
+
+			// Handle key press events on the menu
+			this.$menu.on( 'keydown', $.proxy( this.keypress, this ) );
+
+			this.createLanguageFilter();
+
 			this.$languageFilter.on( 'resultsfound.uls', $.proxy( this.success, this ) );
 
 			$( 'html' ).click( $.proxy( this.cancel, this ) );
+			$( window ).resize( $.fn.uls.debounce( this.resize.bind( this ), 250 ) );
+		},
+
+		resize: function () {
+			var menuWidth = this.getMenuWidth();
+
+			if ( this.menuWidth === menuWidth ) {
+				return;
+			}
+
+			this.menuWidth = menuWidth;
+			this.shouldRecreate = true;
+			if ( !this.shown ) {
+				this.recreateLanguageFilter();
+			}
 		},
 
 		/**
@@ -295,7 +331,8 @@
 		 * @return {string}
 		 */
 		getMenuWidth: function () {
-			var languagesCount;
+			var languagesCount,
+				screenWidth = document.documentElement.clientWidth;
 
 			if ( this.options.menuWidth ) {
 				return this.options.menuWidth;
@@ -303,15 +340,15 @@
 
 			languagesCount = Object.keys( this.options.languages ).length;
 
-			if ( languagesCount < 25 ) {
-				return 'narrow';
+			if ( screenWidth > 900 && languagesCount >= 48 ) {
+				return 'wide';
 			}
 
-			if ( languagesCount < 100 ) {
+			if ( screenWidth > 500 && languagesCount >= 24 ) {
 				return 'medium';
 			}
 
-			return 'wide';
+			return 'narrow';
 		},
 
 		isMobile: function () {
@@ -374,6 +411,39 @@
 	if ( !$.fn.i18n ) {
 		$.fn.i18n = function () {};
 	}
+
+	/**
+	 * Creates and returns a new debounced version of the passed function,
+	 * which will postpone its execution, until after wait milliseconds have elapsed
+	 * since the last time it was invoked.
+	 *
+	 * @param {Function} fn Function to be debounced.
+	 * @param {Number} wait Wait interval in milliseconds.
+	 * @param {boolean} [immediate] Trigger the function on the leading edge of the wait interval,
+	 * instead of the trailing edge.
+	 * @return {Function} Debounced function.
+	 */
+	$.fn.uls.debounce = function ( fn, wait, immediate ) {
+		var timeout;
+
+		return function () {
+			var callNow, self = this,
+				later = function () {
+					timeout = null;
+					if ( !immediate ) {
+						fn.apply( self, arguments );
+					}
+				};
+
+			callNow = immediate && !timeout;
+			clearTimeout( timeout );
+			timeout = setTimeout( later, wait || 100 );
+
+			if ( callNow ) {
+				fn.apply( self, arguments );
+			}
+		};
+	};
 
 	/*
 	 * Simple scrollIntoView plugin.
