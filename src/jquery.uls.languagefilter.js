@@ -208,17 +208,16 @@
 					results = [];
 
 				$.each( result.languagesearch, function ( apiCode, name ) {
-					var code,
-						redirect = $.uls.data.isRedirect( apiCode );
+					var code, redirect;
 
 					if ( this.options.languages[ apiCode ] ) {
 						code = apiCode;
-					} else if ( redirect && this.options.languages[ redirect ] ) {
-						// Language tags are messy. Try to make sure we handle
-						// them gracefully with regards to redirects.
-						code = redirect;
 					} else {
-						return;
+						redirect = $.uls.data.isRedirect( apiCode );
+						if ( !redirect || !this.options.languages[ redirect ] ) {
+							return;
+						}
+						code = redirect;
 					}
 
 					// Because of the redirect checking above, we might get duplicates.
