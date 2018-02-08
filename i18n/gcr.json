@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"LeGuyanaisPure"
+		]
+	},
+	"uls-region-WW": "Andan monn antché",
+	"uls-region-SP": "Spésyal",
+	"uls-region-AM": "Amérik",
+	"uls-region-AF": "Afrik",
+	"uls-region-EU": "Éròp",
+	"uls-region-AS": "Azi",
+	"uls-region-ME": "Mwayen-Oryan",
+	"uls-region-PA": "Pasifik",
+	"uls-region-all": "Tout lanng-yan",
+	"uls-no-results-found": "Pyès rézilta trouvé",
+	"uls-common-languages": "Lanng sigjéré",
+	"uls-no-results-suggestion-title": "Zòt pé sa entérésé pa :",
+	"uls-search-help": "Zòt pé sasé pa non di lanng, pa non di ékritir, pa kod ISO di lanng-an, ou zòt pé navigé pa réjyon.",
+	"uls-search-placeholder": "Sasé roun lanng"
+}
