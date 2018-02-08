@@ -192,15 +192,34 @@
 				var autofillLabel,
 					results = [];
 
-				$.each( result.languagesearch, function ( code, name ) {
-					if ( this.options.languages[ code ] ) {
+				$.each( result.languagesearch, function ( apiCode, name ) {
+					var code, redirect;
+
+					if ( this.options.languages[ apiCode ] ) {
+						code = apiCode;
+					} else {
+						redirect = $.uls.data.isRedirect( apiCode );
+						if ( !redirect || !this.options.languages[ redirect ] ) {
+							return;
+						}
+						code = redirect;
+					}
+
+					// Because of the redirect checking above, we might get duplicates.
+					// For example if API returns both `sr` and `sr-cyrl`, the former
+					// could get mapped to `sr-cyrl` and then we would have it twice.
+					// The exact cases when this happens of course depends on what is in
+					// options.languages, which might contain redirects such as `sr`. In
+					// this case we only show `sr` if no other variants are there.
+					// This also protects against broken search APIs returning duplicate
+					// results, although that is not happening in practice.
+					if ( results.indexOf( code ) === -1 ) {
 						autofillLabel = autofillLabel || name;
 						results.push( code );
 					}
 				}.bind( this ) );
 
 				return $.Deferred().resolve( query, results, autofillLabel );
-
 			}.bind( this ) );
 		},
 
