@@ -183,7 +183,7 @@
 			}
 
 			for ( i = 0; i < regions.length; i++ ) {
-				if ( $.inArray( regions[ i ], $.uls.data.getRegions( language ) ) !== -1 ) {
+				if ( $.uls.data.getRegions( language ).indexOf( regions[ i ] ) !== -1 ) {
 					scriptGroup = $.uls.data.getScriptGroupOfLanguage( language );
 
 					if ( languagesByScriptGroupInRegions[ scriptGroup ] === undefined ) {
@@ -209,7 +209,7 @@
 		var scriptGroup;
 
 		for ( scriptGroup in $.uls.data.scriptgroups ) {
-			if ( $.inArray( script, $.uls.data.scriptgroups[ scriptGroup ] ) !== -1 ) {
+			if ( $.uls.data.scriptgroups[ scriptGroup ].indexOf( script ) !== -1 ) {
 				return scriptGroup;
 			}
 		}
@@ -246,7 +246,7 @@
 	 * @return {boolean}
 	 */
 	$.uls.data.isRtl = function ( language ) {
-		return $.inArray( $.uls.data.getScript( language ), $.uls.data.rtlscripts ) !== -1;
+		return $.uls.data.rtlscripts.indexOf( $.uls.data.getScript( language ) ) !== -1;
 	};
 
 	/**
