@@ -401,7 +401,7 @@
 					'either jQuery or function returning jQuery' );
 			}
 
-			this.$element.append( $noResults.addClass( 'uls-no-results-view' ) );
+			this.$element.append( $noResults.addClass( 'uls-no-results-view' ).i18n() );
 		},
 
 		listen: function () {
