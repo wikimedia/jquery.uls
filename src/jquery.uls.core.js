@@ -54,6 +54,7 @@
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.uls.defaults, options );
 		this.$menu = $( template );
+		this.$menu.data( 'uls-purpose', this.options.ulsPurpose );
 		this.languages = this.options.languages;
 
 		for ( code in this.languages ) {
@@ -393,6 +394,10 @@
 		// The options are wide (4 columns), medium (2 columns), and narrow (1 column).
 		// If not specified, it will be set automatically.
 		menuWidth: undefined,
+		// What is this ULS used for.
+		// Should be set for distinguishing between different instances of ULS
+		// in the same application.
+		ulsPurpose: '',
 		// Used by LCD
 		quickList: [],
 		// Used by LCD

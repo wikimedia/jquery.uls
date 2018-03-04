@@ -233,7 +233,11 @@
 		resultHandler: function ( query, results, autofillLabel ) {
 			if ( results.length === 0 ) {
 				this.$suggestion.val( '' );
-				this.$element.trigger( 'noresults.uls', query );
+				this.$element.trigger(
+					'noresults.uls',
+					query,
+					this.$element.parents( '.uls-menu' ).data( 'uls-purpose' )
+				);
 				return;
 			}
 
