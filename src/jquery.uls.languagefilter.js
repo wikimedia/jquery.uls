@@ -233,7 +233,11 @@
 		resultHandler: function ( query, results, autofillLabel ) {
 			if ( results.length === 0 ) {
 				this.$suggestion.val( '' );
-				this.$element.trigger( 'noresults.uls', query );
+				this.$element.trigger(
+					'noresults.uls',
+					query,
+					this.options.ulsPurpose
+				);
 				return;
 			}
 
@@ -338,6 +342,10 @@
 		lcd: undefined,
 		// URL to which we append query parameter with the query value
 		searchAPI: undefined,
+		// What is this ULS used for.
+		// Should be set for distinguishing between different instances of ULS
+		// in the same application.
+		ulsPurpose: '',
 		// Object of language tags to language names
 		languages: [],
 		// Callback function when language is selected

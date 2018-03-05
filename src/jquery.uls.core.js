@@ -230,6 +230,7 @@
 			this.$languageFilter.languagefilter( {
 				lcd: lcd,
 				languages: this.languages,
+				ulsPurpose: this.options.ulsPurpose,
 				searchAPI: this.options.searchAPI,
 				onSelect: $.proxy( this.select, this )
 			} );
@@ -393,6 +394,10 @@
 		// The options are wide (4 columns), medium (2 columns), and narrow (1 column).
 		// If not specified, it will be set automatically.
 		menuWidth: undefined,
+		// What is this ULS used for.
+		// Should be set for distinguishing between different instances of ULS
+		// in the same application.
+		ulsPurpose: '',
 		// Used by LCD
 		quickList: [],
 		// Used by LCD
