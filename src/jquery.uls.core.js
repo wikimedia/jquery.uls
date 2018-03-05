@@ -54,7 +54,6 @@
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.uls.defaults, options );
 		this.$menu = $( template );
-		this.$menu.data( 'uls-purpose', this.options.ulsPurpose );
 		this.languages = this.options.languages;
 
 		for ( code in this.languages ) {
@@ -231,6 +230,7 @@
 			this.$languageFilter.languagefilter( {
 				lcd: lcd,
 				languages: this.languages,
+				ulsPurpose: this.options.ulsPurpose,
 				searchAPI: this.options.searchAPI,
 				onSelect: $.proxy( this.select, this )
 			} );
