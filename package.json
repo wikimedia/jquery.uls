@@ -27,8 +27,8 @@
   "devDependencies": {
     "eslint-config-wikimedia": "0.5.0",
     "grunt": "^1.0.1",
-    "grunt-eslint": "20.0.0",
-    "grunt-stylelint": "0.8.0",
+    "grunt-eslint": "20.1.0",
+    "grunt-stylelint": "0.9.0",
     "stylelint": "8.2.0",
     "grunt-contrib-qunit": "^1.2.0",
     "stylelint-config-wikimedia": "0.4.2"
