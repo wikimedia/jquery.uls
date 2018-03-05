@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+(function(){function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s}return e})()({1:[function(require,module,exports){
 module.exports=( function ( $ ) {
 	$.uls = $.uls || {};
 	$.uls.data = {
@@ -16,6 +16,13 @@ module.exports=( function ( $ ) {
                 "EU"
             ],
             "Аҧсшәа"
+        ],
+        "abe": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "Wôbanakiôdwawôgan"
         ],
         "abs": [
             "Latn",
@@ -561,6 +568,13 @@ module.exports=( function ( $ ) {
         "chm": [
             "mhr"
         ],
+        "chn": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "chinuk wawa"
+        ],
         "cho": [
             "Latn",
             [
@@ -937,6 +951,13 @@ module.exports=( function ( $ ) {
             ],
             "estremeñu"
         ],
+        "eya": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "I·ya·q"
+        ],
         "fa": [
             "Arab",
             [
@@ -986,6 +1007,13 @@ module.exports=( function ( $ ) {
             ],
             "Na Vosa Vakaviti"
         ],
+        "fkv": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "kvääni"
+        ],
         "fo": [
             "Latn",
             [
@@ -1022,6 +1050,13 @@ module.exports=( function ( $ ) {
                 "EU"
             ],
             "Nordfriisk"
+        ],
+        "fuf": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Fuuta Jalon"
         ],
         "fur": [
             "Latn",
@@ -1096,12 +1131,26 @@ module.exports=( function ( $ ) {
             ],
             "Guadeloupean Creole French"
         ],
+        "gcr": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "kréyòl gwiyanè"
+        ],
         "gd": [
             "Latn",
             [
                 "EU"
             ],
             "Gàidhlig"
+        ],
+        "gez": [
+            "Ethi",
+            [
+                "AF"
+            ],
+            "ግዕዝ"
         ],
         "gl": [
             "Latn",
@@ -1214,6 +1263,13 @@ module.exports=( function ( $ ) {
         ],
         "ha": [
             "ha-latn"
+        ],
+        "hai": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "X̱aat Kíl"
         ],
         "hak": [
             "Latn",
@@ -1724,6 +1780,13 @@ module.exports=( function ( $ ) {
             ],
             "Перем Коми"
         ],
+        "koy": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "Denaakkenaageʼ"
+        ],
         "kr": [
             "Latn",
             [
@@ -2178,6 +2241,13 @@ module.exports=( function ( $ ) {
             ],
             "молдовеняскэ"
         ],
+        "moe": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "Innu-aimun"
+        ],
         "mr": [
             "Deva",
             [
@@ -2402,6 +2472,13 @@ module.exports=( function ( $ ) {
             ],
             "ߒߞߏ"
         ],
+        "nr": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "isiNdebele seSewula"
+        ],
         "nrm": [
             "Latn",
             [
@@ -2458,6 +2535,13 @@ module.exports=( function ( $ ) {
                 "AF"
             ],
             "Oromoo"
+        ],
+        "ood": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "ʼOʼodham ha-ñeʼokĭ"
         ],
         "or": [
             "Orya",
@@ -2577,6 +2661,13 @@ module.exports=( function ( $ ) {
             ],
             "Pijin"
         ],
+        "pjt": [
+            "Latn",
+            [
+                "PA"
+            ],
+            "Pitjantjatjara"
+        ],
         "pko": [
             "Latn",
             [
@@ -2669,12 +2760,26 @@ module.exports=( function ( $ ) {
             ],
             "Runa Simi"
         ],
+        "quc": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "K'iche'"
+        ],
         "qug": [
             "Latn",
             [
                 "AM"
             ],
             "Runa shimi"
+        ],
+        "qwh": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "anqash qichwa"
         ],
         "rap": [
             "Latn",
@@ -2914,7 +3019,7 @@ module.exports=( function ( $ ) {
             [
                 "EU"
             ],
-            "sámegiella"
+            "davvisámegiella"
         ],
         "ses": [
             "Latn",
@@ -2989,12 +3094,33 @@ module.exports=( function ( $ ) {
             ],
             "Simple English"
         ],
+        "sjd": [
+            "Cyrl",
+            [
+                "EU"
+            ],
+            "Кӣллт са̄мь кӣлл"
+        ],
+        "sje": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "bidumsámegiella"
+        ],
         "sjo": [
             "Mong",
             [
                 "AS"
             ],
             "ᠰᡞᠪᡝ ᡤᡞᠰᡠᠨ"
+        ],
+        "sju": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "ubmejensámien giella"
         ],
         "sk": [
             "Latn",
@@ -3509,6 +3635,13 @@ module.exports=( function ( $ ) {
             ],
             "українська"
         ],
+        "umu": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "Huluníixsuwaakan"
+        ],
         "ur": [
             "Arab",
             [
@@ -3801,6 +3934,13 @@ module.exports=( function ( $ ) {
                 "AF"
             ],
             "isiZulu"
+        ],
+        "zun": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "Shiwi'ma"
         ]
     },
     "scriptgroups": {
@@ -4096,6 +4236,7 @@ module.exports=( function ( $ ) {
             "cr",
             "yi",
             "ike-cans",
+            "moe",
             "atj"
         ],
         "CC": [
@@ -4396,6 +4537,7 @@ module.exports=( function ( $ ) {
         ],
         "GF": [
             "fr",
+            "gcr",
             "zh-hant",
             "zh"
         ],
@@ -4447,7 +4589,8 @@ module.exports=( function ( $ ) {
             "tsd"
         ],
         "GT": [
-            "es"
+            "es",
+            "quc"
         ],
         "GU": [
             "en",
@@ -5450,6 +5593,7 @@ module.exports=( function ( $ ) {
             "ss",
             "ve",
             "hi",
+            "nr",
             "sw"
         ],
         "ZM": [
