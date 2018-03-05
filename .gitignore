@@ -6,3 +6,4 @@
 /node_modules
 /dist
 data/supplementalData.xml
+/vendor
