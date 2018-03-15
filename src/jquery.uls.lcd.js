@@ -408,8 +408,8 @@
 			var lcd = this;
 
 			if ( this.options.clickhandler ) {
-				this.$element.on( 'click', '.row li', function () {
-					lcd.options.clickhandler.call( this, $( this ).data( 'code' ) );
+				this.$element.on( 'click', '.row li', function ( event ) {
+					lcd.options.clickhandler.call( this, $( this ).data( 'code' ), event );
 				} );
 			}
 		}
