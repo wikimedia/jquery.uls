@@ -382,9 +382,9 @@
 		/**
 		 * No-results event handler
 		 * @param {Event} event
-		 * @param {string} [currentSearchQuery] Current search query that gave mp results
+		 * @param {Object} data Information about the failed search query
 		 */
-		noResults: function ( event, currentSearchQuery ) {
+		noResults: function ( event, data ) {
 			var $noResults;
 
 			this.$element.addClass( 'uls-no-results' );
@@ -393,7 +393,7 @@
 
 			if ( typeof this.options.noResultsTemplate === 'function' ) {
 				$noResults =
-					this.options.noResultsTemplate.call( this, currentSearchQuery );
+					this.options.noResultsTemplate.call( this, data.query );
 			} else if ( this.options.noResultsTemplate instanceof jQuery ) {
 				$noResults = this.options.noResultsTemplate;
 			} else {
@@ -448,7 +448,8 @@
 		quickList: [],
 		// Callback function for language selection
 		clickhandler: undefined,
-		// Callback function when no search results
+		// Callback function when no search results.
+		// If overloaded, it can accept the search string as an argument.
 		noResultsTemplate: function () {
 			var $suggestionsContainer, $suggestions,
 				$noResultsTemplate = $( noResultsTemplate );
