@@ -235,8 +235,10 @@
 				this.$suggestion.val( '' );
 				this.$element.trigger(
 					'noresults.uls',
-					query,
-					this.options.ulsPurpose
+					{
+						query: query,
+						ulsPurpose: this.options.ulsPurpose
+					}
 				);
 				return;
 			}
