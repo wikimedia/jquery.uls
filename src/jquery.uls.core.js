@@ -288,10 +288,10 @@
 		 * On select handler for search results
 		 * @param {string} langCode
 		 */
-		select: function ( langCode ) {
+		select: function ( langCode, event ) {
 			this.hide();
 			if ( this.options.onSelect ) {
-				this.options.onSelect.call( this, langCode );
+				this.options.onSelect.call( this, langCode, event );
 			}
 		},
 
