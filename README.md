@@ -63,19 +63,20 @@ $( '.uls-trigger' ).uls( {
 |-------------|---------------------|
 | left        | Left position of ULS dialog. E.g: 100px or 20% |
 | top         | Top position of ULS dialog. E.g: 100px or 20% |
+| onSelect    | Callback function when user selects a language. |
 | onCancel    | Callback function when the dialog is closed without selecting a language. |
 | onReady     | Callback function when ULS has initialized. |
 | onVisible   | Callback function when ULS dialog is shown. |
-| onSelect    | Callback function when user selects a language. |
 | languages   | List of selectable languages. Defaults to all known languages. |
-| quicklist   | List of suggested languages. Defaults to empty list. |
-| searchAPI   | API URL. Parameter query with the user query is appened to it. |
 | menuWidth   | Override the automatic choice of menu width. One of narrow, medium, wide (1, 2, 4 columns respectively). |
+| ulsPurpose  | A string that will identify this instance of ULS. It's useful if you have several instances of ULS in your web application and you want to have a unique identifier for each of them. |
+| quicklist   | List of suggested languages. Defaults to empty list. |
 | showRegions | Regions to be shown in the language selector. Defaults to [ WW, AM, EU, ME, AF, AS, PA ] |
-| groupByRegion | Whether to group languages by the regions: true of false. Default value depends on the menu width. |
-| itemsPerColumn | Number of languages per column. Default is 8 |
 | languageDecorator | Callback function to be called when a language link is prepared - for custom decoration. Arguments: (a) the $language - the language link jQuery object (b) languageCode. The function can do any styling, changing properties etc on the passed link. See examples/decorator.html for example usage.|
 | noResultsTemplate | A jQuery object or a function that returns a jQuery object. This will be used as the template to display when no results found from the search. The function will receive the current search query as argument|
+| itemsPerColumn | Number of languages per column. Default is 8 |
+| groupByRegion | Whether to group languages by the regions: true of false. Default value depends on the menu width. |
+| searchAPI   | API URL. Parameter query with the user query is appened to it. |
 
 
 Features

@@ -405,6 +405,8 @@
 		// Used by LCD
 		languageDecorator: undefined,
 		// Used by LCD
+		noResultsTemplate: undefined,
+		// Used by LCD
 		itemsPerColumn: undefined,
 		// Used by LCD
 		groupByRegion: undefined,
