@@ -287,6 +287,7 @@
 		/**
 		 * On select handler for search results
 		 * @param {string} langCode
+		 * @param {Object} event The jQuery click event
 		 */
 		select: function ( langCode, event ) {
 			this.hide();
