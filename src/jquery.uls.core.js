@@ -34,6 +34,7 @@
 						<input type="text" class="uls-filterinput uls-filtersuggestion"\
 							disabled="true" autocomplete="off">\
 						<input type="text" class="uls-filterinput uls-languagefilter"\
+							maxlength="40"\
 							data-clear="uls-languagefilter-clear"\
 							data-suggestion="uls-filtersuggestion"\
 							placeholder="Search for a language" autocomplete="off">\
