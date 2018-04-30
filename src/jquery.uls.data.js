@@ -486,7 +486,7 @@ module.exports=( function ( $ ) {
             [
                 "AS"
             ],
-            "बड़ो"
+            "बर'"
         ],
         "bs": [
             "Latn",
@@ -494,6 +494,13 @@ module.exports=( function ( $ ) {
                 "EU"
             ],
             "bosanski"
+        ],
+        "btm": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Mandailing"
         ],
         "bto": [
             "Latn",
@@ -1190,6 +1197,13 @@ module.exports=( function ( $ ) {
                 "AS"
             ],
             "Gõychi Konknni"
+        ],
+        "gor": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Bahasa Hulontalo"
         ],
         "got": [
             "Goth",
@@ -4662,6 +4676,7 @@ module.exports=( function ( $ ) {
             "bbc-latn",
             "zh-hant",
             "zh",
+            "gor",
             "sly",
             "mwv"
         ],
