@@ -1028,6 +1028,13 @@ module.exports=( function ( $ ) {
             ],
             "føroyskt"
         ],
+        "fon": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "fon"
+        ],
         "fr": [
             "Latn",
             [
@@ -4198,6 +4205,7 @@ module.exports=( function ( $ ) {
         ],
         "BJ": [
             "fr",
+            "fon",
             "yo"
         ],
         "BL": [
