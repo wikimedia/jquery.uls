@@ -229,6 +229,10 @@
 				columns = [],
 				rows = [];
 
+			languages = $.uls.data.sortByScriptGroup(
+				languages.sort( $.uls.data.sortByAutonym )
+			);
+
 			if ( columnsPerRow === 1 ) {
 				columnsClasses = 'twelve columns';
 			} else if ( columnsPerRow === 2 ) {

@@ -145,25 +145,22 @@
 
 	/**
 	 * Get the given list of languages grouped by script.
-	 * @param {string} languages Array of language codes
-	 * @return {Object} Array of languages indexed by script codes
+	 * @param {string[]} languages Array of language codes to group
+	 * @return {string[]} Array of language codes
 	 */
 	$.uls.data.getLanguagesByScriptGroup = function ( languages ) {
 		var languagesByScriptGroup = {},
-			language, resolvedRedirect, langScriptGroup;
+			language, languageIndex, resolvedRedirect, langScriptGroup;
 
-		for ( language in languages ) {
+		for ( languageIndex = 0; languageIndex < languages.length; languageIndex++ ) {
+			language = languages[ languageIndex ];
 			resolvedRedirect = $.uls.data.isRedirect( language ) || language;
-
 			langScriptGroup = $.uls.data.getScriptGroupOfLanguage( resolvedRedirect );
-
 			if ( !languagesByScriptGroup[ langScriptGroup ] ) {
 				languagesByScriptGroup[ langScriptGroup ] = [];
 			}
-
 			languagesByScriptGroup[ langScriptGroup ].push( language );
 		}
-
 		return languagesByScriptGroup;
 	};
 
@@ -224,6 +221,25 @@
 	 */
 	$.uls.data.getScriptGroupOfLanguage = function ( language ) {
 		return $.uls.data.getGroupOfScript( $.uls.data.getScript( language ) );
+	};
+
+	/**
+	 * Return the list of languages sorted by script groups.
+	 * @param {string[]} languages Array of language codes to sort
+	 * @return {string[]} Array of language codes
+	 */
+	$.uls.data.sortByScriptGroup = function ( languages ) {
+		var groupedLanguages, scriptGroups, i,
+			allLanguages = [];
+
+		groupedLanguages = $.uls.data.getLanguagesByScriptGroup( languages );
+		scriptGroups = Object.keys( groupedLanguages ).sort();
+
+		for ( i = 0; i < scriptGroups.length; i++ ) {
+			allLanguages = allLanguages.concat( groupedLanguages[ scriptGroups[ i ] ] );
+		}
+
+		return allLanguages;
 	};
 
 	/**
