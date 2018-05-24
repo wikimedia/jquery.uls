@@ -58,14 +58,14 @@
 		},
 
 		listen: function () {
-			this.$element.on( 'keydown', $.proxy( this.keypress, this ) );
+			this.$element.on( 'keydown', this.keypress.bind( this ) );
 			this.$element.on(
 				'change textInput input',
-				$.fn.uls.debounce( $.proxy( this.onInputChange, this ), 300 )
+				$.fn.uls.debounce( this.onInputChange.bind( this ), 300 )
 			);
 
 			if ( this.$clear.length ) {
-				this.$clear.on( 'click', $.proxy( this.clear, this ) );
+				this.$clear.on( 'click', this.clear.bind( this ) );
 			}
 
 			this.toggleClear();
