@@ -59,10 +59,7 @@
 
 		listen: function () {
 			this.$element.on( 'keydown', this.keypress.bind( this ) );
-			this.$element.on(
-				'change textInput input',
-				$.fn.uls.debounce( this.onInputChange.bind( this ), 300 )
-			);
+			this.$element.on( 'input', $.fn.uls.debounce( this.onInputChange.bind( this ), 300 ) );
 
 			if ( this.$clear.length ) {
 				this.$clear.on( 'click', this.clear.bind( this ) );
