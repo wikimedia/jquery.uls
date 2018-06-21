@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Mehtab ahmed",
-			"Indusian1236"
+			"Indusian1236",
+			"Tweety"
 		]
 	},
 	"uls-region-WW": "دنيا ڀر",
@@ -13,6 +14,7 @@
 	"uls-region-AS": "ايشيا",
 	"uls-region-ME": "وچ اوڀر",
 	"uls-region-PA": "پئسفڪ",
+	"uls-region-all": "سڀ ٻوليون",
 	"uls-no-results-found": "ڪي به نتيجا نه لڌا",
 	"uls-common-languages": "تجويز ڪيل ٻوليون",
 	"uls-no-results-suggestion-title": "توهان کي هنن شين ۾ دلچسپي ٿي سگھي ٿي:",
