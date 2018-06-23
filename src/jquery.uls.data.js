@@ -537,6 +537,13 @@ module.exports=( function ( $ ) {
             ],
             "català"
         ],
+        "cak": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "Kaqchikel"
+        ],
         "cbk-zam": [
             "Latn",
             [
@@ -900,7 +907,7 @@ module.exports=( function ( $ ) {
             [
                 "AM"
             ],
-            "español de America Latina"
+            "español de América Latina"
         ],
         "es-formal": [
             "Latn",
@@ -1033,7 +1040,7 @@ module.exports=( function ( $ ) {
             [
                 "AF"
             ],
-            "fon"
+            "fɔ̀ngbè"
         ],
         "fr": [
             "Latn",
