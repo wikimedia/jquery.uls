@@ -444,6 +444,13 @@ module.exports=( function ( $ ) {
             ],
             "বাংলা"
         ],
+        "bnn": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Bunun"
+        ],
         "bo": [
             "Tibt",
             [
@@ -980,6 +987,13 @@ module.exports=( function ( $ ) {
             ],
             "فارسی"
         ],
+        "fan": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Faŋ"
+        ],
         "fax": [
             "Latn",
             [
@@ -1137,6 +1151,13 @@ module.exports=( function ( $ ) {
                 "AS"
             ],
             "贛語"
+        ],
+        "gbm": [
+            "Deva",
+            [
+                "AS"
+            ],
+            "गढ़वळि"
         ],
         "gbz": [
             "Latn",
@@ -4616,6 +4637,7 @@ module.exports=( function ( $ ) {
         ],
         "GQ": [
             "es",
+            "fan",
             "fr",
             "pt"
         ],
@@ -4738,6 +4760,7 @@ module.exports=( function ( $ ) {
             "ne",
             "sat",
             "ks-arab",
+            "gbm",
             "gom-deva",
             "sd",
             "doi",
@@ -5655,5 +5678,6 @@ module.exports=( function ( $ ) {
         ]
     }
 }
+
 } ( jQuery ) );
 },{}]},{},[1]);
