@@ -11,8 +11,8 @@
     "l10n"
   ],
   "author": {
-     "name": "Santhosh Thottingal",
-     "email": "santhosh.thottingal@gmail.com"
+    "name": "Santhosh Thottingal",
+    "email": "santhosh.thottingal@gmail.com"
   },
   "contributors": [
     "Alolita Sharma",
@@ -38,13 +38,16 @@
     "url": "git://github.com/wikimedia/jquery.uls.git"
   },
   "bugs": {
-    "url" : "https://github.com/wikimedia/jquery.uls/issues"
+    "url": "https://github.com/wikimedia/jquery.uls/issues"
   },
   "engine": {
     "node": ">=6.11.1"
   },
- "license": "(MIT OR GPL-2.0+)",
- "scripts": {
-  "test": "grunt test --verbose"
+  "license": "(MIT OR GPL-2.0+)",
+  "scripts": {
+    "test": "grunt test --verbose"
+  },
+  "dependencies": {
+    "browserify": "^16.2.2"
   }
 }

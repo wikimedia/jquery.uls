@@ -3022,11 +3022,11 @@ module.exports=( function ( $ ) {
             "саха тыла"
         ],
         "sat": [
-            "Latn",
+            "Olck",
             [
                 "AS"
             ],
-            "Santali"
+            "ᱥᱟᱱᱛᱟᱲᱤ"
         ],
         "saz": [
             "Saur",
@@ -4038,6 +4038,7 @@ module.exports=( function ( $ ) {
             "Guru",
             "Knda",
             "Mlym",
+            "Olck",
             "Orya",
             "Saur",
             "Sinh",
@@ -4760,8 +4761,8 @@ module.exports=( function ( $ ) {
             "ne",
             "sat",
             "ks-arab",
-            "gbm",
             "gom-deva",
+            "gbm",
             "sd",
             "doi",
             "tcy",
@@ -5678,6 +5679,5 @@ module.exports=( function ( $ ) {
         ]
     }
 }
-
 } ( jQuery ) );
 },{}]},{},[1]);
