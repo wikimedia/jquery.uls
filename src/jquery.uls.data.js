@@ -1,4 +1,4 @@
-(function(){function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s}return e})()({1:[function(require,module,exports){
+(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 module.exports=( function ( $ ) {
 	$.uls = $.uls || {};
 	$.uls.data = {
@@ -1464,7 +1464,7 @@ module.exports=( function ( $ ) {
                 "EU",
                 "ME"
             ],
-            "Հայերեն"
+            "հայերեն"
         ],
         "hyw": [
             "Armn",
@@ -1741,6 +1741,13 @@ module.exports=( function ( $ ) {
                 "AS"
             ],
             "хакас"
+        ],
+        "kjp": [
+            "Mymr",
+            [
+                "AS"
+            ],
+            "ဖၠုံလိက်"
         ],
         "kk": [
             "kk-cyrl"
@@ -3022,11 +3029,11 @@ module.exports=( function ( $ ) {
             "саха тыла"
         ],
         "sat": [
-            "Latn",
+            "Olck",
             [
                 "AS"
             ],
-            "Santali"
+            "ᱥᱟᱱᱛᱟᱲᱤ"
         ],
         "saz": [
             "Saur",
@@ -4038,6 +4045,7 @@ module.exports=( function ( $ ) {
             "Guru",
             "Knda",
             "Mlym",
+            "Olck",
             "Orya",
             "Saur",
             "Sinh",
@@ -4212,7 +4220,8 @@ module.exports=( function ( $ ) {
             "wa"
         ],
         "BF": [
-            "fr"
+            "fr",
+            "ff"
         ],
         "BG": [
             "bg",
@@ -4614,7 +4623,8 @@ module.exports=( function ( $ ) {
             "ee",
             "gur",
             "gaa",
-            "ha-latn"
+            "ha-latn",
+            "ff"
         ],
         "GI": [
             "en",
@@ -4625,7 +4635,8 @@ module.exports=( function ( $ ) {
             "da"
         ],
         "GM": [
-            "en"
+            "en",
+            "ff"
         ],
         "GN": [
             "fr",
@@ -4662,7 +4673,8 @@ module.exports=( function ( $ ) {
             "ch"
         ],
         "GW": [
-            "pt"
+            "pt",
+            "ff"
         ],
         "GY": [
             "en"
@@ -4760,8 +4772,8 @@ module.exports=( function ( $ ) {
             "ne",
             "sat",
             "ks-arab",
-            "gbm",
             "gom-deva",
+            "gbm",
             "sd",
             "doi",
             "tcy",
@@ -4925,7 +4937,8 @@ module.exports=( function ( $ ) {
             "en"
         ],
         "LR": [
-            "en"
+            "en",
+            "ff"
         ],
         "LS": [
             "st",
@@ -5106,7 +5119,8 @@ module.exports=( function ( $ ) {
         "NE": [
             "ha-latn",
             "fr",
-            "ar"
+            "ar",
+            "ff"
         ],
         "NF": [
             "en"
@@ -5117,7 +5131,8 @@ module.exports=( function ( $ ) {
             "ig",
             "yo",
             "ha-arab",
-            "ar"
+            "ar",
+            "ff"
         ],
         "NI": [
             "es"
@@ -5397,7 +5412,8 @@ module.exports=( function ( $ ) {
         ],
         "SL": [
             "kri",
-            "en"
+            "en",
+            "ff"
         ],
         "SM": [
             "it",
@@ -5678,6 +5694,5 @@ module.exports=( function ( $ ) {
         ]
     }
 }
-
 } ( jQuery ) );
 },{}]},{},[1]);
