@@ -655,6 +655,23 @@ module.exports=( function ( $ ) {
             ],
             "Lai holh"
         ],
+        "cnr": [
+            "cnr-latn"
+        ],
+        "cnr-cyrl": [
+            "Cyrl",
+            [
+                "EU"
+            ],
+            "црногорски"
+        ],
+        "cnr-latn": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "crnogorski"
+        ],
         "co": [
             "Latn",
             [
