@@ -268,7 +268,8 @@
 			}
 
 			userInput = this.$element.val();
-			suggestion = userInput + languageName.substring( userInput.length, languageName.length );
+			suggestion = userInput +
+				languageName.substring( userInput.length, languageName.length );
 
 			if ( suggestion.toLowerCase() !== languageName.toLowerCase() ) {
 				// see if it was autonym match

@@ -302,7 +302,8 @@
 		 * @param {Event} e
 		 */
 		cancel: function ( e ) {
-			if ( e && ( this.$element.is( e.target ) || $.contains( this.$element[ 0 ], e.target ) ) ) {
+			if ( e && ( this.$element.is( e.target ) ||
+				$.contains( this.$element[ 0 ], e.target ) ) ) {
 				return;
 			}
 
@@ -427,7 +428,7 @@
 	 * since the last time it was invoked.
 	 *
 	 * @param {Function} fn Function to be debounced.
-	 * @param {Number} wait Wait interval in milliseconds.
+	 * @param {number} wait Wait interval in milliseconds.
 	 * @param {boolean} [immediate] Trigger the function on the leading edge of the wait interval,
 	 * instead of the trailing edge.
 	 * @return {Function} Debounced function.

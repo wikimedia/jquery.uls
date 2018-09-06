@@ -27,7 +27,8 @@
 	 */
 	$.uls.data.isRedirect = function ( language ) {
 		return ( $.uls.data.languages[ language ] !== undefined &&
-			$.uls.data.languages[ language ].length === 1 ) ? $.uls.data.languages[ language ][ 0 ] : false;
+			$.uls.data.languages[ language ].length === 1 ) ?
+			$.uls.data.languages[ language ][ 0 ] : false;
 	};
 
 	/**
@@ -77,7 +78,8 @@
 			return $.uls.data.getAutonym( target );
 		}
 
-		return ( $.uls.data.languages[ language ] && $.uls.data.languages[ language ][ 2 ] ) || language;
+		return ( $.uls.data.languages[ language ] &&
+			$.uls.data.languages[ language ][ 2 ] ) || language;
 	};
 
 	/**
@@ -137,7 +139,7 @@
 	 * Returns an associative array of languages in a region,
 	 * grouped by script group.
 	 * @param {string} region Region code
-	 * @return {object}
+	 * @return {Object}
 	 */
 	$.uls.data.getLanguagesByScriptGroupInRegion = function ( region ) {
 		return $.uls.data.getLanguagesByScriptGroupInRegions( [ region ] );

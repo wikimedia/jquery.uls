@@ -41,7 +41,8 @@
 	 * @cfg {number} [columns] Number of columns for languages. Default is 4.
 	 * @cfg {Function} [languageDecorator] Callback function to be called when a language
 	 *  link is prepared - for custom decoration.
-	 * @cfg {Function|string[]} [quickList] The languages to display as suggestions for quick selection.
+	 * @cfg {Function|string[]} [quickList] The languages to display as suggestions for quick
+	 *  selection.
 	 * @cfg {Function} [clickhandler] Callback when language is selected.
 	 * @cfg {jQuery|Function} [noResultsTemplate]
 	 */
@@ -127,7 +128,8 @@
 		 * Override the default region grouping setting.
 		 * This is to allow LanguageFilter to disable grouping when displaying search results.
 		 *
-		 * @param {boolean|null} val True to force grouping, false to disable, null to undo override.
+		 * @param {boolean|null} val True to force grouping, false to disable, null
+		 * to undo override.
 		 */
 		setGroupByRegionOverride: function ( val ) {
 			this.groupByRegionOverride = val;
@@ -218,7 +220,7 @@
 		/**
 		 * Adds given languages sorted into rows and columns into given element.
 		 * @param {jQuery} $region Element to add language list.
-		 * @param {array} languages List of language codes.
+		 * @param {Array} languages List of language codes.
 		 * @param {number} itemsPerColumn How many languages fit in a column.
 		 * @param {number} columnsPerRow How many columns fit in a row.
 		 */
@@ -257,8 +259,8 @@
 					nextScript = $.uls.data.getScriptGroupOfLanguage( languages[ i + 1 ] );
 
 					lastItem = languagesCount - i === 1;
-					// Force column break if script changes and column has more than one row already,
-					// but only if grouping by region
+					// Force column break if script changes and column has more than one
+					// row already, but only if grouping by region
 					if ( i === 0 || !this.isGroupingByRegionEnabled() ) {
 						currentScript = $.uls.data.getScriptGroupOfLanguage( languages[ i ] );
 					} else if ( currentScript !== nextScript && items.length > 1 ) {
