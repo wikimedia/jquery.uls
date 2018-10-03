@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Robin van der Vliet",
-			"Algentem"
+			"Algentem",
+			"Joao Xavier"
 		]
 	},
 	"uls-region-WW": "Tota mondo",
@@ -16,5 +17,6 @@
 	"uls-region-all": "Omna lingui",
 	"uls-no-results-found": "Ne trovis ulo",
 	"uls-common-languages": "Sugestanta lingui",
+	"uls-search-help": "Vu povas serchar segun linguala kodexo, nomo dil 'script', kodexo ISO por la linguo, o vu povas serchar segun la regiono.",
 	"uls-search-placeholder": "Serchar linguo"
 }

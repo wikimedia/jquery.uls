@@ -5,17 +5,18 @@
 			"Soul Train"
 		]
 	},
-	"uls-region-WW": "Virialemdin",
-	"uls-region-SP": "Гьакlдар",
-	"uls-region-AM": "ŵAmerika",
+	"uls-region-WW": "Вири дуьньядин",
+	"uls-region-SP": "Махсус",
+	"uls-region-AM": "Америка",
 	"uls-region-AF": "Африка",
 	"uls-region-EU": "Европа",
 	"uls-region-AS": "Азия",
-	"uls-region-ME": "Muq'o erch'i pad",
+	"uls-region-ME": "Юкьван РагъэкъечӀдай пад",
 	"uls-region-PA": "Океания",
-	"uls-no-results-found": "Jaghanach",
-	"uls-common-languages": "Bulvilin ch'alar",
-	"uls-no-results-suggestion-title": "Kwez mumkin i ch'alar muqaya xun:",
-	"uls-search-help": "Mumkinval ava jagharun chalan t'warceay ni xat'unay, ISO koday chalan ik'ni kiligun ellday",
-	"uls-search-placeholder": "Чlал жагъурун"
+	"uls-region-all": "Вири чӀалар",
+	"uls-no-results-found": "No results found",
+	"uls-common-languages": "Теклифнавай чӀалар",
+	"uls-no-results-suggestion-title": "You may be interested in:",
+	"uls-search-help": "Вавай чӀалан дахьайтӀа кхьинвилин тӀварунай къекъвез жеда, чӀалан ISO-коддай дахьайтӀа региондай килигиз жеда.",
+	"uls-search-placeholder": "ЧӀал жагъурун"
 }
