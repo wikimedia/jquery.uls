@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Xelgen"
+			"Xelgen",
+			"Nona"
 		]
 	},
 	"uls-region-WW": "Միջազգային",
@@ -12,6 +13,7 @@
 	"uls-region-AS": "Ասիա",
 	"uls-region-ME": "Միջին արևելք",
 	"uls-region-PA": "Օվկիանիա",
+	"uls-region-all": "Բոլոր լեզուները",
 	"uls-no-results-found": "Ոչինչ չի գտնվել",
 	"uls-common-languages": "Առաջարկվող լեզուներ",
 	"uls-no-results-suggestion-title": "Ձեզ գուցե հետաքրքրեն․",
