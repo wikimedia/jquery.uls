@@ -94,7 +94,7 @@
 	font-size: 14px;
 	display: inline-block;
 	width: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
 	/*
 	 * Some languages have long names for various reasons and we still want
 	 * them to appear on one line.
