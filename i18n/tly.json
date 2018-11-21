@@ -11,8 +11,12 @@
 	"uls-region-AF": "Африкә",
 	"uls-region-EU": "Авропә",
 	"uls-region-AS": "Асијә",
+	"uls-region-ME": "Незә Шәрғ",
+	"uls-region-PA": "Океанијә",
+	"uls-region-all": "Һәммәј зывонон",
 	"uls-no-results-found": "Һичи пәјдо быәни",
-	"uls-common-languages": "Выжнијә быә зывонон",
+	"uls-common-languages": "Товсијә кардә быә зывонон",
 	"uls-no-results-suggestion-title": "Бәзне бе ки бо шымә марағинин ын зывонон:",
+	"uls-search-help": "Шымә бәзнејон де зывони номи ја нывыштәј нәве, де зывони ISO-коди ја де вилојәти дијә карде.",
 	"uls-search-placeholder": "Зывони ныве"
 }

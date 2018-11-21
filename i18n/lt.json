@@ -5,7 +5,8 @@
 			"Mantak111",
 			"Eitvys200",
 			"Amire80",
-			"Zygimantus"
+			"Zygimantus",
+			"Manvydasz"
 		]
 	},
 	"uls-region-WW": "Visame pasaulyje",
@@ -19,7 +20,7 @@
 	"uls-region-all": "Visos kalbos",
 	"uls-no-results-found": "Rezultatų nerasta",
 	"uls-common-languages": "Siūlomos kalbos",
-	"uls-no-results-suggestion-title": "Jums gali būti įdomu:",
+	"uls-no-results-suggestion-title": "Galbūt domina:",
 	"uls-search-help": "Galite ieškoti pagal kalbos pavadinimą, scenarijaus pavadinimą, ISO kalbos kodą arba galite naršyti pagal regioną.",
 	"uls-search-placeholder": "Ieškoti kalbos"
 }

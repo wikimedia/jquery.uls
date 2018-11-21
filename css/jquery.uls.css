@@ -1,11 +1,8 @@
 .uls-trigger {
+	background: url( ../images/language.png ) no-repeat left center;
 	/* @embed */
-	background: url('../images/icon-language.png') no-repeat left center;
-	/* @embed */
-	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/icon-language.svg');
-	/* @embed */
-	background-image: linear-gradient(transparent, transparent), url('../images/icon-language.svg');
-	padding-left: 30px;
+	background-image: linear-gradient( transparent, transparent ), url( ../images/language.svg );
+	padding-left: 24px;
 }
 
 .uls-menu {
@@ -15,10 +12,10 @@
 	margin-top: 1px;
 	background-color: #fff;
 	border: 1px solid #ccc;
-	border-color: rgba(0, 0, 0, 0.2);
-	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	border-color: rgba( 0, 0, 0, 0.2 );
+	-webkit-box-shadow: 0 5px 10px rgba( 0, 0, 0, 0.2 );
+	-moz-box-shadow: 0 5px 10px rgba( 0, 0, 0, 0.2 );
+	box-shadow: 0 5px 10px rgba( 0, 0, 0, 0.2 );
 	-webkit-background-clip: padding-box;
 	-moz-background-clip: padding;
 	background-clip: padding-box;
@@ -68,10 +65,9 @@
 }
 
 .uls-search-label {
-	background: url('../images/search.png') no-repeat center center;
-	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/search.svg');
+	background: url( ../images/search.png ) no-repeat center center;
 	/* @embed */
-	background-image: linear-gradient(transparent, transparent), url('../images/search.svg');
+	background-image: linear-gradient( transparent, transparent ), url( ../images/search.svg );
 	background-size: 20px;
 	height: 32px;
 	width: 44px;
@@ -92,7 +88,7 @@
 	width: 100%;
 	/* For the custom clear (X) icon */
 	padding: 6px 25px 6px 0;
-	outline: none;
+	outline: 0;
 	border: 0;
 	display: block;
 	position: absolute;
@@ -114,10 +110,9 @@
 }
 
 .uls-languagefilter-clear {
-	background: url('../images/clear.png') no-repeat left center;
-	background-image: -webkit-linear-gradient(transparent, transparent), url('../images/clear.svg');
+	background: url( ../images/clear.png ) no-repeat left center;
 	/* @embed */
-	background-image: linear-gradient(transparent, transparent), url('../images/clear.svg');
+	background-image: linear-gradient( transparent, transparent ), url( ../images/clear.svg );
 	background-size: 15px;
 	cursor: pointer;
 	height: 15px;

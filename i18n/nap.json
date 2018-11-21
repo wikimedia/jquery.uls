@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chelin"
+			"Chelin",
+			"C.R."
 		]
 	},
 	"uls-region-WW": "Munno intero",
@@ -12,9 +13,10 @@
 	"uls-region-AS": "Asia",
 	"uls-region-ME": "Medio oriente",
 	"uls-region-PA": "Pacifico",
+	"uls-region-all": "Tuttuquante 'e llengue",
 	"uls-no-results-found": "Nisciuno risultato",
-	"uls-common-languages": "Lengue cchiù scelte",
+	"uls-common-languages": "Llèngue suggerite",
 	"uls-no-results-suggestion-title": "Puo essere interessato a:",
-	"uls-search-help": "Puo cerca ppe nomme, nomme ddo script, codece ISO dda lengua o navigga tra e reggione:",
-	"uls-search-placeholder": "Ascià lengua"
+	"uls-search-help": "Puo cerca ppe nomme, nomme ddo script, codece ISO dda lengua o navigga tra e reggione.",
+	"uls-search-placeholder": "Tròva na lengua"
 }
