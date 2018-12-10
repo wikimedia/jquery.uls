@@ -1,4 +1,4 @@
-var through = require( 'through' ); // eslint-disable-line no-implicit-globals
+var through = require( 'through' );
 
 module.exports = function () {
 	var data, end, write;

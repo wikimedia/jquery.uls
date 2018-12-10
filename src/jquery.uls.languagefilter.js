@@ -21,7 +21,7 @@
  * Usage: $( 'inputbox' ).languagefilter();
  * The values for autocompletion is from the options.languages or options.searchAPI.
  */
-( function ( $ ) {
+( function () {
 	'use strict';
 
 	var LanguageFilter;
@@ -103,7 +103,7 @@
 					e.preventDefault();
 					e.stopPropagation();
 
-					query = $.trim( this.$element.val() ).toLowerCase();
+					query = this.$element.val().trim().toLowerCase();
 
 					if ( this.selectedLanguage ) {
 						// this.selectLanguage will be populated from a matching search
@@ -160,7 +160,7 @@
 		search: function () {
 			var languages = Object.keys( this.options.languages ),
 				results = [],
-				query = $.trim( this.$element.val() ).toLowerCase();
+				query = this.$element.val().trim().toLowerCase();
 
 			if ( query === '' ) {
 				this.options.lcd.setGroupByRegionOverride( null );
@@ -189,6 +189,7 @@
 				var autofillLabel,
 					results = [];
 
+				// eslint-disable-next-line jquery/no-each-util
 				$.each( result.languagesearch, function ( apiCode, name ) {
 					var code, redirect;
 
@@ -354,4 +355,4 @@
 
 	$.fn.languagefilter.Constructor = LanguageFilter;
 
-}( jQuery ) );
+}() );

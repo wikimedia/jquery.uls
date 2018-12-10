@@ -1,5 +1,5 @@
+/* stylelint-disable declaration-no-important */
 @media only screen and ( max-width: 767px ) {
-
 	.uls-mobile.uls-menu {
 		width: 95%;
 		left: 2.5%;
@@ -248,6 +248,7 @@
 	.uls-mobile .hide-for-xlarge {
 		display: block !important;
 	}
+
 	.uls-mobile .hide-for-small,
 	.uls-mobile .show-for-medium,
 	.uls-mobile .hide-for-medium-down,
@@ -274,6 +275,7 @@
 	.uls-mobile .hide-for-portrait {
 		display: block !important;
 	}
+
 	.uls-mobile .hide-for-landscape,
 	.uls-mobile .show-for-portrait {
 		display: none !important;
@@ -285,6 +287,7 @@
 	.uls-mobile .hide-for-landscape {
 		display: block !important;
 	}
+
 	.uls-mobile .hide-for-portrait,
 	.uls-mobile .show-for-landscape {
 		display: none !important;
@@ -297,6 +300,7 @@
 	display: none !important;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .uls-mobile .hide-for-touch,
 .uls-mobile .touch .show-for-touch {
 	display: block !important;

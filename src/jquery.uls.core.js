@@ -18,7 +18,7 @@
  * @licence MIT License
  */
 
-( function ( $ ) {
+( function () {
 	'use strict';
 
 	var template, ULS;
@@ -485,4 +485,4 @@
 	};
 
 	$.fn.uls.Constructor = ULS;
-}( jQuery ) );
+}() );
