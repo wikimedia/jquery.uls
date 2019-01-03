@@ -12,9 +12,10 @@
 	"uls-region-AS": "ʻĀkia",
 	"uls-region-ME": "Hikina Waena",
 	"uls-region-PA": "Pakipika",
-	"uls-no-results-found": "Loaʻa ʻole nā huahuli",
-	"uls-common-languages": "Nā ʻŌlelo laha",
-	"uls-no-results-suggestion-title": "Makemake paha ʻoe i:",
-	"uls-search-help": "Hiki iā ʻoe ke huli e ka inoa ʻōlelo, inoa kikokikona, pāʻālua ISO ʻōlelo aiʻole hiki ke huli e ka ʻāina:",
+	"uls-region-all": "Nā ʻōlelo a pau",
+	"uls-no-results-found": "ʻAʻohe hualoaʻa",
+	"uls-common-languages": "Nā ʻōlelo lawelawe paha",
+	"uls-no-results-suggestion-title": "Makemake paha ʻoe iā:",
+	"uls-search-help": "Hiki iā ʻoe ke huli i ka inoa ʻōlelo, inoa kikokikona, pāʻālua ISO ʻōlelo a i ʻole huli i ka ʻāina.",
 	"uls-search-placeholder": "Huli ʻŌlelo"
 }
