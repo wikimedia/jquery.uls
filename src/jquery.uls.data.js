@@ -551,12 +551,15 @@ module.exports=( function ( $ ) {
             ],
             "Kaqchikel"
         ],
-        "cbk-zam": [
+        "cbk": [
             "Latn",
             [
                 "AS"
             ],
             "Chavacano de Zamboanga"
+        ],
+        "cbk-zam": [
+            "cbk"
         ],
         "cdo": [
             "Latn",
@@ -792,6 +795,9 @@ module.exports=( function ( $ ) {
             "Schweizer Hochdeutsch"
         ],
         "de-formal": [
+            "de-x-formal"
+        ],
+        "de-x-formal": [
             "Latn",
             [
                 "EU"
@@ -906,6 +912,13 @@ module.exports=( function ( $ ) {
             ],
             "British English"
         ],
+        "en-simple": [
+            "Latn",
+            [
+                "WW"
+            ],
+            "Simple English"
+        ],
         "en": [
             "Latn",
             [
@@ -934,6 +947,9 @@ module.exports=( function ( $ ) {
             "español de América Latina"
         ],
         "es-formal": [
+            "es-x-formal"
+        ],
+        "es-x-formal": [
             "Latn",
             [
                 "EU",
@@ -1462,6 +1478,9 @@ module.exports=( function ( $ ) {
             "Kreyòl ayisyen"
         ],
         "hu-formal": [
+            "hu-x-formal"
+        ],
+        "hu-x-formal": [
             "Latn",
             [
                 "EU"
@@ -1646,6 +1665,13 @@ module.exports=( function ( $ ) {
                 "PA"
             ],
             "ꦧꦱꦗꦮ"
+        ],
+        "jv-x-bms": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Basa Banyumasan"
         ],
         "ka": [
             "Geor",
@@ -2195,11 +2221,7 @@ module.exports=( function ( $ ) {
             "मैथिली"
         ],
         "map-bms": [
-            "Latn",
-            [
-                "AS"
-            ],
-            "Basa Banyumasan"
+            "jv-x-bms"
         ],
         "mdf": [
             "Cyrl",
@@ -2308,11 +2330,7 @@ module.exports=( function ( $ ) {
             "ဘာသာ မန်"
         ],
         "mo": [
-            "Cyrl",
-            [
-                "EU"
-            ],
-            "молдовеняскэ"
+            "ro-cyrl-md"
         ],
         "moe": [
             "Latn",
@@ -2438,6 +2456,13 @@ module.exports=( function ( $ ) {
             ],
             "Napulitano"
         ],
+        "nap-x-tara": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "tarandíne"
+        ],
         "nb": [
             "Latn",
             [
@@ -2502,6 +2527,9 @@ module.exports=( function ( $ ) {
             "Ao"
         ],
         "nl-informal": [
+            "nl-x-informal"
+        ],
+        "nl-x-informal": [
             "Latn",
             [
                 "EU",
@@ -2559,12 +2587,15 @@ module.exports=( function ( $ ) {
             ],
             "isiNdebele seSewula"
         ],
-        "nrm": [
+        "nrf": [
             "Latn",
             [
                 "EU"
             ],
             "Nouormand"
+        ],
+        "nrm": [
+            "nrf"
         ],
         "nso": [
             "Latn",
@@ -2938,15 +2969,18 @@ module.exports=( function ( $ ) {
             ],
             "română"
         ],
+        "ro-cyrl-md": [
+            "Cyrl",
+            [
+                "EU"
+            ],
+            "молдовеняскэ"
+        ],
         "roa-rup": [
             "rup"
         ],
         "roa-tara": [
-            "Latn",
-            [
-                "EU"
-            ],
-            "tarandíne"
+            "nap-x-tara"
         ],
         "rtm": [
             "Latn",
@@ -3175,11 +3209,7 @@ module.exports=( function ( $ ) {
             "සිංහල"
         ],
         "simple": [
-            "Latn",
-            [
-                "WW"
-            ],
-            "Simple English"
+            "en-simple"
         ],
         "sjd": [
             "Cyrl",
@@ -3954,11 +3984,28 @@ module.exports=( function ( $ ) {
             "lzh"
         ],
         "zh-cn": [
+            "zh-hans-cn"
+        ],
+        "zh-hans-cn": [
             "Hans",
             [
                 "AS"
             ],
             "中文（中国大陆）"
+        ],
+        "zh-hans-my": [
+            "Hans",
+            [
+                "AS"
+            ],
+            "中文（马来西亚）"
+        ],
+        "zh-hans-sg": [
+            "Hans",
+            [
+                "AS"
+            ],
+            "中文（新加坡）"
         ],
         "zh-hans": [
             "Hans",
@@ -3966,6 +4013,27 @@ module.exports=( function ( $ ) {
                 "AS"
             ],
             "中文（简体）"
+        ],
+        "zh-hant-hk": [
+            "Hant",
+            [
+                "AS"
+            ],
+            "中文（香港）"
+        ],
+        "zh-hant-mo": [
+            "Hant",
+            [
+                "AS"
+            ],
+            "中文（澳門）"
+        ],
+        "zh-hant-tw": [
+            "Hant",
+            [
+                "AS"
+            ],
+            "中文（台灣）"
         ],
         "zh-hant": [
             "Hant",
@@ -3975,42 +4043,22 @@ module.exports=( function ( $ ) {
             "中文（繁體）"
         ],
         "zh-hk": [
-            "Hant",
-            [
-                "AS"
-            ],
-            "中文（香港）"
+            "zh-hant-hk"
         ],
         "zh-min-nan": [
             "nan"
         ],
         "zh-mo": [
-            "Hant",
-            [
-                "AS"
-            ],
-            "中文（澳門）"
+            "zh-hant-mo"
         ],
         "zh-my": [
-            "Hans",
-            [
-                "AS"
-            ],
-            "中文（马来西亚）"
+            "zh-hans-my"
         ],
         "zh-sg": [
-            "Hans",
-            [
-                "AS"
-            ],
-            "中文（新加坡）"
+            "zh-hans-sg"
         ],
         "zh-tw": [
-            "Hant",
-            [
-                "AS"
-            ],
-            "中文（台灣）"
+            "zh-hant-tw"
         ],
         "zh-yue": [
             "yue"
