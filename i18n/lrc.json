@@ -1,19 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mogoeilor"
+			"Mogoeilor",
+			"Lorestani"
 		]
 	},
-	"uls-region-WW": "كل دونيا",
-	"uls-region-SP": "ويجه",
-	"uls-region-AM": "امركا",
-	"uls-region-AF": "افرقا",
-	"uls-region-EU": "اوروپا",
+	"uls-region-WW": "کولٛ دۏنیا",
+	"uls-region-SP": "ڤیژٱ",
+	"uls-region-AM": "اْمریکا",
+	"uls-region-AF": "اْفریقا",
+	"uls-region-EU": "اورۊپا",
 	"uls-region-AS": "آسيا",
-	"uls-region-ME": "مينجا خاور",
-	"uls-region-PA": "هوم پيوست جهون آوی",
-	"uls-no-results-found": "هيچ نتيجه يی  جسته نبی",
+	"uls-region-ME": "مؽنجا خاڤٱر",
+	"uls-region-PA": "هوم پاٛڤٱست جهوݩ آوی",
+	"uls-no-results-found": "هيچ نٱتیجاٛيی پاٛدا ناٛیی",
 	"uls-common-languages": "زونا رايج",
-	"uls-no-results-suggestion-title": "شما ممكنه دش علاقه من بوئيت",
+	"uls-no-results-suggestion-title": "شما مومکنٱ ڤش علاقٱمٱن بۊؽت",
 	"uls-search-placeholder": "پی  جوری  زونی"
 }
