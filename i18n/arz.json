@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"UpDownUp"
+			"UpDownUp",
+			"Meno25"
 		]
 	},
 	"uls-region-WW": "لغات عالمية",
@@ -16,6 +17,6 @@
 	"uls-no-results-found": "مفيش أي نتايج",
 	"uls-common-languages": "اللغات المقترحة",
 	"uls-no-results-suggestion-title": "يمكن تكون مهتم بـ:",
-	"uls-search-help": "ممكن تدور حسب إسم اللغة، إسم نظام الكتابة\\الخط، كود الـ ISO بتاع اللغة أو ممكن تتصفح حسب المنطقة.",
+	"uls-search-help": "ممكن تدور حسب اسم اللغه، اسم نظام الكتابه\\الخط، كود الـ ISO بتاع اللغه أو ممكن تتصفح حسب المنطقه.",
 	"uls-search-placeholder": "دوّر على لغة"
 }
