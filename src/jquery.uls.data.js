@@ -1211,7 +1211,7 @@ module.exports=( function ( $ ) {
             [
                 "AM"
             ],
-            "kréyòl gwiyanè"
+            "kriyòl gwiyannen"
         ],
         "gd": [
             "Latn",
@@ -1508,7 +1508,7 @@ module.exports=( function ( $ ) {
                 "EU",
                 "ME"
             ],
-            "արեւմտահայերէն"
+            "Արեւմտահայերէն"
         ],
         "hz": [
             "Latn",
@@ -1953,6 +1953,13 @@ module.exports=( function ( $ ) {
             ],
             "Ripoarisch"
         ],
+        "ksw": [
+            "Mymr",
+            [
+                "AS"
+            ],
+            "စှီၤ ကညီကျိာ်"
+        ],
         "ku": [
             "ku-latn"
         ],
@@ -2360,6 +2367,13 @@ module.exports=( function ( $ ) {
                 "AS"
             ],
             "Bahasa Melayu"
+        ],
+        "ms-arab": [
+            "Arab",
+            [
+              "AS"
+            ],
+            "بهاس ملايو"
         ],
         "mt": [
             "Latn",
@@ -4318,6 +4332,7 @@ module.exports=( function ( $ ) {
         ],
         "BN": [
             "ms",
+            "ms-arab",
             "zh-hant",
             "zh",
             "en"
@@ -4781,6 +4796,7 @@ module.exports=( function ( $ ) {
             "jv",
             "su",
             "ms",
+            "ms-arab",
             "min",
             "bew",
             "ban",
@@ -5152,6 +5168,7 @@ module.exports=( function ( $ ) {
         ],
         "MY": [
             "ms",
+            "ms-arab",
             "en",
             "zh-hant",
             "zh",
@@ -5759,5 +5776,6 @@ module.exports=( function ( $ ) {
         ]
     }
 }
+
 } ( jQuery ) );
 },{}]},{},[1]);

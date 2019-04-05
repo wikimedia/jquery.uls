@@ -27,11 +27,11 @@
   "devDependencies": {
     "eslint-config-wikimedia": "^0.7.2",
     "eslint-plugin-qunit": "^3.3.0",
-    "grunt": "^1.0.3",
+    "grunt": "1.0.4",
     "grunt-contrib-qunit": "^3.0.1",
     "grunt-eslint": "21.0.0",
     "grunt-stylelint": "0.10.0",
-    "stylelint": "9.2.0",
+    "stylelint": "9.10.1",
     "stylelint-config-wikimedia": "0.4.3"
   },
   "repository": {
@@ -47,5 +47,8 @@
   "license": "(MIT OR GPL-2.0+)",
   "scripts": {
     "test": "grunt test --verbose"
+  },
+  "dependencies": {
+    "browserify": "^16.2.3"
   }
 }
