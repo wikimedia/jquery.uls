@@ -28,14 +28,17 @@
 		<script src="../src/jquery.uls.languagefilter.js"></script>
 		<script src="../src/jquery.uls.core.js"></script>
 		<script>
-			$( document ).ready( function() {
-				$( '.uls-trigger' ).uls( {
-					onSelect: function( language ) {
+			$( function () {
+				// eslint-disable-next-line no-jquery/no-global-selector
+				var $trigger = $( '.uls-trigger' );
+				$trigger.uls( {
+					onSelect: function ( language ) {
 						var languageName = $.uls.data.getAutonym( language );
-						$( '.uls-trigger' ).text( languageName );
+						// eslint-disable-next-line no-jquery/no-global-selector
+						$trigger.text( languageName );
 					},
-					noResultsTemplate: function( query ) {
-						return $( '<div>No article exists in the language ' + query + '</div>' )
+					noResultsTemplate: function ( query ) {
+						return $( '<div>' ).text( 'No article exists in the language ' + query );
 					}
 				} );
 			} );

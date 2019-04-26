@@ -21,21 +21,25 @@
 		<script src="../src/jquery.uls.languagefilter.js"></script>
 		<script src="../src/jquery.uls.core.js"></script>
 		<script>
-			$( document ).ready( function() {
-				$( '.uls-trigger' ).uls( {
-					onSelect : function( language ) {
+			$( function () {
+				// eslint-disable-next-line no-jquery/no-global-selector
+				var $trigger = $( '.uls-trigger' );
+				$trigger.uls( {
+					onSelect: function ( language ) {
 						var languageName = $.uls.data.getAutonym( language );
-						$( '.uls-trigger' ).text( languageName );
+						// eslint-disable-next-line no-jquery/no-global-selector
+						$trigger.text( languageName );
 					},
-			lazyload: false, // For small language list no lazy load required.
-			languages: { // Languages are listed using its autonym. these language names
+					lazyload: false, // For small language list no lazy load required.
+					languages: {
+						// Languages are listed using its autonym. these language names
 						// in English(language names in current UI language) will also be used for search.
-						'en': 'English',
-						'hi': 'Hindi',
-						'he': 'Hebrew',
-						'ml': 'Malayalam',
-						'ta': 'Tamil',
-						'fr': 'French'
+						en: 'English',
+						hi: 'Hindi',
+						he: 'Hebrew',
+						ml: 'Malayalam',
+						ta: 'Tamil',
+						fr: 'French'
 					}
 				} );
 			} );

@@ -29,20 +29,24 @@
 		<script src="../src/jquery.uls.languagefilter.js"></script>
 		<script src="../src/jquery.uls.core.js"></script>
 		<script>
-			$( document ).ready( function () {
-				$( '.uls-trigger' ).uls( {
-					onSelect: function( language ) {
+			$( function () {
+				// eslint-disable-next-line no-jquery/no-global-selector
+				var $trigger = $( '.uls-trigger' );
+				$trigger.uls( {
+					onSelect: function ( language ) {
 						var languageName = $.uls.data.getAutonym( language );
-						$( '.uls-trigger' ).text( languageName );
+						$trigger.text( languageName );
 					},
-					quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr'] //FIXME
+					quickList: [ 'en', 'hi', 'he', 'ml', 'ta', 'fr' ] // FIXME
 				} );
-				$( '.uls-trigger' ).click( function () {
-					//Hacks I need to make afterwards. ULS API should be probably modified to allow optional classes and not force position:
+				$trigger.on( 'click', function () {
+					// Hacks I need to make afterwards. ULS API should be probably
+					// modified to allow optional classes and not force position:
+					// eslint-disable-next-line no-jquery/no-global-selector
 					$( '.uls-menu' )
 						.addClass( 'uls-mobile' )
 						.css( 'left', '2.5%' );
-				});
+				} );
 			} );
 		</script>
 	</head>

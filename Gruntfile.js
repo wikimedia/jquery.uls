@@ -1,3 +1,4 @@
+/* eslint-env node, es6 */
 'use strict';
 
 module.exports = function ( grunt ) {
@@ -7,10 +8,13 @@ module.exports = function ( grunt ) {
 
 	grunt.initConfig( {
 		eslint: {
+			options: {
+				reportUnusedDisableDirectives: false
+			},
 			all: [
-				'**/*.js',
-				'src/jquery.uls.data.js',
-				'!examples/**',
+				'**/*.{js,html}',
+				'!src/jquery.uls.data.js',
+				'!examples/resources/jquery.i18n.min.js',
 				'!node_modules/**',
 				'!vendor/**'
 			]

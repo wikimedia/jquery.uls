@@ -18,7 +18,8 @@
 	<script src="../src/jquery.uls.languagefilter.js"></script>
 	<script src="../src/jquery.uls.core.js"></script>
 	<script>
-		$( document ).ready( function () {
+		$( function () {
+			// eslint-disable-next-line no-jquery/no-global-selector
 			$( '.uls-trigger' ).uls( {
 				languageDecorator: function ( $language, languageCode ) {
 					if ( languageCode.indexOf( 'm' ) >= 0 ) {
@@ -26,7 +27,7 @@
 					}
 					$language.prop( 'href', '//' + languageCode + '.wikipedia.org' );
 				},
-				quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr'] //FIXME
+				quickList: [ 'en', 'hi', 'he', 'ml', 'ta', 'fr' ] // FIXME
 			} );
 		} );
 	</script>

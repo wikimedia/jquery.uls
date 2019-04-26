@@ -18,23 +18,26 @@
 		<script src="../src/jquery.uls.languagefilter.js"></script>
 		<script src="../src/jquery.uls.core.js"></script>
 		<script>
-		$( document ).ready( function () {
-			$( '.uls-trigger' ).uls( {
-				languages: {
-					ca: 'català',
-					es: 'español',
-					he: 'עברית',
-					ml: 'മലയാളം',
-					ru: 'русский'
-				},
-				onSelect: function ( language ) {
-					var languageName = $.uls.data.getAutonym( language );
-					$( '.uls-trigger' ).text( languageName );
-				},
-				menuWidth: 'narrow',
-				compact: true
+			$( function () {
+				// eslint-disable-next-line no-jquery/no-global-selector
+				var $trigger = $( '.uls-trigger' );
+				$trigger.uls( {
+					languages: {
+						ca: 'català',
+						es: 'español',
+						he: 'עברית',
+						ml: 'മലയാളം',
+						ru: 'русский'
+					},
+					onSelect: function ( language ) {
+						var languageName = $.uls.data.getAutonym( language );
+						// eslint-disable-next-line no-jquery/no-global-selector
+						$trigger.text( languageName );
+					},
+					menuWidth: 'narrow',
+					compact: true
+				} );
 			} );
-		} );
 		</script>
 	</head>
 

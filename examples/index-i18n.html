@@ -19,18 +19,21 @@
 		<script src="../src/jquery.uls.core.js"></script>
 		<script src="resources/jquery.i18n.min.js"></script>
 		<script>
-			$( document ).ready( function() {
-				var i18n = $.i18n( );
+			$( function () {
+				var i18n = $.i18n(),
+					// eslint-disable-next-line no-jquery/no-global-selector
+					$trigger = $( '.uls-trigger' );
 				// Use default locale "en"
 				i18n.locale = 'en';
 				i18n.load( '../i18n/en.json', 'en' );
-				$( '.uls-trigger' ).uls( {
-					onReady: function ( ) {
+				// eslint-disable-next-line no-jquery/no-global-selector
+				$trigger.uls( {
+					onReady: function () {
 						this.i18n();
 					},
-					onSelect: function( language ) {
+					onSelect: function ( language ) {
 						var languageName = $.uls.data.getAutonym( language );
-						$( '.uls-trigger' ).text( languageName );
+						$trigger.text( languageName );
 						i18n.locale = language;
 						// For ULS
 						i18n.load( '../i18n/' + language + '.json', language );
@@ -38,9 +41,10 @@
 						i18n.load( 'resources/i18n/' + language + '.json', language );
 						// re-i18n the elements
 						this.i18n();
+						// eslint-disable-next-line no-jquery/no-global-selector
 						$( '.navbar' ).i18n();
 					},
-					quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr']
+					quickList: [ 'en', 'hi', 'he', 'ml', 'ta', 'fr' ]
 				} );
 			} );
 		</script>

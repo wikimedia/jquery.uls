@@ -1,0 +1,9 @@
+{
+	"extends": [
+		"wikimedia/qunit",
+		"wikimedia/jquery"
+	],
+	"rules": {
+		"qunit/no-test-expect-argument": "off"
+	}
+}

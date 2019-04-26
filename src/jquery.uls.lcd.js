@@ -331,7 +331,7 @@
 				return this.cachedQuicklist;
 			}
 
-			if ( $.isFunction( this.options.quickList ) ) {
+			if ( typeof this.options.quickList === 'function' ) {
 				this.options.quickList = this.options.quickList();
 			}
 
@@ -382,7 +382,7 @@
 		},
 
 		focus: function () {
-			this.$element.focus();
+			this.$element.trigger( 'focus' );
 		},
 
 		/**
@@ -400,7 +400,7 @@
 			if ( typeof this.options.noResultsTemplate === 'function' ) {
 				$noResults =
 					this.options.noResultsTemplate.call( this, data.query );
-			} else if ( this.options.noResultsTemplate instanceof jQuery ) {
+			} else if ( this.options.noResultsTemplate instanceof $ ) {
 				$noResults = this.options.noResultsTemplate;
 			} else {
 				throw new Error( 'noResultsTemplate option must be ' +
