@@ -74,7 +74,7 @@
 	display: block;
 	position: absolute;
 	left: 0;
-	opacity: 0.8;
+	opacity: 0.5;
 }
 
 .uls-search-input-wrapper {
@@ -110,13 +110,14 @@
 }
 
 .uls-languagefilter-clear {
-	background: url( ../images/clear.png ) no-repeat left center;
+	background: url( ../images/close.png ) no-repeat left center;
 	/* @embed */
-	background-image: linear-gradient( transparent, transparent ), url( ../images/clear.svg );
+	background-image: linear-gradient( transparent, transparent ), url( ../images/close.svg );
 	background-size: 15px;
 	cursor: pointer;
 	height: 15px;
 	width: 15px;
+	opacity: 0.7;
 
 	/* Vertical margins: (32 - 15) / 2 */
 	margin: 8.5px 5px;
