@@ -3324,7 +3324,7 @@ module.exports=( function ( $ ) {
             [
                 "EU"
             ],
-            "sää´mǩiõll"
+            "nuõrttsääʹmǩiõll"
         ],
         "sn": [
             "Latn",
