@@ -298,11 +298,20 @@ module.exports=( function ( $ ) {
             "башҡортса"
         ],
         "ban": [
+            "Latn",
+            [
+                "AS",
+                "PA"
+            ],
+            "Bali"
+        ],
+        "ban-bali": [
             "Bali",
             [
-                "AS"
+                "AS",
+                "PA"
             ],
-            "ᬩᬲᬩᬮᬶ"
+            "ᬩᬮᬶ"
         ],
         "bar": [
             "Latn",
@@ -551,15 +560,12 @@ module.exports=( function ( $ ) {
             ],
             "Kaqchikel"
         ],
-        "cbk": [
+        "cbk-zam": [
             "Latn",
             [
                 "AS"
             ],
             "Chavacano de Zamboanga"
-        ],
-        "cbk-zam": [
-            "cbk"
         ],
         "cdo": [
             "Latn",
@@ -795,9 +801,6 @@ module.exports=( function ( $ ) {
             "Schweizer Hochdeutsch"
         ],
         "de-formal": [
-            "de-x-formal"
-        ],
-        "de-x-formal": [
             "Latn",
             [
                 "EU"
@@ -947,9 +950,6 @@ module.exports=( function ( $ ) {
             "español de América Latina"
         ],
         "es-formal": [
-            "es-x-formal"
-        ],
-        "es-x-formal": [
             "Latn",
             [
                 "EU",
@@ -1211,7 +1211,7 @@ module.exports=( function ( $ ) {
             [
                 "AM"
             ],
-            "kréyòl gwiyanè"
+            "kriyòl gwiyannen"
         ],
         "gd": [
             "Latn",
@@ -1478,9 +1478,6 @@ module.exports=( function ( $ ) {
             "Kreyòl ayisyen"
         ],
         "hu-formal": [
-            "hu-x-formal"
-        ],
-        "hu-x-formal": [
             "Latn",
             [
                 "EU"
@@ -1508,7 +1505,7 @@ module.exports=( function ( $ ) {
                 "EU",
                 "ME"
             ],
-            "արեւմտահայերէն"
+            "Արեւմտահայերէն"
         ],
         "hz": [
             "Latn",
@@ -1656,7 +1653,7 @@ module.exports=( function ( $ ) {
                 "AS",
                 "PA"
             ],
-            "Basa Jawa"
+            "Jawa"
         ],
         "jv-java": [
             "Java",
@@ -1664,14 +1661,7 @@ module.exports=( function ( $ ) {
                 "AS",
                 "PA"
             ],
-            "ꦧꦱꦗꦮ"
-        ],
-        "jv-x-bms": [
-            "Latn",
-            [
-                "AS"
-            ],
-            "Basa Banyumasan"
+            "ꦗꦮ"
         ],
         "ka": [
             "Geor",
@@ -1953,6 +1943,13 @@ module.exports=( function ( $ ) {
             ],
             "Ripoarisch"
         ],
+        "ksw": [
+            "Mymr",
+            [
+                "AS"
+            ],
+            "စှီၤ ကညီကျိာ်"
+        ],
         "ku": [
             "ku-latn"
         ],
@@ -2221,7 +2218,11 @@ module.exports=( function ( $ ) {
             "मैथिली"
         ],
         "map-bms": [
-            "jv-x-bms"
+            "Latn",
+            [
+                "AS"
+            ],
+            "Basa Banyumasan"
         ],
         "mdf": [
             "Cyrl",
@@ -2330,7 +2331,11 @@ module.exports=( function ( $ ) {
             "ဘာသာ မန်"
         ],
         "mo": [
-            "ro-cyrl-md"
+            "Cyrl",
+            [
+                "EU"
+            ],
+            "молдовеняскэ"
         ],
         "moe": [
             "Latn",
@@ -2360,6 +2365,13 @@ module.exports=( function ( $ ) {
                 "AS"
             ],
             "Bahasa Melayu"
+        ],
+        "ms-arab": [
+            "Arab",
+            [
+                "AS"
+            ],
+            "بهاس ملايو"
         ],
         "mt": [
             "Latn",
@@ -2456,13 +2468,6 @@ module.exports=( function ( $ ) {
             ],
             "Napulitano"
         ],
-        "nap-x-tara": [
-            "Latn",
-            [
-                "EU"
-            ],
-            "tarandíne"
-        ],
         "nb": [
             "Latn",
             [
@@ -2527,9 +2532,6 @@ module.exports=( function ( $ ) {
             "Ao"
         ],
         "nl-informal": [
-            "nl-x-informal"
-        ],
-        "nl-x-informal": [
             "Latn",
             [
                 "EU",
@@ -2587,15 +2589,12 @@ module.exports=( function ( $ ) {
             ],
             "isiNdebele seSewula"
         ],
-        "nrf": [
+        "nrm": [
             "Latn",
             [
                 "EU"
             ],
             "Nouormand"
-        ],
-        "nrm": [
-            "nrf"
         ],
         "nso": [
             "Latn",
@@ -2822,6 +2821,13 @@ module.exports=( function ( $ ) {
             ],
             "Ποντιακά"
         ],
+        "pov": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "guinensi"
+        ],
         "ppl": [
             "Latn",
             [
@@ -2913,6 +2919,14 @@ module.exports=( function ( $ ) {
             ],
             "Kreol Réyoné"
         ],
+        "rej": [
+            "Latn",
+            [
+                "AS",
+                "PA"
+            ],
+            "Jang"
+        ],
         "rgn": [
             "Latn",
             [
@@ -2969,18 +2983,15 @@ module.exports=( function ( $ ) {
             ],
             "română"
         ],
-        "ro-cyrl-md": [
-            "Cyrl",
-            [
-                "EU"
-            ],
-            "молдовеняскэ"
-        ],
         "roa-rup": [
             "rup"
         ],
         "roa-tara": [
-            "nap-x-tara"
+            "Latn",
+            [
+                "EU"
+            ],
+            "tarandíne"
         ],
         "rtm": [
             "Latn",
@@ -3324,7 +3335,7 @@ module.exports=( function ( $ ) {
             [
                 "EU"
             ],
-            "sää´mǩiõll"
+            "nuõrttsääʹmǩiõll"
         ],
         "sn": [
             "Latn",
@@ -3781,6 +3792,13 @@ module.exports=( function ( $ ) {
             ],
             "Tshivenda"
         ],
+        "vai": [
+            "Vaii",
+            [
+                "AF"
+            ],
+            "ꕙꔤ"
+        ],
         "vec": [
             "Latn",
             [
@@ -3984,28 +4002,11 @@ module.exports=( function ( $ ) {
             "lzh"
         ],
         "zh-cn": [
-            "zh-hans-cn"
-        ],
-        "zh-hans-cn": [
             "Hans",
             [
                 "AS"
             ],
             "中文（中国大陆）"
-        ],
-        "zh-hans-my": [
-            "Hans",
-            [
-                "AS"
-            ],
-            "中文（马来西亚）"
-        ],
-        "zh-hans-sg": [
-            "Hans",
-            [
-                "AS"
-            ],
-            "中文（新加坡）"
         ],
         "zh-hans": [
             "Hans",
@@ -4013,27 +4014,6 @@ module.exports=( function ( $ ) {
                 "AS"
             ],
             "中文（简体）"
-        ],
-        "zh-hant-hk": [
-            "Hant",
-            [
-                "AS"
-            ],
-            "中文（香港）"
-        ],
-        "zh-hant-mo": [
-            "Hant",
-            [
-                "AS"
-            ],
-            "中文（澳門）"
-        ],
-        "zh-hant-tw": [
-            "Hant",
-            [
-                "AS"
-            ],
-            "中文（台灣）"
         ],
         "zh-hant": [
             "Hant",
@@ -4043,22 +4023,42 @@ module.exports=( function ( $ ) {
             "中文（繁體）"
         ],
         "zh-hk": [
-            "zh-hant-hk"
+            "Hant",
+            [
+                "AS"
+            ],
+            "中文（香港）"
         ],
         "zh-min-nan": [
             "nan"
         ],
         "zh-mo": [
-            "zh-hant-mo"
+            "Hant",
+            [
+                "AS"
+            ],
+            "中文（澳門）"
         ],
         "zh-my": [
-            "zh-hans-my"
+            "Hans",
+            [
+                "AS"
+            ],
+            "中文（马来西亚）"
         ],
         "zh-sg": [
-            "zh-hans-sg"
+            "Hans",
+            [
+                "AS"
+            ],
+            "中文（新加坡）"
         ],
         "zh-tw": [
-            "zh-hant-tw"
+            "Hant",
+            [
+                "AS"
+            ],
+            "中文（台灣）"
         ],
         "zh-yue": [
             "yue"
@@ -4098,10 +4098,11 @@ module.exports=( function ( $ ) {
             "Syrc"
         ],
         "African": [
+            "Copt",
             "Ethi",
             "Nkoo",
             "Tfng",
-            "Copt"
+            "Vaii"
         ],
         "SouthAsian": [
             "Beng",
@@ -4183,6 +4184,7 @@ module.exports=( function ( $ ) {
         ],
         "AE": [
             "ar",
+            "en",
             "ml",
             "ps",
             "fa"
@@ -4320,6 +4322,7 @@ module.exports=( function ( $ ) {
             "ms",
             "zh-hant",
             "zh",
+            "ms-arab",
             "en"
         ],
         "BO": [
@@ -4378,6 +4381,7 @@ module.exports=( function ( $ ) {
             "atj"
         ],
         "CC": [
+            "ms-arab",
             "ms",
             "en"
         ],
@@ -4780,6 +4784,7 @@ module.exports=( function ( $ ) {
             "id",
             "jv",
             "su",
+            "ms-arab",
             "ms",
             "min",
             "bew",
@@ -4790,6 +4795,7 @@ module.exports=( function ( $ ) {
             "bbc-latn",
             "zh-hant",
             "zh",
+            "rej",
             "gor",
             "sly",
             "mwv"
@@ -5003,6 +5009,7 @@ module.exports=( function ( $ ) {
         ],
         "LR": [
             "en",
+            "vai",
             "ff"
         ],
         "LS": [
