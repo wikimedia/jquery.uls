@@ -250,6 +250,13 @@ module.exports=( function ( $ ) {
             ],
             "Kotava"
         ],
+        "awa": [
+            "Deva",
+            [
+                "AS"
+            ],
+            "अवधी"
+        ],
         "ay": [
             "Latn",
             [
@@ -2278,7 +2285,7 @@ module.exports=( function ( $ ) {
             [
                 "AS"
             ],
-            "Baso Minangkabau"
+            "Minangkabau"
         ],
         "miq": [
             "Latn",
@@ -2317,6 +2324,13 @@ module.exports=( function ( $ ) {
             "ᠮᠠᠨᠵᡠ ᡤᡳᠰᡠᠨ"
         ],
         "mni": [
+            "Mtei",
+            [
+                "AS"
+            ],
+            "ꯃꯤꯇꯩ ꯂꯣꯟ"
+        ],
+        "mni-beng": [
             "Beng",
             [
                 "AS"
@@ -4111,6 +4125,7 @@ module.exports=( function ( $ ) {
             "Guru",
             "Knda",
             "Mlym",
+            "Mtei",
             "Olck",
             "Orya",
             "Saur",
@@ -4837,6 +4852,7 @@ module.exports=( function ( $ ) {
             "or",
             "pa-guru",
             "bho",
+            "awa",
             "as",
             "mai",
             "hne",
@@ -5234,6 +5250,7 @@ module.exports=( function ( $ ) {
             "new",
             "en",
             "dty",
+            "awa",
             "hi",
             "bo",
             "bn"

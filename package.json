@@ -47,5 +47,8 @@
   "license": "(MIT OR GPL-2.0+)",
   "scripts": {
     "test": "grunt test --verbose"
+  },
+  "dependencies": {
+    "browserify": "^16.4.0"
   }
 }
