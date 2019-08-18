@@ -250,6 +250,13 @@ module.exports=( function ( $ ) {
             ],
             "Kotava"
         ],
+        "awa": [
+            "Deva",
+            [
+                "AS"
+            ],
+            "अवधी"
+        ],
         "ay": [
             "Latn",
             [
