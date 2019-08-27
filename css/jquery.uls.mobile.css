@@ -1,5 +1,4 @@
 @media only screen and ( max-width: 767px ) {
-
 	.uls-mobile.uls-menu {
 		width: 95%;
 		left: 2.5%;
@@ -10,6 +9,7 @@
 	}
 
 	.uls-mobile .uls-language-block {
+		/* stylelint-disable-next-line declaration-no-important */
 		padding-left: 15px !important;
 	}
 
@@ -31,6 +31,7 @@
 
 	.uls-mobile .column,
 	.uls-mobile .columns {
+		/* stylelint-disable-next-line declaration-no-important */
 		width: auto !important;
 		float: none;
 	}
@@ -67,6 +68,7 @@
 	.uls-mobile .offset-by-eight,
 	.uls-mobile .offset-by-nine,
 	.uls-mobile .offset-by-ten {
+		/* stylelint-disable-next-line declaration-no-important */
 		margin-left: 0 !important;
 	}
 
@@ -96,6 +98,7 @@
 
 	/* Mobile 4-column Grid */
 	.uls-mobile .row .mobile-one {
+		/* stylelint-disable-next-line declaration-no-important */
 		width: 25% !important;
 		float: left;
 		padding: 0 4px;
@@ -110,6 +113,7 @@
 	}
 
 	.uls-mobile .row .mobile-two {
+		/* stylelint-disable-next-line declaration-no-important */
 		width: 50% !important;
 		float: left;
 		padding: 0 4px;
@@ -124,6 +128,7 @@
 	}
 
 	.uls-mobile .row .mobile-three {
+		/* stylelint-disable-next-line declaration-no-important */
 		width: 75% !important;
 		float: left;
 		padding: 0 4px;
@@ -138,6 +143,7 @@
 	}
 
 	.uls-mobile .row .mobile-four {
+		/* stylelint-disable-next-line declaration-no-important */
 		width: 100% !important;
 		float: left;
 		padding: 0 4px;
@@ -184,6 +190,7 @@
 .uls-mobile .hide-for-large,
 .uls-mobile .hide-for-large-up,
 .uls-mobile .show-for-xlarge {
+	/* stylelint-disable-next-line declaration-no-important */
 	display: none !important;
 }
 
@@ -193,6 +200,7 @@
 .uls-mobile .hide-for-small,
 .uls-mobile .hide-for-medium,
 .uls-mobile .hide-for-medium-down {
+	/* stylelint-disable-next-line declaration-no-important */
 	display: block !important;
 }
 
@@ -204,6 +212,7 @@
 	.hide-for-large,
 	.show-for-large-up,
 	.show-for-xlarge {
+		/* stylelint-disable-next-line declaration-no-important */
 		display: block !important;
 	}
 
@@ -213,6 +222,7 @@
 	.uls-mobile .show-for-large,
 	.uls-mobile .hide-for-large-up,
 	.uls-mobile .hide-for-xlarge {
+		/* stylelint-disable-next-line declaration-no-important */
 		display: none !important;
 	}
 }
@@ -225,6 +235,7 @@
 	.uls-mobile .hide-for-large,
 	.uls-mobile .hide-for-large-up,
 	.uls-mobile .hide-for-xlarge {
+		/* stylelint-disable-next-line declaration-no-important */
 		display: block !important;
 	}
 
@@ -234,6 +245,7 @@
 	.uls-mobile .show-for-large,
 	.uls-mobile .show-for-large-up,
 	.uls-mobile .show-for-xlarge {
+		/* stylelint-disable-next-line declaration-no-important */
 		display: none !important;
 	}
 }
@@ -246,14 +258,17 @@
 	.uls-mobile .hide-for-large,
 	.uls-mobile .hide-for-large-up,
 	.uls-mobile .hide-for-xlarge {
+		/* stylelint-disable-next-line declaration-no-important */
 		display: block !important;
 	}
+
 	.uls-mobile .hide-for-small,
 	.uls-mobile .show-for-medium,
 	.uls-mobile .hide-for-medium-down,
 	.uls-mobile .show-for-large,
 	.uls-mobile .show-for-large-up,
 	.uls-mobile .show-for-xlarge {
+		/* stylelint-disable-next-line declaration-no-important */
 		display: none !important;
 	}
 }
@@ -261,21 +276,26 @@
 /* Orientation targeting */
 .uls-mobile .show-for-landscape,
 .uls-mobile .hide-for-portrait {
+	/* stylelint-disable-next-line declaration-no-important */
 	display: block !important;
 }
 
 .uls-mobile .hide-for-landscape,
 .uls-mobile .show-for-portrait {
+	/* stylelint-disable-next-line declaration-no-important */
 	display: none !important;
 }
 
 @media screen and ( orientation: landscape ) {
 	.uls-mobile .show-for-landscape,
 	.uls-mobile .hide-for-portrait {
+		/* stylelint-disable-next-line declaration-no-important */
 		display: block !important;
 	}
+
 	.uls-mobile .hide-for-landscape,
 	.uls-mobile .show-for-portrait {
+		/* stylelint-disable-next-line declaration-no-important */
 		display: none !important;
 	}
 }
@@ -283,10 +303,13 @@
 @media screen and ( orientation: portrait ) {
 	.uls-mobile .show-for-portrait,
 	.uls-mobile .hide-for-landscape {
+		/* stylelint-disable-next-line declaration-no-important */
 		display: block !important;
 	}
+
 	.uls-mobile .hide-for-portrait,
 	.uls-mobile .show-for-landscape {
+		/* stylelint-disable-next-line declaration-no-important */
 		display: none !important;
 	}
 }
@@ -294,10 +317,13 @@
 /* Touch-enabled device targeting */
 .uls-mobile .show-for-touch,
 .uls-mobile .touch .hide-for-touch {
+	/* stylelint-disable-next-line declaration-no-important */
 	display: none !important;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .uls-mobile .hide-for-touch,
 .uls-mobile .touch .show-for-touch {
+	/* stylelint-disable-next-line declaration-no-important */
 	display: block !important;
 }

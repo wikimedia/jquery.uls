@@ -21,9 +21,6 @@ module.exports = function ( grunt ) {
 			]
 		},
 		stylelint: {
-			options: {
-				syntax: 'css'
-			},
 			src: [
 				'**/*.css',
 				'!node_modules/**'
@@ -34,7 +31,7 @@ module.exports = function ( grunt ) {
 		}
 	} );
 
-	grunt.registerTask( 'lint', [ 'eslint' ] );
+	grunt.registerTask( 'lint', [ 'eslint', 'stylelint' ] );
 	grunt.registerTask( 'test', [ 'lint', 'qunit' ] );
 	grunt.registerTask( 'default', 'test' );
 };
