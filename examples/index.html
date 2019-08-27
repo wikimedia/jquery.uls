@@ -34,7 +34,6 @@
 				$trigger.uls( {
 					onSelect: function ( language ) {
 						var languageName = $.uls.data.getAutonym( language );
-						// eslint-disable-next-line no-jquery/no-global-selector
 						$trigger.text( languageName );
 					},
 					quickList: [ 'en', 'hi', 'he', 'ml', 'ta', 'fr' ] // FIXME
