@@ -23,7 +23,7 @@ then
 else (
 	echo "Installing browserify"
 	cd "$BASEDIR";
-	npm install browserify
+	npm install --no-save browserify
 ) fi
 
 echo "Transforming language-data"
