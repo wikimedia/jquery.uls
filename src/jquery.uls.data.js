@@ -444,7 +444,7 @@ module.exports=( function ( $ ) {
             [
                 "AS"
             ],
-            "Bahasa Banjar"
+            "Banjar"
         ],
         "bm": [
             "Latn",
@@ -2695,6 +2695,13 @@ module.exports=( function ( $ ) {
             ],
             "Ирон"
         ],
+        "osi": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Using"
+        ],
         "ota": [
             "Arab",
             [
@@ -3451,7 +3458,7 @@ module.exports=( function ( $ ) {
             [
                 "AS"
             ],
-            "Basa Sunda"
+            "Sunda"
         ],
         "sv": [
             "Latn",
