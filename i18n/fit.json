@@ -4,9 +4,18 @@
 			"Pyscowicz"
 		]
 	},
+	"uls-region-WW": "Maailmankielet",
+	"uls-region-SP": "Erikoiskielet",
 	"uls-region-AM": "Pohjois- ja Etelä-Ameriika",
 	"uls-region-AF": "Aafriikka",
 	"uls-region-EU": "Euruuppa",
 	"uls-region-AS": "Aasia",
-	"uls-region-all": "Kaikki kielet"
+	"uls-region-ME": "Lähi-itä",
+	"uls-region-PA": "Tyynenmeren alue",
+	"uls-region-all": "Kaikki kielet",
+	"uls-no-results-found": "Ei hakutuloksia",
+	"uls-common-languages": "Ehdotetut kielet",
+	"uls-no-results-suggestion-title": "Lähimmät hakutulokset:",
+	"uls-search-help": "Hae kielen tai kirjoitusjärjestelmän nimelä, kielen ISO-koodila eli selaa kieliä alueluettelosta:",
+	"uls-search-placeholder": "Etsi kieltä"
 }
