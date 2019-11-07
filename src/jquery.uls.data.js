@@ -362,6 +362,13 @@ module.exports=( function ( $ ) {
             ],
             "Bikol Central"
         ],
+        "bdr": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Bajau Sama"
+        ],
         "be-tarask": [
             "Cyrl",
             [
@@ -573,6 +580,13 @@ module.exports=( function ( $ ) {
                 "AS"
             ],
             "Chavacano de Zamboanga"
+        ],
+        "ccp": [
+            "Cakm",
+            [
+                "AS"
+            ],
+            "𑄌𑄋𑄴𑄟𑄳𑄦"
         ],
         "cdo": [
             "Latn",
@@ -1646,6 +1660,13 @@ module.exports=( function ( $ ) {
                 "AS"
             ],
             "жугьури"
+        ],
+        "jje": [
+            "Kore",
+            [
+                "AS"
+            ],
+            "제주말"
         ],
         "jut": [
             "Latn",
@@ -4134,6 +4155,7 @@ module.exports=( function ( $ ) {
         ],
         "SouthAsian": [
             "Beng",
+            "Cakm",
             "Deva",
             "Gujr",
             "Guru",
@@ -4304,6 +4326,7 @@ module.exports=( function ( $ ) {
         "BD": [
             "bn",
             "en",
+            "ccp",
             "my",
             "mni"
         ],
@@ -4616,7 +4639,8 @@ module.exports=( function ( $ ) {
             "gl",
             "eu",
             "ast",
-            "ext"
+            "ext",
+            "an"
         ],
         "ET": [
             "en",
@@ -4882,6 +4906,7 @@ module.exports=( function ( $ ) {
             "mni",
             "hoc",
             "saz",
+            "ccp",
             "bfq",
             "njo",
             "bo",
