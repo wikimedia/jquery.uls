@@ -103,7 +103,7 @@
 					e.preventDefault();
 					e.stopPropagation();
 
-					query = $.trim( this.$element.val() ).toLowerCase();
+					query = ( this.$element.val() || '' ).trim().toLowerCase();
 
 					if ( this.selectedLanguage ) {
 						// this.selectLanguage will be populated from a matching search
@@ -126,7 +126,7 @@
 			this.$element.val( '' );
 
 			if ( !$.fn.uls.Constructor.prototype.isMobile() ) {
-				this.$element.focus();
+				this.$element.trigger( 'focus' );
 			}
 
 			this.toggleClear();
@@ -160,7 +160,7 @@
 		search: function () {
 			var languages = Object.keys( this.options.languages ),
 				results = [],
-				query = $.trim( this.$element.val() ).toLowerCase();
+				query = ( this.$element.val() || '' ).trim().toLowerCase();
 
 			if ( query === '' ) {
 				this.options.lcd.setGroupByRegionOverride( null );
@@ -189,6 +189,7 @@
 				var autofillLabel,
 					results = [];
 
+				// eslint-disable-next-line no-jquery/no-each-util
 				$.each( result.languagesearch, function ( apiCode, name ) {
 					var code, redirect;
 

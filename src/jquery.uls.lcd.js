@@ -57,7 +57,7 @@
 		this.$element.addClass( 'uls-lcd' );
 		this.regionLanguages = {};
 		this.renderTimeout = null;
-		this.cachedQuicklist = null;
+		this.$cachedQuicklist = null;
 		this.groupByRegionOverride = null;
 
 		this.render();
@@ -327,17 +327,17 @@
 		buildQuicklist: function () {
 			var quickList, $quickListSection, $quickListSectionTitle;
 
-			if ( this.cachedQuicklist !== null ) {
-				return this.cachedQuicklist;
+			if ( this.$cachedQuicklist !== null ) {
+				return this.$cachedQuicklist;
 			}
 
-			if ( $.isFunction( this.options.quickList ) ) {
+			if ( typeof this.options.quickList === 'function' ) {
 				this.options.quickList = this.options.quickList();
 			}
 
 			if ( !this.options.quickList.length ) {
-				this.cachedQuicklist = $( [] );
-				return this.cachedQuicklist;
+				this.$cachedQuicklist = $( [] );
+				return this.$cachedQuicklist;
 			}
 
 			// Pick only the first elements, because we don't have room for more
@@ -363,8 +363,8 @@
 
 			$quickListSectionTitle.i18n();
 
-			this.cachedQuicklist = $quickListSection;
-			return this.cachedQuicklist;
+			this.$cachedQuicklist = $quickListSection;
+			return this.$cachedQuicklist;
 		},
 
 		show: function () {
@@ -382,7 +382,7 @@
 		},
 
 		focus: function () {
-			this.$element.focus();
+			this.$element.trigger( 'focus' );
 		},
 
 		/**

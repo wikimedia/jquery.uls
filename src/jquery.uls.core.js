@@ -149,7 +149,7 @@
 			this.$menu.addClass( widthClasses[ this.menuWidth ] );
 
 			if ( !this.initialized ) {
-				$( 'body' ).prepend( this.$menu );
+				$( document.body ).prepend( this.$menu );
 				this.i18n();
 				this.initialized = true;
 			}
@@ -160,7 +160,7 @@
 			this.shown = true;
 
 			if ( !this.isMobile() ) {
-				this.$languageFilter.focus();
+				this.$languageFilter.trigger( 'focus' );
 			}
 
 			this.visible();
@@ -267,8 +267,8 @@
 
 			this.$languageFilter.on( 'resultsfound.uls', this.success.bind( this ) );
 
-			$( 'html' ).click( this.cancel.bind( this ) );
-			$( window ).resize( $.fn.uls.debounce( this.resize.bind( this ), 250 ) );
+			$( document.body ).on( 'click', this.cancel.bind( this ) );
+			$( window ).on( 'resize', $.fn.uls.debounce( this.resize.bind( this ), 250 ) );
 		},
 
 		resize: function () {
@@ -477,6 +477,7 @@
 				} else {
 					scrollPosition = panelBottom - windowHeight;
 				}
+				// eslint-disable-next-line no-jquery/no-global-selector
 				$( 'html, body' ).stop().animate( {
 					scrollTop: scrollPosition
 				}, 500 );
