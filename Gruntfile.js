@@ -1,5 +1,7 @@
 'use strict';
 
+/* eslint-env node, es6 */
+
 module.exports = function ( grunt ) {
 	grunt.loadNpmTasks( 'grunt-eslint' );
 	grunt.loadNpmTasks( 'grunt-stylelint' );
@@ -7,9 +9,13 @@ module.exports = function ( grunt ) {
 
 	grunt.initConfig( {
 		eslint: {
+			options: {
+				extensions: [ '.js', '.json' ],
+				cache: true
+			},
 			all: [
-				'**/*.js',
-				'src/jquery.uls.data.js',
+				'**/*.{js,json}',
+				'!src/jquery.uls.data.js',
 				'!examples/**',
 				'!node_modules/**',
 				'!vendor/**'
@@ -29,7 +35,7 @@ module.exports = function ( grunt ) {
 		}
 	} );
 
-	grunt.registerTask( 'lint', [ 'eslint' ] );
+	grunt.registerTask( 'lint', [ 'eslint', 'stylelint' ] );
 	grunt.registerTask( 'test', [ 'lint', 'qunit' ] );
 	grunt.registerTask( 'default', 'test' );
 };

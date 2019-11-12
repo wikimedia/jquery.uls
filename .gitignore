@@ -7,3 +7,4 @@
 /dist
 data/supplementalData.xml
 /vendor
+.eslintcache
