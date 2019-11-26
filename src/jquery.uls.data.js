@@ -96,13 +96,6 @@ module.exports=( function ( $ ) {
             ],
             "अहिराणी"
         ],
-        "ais": [
-            "Latn",
-            [
-                "AS"
-            ],
-            "Sakizaya"
-        ],
         "ak": [
             "Latn",
             [
@@ -3261,6 +3254,16 @@ module.exports=( function ( $ ) {
             ],
             "လိၵ်ႈတႆး"
         ],
+        "shy-latn": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "tacawit"
+        ],
+        "shy": [
+            "shy-latn"
+        ],
         "si": [
             "Sinh",
             [
@@ -3515,6 +3518,13 @@ module.exports=( function ( $ ) {
                 "EU"
             ],
             "ślůnski"
+        ],
+        "szy": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Sakizaya"
         ],
         "ta": [
             "Taml",
@@ -4598,6 +4608,7 @@ module.exports=( function ( $ ) {
             "ar",
             "fr",
             "kab",
+            "shy-latn",
             "en"
         ],
         "EA": [
@@ -5679,6 +5690,7 @@ module.exports=( function ( $ ) {
         "TW": [
             "zh-hant",
             "zh",
+            "szy",
             "trv"
         ],
         "TZ": [
@@ -5822,5 +5834,6 @@ module.exports=( function ( $ ) {
         ]
     }
 }
+
 } ( jQuery ) );
 },{}]},{},[1]);
