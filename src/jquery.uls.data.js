@@ -671,6 +671,13 @@ module.exports=( function ( $ ) {
             ],
             "کوردی"
         ],
+        "ckt": [
+            "Cyrl",
+            [
+                "AS"
+            ],
+            "ԓыгъоравэтԓьэн"
+        ],
         "cnh": [
             "Latn",
             [
@@ -3261,9 +3268,6 @@ module.exports=( function ( $ ) {
             ],
             "tacawit"
         ],
-        "shy": [
-            "shy-latn"
-        ],
         "si": [
             "Sinh",
             [
@@ -4608,7 +4612,6 @@ module.exports=( function ( $ ) {
             "ar",
             "fr",
             "kab",
-            "shy-latn",
             "en"
         ],
         "EA": [
@@ -5690,7 +5693,6 @@ module.exports=( function ( $ ) {
         "TW": [
             "zh-hant",
             "zh",
-            "szy",
             "trv"
         ],
         "TZ": [
@@ -5834,6 +5836,5 @@ module.exports=( function ( $ ) {
         ]
     }
 }
-
 } ( jQuery ) );
 },{}]},{},[1]);
