@@ -42,8 +42,6 @@
 	max-width: none;
 	min-width: 600px;
 	margin: 0 auto;
-	/* Nicolas Gallagher's micro clearfix */
-	*zoom: 1;
 }
 
 .grid .row .row {
