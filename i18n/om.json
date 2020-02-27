@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Tumsaa"
+			"Tumsaa",
+			"Oromoo"
 		]
 	},
 	"uls-region-WW": "Addunyaalessa",
@@ -12,6 +13,7 @@
 	"uls-region-AS": "Eeshiyaa",
 	"uls-region-ME": "Giddu-galeessa Bahaa",
 	"uls-region-PA": "Paasifiik",
+	"uls-region-all": "Afaan hunda",
 	"uls-no-results-found": "Homtuu hin argamane",
 	"uls-common-languages": "Afaan filannoo",
 	"uls-no-results-suggestion-title": "Kana barbaaduu dandeessa:",

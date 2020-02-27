@@ -5,7 +5,7 @@
 		]
 	},
 	"uls-region-WW": "Maailmankielet",
-	"uls-region-SP": "Erikoiskielet",
+	"uls-region-SP": "Spesiaalikielet",
 	"uls-region-AM": "Pohjois- ja Etelä-Ameriika",
 	"uls-region-AF": "Aafriikka",
 	"uls-region-EU": "Euruuppa",
@@ -16,6 +16,6 @@
 	"uls-no-results-found": "Ei hakuresyltaatteja",
 	"uls-common-languages": "Ehotetut kielet",
 	"uls-no-results-suggestion-title": "Lähimmät hakuresyltaatit:",
-	"uls-search-help": "Hae kielen tai kirjoitusjärjestelmän nimelä, kielen ISO-koodila eli selaa kieliä alueluettelosta:",
+	"uls-search-help": "Hae kielen tai kirjoitussysteemin nimelä, kielen ISO-kootila eli selaa kieliä aluelistasta:",
 	"uls-search-placeholder": "Etsi kieltä"
 }
