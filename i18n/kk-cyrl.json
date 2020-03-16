@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Arystanbek"
+			"Arystanbek",
+			"Fontan 030"
 		]
 	},
 	"uls-region-WW": "Әлемдік тілдер",
@@ -12,6 +13,7 @@
 	"uls-region-AS": "Азия",
 	"uls-region-ME": "Таяу шығыс",
 	"uls-region-PA": "Тынық мұхит",
+	"uls-region-all": "Барлық тілдер",
 	"uls-no-results-found": "Ешбір нәтиже табылмады",
 	"uls-common-languages": "Ортақ тілдер",
 	"uls-no-results-suggestion-title": "Сіз қызықтауыңыз мүмкін:",

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"GatoSelvadego"
+			"GatoSelvadego",
+			"Fierodelveneto"
 		]
 	},
 	"uls-region-WW": "Tuto el mondo",
@@ -13,9 +14,9 @@
 	"uls-region-ME": "Levante mexan",
 	"uls-region-PA": "Pasifego",
 	"uls-region-all": "Tute ƚe ƚengue",
-	"uls-no-results-found": "Nisun rixultado",
-	"uls-common-languages": "Lengue sugerìe",
+	"uls-no-results-found": "Nisun rixultà",
+	"uls-common-languages": "Lengue sujerìe",
 	"uls-no-results-suggestion-title": "Te pol èsar interesà a:",
-	"uls-search-help": "Xe posibiƚe sercar par nòme, nòme del script, còdexe ISO de ƚa lengua o se pol navegar par region.",
+	"uls-search-help": "Xe posibiƚe sercar par nòme, nòme del script, còdexe ISO de ƚa lengua o se połe navegar par rejon.",
 	"uls-search-placeholder": "Serca na lengua"
 }
