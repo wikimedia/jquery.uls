@@ -28,6 +28,6 @@ else (
 
 echo "Transforming language-data"
 
-"$BASEDIR"/node_modules/browserify/bin/cmd.js "$CLONEDIR"/language-data.json -t "$BASEDIR"/scripts/transform.js -o "$DEST"/jquery.uls.data.js
+"$BASEDIR"/node_modules/browserify/bin/cmd.js "$CLONEDIR"/data/language-data.json -t "$BASEDIR"/scripts/transform.js -o "$DEST"/jquery.uls.data.js
 
 echo "language-data wrote to $DEST/jquery.uls.data.js"
