@@ -2,8 +2,8 @@
 
 set -o errexit -o nounset -o pipefail
 
-readlinkf() { perl -MCwd -e 'print Cwd::abs_path shift;' "$1"; }
-BASEDIR=$(dirname "$(dirname "$(readlinkf "$0")")")
+scriptdir() { perl -MCwd -e 'print Cwd::abs_path shift;' "$1"; }
+BASEDIR=$(dirname "$(dirname "$(scriptdir "$0")")")
 DEST="$BASEDIR/src"
 CLONEDIR="$BASEDIR/vendor/language-data"
 UPSTREAM="https://github.com/wikimedia/language-data.git"
