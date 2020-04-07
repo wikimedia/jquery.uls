@@ -3283,7 +3283,7 @@ module.exports=( function ( $ ) {
             [
                 "EU"
             ],
-            "Кӣллт са̄мь кӣлл"
+            "кӣллт са̄мь кӣлл"
         ],
         "sje": [
             "Latn",
@@ -4851,7 +4851,6 @@ module.exports=( function ( $ ) {
             "id",
             "jv",
             "su",
-            "ms-arab",
             "ms",
             "min",
             "bew",
@@ -4859,6 +4858,7 @@ module.exports=( function ( $ ) {
             "bug",
             "bjn",
             "ace",
+            "ms-arab",
             "bbc-latn",
             "zh-hant",
             "zh",
