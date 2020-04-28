@@ -155,6 +155,7 @@ module.exports=( function ( $ ) {
         "ar": [
             "Arab",
             [
+                "AF",
                 "ME"
             ],
             "العربية"
@@ -183,20 +184,34 @@ module.exports=( function ( $ ) {
         "arq": [
             "Arab",
             [
-                "AF"
+                "AF",
+                "ME"
             ],
             "جازايرية"
         ],
         "ary": [
-            "Latn",
+            "Arab",
             [
+                "AF",
                 "ME"
             ],
-            "Maġribi"
+            "الدارجة"
+        ],
+        "ary-arab": [
+            "ary"
+        ],
+        "ary-latn": [
+            "Latn",
+            [
+                "AF",
+                "ME"
+            ],
+            "ed-dārija"
         ],
         "arz": [
             "Arab",
             [
+                "AF",
                 "ME"
             ],
             "مصرى"
@@ -2377,7 +2392,7 @@ module.exports=( function ( $ ) {
             [
                 "AM"
             ],
-            "Innu-aimun"
+            "innu-aimun"
         ],
         "mr": [
             "Deva",
@@ -3358,6 +3373,23 @@ module.exports=( function ( $ ) {
             ],
             "ܣܘܪܝܝܐ"
         ],
+        "syl": [
+            "Sylo",
+            [
+                "AS"
+            ],
+            "ꠍꠤꠟꠐꠤ"
+        ],
+        "syl-beng": [
+            "Beng",
+            [
+                "AS"
+            ],
+            "সিলেটি"
+        ],
+        "syl-sylo": [
+            "syl"
+        ],
         "sm": [
             "Latn",
             [
@@ -4180,6 +4212,7 @@ module.exports=( function ( $ ) {
             "Orya",
             "Saur",
             "Sinh",
+            "Sylo",
             "Taml",
             "Telu",
             "Tibt",
@@ -4340,6 +4373,7 @@ module.exports=( function ( $ ) {
         "BD": [
             "bn",
             "en",
+            "syl",
             "ccp",
             "my",
             "mni"
@@ -4723,6 +4757,7 @@ module.exports=( function ( $ ) {
             "bn",
             "zh-hant",
             "zh",
+            "syl",
             "el",
             "it",
             "ks-arab",
