@@ -2253,6 +2253,13 @@ module.exports=( function ( $ ) {
             ],
             "Lazuri"
         ],
+        "mad": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "madhurâ"
+        ],
         "mai": [
             "Deva",
             [
@@ -2352,6 +2359,12 @@ module.exports=( function ( $ ) {
             ],
             "монгол"
         ],
+        "mn-cyrl": [
+            "mn"
+        ],
+        "mn-mong": [
+            "mvf"
+        ],
         "mnc": [
             "Mong",
             [
@@ -2450,6 +2463,13 @@ module.exports=( function ( $ ) {
                 "AM"
             ],
             "Mvskoke"
+        ],
+        "mvf": [
+            "Mong",
+            [
+                "AS"
+            ],
+            "ᠮᠣᠩᠭᠣᠯ"
         ],
         "mwl": [
             "Latn",
@@ -3897,7 +3917,8 @@ module.exports=( function ( $ ) {
         "vec": [
             "Latn",
             [
-                "EU"
+                "EU",
+                "AM"
             ],
             "vèneto"
         ],
@@ -4542,6 +4563,7 @@ module.exports=( function ( $ ) {
             "ii",
             "ug-arab",
             "za",
+            "mvf",
             "mn",
             "bo",
             "ko",
@@ -4886,6 +4908,7 @@ module.exports=( function ( $ ) {
             "id",
             "jv",
             "su",
+            "mad",
             "ms",
             "min",
             "bew",
