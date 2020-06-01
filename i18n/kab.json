@@ -6,7 +6,8 @@
 			"Mezgoug",
 			"Mmistmurt",
 			"Sayem AtVkm",
-			"SlimaneAmiri"
+			"SlimaneAmiri",
+			"YouvaDjouadi"
 		]
 	},
 	"uls-region-WW": "Deg umaḍal meṛṛa",
@@ -15,12 +16,12 @@
 	"uls-region-AF": "Tafriqt",
 	"uls-region-EU": "Turuft",
 	"uls-region-AS": "Asya",
-	"uls-region-ME": "Asamar Alemmas",
+	"uls-region-ME": "Asammar Alemmas",
 	"uls-region-PA": "Amelwi",
 	"uls-region-all": "Akk tutlayin",
-	"uls-no-results-found": "Ulac d acu i d-yufa.",
-	"uls-common-languages": "Tutlayin yettusumren",
-	"uls-no-results-suggestion-title": "Ma tebɣiḍ ad tisineḍ ayen nniḍen ɣef :",
-	"uls-search-help": "Tzemreḍ ad tnadiḍ s yisem n tutlayt, s uskript, s tengalt ISO n tutlayt neγ inig s temnaḍt.",
-	"uls-search-placeholder": "Nadi γef tutlayt"
+	"uls-no-results-found": "Ur d-yufi kra seg unadi",
+	"uls-common-languages": "Tutlayin i d-yettwasumren",
+	"uls-no-results-suggestion-title": "Ahat ad tebɣuḍ:",
+	"uls-search-help": "Tzemreḍ ad tnadiḍ s yisem n tutlayt, s yisem n tira, s tengalt ISO n tutlayt neɣ tzemreḍ ad tinigeḍ tamnaḍt tamnaḍt.",
+	"uls-search-placeholder": "Nadi ɣef tutlayt"
 }
