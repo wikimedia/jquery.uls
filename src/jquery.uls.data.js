@@ -117,6 +117,14 @@ module.exports=( function ( $ ) {
             ],
             "Gegë"
         ],
+        "alt": [
+            "Cyrl",
+            [
+                "EU",
+                "AS"
+            ],
+            "тÿштÿк алтай"
+        ],
         "am": [
             "Ethi",
             [
@@ -144,6 +152,13 @@ module.exports=( function ( $ ) {
                 "EU"
             ],
             "Ænglisc"
+        ],
+        "ann": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Obolo"
         ],
         "anp": [
             "Deva",
@@ -243,6 +258,14 @@ module.exports=( function ( $ ) {
                 "AM"
             ],
             "atikamekw"
+        ],
+        "atv": [
+            "Cyrl",
+            [
+                "EU",
+                "AS"
+            ],
+            "тÿндÿк алтай"
         ],
         "av": [
             "Cyrl",
@@ -363,6 +386,13 @@ module.exports=( function ( $ ) {
             ],
             "جهلسری بلوچی"
         ],
+        "bci": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "wawle"
+        ],
         "bcl": [
             "Latn",
             [
@@ -460,6 +490,13 @@ module.exports=( function ( $ ) {
                 "AS"
             ],
             "Banjar"
+        ],
+        "blc": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "ItNuxalkmc"
         ],
         "bm": [
             "Latn",
@@ -2258,7 +2295,7 @@ module.exports=( function ( $ ) {
             [
                 "AS"
             ],
-            "madhurâ"
+            "Madhurâ"
         ],
         "mai": [
             "Deva",
@@ -2414,6 +2451,13 @@ module.exports=( function ( $ ) {
                 "ME"
             ],
             "मराठी"
+        ],
+        "mrh": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Mara"
         ],
         "mrj": [
             "Cyrl",
@@ -4533,7 +4577,8 @@ module.exports=( function ( $ ) {
             "rm"
         ],
         "CI": [
-            "fr"
+            "fr",
+            "bci"
         ],
         "CK": [
             "en"
@@ -5538,6 +5583,7 @@ module.exports=( function ( $ ) {
             "lbe",
             "koi",
             "mrj",
+            "alt",
             "fi",
             "sr-latn",
             "sr-cyrl",
