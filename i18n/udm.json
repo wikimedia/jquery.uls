@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"AlnashPiyash2",
+			"Kotwys",
 			"Wadorgurt"
 		]
 	},
@@ -16,5 +17,7 @@
 	"uls-region-all": "Вань кылъёс",
 	"uls-no-results-found": "Шедьтэмын ӧвӧл",
 	"uls-common-languages": "Ӵектэм кылъёс",
+	"uls-no-results-suggestion-title": "Тӥледлы та кылъёс тунсыко луозы, дыр:",
+	"uls-search-help": "Кылэз нимызъя, гожъяськонэзъя, ISO кодэзъя утчамды луэ яке улосвылысь учкемды луэ.",
 	"uls-search-placeholder": "Кылэз утчан"
 }
