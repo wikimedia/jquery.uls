@@ -123,7 +123,7 @@ module.exports=( function ( $ ) {
                 "EU",
                 "AS"
             ],
-            "тÿштÿк алтай"
+            "алтай тил"
         ],
         "am": [
             "Ethi",
@@ -265,7 +265,7 @@ module.exports=( function ( $ ) {
                 "EU",
                 "AS"
             ],
-            "тÿндÿк алтай"
+            "тÿндÿк алтай тил"
         ],
         "av": [
             "Cyrl",
@@ -619,12 +619,15 @@ module.exports=( function ( $ ) {
             ],
             "Kaqchikel"
         ],
-        "cbk-zam": [
+        "cbk": [
             "Latn",
             [
                 "AS"
             ],
             "Chavacano de Zamboanga"
+        ],
+        "cbk-zam": [
+            "cbk"
         ],
         "ccp": [
             "Cakm",
@@ -4508,8 +4511,8 @@ module.exports=( function ( $ ) {
             "it",
             "ja",
             "es",
-            "ko",
             "kgp",
+            "ko",
             "yrl"
         ],
         "BS": [
