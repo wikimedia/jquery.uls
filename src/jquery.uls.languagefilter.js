@@ -107,11 +107,11 @@
 
 					if ( this.selectedLanguage ) {
 						// this.selectLanguage will be populated from a matching search
-						this.options.onSelect( this.selectedLanguage );
+						this.options.onSelect( this.selectedLanguage, e );
 					} else if ( this.options.languages[ query ] ) {
 						// Search is yet to happen (in timeout delay),
 						// but we have a matching language code.
-						this.options.onSelect( query );
+						this.options.onSelect( query, e );
 					}
 
 					break;
