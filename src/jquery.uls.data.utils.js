@@ -282,7 +282,7 @@
 	 * @return {string[]} list of language codes
 	 */
 	$.uls.data.getLanguagesInTerritory = function ( territory ) {
-		return $.uls.data.territories[ territory ];
+		return $.uls.data.territories[ territory ] || [];
 	};
 
 	/**
