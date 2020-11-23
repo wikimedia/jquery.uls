@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
+			"Chinamoonroll",
 			"Joseagush"
 		]
 	},
 	"uls-region-WW": "Gumi makejang",
 	"uls-region-SP": "Rahina",
-	"uls-region-AM": "Amerika",
+	"uls-region-AM": "Amérika",
 	"uls-region-AF": "Afrika",
-	"uls-region-EU": "Eropa",
+	"uls-region-EU": "Éropa",
 	"uls-region-AS": "Asia",
 	"uls-region-ME": "Timur Tengah",
 	"uls-region-PA": "Pasifik",
