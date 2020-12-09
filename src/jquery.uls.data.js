@@ -643,6 +643,20 @@ module.exports=( function ( $ ) {
             ],
             "Mìng-dĕ̤ng-ngṳ̄"
         ],
+        "cdo-latn": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Mìng-dĕ̤ng-ngṳ̄ Bàng-uâ-cê"
+        ],
+        "cdo-hani": [
+            "Hani",
+            [
+                "AS"
+            ],
+            "閩東語漢字"
+        ],
         "ce": [
             "Cyrl",
             [
@@ -1799,6 +1813,13 @@ module.exports=( function ( $ ) {
                 "AF"
             ],
             "Kabɩyɛ"
+        ],
+        "kcg": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Tyap"
         ],
         "kea": [
             "Latn",
@@ -4226,6 +4247,9 @@ module.exports=( function ( $ ) {
         "zh-yue": [
             "yue"
         ],
+        "zh-cdo": [
+            "cdo"
+        ],
         "zu": [
             "Latn",
             [
@@ -4291,6 +4315,7 @@ module.exports=( function ( $ ) {
             "Cyrl"
         ],
         "CJK": [
+            "Hani",
             "Hans",
             "Hant",
             "Kana",
@@ -5335,7 +5360,6 @@ module.exports=( function ( $ ) {
         "MY": [
             "ms",
             "en",
-            "zh-hant",
             "zh",
             "ta",
             "jv",
@@ -5378,6 +5402,7 @@ module.exports=( function ( $ ) {
             "ig",
             "yo",
             "ha-arab",
+            "kcg",
             "ar",
             "ff"
         ],

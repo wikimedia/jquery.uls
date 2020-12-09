@@ -1,16 +1,18 @@
-var through = require( 'through' );
+const through = require( 'through' );
 
 module.exports = function () {
-	var data, end, write;
-	data = '( function ( $ ) {\n\t$.uls = $.uls || {};\n\t$.uls.data = ';
-	write = function ( buf ) {
+	let data = '( function ( $ ) {\n\t$.uls = $.uls || {};\n\t$.uls.data = ';
+
+	const write = function ( buf ) {
 		data += buf;
 		return data;
 	};
-	end = function () {
+
+	const end = function () {
 		data += '\n} ( jQuery ) );';
 		this.queue( data );
-		return this.queue( null );
+		this.queue( null );
 	};
+
 	return through( write, end );
 };
