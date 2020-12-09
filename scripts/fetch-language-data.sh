@@ -18,14 +18,10 @@ then (
 	git clone "$UPSTREAM" "$CLONEDIR"
 fi
 
-if [ -d "$BASEDIR"/node_modules/browserify ]
-then
-	echo "browserify already installed"
-else (
-	echo "Installing browserify"
-	cd "$BASEDIR";
-	npm install --no-save browserify
-) fi
+# This re-installs it every time, but guarantees we have the right version
+echo "Installing browserify"
+cd "$BASEDIR";
+npm install --no-save browserify@v16.5.2
 
 echo "Transforming language-data"
 
