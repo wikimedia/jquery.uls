@@ -982,6 +982,13 @@ module.exports=( function ( $ ) {
             ],
             "Ελληνικά"
         ],
+        "elm": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Eleme"
+        ],
         "eml": [
             "Latn",
             [
@@ -1698,6 +1705,13 @@ module.exports=( function ( $ ) {
         "iu": [
             "ike-cans"
         ],
+        "izh": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "ižoran keel"
+        ],
         "ja": [
             "Jpan",
             [
@@ -1971,7 +1985,7 @@ module.exports=( function ( $ ) {
             [
                 "EU"
             ],
-            "Перем Коми"
+            "перем коми"
         ],
         "koy": [
             "Latn",
@@ -2662,6 +2676,13 @@ module.exports=( function ( $ ) {
             ],
             "Oshiwambo"
         ],
+        "nia": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Li Niha"
+        ],
         "niu": [
             "Latn",
             [
@@ -2712,6 +2733,13 @@ module.exports=( function ( $ ) {
                 "AS"
             ],
             "คำเมือง"
+        ],
+        "nog": [
+            "Cyrl",
+            [
+                "EU"
+            ],
+            "ногайша"
         ],
         "nov": [
             "Latn",
@@ -2789,7 +2817,7 @@ module.exports=( function ( $ ) {
                 "AS",
                 "EU"
             ],
-            "Livvinkarjala"
+            "livvinkarjala"
         ],
         "om": [
             "Latn",
@@ -4037,7 +4065,7 @@ module.exports=( function ( $ ) {
             [
                 "EU"
             ],
-            "Võro"
+            "võro"
         ],
         "wa": [
             "Latn",
@@ -5617,6 +5645,7 @@ module.exports=( function ( $ ) {
             "sr-cyrl",
             "vep",
             "mn",
+            "izh",
             "vot",
             "cu"
         ],
