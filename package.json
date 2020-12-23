@@ -44,6 +44,8 @@
   },
   "license": "(MIT OR GPL-2.0+)",
   "scripts": {
-    "test": "grunt test --verbose"
+    "test": "grunt test --verbose",
+    "lint": "grunt lint --verbose",
+    "qunit": "grunt qunit --verbose"
   }
 }
