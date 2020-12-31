@@ -3373,7 +3373,7 @@ module.exports=( function ( $ ) {
             [
                 "AF"
             ],
-            "Tašlḥiyt"
+            "Taclḥit"
         ],
         "shi-tfng": [
             "Tfng",
