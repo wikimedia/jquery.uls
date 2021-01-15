@@ -1331,6 +1331,13 @@ module.exports=( function ( $ ) {
             ],
             "galego"
         ],
+        "gld": [
+            "Cyrl",
+            [
+                "AS"
+            ],
+            "на̄ни"
+        ],
         "glk": [
             "Arab",
             [
@@ -1418,6 +1425,13 @@ module.exports=( function ( $ ) {
                 "AF"
             ],
             "Gurenɛ"
+        ],
+        "guw": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "gungbe"
         ],
         "gv": [
             "Latn",
