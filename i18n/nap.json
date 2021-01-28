@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"C.R.",
-			"Chelin"
+			"Chelin",
+			"Ruthven"
 		]
 	},
 	"uls-region-WW": "Munno intero",
@@ -17,6 +18,6 @@
 	"uls-no-results-found": "Nisciuno risultato",
 	"uls-common-languages": "Llèngue suggerite",
 	"uls-no-results-suggestion-title": "Puo essere interessato a:",
-	"uls-search-help": "Puo cerca ppe nomme, nomme ddo script, codece ISO dda lengua o navigga tra e reggione.",
+	"uls-search-help": "Puo cercà pe nomme, nomme dd’’o script, codece ISO dd’’a lengua o naviggà nfra ’e reggiune.",
 	"uls-search-placeholder": "Tròva na lengua"
 }
