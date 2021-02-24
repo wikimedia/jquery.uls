@@ -3128,6 +3128,13 @@ module.exports=( function ( $ ) {
             ],
             "Rumagnôl"
         ],
+        "rhg": [
+            "Rohg",
+            [
+                "AS"
+            ],
+            "𐴌𐴟𐴇𐴥𐴝𐴚𐴒𐴙𐴝"
+        ],
         "rif": [
             "Latn",
             [
@@ -3148,6 +3155,13 @@ module.exports=( function ( $ ) {
                 "EU"
             ],
             "rumantsch"
+        ],
+        "rmc": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "romaňi čhib"
         ],
         "rmf": [
             "Latn",
@@ -4344,6 +4358,7 @@ module.exports=( function ( $ ) {
             "Mtei",
             "Olck",
             "Orya",
+            "Rohg",
             "Saur",
             "Sinh",
             "Sylo",
