@@ -2790,6 +2790,13 @@ module.exports=( function ( $ ) {
             ],
             "Sesotho sa Leboa"
         ],
+        "nus": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Thok Naath"
+        ],
         "nv": [
             "Latn",
             [
@@ -2913,6 +2920,13 @@ module.exports=( function ( $ ) {
                 "AM"
             ],
             "Papiamentu"
+        ],
+        "pap-aw": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "Papiamento"
         ],
         "pbb": [
             "Latn",
@@ -3128,6 +3142,13 @@ module.exports=( function ( $ ) {
             ],
             "Rumagnôl"
         ],
+        "rhg": [
+            "Rohg",
+            [
+                "AS"
+            ],
+            "𐴌𐴟𐴇𐴥𐴝𐴚𐴒𐴙𐴝"
+        ],
         "rif": [
             "Latn",
             [
@@ -3148,6 +3169,13 @@ module.exports=( function ( $ ) {
                 "EU"
             ],
             "rumantsch"
+        ],
+        "rmc": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "romaňi čhib"
         ],
         "rmf": [
             "Latn",
@@ -3788,13 +3816,22 @@ module.exports=( function ( $ ) {
             "Tagalog"
         ],
         "tly": [
+            "Latn",
+            [
+                "EU",
+                "AS",
+                "ME"
+            ],
+            "tolışi"
+        ],
+        "tly-cyrl": [
             "Cyrl",
             [
                 "EU",
                 "AS",
                 "ME"
             ],
-            "толышә зывон"
+            "толыши"
         ],
         "tmr": [
             "Hebr",
@@ -4344,6 +4381,7 @@ module.exports=( function ( $ ) {
             "Mtei",
             "Olck",
             "Orya",
+            "Rohg",
             "Saur",
             "Sinh",
             "Sylo",
@@ -4394,6 +4432,7 @@ module.exports=( function ( $ ) {
         "Hebr",
         "Syrc",
         "Nkoo",
+        "Rohg",
         "Thaa"
     ],
     "regiongroups": {
@@ -5755,7 +5794,8 @@ module.exports=( function ( $ ) {
         ],
         "SS": [
             "ar",
-            "en"
+            "en",
+            "nus"
         ],
         "ST": [
             "pt"
@@ -6011,5 +6051,6 @@ module.exports=( function ( $ ) {
         ]
     }
 }
+
 } ( jQuery ) );
 },{}]},{},[1]);
