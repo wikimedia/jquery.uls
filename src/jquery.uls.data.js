@@ -655,7 +655,7 @@ module.exports=( function ( $ ) {
             [
                 "AS"
             ],
-            "閩東語漢字"
+            "閩東語（漢字）"
         ],
         "ce": [
             "Cyrl",
@@ -724,7 +724,7 @@ module.exports=( function ( $ ) {
             [
                 "AS"
             ],
-            "晋语（简化字)"
+            "晋语（简化字）"
         ],
         "cjy-hant": [
             "Hant",
@@ -1410,7 +1410,7 @@ module.exports=( function ( $ ) {
             [
                 "AM"
             ],
-            "Wayúu"
+            "wayuunaiki"
         ],
         "gum": [
             "Latn",
@@ -2633,6 +2633,13 @@ module.exports=( function ( $ ) {
                 "AS"
             ],
             "Bân-lâm-gú"
+        ],
+        "nan-hani": [
+            "Hani",
+            [
+                "AS"
+            ],
+            "閩南語（漢字）"
         ],
         "nap": [
             "Latn",
