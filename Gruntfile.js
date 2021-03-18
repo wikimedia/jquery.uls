@@ -16,6 +16,7 @@ module.exports = function ( grunt ) {
 			all: [
 				'**/*.{js,json}',
 				'!src/jquery.uls.data.js',
+				'!scripts/jquery.uls.data.template.js',
 				'!examples/**',
 				'!node_modules/**',
 				'!vendor/**'
