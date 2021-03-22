@@ -61,12 +61,13 @@ $( '.uls-trigger' ).uls( {
 
 | Option      | Description |
 |-------------|---------------------|
-| left        | Left position of ULS dialog. E.g: 100px or 20% |
-| top         | Top position of ULS dialog. E.g: 100px or 20% |
+| left        | DEPRECATED: use onPosition |
+| top         | DEPRECATED: use onPosition |
 | onSelect    | Callback function when user selects a language. |
 | onCancel    | Callback function when the dialog is closed without selecting a language. |
 | onReady     | Callback function when ULS has initialized. |
 | onVisible   | Callback function when ULS dialog is shown. |
+| onPosition  | Callback for positioning the dialog. It should return an object with any of the keys `top`, `right`, `bottom` and `left`. |
 | languages   | List of selectable languages. Defaults to all known languages. |
 | menuWidth   | Override the automatic choice of menu width. One of narrow, medium, wide (1, 2, 4 columns respectively). |
 | ulsPurpose  | A string that will identify this instance of ULS. It's useful if you have several instances of ULS in your web application and you want to have a unique identifier for each of them. |
