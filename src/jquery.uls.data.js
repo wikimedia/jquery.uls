@@ -360,6 +360,13 @@
             ],
             "Boarisch"
         ],
+        "bas": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "ɓasaá"
+        ],
         "bat-smg": [
             "sgs"
         ],
@@ -493,6 +500,13 @@
             ],
             "Banjar"
         ],
+        "bkm": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Itaŋikom"
+        ],
         "blc": [
             "Latn",
             [
@@ -606,6 +620,13 @@
                 "AF"
             ],
             "ብሊን"
+        ],
+        "bzj": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "Bileez Kriol"
         ],
         "ca": [
             "Latn",
@@ -4710,6 +4731,8 @@
             "fr",
             "en",
             "ff",
+            "bkm",
+            "bas",
             "ar",
             "ksf",
             "ha-arab",
