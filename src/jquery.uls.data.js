@@ -899,6 +899,13 @@
             ],
             "dagbanli"
         ],
+        "dar": [
+            "Cyrl",
+            [
+                "EU"
+            ],
+            "дарган"
+        ],
         "de-at": [
             "Latn",
             [
@@ -5710,6 +5717,7 @@
             "os",
             "kbd",
             "myv",
+            "dar",
             "mdf",
             "kum",
             "kv",
