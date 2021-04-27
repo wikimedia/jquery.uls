@@ -737,7 +737,7 @@
             [
                 "AM"
             ],
-            "Ojibwemowin"
+            "Anishinaabemowin"
         ],
         "cjy": [
             "cjy-hant"
@@ -2861,6 +2861,13 @@
                 "EU"
             ],
             "occitan"
+        ],
+        "ojb": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "Ojibwemowin"
         ],
         "oka": [
             "Latn",
