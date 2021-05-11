@@ -20,11 +20,9 @@
 ( function ( $ ) {
 	'use strict';
 
-	var template, ULS;
-
 	// Region numbers in id attributes also appear in the langdb.
 	// eslint-disable-next-line no-multi-str
-	template = '<div class="grid uls-menu"> \
+	var template = '<div class="grid uls-menu"> \
 			<div id="search" class="row uls-search"> \
 				<div class="uls-search-wrapper"> \
 					<label class="uls-search-label" for="uls-languagefilter"></label>\
@@ -50,14 +48,13 @@
 	 * @param {Element} element
 	 * @param {Object} options
 	 */
-	ULS = function ( element, options ) {
-		var code;
+	var ULS = function ( element, options ) {
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.uls.defaults, options );
 		this.$menu = $( template );
 		this.languages = this.options.languages;
 
-		for ( code in this.languages ) {
+		for ( var code in this.languages ) {
 			if ( $.uls.data.languages[ code ] === undefined ) {
 				// Language is unknown to ULS.
 				delete this.languages[ code ];
@@ -116,8 +113,7 @@
 		 * @return {Object}
 		 */
 		position: function () {
-			var pos,
-				top = this.top,
+			var top = this.top,
 				left = this.left;
 
 			if ( this.options.onPosition ) {
@@ -126,7 +122,7 @@
 
 			// Default implementation (middle of the screen under the trigger)
 			if ( top === undefined ) {
-				pos = $.extend( {}, this.$element.offset(), {
+				var pos = $.extend( {}, this.$element.offset(), {
 					height: this.$element[ 0 ].offsetHeight
 				} );
 				top = pos.top + pos.height;
@@ -213,15 +209,14 @@
 		},
 
 		createLanguageFilter: function () {
-			var lcd, languagesCount,
-				columnsOptions = {
-					wide: 4,
-					medium: 2,
-					narrow: 1
-				};
+			var columnsOptions = {
+				wide: 4,
+				medium: 2,
+				narrow: 1
+			};
 
-			languagesCount = Object.keys( this.options.languages ).length;
-			lcd = this.$resultsView.lcd( {
+			var languagesCount = Object.keys( this.options.languages ).length;
+			var lcd = this.$resultsView.lcd( {
 				languages: this.languages,
 				columns: columnsOptions[ this.menuWidth ],
 
@@ -344,14 +339,12 @@
 		 * @return {string}
 		 */
 		getMenuWidth: function () {
-			var languagesCount,
-				screenWidth = document.documentElement.clientWidth;
-
 			if ( this.options.menuWidth ) {
 				return this.options.menuWidth;
 			}
 
-			languagesCount = Object.keys( this.options.languages ).length;
+			var screenWidth = document.documentElement.clientWidth;
+			var languagesCount = Object.keys( this.options.languages ).length;
 
 			if ( screenWidth > 900 && languagesCount >= 48 ) {
 				return 'wide';
@@ -448,7 +441,7 @@
 		var timeout;
 
 		return function () {
-			var callNow, self = this,
+			var self = this,
 				later = function () {
 					timeout = null;
 					if ( !immediate ) {
@@ -456,7 +449,7 @@
 					}
 				};
 
-			callNow = immediate && !timeout;
+			var callNow = immediate && !timeout;
 			clearTimeout( timeout );
 			timeout = setTimeout( later, wait || 100 );
 
@@ -472,8 +465,7 @@
 	 */
 	$.fn.scrollIntoView = function () {
 		return this.each( function () {
-			var scrollPosition,
-				$window = $( window ),
+			var $window = $( window ),
 				windowHeight = $window.height(),
 				windowTop = $window.scrollTop(),
 				windowBottom = windowTop + windowHeight,
@@ -483,6 +475,7 @@
 				panelBottom = panelTop + panelHeight;
 
 			if ( ( panelTop < windowTop ) || ( panelBottom > windowBottom ) ) {
+				var scrollPosition;
 				if ( windowTop > panelTop ) {
 					scrollPosition = panelTop;
 				} else {

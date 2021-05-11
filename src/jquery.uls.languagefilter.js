@@ -23,8 +23,6 @@
 ( function ( $ ) {
 	'use strict';
 
-	var LanguageFilter;
-
 	/**
 	 * Check if a prefix is visually prefix of a string
 	 *
@@ -39,7 +37,7 @@
 		return prebases.indexOf( string[ prefix.length ] ) <= 0;
 	}
 
-	LanguageFilter = function ( element, options ) {
+	var LanguageFilter = function ( element, options ) {
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.languagefilter.defaults, options );
 		this.$element.addClass( 'languagefilter' );
@@ -158,7 +156,6 @@
 
 		search: function () {
 			var languages = Object.keys( this.options.languages ),
-				results = [],
 				query = ( this.$element.val() || '' ).trim().toLowerCase();
 
 			if ( query === '' ) {
@@ -169,7 +166,7 @@
 
 			this.options.lcd.setGroupByRegionOverride( false );
 			// Local search results
-			results = languages.filter( function ( langCode ) {
+			var results = languages.filter( function ( langCode ) {
 				return this.filter( langCode, query );
 			}.bind( this ) );
 
@@ -251,8 +248,6 @@
 		},
 
 		autofill: function ( langCode, languageName ) {
-			var autonym, userInput, suggestion;
-
 			if ( !this.$suggestion.length ) {
 				return;
 			}
@@ -268,13 +263,13 @@
 				return;
 			}
 
-			userInput = this.$element.val();
-			suggestion = userInput +
+			var userInput = this.$element.val();
+			var suggestion = userInput +
 				languageName.substring( userInput.length, languageName.length );
 
 			if ( suggestion.toLowerCase() !== languageName.toLowerCase() ) {
 				// see if it was autonym match
-				autonym = $.uls.data.getAutonym( langCode ) || '';
+				var autonym = $.uls.data.getAutonym( langCode ) || '';
 				suggestion = userInput + autonym.substring( userInput.length, autonym.length );
 
 				if ( suggestion !== autonym ) {

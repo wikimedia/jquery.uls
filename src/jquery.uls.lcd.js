@@ -75,13 +75,12 @@
 		 * @return {boolean} Whether the language was known and accepted
 		 */
 		append: function ( langCode, regionCode ) {
-			var i, regions;
-
 			if ( !$.uls.data.languages[ langCode ] ) {
 				// Language is unknown or not in the list of languages for this context.
 				return false;
 			}
 
+			var regions;
 			if ( !this.isGroupingByRegionEnabled() ) {
 				regions = [ 'all' ];
 
@@ -97,7 +96,7 @@
 				}
 			}
 
-			for ( i = 0; i < regions.length; i++ ) {
+			for ( var i = 0; i < regions.length; i++ ) {
 				this.regionLanguages[ regions[ i ] ].push( langCode );
 			}
 
@@ -138,8 +137,7 @@
 		},
 
 		render: function () {
-			var $section,
-				$quicklist = this.buildQuicklist(),
+			var $quicklist = this.buildQuicklist(),
 				regions = [],
 				regionNames = {
 					// These are fallback text when i18n library not present
@@ -164,7 +162,7 @@
 			this.options.showRegions.forEach( function ( regionCode ) {
 				this.regionLanguages[ regionCode ] = [];
 
-				$section = $( '<div>' )
+				var $section = $( '<div>' )
 					.addClass( 'uls-lcd-region-section hide' )
 					.attr( 'data-region', regionCode );
 
@@ -186,8 +184,7 @@
 		 * Renders a region and displays it if it has content.
 		 */
 		renderRegions: function () {
-			var languages,
-				lcd = this;
+			var lcd = this;
 
 			this.$element.removeClass( 'uls-no-results' );
 			this.$element.children( '.uls-lcd-region-section' ).each( function () {
@@ -200,7 +197,7 @@
 
 				$region.children( '.uls-language-block' ).remove();
 
-				languages = lcd.regionLanguages[ regionCode ];
+				var languages = lcd.regionLanguages[ regionCode ];
 				if ( !languages || languages.length === 0 ) {
 					$region.addClass( 'hide' );
 					return;
@@ -228,8 +225,7 @@
 		 * @param {number} columnsPerRow How many columns fit in a row.
 		 */
 		renderRegion: function ( $region, languages, itemsPerColumn, columnsPerRow ) {
-			var columnsClasses, i, lastItem, currentScript, nextScript, force,
-				languagesCount = languages.length,
+			var languagesCount = languages.length,
 				items = [],
 				columns = [],
 				rows = [];
@@ -238,6 +234,7 @@
 				languages.sort( $.uls.data.sortByAutonym )
 			);
 
+			var columnsClasses;
 			if ( columnsPerRow === 1 ) {
 				columnsClasses = 'twelve columns';
 			} else if ( columnsPerRow === 2 ) {
@@ -246,6 +243,7 @@
 				columnsClasses = 'three columns';
 			}
 
+			var i;
 			if ( this.options.columns === 1 ) {
 				// For one-column narrow ULS, just render all the languages
 				// in one simple list without separators or script groups
@@ -258,12 +256,13 @@
 			} else {
 				// For medium and wide ULS, clever column placement
 				for ( i = 0; i < languagesCount; i++ ) {
-					force = false;
-					nextScript = $.uls.data.getScriptGroupOfLanguage( languages[ i + 1 ] );
+					var force = false;
+					var nextScript = $.uls.data.getScriptGroupOfLanguage( languages[ i + 1 ] );
 
-					lastItem = languagesCount - i === 1;
+					var lastItem = languagesCount - i === 1;
 					// Force column break if script changes and column has more than one
 					// row already, but only if grouping by region
+					var currentScript;
 					if ( i === 0 || !this.isGroupingByRegionEnabled() ) {
 						currentScript = $.uls.data.getScriptGroupOfLanguage( languages[ i ] );
 					} else if ( currentScript !== nextScript && items.length > 1 ) {
@@ -294,17 +293,15 @@
 		 * @return {Element}
 		 */
 		renderItem: function ( code ) {
-			var a, name, autonym, li;
-
-			name = this.options.languages[ code ];
-			autonym = $.uls.data.getAutonym( code ) || name || code;
+			var name = this.options.languages[ code ];
+			var autonym = $.uls.data.getAutonym( code ) || name || code;
 
 			// Not using jQuery as this is performance hotspot
-			li = document.createElement( 'li' );
+			var li = document.createElement( 'li' );
 			li.title = name;
 			li.setAttribute( 'data-code', code );
 
-			a = document.createElement( 'a' );
+			var a = document.createElement( 'a' );
 			a.appendChild( document.createTextNode( autonym ) );
 			a.className = 'autonym';
 			a.lang = code;
@@ -329,8 +326,6 @@
 		},
 
 		buildQuicklist: function () {
-			var quickList, $quickListSection, $quickListSectionTitle;
-
 			if ( this.$cachedQuicklist !== null ) {
 				return this.$cachedQuicklist;
 			}
@@ -345,14 +340,14 @@
 			}
 
 			// Pick only the first elements, because we don't have room for more
-			quickList = this.options.quickList;
+			var quickList = this.options.quickList;
 			quickList = quickList.slice( 0, 16 );
 			quickList.sort( $.uls.data.sortByAutonym );
 
-			$quickListSection = $( '<div>' )
+			var $quickListSection = $( '<div>' )
 				.addClass( 'uls-lcd-region-section uls-lcd-quicklist' );
 
-			$quickListSectionTitle = $( '<h3>' )
+			var $quickListSectionTitle = $( '<h3>' )
 				.attr( 'data-i18n', 'uls-common-languages' )
 				.addClass( 'uls-lcd-region-title' )
 				.text( 'Suggested languages' ); // This is placeholder text if jquery.i18n not present
@@ -396,12 +391,11 @@
 		 * @param {Object} data Information about the failed search query
 		 */
 		noResults: function ( event, data ) {
-			var $noResults;
-
 			this.$element.addClass( 'uls-no-results' );
 
 			this.$element.find( '.uls-no-results-view' ).remove();
 
+			var $noResults;
 			if ( typeof this.options.noResultsTemplate === 'function' ) {
 				$noResults =
 					this.options.noResultsTemplate.call( this, data.query );
@@ -462,16 +456,15 @@
 		// Callback function when no search results.
 		// If overloaded, it can accept the search string as an argument.
 		noResultsTemplate: function () {
-			var $suggestionsContainer, $suggestions,
-				$noResultsTemplate = $( noResultsTemplate );
+			var $noResultsTemplate = $( noResultsTemplate );
 
-			$suggestions = this.buildQuicklist().clone();
+			var $suggestions = this.buildQuicklist().clone();
 			$suggestions.removeClass( 'hide' )
 				.find( 'h3' )
 				.data( 'i18n', 'uls-no-results-suggestion-title' )
 				.text( 'You may be interested in:' )
 				.i18n();
-			$suggestionsContainer = $noResultsTemplate.find( '.uls-no-results-suggestions' );
+			var $suggestionsContainer = $noResultsTemplate.find( '.uls-no-results-suggestions' );
 			$suggestionsContainer.append( $suggestions );
 			return $noResultsTemplate;
 		}
