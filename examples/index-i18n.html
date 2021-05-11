@@ -19,16 +19,16 @@
 		<script src="../src/jquery.uls.core.js"></script>
 		<script src="resources/jquery.i18n.min.js"></script>
 		<script>
-			$( document ).ready( function() {
-				var i18n = $.i18n( );
+			$( function () {
+				var i18n = $.i18n();
 				// Use default locale "en"
 				i18n.locale = 'en';
 				i18n.load( '../i18n/en.json', 'en' );
 				$( '.uls-trigger' ).uls( {
-					onReady: function ( ) {
+					onReady: function () {
 						this.i18n();
 					},
-					onSelect: function( language ) {
+					onSelect: function ( language ) {
 						var languageName = $.uls.data.getAutonym( language );
 						$( '.uls-trigger' ).text( languageName );
 						i18n.locale = language;
@@ -40,7 +40,7 @@
 						this.i18n();
 						$( '.navbar' ).i18n();
 					},
-					quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr']
+					quickList: [ 'en', 'hi', 'he', 'ml', 'ta', 'fr' ]
 				} );
 			} );
 		</script>
