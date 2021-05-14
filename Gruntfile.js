@@ -14,11 +14,9 @@ module.exports = function ( grunt ) {
 			},
 			all: [
 				'**/*.{js,json,html}',
-				'!src/jquery.uls.data.js',
-				'!scripts/jquery.uls.data.template.js',
 				'!examples/resources/*.min.js',
 				'!node_modules/**',
-				'!vendor/**'
+				'!dist/**'
 			]
 		},
 		stylelint: {
@@ -27,7 +25,8 @@ module.exports = function ( grunt ) {
 			},
 			src: [
 				'**/*.css',
-				'!node_modules/**'
+				'!node_modules/**',
+				'!dist/**'
 			]
 		},
 		qunit: {

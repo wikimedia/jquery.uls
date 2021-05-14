@@ -3,6 +3,7 @@
 	"version": "0.1.0",
 	"description": "Universal Language Selector",
 	"homepage": "https://github.com/wikimedia/jquery.uls",
+	"main": "dist/jquery.uls.js",
 	"keywords": [
 		"internationalization",
 		"localization",
@@ -25,12 +26,24 @@
 		"Siebrand Mazeland"
 	],
 	"devDependencies": {
+		"@rollup/plugin-commonjs": "^18.0.0",
+		"@rollup/plugin-json": "^4.1.0",
+		"@rollup/plugin-node-resolve": "^11.2.1",
+		"@wikimedia/language-data": "^1.0.2",
+		"esbuild": "^0.11.16",
 		"eslint-config-wikimedia": "0.20.0",
 		"eslint-plugin-html": "6.1.2",
 		"grunt": "1.4",
 		"grunt-contrib-qunit": "4.0.0",
 		"grunt-eslint": "23.0.0",
 		"grunt-stylelint": "0.16.0",
+		"install": "^0.13.0",
+		"npm": "^7.13.0",
+		"rollup": "^2.46.0",
+		"rollup-plugin-copy": "^3.4.0",
+		"rollup-plugin-esbuild": "^4.2.3",
+		"rollup-plugin-postcss": "^4.0.0",
+		"rollup-plugin-sourcemaps": "^0.6.3",
 		"stylelint": "13.13.1",
 		"stylelint-config-wikimedia": "0.10.3"
 	},
@@ -48,6 +61,11 @@
 	"scripts": {
 		"test": "grunt test --verbose",
 		"lint": "grunt lint --verbose",
-		"qunit": "grunt qunit --verbose"
+		"qunit": "grunt qunit --verbose",
+		"build": "rollup -c",
+		"dev": "rollup -c -w"
+	},
+	"dependencies": {
+		"rollup-plugin-babel": "^4.4.0"
 	}
 }

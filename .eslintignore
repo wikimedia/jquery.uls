@@ -1,1 +1,3 @@
 src/jquery.uls.data.js
+dist/
+node_modules/
