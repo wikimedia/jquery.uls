@@ -12,9 +12,8 @@
  * header is left intact. See files GPL-LICENSE and MIT-LICENSE for details.
  *
  * @file
- * @ingroup Extensions
- * @licence GNU General Public Licence 2.0 or later
- * @licence MIT License
+ * @license GNU General Public Licence 2.0 or later
+ * @license MIT License
  */
 
 /**
@@ -224,6 +223,7 @@
 		/**
 		 * Handler method to be called once search is over.
 		 * Based on search result triggers resultsfound or noresults events
+		 *
 		 * @param {string} query
 		 * @param {string[]} results
 		 * @param {string} [autofillLabel]
@@ -306,6 +306,7 @@
 		 * b) Language autonym 'starts with' search string.
 		 * c) ISO 639 code match with search string.
 		 * d) ISO 15924 code for the script match the search string.
+		 *
 		 * @param {string} langCode
 		 * @param {string} searchTerm
 		 * @return {boolean}

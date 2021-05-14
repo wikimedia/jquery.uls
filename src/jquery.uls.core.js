@@ -13,9 +13,8 @@
  * header is left intact. See files GPL-LICENSE and MIT-LICENSE for details.
  *
  * @file
- * @ingroup Extensions
- * @licence GNU General Public Licence 2.0 or later
- * @licence MIT License
+ * @license GNU General Public Licence 2.0 or later
+ * @license MIT License
  */
 
 ( function ( $ ) {
@@ -47,6 +46,7 @@
 
 	/**
 	 * ULS Public class definition
+	 *
 	 * @param {Element} element
 	 * @param {Object} options
 	 */
@@ -112,6 +112,7 @@
 		/**
 		 * Calculate the position of ULS
 		 * Returns an object with top and left properties.
+		 *
 		 * @return {Object}
 		 */
 		position: function () {
@@ -292,6 +293,7 @@
 
 		/**
 		 * On select handler for search results
+		 *
 		 * @param {string} langCode
 		 * @param {Object} event The jQuery click event
 		 */
@@ -304,6 +306,7 @@
 
 		/**
 		 * On cancel handler for the uls menu
+		 *
 		 * @param {Event} e
 		 */
 		cancel: function ( e ) {
@@ -337,6 +340,7 @@
 
 		/**
 		 * Get the panel menu width parameter
+		 *
 		 * @return {string}
 		 */
 		getMenuWidth: function () {

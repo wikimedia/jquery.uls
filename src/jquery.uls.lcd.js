@@ -14,9 +14,8 @@
  * header is left intact. See files GPL-LICENSE and MIT-LICENSE for details.
  *
  * @file
- * @ingroup Extensions
- * @licence GNU General Public Licence 2.0 or later
- * @licence MIT License
+ * @license GNU General Public Licence 2.0 or later
+ * @license MIT License
  */
 
 ( function ( $ ) {
@@ -32,6 +31,7 @@
 
 	/**
 	 * Language category display
+	 *
 	 * @param {Element} element The container element to which the languages to be displayed
 	 * @param {Object} [options] Configuration object
 	 * @cfg {Object} [languages] Selectable languages. Keyed by language code, values are autonyms.
@@ -69,6 +69,7 @@
 
 		/**
 		 * Adds language to the language list.
+		 *
 		 * @param {string} langCode
 		 * @param {string} [regionCode]
 		 * @return {boolean} Whether the language was known and accepted
@@ -112,6 +113,7 @@
 
 		/**
 		 * Whether we should render languages grouped to geographic regions.
+		 *
 		 * @return {boolean}
 		 */
 		isGroupingByRegionEnabled: function () {
@@ -219,6 +221,7 @@
 
 		/**
 		 * Adds given languages sorted into rows and columns into given element.
+		 *
 		 * @param {jQuery} $region Element to add language list.
 		 * @param {Array} languages List of language codes.
 		 * @param {number} itemsPerColumn How many languages fit in a column.
@@ -286,6 +289,7 @@
 
 		/**
 		 * Creates dom node representing one item in language list.
+		 *
 		 * @param {string} code Language code
 		 * @return {Element}
 		 */
@@ -387,6 +391,7 @@
 
 		/**
 		 * No-results event handler
+		 *
 		 * @param {Event} event
 		 * @param {Object} data Information about the failed search query
 		 */
