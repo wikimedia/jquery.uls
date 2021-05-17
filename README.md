@@ -1,6 +1,7 @@
 Universal Language Selector jQuery library
 ==================================
-[![Build Status](https://secure.travis-ci.org/wikimedia/jquery.uls.png)](http://travis-ci.org/wikimedia/jquery.uls)
+[![Test status](https://github.com/wikimedia/jquery.uls/actions/workflows/node-test.yml/badge.svg)](https://github.com/wikimedia/jquery.uls/actions/workflows/node-test.yml)
+[![Lint status](https://github.com/wikimedia/jquery.uls/actions/workflows/node-lint.yml/badge.svg)](https://github.com/wikimedia/jquery.uls/actions/workflows/node-lint.yml)
 
 This is a [Wikimedia Foundation project](https://www.mediawiki.org/wiki/Project_Milkshake).
 
