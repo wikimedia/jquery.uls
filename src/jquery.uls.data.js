@@ -2277,7 +2277,7 @@
             [
                 "EU"
             ],
-            "lumbaart"
+            "lombard"
         ],
         "ln": [
             "Latn",
@@ -3128,6 +3128,13 @@
                 "WW"
             ],
             "português"
+        ],
+        "pwn": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "pinayuanan"
         ],
         "qu": [
             "Latn",
@@ -4592,6 +4599,7 @@
             "bn",
             "en",
             "syl",
+            "rhg",
             "ccp",
             "my",
             "mni"
@@ -5422,6 +5430,7 @@
             "my",
             "shn",
             "kac",
+            "rhg",
             "mnw"
         ],
         "MN": [
