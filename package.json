@@ -25,11 +25,13 @@
 		"Santhosh Thottingal",
 		"Siebrand Mazeland"
 	],
+	"dependencies": {
+		"@wikimedia/language-data": "^1.0.2"
+	},
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "^18.0.0",
 		"@rollup/plugin-json": "^4.1.0",
 		"@rollup/plugin-node-resolve": "^11.2.1",
-		"@wikimedia/language-data": "^1.0.2",
 		"esbuild": "^0.11.16",
 		"eslint-config-wikimedia": "0.20.0",
 		"eslint-plugin-html": "6.1.2",
@@ -40,6 +42,7 @@
 		"install": "^0.13.0",
 		"npm": "^7.13.0",
 		"rollup": "^2.46.0",
+		"rollup-plugin-babel": "^4.4.0",
 		"rollup-plugin-copy": "^3.4.0",
 		"rollup-plugin-esbuild": "^4.2.3",
 		"rollup-plugin-postcss": "^4.0.0",
@@ -64,8 +67,5 @@
 		"qunit": "grunt qunit --verbose",
 		"build": "rollup -c",
 		"dev": "rollup -c -w"
-	},
-	"dependencies": {
-		"rollup-plugin-babel": "^4.4.0"
 	}
 }
