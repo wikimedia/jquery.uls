@@ -98,6 +98,23 @@
             ],
             "अहिराणी"
         ],
+        "ajp": [
+            "Arab",
+            [
+                "ME"
+            ],
+            "شامي"
+        ],
+        "ajp-arab": [
+            "ajp"
+        ],
+        "ajp-latn": [
+            "Latn",
+            [
+                "ME"
+            ],
+            "šāmi"
+        ],
         "ak": [
             "Latn",
             [
@@ -1884,7 +1901,7 @@
             [
                 "AF"
             ],
-            "Kabuverdianu"
+            "kabuverdianu"
         ],
         "kg": [
             "Latn",
@@ -2277,7 +2294,7 @@
             [
                 "EU"
             ],
-            "lumbaart"
+            "lombard"
         ],
         "ln": [
             "Latn",
@@ -3129,6 +3146,13 @@
             ],
             "português"
         ],
+        "pwn": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "pinayuanan"
+        ],
         "qu": [
             "Latn",
             [
@@ -3567,6 +3591,13 @@
         ],
         "skr": [
             "skr-arab"
+        ],
+        "srq": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "mbia cheë"
         ],
         "syc": [
             "Syrc",
@@ -4592,6 +4623,7 @@
             "bn",
             "en",
             "syl",
+            "rhg",
             "ccp",
             "my",
             "mni"
@@ -5422,6 +5454,7 @@
             "my",
             "shn",
             "kac",
+            "rhg",
             "mnw"
         ],
         "MN": [
