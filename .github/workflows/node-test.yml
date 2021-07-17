@@ -20,5 +20,8 @@ jobs:
       - name: Install package.json dependencies
         run: npm install
 
+      - name: Create a build
+        run: npm run build
+
       - name: Run QUnit test suite
         run: npm run qunit
