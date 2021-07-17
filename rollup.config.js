@@ -5,7 +5,6 @@ import commonjs from '@rollup/plugin-commonjs';
 import esbuild from 'rollup-plugin-esbuild';
 import babel from 'rollup-plugin-babel';
 import postcss from 'rollup-plugin-postcss';
-import sourcemaps from 'rollup-plugin-sourcemaps';
 import copy from 'rollup-plugin-copy';
 
 export default [
@@ -25,7 +24,6 @@ export default [
 			json(),
 			resolve(),
 			commonjs(),
-			sourcemaps(),
 			babel( {
 				exclude: 'node_modules/**'
 			} ),
