@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Carsrac",
+			"McDutchie",
 			"Robin van der Vliet",
 			"Robin0van0der0vliet"
 		]
@@ -18,5 +19,5 @@
 	"uls-common-languages": "Taalsuggesties",
 	"uls-no-results-suggestion-title": "Wellicht wil je een van de volgende talen kiezen:",
 	"uls-search-help": "Je kan zoeken op taalnaam, schriftnaam, ISO-code van de taal of je kunt bladeren per regio.",
-	"uls-search-placeholder": "Taal zoeken"
+	"uls-search-placeholder": "Zoeken naar een taal"
 }
