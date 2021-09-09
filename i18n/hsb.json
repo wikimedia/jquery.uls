@@ -12,9 +12,10 @@
 	"uls-region-AS": "Azija",
 	"uls-region-ME": "Srjedźny wuchod:",
 	"uls-region-PA": "Pacifik",
+	"uls-region-all": "Wšě rěče",
 	"uls-no-results-found": "Žane wuslědki namakane",
 	"uls-common-languages": "Namjetowane rěče",
 	"uls-no-results-suggestion-title": "To móhło će zajimować:",
 	"uls-search-help": "Móžeš po mjenje rěče, mjenje pisma, ISO-kodźe rěče pytać abo pytanje přez region přewjesć.",
-	"uls-search-placeholder": "Rěčne pytanje"
+	"uls-search-placeholder": "Za rěču pytać"
 }
