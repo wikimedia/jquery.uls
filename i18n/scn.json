@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Sarvaturi"
 		]
 	},
@@ -12,6 +13,7 @@
 	"uls-region-AS": "Asia",
 	"uls-region-ME": "Mediu orienti",
 	"uls-region-PA": "Pacìficu",
+	"uls-region-all": "Tutti li lingui",
 	"uls-no-results-found": "Nuddu risurtatu attruvatu",
 	"uls-common-languages": "Lingui cchiù scigghiuti",
 	"uls-no-results-suggestion-title": "Poi èssiri ntirissatu a:",
