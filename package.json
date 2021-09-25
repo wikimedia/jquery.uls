@@ -3,6 +3,7 @@
 	"version": "0.1.0",
 	"description": "Universal Language Selector",
 	"homepage": "https://github.com/wikimedia/jquery.uls",
+	"main": "dist/jquery.uls.js",
 	"keywords": [
 		"internationalization",
 		"localization",
@@ -25,14 +26,24 @@
 		"Siebrand Mazeland"
 	],
 	"devDependencies": {
-		"eslint-config-wikimedia": "0.20.0",
-		"eslint-plugin-html": "6.1.2",
-		"grunt": "1.4",
+		"@rollup/plugin-commonjs": "^19.0.0",
+		"@rollup/plugin-json": "^4.1.0",
+		"@rollup/plugin-node-resolve": "^13.0.0",
+		"@wikimedia/language-data": "^1.0.2",
+		"esbuild": "^0.12.8",
+		"eslint-config-wikimedia": "^0.20.0",
+		"eslint-plugin-html": "^6.1.2",
+		"grunt": "^1.4.1",
 		"grunt-contrib-qunit": "4.0.0",
 		"grunt-eslint": "23.0.0",
 		"grunt-stylelint": "0.16.0",
-		"stylelint": "13.13.1",
-		"stylelint-config-wikimedia": "0.10.3"
+		"rollup": "^2.51.2",
+		"rollup-plugin-babel": "^4.4.0",
+		"rollup-plugin-copy": "^3.4.0",
+		"rollup-plugin-esbuild": "^4.5.0",
+		"rollup-plugin-postcss": "^4.0.0",
+		"stylelint": "^13.13.1",
+		"stylelint-config-wikimedia": "^0.10.3"
 	},
 	"repository": {
 		"type": "git",
@@ -42,12 +53,14 @@
 		"url": "https://github.com/wikimedia/jquery.uls/issues"
 	},
 	"engine": {
-		"node": ">=6.11.1"
+		"node": ">=12.12.1"
 	},
 	"license": "(MIT OR GPL-2.0+)",
 	"scripts": {
 		"test": "grunt test --verbose",
 		"lint": "grunt lint --verbose",
-		"qunit": "grunt qunit --verbose"
+		"qunit": "grunt qunit --verbose",
+		"build": "rollup -c",
+		"dev": "rollup -c -w"
 	}
 }

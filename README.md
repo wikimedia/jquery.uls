@@ -125,15 +125,6 @@ To run tests locally, run `grunt test`. This will run the tests in PhantomJS.
 
 You can also run the tests in a browser by navigating to the `test/` directory, but first run `grunt` to install the submodules.
 
-Updating language-data
-----------------------------------
-
-From the main repo directory, run:
-
-```shell
-./scripts/fetch-language-data.sh
-```
-
 Coding style
 -------------
 

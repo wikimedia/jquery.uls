@@ -4,8 +4,19 @@
 		"wikimedia/client",
 		"wikimedia/jquery"
 	],
+	"parserOptions": {
+		"ecmaVersion": 12,
+		"sourceType": "module"
+    },
+	"env": {
+		"es6": true,
+		"browser": true,
+		"jquery": true,
+		"qunit": true,
+		"node": true
+	},
 	"globals": {
 		"jQuery": "readonly",
-		"$": "off"
+		"$": "readonly"
 	}
 }
