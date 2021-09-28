@@ -98,7 +98,9 @@
 			}
 
 			for ( i = 0; i < regions.length; i++ ) {
-				this.regionLanguages[ regions[ i ] ].push( langCode );
+				if ( this.regionLanguages[ regions[ i ] ] ) {
+					this.regionLanguages[ regions[ i ] ].push( langCode );
+				}
 			}
 
 			// Work around the bad interface, delay rendering until we have got
