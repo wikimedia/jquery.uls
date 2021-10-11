@@ -98,6 +98,23 @@
             ],
             "अहिराणी"
         ],
+        "ajp": [
+            "Arab",
+            [
+                "ME"
+            ],
+            "شامي"
+        ],
+        "ajp-arab": [
+            "ajp"
+        ],
+        "ajp-latn": [
+            "Latn",
+            [
+                "ME"
+            ],
+            "šāmi"
+        ],
         "ak": [
             "Latn",
             [
@@ -513,6 +530,13 @@
                 "AM"
             ],
             "ItNuxalkmc"
+        ],
+        "blk": [
+            "Mymr",
+            [
+                "AS"
+            ],
+            "ပအိုဝ်ႏဘာႏသာႏ"
         ],
         "bm": [
             "Latn",
@@ -1454,7 +1478,7 @@
             [
                 "AF"
             ],
-            "Gurenɛ"
+            "farefare"
         ],
         "guw": [
             "Latn",
@@ -1665,7 +1689,8 @@
         "id": [
             "Latn",
             [
-                "AS"
+                "AS",
+                "PA"
             ],
             "Bahasa Indonesia"
         ],
@@ -1884,7 +1909,7 @@
             [
                 "AF"
             ],
-            "Kabuverdianu"
+            "kabuverdianu"
         ],
         "kg": [
             "Latn",
@@ -2277,7 +2302,7 @@
             [
                 "EU"
             ],
-            "lumbaart"
+            "lombard"
         ],
         "ln": [
             "Latn",
@@ -2986,6 +3011,13 @@
             ],
             "Picard"
         ],
+        "pcm": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Naijá"
+        ],
         "pdc": [
             "Latn",
             [
@@ -3129,6 +3161,13 @@
             ],
             "português"
         ],
+        "pwn": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "pinayuanan"
+        ],
         "qu": [
             "Latn",
             [
@@ -3160,6 +3199,7 @@
         "rap": [
             "Latn",
             [
+                "PA",
                 "AM"
             ],
             "arero rapa nui"
@@ -3567,6 +3607,13 @@
         ],
         "skr": [
             "skr-arab"
+        ],
+        "srq": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "mbia cheë"
         ],
         "syc": [
             "Syrc",
@@ -4141,6 +4188,13 @@
             ],
             "Mainfränkisch"
         ],
+        "vmw": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "emakhuwa"
+        ],
         "vo": [
             "Latn",
             [
@@ -4301,7 +4355,9 @@
         "zh": [
             "Hans",
             [
-                "AS"
+                "AS",
+                "PA",
+                "AM"
             ],
             "中文"
         ],
@@ -4318,14 +4374,18 @@
         "zh-hans": [
             "Hans",
             [
-                "AS"
+                "AS",
+                "PA",
+                "AM"
             ],
             "中文（简体）"
         ],
         "zh-hant": [
             "Hant",
             [
-                "AS"
+                "AS",
+                "PA",
+                "AM"
             ],
             "中文（繁體）"
         ],
@@ -4592,6 +4652,7 @@
             "bn",
             "en",
             "syl",
+            "rhg",
             "ccp",
             "my",
             "mni"
@@ -4778,7 +4839,8 @@
         ],
         "CO": [
             "es",
-            "guc"
+            "guc",
+            "yrl"
         ],
         "CR": [
             "es"
@@ -5422,6 +5484,7 @@
             "my",
             "shn",
             "kac",
+            "rhg",
             "mnw"
         ],
         "MN": [
@@ -5497,6 +5560,7 @@
         ],
         "MZ": [
             "pt",
+            "vmw",
             "ts",
             "ny",
             "sw",
@@ -5525,6 +5589,7 @@
         ],
         "NG": [
             "en",
+            "pcm",
             "ha",
             "ig",
             "yo",
@@ -6027,7 +6092,8 @@
             "en"
         ],
         "VE": [
-            "es"
+            "es",
+            "yrl"
         ],
         "VG": [
             "en"
