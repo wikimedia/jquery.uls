@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Em-em"
+		]
+	},
+	"uls-region-WW": "Duk duniya",
+	"uls-region-SP": "Muhimmi",
+	"uls-region-AM": "Amurka",
+	"uls-region-AF": "Afirka",
+	"uls-region-EU": "Turai",
+	"uls-region-AS": "Asiya",
+	"uls-region-ME": "Gabas ta Tsakiya",
+	"uls-region-PA": "Pasific",
+	"uls-region-all": "Dukkan harsuna",
+	"uls-no-results-found": "Ba'a samu sakamako ba",
+	"uls-common-languages": "Harsunan da aka gabatar",
+	"uls-no-results-suggestion-title": "Zaka iya son yin:",
+	"uls-search-help": "Zaku iya bincike ta sunan harshe, sunan script, Kod din ISO na harshe ko zaku iya bincike ta yanki.",
+	"uls-search-placeholder": "Bincike na wani harshe"
+}
