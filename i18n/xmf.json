@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Narazeni"
+		]
+	},
+	"uls-region-WW": "მოსოფელი",
+	"uls-region-SP": "სპეციალური",
+	"uls-region-AM": "ამერიკა",
+	"uls-region-AF": "აფრიკა",
+	"uls-region-EU": "ევროპა",
+	"uls-region-AS": "აზია",
+	"uls-region-ME": "არხო ბჟაეიოლი",
+	"uls-region-PA": "ოკიანეთი",
+	"uls-region-all": "არძა ნინა",
+	"uls-no-results-found": "შედეგიქ ვეგორინჷ",
+	"uls-common-languages": "მერზიებული ნინეფი",
+	"uls-search-placeholder": "ნინაშ გორუა"
+}
