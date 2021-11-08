@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Noktonissian"
+		]
+	},
+	"uls-region-WW": "ᨣ᩠ᩅᩱ᩵ᩃᩰᩫ᩠ᨠ",
+	"uls-region-SP": "ᨻᩥᩔᩮ",
+	"uls-region-AM": "ᩋᨾᩮᩁᩥᨣᩤ",
+	"uls-region-AF": "ᩋᩯᨼᩕᩥᨣᩤ",
+	"uls-region-EU": "ᩀᩩᩁᩰᩫ᩠ᨷ",
+	"uls-region-AS": "ᩋᩮᨪᩮ᩠ᨿ",
+	"uls-region-ME": "ᨲᩅᩢ᩠ᨶᩋᩬᨠᨠᩖᩣ᩠ᨦ",
+	"uls-region-PA": "ᨻᩯᨪᩥᨼᩥ᩠ᨠ",
+	"uls-region-all": "ᨩᩩᨽᩣᩈᩣ",
+	"uls-no-results-found": "ᨷᩴᨸᩡ",
+	"uls-common-languages": "ᨽᩣᩈᩣᨴᩦ᩵ᨶᩯᩡᨶᩣᩴ",
+	"uls-no-results-suggestion-title": "ᨴ᩵ᩤ᩠ᨶᩋᩣ᩠ᨧᩈᩫ᩠ᨶᨧᩱ:",
+	"uls-search-help": "ᨴ᩵ᩤ᩠ᨶᩋᩣ᩠ᨧᨪᩰᩬᩡᩉᩣᨯᩱ᩶ᨧᩣ᩠ᨿᨩᩨ᩵ᨽᩣᩈᩣ ᨩᩨ᩵ᩋᩢᨠ᩠ᨡᩁ ᨩᩨ᩵ᩁᩉᩢ᩠ᩈ ISO ᨡᩬᨦᨽᩣᩈᩣ ᩁᩂᩋᩣ᩠ᨧᨪᩰᩬᩡᨹᩬᩴ᩵ᨲᩣ᩠ᨾᨽᩪᨾᩥᨽᩣ᩠ᨣᨣᩴᨯᩱ᩶",
+	"uls-search-placeholder": "ᨪᩰᩬᩡᩉᩣᨽᩣᩈᩣ"
+}
