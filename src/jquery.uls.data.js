@@ -105,6 +105,13 @@
             ],
             "अहिराणी"
         ],
+        "ajg": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "ajagbe"
+        ],
         "ajp": [
             "Arab",
             [
@@ -3230,6 +3237,13 @@
                 "AM"
             ],
             "anqash qichwa"
+        ],
+        "rag": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Lologooli"
         ],
         "rap": [
             "Latn",
