@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Carma Citrawati"
+		]
+	},
+	"uls-region-WW": "ᬕᬸᬫᬶᬫᬓᭂᬚᬂ᭟",
+	"uls-region-SP": "ᬧᬶᬦᬶᬄᬮᬶᬬᬦ᭄᭞",
+	"uls-region-AM": "ᬅᬫᭂᬭᬶᬓ᭟",
+	"uls-region-AF": "ᬅᬧ᭄ᬭᬶᬓ᭟",
+	"uls-region-EU": "ᬏᬭᭀᬧ᭟",
+	"uls-region-AS": "ᬅᬲᬶᬬ",
+	"uls-region-ME": "ᬢᬶᬫᬸᬄᬢᭂᬗᬄ",
+	"uls-region-PA": "ᬧᬲᬶᬧᬶᬓ᭄",
+	"uls-region-all": "ᬪᬱᬫᬓᭂᬚᬂ",
+	"uls-no-results-found": "ᬢᬸᬲᬶᬂᬳᬤᬳᬲᬶᬮ᭄",
+	"uls-common-languages": "ᬪᬱᬲᬦᬾᬫᬧᬳᬶᬓᭂᬢᬦ᭄᭞",
+	"uls-no-results-suggestion-title": "ᬳᬶᬤᬤᬦᬾᬫᬶᬦᬩ᭄ᬲᭂᬦᭂᬂᬭᬶᬂ᭝",
+	"uls-search-help": "ᬳᬶᬤᬤᬦᬾᬤᬤᭀᬲ᭄‌ᬗᬺᬋᬄᬳᬦ᭄ᬢᬸᬓ᭄ᬯᬱ᭄ᬝᬦ᭄ᬪᬱ᭞ᬯᬱ᭄ᬝᬦ᭄ᬲ᭄ᬓ᭄ᬭᬶᬧ᭄᭞ᬓᭀᬤᭂᬪᬲ᭞ᬇᬲᭀ᭞ᬳᬸᬢᬯᬶᬬᬶᬳᬶᬤᬤᬦᬾᬧ᭄ᬭᬲᬶᬤᬗᬺᬋᬄᬳᬦ᭄ᬢᬸᬓ᭄ᬯᬯᬶᬤᬗᬦ᭄ᬕᭂᬦᬄᬳᬶᬤᬤᬦᬾᬫᬗ᭄ᬓᬶᬦ᭄᭞",
+	"uls-search-placeholder": "ᬪᬱᬲᬦᬾᬓᬋᬋᬄ᭞"
+}
