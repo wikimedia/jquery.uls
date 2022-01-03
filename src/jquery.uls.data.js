@@ -17,7 +17,7 @@
             [
                 "EU"
             ],
-            "Аҧсшәа"
+            "аԥсшәа"
         ],
         "abe": [
             "Latn",
@@ -142,6 +142,21 @@
                 "AM"
             ],
             "Albaamo innaaɬiilka"
+        ],
+        "ale": [
+            "Latn",
+            [
+                "AM",
+                "AS"
+            ],
+            "unangam tunuu"
+        ],
+        "ale-cyrl": [
+            "Cyrl",
+            [
+                "AS"
+            ],
+            "унаӈам тунуу"
         ],
         "aln": [
             "Latn",
@@ -4364,7 +4379,7 @@
             [
                 "AM"
             ],
-            "ñe'engatú"
+            "Nhẽẽgatú"
         ],
         "yua": [
             "Latn",
