@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Manke ruLpa"
+		]
+	},
+	"uls-region-WW": "Monkü Mapu",
+	"uls-region-SP": "Kiñen",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Ewropa",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Ragi Puel",
+	"uls-region-PA": "Pasifiko",
+	"uls-region-all": "Kom zungun",
+	"uls-no-results-found": "Pengelay tami kintun",
+	"uls-search-placeholder": "Kintun kiñe zungun"
+}
