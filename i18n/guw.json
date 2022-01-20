@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joshateji",
+			"Samatics"
+		]
+	},
+	"uls-region-WW": "Lẹdo aihọn pé",
+	"uls-region-SP": "Vonọtaun",
+	"uls-region-AM": "Amẹlika",
+	"uls-region-AF": "Aflika",
+	"uls-region-EU": "Europe",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Middle East",
+	"uls-region-PA": "Pasifik",
+	"uls-region-all": "Ogbè lẹpo",
+	"uls-no-results-found": "Nuhe dín a te ma sọawuhia to owé depope mẹ",
+	"uls-common-languages": "Ogbè he yin nudego lẹ",
+	"uls-no-results-suggestion-title": "Mì sọgan tindo ojlo na ehelẹ:",
+	"uls-search-help": "Mì sọgan yí yinkọ ogbè tọn do dín, kavi yinkọ wekinkan tọn, kavi hokun ISO ogbè tọn kavi mì ni dín gbọn lẹdo lọ yiyizan dali.",
+	"uls-search-placeholder": "Dín ogbè de"
+}

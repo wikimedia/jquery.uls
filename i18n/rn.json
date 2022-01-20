@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gilbert Ndihokubwayo"
+		]
+	},
+	"uls-region-WW": "Kw'isi yose",
+	"uls-region-SP": "Bidasanzwe",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Uburayi",
+	"uls-region-AS": "Aziya",
+	"uls-region-ME": "Uburasirazuba bwo hagati",
+	"uls-region-PA": "Pasifike",
+	"uls-region-all": "Indimi zose",
+	"uls-no-results-found": "Nta nyishu yabonetse",
+	"uls-common-languages": "Indimi zihitishijwemwo",
+	"uls-no-results-suggestion-title": "Ushobora gushimishwa na:",
+	"uls-search-help": "Ushobora kurondeza ukoresheje izina ryururimi, izina ry'ivyandiko, kode ISO y'ururimi canke naho ukarondeza ukoresheje akarere.",
+	"uls-search-placeholder": "Rondeza ururimi"
+}
