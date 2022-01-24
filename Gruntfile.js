@@ -22,9 +22,6 @@ module.exports = function ( grunt ) {
 			]
 		},
 		stylelint: {
-			options: {
-				syntax: 'css'
-			},
 			src: [
 				'**/*.css',
 				'!node_modules/**'
