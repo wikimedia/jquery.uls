@@ -19,7 +19,7 @@
 
 .uls-lcd-region-title {
 	color: #555;
-	font-size: 14px;
+	font-size: 1em;
 	padding-left: 28px;
 }
 
@@ -91,7 +91,7 @@
 	cursor: pointer;
 	text-decoration: none;
 	color: #36c;
-	font-size: 14px;
+	font-size: 1em;
 	display: inline-block;
 	width: 100%;
 	overflow-x: hidden;
@@ -119,7 +119,7 @@
 }
 
 .uls-no-results-found-title {
-	font-size: 16px;
+	font-size: 1.143em;
 	padding: 0 16px 0 28px;
 	margin: 20px 0;
 	border-bottom: 0;
@@ -133,7 +133,7 @@
 	font-size: 0.9em;
 	width: 100%;
 	margin-top: 1.6em;
-	line-height: 1.6em;
+	line-height: 1.6;
 	position: absolute;
 	bottom: 0;
 	left: 0;

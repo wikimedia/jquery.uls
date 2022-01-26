@@ -76,7 +76,7 @@
 
 /* There are two input boxes. This class applies to both of them */
 .uls-filterinput {
-	font-size: 16px;
+	font-size: 1.143em;
 	height: 32px;
 	width: 100%;
 	/* For the custom clear (X) icon */
