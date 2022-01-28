@@ -21,7 +21,6 @@
 ( function ( $ ) {
 	'use strict';
 
-	// eslint-disable-next-line no-multi-str
 	var noResultsTemplate = '<div class="uls-no-results-view"> \
 		<h2 data-i18n="uls-no-results-found" class="uls-no-results-found-title">No results found</h2> \
 		<div class="uls-no-results-suggestions"></div> \
