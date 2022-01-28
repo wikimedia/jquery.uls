@@ -19,7 +19,7 @@
 	QUnit.module( 'jquery.uls' );
 
 	QUnit.test( '-- Initial check', function ( assert ) {
-		assert.ok( $.fn.uls, '$.fn.uls is defined' );
+		assert.strictEqual( typeof $.fn.uls, 'function', '$.fn.uls is a function' );
 	} );
 
 }( jQuery ) );

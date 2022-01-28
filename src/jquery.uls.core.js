@@ -23,7 +23,6 @@
 	var template, ULS;
 
 	// Region numbers in id attributes also appear in the langdb.
-	// eslint-disable-next-line no-multi-str
 	template = '<div class="grid uls-menu"> \
 			<div id="search" class="row uls-search"> \
 				<div class="uls-search-wrapper"> \

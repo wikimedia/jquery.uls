@@ -19,6 +19,8 @@
 /**
  * Usage: $( 'inputbox' ).languagefilter();
  * The values for autocompletion is from the options.languages or options.searchAPI.
+ *
+ * @param {jQuery} $
  */
 ( function ( $ ) {
 	'use strict';
@@ -270,12 +272,12 @@
 
 			userInput = this.$element.val();
 			suggestion = userInput +
-				languageName.substring( userInput.length, languageName.length );
+				languageName.slice( userInput.length, languageName.length );
 
 			if ( suggestion.toLowerCase() !== languageName.toLowerCase() ) {
 				// see if it was autonym match
 				autonym = $.uls.data.getAutonym( langCode ) || '';
-				suggestion = userInput + autonym.substring( userInput.length, autonym.length );
+				suggestion = userInput + autonym.slice( userInput.length, autonym.length );
 
 				if ( suggestion !== autonym ) {
 					// Give up. It may be an ISO/script code match.
