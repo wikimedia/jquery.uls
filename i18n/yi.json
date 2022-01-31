@@ -1,21 +1,22 @@
 {
 	"@metadata": {
 		"authors": [
+			"Castillerian",
 			"פוילישער"
 		]
 	},
-	"uls-region-WW": "וועלטווייט",
-	"uls-region-SP": "באזונדער",
-	"uls-region-AM": "אמעריקע",
-	"uls-region-AF": "אפֿריקע",
-	"uls-region-EU": "אייראפע",
-	"uls-region-AS": "אזיע",
+	"uls-region-WW": "גלאָבאַל",
+	"uls-region-SP": "באַזונדער",
+	"uls-region-AM": "אַמעריקע",
+	"uls-region-AF": "אַפֿריקע",
+	"uls-region-EU": "אייראָפּע",
+	"uls-region-AS": "אַזיע",
 	"uls-region-ME": "מיטל מזרח",
-	"uls-region-PA": "פאציפֿיק",
-	"uls-region-all": "אלע שפראַכן",
-	"uls-no-results-found": "קיין רעזולטאטן נישט געטראפֿן.",
-	"uls-common-languages": "פֿארגעשלאַָגענע שפראַכן",
-	"uls-no-results-suggestion-title": "עס וועט אייך אפשר אינטרעסירן:",
-	"uls-search-help": "איר קענט זוכן לויט שפראך־נאמען, שריפֿט־נאמען, שפראך ISO־קאד אדער קענט איר בלעטערן לויט ראיאן.",
-	"uls-search-placeholder": "זוכן א שפראך"
+	"uls-region-PA": "פּאַציפֿיק",
+	"uls-region-all": "אַלע שפּראַכן",
+	"uls-no-results-found": "קיין רעזולטאַטן נישט געטראָפֿן.",
+	"uls-common-languages": "פֿירגעלייגטע שפּראַכן",
+	"uls-no-results-suggestion-title": "עס וועט אפֿשר דיר אינייערעסירן:",
+	"uls-search-help": "מע קען זוכן לויט שפּראַך־נאָמען, שריפֿט־אָמען, ISO־קאָדפֿון שפּראַך אָדער קען מען בלעטערן לויט ראַיאָן.",
+	"uls-search-placeholder": "זוכן אַ שפּראַך"
 }
