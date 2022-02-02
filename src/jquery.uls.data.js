@@ -1313,6 +1313,13 @@
             ],
             "furlan"
         ],
+        "fvr": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "poor’íŋ belé’ŋ"
+        ],
         "fy": [
             "Latn",
             [
@@ -2594,6 +2601,13 @@
             ],
             "innu-aimun"
         ],
+        "mos": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "moore"
+        ],
         "mr": [
             "Deva",
             [
@@ -3530,6 +3544,27 @@
             ],
             "davvisámegiella"
         ],
+        "se-fi": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "davvisámegiella (Suoma bealde)"
+        ],
+        "se-no": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "davvisámegiella (Norgga bealde)"
+        ],
+        "se-se": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "davvisámegiella (Ruoŧa bealde)"
+        ],
         "ses": [
             "Latn",
             [
@@ -3595,6 +3630,9 @@
                 "AF"
             ],
             "tacawit"
+        ],
+        "shy": [
+            "shy-latn"
         ],
         "si": [
             "Sinh",
@@ -4018,12 +4056,15 @@
             ],
             "lea faka-Tonga"
         ],
-        "tokipona": [
+        "tok": [
             "Latn",
             [
                 "WW"
             ],
-            "Toki Pona"
+            "toki pona"
+        ],
+        "tokipona": [
+            "tok"
         ],
         "tpi": [
             "Latn",
@@ -4060,7 +4101,7 @@
             [
                 "AS"
             ],
-            "Sediq Taroko"
+            "Seediq"
         ],
         "ts": [
             "Latn",
@@ -4208,6 +4249,16 @@
                 "AS"
             ],
             "oʻzbekcha"
+        ],
+        "uz-cyrl": [
+            "Cyrl",
+            [
+                "AS"
+            ],
+            "ўзбекча"
+        ],
+        "uz-latn": [
+            "uz"
         ],
         "ve": [
             "Latn",
@@ -4738,6 +4789,7 @@
             "wa"
         ],
         "BF": [
+            "mos",
             "fr",
             "ff"
         ],
@@ -4907,6 +4959,7 @@
             "en",
             "ru",
             "vi",
+            "uz-cyrl",
             "uz",
             "lzh"
         ],
@@ -5606,7 +5659,8 @@
             "ta"
         ],
         "MV": [
-            "dv"
+            "dv",
+            "en"
         ],
         "MW": [
             "en",
@@ -5905,6 +5959,7 @@
         "SD": [
             "ar",
             "en",
+            "fvr",
             "ha-arab",
             "ha"
         ],
@@ -6154,6 +6209,7 @@
         ],
         "UZ": [
             "uz",
+            "uz-cyrl",
             "ru",
             "kaa",
             "tr"
