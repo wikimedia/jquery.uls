@@ -31,8 +31,8 @@
 		"grunt-contrib-qunit": "4.0.0",
 		"grunt-eslint": "23.0.0",
 		"grunt-stylelint": "0.17.0",
-		"stylelint": "14.3.0",
-		"stylelint-config-wikimedia": "0.11.1"
+		"stylelint": "14.5.0",
+		"stylelint-config-wikimedia": "0.12.0"
 	},
 	"repository": {
 		"type": "git",
