@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kakonjo"
+		]
+	},
+	"uls-region-WW": "Ensiyoona",
+	"uls-region-SP": "Ez'omutaano",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Buraaya",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Ahagati ya burugwa Eizoba",
+	"uls-region-PA": "Pasifiki",
+	"uls-region-all": "Endimi zoona",
+	"uls-no-results-found": "Tihariho ebyarugamu",
+	"uls-common-languages": "Endimi ezirikukutekatekyerwa",
+	"uls-no-results-suggestion-title": "Nobasa kuba noyenda :",
+	"uls-search-help": "Nobasa ku sherura nana eiziina rya orurimi, omuringo get, Kodi y'orurimi eya ISO ninga nobasa kusherura ekyanga aha Karimagyezi.",
+	"uls-search-placeholder": "Sherura orurimi"
+}
