@@ -1,12 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amoarich",
 			"Robertjamal12"
 		]
 	},
 	"uls-region-WW": "Wiase bɛbiara",
 	"uls-region-SP": "Soronko",
 	"uls-region-AM": "Amelica",
+	"uls-region-AF": "Abibiman",
+	"uls-region-EU": "Yurop",
+	"uls-region-AS": "Ahyia",
+	"uls-region-ME": "Mfimfini Apueɛ",
+	"uls-region-PA": "Po",
 	"uls-region-all": "Kasa ahorow nyinaa",
 	"uls-no-results-found": "Yɛn ho hwee",
 	"uls-common-languages": "Kasa ahorow a yɛ gye sɛ wo pɛ",

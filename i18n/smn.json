@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Seipinne"
+		]
+	},
+	"uls-region-WW": "Maailmkielah",
+	"uls-region-SP": "Eromâškielah",
+	"uls-region-AM": "Amerik",
+	"uls-region-AF": "Afrik",
+	"uls-region-EU": "Euroop",
+	"uls-region-AS": "Aasia",
+	"uls-region-ME": "Alda-nuorttâ",
+	"uls-region-PA": "Kuálhismeerâ kuávlu",
+	"uls-region-all": "Puoh kielah",
+	"uls-no-results-found": "Ij uuccâmpuátusijd",
+	"uls-common-languages": "Iävtuttum kielah",
+	"uls-no-results-suggestion-title": "Aldemus uuccâmpuátuseh:",
+	"uls-search-help": "Uusâ kielâ teikkâ čäällimvyevi noomáin, kielâ ISO-koodijn teikkâ laađâ kielâid kuávlulistoost:",
+	"uls-search-placeholder": "Uusâ kielâ"
+}
