@@ -660,6 +660,13 @@
             ],
             "ᨅᨔ ᨕᨘᨁᨗ"
         ],
+        "bum": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "bulu"
+        ],
         "bxr": [
             "Cyrl",
             [
@@ -1953,6 +1960,13 @@
                 "AF"
             ],
             "kabuverdianu"
+        ],
+        "ken": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "kɛ́nyáŋ"
         ],
         "kg": [
             "Latn",
@@ -4874,14 +4888,43 @@
         "CA": [
             "en",
             "fr",
+            "zh",
+            "yue",
+            "pa-guru",
+            "es",
+            "tl",
+            "ar",
             "it",
             "de",
+            "ur",
+            "fa",
+            "pt",
+            "ru",
+            "hi",
+            "ta",
+            "vi",
+            "pl",
+            "ko",
+            "gu",
+            "el",
+            "ro",
+            "bn",
             "pdt",
-            "cr",
-            "yi",
+            "uk",
+            "sr-cyrl",
+            "nl",
+            "ja",
+            "so",
+            "hu",
+            "hr",
             "ike-cans",
+            "tr",
             "moe",
-            "atj"
+            "cr",
+            "mic",
+            "atj",
+            "war",
+            "oka"
         ],
         "CC": [
             "ms-arab",
@@ -4929,6 +4972,7 @@
         "CM": [
             "fr",
             "en",
+            "bum",
             "ff",
             "bkm",
             "bas",
@@ -5161,20 +5205,25 @@
             "en",
             "fr",
             "de",
-            "sco",
+            "es",
+            "pl",
             "pa-guru",
+            "ur",
+            "ta",
+            "gu",
+            "sco",
             "cy",
             "bn",
+            "ar",
             "zh-hant",
             "zh",
-            "syl",
-            "el",
+            "pt",
+            "tr",
             "it",
-            "ks-arab",
-            "gd",
-            "yi",
-            "ml",
+            "so",
+            "lt",
             "ga",
+            "gd",
             "kw"
         ],
         "GD": [
@@ -5742,6 +5791,7 @@
             "tr"
         ],
         "NO": [
+            "no",
             "nb",
             "nn",
             "se"
