@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Keresturec"
+		]
+	},
+	"uls-region-WW": "Шветови",
+	"uls-region-SP": "Специялни",
+	"uls-region-AM": "Америка",
+	"uls-region-AF": "Африка",
+	"uls-region-EU": "Европа",
+	"uls-region-AS": "Азия",
+	"uls-region-ME": "Штреднї Восток",
+	"uls-region-PA": "Пацифик",
+	"uls-region-all": "Шицки язики",
+	"uls-no-results-found": "Нєт резултати",
+	"uls-common-languages": "Предложени язик",
+	"uls-no-results-suggestion-title": "Можебуц сце заинтересовани за:",
+	"uls-search-help": "Можеце преглєдовац по мену язика або писма, по ISO коду язика або по реґиону.",
+	"uls-search-placeholder": "Глєданє язика"
+}
