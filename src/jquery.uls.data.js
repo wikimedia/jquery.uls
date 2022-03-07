@@ -1214,6 +1214,13 @@
             ],
             "Faŋ"
         ],
+        "fat": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "mfantse"
+        ],
         "fax": [
             "Latn",
             [
@@ -3379,7 +3386,7 @@
             [
                 "AF"
             ],
-            "Kirundi"
+            "ikirundi"
         ],
         "ro": [
             "Latn",
@@ -3397,6 +3404,13 @@
                 "EU"
             ],
             "tarandíne"
+        ],
+        "rsk": [
+            "Cyrl",
+            [
+                "EU"
+            ],
+            "руски"
         ],
         "rtm": [
             "Latn",
@@ -4890,10 +4904,10 @@
             "fr",
             "zh",
             "yue",
-            "pa-guru",
             "es",
-            "tl",
+            "pa-guru",
             "ar",
+            "tl",
             "it",
             "de",
             "ur",
@@ -4914,8 +4928,8 @@
             "sr-cyrl",
             "nl",
             "ja",
-            "so",
             "hu",
+            "so",
             "hr",
             "ike-cans",
             "tr",
@@ -5217,11 +5231,11 @@
             "ar",
             "zh-hant",
             "zh",
-            "pt",
-            "tr",
             "it",
-            "so",
             "lt",
+            "pt",
+            "so",
+            "tr",
             "ga",
             "gd",
             "kw"
@@ -5791,8 +5805,8 @@
             "tr"
         ],
         "NO": [
-            "no",
             "nb",
+            "no",
             "nn",
             "se"
         ],
