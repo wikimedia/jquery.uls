@@ -1,15 +1,22 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robin van der Vliet"
+			"Robin van der Vliet",
+			"SpanishSnake"
 		]
 	},
-	"uls-region-WW": "ma",
+	"uls-region-WW": "ma ale",
 	"uls-region-SP": "namako",
 	"uls-region-AM": "ma Amelika",
 	"uls-region-AF": "ma Apika",
 	"uls-region-EU": "ma Elopa",
 	"uls-region-AS": "ma Asija",
+	"uls-region-ME": "insa pi suno kama",
 	"uls-region-PA": "ma Pasipi",
-	"uls-region-all": "toki ale"
+	"uls-region-all": "toki ale",
+	"uls-no-results-found": "alasa la, ijo ala li kama lon.",
+	"uls-common-languages": "toki pi ken pona",
+	"uls-no-results-suggestion-title": "ken la, sina wile e ni:",
+	"uls-search-help": "sina ken alasa kepeken nimi toki, kepeken nasin sitelen, kepeken nimi ISO, kepeken ma ante.",
+	"uls-search-placeholder": "o alasa e toki"
 }
