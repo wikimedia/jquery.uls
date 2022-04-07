@@ -1,13 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
-			"Iflaq"
+			"Iflaq",
+			"Tajamul9"
 		]
 	},
+	"uls-region-WW": "پوٗرٕ دُنیاہس مٕنٛز",
 	"uls-region-SP": "خاص",
 	"uls-region-AM": "امریٖکا",
 	"uls-region-AF": "افریقہ",
 	"uls-region-EU": "یورَپ",
 	"uls-region-AS": "ایشیا",
-	"uls-region-all": "تَمام زَبان"
+	"uls-region-all": "تَمام زَبان",
+	"uls-no-results-found": "کانٛہہ تہِ نتٲیِج آو نہٕ لبنہٕ",
+	"uls-common-languages": "تجویٖز دِنہٕ آمَثہٕ زبانہٕ",
+	"uls-no-results-suggestion-title": "شاید ما ٲسِیوٚ تۄہہِ یتھ منٛز دِلچسپی تھاوان:",
+	"uls-search-placeholder": "زَبان کٔرِو تَلاش"
 }
