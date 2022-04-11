@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"David1010",
-			"MIKHEIL"
+			"MIKHEIL",
+			"Გიო ოქრო"
 		]
 	},
 	"uls-region-WW": "მსოფლიო",
@@ -13,8 +14,9 @@
 	"uls-region-AS": "აზია",
 	"uls-region-ME": "ახლო აღმოსავლეთი",
 	"uls-region-PA": "ოკეანეთი",
+	"uls-region-all": "ყველა ენა",
 	"uls-no-results-found": "შედეგი ვერ მოიძებნა",
-	"uls-common-languages": "შეთავაზებული ენები",
+	"uls-common-languages": "შემოთავაზებული ენები",
 	"uls-no-results-suggestion-title": "იქნებ თქვენ ამ ენებმა დაგაინტერესოთ:",
 	"uls-search-help": "ძიება შესაძლებელია ენის სახელით ან დამწერლობით, ენის ISO-კოდით ან რეგიონის მიხედვით.",
 	"uls-search-placeholder": "ენის მოძებნა"
