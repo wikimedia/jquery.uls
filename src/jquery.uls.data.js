@@ -1058,6 +1058,13 @@
             ],
             "eʋegbe"
         ],
+        "efi": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "efik"
+        ],
         "egl": [
             "Latn",
             [
@@ -5783,6 +5790,7 @@
             "ha",
             "ig",
             "yo",
+            "efi",
             "ha-arab",
             "kcg",
             "ar",
