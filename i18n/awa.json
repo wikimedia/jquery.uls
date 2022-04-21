@@ -3,21 +3,22 @@
 		"authors": [
 			"1AnuraagPandey",
 			"1PandeyAnurag",
-			"Ajeetsinghawadh"
+			"Ajeetsinghawadh",
+			"Ajeetsinghawadhi"
 		]
 	},
-	"uls-region-WW": "वैश्विक",
-	"uls-region-SP": "विशेष",
+	"uls-region-WW": "दुनिया भर कय",
+	"uls-region-SP": "खास",
 	"uls-region-AM": "अमेरिका",
-	"uls-region-AF": "अफ्रिका",
+	"uls-region-AF": "अफ्रीका",
 	"uls-region-EU": "यूरोप",
-	"uls-region-AS": "एशिया",
+	"uls-region-AS": "एसिया",
 	"uls-region-ME": "मध्य पुरुब",
-	"uls-region-PA": "प्रशांत",
-	"uls-region-all": "कुल भाषा",
-	"uls-no-results-found": "कवनो नतिजा नाई मिला",
-	"uls-common-languages": "सुझाई गय भाषा",
-	"uls-no-results-suggestion-title": "आप कय लिये संभवतः उपयोगी:",
-	"uls-search-help": "आप भाषा कय नाँव,लिपि नाँव,भाषा कय आई.एस.ओ कोड अव क्षेत्र कय नाँव से खोज सका जात अहै ।",
+	"uls-region-PA": "प्रसांत",
+	"uls-region-all": "सगरौ भासा",
+	"uls-no-results-found": "कवनो नतीजा नाय मिला",
+	"uls-common-languages": "सुझाई गय भासा",
+	"uls-no-results-suggestion-title": "आपकय दिलचस्पी होय सकत है:",
+	"uls-search-help": "आप भाषा कय नाँव,लिपि कय नाँव,भाषा कय आई.एस.ओ कोड अव क्षेत्र कय नाँव से हेर सका जात अहै ।",
 	"uls-search-placeholder": "भाषा खोज"
 }
