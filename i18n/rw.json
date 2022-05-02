@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Germain92"
+		]
+	},
+	"uls-region-WW": "Kwisi Yose",
+	"uls-region-SP": "Ibidasanzwe",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afurika",
+	"uls-region-EU": "Uburayi",
+	"uls-region-AS": "Aziya",
+	"uls-region-ME": "Uburayi bwo Hagati",
+	"uls-region-PA": "Pasifik",
+	"uls-region-all": "Indimi Zose",
+	"uls-no-results-found": "Nta bisubizo Bigaragara",
+	"uls-common-languages": "Indimi ziteganyijwe",
+	"uls-no-results-suggestion-title": "Ushobora gushimishwa na:",
+	"uls-search-help": "Ushobora gushakisha ukoresheje izina ry'ururimi, izina ry'inyandiko, ISO y'ururimi cyangwa ugashakisha ukoresheje Akarere.",
+	"uls-search-placeholder": "Shakisha ururimi"
+}
