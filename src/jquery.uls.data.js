@@ -2158,8 +2158,7 @@
         "krj": [
             "Latn",
             [
-                "ME",
-                "EU"
+                "AS"
             ],
             "Kinaray-a"
         ],
@@ -3010,7 +3009,6 @@
         "olo": [
             "Latn",
             [
-                "AS",
                 "EU"
             ],
             "livvinkarjala"
@@ -3485,7 +3483,7 @@
             [
                 "AF"
             ],
-            "Kinyarwanda"
+            "Ikinyarwanda"
         ],
         "rwr": [
             "Deva",
@@ -3495,11 +3493,11 @@
             "मारवाड़ी"
         ],
         "ryu": [
-            "Kana",
+            "Jpan",
             [
                 "AS"
             ],
-            "ʔucināguci"
+            "うちなーぐち"
         ],
         "sa": [
             "Deva",
@@ -4122,7 +4120,7 @@
             [
                 "AS"
             ],
-            "Kokborok (Tripuri)"
+            "Kokborok"
         ],
         "tru": [
             "Latn",
@@ -4437,12 +4435,7 @@
             "SaiSiyat"
         ],
         "ydd": [
-            "Hebr",
-            [
-                "AS",
-                "EU"
-            ],
-            "Eastern Yiddish"
+            "yi"
         ],
         "yi": [
             "Hebr",
@@ -4659,7 +4652,6 @@
             "Hani",
             "Hans",
             "Hant",
-            "Kana",
             "Kore",
             "Jpan",
             "Yiii"
