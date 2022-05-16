@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ebenoffen1"
+		]
+	},
+	"uls-region-WW": "Wiase mfɛndzeanan nyinara",
+	"uls-region-SP": "Soronko",
+	"uls-region-AM": "Amereka",
+	"uls-region-AF": "Ebibiman",
+	"uls-region-EU": "Yurop",
+	"uls-region-AS": "Ehyia",
+	"uls-region-ME": "Finimfin Epuei",
+	"uls-region-PA": "Pasefeke",
+	"uls-region-all": "Kasa ahorow nyinara",
+	"uls-no-results-found": "Yennhu hwee",
+	"uls-common-languages": "Kasahorow a yeesusu ama wo",
+	"uls-no-results-suggestion-title": "Annyɛ a w'enyi bɛgye ho:",
+	"uls-search-help": "Ibotum dze kasa ne dzin, akyerɛw ne dzin, ISO kasa koodu anaa ibotum dze fa yi anenam ahwehwɛ.",
+	"uls-search-placeholder": "Hwehwɛ kasa bi"
+}
