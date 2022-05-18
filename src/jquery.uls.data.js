@@ -3875,6 +3875,13 @@
             ],
             "Sranantongo"
         ],
+        "sro": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "sardu campidanesu"
+        ],
         "ss": [
             "Latn",
             [
@@ -5786,6 +5793,7 @@
             "ha-arab",
             "kcg",
             "ar",
+            "ann",
             "ff"
         ],
         "NI": [
@@ -6014,7 +6022,8 @@
             "ar"
         ],
         "SB": [
-            "en"
+            "en",
+            "pis"
         ],
         "SC": [
             "fr",
