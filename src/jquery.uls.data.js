@@ -3981,6 +3981,13 @@
             ],
             "ತುಳು"
         ],
+        "tdd": [
+            "Tale",
+            [
+                "AS"
+            ],
+            "ᥖᥭᥰᥖᥬᥳᥑᥨᥒᥰ"
+        ],
         "te": [
             "Telu",
             [
@@ -4672,7 +4679,8 @@
             "Laoo",
             "Lana",
             "Mymr",
-            "Thai"
+            "Thai",
+            "Tale"
         ],
         "Mongolian": [
             "Mong"
@@ -5020,6 +5028,7 @@
             "kk-arab",
             "kk-cyrl",
             "ky",
+            "tdd",
             "en",
             "ru",
             "vi",
@@ -5162,7 +5171,8 @@
             "eu",
             "ast",
             "ext",
-            "an"
+            "an",
+            "oc"
         ],
         "ET": [
             "en",
