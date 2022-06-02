@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"咽頭べさ"
+		]
+	},
+	"uls-region-WW": "ᥖᥒᥰᥐᥛᥱᥚᥣᥱ",
+	"uls-region-SP": "ᥑᥪᥐᥳᥖᥩᥢᥰ",
+	"uls-region-AM": "ᥟᥛᥥᥱᥞᥤᥐ",
+	"uls-region-AF": "ᥟᥣᥱᥚᥞᥤᥐ",
+	"uls-region-EU": "ᥞᥧᥰᥞᥨᥙᥳ",
+	"uls-region-AS": "ᥟᥥᥰᥡᥣᥰ",
+	"uls-region-ME": "ᥙᥩᥖᥰᥐᥣᥒᥴᥖᥣᥒᥰᥟᥩᥐᥱ",
+	"uls-region-PA": "ᥙᥔᥤᥚᥤᥐᥳ",
+	"uls-region-all": "ᥚᥣᥱᥔᥣᥱᥐᥣᥛᥰ ᥖᥒᥰᥔᥥᥒᥲ",
+	"uls-no-results-found": "ᥟᥛᥱᥞᥢᥴᥚᥩᥢᥰᥘᥭᥲ",
+	"uls-common-languages": "ᥚᥣᥱᥔᥣᥱᥟᥢᥴᥓᥬᥳᥢᥛᥴ",
+	"uls-no-results-suggestion-title": "ᥓᥝᥲᥐᥝᥱᥓᥣᥒᥲᥑᥝᥲᥓᥬᥴᥙᥣᥰ:",
+	"uls-search-help": "ᥓᥝᥲᥐᥝᥱ ᥓᥣᥒᥲᥔᥩᥐᥲᥞᥣᥴᥖᥒᥰ ᥓᥪᥲᥚᥣᥱᥔᥣᥱᥐᥣᥛᥰ, ᥓᥪᥲ Script, ᥛᥣᥭᥴ ISO ᥖᥩᥢᥲᥖᥣᥱ ᥚᥣᥱᥔᥣᥱᥐᥣᥛᥰ ᥟᥢᥴᥢᥢᥴ ᥓᥝᥲᥐᥝᥱ ᥓᥣᥒᥲᥙᥪᥖᥱᥞᥣᥴ ᥖᥒᥰ ᥘᥦᥢᥴᥛᥫᥒᥰ region",
+	"uls-search-placeholder": "ᥑᥨᥢᥳᥞᥣᥴ ᥖᥣᥱᥚᥣᥱᥔᥣᥱᥐᥣᥛᥰ"
+}
