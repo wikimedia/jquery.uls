@@ -667,6 +667,13 @@
             ],
             "bulu"
         ],
+        "bwr": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "bura"
+        ],
         "bxr": [
             "Cyrl",
             [
@@ -2139,7 +2146,7 @@
             [
                 "AF"
             ],
-            "Kanuri"
+            "kanuri"
         ],
         "krc": [
             "Cyrl",
@@ -5904,10 +5911,9 @@
             "brh",
             "fa",
             "bgn",
-            "tg-cyrl",
             "bft",
-            "khw",
-            "ks-arab"
+            "ks-arab",
+            "khw"
         ],
         "PL": [
             "pl",
