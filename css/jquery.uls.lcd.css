@@ -68,9 +68,8 @@
 }
 
 .uls-language-block > ul > li {
-	cursor: pointer;
 	margin-left: 20px;
-	padding: 8px;
+	padding: 0;
 	/*
 	 * The directionality (ltr/rtl) for each list item is set dynamically
 	 * as HTML attributes in JavaScript. Setting directionality also applies
@@ -95,6 +94,7 @@
 	display: inline-block;
 	width: 100%;
 	overflow-x: hidden;
+	padding: 8px;
 	/*
 	 * Some languages have long names for various reasons and we still want
 	 * them to appear on one line.
