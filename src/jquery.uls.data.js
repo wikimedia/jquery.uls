@@ -667,6 +667,13 @@
             ],
             "bulu"
         ],
+        "bwr": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "bura"
+        ],
         "bxr": [
             "Cyrl",
             [
@@ -2139,7 +2146,7 @@
             [
                 "AF"
             ],
-            "Kanuri"
+            "kanuri"
         ],
         "krc": [
             "Cyrl",
@@ -3981,6 +3988,13 @@
             ],
             "ತುಳು"
         ],
+        "tdd": [
+            "Tale",
+            [
+                "AS"
+            ],
+            "ᥖᥭᥰᥖᥬᥳᥑᥨᥒᥰ"
+        ],
         "te": [
             "Telu",
             [
@@ -4672,7 +4686,8 @@
             "Laoo",
             "Lana",
             "Mymr",
-            "Thai"
+            "Thai",
+            "Tale"
         ],
         "Mongolian": [
             "Mong"
@@ -5020,6 +5035,7 @@
             "kk-arab",
             "kk-cyrl",
             "ky",
+            "tdd",
             "en",
             "ru",
             "vi",
@@ -5162,7 +5178,8 @@
             "eu",
             "ast",
             "ext",
-            "an"
+            "an",
+            "oc"
         ],
         "ET": [
             "en",
@@ -5894,10 +5911,9 @@
             "brh",
             "fa",
             "bgn",
-            "tg-cyrl",
             "bft",
-            "khw",
-            "ks-arab"
+            "ks-arab",
+            "khw"
         ],
         "PL": [
             "pl",
