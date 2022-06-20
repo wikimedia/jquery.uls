@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tumbuka Arch"
+		]
+	},
+	"uls-region-WW": "Chalochose",
+	"uls-region-SP": "Vakupatulika",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afilika",
+	"uls-region-EU": "Yulaya",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Pakati kwaMafumilo ghadazi",
+	"uls-region-PA": "Pasifiki",
+	"uls-region-all": "Viyowoyelo vyose",
+	"uls-no-results-found": "Palije icho chasangika",
+	"uls-common-languages": "Viyowoyelo vakusachizgika",
+	"uls-no-results-suggestion-title": "Panji mungatemwaso :",
+	"uls-search-help": "Mungafufuza zina la chiyowoyelo, zina la script, ISO code ya chiyowoyelo panji chigaŵa.",
+	"uls-search-placeholder": "Fufuza chiyowoyelo"
+}
