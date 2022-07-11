@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Teitei Para"
+		]
+	},
+	"uls-region-WW": "Khizaw zydua",
+	"uls-region-SP": "Eihhrâhpa",
+	"uls-region-AM": "Amerikâ",
+	"uls-region-AF": "Afrikâ",
+	"uls-region-EU": "Urôpâ",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Nochhi liaryh",
+	"uls-region-PA": "Pasifi",
+	"uls-region-all": "Reihchâ zydua",
+	"uls-no-results-found": "Sâkha hmâh y vei",
+	"uls-common-languages": "Khokheipa reihchâzy",
+	"uls-no-results-suggestion-title": "Na paphasa thei'pa reihchâ:",
+	"uls-search-help": "Reihchâ moh, rodâh moh, reihchâ ISO code cvk su hawhta na tlua thei.",
+	"uls-search-placeholder": "Reih sâ kha tlua teh"
+}
