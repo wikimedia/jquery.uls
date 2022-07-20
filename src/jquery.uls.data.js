@@ -586,7 +586,7 @@
             [
                 "AS"
             ],
-            "Bunun"
+            "bunun"
         ],
         "bo": [
             "Tibt",
@@ -1974,6 +1974,13 @@
                 "AF"
             ],
             "Tyap"
+        ],
+        "kck": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "tjikalanga"
         ],
         "kea": [
             "Latn",
@@ -4399,6 +4406,13 @@
             ],
             "walon"
         ],
+        "wal": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "wolaytta"
+        ],
         "war": [
             "Latn",
             [
@@ -4473,6 +4487,13 @@
                 "AF"
             ],
             "Yorùbá"
+        ],
+        "yoi": [
+            "Jpan",
+            [
+                "AS"
+            ],
+            "与那国物言"
         ],
         "yrk": [
             "Cyrl",
@@ -5187,6 +5208,7 @@
             "om",
             "so",
             "ti",
+            "wal",
             "aa"
         ],
         "FI": [
@@ -6377,6 +6399,7 @@
             "sn",
             "en",
             "nd",
+            "kck",
             "ny",
             "ve",
             "tn"
