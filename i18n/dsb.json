@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Michawiki"
 		]
 	},
@@ -12,6 +13,7 @@
 	"uls-region-AS": "Azija",
 	"uls-region-ME": "Srjejźne pódzajtšo",
 	"uls-region-PA": "Pacifik",
+	"uls-region-all": "Wšykne rěcy",
 	"uls-no-results-found": "Žedne wuslědki namakane",
 	"uls-common-languages": "Powšykne rěcy",
 	"uls-no-results-suggestion-title": "To by mógło śi zajmowaś:",

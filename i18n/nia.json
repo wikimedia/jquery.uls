@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Slaia"
+		]
+	},
+	"uls-region-WW": "Sagörö ulidanö",
+	"uls-region-SP": "Spesial",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Eropa",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Timur Tengah",
+	"uls-region-PA": "Pasifik",
+	"uls-region-all": "Fefu li ba gulidanö",
+	"uls-no-results-found": "Lö nisöndra",
+	"uls-common-languages": "Li si no so",
+	"uls-no-results-suggestion-title": "Te omasi'ö ba:",
+	"uls-search-help": "Tola ö'alui molo'ö töi li, töi ila-ila zura, kode ISO ma zui ö'alui molo'ö gölana.",
+	"uls-search-placeholder": "Alui sambua li"
+}

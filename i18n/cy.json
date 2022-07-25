@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Dafyddt",
 			"Lloffiwr",
 			"Robin Owain"
@@ -14,6 +15,7 @@
 	"uls-region-AS": "Asia",
 	"uls-region-ME": "Y Dwyrain Canol",
 	"uls-region-PA": "Y Pasiffig",
+	"uls-region-all": "Pob iaith",
 	"uls-no-results-found": "Ni chafwyd unrhyw ganlyniadau",
 	"uls-common-languages": "Ieithoedd awgrymedig",
 	"uls-no-results-suggestion-title": "Hwyrach bod y rhai sy'n dilyn o ddiddordeb i chi:",
