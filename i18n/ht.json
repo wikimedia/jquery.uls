@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"uls-region-WW": "Atravè lemond",
+	"uls-region-SP": "Espesyal",
+	"uls-region-AM": "Amerik",
+	"uls-region-AF": "Afrik",
+	"uls-region-EU": "Ewòp",
+	"uls-region-AS": "Azi",
+	"uls-region-ME": "Mwayen Oryan",
+	"uls-region-PA": "Pasifik",
+	"uls-region-all": "Tout lang",
+	"uls-no-results-found": "Pa gen rezilta yo jwenn",
+	"uls-common-languages": "Lang yo sijere",
+	"uls-no-results-suggestion-title": "Ou ka enterese nan :",
+	"uls-search-help": "Ou ka fouye pa non lang, non grafi, kòd ISO lang oswa ou ka mache gade pa rejyon an.",
+	"uls-search-placeholder": "Fouye you lang"
+}
