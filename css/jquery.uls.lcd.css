@@ -8,7 +8,7 @@
 
 .uls-lcd {
 	background-color: #fcfcfc;
-	height: 20em;
+	max-height: 20em;
 	/* Work around Chrome bug where it places scrollbar on the left in
 	 * in RTL mode but actually reserves the place on the right side */
 	overflow-x: hidden;
