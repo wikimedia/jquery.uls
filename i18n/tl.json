@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"GinawaSaHapon"
+		]
+	},
+	"uls-region-WW": "Pandaigdigan",
+	"uls-region-SP": "Natatangi",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Aprika",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Asya",
+	"uls-region-ME": "Gitnang Silangan",
+	"uls-region-PA": "Pasipiko",
+	"uls-region-all": "Lahat ng wika",
+	"uls-no-results-found": "Walang nakitang resulta",
+	"uls-common-languages": "Minumungkahing wika",
+	"uls-no-results-suggestion-title": "Baka interesado ka sa:",
+	"uls-search-help": "Makakahanap ka gamit ang pangalan ng wika, pangalan ng sulat, ISO code ng wika, o pwede ka rin naman mag-browse sa bawat rehiyon.",
+	"uls-search-placeholder": "Maghanap ng wika"
+}
