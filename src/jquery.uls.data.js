@@ -1791,7 +1791,7 @@
             [
                 "AM"
             ],
-            "Iñupiak"
+            "Iñupiatun"
         ],
         "ike-cans": [
             "Cans",
@@ -1834,6 +1834,13 @@
                 "EU"
             ],
             "íslenska"
+        ],
+        "ish": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "awain"
         ],
         "it": [
             "Latn",
@@ -2494,6 +2501,22 @@
                 "AS"
             ],
             "मैथिली"
+        ],
+        "mak": [
+            "Latn",
+            [
+                "AS",
+                "PA"
+            ],
+            "Mangkasarak"
+        ],
+        "mak-bugi": [
+            "Bugi",
+            [
+                "AS",
+                "PA"
+            ],
+            "ᨆᨀᨔᨑ"
         ],
         "map-bms": [
             "Latn",
@@ -4914,6 +4937,7 @@
             "en",
             "de",
             "it",
+            "vec",
             "ja",
             "es",
             "kgp",
@@ -5034,6 +5058,7 @@
             "bas",
             "ar",
             "ksf",
+            "ken",
             "agq",
             "ha-arab",
             "ha"
@@ -5209,7 +5234,8 @@
             "so",
             "ti",
             "wal",
-            "aa"
+            "aa",
+            "gez"
         ],
         "FI": [
             "fi",
@@ -5381,7 +5407,8 @@
         "HR": [
             "hr",
             "en",
-            "it"
+            "it",
+            "vec"
         ],
         "HT": [
             "ht",
@@ -5416,6 +5443,7 @@
             "bbc-latn",
             "zh-hant",
             "zh",
+            "mak",
             "rej",
             "gor",
             "sly",
@@ -5780,6 +5808,7 @@
             "es",
             "en",
             "yua",
+            "vec",
             "sei"
         ],
         "MY": [
@@ -5832,8 +5861,8 @@
             "ha-arab",
             "kcg",
             "ar",
-            "ann",
-            "ff"
+            "ff",
+            "ann"
         ],
         "NI": [
             "es"
@@ -5933,9 +5962,10 @@
             "brh",
             "fa",
             "bgn",
+            "tg-cyrl",
             "bft",
-            "ks-arab",
-            "khw"
+            "khw",
+            "ks-arab"
         ],
         "PL": [
             "pl",
@@ -5947,7 +5977,8 @@
             "uk",
             "csb",
             "sli",
-            "lt"
+            "lt",
+            "prg"
         ],
         "PM": [
             "fr",
@@ -6101,6 +6132,7 @@
             "hr",
             "en",
             "de",
+            "vec",
             "hu",
             "it"
         ],
@@ -6313,7 +6345,9 @@
             "cho",
             "lkt",
             "ik",
-            "mus"
+            "mus",
+            "io",
+            "jbo"
         ],
         "UY": [
             "es"
