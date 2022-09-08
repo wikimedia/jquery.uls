@@ -12,10 +12,10 @@
 	"uls-region-AS": "Azi",
 	"uls-region-ME": "Mwayen Oryan",
 	"uls-region-PA": "Pasifik",
-	"uls-region-all": "Tout lang",
-	"uls-no-results-found": "Pa gen rezilta yo jwenn",
+	"uls-region-all": "Tout lang yo",
+	"uls-no-results-found": "Pa gen rezilta yo te jwenn",
 	"uls-common-languages": "Lang yo sijere",
 	"uls-no-results-suggestion-title": "Ou ka enterese nan :",
-	"uls-search-help": "Ou ka fouye pa non lang, non grafi, kòd ISO lang oswa ou ka mache gade pa rejyon an.",
-	"uls-search-placeholder": "Fouye yon lang"
+	"uls-search-help": "Ou ka chèche pa non lang, non grafi, kòd ISO lang oswa ou ka mache gade pa rejyon an.",
+	"uls-search-placeholder": "Chèche yon lang"
 }
