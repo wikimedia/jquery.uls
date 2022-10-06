@@ -3,6 +3,7 @@
 		"authors": [
 			"C.R.",
 			"Chelin",
+			"Finizio",
 			"Ruthven"
 		]
 	},
@@ -17,7 +18,7 @@
 	"uls-region-all": "Tuttuquante 'e llengue",
 	"uls-no-results-found": "Nisciuno risultato",
 	"uls-common-languages": "Llèngue suggerite",
-	"uls-no-results-suggestion-title": "Puo essere interessato a:",
+	"uls-no-results-suggestion-title": "Te po' interessà a:",
 	"uls-search-help": "Puo cercà pe nomme, nomme dd’’o script, codece ISO dd’’a lengua o naviggà nfra ’e reggiune.",
-	"uls-search-placeholder": "Tròva na lengua"
+	"uls-search-placeholder": "Truòva 'na lengua"
 }
