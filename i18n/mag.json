@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"ऐक्टिवेटेड्"
+		]
+	},
+	"uls-region-WW": "बिस्वब्यापी",
+	"uls-region-SP": "बिसेस",
+	"uls-region-AM": "अमरिका",
+	"uls-region-AF": "अफ्रीका",
+	"uls-region-EU": "यूरोप",
+	"uls-region-AS": "एसिया",
+	"uls-region-ME": "मध्धपूरब",
+	"uls-region-PA": "परसान्त",
+	"uls-region-all": "सब भासा",
+	"uls-no-results-found": "कोइयो परिनाम न मिललई",
+	"uls-common-languages": "सुझावित भासा",
+	"uls-no-results-suggestion-title": "अपनेला उपयोगी हो सकहई:",
+	"uls-search-help": "अपने भासाके नाम, लिपिके नाम, भासाके ISO कोड् से या क्षेत्र अनुसार ब्राउज् करके खोज सकह।",
+	"uls-search-placeholder": "भासा खोज"
+}
