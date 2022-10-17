@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tejoebāsa"
+		]
+	},
+	"uls-region-WW": "တကမ္ဘာလုံး",
+	"uls-region-SP": "အထူး",
+	"uls-region-AM": "အမေရိက",
+	"uls-region-AF": "အာဖရိက",
+	"uls-region-EU": "ဥရောပ",
+	"uls-region-AS": "အာရှ",
+	"uls-region-ME": "အရှိအလယ်ပိုင်း",
+	"uls-region-PA": "ပစိဖိတ်",
+	"uls-region-all": "ဘာသာစကားတိအားလုံး",
+	"uls-no-results-found": "ရလဒ်ရှာမတွိပါ",
+	"uls-common-languages": "အကြံပီးထားရေ ဘာသာစကားတိ",
+	"uls-no-results-suggestion-title": "သင်စိတ်၀င်စားကောင်း စိတ်၀င်စားနိုင်စော်က-",
+	"uls-search-help": "ဘာသာစကားနာမည်၊ ဇာတ်ညွှန်းနာမည်၊ ဘာသာစကားဧ့ ISO ကုဒ်နန့် ရှာဖွေနိုင်သည် ယင်းသို့မဟုတ် ဒေသအလိုက် ရှာဖွီနိုင်သည်။",
+	"uls-search-placeholder": "ဘာသာစကားတခုအတွက် ရှာဖွီပါ"
+}
