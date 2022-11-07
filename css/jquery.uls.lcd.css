@@ -138,3 +138,7 @@
 	bottom: 0;
 	left: 0;
 }
+
+.language-option--highlighted {
+	background-color: #eaeff7;
+}

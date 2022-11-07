@@ -116,6 +116,14 @@
 					}
 
 					break;
+				case 38: // arrow up
+					this.options.lcd.navigateUp();
+
+					break;
+				case 40: // arrow down
+					this.options.lcd.navigateDown();
+
+					break;
 			}
 		},
 
@@ -162,6 +170,10 @@
 			var languages = Object.keys( this.options.languages ),
 				results = [],
 				query = ( this.$element.val() || '' ).trim().toLowerCase();
+
+			// Reset the keyboard navigation index inside LanguageCategoryDisplay (lcd)
+			// before re-rendering the language options
+			this.options.lcd.resetNavigationIndex();
 
 			if ( query === '' ) {
 				this.options.lcd.setGroupByRegionOverride( null );
