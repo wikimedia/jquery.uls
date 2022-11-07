@@ -60,9 +60,10 @@
 		this.groupByRegionOverride = null;
 
 		// The index of the language option that is currently visited using arrow key navigation
-		// Can take values in the [0, languageOptionListItemsLength - 1] range for top to bottom navigation,
-		// or in the [-1, -languageOptionListItemsLength + 1] range for bottom to top navigation.
-		this.navigationIndex = null
+		// Can take values in the [0, languageOptionListItemsLength - 1] range for top to bottom
+		// navigation, or in the [-1, -languageOptionListItemsLength + 1] range for bottom to top
+		// navigation.
+		this.navigationIndex = null;
 
 		this.render();
 		this.listen();
@@ -74,9 +75,10 @@
 		/**
 		 * Returns a jQuery object containing a collection of all the
 		 * language option <li> elements
+		 *
 		 * @return {jQuery}
 		 */
-		getLanguageOptionListItems() {
+		getLanguageOptionListItems: function () {
 			return this.$element.find( 'li[data-code]' );
 		},
 
@@ -87,16 +89,18 @@
 		 * LanguageFilter.
 		 */
 		navigateDown: function () {
+			var maxIndex = this.getLanguageOptionListItems().length - 1;
 			// We support navigation starting both from the top and the bottom of the language list.
-			// The navigation should stop when the last language option is already highlighted (for top to bottom navigation).
-			// For top to bottom navigation, that happens when navigation index is equal to languageOptionListItemsLength - 1.
-			// For bottom to top navigation, that happens when navigation index is equal to -1.
-			if ( this.navigationIndex === this.getLanguageOptionListItems().length - 1 || this.navigationIndex === -1 ) {
+			// The navigation should stop when the last language option is already highlighted (for
+			// top to bottom navigation). For top to bottom navigation, that happens when navigation
+			// index is equal to languageOptionListItemsLength - 1. For bottom to top navigation,
+			// that happens when navigation index is equal to -1.
+			if ( this.navigationIndex === maxIndex || this.navigationIndex === -1 ) {
 				return;
 			}
 
 			if ( this.navigationIndex === null ) {
-				this.navigationIndex = 0
+				this.navigationIndex = 0;
 			} else {
 				this.navigationIndex++;
 			}
@@ -110,15 +114,17 @@
 		 * LanguageFilter.
 		 */
 		navigateUp: function () {
+			var maxIndex = this.getLanguageOptionListItems().length - 1;
 			// We support navigation starting both from the top and the bottom of the language list.
-			// The navigation should stop when the first language option is already highlighted (for bottom to top navigation).
-			// For top to bottom navigation, that happens when navigation index is equal to 0.
-			// For bottom to top navigation, that happens when navigation index is equal to -languageOptionListItemsLength + 1.
-			if ( this.navigationIndex === 0 || this.navigationIndex === -this.getLanguageOptionListItems().length + 1 ) {
+			// The navigation should stop when the first language option is already highlighted (for
+			// bottom to top navigation). For top to bottom navigation, that happens when navigation
+			// index is equal to 0. For bottom to top navigation, that happens when navigation index
+			// is equal to -languageOptionListItemsLength + 1.
+			if ( this.navigationIndex === 0 || this.navigationIndex === -maxIndex ) {
 				return;
 			}
 
-			this.navigationIndex--
+			this.navigationIndex--;
 			this.highlightLanguageOption();
 		},
 
@@ -126,7 +132,7 @@
 		 * Adds a specific class ("language-option--highlighted") only to the n-th
 		 * language option <li> element (where n = navigation index)
 		 */
-		highlightLanguageOption() {
+		highlightLanguageOption: function () {
 			this.getLanguageOptionListItems().removeClass( 'language-option--highlighted' );
 			this.getLanguageOptionListItems().eq( this.navigationIndex ).addClass( 'language-option--highlighted' );
 		},
