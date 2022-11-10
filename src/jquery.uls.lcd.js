@@ -55,6 +55,7 @@
 
 		this.$element.addClass( 'uls-lcd' );
 		this.regionLanguages = {};
+		this.$languageOptionListItems = null;
 		this.renderTimeout = null;
 		this.$cachedQuicklist = null;
 		this.groupByRegionOverride = null;
@@ -79,7 +80,11 @@
 		 * @return {jQuery}
 		 */
 		getLanguageOptionListItems: function () {
-			return this.$element.find( 'li[data-code]' );
+			if ( !this.$languageOptionListItems ) {
+				this.$languageOptionListItems = this.$element.find( 'li[data-code]' );
+			}
+
+			return this.$languageOptionListItems;
 		},
 
 		/**
