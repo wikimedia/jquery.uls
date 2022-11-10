@@ -503,6 +503,18 @@
 		listen: function () {
 			var lcd = this;
 
+			this.$element.on( 'mouseenter', '.row li', function () {
+				lcd.navigationIndex = $( this ).index();
+				lcd.highlightLanguageOption();
+			} );
+
+			this.$element.on( 'mouseleave', '.row li', function () {
+				if ( lcd.navigationIndex === $( this ).index() ) {
+					lcd.navigationIndex = null;
+					lcd.getLanguageOptionListItems().removeClass( 'language-option--highlighted' );
+				}
+			} );
+
 			if ( this.options.clickhandler ) {
 				this.$element.on( 'click', '.row li', function ( event ) {
 					lcd.options.clickhandler.call( this, $( this ).data( 'code' ), event );
