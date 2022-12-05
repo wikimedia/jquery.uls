@@ -595,6 +595,13 @@
             ],
             "bunun"
         ],
+        "bom": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "bèrom"
+        ],
         "bo": [
             "Tibt",
             [
@@ -3050,6 +3057,13 @@
             ],
             "Nyungar"
         ],
+        "nzi": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Nzema"
+        ],
         "oc": [
             "Latn",
             [
@@ -5366,6 +5380,7 @@
             "ee",
             "gur",
             "gaa",
+            "nzi",
             "ha",
             "ff"
         ],
