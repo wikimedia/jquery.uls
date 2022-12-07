@@ -2387,6 +2387,13 @@
             ],
             "Ligure"
         ],
+        "lij-mc": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "munegascu"
+        ],
         "liv": [
             "Latn",
             [
@@ -2959,6 +2966,13 @@
             ],
             "norsk (nynorsk)"
         ],
+        "nn-hognorsk": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "norsk (høgnorsk)"
+        ],
         "no": [
             "Latn",
             [
@@ -3443,6 +3457,48 @@
                 "EU"
             ],
             "rumantsch"
+        ],
+        "rm-puter": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "puter"
+        ],
+        "rm-rumgr": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "rumantsch grischun"
+        ],
+        "rm-surmiran": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "surmiran"
+        ],
+        "rm-sursilv": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "sursilvan"
+        ],
+        "rm-sutsilv": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "sutsilvan"
+        ],
+        "rm-vallader": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "vallader"
         ],
         "rmc": [
             "Latn",
@@ -4526,6 +4582,14 @@
                 "EU"
             ],
             "მარგალური"
+        ],
+        "xmm": [
+            "Latn",
+            [
+                "AS",
+                "PA"
+            ],
+            "Manado"
         ],
         "xsy": [
             "Latn",
