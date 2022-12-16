@@ -106,7 +106,10 @@
 
 					query = ( this.$element.val() || '' ).trim().toLowerCase();
 
-					if ( this.selectedLanguage ) {
+					var highlightedLanguage = this.options.lcd.getHighlightedLanguageCode();
+					if ( highlightedLanguage ) {
+						this.options.onSelect( highlightedLanguage, e );
+					} else if ( this.selectedLanguage ) {
 						// this.selectLanguage will be populated from a matching search
 						this.options.onSelect( this.selectedLanguage, e );
 					} else if ( this.options.languages[ query ] ) {

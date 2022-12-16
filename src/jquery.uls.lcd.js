@@ -70,21 +70,27 @@
 		this.listen();
 	}
 
+	// Adapted from https://stackoverflow.com/a/41754707/903324
+	function isLanguageFullyVisible( $el, $holder ) {
+		var elementRect = $el.get( 0 ).getBoundingClientRect();
+		var holderRect = $holder.get( 0 ).getBoundingClientRect();
+
+		return elementRect.top <= holderRect.top ?
+			holderRect.top <= elementRect.top :
+			holderRect.bottom <= elementRect.height;
+	}
+
 	LanguageCategoryDisplay.prototype = {
 		constructor: LanguageCategoryDisplay,
 
 		/**
-		 * Returns a jQuery object containing a collection of all the
+		 * Returns a jQuery object containing a collection of all the visible
 		 * language option <li> elements
 		 *
 		 * @return {jQuery}
 		 */
 		getLanguageOptionListItems: function () {
-			if ( !this.$languageOptionListItems ) {
-				this.$languageOptionListItems = this.$element.find( 'li[data-code]' );
-			}
-
-			return this.$languageOptionListItems;
+			return this.$element.find( '.uls-lcd-region-section:not(.hide)' ).find( 'li[data-code]' );
 		},
 
 		/**
@@ -138,8 +144,24 @@
 		 * language option <li> element (where n = navigation index)
 		 */
 		highlightLanguageOption: function () {
-			this.getLanguageOptionListItems().removeClass( 'language-option--highlighted' );
-			this.getLanguageOptionListItems().eq( this.navigationIndex ).addClass( 'language-option--highlighted' );
+			var $listItems = this.getLanguageOptionListItems();
+			$listItems.removeClass( 'language-option--highlighted' );
+
+			var $selectedItem = $listItems.eq( this.navigationIndex );
+			$selectedItem.addClass( 'language-option--highlighted' );
+
+			if ( !isLanguageFullyVisible( $selectedItem, this.$element ) ) {
+				$selectedItem.get( 0 ).scrollIntoView( false );
+			}
+		},
+
+		getHighlightedLanguageCode: function () {
+			if ( this.navigationIndex ) {
+				var $selectedItem = this.getLanguageOptionListItems().eq( this.navigationIndex );
+				return $selectedItem.data( 'code' );
+			}
+
+			return null;
 		},
 
 		/**
@@ -503,16 +525,16 @@
 		listen: function () {
 			var lcd = this;
 
-			this.$element.on( 'mouseenter', '.row li', function () {
-				lcd.navigationIndex = $( this ).index();
-				lcd.highlightLanguageOption();
-			} );
-
-			this.$element.on( 'mouseleave', '.row li', function () {
-				if ( lcd.navigationIndex === $( this ).index() ) {
-					lcd.navigationIndex = null;
-					lcd.getLanguageOptionListItems().removeClass( 'language-option--highlighted' );
-				}
+			this.$element.on( 'mouseenter', 'li[data-code]', function () {
+				var $listItems = lcd.getLanguageOptionListItems();
+				// Remove the previous option, and then highlight the current one.
+				$listItems.removeClass( 'language-option--highlighted' );
+				var $self = $( this );
+				$self.addClass( 'language-option--highlighted' );
+				lcd.navigationIndex = $listItems.index( $self );
+			} ).on( 'mouseleave', 'li[data-code]', function () {
+				$( this ).removeClass( 'language-option--highlighted' );
+				lcd.navigationIndex = null;
 			} );
 
 			if ( this.options.clickhandler ) {
