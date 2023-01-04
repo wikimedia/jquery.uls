@@ -150,6 +150,7 @@
 			var $selectedItem = $listItems.eq( this.navigationIndex );
 			$selectedItem.addClass( 'language-option--highlighted' );
 
+			// If the selected item is not visible, then scroll the container to display it
 			if ( !isLanguageFullyVisible( $selectedItem, this.$element ) ) {
 				$selectedItem.get( 0 ).scrollIntoView( false );
 			}

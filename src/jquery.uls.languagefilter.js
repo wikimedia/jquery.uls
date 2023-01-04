@@ -106,6 +106,8 @@
 
 					query = ( this.$element.val() || '' ).trim().toLowerCase();
 
+					// Check if a language is currently highlighted, and if so select that
+					// if user presses enter.
 					var highlightedLanguage = this.options.lcd.getHighlightedLanguageCode();
 					if ( highlightedLanguage ) {
 						this.options.onSelect( highlightedLanguage, e );
