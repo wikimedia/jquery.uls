@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nurlan"
+		]
+	},
+	"uls-region-WW": "Dúnya júzlik",
+	"uls-region-SP": "Arnawlı",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Evropa",
+	"uls-region-AS": "Aziya",
+	"uls-region-ME": "Orta shıǵıs",
+	"uls-region-PA": "Tınısh okean",
+	"uls-region-all": "Barlıq tiller",
+	"uls-no-results-found": "Nátiyje tabılmadı",
+	"uls-common-languages": "Usınıs etilgen tiller",
+	"uls-no-results-suggestion-title": "Sizdi qızıqtıwı múmkin:",
+	"uls-search-help": "Siz til atı, skript atı, tildiń ISO kodı boyınsha izlewińiz yamasa region boyınsha kórip shıǵıwıńız múmkin.",
+	"uls-search-placeholder": "Tildi izlew"
+}
