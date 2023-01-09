@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Awinimi",
+			"Musahfm"
+		]
+	},
+	"uls-region-WW": "Dunia bɛn wusa",
+	"uls-region-SP": "Li kʋn'",
+	"uls-region-AM": "America",
+	"uls-region-AF": "Africa",
+	"uls-region-EU": "Europe",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Middle East",
+	"uls-region-PA": "Pacific",
+	"uls-region-all": "Pian'ad wusa",
+	"uls-no-results-found": "Labaar sia kai",
+	"uls-common-languages": "Pian' mamisa",
+	"uls-no-results-suggestion-title": "Fʋ mɛ tɔn'ɛ mɔr bɔɔdim ne:",
+	"uls-search-placeholder": "Iem Pian'ad"
+}
