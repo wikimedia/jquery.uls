@@ -12,6 +12,13 @@
             ],
             "Qafár af"
         ],
+        "aae": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "arbërisht"
+        ],
         "ab": [
             "Cyrl",
             [
