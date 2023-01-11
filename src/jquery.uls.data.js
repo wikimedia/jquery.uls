@@ -1623,7 +1623,7 @@
                 "AM",
                 "PA"
             ],
-            "Hawai`i"
+            "Hawaiʻi"
         ],
         "he": [
             "Hebr",
@@ -1799,6 +1799,13 @@
                 "AF"
             ],
             "Igbo"
+        ],
+        "igl": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Igala"
         ],
         "ii": [
             "Yiii",
