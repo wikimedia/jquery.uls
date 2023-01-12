@@ -123,10 +123,12 @@
 					break;
 				case 38: // arrow up
 					this.options.lcd.navigateUp();
+					e.preventDefault();
 
 					break;
 				case 40: // arrow down
 					this.options.lcd.navigateDown();
+					e.preventDefault();
 
 					break;
 			}
