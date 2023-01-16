@@ -55,14 +55,13 @@
 
 		this.$element.addClass( 'uls-lcd' );
 		this.regionLanguages = {};
-		this.$languageOptionListItems = null;
 		this.renderTimeout = null;
 		this.$cachedQuicklist = null;
 		this.groupByRegionOverride = null;
 
 		// The index of the language option that is currently visited using arrow key navigation
-		// Can take values in the [0, languageOptionListItemsLength - 1] range for top to bottom
-		// navigation, or in the [-1, -languageOptionListItemsLength + 1] range for bottom to top
+		// Can take values in the [0, language options list item length - 1] range for top to bottom
+		// navigation, or in the [-1, -language options list item length + 1] range for bottom to top
 		// navigation.
 		this.navigationIndex = null;
 
@@ -104,7 +103,7 @@
 			// We support navigation starting both from the top and the bottom of the language list.
 			// The navigation should stop when the last language option is already highlighted (for
 			// top to bottom navigation). For top to bottom navigation, that happens when navigation
-			// index is equal to languageOptionListItemsLength - 1. For bottom to top navigation,
+			// index is equal to language options list item length - 1. For bottom to top navigation,
 			// that happens when navigation index is equal to -1.
 			if ( this.navigationIndex === maxIndex || this.navigationIndex === -1 ) {
 				return;
@@ -140,15 +139,15 @@
 		},
 
 		/**
-		 * Adds a specific class ("language-option--highlighted") only to the n-th
+		 * Adds a specific class ("uls-language-option--highlighted") only to the n-th
 		 * language option <li> element (where n = navigation index)
 		 */
 		highlightLanguageOption: function () {
 			var $listItems = this.getLanguageOptionListItems();
-			$listItems.removeClass( 'language-option--highlighted' );
+			$listItems.removeClass( 'uls-language-option--highlighted' );
 
 			var $selectedItem = $listItems.eq( this.navigationIndex );
-			$selectedItem.addClass( 'language-option--highlighted' );
+			$selectedItem.addClass( 'uls-language-option--highlighted' );
 
 			// If the selected item is not visible, then scroll the container to display it
 			if ( !isLanguageFullyVisible( $selectedItem, this.$element ) ) {
@@ -529,12 +528,12 @@
 			this.$element.on( 'mouseenter', 'li[data-code]', function () {
 				var $listItems = lcd.getLanguageOptionListItems();
 				// Remove the previous option, and then highlight the current one.
-				$listItems.removeClass( 'language-option--highlighted' );
+				$listItems.removeClass( 'uls-language-option--highlighted' );
 				var $self = $( this );
-				$self.addClass( 'language-option--highlighted' );
+				$self.addClass( 'uls-language-option--highlighted' );
 				lcd.navigationIndex = $listItems.index( $self );
 			} ).on( 'mouseleave', 'li[data-code]', function () {
-				$( this ).removeClass( 'language-option--highlighted' );
+				$( this ).removeClass( 'uls-language-option--highlighted' );
 				lcd.navigationIndex = null;
 			} );
 
