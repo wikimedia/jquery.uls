@@ -61,8 +61,8 @@
 
 		// The index of the language option that is currently visited using arrow key navigation
 		// Can take values in the [0, language options list item length - 1] range for top to bottom
-		// navigation, or in the [-1, -language options list item length + 1] range for bottom to top
-		// navigation.
+		// navigation, or in the [-1, -language options list item length + 1] range for bottom to
+		// top navigation.
 		this.navigationIndex = null;
 
 		this.render();
@@ -103,8 +103,8 @@
 			// We support navigation starting both from the top and the bottom of the language list.
 			// The navigation should stop when the last language option is already highlighted (for
 			// top to bottom navigation). For top to bottom navigation, that happens when navigation
-			// index is equal to language options list item length - 1. For bottom to top navigation,
-			// that happens when navigation index is equal to -1.
+			// index is equal to language options list item length - 1. For bottom to top
+			// navigation, that happens when navigation index is equal to -1.
 			if ( this.navigationIndex === maxIndex || this.navigationIndex === -1 ) {
 				return;
 			}
