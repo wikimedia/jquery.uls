@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajiniyaz Nurniyazov",
 			"Nurlan"
 		]
 	},
-	"uls-region-WW": "Dúnya júzlik",
+	"uls-region-WW": "Dúnya júzilik",
 	"uls-region-SP": "Arnawlı",
 	"uls-region-AM": "Amerika",
 	"uls-region-AF": "Afrika",
@@ -15,7 +16,7 @@
 	"uls-region-all": "Barlıq tiller",
 	"uls-no-results-found": "Nátiyje tabılmadı",
 	"uls-common-languages": "Usınıs etilgen tiller",
-	"uls-no-results-suggestion-title": "Sizdi qızıqtıwı múmkin:",
+	"uls-no-results-suggestion-title": "Sizdi qızıqtırıwı múmkin:",
 	"uls-search-help": "Siz til atı, skript atı, tildiń ISO kodı boyınsha izlewińiz yamasa region boyınsha kórip shıǵıwıńız múmkin.",
 	"uls-search-placeholder": "Tildi izlew"
 }
