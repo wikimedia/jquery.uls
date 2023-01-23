@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"AgnesAbah"
+		]
+	},
+	"uls-region-WW": "Ilé chakadú",
+	"uls-region-SP": "Ekwéyí",
+	"uls-region-AM": "America",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Europe",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Middle East",
+	"uls-region-PA": "Awò kí dí iba omí",
+	"uls-region-all": "Ichí chakadú",
+	"uls-no-results-found": "Ma lí oyí duñ",
+	"uls-common-languages": "Ichí ku ma dù",
+	"uls-no-results-suggestion-title": "Ewñí néké dé óla",
+	"uls-search-help": "É néké téné lugbó odú ichí, odú scriptí ISO codí ichí bakí owó ngbo kí kwò",
+	"uls-search-placeholder": "Téné icí dú"
+}
