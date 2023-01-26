@@ -2,21 +2,22 @@
 	"@metadata": {
 		"authors": [
 			"Robin van der Vliet",
-			"SpanishSnake"
+			"SpanishSnake",
+			"Tbodt"
 		]
 	},
 	"uls-region-WW": "ma ale",
-	"uls-region-SP": "namako",
+	"uls-region-SP": "nasa",
 	"uls-region-AM": "ma Amelika",
 	"uls-region-AF": "ma Apika",
 	"uls-region-EU": "ma Elopa",
 	"uls-region-AS": "ma Asija",
-	"uls-region-ME": "insa pi suno kama",
-	"uls-region-PA": "ma Pasipi",
+	"uls-region-ME": "insa pi ma Apika pi ma Asija",
+	"uls-region-PA": "ma pi telo Pasipi",
 	"uls-region-all": "toki ale",
-	"uls-no-results-found": "alasa la, ijo ala li kama lon.",
-	"uls-common-languages": "toki pi ken pona",
-	"uls-no-results-suggestion-title": "ken la, sina wile e ni:",
-	"uls-search-help": "sina ken alasa kepeken nimi toki, kepeken nasin sitelen, kepeken nimi ISO, kepeken ma ante.",
+	"uls-no-results-found": "alasa la toki ala li lon.",
+	"uls-common-languages": "ken la sina wile e toki ni",
+	"uls-no-results-suggestion-title": "ken la sina wile e toki ni:",
+	"uls-search-help": "sina ken alasa kepeken nimi toki kepeken nimi pi nasin sitelen kepeken nimi pi kulupu ISO li ken lukin e ma ale e toki ona.",
 	"uls-search-placeholder": "o alasa e toki"
 }
