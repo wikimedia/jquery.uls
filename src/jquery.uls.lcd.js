@@ -134,6 +134,10 @@
 				return;
 			}
 
+			if ( this.navigationIndex === null ) {
+				return;
+			}
+
 			this.navigationIndex--;
 			this.highlightLanguageOption();
 		},
