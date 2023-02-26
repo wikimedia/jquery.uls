@@ -127,21 +127,13 @@
             "ajagbe"
         ],
         "ajp": [
-            "Arab",
-            [
-                "ME"
-            ],
-            "شامي"
+            "apc"
         ],
         "ajp-arab": [
-            "ajp"
+            "apc"
         ],
         "ajp-latn": [
-            "Latn",
-            [
-                "ME"
-            ],
-            "šāmi"
+            "apc-latn"
         ],
         "ak": [
             "Latn",
@@ -228,6 +220,23 @@
                 "AS"
             ],
             "अंगिका"
+        ],
+        "apc": [
+            "Arab",
+            [
+                "ME"
+            ],
+            "شامي"
+        ],
+        "apc-arab": [
+            "apc"
+        ],
+        "apc-latn": [
+            "Latn",
+            [
+                "ME"
+            ],
+            "šāmi"
         ],
         "ar": [
             "Arab",
@@ -1150,6 +1159,13 @@
                 "WW"
             ],
             "Simple English"
+        ],
+        "en-us": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "American English"
         ],
         "en": [
             "Latn",
@@ -2373,6 +2389,13 @@
             ],
             "лакку"
         ],
+        "ldn": [
+            "Latn",
+            [
+                "WW"
+            ],
+            "Láadan"
+        ],
         "lez": [
             "Cyrl",
             [
@@ -3049,6 +3072,20 @@
                 "AF"
             ],
             "isiNdebele seSewula"
+        ],
+        "nrf-gg": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "Guernésiais"
+        ],
+        "nrf-je": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "Jèrriais"
         ],
         "nrm": [
             "Latn",
@@ -5228,6 +5265,9 @@
             "guc",
             "yrl"
         ],
+        "CQ": [
+            "en"
+        ],
         "CR": [
             "es"
         ],
@@ -5593,7 +5633,7 @@
             "he",
             "en",
             "ar",
-            "ajp",
+            "apc",
             "ru",
             "ro",
             "yi",
@@ -5691,6 +5731,7 @@
             "it",
             "en",
             "fr",
+            "lmo",
             "sc",
             "de",
             "vec",
@@ -5703,7 +5744,6 @@
             "egl",
             "ca",
             "el",
-            "lmo",
             "pms",
             "hr",
             "rgn"
@@ -5717,7 +5757,7 @@
         ],
         "JO": [
             "ar",
-            "ajp",
+            "apc",
             "en"
         ],
         "JP": [
@@ -5777,6 +5817,7 @@
             "lo"
         ],
         "LB": [
+            "apc",
             "ar",
             "en",
             "hy",
@@ -6132,7 +6173,7 @@
         ],
         "PS": [
             "ar",
-            "ajp"
+            "apc"
         ],
         "PT": [
             "pt",
@@ -6333,6 +6374,7 @@
             "nl"
         ],
         "SY": [
+            "apc",
             "ar",
             "ku-latn",
             "fr",
@@ -6402,6 +6444,7 @@
             "tr",
             "en",
             "ku-latn",
+            "apc",
             "kbd",
             "az-latn",
             "az-arab",
