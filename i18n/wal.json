@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ella Lachow"
+		]
+	},
+	"uls-region-WW": "Salo Sa'aa yuushuwaa",
+	"uls-region-SP": "Dummatidaagaa",
+	"uls-region-AM": "Amerkkaa",
+	"uls-region-AF": "Afrikkaa",
+	"uls-region-EU": "Awurooppaa",
+	"uls-region-AS": "Iisiyaa",
+	"uls-region-ME": "Giddo Arsho",
+	"uls-region-PA": "Paasifike",
+	"uls-region-all": "Ubba doonata",
+	"uls-no-results-found": "Aybinne beettibeenna",
+	"uls-common-languages": "Doorettiyaa doonata",
+	"uls-no-results-suggestion-title": "Hagee nena lo'ana danddayees:",
+	"uls-search-help": "Doonaa sunttan, skriptiyaa sunttan, ISO koodiyaan, woykko heeran koyana danddayaasa.",
+	"uls-search-placeholder": "Doonaa koyyanaassi"
+}
