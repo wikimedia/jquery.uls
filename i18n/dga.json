@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Domo John"
+		]
+	},
+	"uls-region-WW": "Tendaa zaa",
+	"uls-region-SP": "Toɔraa kaŋ",
+	"uls-region-AM": "Amɛlika",
+	"uls-region-AF": "Nensɔgeleba paaloŋ",
+	"uls-region-EU": "Nasapaaloŋ",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Maŋgaŋene Saluoni",
+	"uls-region-PA": "Pasifeke",
+	"uls-region-all": "Kɔkɔrɛɛ zaa",
+	"uls-no-results-found": "Peepa zaa kyebe",
+	"uls-common-languages": "Teɛretɔ kɔkɔrɛɛ",
+	"uls-no-results-suggestion-title": "Fo naŋ na pɔge taa a tamaa",
+	"uls-search-help": "Fo na baŋ bɔ la a yi a kɔkɔre yuori zie, sɛgere yuori, a kɔkɔre ISO koodi bee ka fo wele a paaloŋ.",
+	"uls-search-placeholder": "Bɔ kɔkɔre kaŋ"
+}
