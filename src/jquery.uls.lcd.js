@@ -148,6 +148,10 @@
 		 */
 		highlightLanguageOption: function () {
 			var $listItems = this.getLanguageOptionListItems();
+			// There are no language items. Nothing to highlight.
+			if ( !$listItems.length ) {
+				return;
+			}
 			$listItems.removeClass( 'uls-language-option--highlighted' );
 
 			var $selectedItem = $listItems.eq( this.navigationIndex );
