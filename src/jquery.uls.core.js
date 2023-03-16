@@ -174,7 +174,11 @@
 		i18n: function () {
 			if ( $.i18n ) {
 				this.$menu.find( '[data-i18n]' ).i18n();
-				this.$languageFilter.prop( 'placeholder', $.i18n( 'uls-search-placeholder' ) );
+				if ( this.getMenuWidth() === 'narrow' ) {
+					this.$languageFilter.prop( 'placeholder', $.i18n( 'uls-search-placeholder-short' ) );
+				} else {
+					this.$languageFilter.prop( 'placeholder', $.i18n( 'uls-search-placeholder' ) );
+				}
 			}
 		},
 
