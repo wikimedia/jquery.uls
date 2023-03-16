@@ -20,5 +20,5 @@
 	"uls-no-results-suggestion-title": "Title for language suggestion in 'no results found' screen",
 	"uls-search-help": "Help text for searching.\n\n\"Script name\" is a name of a writing system, such as \"Latin\", \"Cyrillic\", \"Arabic\" etc.",
 	"uls-search-placeholder": "Placeholder text in search box",
-	"uls-search-placeholder-short": "Shorter placeholder text in search box"
+	"uls-search-placeholder-short": "Shorter placeholder text in search box when menu width is narrow"
 }
