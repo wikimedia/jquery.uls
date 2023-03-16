@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Angpradesh"
+			"Angpradesh",
+			"Proabscorp!"
 		]
 	},
 	"uls-region-WW": "वैश्विक",
@@ -15,7 +16,7 @@
 	"uls-region-all": "सब्भे भाषा",
 	"uls-no-results-found": "कोय परिणाम नै मिललै",
 	"uls-common-languages": "आम भाषा सिनी",
-	"uls-no-results-suggestion-title": "आपन॑ लेली संभवतः उपयोगी:",
-	"uls-search-help": "आपन॑ भाषा केरऽ नाम , स्क्रिप्ट केरऽ नाम , भाषा केरऽ आईएसओ कोड सं॑ खोज॑ सकै छहो या आपन॑ क्षेत्र के नाम सं॑ ब्राउज़ कर॑ सकै छहऽ.",
-	"uls-search-placeholder": "भाषा लेली खोजऽ"
+	"uls-no-results-suggestion-title": "आपनै लेली संभवतः उपयोगी:",
+	"uls-search-help": "आपनौ भाषा केरौ नाम, स्क्रिप्ट केरौ नाम, भाषा केरौ आईएसओ कोड सँ खोजै सकै छौ या आपनौ क्षेत्र के नाम सँ ब्राउज़ करै सकै छौ।",
+	"uls-search-placeholder": "भाषा लेली खोजौ"
 }
