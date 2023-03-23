@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Fryed-peach",
+			"MathXplore",
 			"Otokoume",
 			"Santhosh.thottingal",
 			"Shirayuki"
@@ -20,5 +21,6 @@
 	"uls-common-languages": "提案された言語",
 	"uls-no-results-suggestion-title": "もしかして:",
 	"uls-search-help": "言語名、文字体系名、言語の ISO コードで検索できます。地域別の一覧から選択することもできます。",
-	"uls-search-placeholder": "言語を検索"
+	"uls-search-placeholder": "言語を検索",
+	"uls-search-placeholder-short": "検索"
 }

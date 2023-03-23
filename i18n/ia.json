@@ -17,5 +17,6 @@
 	"uls-common-languages": "Linguas suggerite",
 	"uls-no-results-suggestion-title": "Tu pote esser interessate in:",
 	"uls-search-help": "Tu pote cercar per nomine de lingua, nomine de scriptura o codice ISO de lingua, o tu pote foliar per le regiones.",
-	"uls-search-placeholder": "Cercar un lingua"
+	"uls-search-placeholder": "Cercar un lingua",
+	"uls-search-placeholder-short": "Cercar"
 }

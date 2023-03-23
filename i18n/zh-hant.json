@@ -21,5 +21,6 @@
 	"uls-common-languages": "推薦語言",
 	"uls-no-results-suggestion-title": "您可能感興趣：",
 	"uls-search-help": "您可以按語言名稱、程式碼名稱、語言 ISO 代碼搜尋，或您亦可按區域瀏覽。",
-	"uls-search-placeholder": "搜尋一種語言"
+	"uls-search-placeholder": "搜尋一種語言",
+	"uls-search-placeholder-short": "搜尋"
 }
