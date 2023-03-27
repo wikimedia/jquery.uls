@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Amazigh84",
+			"Amire80",
 			"Belkacem77",
 			"Mezgoug",
 			"Mmistmurt",
@@ -23,5 +24,6 @@
 	"uls-common-languages": "Tutlayin i d-yettwasumren",
 	"uls-no-results-suggestion-title": "Ahat ad tebɣuḍ:",
 	"uls-search-help": "Tzemreḍ ad tnadiḍ s yisem n tutlayt, s yisem n tira, s tengalt ISO n tutlayt neɣ tzemreḍ ad tinigeḍ tamnaḍt tamnaḍt.",
-	"uls-search-placeholder": "Nadi ɣef tutlayt"
+	"uls-search-placeholder": "Nadi ɣef tutlayt",
+	"uls-search-placeholder-short": "Nadi"
 }

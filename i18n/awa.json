@@ -4,7 +4,8 @@
 			"1AnuraagPandey",
 			"1PandeyAnurag",
 			"Ajeetsinghawadh",
-			"Ajeetsinghawadhi"
+			"Ajeetsinghawadhi",
+			"Amire80"
 		]
 	},
 	"uls-region-WW": "दुनिया भर कय",
@@ -20,5 +21,6 @@
 	"uls-common-languages": "सुझाई गय भासा",
 	"uls-no-results-suggestion-title": "आपकय दिलचस्पी होय सकत है:",
 	"uls-search-help": "आप भाषा कय नाँव,लिपि कय नाँव,भाषा कय आई.एस.ओ कोड अव क्षेत्र कय नाँव से हेर सका जात अहै ।",
-	"uls-search-placeholder": "भाषा खोज"
+	"uls-search-placeholder": "भाषा खोज",
+	"uls-search-placeholder-short": "खोज"
 }

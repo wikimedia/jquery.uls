@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"David1010",
 			"MIKHEIL",
 			"Გიო ოქრო"
@@ -19,5 +20,6 @@
 	"uls-common-languages": "შემოთავაზებული ენები",
 	"uls-no-results-suggestion-title": "იქნებ თქვენ ამ ენებმა დაგაინტერესოთ:",
 	"uls-search-help": "ძიება შესაძლებელია ენის სახელით ან დამწერლობით, ენის ISO-კოდით ან რეგიონის მიხედვით.",
-	"uls-search-placeholder": "ენის მოძებნა"
+	"uls-search-placeholder": "ენის მოძებნა",
+	"uls-search-placeholder-short": "მოძებნა"
 }

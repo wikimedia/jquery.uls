@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Hibm98",
 			"IRTC1015",
 			"Ykhwong",
@@ -20,5 +21,6 @@
 	"uls-common-languages": "제안 언어",
 	"uls-no-results-suggestion-title": "이것을 찾으셨나요:",
 	"uls-search-help": "언어 이름, 문자 체계 이름, 언어의 ISO 코드로 검색할 수 있으며 지역별로 찾아볼 수 있습니다.",
-	"uls-search-placeholder": "언어 검색"
+	"uls-search-placeholder": "언어 검색",
+	"uls-search-placeholder-short": "검색"
 }

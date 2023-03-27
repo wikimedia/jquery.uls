@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Dr Lotus Black",
 			"Ninjastrikers"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "အကြံပေးသော ဘာသာစကားများ",
 	"uls-no-results-suggestion-title": "သင် စိတ်ဝင်စားကောင်းစိတ်ဝင်စားနိုင်သည်မှာ-",
 	"uls-search-help": "ဘာသာစကားအမည်၊ ရေးသားပုံစနစ်အမည်၊ ဘာသာစကား၏ အိုင်အက်စ်အိုကုဒ် သို့မဟုတ် ဒေသအလိုက် ရှာဖွေနိုင်သည်။",
-	"uls-search-placeholder": "ဘာသာစကားတစ်ခုအတွက် ရှာဖွေရန်"
+	"uls-search-placeholder": "ဘာသာစကားတစ်ခုအတွက် ရှာဖွေရန်",
+	"uls-search-placeholder-short": "ရှာဖွေရန်"
 }

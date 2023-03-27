@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Teitei Para"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Khokheipa reihchâzy",
 	"uls-no-results-suggestion-title": "Na paphasa thei'pa reihchâ:",
 	"uls-search-help": "Reihchâ moh, rodâh moh, reihchâ ISO code cvk su hawhta na tlua thei.",
-	"uls-search-placeholder": "Reih sâ kha tlua teh"
+	"uls-search-placeholder": "Reih sâ kha tlua teh",
+	"uls-search-placeholder-short": "Tlua"
 }

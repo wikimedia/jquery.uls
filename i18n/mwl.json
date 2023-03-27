@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Athena in Wonderland",
 			"MokaAkashiyaPT"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "Lhénguas sugeridas",
 	"uls-no-results-suggestion-title": "Puode star antressado an:",
 	"uls-search-help": "Puode percurar pul nome de la lhéngua, pul tipo de abc, código ISO de la lhéngua, ó puode nabegar por region.",
-	"uls-search-placeholder": "Percurar por lhéngua"
+	"uls-search-placeholder": "Percurar por lhéngua",
+	"uls-search-placeholder-short": "Percurar"
 }

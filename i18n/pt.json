@@ -24,5 +24,6 @@
 	"uls-common-languages": "Idiomas sugeridos",
 	"uls-no-results-suggestion-title": "Você pode estar interessado em:",
 	"uls-search-help": "Pode pesquisar pelo nome da língua, pelo tipo de alfabeto, pelo código ISO da língua, ou pode navegar por região.",
-	"uls-search-placeholder": "Pesquisar uma língua"
+	"uls-search-placeholder": "Pesquisar uma língua",
+	"uls-search-placeholder-short": "Pesquisar"
 }

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Leonfd1992"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Anüiki eekalü süpüla püneekajüin",
 	"uls-no-results-suggestion-title": "Eesü süpüla kamalain pümüin tü:",
 	"uls-search-help": "Eesü süpüla püchajaain süka sünülia tia anüikika, süka sukua'ipa süshajiee, süka shikii sünülia ISO amünakat jee eesü süpüla püchajaain süka sünülia mmakat.",
-	"uls-search-placeholder": "Achajawaa wane anüiki"
+	"uls-search-placeholder": "Achajawaa wane anüiki",
+	"uls-search-placeholder-short": "Achajawaa"
 }

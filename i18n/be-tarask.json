@@ -19,5 +19,6 @@
 	"uls-common-languages": "Прапанаваныя мовы",
 	"uls-no-results-suggestion-title": "Магчыма, вас зацікавяць:",
 	"uls-search-help": "Вы можаце шукаць паводле назвы мовы ці пісьменнасьці, а таксама паводле ISO-коду мовы, або выбраць рэгіён.",
-	"uls-search-placeholder": "Пошук мовы"
+	"uls-search-placeholder": "Пошук мовы",
+	"uls-search-placeholder-short": "Пошук"
 }

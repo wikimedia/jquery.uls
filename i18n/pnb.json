@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Abbas dhothar",
+			"Amire80",
 			"Bgo eiu"
 		]
 	},
@@ -18,5 +19,6 @@
 	"uls-common-languages": "تجویز کردہ بولیاں",
 	"uls-no-results-suggestion-title": "توانوں اس وچ دلچسپی ہوسکدی اے:",
 	"uls-search-help": "تسیں بولی دے ناں ، اسکرپٹ دا ناں ، بولی دے آئی ایس او کوڈ دے ذریعہ تلاش کرسکدے نيں یا آپ علاقے دے ذریعہ براؤز کرسکدے او۔",
-	"uls-search-placeholder": "بولی لئی کھوجو"
+	"uls-search-placeholder": "بولی لئی کھوجو",
+	"uls-search-placeholder-short": "کھوجو"
 }

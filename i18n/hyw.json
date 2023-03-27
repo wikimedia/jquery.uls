@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Armeniki"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Թելադրուած լեզուներ",
 	"uls-no-results-suggestion-title": "Կարելի է ձեզ հետաքրքրական ըլլայ․",
 	"uls-search-help": "Կրնաք որոնել լեզուի անունով, տարերու անունով, լեզուի ISO-ի օրինագիրով կամ կրնաք նայիլ շրջանով:",
-	"uls-search-placeholder": "Որոնել լեզու մը"
+	"uls-search-placeholder": "Որոնել լեզու մը",
+	"uls-search-placeholder-short": "Որոնել"
 }

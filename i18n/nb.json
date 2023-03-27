@@ -4,6 +4,7 @@
 			"Amire80",
 			"Danmichaelo",
 			"Event",
+			"Jon Harald Søby",
 			"Telaneo",
 			"Wouterkoch"
 		]
@@ -21,5 +22,6 @@
 	"uls-common-languages": "Foreslåtte språk",
 	"uls-no-results-suggestion-title": "Dette kan kanskje interessere deg:",
 	"uls-search-help": "Du kan søke etter språkets navn, alfabet (skriftnavn) eller ISO-kode, eller du kan bla etter region.",
-	"uls-search-placeholder": "Språksøk"
+	"uls-search-placeholder": "Språksøk",
+	"uls-search-placeholder-short": "Søk"
 }

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Ashok modhvadia",
 			"CptViraj",
 			"Harsh4101991",
@@ -21,5 +22,6 @@
 	"uls-common-languages": "સૂચિત ભાષાઓ",
 	"uls-no-results-suggestion-title": "તમને આમાં રસ હોઈ શકે છે:",
 	"uls-search-help": "તમે ભાષાનું નામ, સ્ક્રિપ્ટનું નામ, ભાષાના ISO કોડ દ્વારા શોધ કરી શકો છે અથવા તમે પ્રદેશ દ્વારા શોધ કરી શકો છો.",
-	"uls-search-placeholder": "ભાષા માટે શોધો"
+	"uls-search-placeholder": "ભાષા માટે શોધો",
+	"uls-search-placeholder-short": "શોધો"
 }

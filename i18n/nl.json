@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Mar(c)",
 			"Siebrand",
 			"Sjoerddebruin"
@@ -19,5 +20,6 @@
 	"uls-common-languages": "Taalsuggesties",
 	"uls-no-results-suggestion-title": "Mogelijk bent u geïnteresseerd in:",
 	"uls-search-help": "U kunt zoeken op taalnaam, schriftnaam of ISO-code van de taal, of u kunt bladeren per regio.",
-	"uls-search-placeholder": "Zoeken naar een taal"
+	"uls-search-placeholder": "Zoeken naar een taal",
+	"uls-search-placeholder-short": "Zoeken"
 }

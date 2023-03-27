@@ -22,5 +22,6 @@
 	"uls-common-languages": "Siūlomos kalbos",
 	"uls-no-results-suggestion-title": "Galbūt domina:",
 	"uls-search-help": "Galite ieškoti pagal kalbos pavadinimą, scenarijaus pavadinimą, ISO kalbos kodą arba galite naršyti pagal regioną.",
-	"uls-search-placeholder": "Ieškoti kalbos"
+	"uls-search-placeholder": "Ieškoti kalbos",
+	"uls-search-placeholder-short": "Ieškoti"
 }

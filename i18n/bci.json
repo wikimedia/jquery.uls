@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Kjeanclaude"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Anien nga bé fa klé mou",
 	"uls-no-results-suggestion-title": "Amoun kwla klo",
 	"uls-search-help": "Amoun kwla kounndè i anien douman sou, klèlè douman sou, anien ISO codi sou, anzè amoun kwla kounndè i akpassoua sou.",
-	"uls-search-placeholder": "Kounndè anien koun"
+	"uls-search-placeholder": "Kounndè anien koun",
+	"uls-search-placeholder-short": "Kounndè"
 }

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"L2212"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Limbas impositadas",
 	"uls-no-results-suggestion-title": "Podes essere interessadu in:",
 	"uls-search-help": "Podes chircare pro mèdiu de su nùmene de sa limba, su nùmene de su script, su còdighe ISO de sa limba o navigare pro mèdiu de sa regione:",
-	"uls-search-placeholder": "Chirca una limba:"
+	"uls-search-placeholder": "Chirca una limba:",
+	"uls-search-placeholder-short": "Chirca"
 }

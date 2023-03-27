@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Minh Nguyen",
 			"Tuankiet65"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "Ngôn ngữ gợi ý",
 	"uls-no-results-suggestion-title": "Bạn có thể quan tâm:",
 	"uls-search-help": "Bạn có thể tìm kiếm theo tên ngôn ngữ, tên hệ thống chữ viết, hay mã ISO của ngôn ngữ hoặc duyệt theo khu vực.",
-	"uls-search-placeholder": "Tìm kiếm ngôn ngữ"
+	"uls-search-placeholder": "Tìm kiếm ngôn ngữ",
+	"uls-search-placeholder-short": "Tìm kiếm"
 }

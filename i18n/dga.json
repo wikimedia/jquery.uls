@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Domo John"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Teɛretɔ kɔkɔrɛɛ",
 	"uls-no-results-suggestion-title": "Fo naŋ na pɔge taa a tamaa",
 	"uls-search-help": "Fo na baŋ bɔ la a yi a kɔkɔre yuori zie, sɛgere yuori, a kɔkɔre ISO koodi bee ka fo wele a paaloŋ.",
-	"uls-search-placeholder": "Bɔ kɔkɔre kaŋ"
+	"uls-search-placeholder": "Bɔ kɔkɔre kaŋ",
+	"uls-search-placeholder-short": "Bɔ"
 }

@@ -21,5 +21,6 @@
 	"uls-common-languages": "Сунушталган тилдер",
 	"uls-no-results-suggestion-title": "Балким бул тилдер сизди кызыктырат:",
 	"uls-search-help": "Сиз тилдердин аталыштары, скрипта, тилдердин ISO коддору же болбосо аймагы боюнча издесеңиз болот.",
-	"uls-search-placeholder": "Тил издөө"
+	"uls-search-placeholder": "Тил издөө",
+	"uls-search-placeholder-short": "Издөө"
 }

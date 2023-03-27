@@ -22,5 +22,6 @@
 	"uls-common-languages": "Voorgestelde tale",
 	"uls-no-results-suggestion-title": "U mag geïnteresseerd wees in:",
 	"uls-search-help": "Soek gerus volgens taalnaam, skrifnaam of ISO-kode, of blaai volgens streek.",
-	"uls-search-placeholder": "Soek na ’n taal"
+	"uls-search-placeholder": "Soek na ’n taal",
+	"uls-search-placeholder-short": "Soek"
 }

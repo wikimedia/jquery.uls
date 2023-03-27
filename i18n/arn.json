@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Manke ruLpa"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Pünefal zungun",
 	"uls-no-results-suggestion-title": "Pepi zuamkeafuymi:",
 	"uls-search-help": "Pepi kintuaymi zungun ñi uy, wirin ñi azkülen, ISO zungu, kam chew ñi mülemum",
-	"uls-search-placeholder": "Kintun kiñe zungun"
+	"uls-search-placeholder": "Kintun kiñe zungun",
+	"uls-search-placeholder-short": "Kintun"
 }

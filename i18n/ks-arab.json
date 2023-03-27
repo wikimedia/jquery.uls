@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Iflaq",
 			"Tajamul9"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "تجویٖز دِنہٕ آمَثہٕ زبانہٕ",
 	"uls-no-results-suggestion-title": "شاید ما ٲسِیوٚ تۄہہِ یتھ منٛز دِلچسپی تھاوان:",
 	"uls-search-help": "تُہہ ہیکیوٚ ژھٲرِتھ زبٲنی ناوٕ سٕتی تہِ، سِکرِپٹ ناوٕ سٕتی، ISO کوڈ آف لَنگویج یا تُہہ ہیکیوٚ طبقہٕ ذٕریعہ تہِ ژھأرِتھ",
-	"uls-search-placeholder": "زَبان کٔرِو تَلاش"
+	"uls-search-placeholder": "زَبان کٔرِو تَلاش",
+	"uls-search-placeholder-short": "تَلاش"
 }

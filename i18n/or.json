@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Jnanaranjan Sahu",
 			"Psubhashish",
 			"ଶିତିକଣ୍ଠ ଦାଶ"
@@ -19,5 +20,6 @@
 	"uls-common-languages": "ସାଧାରଣ ଭାଷାଗୁଡ଼ିକ",
 	"uls-no-results-suggestion-title": "ଆପଣ ହୁଏତ  ଆଗ୍ରହୀ ହେଇପାରନ୍ତି:",
 	"uls-search-help": "ଆପଣ ଭାଷା ନାମ, ଆଇଏସଓ କୋଡ଼, ସ୍କ୍ରିପ୍ଟ ନାମ ହିସାବରେ ଖୋଜି ପାରିବେ କିମ୍ବା ଅଞ୍ଚଳ ଅନୁସାରେ ଦେଖିପାରିବେ ।",
-	"uls-search-placeholder": "ଭାଷାଟିଏ ଖୋଜନ୍ତୁ"
+	"uls-search-placeholder": "ଭାଷାଟିଏ ଖୋଜନ୍ତୁ",
+	"uls-search-placeholder-short": "ଖୋଜନ୍ତୁ"
 }

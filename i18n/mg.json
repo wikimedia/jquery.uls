@@ -4,7 +4,7 @@
 			"Jagwar"
 		]
 	},
-	"uls-region-WW": "Erak'izao tontolo izao",
+	"uls-region-WW": "Eran-tany",
 	"uls-region-SP": "Manokana",
 	"uls-region-AM": "Amerika",
 	"uls-region-AF": "Afrika",
@@ -15,7 +15,8 @@
 	"uls-region-all": "Fiteny rehetra",
 	"uls-no-results-found": "Tsy nahitana valiny",
 	"uls-common-languages": "Fiteny atao soson-kevitra",
-	"uls-no-results-suggestion-title": "Mety ahitanao tombon-tsoa:",
+	"uls-no-results-suggestion-title": "Mety ho liana amin'ny:",
 	"uls-search-help": "Afaka mikaroka araka ny anaran'ny tenim-pirena, anaran-tsoratra, kaody ISO-n'ny teny na afaka mifidy araky ny faritra.",
-	"uls-search-placeholder": "Hitady fiteny"
+	"uls-search-placeholder": "Hitady fiteny",
+	"uls-search-placeholder-short": "Hitady"
 }

@@ -22,5 +22,6 @@
 	"uls-common-languages": "اللغات المقترحة",
 	"uls-no-results-suggestion-title": "قد تكون مهتما بما يلي:",
 	"uls-search-help": "يمكنك البحث مستخدما اسم اللغة، أو اسم السكريبت، أو رمز اللغة القياسي أو يمكنك التصفح حسب المنطقة.",
-	"uls-search-placeholder": "بحث عن لغة"
+	"uls-search-placeholder": "بحث عن لغة",
+	"uls-search-placeholder-short": "بحث"
 }

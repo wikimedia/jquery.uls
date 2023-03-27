@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Banjo",
 			"Elisardojm",
 			"Toliño"
@@ -19,5 +20,6 @@
 	"uls-common-languages": "Linguas suxeridas",
 	"uls-no-results-suggestion-title": "Poida que estea buscando:",
 	"uls-search-help": "Pode procurar polo nome da lingua, o tipo de escritura ou o código ISO. Tamén pode explorar as rexións.",
-	"uls-search-placeholder": "Procurar unha lingua"
+	"uls-search-placeholder": "Procurar unha lingua",
+	"uls-search-placeholder-short": "Procurar"
 }

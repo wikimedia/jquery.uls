@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"MRidhaAJ"
+		]
+	},
+	"uls-region-WW": "بكل أنحاء العالم",
+	"uls-region-SP": "الخاصة",
+	"uls-region-AM": "أمريكا",
+	"uls-region-AF": "أفريقيا",
+	"uls-region-EU": "أوروبا",
+	"uls-region-AS": "آسيا",
+	"uls-region-ME": "الشرق الأوسط",
+	"uls-region-PA": "المحيط الهادي",
+	"uls-region-all": "كل اللغات",
+	"uls-no-results-found": "ما لكينه شي",
+	"uls-common-languages": "اللغات المقترحة",
+	"uls-no-results-suggestion-title": "يمكن إنته مهتم باللي يجي:",
+	"uls-search-help": "تكدر تبحث بإسم اللغة، لو بإسم السكريبت، لو رمز اللغة القياسي لو تكدر تاخذلك فره حسب المنطقة.",
+	"uls-search-placeholder": "بحث على لغة",
+	"uls-search-placeholder-short": "بحث"
+}

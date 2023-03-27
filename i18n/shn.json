@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Saimawnkham"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "ၽႃႇသႃႇဢၼ်ၸႂ်ႉၼမ်",
 	"uls-no-results-suggestion-title": "ၸဝ်ႈၵဝ်ႇၸၢင်ႈၶဝ်ႈၸႂ်ပႃး",
 	"uls-search-help": "ၸဝ်ႈၵဝ်ႇ ၸၢင်ႈသွၵ်ႈႁႃတင်း ၸိုဝ်ႈၽႃႇသႃႇၵႂၢမ်း၊ ၸိုဝ်ႈ Script, မၢႆ ISO တွၼ်ႈတႃႇ ၽႃႇသႃႇၵႂၢမ်း ဢၼ်ၼၼ် ၸဝ်ႈၵဝ်ႇ ၸၢင်ႈပိုတ်ႇႁႃ တင်း လႅၼ်မိူင်း region",
-	"uls-search-placeholder": "ၶူၼ်ႉႁႃ တႃႇၽႃႇသႃႇၵႂၢမ်း"
+	"uls-search-placeholder": "ၶူၼ်ႉႁႃ တႃႇၽႃႇသႃႇၵႂၢမ်း",
+	"uls-search-placeholder-short": "ၶူၼ်ႉႁႃ"
 }

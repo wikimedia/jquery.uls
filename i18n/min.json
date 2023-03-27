@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Iwan Novirion"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Bahaso nan disarankan",
 	"uls-no-results-suggestion-title": "Sanak mungkin tatarik pado:",
 	"uls-search-help": "Sanak dapek mancari jo namo bahaso, namo skrip, kode ISO bahaso atau dapek pulo manalusuri manuruik wilayahnyo.",
-	"uls-search-placeholder": "Pancarian bahaso"
+	"uls-search-placeholder": "Pancarian bahaso",
+	"uls-search-placeholder-short": "Cari"
 }

@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Adam-Yourist",
+			"Amire80",
 			"Sapral Mikail"
 		]
 	},
@@ -18,5 +19,6 @@
 	"uls-common-languages": "Харжа оттадаь дола метташ",
 	"uls-no-results-suggestion-title": "Ер метташ шун теркдар т|алаца мега:",
 	"uls-search-help": "Меттай ц|ераца е йоазувдарца лаха тарло, иззамо ISO-меттач|егаца е купаца тахка а.",
-	"uls-search-placeholder": "Мотт лахар"
+	"uls-search-placeholder": "Мотт лахар",
+	"uls-search-placeholder-short": "Лахаp"
 }

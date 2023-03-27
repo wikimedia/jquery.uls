@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Kakonjo"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Endimi ezirikukutekatekyerwa",
 	"uls-no-results-suggestion-title": "Nobasa kuba noyenda :",
 	"uls-search-help": "Nobasa ku sherura nana eiziina rya orurimi, omuringo get, Kodi y'orurimi eya ISO ninga nobasa kusherura ekyanga aha Karimagyezi.",
-	"uls-search-placeholder": "Sherura orurimi"
+	"uls-search-placeholder": "Sherura orurimi",
+	"uls-search-placeholder-short": "Sherura"
 }

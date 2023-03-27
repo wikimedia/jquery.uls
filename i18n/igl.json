@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"AgnesAbah"
+			"AgnesAbah",
+			"Amire80"
 		]
 	},
 	"uls-region-WW": "Ilé chakadú",
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Ichí ku ma dù",
 	"uls-no-results-suggestion-title": "Ewñí néké dé óla",
 	"uls-search-help": "É néké téné lugbó odú ichí, odú scriptí ISO codí ichí bakí owó ngbo kí kwò",
-	"uls-search-placeholder": "Téné icí dú"
+	"uls-search-placeholder": "Téné icí dú",
+	"uls-search-placeholder-short": "Téné"
 }

@@ -19,5 +19,6 @@
 	"uls-common-languages": "Predloženi jezici",
 	"uls-no-results-suggestion-title": "Možda ste zainteresirani za:",
 	"uls-search-help": "Možete tražiti prema nazivu jezika, pisma, ISO kôdu jezika ili možete pretražiti po regiji.",
-	"uls-search-placeholder": "Pretraga jezika"
+	"uls-search-placeholder": "Pretraga jezika",
+	"uls-search-placeholder-short": "Pretraga"
 }

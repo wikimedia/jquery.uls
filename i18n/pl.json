@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Chrumps",
 			"Matma Rex",
 			"Rezonansowy",
@@ -20,5 +21,6 @@
 	"uls-common-languages": "Sugerowane języki",
 	"uls-no-results-suggestion-title": "Być może cię zainteresują te języki:",
 	"uls-search-help": "Możesz wyszukiwać według nazwy języka, nazwy systemu pisma, kodu ISO języka, lub przeglądać listy według regionów.",
-	"uls-search-placeholder": "Wyszukiwanie języka"
+	"uls-search-placeholder": "Wyszukiwanie języka",
+	"uls-search-placeholder-short": "Wyszukiwanie"
 }

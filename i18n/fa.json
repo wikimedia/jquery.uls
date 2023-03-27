@@ -21,5 +21,6 @@
 	"uls-common-languages": "زبان‌های پیشنهادشده",
 	"uls-no-results-suggestion-title": "ممکن است علاقه‌مند باشید:",
 	"uls-search-help": "شما می‌توانید بر پایه نام زبان، نام اسکریپت، کد استاندارد زبان یا بر پایه منطقه جستجو کنید.",
-	"uls-search-placeholder": "جستجوی زبان"
+	"uls-search-placeholder": "جستجوی زبان",
+	"uls-search-placeholder-short": "جستجو"
 }

@@ -22,5 +22,6 @@
 	"uls-common-languages": "Предложенные языки",
 	"uls-no-results-suggestion-title": "Может быть вас заинтересуют эти языки:",
 	"uls-search-help": "Вы можете искать по названию языка или письменности, по ISO-коду языка или просмотреть по региону.",
-	"uls-search-placeholder": "Поиск языка"
+	"uls-search-placeholder": "Поиск языка",
+	"uls-search-placeholder-short": "Поиск"
 }

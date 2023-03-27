@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"1917 Ekim Devrimi",
+			"Amire80",
 			"BaRaN6161 TURK",
 			"Emperyan",
 			"Erdemaslancan",
@@ -24,5 +25,6 @@
 	"uls-common-languages": "Önerilen diller",
 	"uls-no-results-suggestion-title": "İlginizi çekebilir:",
 	"uls-search-help": "Dil adına, betik adına, dilin ISO koduna göre arama yapabilirsiniz ya da bölgeye göre tarayabilirsiniz.",
-	"uls-search-placeholder": "Bir dil arayın"
+	"uls-search-placeholder": "Bir dil arayın",
+	"uls-search-placeholder-short": "Ara"
 }

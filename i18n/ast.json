@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Xuacu"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Llingües suxeríes",
 	"uls-no-results-suggestion-title": "Seique t'interese:",
 	"uls-search-help": "Pues buscar pol nome de la llingua, nome del alfabetu, códigu ISO de la llingua o ver un área xeográfica.",
-	"uls-search-placeholder": "Buscar una llingua"
+	"uls-search-placeholder": "Buscar una llingua",
+	"uls-search-placeholder-short": "Buscar"
 }

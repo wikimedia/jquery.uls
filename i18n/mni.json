@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Awangba Mangang"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "ꯂꯣꯟꯁꯤꯡ ꯑꯁꯤ ꯍꯥꯏꯕ ꯌꯥꯏ",
 	"uls-no-results-suggestion-title": "ꯅꯪꯅ ꯃꯁꯤꯒꯨꯝꯕꯁꯤ ꯄꯥꯝꯃꯝꯕꯁꯨ ꯌꯥꯏ:",
 	"uls-search-help": "ꯅꯪꯅ ꯊꯤꯕꯥ ꯌꯥꯒꯅꯤ ꯂꯣꯟ ꯃꯃꯤꯡꯅ, ꯃꯌꯦꯛ ꯃꯃꯤꯡꯅ, ꯂꯣꯟꯒꯤ ꯑꯣꯏꯑꯦꯁꯑꯣ ꯀꯣꯗꯅ ꯅꯠꯇ꯭ꯔꯒ ꯅꯪꯅ ꯂꯩꯐꯝꯒꯤ ꯃꯇꯨꯡ ꯏꯟꯅ ꯊꯤꯕꯥ ꯌꯥꯒꯅꯤ ꯫",
-	"uls-search-placeholder": "ꯂꯣꯟ ꯱ ꯊꯤꯕꯥ"
+	"uls-search-placeholder": "ꯂꯣꯟ ꯱ ꯊꯤꯕꯥ",
+	"uls-search-placeholder-short": "ꯊꯤꯕꯥ"
 }

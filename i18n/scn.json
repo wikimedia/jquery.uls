@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ajeje Brazorf",
+			"Amire80",
 			"Sarvaturi"
 		]
 	},
@@ -18,5 +19,6 @@
 	"uls-common-languages": "Lingui suggiruti",
 	"uls-no-results-suggestion-title": "Poi èssiri ntirissatu a:",
 	"uls-search-help": "È pussìbbili arricircari pi nomu, nomu dô script, còdice ISO dâ lingua o si pò navigari tràmiti riggiuni.",
-	"uls-search-placeholder": "Arricerca na lingua"
+	"uls-search-placeholder": "Arricerca na lingua",
+	"uls-search-placeholder-short": "Arricerca"
 }

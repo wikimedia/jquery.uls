@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"DzWiki",
 			"Edinwiki",
 			"Srdjan m",
@@ -20,5 +21,6 @@
 	"uls-common-languages": "Predloženi jezici",
 	"uls-no-results-suggestion-title": "Možda vas interesuje:",
 	"uls-search-help": "Možete da tražite po imenu jezika ili pisma, po ISO kodu jezika ili po regionu.",
-	"uls-search-placeholder": "Pronađi jezik"
+	"uls-search-placeholder": "Pronađi jezik",
+	"uls-search-placeholder-short": "Traži"
 }

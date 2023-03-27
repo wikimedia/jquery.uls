@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Sovichet",
 			"គីមស៊្រុន"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "ភាសាបេក្ខភាព",
 	"uls-no-results-suggestion-title": "អ្នក​អាច​នឹង​ចាប់​អារម្មណ៍​លើ៖",
 	"uls-search-help": "អ្នក​អាច​ស្វែង​រក​តាម​ឈ្មោះ​ភាសា, ឈ្មោះ​ស្គ្រីប, កូដ ISO នៃ​ភាសា ឬ​អ្នក​អាច​រុករក​តាម​តំបន់។",
-	"uls-search-placeholder": "ស្វែងរកភាសា"
+	"uls-search-placeholder": "ស្វែងរកភាសា",
+	"uls-search-placeholder-short": "ស្វែងរក"
 }

@@ -20,5 +20,6 @@
 	"uls-common-languages": "Ieithoedd awgrymedig",
 	"uls-no-results-suggestion-title": "Hwyrach bod y rhai sy'n dilyn o ddiddordeb i chi:",
 	"uls-search-help": "Gallwch chwilio gan ddefnyddio enw iaith, enw sgript, côd ISO'r iaith neu gallwch bori fesul rhanbarth.",
-	"uls-search-placeholder": "Chwilio am iaith"
+	"uls-search-placeholder": "Chwilio am iaith",
+	"uls-search-placeholder-short": "Chwilio"
 }

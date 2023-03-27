@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Ilja.mos"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Automuattizesti vallitut kielet",
 	"uls-no-results-suggestion-title": "Voit olla kiinnostunnuh nämmis kielis:",
 	"uls-search-help": "Voit eččie kielen nimen libo kirjutustavan mugah, kielen ISO-koudan mugah libo kaččuo alovehen kielii.",
-	"uls-search-placeholder": "Eči kieli"
+	"uls-search-placeholder": "Eči kieli",
+	"uls-search-placeholder-short": "Eči"
 }

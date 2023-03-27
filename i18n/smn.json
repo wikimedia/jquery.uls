@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Seipinne"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Iävtuttum kielah",
 	"uls-no-results-suggestion-title": "Aldemus uuccâmpuátuseh:",
 	"uls-search-help": "Uusâ kielâ teikkâ čäällimvyevi noomáin, kielâ ISO-koodijn teikkâ laađâ kielâid kuávlulistoost:",
-	"uls-search-placeholder": "Uusâ kielâ"
+	"uls-search-placeholder": "Uusâ kielâ",
+	"uls-search-placeholder-short": "Uusâ"
 }

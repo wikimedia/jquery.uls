@@ -19,5 +19,6 @@
 	"uls-common-languages": "Doporučené jazyky",
 	"uls-no-results-suggestion-title": "Mohlo by vás zajímat:",
 	"uls-search-help": "Můžete vyhledávat podle názvu jazyka, názvu písma, ISO kódu jazyka nebo můžete procházet po regionech.",
-	"uls-search-placeholder": "Hledat jazyk"
+	"uls-search-placeholder": "Hledat jazyk",
+	"uls-search-placeholder-short": "Hledat"
 }

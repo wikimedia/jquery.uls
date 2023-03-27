@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Snævar"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Uppástungur að tungumálum",
 	"uls-no-results-suggestion-title": "Þú gætir haft áhuga á:",
 	"uls-search-help": "Þú getur leitað eftir nafni tungumáls, nafni skriftunar, ISO kóða tungumálsins eða þú getur leitað eftir svæði.",
-	"uls-search-placeholder": "Leita eftir tungumáli"
+	"uls-search-placeholder": "Leita eftir tungumáli",
+	"uls-search-placeholder-short": "Leita"
 }

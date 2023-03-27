@@ -19,5 +19,6 @@
 	"uls-common-languages": "Javasolt nyelvek",
 	"uls-no-results-suggestion-title": "Lehet, hogy érdekel:",
 	"uls-search-help": "Kereshetsz a nyelv neve, ábécé neve, a nyelv ISO kódja alapján vagy böngészhetsz régiók szerint.",
-	"uls-search-placeholder": "Nyelv keresése"
+	"uls-search-placeholder": "Nyelv keresése",
+	"uls-search-placeholder-short": "Keresés"
 }

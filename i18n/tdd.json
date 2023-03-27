@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"咽頭べさ"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "ᥚᥣᥱᥔᥣᥱᥟᥢᥴᥓᥬᥳᥢᥛᥴ",
 	"uls-no-results-suggestion-title": "ᥓᥝᥲᥐᥝᥱᥓᥣᥒᥲᥑᥝᥲᥓᥬᥴᥙᥣᥰ:",
 	"uls-search-help": "ᥓᥝᥲᥐᥝᥱ ᥓᥣᥒᥲᥔᥩᥐᥲᥞᥣᥴᥖᥒᥰ ᥓᥪᥲᥚᥣᥱᥔᥣᥱᥐᥣᥛᥰ, ᥓᥪᥲ Script, ᥛᥣᥭᥴ ISO ᥖᥩᥢᥲᥖᥣᥱ ᥚᥣᥱᥔᥣᥱᥐᥣᥛᥰ ᥟᥢᥴᥢᥢᥴ ᥓᥝᥲᥐᥝᥱ ᥓᥣᥒᥲᥙᥪᥖᥱᥞᥣᥴ ᥖᥒᥰ ᥘᥦᥢᥴᥛᥫᥒᥰ region",
-	"uls-search-placeholder": "ᥑᥨᥢᥳᥞᥣᥴ ᥖᥣᥱᥚᥣᥱᥔᥣᥱᥐᥣᥛᥰ"
+	"uls-search-placeholder": "ᥑᥨᥢᥳᥞᥣᥴ ᥖᥣᥱᥚᥣᥱᥔᥣᥱᥐᥣᥛᥰ",
+	"uls-search-placeholder-short": "ᥑᥨᥢᥳᥞᥣᥴ"
 }

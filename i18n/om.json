@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Ahrada2016",
+			"Amire80",
 			"Oromoo",
 			"Tumsaa"
 		]
@@ -19,5 +20,6 @@
 	"uls-common-languages": "Qooqawwan dhiyaatan",
 	"uls-no-results-suggestion-title": "Kana barbaaduu dandeessa:",
 	"uls-search-help": "Maqaa qooqaan barbaaduu dandeessa, maqaa qubeessaan, qooqa lakkaddaa ISO yookiis naannoo keen banuu dandeessa.",
-	"uls-search-placeholder": "Qooqa barbaadi"
+	"uls-search-placeholder": "Qooqa barbaadi",
+	"uls-search-placeholder-short": "Barbaadi"
 }

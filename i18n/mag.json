@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"ऐक्टिवेटेड्"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "सुझावित भासा",
 	"uls-no-results-suggestion-title": "अपनेला उपयोगी हो सकहई:",
 	"uls-search-help": "अपने भासाके नाम, लिपिके नाम, भासाके ISO कोड् से या क्षेत्र अनुसार ब्राउज् करके खोज सकही।",
-	"uls-search-placeholder": "भासा खोजी"
+	"uls-search-placeholder": "भासा खोजी",
+	"uls-search-placeholder-short": "खोजी"
 }

@@ -20,5 +20,6 @@
 	"uls-common-languages": "Llengües suggerides",
 	"uls-no-results-suggestion-title": "Pot interessar-vos:",
 	"uls-search-help": "Podeu cercar per nom de llengua, nom d'alfabet, codi ISO de la llengua o podeu navegar per regió:",
-	"uls-search-placeholder": "Cerca una llengua"
+	"uls-search-placeholder": "Cerca una llengua",
+	"uls-search-placeholder-short": "Cerca"
 }

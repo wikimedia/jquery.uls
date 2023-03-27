@@ -20,5 +20,6 @@
 	"uls-common-languages": "Foreslåede sprog",
 	"uls-no-results-suggestion-title": "Du er måske interesseret i:",
 	"uls-search-help": "Du kan søge på sprogets navn, skriftens navn eller sprogets ISO-kode, eller du kan bladre hen til sproget efter regionen.",
-	"uls-search-placeholder": "Søg efter et sprog"
+	"uls-search-placeholder": "Søg efter et sprog",
+	"uls-search-placeholder-short": "Søg"
 }

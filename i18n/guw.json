@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Joshateji",
 			"Samatics"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "Ogbè he yin nudego lẹ",
 	"uls-no-results-suggestion-title": "Mì sọgan tindo ojlo na ehelẹ:",
 	"uls-search-help": "Mì sọgan yí yinkọ ogbè tọn do dín, kavi yinkọ wekinkan tọn, kavi hokun ISO ogbè tọn kavi mì ni dín gbọn lẹdo lọ yiyizan dali.",
-	"uls-search-placeholder": "Dín ogbè de"
+	"uls-search-placeholder": "Dín ogbè de",
+	"uls-search-placeholder-short": "Dín"
 }

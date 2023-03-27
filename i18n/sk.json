@@ -3,6 +3,7 @@
 		"authors": [
 			"Amire80",
 			"Jaroslav.micek",
+			"KuboF",
 			"Rudko",
 			"Yardom78"
 		]
@@ -20,5 +21,6 @@
 	"uls-common-languages": "Jazyky",
 	"uls-no-results-suggestion-title": "Mohlo by Vás zaujímať:",
 	"uls-search-help": "Môžete vyhľadávať podľa názvu jazyka, názvu písma, ISO kódu jazyka alebo môžete prechádzať po regiónoch:",
-	"uls-search-placeholder": "Vyhľadávanie jazyka"
+	"uls-search-placeholder": "Vyhľadávanie jazyka",
+	"uls-search-placeholder-short": "Hľadať"
 }

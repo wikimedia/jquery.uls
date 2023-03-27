@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Aue Nai"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "အရေဝ်ဘာသာ မကဵုလဝ်ကသပ်ဂမၠိုၚ်",
 	"uls-no-results-suggestion-title": "မၞး စိုတ်လုပ်စမာန် :",
 	"uls-search-help": "မၞးဂၠာဲကေတ်နကဵု ယၟုအရေဝ်ဘာသာမာန်၊ ယၟုအက္ခရ်, မခတ် ISO ဒဒှ်အရေဝ်ဘာသာ ဟွံသေၚ် မၞးတြးပၠးပတိတ် နကဵု ဒေသမာန်.",
-	"uls-search-placeholder": "ဂၠာဲ သွက် အရေဝ်ဘာသာ မွဲ"
+	"uls-search-placeholder": "ဂၠာဲ သွက် အရေဝ်ဘာသာ မွဲ",
+	"uls-search-placeholder-short": "ဂၠာဲ"
 }

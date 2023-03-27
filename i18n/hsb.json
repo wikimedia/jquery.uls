@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Michawiki"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Namjetowane rěče",
 	"uls-no-results-suggestion-title": "To móhło će zajimować:",
 	"uls-search-help": "Móžeš po mjenje rěče, mjenje pisma, ISO-kodźe rěče pytać abo pytanje přez region přewjesć.",
-	"uls-search-placeholder": "Za rěču pytać"
+	"uls-search-placeholder": "Za rěču pytać",
+	"uls-search-placeholder-short": "Pytać"
 }

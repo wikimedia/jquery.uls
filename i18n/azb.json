@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Alp Er Tunqa",
+			"Amire80",
 			"Arjanizary",
 			"Mousa"
 		]
@@ -19,5 +20,6 @@
 	"uls-common-languages": "یایغین دیل‌لر",
 	"uls-no-results-suggestion-title": "بونلارا ماراقلی اولابیلرسینیز:",
 	"uls-search-help": "سیز دیل آدی، یازی آدی، دیلین ISO کودو، یوخسا بؤلگه ایله آختارا بیلرسینیز.",
-	"uls-search-placeholder": "بیر دیلی آختار"
+	"uls-search-placeholder": "بیر دیلی آختار",
+	"uls-search-placeholder-short": "آختار"
 }

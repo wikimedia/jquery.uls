@@ -1,13 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Angpradesh",
+			"IND-ANP",
 			"Proabscorp!"
 		]
 	},
 	"uls-region-WW": "वैश्विक",
-	"uls-region-SP": "खास",
-	"uls-region-AM": "अमरीका",
+	"uls-region-SP": "विशेष",
+	"uls-region-AM": "अमेरिका",
 	"uls-region-AF": "अफ़्रीका",
 	"uls-region-EU": "यूरोप",
 	"uls-region-AS": "एशिया",
@@ -18,5 +20,6 @@
 	"uls-common-languages": "आम भाषा सिनी",
 	"uls-no-results-suggestion-title": "आपनै लेली संभवतः उपयोगी:",
 	"uls-search-help": "आपनौ भाषा केरौ नाम, स्क्रिप्ट केरौ नाम, भाषा केरौ आईएसओ कोड सँ खोजै सकै छौ या आपनौ क्षेत्र के नाम सँ ब्राउज़ करै सकै छौ।",
-	"uls-search-placeholder": "भाषा लेली खोजौ"
+	"uls-search-placeholder": "भाषा लेली खोजौ",
+	"uls-search-placeholder-short": "खोजौ"
 }

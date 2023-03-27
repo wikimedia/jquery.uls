@@ -19,5 +19,6 @@
 	"uls-common-languages": "Ieteiktās valodas",
 	"uls-no-results-suggestion-title": "Jums var būt interesē:",
 	"uls-search-help": "Var meklēt pēc valodas, skripta nosaukuma, valodas ISO koda, vai jūs tos varat pārlūkot pēc reģiona.",
-	"uls-search-placeholder": "Meklēt valodu"
+	"uls-search-placeholder": "Meklēt valodu",
+	"uls-search-placeholder-short": "Meklēt"
 }

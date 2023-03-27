@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Castillerian",
 			"פוילישער"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "פֿירגעלייגטע שפּראַכן",
 	"uls-no-results-suggestion-title": "עס וועט אפֿשר דיר אינייערעסירן:",
 	"uls-search-help": "מע קען זוכן לויט שפּראַך־נאָמען, שריפֿט־אָמען, ISO־קאָדפֿון שפּראַך אָדער קען מען בלעטערן לויט ראַיאָן.",
-	"uls-search-placeholder": "זוכן אַ שפּראַך"
+	"uls-search-placeholder": "זוכן אַ שפּראַך",
+	"uls-search-placeholder-short": "זוכן"
 }

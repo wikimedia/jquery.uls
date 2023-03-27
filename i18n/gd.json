@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Akerbeltz",
+			"Amire80",
 			"GunChleoc"
 		]
 	},
@@ -18,5 +19,6 @@
 	"uls-common-languages": "Cànain a mholamaid",
 	"uls-no-results-suggestion-title": "’S dòcha gum bi ùidh agad sna leanas:",
 	"uls-search-help": "'S urrainn dhut lorg le ainm a' chànain, ainm an sgriobt, còd ISO a' chànain no brabhsadh a-rèir roinn-dùthcha.",
-	"uls-search-placeholder": "Lorg cànan"
+	"uls-search-placeholder": "Lorg cànan",
+	"uls-search-placeholder-short": "Lorg"
 }

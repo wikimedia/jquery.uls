@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Bennylin",
 			"Farras",
 			"Iwan Novirion",
@@ -21,5 +22,6 @@
 	"uls-common-languages": "Bahasa yang disarankan",
 	"uls-no-results-suggestion-title": "Anda mungkin tertarik pada:",
 	"uls-search-help": "Anda dapat mencari dengan nama bahasa, nama skrip, kode ISO bahasa atau Anda dapat menelusuri menurut wilayahnya.",
-	"uls-search-placeholder": "Pencarian bahasa"
+	"uls-search-placeholder": "Pencarian bahasa",
+	"uls-search-placeholder-short": "Pencarian"
 }

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Anakmalaysia",
 			"Tofeiku"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "Bahasa yang dicadangkan",
 	"uls-no-results-suggestion-title": "Mungkin anda ingin mencari:",
 	"uls-search-help": "Anda boleh mencari mengikut nama bahasa, nama tulisan, kod bahasa ISO ataupun menyemak seimbas mengikut kawasan.",
-	"uls-search-placeholder": "Cari bahasa"
+	"uls-search-placeholder": "Cari bahasa",
+	"uls-search-placeholder-short": "Cari"
 }

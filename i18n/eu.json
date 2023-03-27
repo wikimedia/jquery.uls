@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"An13sa",
 			"Sator",
 			"Theklan"
@@ -19,5 +20,6 @@
 	"uls-common-languages": "Proposatutako hizkuntzak",
 	"uls-no-results-suggestion-title": "Agian interesa duzu:",
 	"uls-search-help": "Bilaketa egin ahal duzu hizkuntzaren izena, script izena, hizkuntzaren ISO kodea edo eskualdeka bilaketa egin ahal duzu.",
-	"uls-search-placeholder": "Hizkuntza bat bilatu"
+	"uls-search-placeholder": "Hizkuntza bat bilatu",
+	"uls-search-placeholder-short": "Bilatu"
 }

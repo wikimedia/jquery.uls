@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Babanwalia",
 			"Bgo eiu",
 			"Tow"
@@ -18,5 +19,6 @@
 	"uls-common-languages": "ਸੁਝਾਈਆਂ ਭਾਸ਼ਾਵਾਂ",
 	"uls-no-results-suggestion-title": "ਤੁਹਾਨੂੰ ਇਹਨਾਂ ਵਿੱਚ ਦਿਲਚਸਪੀ ਹੋ ਸਕਦੀ ਹੋ:",
 	"uls-search-help": "ਤੁਸੀਂ ਭਾਸ਼ਾ ਦੇ ਨਾਂ, ਲਿਪੀ ਦੇ ਨਾਂ, ਭਾਸ਼ਾ ਦੇ ISO ਕੋਡ ਰਾਹੀਂ ਖੋਜ ਸਕਦੇ ਹੋ ਜਾਂ ਖੇਤਰ ਪੱਖੋਂ ਸਫ਼ੇ ਪਲਟ ਸਕਦੇ ਹੋ।",
-	"uls-search-placeholder": "ਭਾਸ਼ਾ ਖੋਜ"
+	"uls-search-placeholder": "ਭਾਸ਼ਾ ਖੋਜ",
+	"uls-search-placeholder-short": "ਖੋਜ"
 }

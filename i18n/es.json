@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Armando-Martin",
 			"Fitoschido",
 			"Macofe",
@@ -23,5 +24,6 @@
 	"uls-common-languages": "Idiomas sugeridos",
 	"uls-no-results-suggestion-title": "Puedes estar interesado en:",
 	"uls-search-help": "Puedes buscar por el nombre del idioma, su tipo de escritura, el código ISO del idioma o buscar por región.",
-	"uls-search-placeholder": "Buscar un idioma"
+	"uls-search-placeholder": "Buscar un idioma",
+	"uls-search-placeholder-short": "Buscar"
 }

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"NehalDaveND"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "परामर्षिताः भाषाः",
 	"uls-no-results-suggestion-title": "एतत् भवते/भवत्यै रोचेत :",
 	"uls-search-help": "भाषाधारेण, लिप्याधारेण, भाषायाः ISO कूटाधारेण, क्षेत्रानुसारं वा भवान्/भवती अन्वेष्टुं शक्नोति ।",
-	"uls-search-placeholder": "भाषा अन्विष्यताम्"
+	"uls-search-placeholder": "भाषा अन्विष्यताम्",
+	"uls-search-placeholder-short": "अन्विष्यताम्"
 }

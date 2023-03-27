@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Chinamoonroll",
 			"Joseagush"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "Basa sane mapiteket",
 	"uls-no-results-suggestion-title": "Ida dane dumadak rimang:",
 	"uls-search-help": "Ida dane dados ngerereh anggen adan basa, adan script, kode basa ISO, utawi ida dane dados ngalih anggen wewengkon.",
-	"uls-search-placeholder": "Basa sane kererehin"
+	"uls-search-placeholder": "Basa sane kererehin",
+	"uls-search-placeholder-short": "Rereh"
 }

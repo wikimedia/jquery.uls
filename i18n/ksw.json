@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Jaeminlovetaejoon",
 			"SawJaemin"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "မၤကွၢ်ကျိာ်တဖၣ်အံၤ",
 	"uls-no-results-suggestion-title": "ဘၣ်သ့ၣ်သ့ၣ်နကအိၣ်ဒီးတၢ်သးစဲလၢ:",
 	"uls-search-help": "နဃုကွၢ်လၢကျိာ်အမံၤသ့ မ့ၢ်တမ့ၢ် လၢလံာ်မိၢ်ပှၢ်အမံၤသ့ မ့ၢ်တမ့ၢ် လၢအ ISO မံၤသ့ မ့ၢ်တမ့ၢ် နကွၢ်ဃုလၢ တၢ်လီၢ်သ့စ့ၢ်ကီးလီၤ.",
-	"uls-search-placeholder": "ကွၢ်ဃုကျိာ်တကျိာ်"
+	"uls-search-placeholder": "ကွၢ်ဃုကျိာ်တကျိာ်",
+	"uls-search-placeholder-short": "ကွၢ်ဃု"
 }

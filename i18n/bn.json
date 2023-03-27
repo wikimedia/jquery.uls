@@ -3,6 +3,7 @@
 		"authors": [
 			"Aftabuzzaman",
 			"Aishik Rehman",
+			"Amire80",
 			"Bellayet",
 			"Nasir8891",
 			"Sankarshan",
@@ -23,5 +24,6 @@
 	"uls-common-languages": "প্রস্তাবিত ভাষাসমূহ",
 	"uls-no-results-suggestion-title": "আপনি হয়তো এগুলোতে আগ্রহী হতে পারেন:",
 	"uls-search-help": "আপনি ভাষার নাম, লিপির নাম, ভাষার আইএসও কোড দিয়ে অনুসন্ধান করতে পারেন অথবা আপনি অঞ্চল অনুযায়ী ব্রাউজ করতে পারেন।",
-	"uls-search-placeholder": "ভাষা অনুসন্ধান করুন"
+	"uls-search-placeholder": "ভাষা অনুসন্ধান করুন",
+	"uls-search-placeholder-short": "অনুসন্ধান"
 }

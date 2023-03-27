@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Karapananguasú Kururú Teremembé",
 			"Maracajá Teremembé"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "Ĩdé remurú reyumuçé kuá nhẽẽga'etá",
 	"uls-no-results-suggestion-title": "Ĩdé remurú reyumuçé yawá çui:",
 	"uls-search-help": "Ĩdé remurú resikári nhẽẽga rera rupí, titapawa rera, ã nhẽẽga ISO yupinimaçawa, ã usikári retãma rupí.",
-	"uls-search-placeholder": "Usikári yepé nhẽẽga"
+	"uls-search-placeholder": "Usikári yepé nhẽẽga",
+	"uls-search-placeholder-short": "Usikári"
 }

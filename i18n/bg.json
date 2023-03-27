@@ -21,5 +21,6 @@
 	"uls-common-languages": "Предложени езици",
 	"uls-no-results-suggestion-title": "Може би се интересувате от:",
 	"uls-search-help": "Можете да търсите по име на език, име на скрипт, ISO кода на език или да разглеждате по региони.",
-	"uls-search-placeholder": "Търсене на език"
+	"uls-search-placeholder": "Търсене на език",
+	"uls-search-placeholder-short": "Търсене"
 }

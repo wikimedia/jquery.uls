@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Gilbert Ndihokubwayo"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Indimi zihitishijwemwo",
 	"uls-no-results-suggestion-title": "Ushobora gushimishwa na:",
 	"uls-search-help": "Ushobora kurondeza ukoresheje izina ryururimi, izina ry'ivyandiko, kode ISO y'ururimi canke naho ukarondeza ukoresheje akarere.",
-	"uls-search-placeholder": "Rondeza ururimi"
+	"uls-search-placeholder": "Rondeza ururimi",
+	"uls-search-placeholder-short": "Rondeza"
 }

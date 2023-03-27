@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Cybjit",
 			"Johan",
 			"Jopparn",
@@ -20,5 +21,6 @@
 	"uls-common-languages": "Föreslagna språk",
 	"uls-no-results-suggestion-title": "Du kan vara intresserad av:",
 	"uls-search-help": "Du kan söka efter språkets namn, skriptnamn, ISO-kod för språket eller bläddra efter region.",
-	"uls-search-placeholder": "Sök efter ett språk"
+	"uls-search-placeholder": "Sök efter ett språk",
+	"uls-search-placeholder-short": "Sök"
 }

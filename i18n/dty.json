@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Nirajan pant",
 			"रमेश सिंह बोहरा"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "सुझावित भाषाअन",
 	"uls-no-results-suggestion-title": "तमलाई यैमी मन लाग्गसकन्छ:",
 	"uls-search-help": "तम भषा: नाउँले, लिपिया नाउँले, भषा: ISO कोड खोजिसकन्छ: या क्षेत्रा आधारमी ब्राउज अरिसकन्छ:।",
-	"uls-search-placeholder": "भाषा खिलाइ खोजी अरऽ"
+	"uls-search-placeholder": "भाषा खिलाइ खोजी अरऽ",
+	"uls-search-placeholder-short": "खोजी"
 }

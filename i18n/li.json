@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Ooswesthoesbes",
 			"Pahles",
 			"Robin van der Vliet",
@@ -20,5 +21,6 @@
 	"uls-common-languages": "Spraoksuggesties",
 	"uls-no-results-suggestion-title": "Doe bös mesjiens geïnterseerdj in:",
 	"uls-search-help": "Doe kans zeuken op spraoknaam, sjrifnaam, ISO-code vanne spraok of doe kans blajere de regio.",
-	"uls-search-placeholder": "Sjpraok zeuke"
+	"uls-search-placeholder": "Sjpraok zeuke",
+	"uls-search-placeholder-short": "Zeuke"
 }

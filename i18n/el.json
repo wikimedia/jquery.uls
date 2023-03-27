@@ -19,5 +19,6 @@
 	"uls-common-languages": "Προτεινόμενες γλώσσες",
 	"uls-no-results-suggestion-title": "Μπορεί να σας ενδιαφέρουν:",
 	"uls-search-help": "Μπορείτε να ψάξετε κατά το όνομα της γλώσσας, τρόπο γραφής, κωδικό ISO της γλώσσας, ή να περιηγηθείτε ανά περιοχή.",
-	"uls-search-placeholder": "Αναζήτηση για γλώσσα"
+	"uls-search-placeholder": "Αναζήτηση για γλώσσα",
+	"uls-search-placeholder-short": "Αναζήτηση"
 }

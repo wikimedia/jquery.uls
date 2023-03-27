@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Praveenp",
 			"Ranjithsiji",
 			"Santhosh.thottingal"
@@ -19,5 +20,6 @@
 	"uls-common-languages": "നിർദ്ദേശിക്കുന്ന ഭാഷകൾ",
 	"uls-no-results-suggestion-title": "താങ്കൾക്കാവശ്യം ഇതായിരിക്കാം:",
 	"uls-search-help": "താങ്കൾക്ക് ഭാഷയുടെ പേര്, ISO കോഡ്, ലിപിയുടെ പേര് എന്നിവ ഉപയോഗിച്ച് തിരയാം. അല്ലെങ്കിൽ ഈ മേഖലകളിൽ തിരയാം:",
-	"uls-search-placeholder": "ഒരു ഭാഷക്കായി തിരയുക"
+	"uls-search-placeholder": "ഒരു ഭാഷക്കായി തിരയുക",
+	"uls-search-placeholder-short": "തിരയുക"
 }

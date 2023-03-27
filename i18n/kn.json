@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Ashay vb",
 			"Omshivaprakash",
 			"Shankar"
@@ -19,5 +20,6 @@
 	"uls-common-languages": "ಸೂಚಿಸಿದ ಭಾಷೆಗಳು",
 	"uls-no-results-suggestion-title": "ನಿಮಗೆ ಇದರಲ್ಲಿ ಆಸಕ್ತಿ ಇರಬಹುದು:",
 	"uls-search-help": "ನೀವು ಭಾಷೆಯ ಹೆಸರು, ಸ್ಕ್ರಿಪ್ಟ್ ಹೆಸರು, ಐಎಸ್ಒ ಭಾಷೆಯ ಕೋಡ್ ಮೂಲಕ ಹುಡುಕಬಹುದು ಅಥವಾ ನೀವು ಪ್ರದೇಶದ ಪ್ರಕಾರ ಬ್ರೌಸ್ ಮಾಡಬಹುದು.",
-	"uls-search-placeholder": "ಭಾಷೆಗಾಗಿ ಹುಡುಕಿ"
+	"uls-search-placeholder": "ಭಾಷೆಗಾಗಿ ಹುಡುಕಿ",
+	"uls-search-placeholder-short": "ಹುಡುಕಿ"
 }

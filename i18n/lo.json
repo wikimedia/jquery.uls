@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Lookruk"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "ພາສາທີ່ແນະນຳ",
 	"uls-no-results-suggestion-title": "ທ່ານອາດສົນໃຈໃນ:",
 	"uls-search-help": "ທ່ານ​ສາ​ມາດ​ຄົ້ນ​ຫາ​ໂດຍ​ຊື່​ພາ​ສາ​ ຊື່ອັກສອນ ລະ​ຫັດ ISO ຂອງ​ພາ​ສາ​ ຫຼື​​ສາ​ມາດ​ເບິ່ງ​ຕາມ​ພູມິພາກ",
-	"uls-search-placeholder": "ຊອກຫາພາສາ"
+	"uls-search-placeholder": "ຊອກຫາພາສາ",
+	"uls-search-placeholder-short": "ຊອກຫາ"
 }

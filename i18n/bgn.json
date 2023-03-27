@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Baloch Afghanistan",
 			"Ibrahim khashrowdi"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "پیشنهاد بوته‌این زبانان",
 	"uls-no-results-suggestion-title": "ممکن اینت علاقه‌مند بئیت:",
 	"uls-search-help": "شما ئه توانیت به زبانی نامئ اساسا، نامئ اسکریپت، زبانئ استاندارتین کود یا به منطقه‌ای اساسا بگردیت.",
-	"uls-search-placeholder": "گَشتین په یک زبانئ خاتیرا"
+	"uls-search-placeholder": "گَشتین په یک زبانئ خاتیرا",
+	"uls-search-placeholder-short": "گشتین"
 }

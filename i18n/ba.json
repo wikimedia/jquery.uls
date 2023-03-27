@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Sagan",
 			"Ләйсән"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "Тәҡдим ителгән телдәр",
 	"uls-no-results-suggestion-title": "Бәлки, ошо телдәрҙе һайларһығыҙ:",
 	"uls-search-help": "Телдең исеме, яҙмаһы, ISO коды йәки регионы буйынса эҙләй алаһығыҙ.",
-	"uls-search-placeholder": "Тел буйынса эҙләү"
+	"uls-search-placeholder": "Тел буйынса эҙләү",
+	"uls-search-placeholder-short": "Эҙләү"
 }

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Kolonahe"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Nā ʻōlelo lawelawe paha",
 	"uls-no-results-suggestion-title": "Makemake paha ʻoe iā:",
 	"uls-search-help": "Hiki iā ʻoe ke huli i ka inoa ʻōlelo, inoa kikokikona, pāʻālua ISO ʻōlelo a i ʻole huli i ka ʻāina.",
-	"uls-search-placeholder": "Huli ʻŌlelo"
+	"uls-search-placeholder": "Huli ʻŌlelo",
+	"uls-search-placeholder-short": "Huli"
 }

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Ernác",
 			"Iltever",
 			"Къарачайлы"
@@ -19,5 +20,6 @@
 	"uls-common-languages": "Теджелген тилле",
 	"uls-no-results-suggestion-title": "Бу теллеге талпый болурмусуз:",
 	"uls-search-help": "Тилни неда джазманы атына кёре излерге боллукъсуз, тилни ISO-кодуна кёре неда регионнга кёре къараргъа:",
-	"uls-search-placeholder": "Тил излеу"
+	"uls-search-placeholder": "Тил излеу",
+	"uls-search-placeholder-short": "Излеу"
 }

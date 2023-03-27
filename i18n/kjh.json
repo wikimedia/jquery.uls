@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Андрей Саг."
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Чӧпха пирелген тіллер",
 	"uls-no-results-suggestion-title": "Пасха тіллер пирелче",
 	"uls-search-help": "Сілерге пирелче тілдіӊ адыныӊ, пічіктіӊ, ISO-кодтыӊ тілирге алай регионныӊ кӧрерге",
-	"uls-search-placeholder": "Тілде тілирге"
+	"uls-search-placeholder": "Тілде тілирге",
+	"uls-search-placeholder-short": "Тілирге"
 }

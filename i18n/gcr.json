@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"LeGuyanaisPure"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Lanng sigjéré",
 	"uls-no-results-suggestion-title": "Ou pouvé fika entérésé pa :",
 	"uls-search-help": "Ou pouvé sasé pa non di lanng, pa non di lékritir-a, pa kod ISO di lanng-an, oben ou pouvé navigé pa réjyon.",
-	"uls-search-placeholder": "Sasé roun lanng"
+	"uls-search-placeholder": "Sasé roun lanng",
+	"uls-search-placeholder-short": "Sasé"
 }

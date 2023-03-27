@@ -19,5 +19,6 @@
 	"uls-common-languages": "Санал болгож буй хэл",
 	"uls-no-results-suggestion-title": "Санал болгох:",
 	"uls-search-help": "Та хэлээр, скриптийн нэрээр, хэлний ISO кодоор хайж болно, эсвэл газар нутгаар нь харж болно.",
-	"uls-search-placeholder": "Хэлний хайлт"
+	"uls-search-placeholder": "Хэлний хайлт",
+	"uls-search-placeholder-short": "Хайлт"
 }

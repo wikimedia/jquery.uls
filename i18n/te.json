@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"JVRKPRASAD",
+			"V Bhavya",
 			"Veeven",
 			"WP MANIKHANTA"
 		]
@@ -19,5 +20,6 @@
 	"uls-common-languages": "సూచించిన భాషలు",
 	"uls-no-results-suggestion-title": "మీకు దీనిలో ఆసక్తి ఉండవచ్చు:",
 	"uls-search-help": "మీరు భాష పేరు, లిపి పేరు, భాష ISO కోడు ద్వారా వెతకవచ్చు లేదా మీరు ప్రాంతం ద్వారా విహరింవచ్చు.",
-	"uls-search-placeholder": "భాష కొరకు వెతకండి"
+	"uls-search-placeholder": "భాష కొరకు వెతకండి",
+	"uls-search-placeholder-short": "వెతుకు"
 }

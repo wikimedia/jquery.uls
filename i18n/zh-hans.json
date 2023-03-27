@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Liuxinyu970226",
+			"Winston Sung",
 			"Xiaomingyan",
 			"Yfdyh000"
 		]
@@ -19,5 +20,6 @@
 	"uls-common-languages": "建议的语言",
 	"uls-no-results-suggestion-title": "您可能感兴趣：",
 	"uls-search-help": "您可以按语言名称、文字名称、语言的ISO代码搜索，或按地区浏览。",
-	"uls-search-placeholder": "搜索一种语言"
+	"uls-search-placeholder": "搜索一种语言",
+	"uls-search-placeholder-short": "搜索"
 }

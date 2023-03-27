@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Slaia"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "Li si no so",
 	"uls-no-results-suggestion-title": "Te omasi'ö ba:",
 	"uls-search-help": "Tola ö'alui molo'ö töi li, töi ila-ila zura, kode ISO ma zui ö'alui molo'ö gölana.",
-	"uls-search-placeholder": "Alui sambua li"
+	"uls-search-placeholder": "Alui sambua li",
+	"uls-search-placeholder-short": "Alui"
 }

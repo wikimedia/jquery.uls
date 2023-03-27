@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Octahedron80",
 			"Pon44695"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "ภาษาที่แนะนำ",
 	"uls-no-results-suggestion-title": "คุณอาจสนใจใน:",
 	"uls-search-help": "คุณสามารถค้นหาด้วยชื่อภาษา ชื่ออักษร รหัส ISO ของภาษา หรือสามารถเรียกดูตามภูมิภาค",
-	"uls-search-placeholder": "ค้นหาภาษา"
+	"uls-search-placeholder": "ค้นหาภาษา",
+	"uls-search-placeholder-short": "ค้นหา"
 }

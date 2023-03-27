@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Makuba",
 			"Stavanger7"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "Proposit lingues",
 	"uls-no-results-suggestion-title": "Forsan tu es interessat in:",
 	"uls-search-help": "Tu posse serchar li nómin del lingue, del scritura, li ISO-code del lingue o serchar secun un region.",
-	"uls-search-placeholder": "Serchar un lingue"
+	"uls-search-placeholder": "Serchar un lingue",
+	"uls-search-placeholder-short": "Serchar"
 }

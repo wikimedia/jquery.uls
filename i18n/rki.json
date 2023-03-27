@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Cakkaparla",
 			"Tejoebāsa"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "အကြံပီးထားရေ ဘာသာစကားတိ",
 	"uls-no-results-suggestion-title": "မင်းစိတ်၀င်စားကောင်း စိတ်၀င်စားနိုင်စော်က-",
 	"uls-search-help": "ဘာသာစကားနာမည်၊ ဇာတ်ညွှန်းနာမည်၊ ဘာသာစကား၏ISO ကုဒ်နန့် ရှာဖွေနိုင်သည် ယင်းသို့မဟုတ် ဒေသအလိုက် ရှာဖွီနိုင်သည်။",
-	"uls-search-placeholder": "ဘာသာစကားတခုအတွက် ရှာဖွီပါ"
+	"uls-search-placeholder": "ဘာသာစကားတခုအတွက် ရှာဖွီပါ",
+	"uls-search-placeholder-short": "ရှာဖွီပါ"
 }

@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Algentem",
+			"Amire80",
 			"Joao Xavier",
 			"Robin van der Vliet"
 		]
@@ -19,5 +20,6 @@
 	"uls-common-languages": "Sugestanta lingui",
 	"uls-no-results-suggestion-title": "Vu povas havar intereso pri:",
 	"uls-search-help": "Vu povas serchar segun linguala kodexo, nomo dil 'script', kodexo ISO por la linguo, o vu povas serchar segun la regiono.",
-	"uls-search-placeholder": "Serchar linguo"
+	"uls-search-placeholder": "Serchar linguo",
+	"uls-search-placeholder-short": "Serchar"
 }

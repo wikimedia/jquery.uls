@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Fitoschido",
 			"P. S. F. Freitas"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "Ñe'ẽ ojeipuruvéva",
 	"uls-no-results-suggestion-title": "Nde ikatu reipotaː",
 	"uls-search-help": "Nde ikatu reheka ñe'ẽ héra rupi, tai ysaja rupi, ISO ñe'ẽ héra térã ñe'ẽ renda rupi.",
-	"uls-search-placeholder": "Ñe'ẽ jeheka"
+	"uls-search-placeholder": "Ñe'ẽ jeheka",
+	"uls-search-placeholder-short": "Jeheka"
 }

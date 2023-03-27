@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Fierodelveneto",
 			"GatoSelvadego"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "Lengue sujerìe",
 	"uls-no-results-suggestion-title": "Te pol èsar interesà a:",
 	"uls-search-help": "Xe posibiƚe sercar par nòme, nòme del script, còdexe ISO de ƚa lengua o se połe navegar par rejon.",
-	"uls-search-placeholder": "Serca na lengua"
+	"uls-search-placeholder": "Serca na lengua",
+	"uls-search-placeholder-short": "Serca"
 }

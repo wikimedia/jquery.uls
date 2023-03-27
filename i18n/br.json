@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Fulup",
 			"Gwenn-Ael"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "Yezhoù aliet",
 	"uls-no-results-suggestion-title": "Gallout a reot bezañ dedennet gant :",
 	"uls-search-help": "Gallout a reot klask dre anv yezh, anv skript, kod yezh ISO pe gallout a reot klask dre rannvro.",
-	"uls-search-placeholder": "Klask ur yezh"
+	"uls-search-placeholder": "Klask ur yezh",
+	"uls-search-placeholder-short": "Klask"
 }

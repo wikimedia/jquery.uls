@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"ꠢꠣꠍꠘ ꠞꠣꠎꠣ"
 		]
 	},
@@ -17,5 +18,6 @@
 	"uls-common-languages": "ꠎꠣꠌꠣ ꠝꠣꠔꠣꠁꠘ",
 	"uls-no-results-suggestion-title": "ꠀꠙꠘꠦ ꠝꠘꠧꠔꠅꠄ ꠅꠇꠣꠘꠣꠁꠘ ꠜꠣꠟꠣ ꠙꠣꠁꠛꠣ:",
 	"uls-search-help": "ꠀꠙꠘꠦ ꠕꠥꠇꠣꠁꠔꠣ ꠙꠣꠞꠛꠣ ꠝꠣꠔꠧꠞ ꠘꠣꠝꠖꠤ, ꠟꠤꠙꠤꠞ ꠘꠣꠝꠖꠤ, ꠝꠣꠔꠧꠞ ꠀꠁꠄꠌꠅ ꠇꠧꠒꠖꠤ ꠀꠞꠘꠣꠄ ꠘꠣꠉꠞꠤꠖꠤ",
-	"uls-search-placeholder": "ꠇꠥꠘꠥ ꠝꠣꠔ ꠕꠥꠇꠣꠁꠘ"
+	"uls-search-placeholder": "ꠇꠥꠘꠥ ꠝꠣꠔ ꠕꠥꠇꠣꠁꠘ",
+	"uls-search-placeholder-short": "ꠕꠥꠇꠣꠁꠘ"
 }

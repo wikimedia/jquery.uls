@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Santhosh.thottingal",
 			"Sfic",
 			"Siddhartha Ghai"
@@ -19,5 +20,6 @@
 	"uls-common-languages": "सुझावित भाषा",
 	"uls-no-results-suggestion-title": "आपके लिये संभवतः उपयोगी:",
 	"uls-search-help": "आप भाषा के नाम, लिपि के नाम एवं भाषा के ISO कोड से खोज कर सकते हैं, और क्षेत्र अनुसार ब्राउज़ भी कर सकते हैं।",
-	"uls-search-placeholder": "भाषा के लिए खोजें"
+	"uls-search-placeholder": "भाषा के लिए खोजें",
+	"uls-search-placeholder-short": "खोजें"
 }
