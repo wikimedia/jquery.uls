@@ -1822,6 +1822,13 @@
             ],
             "interlingua"
         ],
+        "ibb": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "ibibio"
+        ],
         "id": [
             "Latn",
             [
@@ -6059,6 +6066,7 @@
             "ig",
             "yo",
             "efi",
+            "ibb",
             "ha-arab",
             "kcg",
             "ar",
