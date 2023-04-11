@@ -155,6 +155,13 @@
 			$listItems.removeClass( 'uls-language-option--highlighted' );
 
 			var $selectedItem = $listItems.eq( this.navigationIndex );
+			if ( $selectedItem.length === 0 ) {
+				throw new Error(
+					'Could not identify selected item with index: ' + this.navigationIndex + '; ' +
+					'Total items in ULS: ' + $listItems.length
+				);
+			}
+
 			$selectedItem.addClass( 'uls-language-option--highlighted' );
 
 			// If the selected item is not visible, then scroll the container to display it
