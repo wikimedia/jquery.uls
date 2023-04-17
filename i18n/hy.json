@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kareyac",
 			"Nona",
 			"Xelgen"
 		]
@@ -18,5 +19,6 @@
 	"uls-common-languages": "Առաջարկվող լեզուներ",
 	"uls-no-results-suggestion-title": "Ձեզ գուցե հետաքրքրեն․",
 	"uls-search-help": "Դուք կարող եք որոնել լեզուն իր անվամբ, գրի անունով, ԻՍՈ կոդով կամ կարող եք ընտրել ըստ տարածաշրջանի։",
-	"uls-search-placeholder": "Որոնել լեզուները"
+	"uls-search-placeholder": "Լեզվի որոնում",
+	"uls-search-placeholder-short": "Որոնում"
 }
