@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Masiziva"
+		]
+	},
+	"uls-region-WW": "Pasirose",
+	"uls-region-SP": "Chikoshe",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afurika",
+	"uls-region-EU": "Yuropu",
+	"uls-region-AS": "Ezhiya",
+	"uls-region-ME": "Mabvazuva Epakati",
+	"uls-region-PA": "Pasifiki",
+	"uls-region-all": "Mitauro yose",
+	"uls-no-results-found": "Hapana mhedzisiro dzawanikwa",
+	"uls-common-languages": "Mitauro yayambiswa",
+	"uls-no-results-suggestion-title": "Unogona kufarira izvi:",
+	"uls-search-help": "Unokwanisa kutsvaga nezita remutauro, zita rekeruro, ISO kodhi yemutauro kana unogona kutsvakaira uchitodza chisi.",
+	"uls-search-placeholder": "Tsvaga mutauro",
+	"uls-search-placeholder-short": "Tsvaga"
+}
