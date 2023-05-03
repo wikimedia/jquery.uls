@@ -954,6 +954,13 @@
         "crh-latn": [
             "crh"
         ],
+        "crh-ro": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "tatarşa"
+        ],
         "cs": [
             "Latn",
             [
