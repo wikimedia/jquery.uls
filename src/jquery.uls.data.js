@@ -750,6 +750,13 @@
             ],
             "Bileez Kriol"
         ],
+        "bzs": [
+            "Sgnw",
+            [
+                "AM"
+            ],
+            "Língua brasileira de sinais"
+        ],
         "ca": [
             "Latn",
             [
@@ -838,7 +845,7 @@
             [
                 "AM"
             ],
-            "Choctaw"
+            "Chahta anumpa"
         ],
         "chr": [
             "Cher",
@@ -944,6 +951,30 @@
                 "AS"
             ],
             "Capiceño"
+        ],
+        "cpx-hans": [
+            "Hans",
+            [
+                "AS"
+            ],
+            "莆仙语（简体）"
+        ],
+        "cpx-hant": [
+            "Hant",
+            [
+                "AS"
+            ],
+            "莆仙語（繁體）"
+        ],
+        "cpx-latn": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Pó-sing-gṳ̂ (Báⁿ-uā-ci̍)"
+        ],
+        "cpx": [
+            "cpx-hant"
         ],
         "cr": [
             "Cans",
@@ -1525,7 +1556,7 @@
             [
                 "AM"
             ],
-            "Guadeloupean Creole French"
+            "kréyòl Gwadloup"
         ],
         "gcr": [
             "Latn",
