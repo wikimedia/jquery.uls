@@ -525,7 +525,7 @@
             [
                 "AS"
             ],
-            "Bahasa Betawi"
+            "Betawi"
         ],
         "bfa": [
             "Latn",
