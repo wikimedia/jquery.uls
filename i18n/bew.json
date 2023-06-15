@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bangrapip"
+		]
+	},
+	"uls-region-WW": "Antèrodunia",
+	"uls-region-SP": "Kusus",
+	"uls-region-AM": "Amrik",
+	"uls-region-AF": "Aprika",
+	"uls-region-EU": "Èropa",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Wètan Tengah (Jajirah Arap)",
+	"uls-region-PA": "Laotan Teduh",
+	"uls-region-all": "Semua basa",
+	"uls-no-results-found": "Hasil kaga' ketemu",
+	"uls-common-languages": "Basa nyang disaranin",
+	"uls-no-results-suggestion-title": "Lu barangkali minat ama:",
+	"uls-search-help": "Lu bisa nyari paké nama basa, nama hurup, kode ISO basa, atawa lu bisa nyari bedasar wilayahnya.",
+	"uls-search-placeholder": "Cari basa",
+	"uls-search-placeholder-short": "Penyarian"
+}
