@@ -8,19 +8,19 @@
 			"Гусейн"
 		]
 	},
-	"uls-region-WW": "Həmədınyo",
-	"uls-region-SP": "Xısusi",
+	"uls-region-WW": "Həmmə dynjo",
+	"uls-region-SP": "Xysusi",
 	"uls-region-AM": "Əmerikə",
 	"uls-region-AF": "Afrika",
 	"uls-region-EU": "Avropə",
-	"uls-region-AS": "Asiyə",
-	"uls-region-ME": "Miyonə Şərğ",
+	"uls-region-AS": "Asijə",
+	"uls-region-ME": "Mijonə Həšipemə",
 	"uls-region-PA": "Pasifik",
-	"uls-region-all": "Həmə zıvonon",
-	"uls-no-results-found": "Hiçi pəydo bıəni",
-	"uls-common-languages": "Tovsiyə kardə bıə zıvonon",
-	"uls-no-results-suggestion-title": "Bəzne bə ki bo şımə marağinin ın zıvonon:",
-	"uls-search-help": "Шымә бәзнејон де зывони номи ја нывыштәј нәве, де зывони ISO-коди ја де вилојәти дијә карде.",
-	"uls-search-placeholder": "Bınəv zıvoni",
-	"uls-search-placeholder-short": "Bınəv"
+	"uls-region-all": "Həmmə zyvonon",
+	"uls-no-results-found": "Hiči pəjdo byəni",
+	"uls-common-languages": "Tovsijə kardə byə zyvonon",
+	"uls-no-results-suggestion-title": "Bəzyne be ki bo šymə maraǧinin yn zyvonon:",
+	"uls-search-help": "Šymə bəzynejon de zyvoni nomi ja nyvyštəj nyve, de zyvoni ISO kodi ja de vilojəti dijə karde.",
+	"uls-search-placeholder": "Zyvoni nəve",
+	"uls-search-placeholder-short": "Nəve"
 }
