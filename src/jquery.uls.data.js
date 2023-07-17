@@ -709,11 +709,23 @@
             "Iriga Bicolano"
         ],
         "bug": [
+            "Latn",
+            [
+                "AS",
+                "PA"
+            ],
+            "Basa Ugi"
+        ],
+        "bug-bugi": [
             "Bugi",
             [
-                "AS"
+                "AS",
+                "PA"
             ],
             "ᨅᨔ ᨕᨘᨁᨗ"
+        ],
+        "bug-latn": [
+            "bug"
         ],
         "bum": [
             "Latn",
@@ -3991,6 +4003,16 @@
             ],
             "srpskohrvatski"
         ],
+        "sh-cyrl": [
+            "Cyrl",
+            [
+                "EU"
+            ],
+            "српскохрватски"
+        ],
+        "sh-latn": [
+            "sh"
+        ],
         "shi-latn": [
             "Latn",
             [
@@ -4815,6 +4837,20 @@
             ],
             "Wolof"
         ],
+        "wuu-hans": [
+            "Hans",
+            [
+                "AS"
+            ],
+            "吴语（简体）"
+        ],
+        "wuu-hant": [
+            "Hant",
+            [
+                "AS"
+            ],
+            "吳語（正體）"
+        ],
         "wuu": [
             "Hans",
             [
@@ -4904,6 +4940,20 @@
                 "AM"
             ],
             "Maaya T'aan"
+        ],
+        "yue-hans": [
+            "Hans",
+            [
+                "AS"
+            ],
+            "粵语（简体）"
+        ],
+        "yue-hant": [
+            "Hant",
+            [
+                "AS"
+            ],
+            "粵語（繁體）"
         ],
         "yue": [
             "Hant",
@@ -5439,6 +5489,7 @@
         "CN": [
             "zh",
             "wuu",
+            "yue-hans",
             "yue",
             "hsn",
             "hak",
