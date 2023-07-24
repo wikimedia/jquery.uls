@@ -112,8 +112,9 @@
 			if ( this.navigationIndex === null ) {
 				this.navigationIndex = 0;
 			} else {
-				// Auto-correct the index. It has been noticed that the navigationIndex goes beyond the
-				// max index sometimes. See: phab:T328956#8854835
+				// Auto-correct the index.
+				// It has been noticed that the navigationIndex goes beyond
+				// the max index sometimes. See: phab:T328956#8854835
 				if ( this.navigationIndex > maxIndex ) {
 					this.navigationIndex = maxIndex;
 				} else {
