@@ -234,13 +234,13 @@
 	right: 83.333%;
 }
 
-.grid .row:before,
-.grid .row:after {
+.grid .row::before,
+.grid .row::after {
 	content: '';
 	display: table;
 }
 
-.grid .row:after {
+.grid .row::after {
 	clear: both;
 }
 

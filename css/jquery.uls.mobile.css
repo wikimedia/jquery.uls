@@ -44,16 +44,16 @@
 		float: none;
 	}
 
-	.uls-mobile .column:before,
-	.uls-mobile .uls-mobile .columns:before,
-	.uls-mobile .column:after,
-	.columns:after {
+	.uls-mobile .column::before,
+	.uls-mobile .uls-mobile .columns::before,
+	.uls-mobile .column::after,
+	.columns::after {
 		content: '';
 		display: table;
 	}
 
-	.uls-mobile .column:after,
-	.uls-mobile .columns:after {
+	.uls-mobile .column::after,
+	.uls-mobile .columns::after {
 		clear: both;
 	}
 
