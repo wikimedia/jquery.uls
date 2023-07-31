@@ -643,6 +643,13 @@
             ],
             "བོད་ཡིག"
         ],
+        "bol": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "bòo pìkkà"
+        ],
         "bom": [
             "Latn",
             [
@@ -2119,6 +2126,13 @@
                 "AS"
             ],
             "Jinghpaw"
+        ],
+        "kai": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Karai-karai"
         ],
         "kam": [
             "Latn",
