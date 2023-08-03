@@ -20,5 +20,6 @@
 	"uls-common-languages": "Llèngue suggerite",
 	"uls-no-results-suggestion-title": "Te po' interessà a:",
 	"uls-search-help": "Puo cercà pe nomme, nomme dd’’o script, codece ISO dd’’a lengua o naviggà nfra ’e reggiune.",
-	"uls-search-placeholder": "Truòva 'na lengua"
+	"uls-search-placeholder": "Truòva 'na lengua",
+	"uls-search-placeholder-short": "Truòva"
 }

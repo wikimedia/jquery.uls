@@ -3,6 +3,7 @@
 		"authors": [
 			"Amire80",
 			"Sagan",
+			"З. ӘЙЛЕ",
 			"Ләйсән"
 		]
 	},
@@ -15,10 +16,10 @@
 	"uls-region-ME": "Яҡын Көнсығыш",
 	"uls-region-PA": "Океания",
 	"uls-region-all": "Бөтә телдәр",
-	"uls-no-results-found": "Бер нимә лә табылманы",
+	"uls-no-results-found": "Бер нәмә лә табылманы",
 	"uls-common-languages": "Тәҡдим ителгән телдәр",
-	"uls-no-results-suggestion-title": "Бәлки, ошо телдәрҙе һайларһығыҙ:",
-	"uls-search-help": "Телдең исеме, яҙмаһы, ISO коды йәки регионы буйынса эҙләй алаһығыҙ.",
+	"uls-no-results-suggestion-title": "Бәлки, ошо телдәр ҡыҙыҡһындырыр:",
+	"uls-search-help": "Телдең исеме, яҙмаһы, ISO коды йәки төбәк буйынса эҙләй алаһығыҙ.",
 	"uls-search-placeholder": "Тел буйынса эҙләү",
 	"uls-search-placeholder-short": "Эҙләү"
 }
