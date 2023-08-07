@@ -15,5 +15,8 @@
 	"uls-region-all": "არძა ნინა",
 	"uls-no-results-found": "შედეგიქ ვეგორინჷ",
 	"uls-common-languages": "მერზიებული ნინეფი",
-	"uls-search-placeholder": "ნინაშ გორუა"
+	"uls-no-results-suggestion-title": "ეგჷბა თქვა ათე ნინეფი გოინტერესჷდანი:",
+	"uls-search-help": "გორუა შილებე ნინაშ ჯოხოთ, ჭარალუათ, ნინაშ ISO-კოდით ვარ-და რეგიონიშ მეჯინათ.",
+	"uls-search-placeholder": "ნინაშ გორუა",
+	"uls-search-placeholder-short": "გორუა"
 }
