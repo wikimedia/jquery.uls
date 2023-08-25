@@ -328,6 +328,7 @@
 
 			if ( e.keyCode === 27 ) { // escape
 				this.cancel();
+				this.$element.focus();
 				e.preventDefault();
 				e.stopPropagation();
 			}
