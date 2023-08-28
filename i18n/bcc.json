@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Baloch Afghanistan",
+			"Moshtank",
 			"Sultanselim baloch"
 		]
 	},
@@ -13,9 +14,11 @@
 	"uls-region-AS": "آسیا",
 	"uls-region-ME": "خاورمیانه",
 	"uls-region-PA": "اقیانوس آرام",
-	"uls-no-results-found": "نتیجه‌ای یافت نشد",
-	"uls-common-languages": "زبان‌های رایج",
+	"uls-region-all": "دراھیگݔن زبانان",
+	"uls-no-results-found": "چیزے نݔست اَت۔",
+	"uls-common-languages": "پݔشنھاد بیتگݔن زبانان",
 	"uls-no-results-suggestion-title": "ممکن است علاقه‌مند باشید:",
-	"uls-search-help": "شما می‌توانید بر پایه نام زبان، نام اسکریپت، کد استاندارد زبان یا بر پایه منطقه جستجو کنید:",
-	"uls-search-placeholder": "زبانء شۏھاز"
+	"uls-search-help": "شما تۏن اِت گۏن زبانءِ نام،اسکریپتءِ کد،زبانءِ استانداردی کد یا گۏن جاہءِ سرا شۏھاز بہ کن اِت:",
+	"uls-search-placeholder": "زبانء شۏھاز",
+	"uls-search-placeholder-short": "شۏھاز"
 }
