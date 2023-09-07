@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Astahar",
 			"Chavash",
 			"Salam"
 		]
@@ -17,6 +18,7 @@
 	"uls-no-results-found": "Нимӗн те тупӑнмарӗ",
 	"uls-common-languages": "Сӗннӗ чӗлхесем",
 	"uls-no-results-suggestion-title": "Тен çак чĕлхесем пăхма пултаратăр:",
-	"uls-search-help": "Чĕлхе ячĕпе, çырулăхĕпе, ISO-кочĕпе е регионĕпе шырама пулать:",
-	"uls-search-placeholder": "Чĕлхе шыра"
+	"uls-search-help": "Эсир чĕлхе ячĕпе, çырулăхĕпе, ISO-кочĕпе шырама пултаратӑр е регион тӑрӑх пӑхма.",
+	"uls-search-placeholder": "Чӗлхе шырасси",
+	"uls-search-placeholder-short": "Шыра"
 }
