@@ -1,13 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kurdbuddha"
+			"Kurdbuddha",
+			"TerranBoy"
 		]
 	},
-	"uls-region-WW": "جەهانی",
+	"uls-region-WW": "لە گشت جەهان",
+	"uls-region-SP": "تایوەت",
 	"uls-region-AM": "ئامریکا",
 	"uls-region-AF": "ئافریقا",
 	"uls-region-EU": "ئورووپا",
 	"uls-region-AS": "ئاسیا",
-	"uls-region-ME": "خوەرھەڵات ناوەڕاس"
+	"uls-region-ME": "خوەرھەڵات ناوەڕاس",
+	"uls-region-PA": "ئۆقیانووس ئارام",
+	"uls-region-all": "گشت زوانەیل",
+	"uls-search-placeholder-short": "مینەکردن"
 }
