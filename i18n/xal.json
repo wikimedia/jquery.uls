@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Алия"
+		]
+	},
+	"uls-region-WW": "Делкә-ниитин",
+	"uls-region-SP": "Шишлң",
+	"uls-region-AM": "Америк",
+	"uls-region-AF": "Африк",
+	"uls-region-EU": "Европ",
+	"uls-region-AS": "Азь",
+	"uls-region-ME": "Дундк Дорд зүг",
+	"uls-region-PA": "Номһн дала",
+	"uls-region-all": "Бүк келн",
+	"uls-no-results-found": "Үр-дүң илрсн уга",
+	"uls-common-languages": "Сана оркҗах келмүд",
+	"uls-no-results-suggestion-title": "Сана оркх",
+	"uls-search-help": "Та келәр, скриптин нерәр, келнә ISO кодар хәәҗ болна, эс гихлә бүс-нутгарнь үзҗ болна.",
+	"uls-search-placeholder": "Келнә хәәлт",
+	"uls-search-placeholder-short": "Хәәлт"
+}
