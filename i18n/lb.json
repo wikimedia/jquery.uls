@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"uls-region-WW": "Weltwäit",
@@ -11,13 +12,13 @@
 	"uls-region-AF": "Afrika",
 	"uls-region-EU": "Europa",
 	"uls-region-AS": "Asien",
-	"uls-region-ME": "Mëttleren Osten",
+	"uls-region-ME": "Noen Osten",
 	"uls-region-PA": "Pazifik",
 	"uls-region-all": "All Sproochen",
 	"uls-no-results-found": "Näischt fonnt",
 	"uls-common-languages": "Proposéiert Sproochen",
-	"uls-no-results-suggestion-title": "Dir kënnt interesséiert sinn un:",
-	"uls-search-help": "Dir kënnt mam Numm vun der Sprooch, Numm vun der Schrëft, ISO-Code vun der Sprooch oder iwwer eng Regioun sichen.",
+	"uls-no-results-suggestion-title": "Dat kéint Iech interesséieren:",
+	"uls-search-help": "Dir kënnt mam Numm vun der Sprooch, dem Numm vun der Schrëft, dem ISO-Code vun der Sprooch oder iwwer eng Regioun sichen.",
 	"uls-search-placeholder": "No enger Sprooch sichen",
 	"uls-search-placeholder-short": "Sichen"
 }
