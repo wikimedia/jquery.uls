@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Abdul Fatawu 352"
+		]
+	},
+	"uls-region-WW": "Dũniyã gill zugu",
+	"uls-region-SP": "Yel-bãnde",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Europe",
+	"uls-region-AS": "Azii",
+	"uls-region-ME": "Middle East",
+	"uls-region-PA": "Pacific",
+	"uls-region-all": "Gom-zẽna",
+	"uls-no-results-found": "Baoob-biis ka paame",
+	"uls-common-languages": "Gom-zẽna n tagse",
+	"uls-no-results-suggestion-title": "Fo yamleog toe kẽ ne",
+	"uls-search-help": "Y tõe n baoo gom-biis yʋʋr yĩnga, y tõe n baooda gom-biisi, y tõeeme n baoo buud-gomdã ISO code, wall y tõe n ges-a-la ne zĩiga.",
+	"uls-search-placeholder": "Bao-y buud-gomd",
+	"uls-search-placeholder-short": "Sã n bao n bãng"
+}

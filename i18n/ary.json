@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mr. Lechkar",
+			"Reda Benkhadra"
+		]
+	},
+	"uls-region-WW": "دولي",
+	"uls-region-SP": "خاصة",
+	"uls-region-AM": "أميريكا",
+	"uls-region-AF": "إفريقيا",
+	"uls-region-EU": "ؤروپا",
+	"uls-region-AS": "أسيا",
+	"uls-region-ME": "شّرق لأوسط",
+	"uls-region-PA": "لمحيط لمهدن",
+	"uls-region-all": "كل اللوغات",
+	"uls-common-languages": "لوغات مقتارحة",
+	"uls-search-placeholder": "قلّب على لوغة",
+	"uls-search-placeholder-short": "قلّب"
+}

@@ -2,22 +2,23 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
-			"Domo John"
+			"Domo John",
+			"Zakaria Tunsung"
 		]
 	},
 	"uls-region-WW": "Tendaa zaa",
-	"uls-region-SP": "Toɔraa kaŋ",
-	"uls-region-AM": "Amɛlika",
-	"uls-region-AF": "Nensɔgeleba paaloŋ",
-	"uls-region-EU": "Nasapaaloŋ",
+	"uls-region-SP": "Toɔraa kaŋa",
+	"uls-region-AM": "America",
+	"uls-region-AF": "Africa",
+	"uls-region-EU": "Europe",
 	"uls-region-AS": "Asia",
-	"uls-region-ME": "Maŋgaŋene Saluoni",
-	"uls-region-PA": "Pasifeke",
-	"uls-region-all": "Kɔkɔrɛɛ zaa",
-	"uls-no-results-found": "Peepa zaa kyebe",
-	"uls-common-languages": "Teɛretɔ kɔkɔrɛɛ",
-	"uls-no-results-suggestion-title": "Fo naŋ na pɔge taa a tamaa",
+	"uls-region-ME": "Tonsogo Saluoni sɛŋ",
+	"uls-region-PA": "Pacific",
+	"uls-region-all": "Kɔkɔɛ zaa",
+	"uls-no-results-found": "Bonzaa kyebe",
+	"uls-common-languages": "Teɛretɔ kɔkɔɛ",
+	"uls-no-results-suggestion-title": "Fo na baŋ pɔge taa la tamaa ne:",
 	"uls-search-help": "Fo na baŋ bɔ la a yi a kɔkɔre yuori zie, sɛgere yuori, a kɔkɔre ISO koodi bee ka fo wele a paaloŋ.",
-	"uls-search-placeholder": "Bɔ kɔkɔre kaŋ",
+	"uls-search-placeholder": "Bɔ kɔkɔre kaŋa",
 	"uls-search-placeholder-short": "Bɔ"
 }
