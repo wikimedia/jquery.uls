@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amoramah"
+		]
+	},
+	"uls-region-WW": "Timpaberɛ",
+	"uls-region-SP": "Zure",
+	"uls-region-AM": "America",
+	"uls-region-AF": "Africa",
+	"uls-region-EU": "Europe",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Middle East",
+	"uls-region-PA": "Pacific",
+	"uls-region-all": "Yeletɔgum za'a",
+	"uls-no-results-found": "Ka nyɛ lebesego",
+	"uls-common-languages": "Yeletɔgum sisesi ti ba loose",
+	"uls-no-results-suggestion-title": "Fu ta'am bɔta:",
+	"uls-search-help": "Fu ta'am dikɛ yeletɔgum yu'urɛ, gɔŋɔ yu'urɛ, ISO yeletɔgum la nɔmba bii tiŋa la yu'urɛ ɛ",
+	"uls-search-placeholder": "Ɛ yeletɔgum",
+	"uls-search-placeholder-short": "Ɛ"
+}
