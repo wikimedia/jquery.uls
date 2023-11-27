@@ -249,6 +249,13 @@
             ],
             "šāmi"
         ],
+        "apw": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "Ndee biyati'"
+        ],
         "ar": [
             "Arab",
             [
@@ -2207,6 +2214,22 @@
                 "AF"
             ],
             "Kongo"
+        ],
+        "kge": [
+            "Latn",
+            [
+                "AS",
+                "PA"
+            ],
+            "Basa Kumoring"
+        ],
+        "kge-arab": [
+            "Arab",
+            [
+                "AS",
+                "PA"
+            ],
+            "باس كوموريڠ"
         ],
         "kgp": [
             "Latn",
@@ -5905,6 +5928,7 @@
             "mak",
             "rej",
             "gor",
+            "kge",
             "sly",
             "mwv"
         ],
