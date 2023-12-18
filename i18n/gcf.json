@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Istwalezanti"
+		]
+	},
+	"uls-region-WW": "Toupatou owon latè-la",
+	"uls-region-SP": "Èspésyal",
+	"uls-region-AM": "Lanmérik",
+	"uls-region-AF": "Lafrik",
+	"uls-region-EU": "Léwòp",
+	"uls-region-AS": "Lazi",
+	"uls-region-ME": "Mwayennòyan",
+	"uls-region-PA": "Pasifik",
+	"uls-region-all": "Tout sé lang-la",
+	"uls-no-results-found": "Yo pa jwenn p'on rézilta",
+	"uls-common-languages": "Lang yo ka konséyé",
+	"uls-no-results-suggestion-title": "Sa pé kriyé-w:",
+	"uls-search-help": "Ou sav chaché é non a lang-la, èvè non a pawòl-maké-la, èvè kòd ISO a lang-la, oben ou pé drivé adan réjyon-la.",
+	"uls-search-placeholder": "Chèché on lang",
+	"uls-search-placeholder-short": "Chaché"
+}

@@ -3,22 +3,23 @@
 		"authors": [
 			"Amire80",
 			"Domo John",
+			"Linus Konkor",
 			"Zakaria Tunsung"
 		]
 	},
 	"uls-region-WW": "Tendaa zaa",
-	"uls-region-SP": "Toɔraa kaŋa",
+	"uls-region-SP": "Toɔraa",
 	"uls-region-AM": "America",
 	"uls-region-AF": "Africa",
 	"uls-region-EU": "Europe",
 	"uls-region-AS": "Asia",
-	"uls-region-ME": "Tonsogo Saluoni sɛŋ",
+	"uls-region-ME": "Sapare sɛŋ soga",
 	"uls-region-PA": "Pacific",
 	"uls-region-all": "Kɔkɔɛ zaa",
-	"uls-no-results-found": "Bonzaa kyebe",
-	"uls-common-languages": "Teɛretɔ kɔkɔɛ",
-	"uls-no-results-suggestion-title": "Fo na baŋ pɔge taa la tamaa ne:",
-	"uls-search-help": "Fo na baŋ bɔ la a yi a kɔkɔre yuori zie, sɛgere yuori, a kɔkɔre ISO koodi bee ka fo wele a paaloŋ.",
-	"uls-search-placeholder": "Bɔ kɔkɔre kaŋa",
-	"uls-search-placeholder-short": "Bɔ"
+	"uls-no-results-found": "Ba nyɛ duoro zaa",
+	"uls-common-languages": "Teɛre tɔ kɔkɔɛ",
+	"uls-no-results-suggestion-title": "Fo na baŋ taa la eŋyuo ne:",
+	"uls-search-help": "Fo na baŋ weɛre bɔ la ne kɔkɔre yuori, sɛgere yuori, kɔkɔre ISO koodi bee fo na baŋ braazi la irigyiŋ.",
+	"uls-search-placeholder": "Weɛre bɔ kɔkɔre",
+	"uls-search-placeholder-short": "Weɛre bɔ"
 }
