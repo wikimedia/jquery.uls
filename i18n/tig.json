@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bbeshir"
+		]
+	},
+	"uls-region-AM": "ኣመሪካ",
+	"uls-region-AF": "ኣፍሪቅያ",
+	"uls-region-EU": "ኡሮፓ",
+	"uls-region-AS": "ኣስያ",
+	"uls-region-all": "ኩል ሉቃት",
+	"uls-search-placeholder": "ሉቀት ሕረ",
+	"uls-search-placeholder-short": "ሕዘው"
+}

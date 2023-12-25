@@ -5,19 +5,19 @@
 			"ऐक्टिवेटेड्"
 		]
 	},
-	"uls-region-WW": "बिस्वब्यापी",
-	"uls-region-SP": "बिसेस",
+	"uls-region-WW": "बिश्वव्यापी",
+	"uls-region-SP": "बिशेष",
 	"uls-region-AM": "अमेरिका",
 	"uls-region-AF": "अफ्रीका",
 	"uls-region-EU": "यूरोप",
 	"uls-region-AS": "एसिया",
 	"uls-region-ME": "मध्धपूरब",
-	"uls-region-PA": "परसान्त",
-	"uls-region-all": "सब भासा",
-	"uls-no-results-found": "कोइयो परिनाम न मिललै",
-	"uls-common-languages": "सुझावित भासा",
-	"uls-no-results-suggestion-title": "अपनेला उपयोगी हो सकहई:",
-	"uls-search-help": "अपने भासाके नाम, लिपिके नाम, भासाके ISO कोड् से या क्षेत्र अनुसार ब्राउज् करके खोज सकही।",
-	"uls-search-placeholder": "भासा खोजी",
+	"uls-region-PA": "प्रशान्त",
+	"uls-region-all": "सगरि भाषा",
+	"uls-no-results-found": "कौनो परिनाम न मिलल",
+	"uls-common-languages": "सुझावित भाषा",
+	"uls-no-results-suggestion-title": "अपनेला उपयोगी हो सकहे :",
+	"uls-search-help": "अपने भाषाके नाम, लिपिके नाम, भासाके ISO कोड् से वा क्षेत्र अनुसार ब्राउज् करके खोज सकही ।",
+	"uls-search-placeholder": "भाषा खोजी",
 	"uls-search-placeholder-short": "खोजी"
 }
