@@ -1963,6 +1963,13 @@
             ],
             "Igbo"
         ],
+        "igb": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Ebira"
+        ],
         "igl": [
             "Latn",
             [
@@ -3307,6 +3314,13 @@
             ],
             "Sesotho sa Leboa"
         ],
+        "nup": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Nupe"
+        ],
         "nus": [
             "Latn",
             [
@@ -3517,6 +3531,15 @@
         ],
         "pes": [
             "fa"
+        ],
+        "pey": [
+            "Latn",
+            [
+                "EU",
+                "PA",
+                "AS"
+            ],
+            "Petjoh"
         ],
         "pfl": [
             "Latn",
