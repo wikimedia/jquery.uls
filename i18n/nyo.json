@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ahiise2"
+		]
+	},
+	"uls-region-WW": "Ensi yoona",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afirika",
+	"uls-region-EU": "Bulaaya",
+	"uls-region-AS": "Asiya",
+	"uls-region-ME": "Hagati y'Obuturukaizooba",
+	"uls-region-PA": "Pasifiki",
+	"uls-region-all": "Endimi zoona",
+	"uls-search-help": "Noosobora kuserra ibara ly'orulimi, ibara ly'empandiika, enyuguta z'ISO z'orulimi, rundi noosobora kuserra emyanya.",
+	"uls-search-placeholder": "Serra orulimi",
+	"uls-search-placeholder-short": "Serra"
+}
