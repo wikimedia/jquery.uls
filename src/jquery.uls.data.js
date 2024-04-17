@@ -826,7 +826,7 @@
             [
                 "AS"
             ],
-            "Mìng-dĕ̤ng-ngṳ̄"
+            "閩東語 / Mìng-dĕ̤ng-ngṳ̄"
         ],
         "cdo-hani": [
             "Hani",
@@ -909,7 +909,11 @@
             "cokwe"
         ],
         "cjy": [
-            "cjy-hant"
+            "Hant",
+            [
+                "AS"
+            ],
+            "晉語"
         ],
         "cjy-hans": [
             "Hans",
@@ -923,7 +927,7 @@
             [
                 "AS"
             ],
-            "晉語"
+            "晉語（正字）"
         ],
         "ckb": [
             "Arab",
@@ -986,7 +990,11 @@
             "Capiceño"
         ],
         "cpx": [
-            "cpx-hant"
+            "Hant",
+            [
+                "AS"
+            ],
+            "莆仙語 / Pó-sing-gṳ̂"
         ],
         "cpx-hans": [
             "Hans",
@@ -1565,7 +1573,11 @@
             "赣语（简体）"
         ],
         "gan-hant": [
-            "gan"
+            "Hant",
+            [
+                "AS"
+            ],
+            "贛語（繁體）"
         ],
         "gaz": [
             "om"
@@ -1933,6 +1945,14 @@
                 "WW"
             ],
             "interlingua"
+        ],
+        "iba": [
+            "Latn",
+            [
+                "AS",
+                "PA"
+            ],
+            "Jaku Iban"
         ],
         "ibb": [
             "Latn",
@@ -2926,6 +2946,13 @@
             ],
             "ᠮᠠᠨᠵᡠ ᡤᡳᠰᡠᠨ"
         ],
+        "mnc-latn": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Manju gisun"
+        ],
         "mni": [
             "Mtei",
             [
@@ -3104,7 +3131,7 @@
             [
                 "AS"
             ],
-            "Bân-lâm-gú"
+            "閩南語 / Bân-lâm-gú"
         ],
         "nan-hani": [
             "Hani",
@@ -3112,6 +3139,41 @@
                 "AS"
             ],
             "閩南語（漢字）"
+        ],
+        "nan-hans": [
+            "Hans",
+            [
+                "AS"
+            ],
+            "闽南语（简化汉字）"
+        ],
+        "nan-hant": [
+            "Hant",
+            [
+                "AS"
+            ],
+            "閩南語（傳統漢字）"
+        ],
+        "nan-latn": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Bân-lâm-gú (Lô-má-jī)"
+        ],
+        "nan-latn-pehoeji": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Bân-lâm-gú (Pe̍h-ōe-jī)"
+        ],
+        "nan-latn-tailo": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Bân-lâm-gú (Tâi-lô)"
         ],
         "nap": [
             "Latn",
@@ -4089,7 +4151,7 @@
             [
                 "EU"
             ],
-            "srpskohrvatski"
+            "srpskohrvatski / српскохрватски"
         ],
         "sh-cyrl": [
             "Cyrl",
@@ -4099,7 +4161,11 @@
             "српскохрватски"
         ],
         "sh-latn": [
-            "sh"
+            "Latn",
+            [
+                "EU"
+            ],
+            "srpskohrvatski"
         ],
         "shi": [
             "shi-latn"
@@ -4940,7 +5006,7 @@
             "గోండి"
         ],
         "wuu": [
-            "Hans",
+            "Hani",
             [
                 "AS"
             ],
@@ -5086,11 +5152,12 @@
             "ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ"
         ],
         "zh": [
-            "Hans",
+            "Hani",
             [
                 "AS",
                 "PA",
-                "AM"
+                "AM",
+                "WW"
             ],
             "中文"
         ],
@@ -5112,7 +5179,8 @@
             [
                 "AS",
                 "PA",
-                "AM"
+                "AM",
+                "WW"
             ],
             "中文（简体）"
         ],
@@ -5121,7 +5189,8 @@
             [
                 "AS",
                 "PA",
-                "AM"
+                "AM",
+                "WW"
             ],
             "中文（繁體）"
         ],
@@ -5161,7 +5230,7 @@
             [
                 "AS"
             ],
-            "中文（台灣）"
+            "中文（臺灣）"
         ],
         "zh-yue": [
             "yue"
@@ -5528,8 +5597,7 @@
             "mic",
             "atj",
             "war",
-            "oka",
-            "tok"
+            "oka"
         ],
         "CC": [
             "ms-arab",
@@ -5590,14 +5658,26 @@
             "ha"
         ],
         "CN": [
+            "zh-hans",
             "zh",
+            "wuu-hant",
+            "wuu-hans",
             "wuu",
             "yue-hans",
+            "yue-hant",
             "yue",
             "hsn",
+            "hak-hans",
             "hak",
+            "nan-latn-pehoeji",
+            "nan-latn-tailo",
+            "nan-hant",
+            "nan-hans",
             "nan",
+            "gan-hant",
+            "gan-hans",
             "gan",
+            "cdo",
             "ii",
             "ug-arab",
             "za",
@@ -5680,8 +5760,7 @@
             "frr",
             "dsb",
             "stq",
-            "pfl",
-            "vo"
+            "pfl"
         ],
         "DG": [
             "en"
@@ -5930,6 +6009,7 @@
         "HK": [
             "zh-hant",
             "zh",
+            "yue-hant",
             "yue",
             "en"
         ],
@@ -6355,8 +6435,16 @@
         "MY": [
             "ms",
             "en",
+            "zh-hant",
+            "zh-hans",
             "zh",
+            "nan-latn-pehoeji",
+            "nan-latn-tailo",
+            "nan-hant",
+            "nan-hans",
+            "nan",
             "ta",
+            "iba",
             "jv",
             "dtp",
             "ml",
@@ -6491,6 +6579,11 @@
             "tsg",
             "zh-hant",
             "zh",
+            "nan-latn-pehoeji",
+            "nan-latn-tailo",
+            "nan-hant",
+            "nan-hans",
+            "nan",
             "cps",
             "krj",
             "bto"
@@ -6664,6 +6757,7 @@
         ],
         "SG": [
             "en",
+            "zh-hans",
             "zh",
             "ms",
             "ta",
@@ -6840,7 +6934,20 @@
         "TW": [
             "zh-hant",
             "zh",
-            "trv"
+            "nan-latn-pehoeji",
+            "nan-latn-tailo",
+            "nan-hant",
+            "nan",
+            "hak-hant",
+            "hak",
+            "lzh",
+            "ami",
+            "szy",
+            "pwn",
+            "tay",
+            "trv",
+            "xsy",
+            "en"
         ],
         "TZ": [
             "sw",
