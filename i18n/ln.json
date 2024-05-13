@@ -1,13 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bergerdias"
+			"Bergerdias",
+			"Eruedin"
 		]
 	},
 	"uls-region-WW": "Na mokili mobimba",
 	"uls-region-SP": "Ntina",
 	"uls-region-AM": "Ameríka",
 	"uls-region-AF": "Afríka",
+	"uls-region-EU": "Erópa",
+	"uls-region-AS": "Azía",
+	"uls-region-PA": "Pasifike",
+	"uls-region-all": "Nkótá nyonso",
 	"uls-no-results-found": "Ba biyano bizuami te",
-	"uls-common-languages": "Minɔkɔ oyo epesami likanisi"
+	"uls-common-languages": "Minɔkɔ oyo epesami likanisi",
+	"uls-search-placeholder": "Luká lokótá mɔ̌kɔ́",
+	"uls-search-placeholder-short": "Boluki"
 }
