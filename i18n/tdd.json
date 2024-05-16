@@ -6,19 +6,19 @@
 			"咽頭べさ"
 		]
 	},
-	"uls-region-WW": "ᥖᥒᥰᥐᥛᥱᥚᥣᥱ",
-	"uls-region-SP": "ᥑᥪᥐᥳᥖᥩᥢᥰ",
-	"uls-region-AM": "ᥟᥛᥥᥱᥞᥤᥐ",
-	"uls-region-AF": "ᥟᥣᥱᥚᥞᥤᥐ",
-	"uls-region-EU": "ᥞᥧᥰᥞᥨᥙᥳ",
-	"uls-region-AS": "ᥟᥥᥰᥡᥣᥰ",
-	"uls-region-ME": "ᥙᥩᥖᥰᥐᥣᥒᥴᥖᥣᥒᥰᥟᥩᥐᥱ",
-	"uls-region-PA": "ᥙᥔᥤᥚᥤᥐᥳ",
+	"uls-region-WW": "ᥖᥒᥰ ᥐᥛᥱ ᥚᥣᥱ",
+	"uls-region-SP": "ᥑᥪᥐᥳ ᥖᥩᥢᥰ",
+	"uls-region-AM": "ᥟᥣ ᥛᥥᥱ ᥘᥤᥳ ᥐᥣᥳ",
+	"uls-region-AF": "ᥟᥣ ᥚᥣᥱ ᥘᥤᥳ ᥐᥤᥳ",
+	"uls-region-EU": "ᥘᥧᥰ ᥘᥨᥙᥳ",
+	"uls-region-AS": "ᥟᥥᥰ ᥡᥣᥰ",
+	"uls-region-ME": "ᥙᥩᥖᥴ ᥐᥣᥒ ᥖᥣᥒᥰ ᥟᥩᥐᥱ",
+	"uls-region-PA": "ᥙᥣ ᥔᥤᥳ ᥚᥤᥐᥳ",
 	"uls-region-all": "ᥚᥣᥱ ᥔᥣᥱ ᥑᥣᥛᥰ ᥖᥒᥰ ᥔᥥᥒᥲ",
-	"uls-no-results-found": "ᥟᥛᥱᥞᥢᥴᥚᥩᥢᥰᥘᥭᥲ",
-	"uls-common-languages": "ᥚᥣᥱᥔᥣᥱᥟᥢᥴᥓᥬᥳᥢᥛᥴ",
-	"uls-no-results-suggestion-title": "ᥓᥝᥲᥐᥝᥱᥓᥣᥒᥲᥑᥝᥲᥓᥬᥴᥙᥣᥰ:",
-	"uls-search-help": "ᥓᥝᥲᥐᥝᥱ ᥓᥣᥒᥲᥔᥩᥐᥲᥞᥣᥴᥖᥒᥰ ᥓᥪᥲᥚᥣᥱᥔᥣᥱᥐᥣᥛᥰ, ᥓᥪᥲ Script, ᥛᥣᥭᥴ ISO ᥖᥩᥢᥲᥖᥣᥱ ᥚᥣᥱᥔᥣᥱᥐᥣᥛᥰ ᥟᥢᥴᥢᥢᥴ ᥓᥝᥲᥐᥝᥱ ᥓᥣᥒᥲᥙᥪᥖᥱᥞᥣᥴ ᥖᥒᥰ ᥘᥦᥢᥴᥛᥫᥒᥰ region",
-	"uls-search-placeholder": "ᥑᥨᥢᥳᥞᥣᥴ ᥖᥣᥱᥚᥣᥱᥔᥣᥱᥐᥣᥛᥰ",
-	"uls-search-placeholder-short": "ᥑᥨᥢᥳᥞᥣᥴ"
+	"uls-no-results-found": "ᥟᥛᥱ ᥞᥢᥴ ᥚᥩᥢᥰ ᥘᥭᥲ",
+	"uls-common-languages": "ᥚᥣᥱ ᥔᥣᥱ ᥟᥢ ᥓᥬᥳ ᥘᥛᥴ",
+	"uls-no-results-suggestion-title": "ᥓᥝᥲ ᥐᥝᥱ ᥓᥣᥒ ᥑᥝᥲ ᥓᥬ ᥙᥣᥰ:",
+	"uls-search-help": "ᥓᥝᥲ ᥐᥝᥱ ᥓᥣᥒ ᥔᥩᥐ ᥞᥣᥴ ᥖᥒᥰ ᥓᥪ ᥚᥣᥱ ᥔᥣᥱ ᥑᥣᥛᥰ, ᥓᥪ Script, ᥛᥣᥭᥴ ISO ᥖᥩᥢᥲ ᥖᥣᥱ ᥚᥣᥱ ᥔᥣᥱ ᥑᥣᥛᥰ ᥟᥢ ᥘᥒᥱ ᥓᥝᥲ ᥐᥝᥱ ᥓᥣᥒ ᥙᥪᥖᥱ ᥞᥣᥴ ᥖᥒᥰ ᥘᥦᥢ ᥛᥫᥒᥰ region",
+	"uls-search-placeholder": "ᥑᥨᥢᥳ ᥞᥣᥴ ᥖᥣᥱ ᥚᥣᥱ ᥔᥣᥱ ᥑᥣᥛᥰ",
+	"uls-search-placeholder-short": "ᥑᥨᥢᥳ ᥞᥣᥴ"
 }
