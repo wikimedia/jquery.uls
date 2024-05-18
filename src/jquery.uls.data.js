@@ -1244,6 +1244,13 @@
             ],
             "Emiliàn"
         ],
+        "ekp": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "ẹkpeye"
+        ],
         "el": [
             "Grek",
             [
@@ -5384,6 +5391,7 @@
             "uz",
             "tk",
             "bgn",
+            "kaa",
             "ug-arab",
             "kk-arab",
             "kk-cyrl"
@@ -6104,7 +6112,7 @@
             "ne",
             "sat",
             "ks-arab",
-            "gom-deva",
+            "knn",
             "gbm",
             "sd",
             "doi",
@@ -6149,6 +6157,7 @@
             "bqi",
             "luz",
             "lki",
+            "kaa",
             "bgn",
             "hy",
             "ps",
@@ -6215,7 +6224,8 @@
         ],
         "KG": [
             "ky",
-            "ru"
+            "ru",
+            "kaa"
         ],
         "KH": [
             "km"
@@ -6248,7 +6258,8 @@
             "en",
             "de",
             "ug-cyrl",
-            "ug-arab"
+            "ug-arab",
+            "kaa"
         ],
         "LA": [
             "lo"
@@ -6699,6 +6710,7 @@
             "sr-cyrl",
             "vep",
             "mn",
+            "kaa",
             "izh",
             "vot",
             "cu"
@@ -6870,7 +6882,8 @@
             "tk",
             "ru",
             "uz",
-            "ku-latn"
+            "ku-latn",
+            "kaa"
         ],
         "TN": [
             "aeb-arab",
@@ -6886,6 +6899,7 @@
             "en",
             "ku-latn",
             "apc",
+            "kaa",
             "kbd",
             "az-latn",
             "az-arab",
