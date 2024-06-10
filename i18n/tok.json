@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Faian36",
 			"Robin van der Vliet",
 			"SpanishSnake",
 			"Tbodt"
@@ -19,5 +20,6 @@
 	"uls-common-languages": "ken la sina wile e toki ni",
 	"uls-no-results-suggestion-title": "ken la sina wile e toki ni:",
 	"uls-search-help": "sina ken alasa kepeken nimi toki kepeken nimi pi nasin sitelen kepeken nimi pi kulupu ISO li ken lukin e ma ale e toki ona.",
-	"uls-search-placeholder": "o alasa e toki"
+	"uls-search-placeholder": "o alasa e toki",
+	"uls-search-placeholder-short": "o alasa"
 }
