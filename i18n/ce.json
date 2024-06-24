@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Amire80",
+			"Исмаил Садуев",
 			"Умар"
 		]
 	},
 	"uls-region-WW": "Дерригдуьненан",
-	"uls-region-SP": "Леррина",
+	"uls-region-SP": "Лерринарш",
 	"uls-region-AM": "Америка",
 	"uls-region-AF": "Африка",
 	"uls-region-EU": "Европа",
@@ -15,7 +16,7 @@
 	"uls-region-PA": "Океани",
 	"uls-region-all": "Берриге меттанаш",
 	"uls-no-results-found": "Цакарийна",
-	"uls-common-languages": "Ша дӀанисбелла меттанаш",
+	"uls-common-languages": "Делла меттанаш",
 	"uls-no-results-suggestion-title": "Хьуна хӀара меттанаш хьашта хила мега:",
 	"uls-search-help": "Хьа таро йу меттан йа текстан цӀарца лаха, меттан ISO-кодаца йа регионаца хьажа.",
 	"uls-search-placeholder": "Лаха мотт",
