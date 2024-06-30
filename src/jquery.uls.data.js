@@ -601,6 +601,13 @@
             ],
             "Bislama"
         ],
+        "bin": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Ẹdo"
+        ],
         "bjn": [
             "Latn",
             [
@@ -2508,7 +2515,7 @@
                 "EU",
                 "ME"
             ],
-            "كوردي"
+            "کوردی (عەرەبی)"
         ],
         "ku-latn": [
             "Latn",
@@ -2743,6 +2750,13 @@
                 "EU"
             ],
             "lüüdi"
+        ],
+        "lue": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "chiluvale"
         ],
         "luo": [
             "Latn",
@@ -4554,7 +4568,7 @@
             [
                 "AS"
             ],
-            "ᥖᥭᥰᥖᥬᥳᥑᥨᥒᥰ"
+            "ᥖᥭᥰ ᥖᥬᥲ ᥑᥨᥒᥰ"
         ],
         "te": [
             "Telu",
@@ -4670,6 +4684,13 @@
                 "PA"
             ],
             "lea faka-Tonga"
+        ],
+        "toi": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "chitonga"
         ],
         "tok": [
             "Latn",
@@ -5004,6 +5025,13 @@
                 "PA"
             ],
             "Faka'uvea"
+        ],
+        "wlx": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "waalii"
         ],
         "wo": [
             "Latn",
@@ -6489,6 +6517,7 @@
             "efi",
             "ibb",
             "ha-arab",
+            "bin",
             "kcg",
             "ar",
             "ann"
