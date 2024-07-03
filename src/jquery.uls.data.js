@@ -1853,6 +1853,13 @@
             ],
             "Ilonggo"
         ],
+        "hke": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "kihunde"
+        ],
         "hne": [
             "Deva",
             [
@@ -2074,6 +2081,23 @@
             ],
             "awain"
         ],
+        "isv": [
+            "isv-latn"
+        ],
+        "isv-cyrl": [
+            "Cyrl",
+            [
+                "EU"
+            ],
+            "меджусловјанскы"
+        ],
+        "isv-latn": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "medžuslovjansky"
+        ],
         "it": [
             "Latn",
             [
@@ -2097,6 +2121,13 @@
                 "AS"
             ],
             "日本語"
+        ],
+        "jac": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "Abꞌxubꞌal Poptiꞌ"
         ],
         "jam": [
             "Latn",
@@ -5031,7 +5062,7 @@
             [
                 "AF"
             ],
-            "waalii"
+            "waale"
         ],
         "wo": [
             "Latn",
