@@ -33,6 +33,13 @@
             ],
             "Wôbanakiôdwawôgan"
         ],
+        "abr": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Abron"
+        ],
         "abs": [
             "Latn",
             [
@@ -53,7 +60,7 @@
             [
                 "AM"
             ],
-            "kwéyòl"
+            "Kwéyòl Sent Lisi"
         ],
         "acm": [
             "Arab",
@@ -4770,6 +4777,13 @@
             ],
             "Seediq"
         ],
+        "trw": [
+            "Arab",
+            [
+                "AS"
+            ],
+            "توروالی"
+        ],
         "ts": [
             "Latn",
             [
@@ -6008,6 +6022,7 @@
         "GH": [
             "en",
             "ee",
+            "abr",
             "gur",
             "ada",
             "gaa",
@@ -6656,7 +6671,8 @@
             "tg-cyrl",
             "bft",
             "khw",
-            "ks-arab"
+            "ks-arab",
+            "trw"
         ],
         "PL": [
             "pl",
