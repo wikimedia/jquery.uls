@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"IJzeren Jan"
+		]
+	},
+	"uls-region-WW": "Vsesvětske",
+	"uls-region-SP": "Specialne",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Evropa",
+	"uls-region-AS": "Azija",
+	"uls-region-ME": "Blizky vozhod",
+	"uls-region-PA": "Okeanija",
+	"uls-region-all": "Vse jezyky",
+	"uls-no-results-found": "Ničto ne najdeno.",
+	"uls-common-languages": "Prědložene jezyky",
+	"uls-no-results-suggestion-title": "Jezyky, ktore mogut vas interesovati:",
+	"uls-search-help": "Vy možete iskati po nazvě jezyka, nazvě pisma, ISO-kodu jezyka ili možete prěgleděti po regionu.",
+	"uls-search-placeholder": "Iskati jezyka",
+	"uls-search-placeholder-short": "Iskati"
+}
