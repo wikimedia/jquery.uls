@@ -141,6 +141,13 @@
             ],
             "अहिराणी"
         ],
+        "aii": [
+            "Syrc",
+            [
+                "ME"
+            ],
+            "ܣܘܪܝܬ"
+        ],
         "ajg": [
             "Latn",
             [
@@ -2335,6 +2342,13 @@
             ],
             "Gĩkũyũ"
         ],
+        "kip": [
+            "Deva",
+            [
+                "AS"
+            ],
+            "शेषी पाङ"
+        ],
         "kiu": [
             "Latn",
             [
@@ -3096,6 +3110,13 @@
                 "AS"
             ],
             "بهاس ملايو"
+        ],
+        "msi": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Bahasa Sabah"
         ],
         "mt": [
             "Latn",
@@ -4043,13 +4064,6 @@
         "ruq-cyrl": [
             "ruq"
         ],
-        "ruq-grek": [
-            "Grek",
-            [
-                "EU"
-            ],
-            "Megleno-Romanian (Greek script)"
-        ],
         "ruq-latn": [
             "Latn",
             [
@@ -4661,6 +4675,13 @@
             ],
             "ትግረ"
         ],
+        "tji": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "bifzivsar"
+        ],
         "tk": [
             "Latn",
             [
@@ -5237,6 +5258,13 @@
                 "AF"
             ],
             "ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ"
+        ],
+        "zgh-latn": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "tamaziɣt tanawayt"
         ],
         "zh": [
             "Hani",
