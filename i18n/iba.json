@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Song GK"
+		]
+	},
+	"uls-region-WW": "Serata dunya",
+	"uls-region-SP": "Spesial",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Eropah",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Timur Tengah",
+	"uls-region-PA": "Pasifik",
+	"uls-region-all": "Semua jaku",
+	"uls-no-results-found": "Nadai asil ditemu",
+	"uls-common-languages": "Jaku ke dichadangka",
+	"uls-no-results-suggestion-title": "Engka nuan singinka:",
+	"uls-search-help": "Nuan ulih ngiga nitihka nama jaku, nama urup, kod ISO jaku tauka nuan ulih mansik nitihka kandang menua.",
+	"uls-search-placeholder": "Giga jaku",
+	"uls-search-placeholder-short": "Giga"
+}
