@@ -1202,6 +1202,13 @@
             ],
             "डोगरी"
         ],
+        "dru": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "drekai"
+        ],
         "dsb": [
             "Latn",
             [
@@ -1222,6 +1229,13 @@
                 "AS"
             ],
             "डोटेली"
+        ],
+        "dua": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Duálá"
         ],
         "dv": [
             "Thaa",
@@ -1800,11 +1814,11 @@
             "X̱aat Kíl"
         ],
         "hak": [
-            "Latn",
+            "Hant",
             [
                 "AS"
             ],
-            "Hak-kâ-fa"
+            "客家語 \/ Hak-kâ-ngî"
         ],
         "hak-hans": [
             "Hans",
@@ -1819,6 +1833,13 @@
                 "AS"
             ],
             "客家語（繁體）"
+        ],
+        "hak-latn": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Hak-kâ-ngî (Pha̍k-fa-sṳ)"
         ],
         "haw": [
             "Latn",
@@ -3376,6 +3397,13 @@
             ],
             "norsk (høgnorsk)"
         ],
+        "nnh": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "ngiembɔɔn"
+        ],
         "no": [
             "Latn",
             [
@@ -3716,7 +3744,7 @@
             [
                 "PA"
             ],
-            "Pijin"
+            "Solomon Aelan Pijin"
         ],
         "piu": [
             "Latn",
@@ -5764,8 +5792,10 @@
             "en",
             "bum",
             "ff",
+            "nnh",
             "bkm",
             "bas",
+            "dua",
             "ar",
             "ksf",
             "ken",
