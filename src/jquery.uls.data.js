@@ -590,6 +590,13 @@
             ],
             "हरियाणवी"
         ],
+        "bgc-arab": [
+            "Arab",
+            [
+                "AS"
+            ],
+            "ہریانوی"
+        ],
         "bgn": [
             "Arab",
             [
@@ -2255,6 +2262,13 @@
             ],
             "Karai-karai"
         ],
+        "kaj": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Jju"
+        ],
         "kam": [
             "Latn",
             [
@@ -2780,6 +2794,13 @@
                 "AS"
             ],
             "ລາວ"
+        ],
+        "lou": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "Kouri-Vini"
         ],
         "loz": [
             "Latn",
@@ -4701,7 +4722,7 @@
             [
                 "AF"
             ],
-            "ትግረ"
+            "ትግሬ"
         ],
         "tji": [
             "Latn",
@@ -5378,6 +5399,14 @@
         "zh-yue": [
             "yue"
         ],
+        "zmi": [
+            "Latn",
+            [
+                "AS",
+                "PA"
+            ],
+            "Nismilan"
+        ],
         "zsm": [
             "ms"
         ],
@@ -5806,8 +5835,8 @@
         "CN": [
             "zh",
             "wuu",
-            "yue-hans",
             "yue",
+            "yue-hans",
             "hsn",
             "hak",
             "nan",
@@ -6043,6 +6072,7 @@
             "gu",
             "sco",
             "cy",
+            "ro",
             "bn",
             "ar",
             "zh-hant",
@@ -6577,6 +6607,7 @@
             "ta",
             "iba",
             "jv",
+            "zmi",
             "dtp",
             "ml",
             "bug",
@@ -6622,6 +6653,7 @@
             "ibb",
             "ha-arab",
             "bin",
+            "kaj",
             "kcg",
             "ar",
             "ann"
