@@ -210,6 +210,11 @@
 				return false;
 			}
 
+			if ( $.uls.data.isRedirect( langCode ) ) {
+				// Make sure we do not add redirects
+				return false;
+			}
+
 			if ( !this.isGroupingByRegionEnabled() ) {
 				regions = [ 'all' ];
 
