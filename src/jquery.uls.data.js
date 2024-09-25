@@ -929,12 +929,60 @@
             ],
             "Anishinaabemowin"
         ],
+        "cja": [
+            "cja-latn"
+        ],
+        "cja-arab": [
+            "Arab",
+            [
+                "AS"
+            ],
+            "چم فور"
+        ],
+        "cja-cham": [
+            "Cham",
+            [
+                "AS"
+            ],
+            "ꨌꩌ ꨚꨭꩉ"
+        ],
+        "cja-latn": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Cam pur"
+        ],
         "cjk": [
             "Latn",
             [
                 "AF"
             ],
             "cokwe"
+        ],
+        "cjm": [
+            "cjm-cham"
+        ],
+        "cjm-arab": [
+            "Arab",
+            [
+                "AS"
+            ],
+            "چم فاي"
+        ],
+        "cjm-cham": [
+            "Cham",
+            [
+                "AS"
+            ],
+            "ꨌꩌ ꨚꨰ"
+        ],
+        "cjm-latn": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Cam pai"
         ],
         "cjy": [
             "Hant",
@@ -3304,6 +3352,13 @@
             ],
             "Napulitano"
         ],
+        "naq": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Khoekhoegowab"
+        ],
         "nb": [
             "Latn",
             [
@@ -5487,6 +5542,7 @@
             "Bali",
             "Batk",
             "Bugi",
+            "Cham",
             "Java",
             "Khmr",
             "Laoo",
@@ -6390,7 +6446,8 @@
             "kaa"
         ],
         "KH": [
-            "km"
+            "km",
+            "cja-latn"
         ],
         "KI": [
             "en"
@@ -6625,6 +6682,7 @@
             "af",
             "kj",
             "ng",
+            "naq",
             "hz",
             "en",
             "de",
@@ -7185,7 +7243,8 @@
         "VN": [
             "vi",
             "zh-hant",
-            "zh"
+            "zh",
+            "cjm-cham"
         ],
         "VU": [
             "bi",
