@@ -62,6 +62,13 @@
             ],
             "Kwéyòl Sent Lisi"
         ],
+        "ach": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Acoli"
+        ],
         "acm": [
             "Arab",
             [
@@ -2390,7 +2397,7 @@
                 "AS",
                 "PA"
             ],
-            "Basa Kumoring"
+            "Kumoring"
         ],
         "kge-arab": [
             "Arab",
@@ -2398,7 +2405,7 @@
                 "AS",
                 "PA"
             ],
-            "باس كوموريڠ"
+            "كوموريڠ"
         ],
         "kgp": [
             "Latn",
@@ -2729,6 +2736,13 @@
                 "AF"
             ],
             "Kilaangi"
+        ],
+        "laj": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Lëblaŋo"
         ],
         "lb": [
             "Latn",
@@ -3103,18 +3117,21 @@
             "mvf"
         ],
         "mnc": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "manju gisun"
+        ],
+        "mnc-latn": [
+            "mnc"
+        ],
+        "mnc-mong": [
             "Mong",
             [
                 "AS"
             ],
             "ᠮᠠᠨᠵᡠ ᡤᡳᠰᡠᠨ"
-        ],
-        "mnc-latn": [
-            "Latn",
-            [
-                "AS"
-            ],
-            "Manju gisun"
         ],
         "mni": [
             "Mtei",
@@ -3129,6 +3146,14 @@
                 "AS"
             ],
             "মেইতেই লোন্"
+        ],
+        "mns": [
+            "Cyrl",
+            [
+                "EU",
+                "AS"
+            ],
+            "ма̄ньси"
         ],
         "mnw": [
             "Mymr",
@@ -7180,6 +7205,8 @@
             "lg",
             "nyn",
             "en",
+            "laj",
+            "ach",
             "rw",
             "ttj",
             "hi"
