@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"MiiCii"
+		]
+	},
+	"uls-region-WW": "Gubci jalan jecen",
+	"uls-region-SP": "Cohotoi",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afurika",
+	"uls-region-EU": "Eoropa",
+	"uls-region-AS": "Yasiya",
+	"uls-region-ME": "Dulimbai dergi",
+	"uls-region-PA": "Elhe taifin namu",
+	"uls-region-all": "Gubci gisun",
+	"uls-no-results-found": "Suwelehe šošon akū",
+	"uls-common-languages": "Tucibume gisurere gisun",
+	"uls-no-results-suggestion-title": "Aika:",
+	"uls-search-help": "Si gisun -i gebu, hergen -i gebu, gisun -i ISO kode -i songkoi suwelere, eici bana -i songkoi muwašame tuwaci ombi.",
+	"uls-search-placeholder": "Emke gisun be suwelere",
+	"uls-search-placeholder-short": "Suwelere"
+}
