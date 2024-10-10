@@ -61,6 +61,15 @@
 				// Language is unknown to ULS.
 				delete this.languages[ code ];
 			}
+
+			// Check if the language code is a redirect
+			var target = $.uls.data.isRedirect( code );
+
+			if ( target ) {
+				// Update target in the languages object and delete redirect
+				this.languages[ target ] = this.languages[ code ];
+				delete this.languages[ code ];
+			}
 		}
 
 		this.left = this.options.left;
