@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Issahiddris98"
+			"Issahiddris98",
+			"Kalakpagh"
 		]
 	},
 	"uls-region-WW": "Duniya zaa",
 	"uls-region-SP": "Din gahim",
 	"uls-region-AM": "America",
-	"uls-region-AF": "Africa",
+	"uls-region-AF": "Afirika",
 	"uls-region-EU": "Europe",
 	"uls-region-AS": "Asia",
 	"uls-region-ME": "Middle East",
@@ -15,8 +16,8 @@
 	"uls-region-all": "Zuliyanima zaa yɛltɔɣa",
 	"uls-no-results-found": "Shɛhira shɛli kani",
 	"uls-common-languages": "Zuliya shɛŋa a ni tɛhira",
-	"uls-no-results-suggestion-title": "Din tooi niŋ ka a mali kɔrisi",
-	"uls-search-help": "A ni tooi yuli bo zuliya zuliya yɛlɔɣa yuli,  ISO Coodi,zaŋti zuliya bee a ni tooi bɔm baŋ tiŋgbani shɛli ŋa ni be",
+	"uls-no-results-suggestion-title": "Din tooi niŋ ka a mali kɔrisi ni:",
+	"uls-search-help": "A ni tooi yuli bo zuliya zuliya yɛlɔɣa yuli,  ISO Coodi,zaŋ n-ti zuliya bee a ni tooi bɔhim baŋ tiŋgbani shɛli ŋa ni be",
 	"uls-search-placeholder": "Yuli bɔ zuliya yɛltɔɣa",
-	"uls-search-placeholder-short": "Yulima"
+	"uls-search-placeholder-short": "Vihi"
 }

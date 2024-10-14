@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Constraque"
+		]
+	},
+	"uls-region-WW": "Цїлосвітовы",
+	"uls-region-SP": "Шпеціалны",
+	"uls-region-AM": "Америка",
+	"uls-region-AF": "Африка",
+	"uls-region-EU": "Европа",
+	"uls-region-AS": "Азія",
+	"uls-region-ME": "Близкый выход",
+	"uls-region-PA": "Океанія",
+	"uls-region-all": "Вшыткы языкы",
+	"uls-no-results-found": "Ненайдене жадных подїй",
+	"uls-common-languages": "Предложены языкы",
+	"uls-no-results-suggestion-title": "Могло бы вас заінтересовати:",
+	"uls-search-help": "Выгяладати можете подля назву языка ці писма, коду ISO языка або подля реґіону",
+	"uls-search-placeholder": "Гляданя языка",
+	"uls-search-placeholder-short": "Глядати"
+}
