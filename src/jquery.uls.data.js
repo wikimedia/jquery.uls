@@ -1283,7 +1283,7 @@
             [
                 "AS"
             ],
-            "Dusun Bundu-liwan"
+            "Kadazandusun"
         ],
         "dty": [
             "Deva",
