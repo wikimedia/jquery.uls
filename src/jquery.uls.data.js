@@ -171,6 +171,14 @@
         "ajp-latn": [
             "apc-latn"
         ],
+        "akb": [
+            "Latn",
+            [
+                "AS",
+                "PA"
+            ],
+            "Batak Angkola"
+        ],
         "akz": [
             "Latn",
             [
@@ -750,6 +758,14 @@
             ],
             "bosanski"
         ],
+        "btd": [
+            "Latn",
+            [
+                "AS",
+                "PA"
+            ],
+            "Batak Dairi"
+        ],
         "btm": [
             "Latn",
             [
@@ -763,6 +779,30 @@
                 "AS"
             ],
             "Iriga Bicolano"
+        ],
+        "bts": [
+            "Latn",
+            [
+                "AS",
+                "PA"
+            ],
+            "Sahap Simalungun"
+        ],
+        "btx": [
+            "Latn",
+            [
+                "AS",
+                "PA"
+            ],
+            "cakap Karo"
+        ],
+        "btz": [
+            "Latn",
+            [
+                "AS",
+                "PA"
+            ],
+            "Batak Alas-Kluet"
         ],
         "bug": [
             "Latn",
@@ -810,6 +850,13 @@
                 "AF"
             ],
             "ብሊን"
+        ],
+        "byv": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Mə̀dʉ̂mbɑ̀"
         ],
         "bzj": [
             "Latn",
@@ -1018,6 +1065,13 @@
                 "ME"
             ],
             "کوردی"
+        ],
+        "cko": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Anufɔ"
         ],
         "ckt": [
             "Cyrl",
@@ -1283,7 +1337,7 @@
             [
                 "AS"
             ],
-            "Dusun Bundu-liwan"
+            "Kadazandusun"
         ],
         "dty": [
             "Deva",
@@ -2538,7 +2592,11 @@
             "ಕನ್ನಡ"
         ],
         "knc": [
-            "kr"
+            "Latn",
+            [
+                "AF"
+            ],
+            "Yerwa Kanuri"
         ],
         "knn": [
             "Deva",
@@ -3031,6 +3089,14 @@
                 "AF"
             ],
             "الحسانية"
+        ],
+        "mfa": [
+            "Latn",
+            [
+                "AS",
+                "PA"
+            ],
+            "Klate-Ttaning"
         ],
         "mfe": [
             "Latn",
@@ -5905,6 +5971,7 @@
             "nnh",
             "bkm",
             "bas",
+            "byv",
             "dua",
             "ar",
             "ksf",
@@ -7109,6 +7176,7 @@
             "th",
             "en",
             "nod",
+            "mfa",
             "zh-hant",
             "zh",
             "mnw",
