@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bbeshir"
+			"Bbeshir",
+			"IdrisSeid"
 		]
 	},
+	"uls-region-WW": "ደረጀት እዲና",
 	"uls-region-SP": "ፍንቱይ",
 	"uls-region-AM": "ኣመሪካ",
 	"uls-region-AF": "ኣፍሪቅያ",
@@ -13,7 +15,9 @@
 	"uls-region-PA": "ሰላማይ",
 	"uls-region-all": "ኩል ሉቃት",
 	"uls-no-results-found": "ፍገሪት ይትረከባኒ",
+	"uls-common-languages": "ሕሩያት ሀገጊት",
 	"uls-no-results-suggestion-title": "እሊማ ታኣምር ታሓዘ:",
+	"uls-search-help": "እብ ስሜት ሂጋ፡ ስሜት ክቱብ፡ ናይላ ሂጋ ISO ኮድ አው እብ መናጥቅ እንዴ ፈንቴኩም እግል ትሕዘው ትቀድሮ።",
 	"uls-search-placeholder": "ሉቀት ሕረ",
 	"uls-search-placeholder-short": "ሕዘው"
 }
