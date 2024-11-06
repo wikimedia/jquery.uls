@@ -3069,6 +3069,13 @@
             ],
             "Basa Banyumasan"
         ],
+        "maw": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Ŋmampulli"
+        ],
         "mcn": [
             "Latn",
             [
@@ -3082,6 +3089,14 @@
                 "EU"
             ],
             "мокшень"
+        ],
+        "mdh": [
+            "Latn",
+            [
+                "AS",
+                "PA"
+            ],
+            "Magindanawn"
         ],
         "mey": [
             "Arab",
@@ -6890,6 +6905,7 @@
             "war",
             "pam",
             "pag",
+            "mdh",
             "tsg",
             "zh-hant",
             "zh",
