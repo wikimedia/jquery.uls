@@ -493,6 +493,20 @@
         "bat-smg": [
             "sgs"
         ],
+        "bax": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Shüpamom"
+        ],
+        "bax-bamu": [
+            "Bamu",
+            [
+                "AF"
+            ],
+            "ꚶꛉ꛰꛲ꚫꛦꚳ"
+        ],
         "bbc": [
             "bbc-latn"
         ],
@@ -3804,14 +3818,17 @@
             "övdalsk"
         ],
         "pa": [
-            "pa-guru"
-        ],
-        "pa-guru": [
             "Guru",
             [
                 "AS"
             ],
             "ਪੰਜਾਬੀ"
+        ],
+        "pa-arab": [
+            "pnb"
+        ],
+        "pa-guru": [
+            "pa"
         ],
         "pag": [
             "Latn",
@@ -5373,6 +5390,13 @@
             ],
             "Manado"
         ],
+        "xon": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "likpakpaanl"
+        ],
         "xsy": [
             "Latn",
             [
@@ -5606,6 +5630,7 @@
             "Syrc"
         ],
         "African": [
+            "Bamu",
             "Copt",
             "Ethi",
             "Nkoo",
@@ -5880,6 +5905,9 @@
             "ne",
             "en"
         ],
+        "BV": [
+            "no"
+        ],
         "BW": [
             "en",
             "tn",
@@ -5899,7 +5927,7 @@
             "zh",
             "yue",
             "es",
-            "pa-guru",
+            "pa",
             "ar",
             "tl",
             "it",
@@ -5940,16 +5968,16 @@
             "en"
         ],
         "CD": [
+            "fr",
             "sw",
             "lua",
-            "fr",
             "ln",
             "kg",
             "rw"
         ],
         "CF": [
-            "fr",
             "sg",
+            "fr",
             "ln"
         ],
         "CG": [
@@ -5986,6 +6014,7 @@
             "nnh",
             "bkm",
             "bas",
+            "bax",
             "byv",
             "dua",
             "ar",
@@ -6092,10 +6121,10 @@
             "en"
         ],
         "DJ": [
+            "fr",
             "aa",
             "so",
-            "ar",
-            "fr"
+            "ar"
         ],
         "DK": [
             "da",
@@ -6140,6 +6169,7 @@
             "ar",
             "arz",
             "en",
+            "cop",
             "el"
         ],
         "EH": [
@@ -6229,7 +6259,7 @@
             "de",
             "es",
             "pl",
-            "pa-guru",
+            "pa",
             "ur",
             "ta",
             "gu",
@@ -6259,7 +6289,8 @@
             "hy",
             "ab",
             "os",
-            "ku-latn"
+            "ku-latn",
+            "lzz"
         ],
         "GF": [
             "fr",
@@ -6317,7 +6348,11 @@
             "tr",
             "bg",
             "sq",
-            "tsd"
+            "tsd",
+            "grc"
+        ],
+        "GS": [
+            "en"
         ],
         "GT": [
             "es",
@@ -6329,6 +6364,7 @@
         ],
         "GW": [
             "pt",
+            "fr",
             "ff"
         ],
         "GY": [
@@ -6388,7 +6424,8 @@
             "gor",
             "kge",
             "sly",
-            "mwv"
+            "mwv",
+            "ban-bali"
         ],
         "IE": [
             "en",
@@ -6426,7 +6463,7 @@
             "kn",
             "ml",
             "or",
-            "pa-guru",
+            "pa",
             "bho",
             "awa",
             "as",
@@ -6544,7 +6581,7 @@
             "pko",
             "om",
             "ar",
-            "pa-guru",
+            "pa",
             "gu"
         ],
         "KG": [
@@ -6594,10 +6631,10 @@
             "apc",
             "ar",
             "en",
+            "fr",
             "hy",
             "ku-arab",
-            "ku-latn",
-            "fr"
+            "ku-latn"
         ],
         "LC": [
             "en"
@@ -6649,8 +6686,8 @@
         "MA": [
             "ary",
             "ar",
-            "zgh",
             "fr",
+            "zgh",
             "en",
             "tzm",
             "shi-latn",
@@ -6714,8 +6751,11 @@
         "MO": [
             "zh-hant",
             "zh",
-            "pt",
-            "en"
+            "yue",
+            "en",
+            "nan",
+            "tl",
+            "pt"
         ],
         "MP": [
             "en",
@@ -6741,10 +6781,10 @@
         ],
         "MU": [
             "mfe",
+            "fr",
             "en",
             "bho",
             "ur",
-            "fr",
             "ta"
         ],
         "MV": [
@@ -6915,7 +6955,8 @@
         ],
         "PK": [
             "ur",
-            "pa-guru",
+            "pnb",
+            "pa",
             "en",
             "ps",
             "sd",
@@ -7035,6 +7076,7 @@
             "krl",
             "lbe",
             "koi",
+            "pnt",
             "mrj",
             "alt",
             "fi",
@@ -7088,7 +7130,7 @@
             "ms",
             "ta",
             "ml",
-            "pa-guru"
+            "pa"
         ],
         "SH": [
             "en"
@@ -7148,10 +7190,12 @@
             "nus"
         ],
         "ST": [
-            "pt"
+            "pt",
+            "fr"
         ],
         "SV": [
-            "es"
+            "es",
+            "ppl"
         ],
         "SX": [
             "en",
@@ -7178,8 +7222,8 @@
             "en"
         ],
         "TD": [
-            "fr",
-            "ar"
+            "ar",
+            "fr"
         ],
         "TF": [
             "fr"
@@ -7205,7 +7249,8 @@
             "ar"
         ],
         "TK": [
-            "en"
+            "en",
+            "sm"
         ],
         "TL": [
             "pt",
@@ -7232,7 +7277,6 @@
             "en",
             "ku-latn",
             "apc",
-            "kaa",
             "kbd",
             "az-latn",
             "az-arab",
@@ -7240,12 +7284,14 @@
             "bg",
             "ady",
             "kiu",
+            "kaa",
             "hy",
             "ka",
             "sr-latn",
             "sr-cyrl",
             "lzz",
             "sq",
+            "pnt",
             "ab",
             "el",
             "tru",
@@ -7263,6 +7309,10 @@
         "TW": [
             "zh-hant",
             "zh",
+            "nan-hant",
+            "nan",
+            "hak-hant",
+            "hak",
             "trv"
         ],
         "TZ": [
@@ -7363,8 +7413,8 @@
             "fr"
         ],
         "WF": [
-            "wls",
-            "fr"
+            "fr",
+            "wls"
         ],
         "WS": [
             "sm",
@@ -7402,9 +7452,12 @@
         ],
         "ZM": [
             "bem",
-            "en",
             "ny",
-            "loz"
+            "en",
+            "toi",
+            "loz",
+            "tum",
+            "lue"
         ],
         "ZW": [
             "sn",
