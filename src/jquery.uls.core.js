@@ -26,12 +26,12 @@
 	template = '<div class="grid uls-menu"> \
 			<div id="search" class="row uls-search"> \
 				<div class="uls-search-wrapper"> \
-					<label class="uls-search-label" for="uls-languagefilter"></label>\
+					<label class="uls-search-label skin-invert" for="uls-languagefilter"></label>\
 					<div class="uls-search-input-wrapper">\
 						<span class="uls-languagefilter-clear"></span>\
 						<input type="text" class="uls-filterinput uls-filtersuggestion"\
 							disabled="true" autocomplete="off">\
-						<input type="text" class="uls-filterinput uls-languagefilter"\
+						<input type="text" class="uls-filterinput uls-languagefilter skin-invert"\
 							maxlength="40"\
 							data-clear="uls-languagefilter-clear"\
 							data-suggestion="uls-filtersuggestion"\
