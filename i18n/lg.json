@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ssemmanda will"
+		]
+	},
+	"uls-region-WW": "Mu nsi yonna",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Bulaaya",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Ekyondo kya Buwarabu",
+	"uls-region-PA": "Pacific",
+	"uls-region-all": "Ennimi zonna",
+	"uls-no-results-found": "Tewali bizuuliddwa",
+	"uls-common-languages": "Ennimi eziteeseddwa",
+	"uls-no-results-suggestion-title": "Oyinza okwagala ne:",
+	"uls-search-help": "Osobola okunoonya ng'okozesa erinnya ly'olulimi, erinnya ly'ekiwandiiko, koodi y'olulimi eya ISO oba osobola okunoonya okusinziira ku kitundu.",
+	"uls-search-placeholder": "Noonya olulimi",
+	"uls-search-placeholder-short": "Noonya"
+}
