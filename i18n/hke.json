@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Muisha wiki hke"
+		]
+	},
+	"uls-region-WW": "Ineulu hoshi",
+	"uls-region-SP": "Kahǐye",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afurika",
+	"uls-region-EU": "Burǎya",
+	"uls-region-AS": "Asǐya",
+	"uls-region-ME": "Malengetsuba ma hakǎti",
+	"uls-region-PA": "Pasifike",
+	"uls-region-all": "Mineendere yoshi",
+	"uls-no-results-found": "Ndabonekitse kindu",
+	"uls-common-languages": "Mineenere yoiri ho",
+	"uls-no-results-suggestion-title": "Halimo kashangi wangalaa ku:",
+	"uls-search-help": "Wangaxondera kwe tsina ra muneenere, neri kwe tsina ra maandiko, neri kwa muancho wa ISO y'amuneenere. Neri, wangaxondera ku kyango",
+	"uls-search-placeholder": "Xonda muneenere",
+	"uls-search-placeholder-short": "Xonderetsa"
+}
