@@ -1671,6 +1671,13 @@
             ],
             "Nordfriisk"
         ],
+        "frs": [
+            "Latn",
+            [
+                "EU"
+            ],
+            "Oostfräisk"
+        ],
         "fuf": [
             "Latn",
             [
@@ -2885,6 +2892,14 @@
                 "EU"
             ],
             "Līvõ kēļ"
+        ],
+        "ljp": [
+            "Latn",
+            [
+                "AS",
+                "PA"
+            ],
+            "Lampung Api"
         ],
         "lki": [
             "Arab",
@@ -4213,6 +4228,13 @@
             ],
             "kaalengo tšimb"
         ],
+        "rml-cyrl": [
+            "Cyrl",
+            [
+                "EU"
+            ],
+            "романы"
+        ],
         "rmy": [
             "Latn",
             [
@@ -4887,6 +4909,13 @@
                 "AS"
             ],
             "ไทย"
+        ],
+        "thr": [
+            "Deva",
+            [
+                "AS"
+            ],
+            "राना थारू"
         ],
         "ti": [
             "Ethi",
@@ -5924,41 +5953,41 @@
         "CA": [
             "en",
             "fr",
-            "zh",
-            "yue",
             "es",
+            "zh",
             "pa",
             "ar",
+            "hi",
             "tl",
+            "yue",
             "it",
             "de",
             "ur",
-            "fa",
             "pt",
             "ru",
-            "hi",
             "ta",
             "vi",
+            "fa",
+            "gu",
             "pl",
             "ko",
-            "gu",
             "el",
-            "ro",
-            "bn",
-            "pdt",
             "uk",
-            "sr-cyrl",
+            "bn",
+            "ro",
             "nl",
             "ja",
+            "sr-cyrl",
+            "tr",
+            "hr",
             "hu",
             "so",
-            "hr",
             "ike-cans",
-            "tr",
+            "pdt",
             "moe",
-            "cr",
             "mic",
             "atj",
+            "cr",
             "war",
             "oka"
         ],
@@ -6114,6 +6143,7 @@
             "hsb",
             "frr",
             "dsb",
+            "frs",
             "stq",
             "pfl"
         ],
@@ -6420,6 +6450,7 @@
             "zh-hant",
             "zh",
             "mak",
+            "ljp",
             "rej",
             "gor",
             "kge",
@@ -6893,6 +6924,7 @@
             "en",
             "dty",
             "awa",
+            "thr",
             "hi",
             "bo",
             "bn"
