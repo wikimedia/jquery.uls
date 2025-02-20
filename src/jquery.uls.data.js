@@ -4936,14 +4936,14 @@
             "tetun"
         ],
         "tg": [
-            "tg-cyrl"
-        ],
-        "tg-cyrl": [
             "Cyrl",
             [
                 "AS"
             ],
             "тоҷикӣ"
+        ],
+        "tg-cyrl": [
+            "tg"
         ],
         "tg-latn": [
             "Latn",
