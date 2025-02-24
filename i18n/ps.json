@@ -14,13 +14,13 @@
 	"uls-region-AF": "افريقا",
 	"uls-region-EU": "اروپا",
 	"uls-region-AS": "اسيا",
-	"uls-region-ME": "منځنی ختيځ",
-	"uls-region-PA": "ارام سمندر",
+	"uls-region-ME": "منځنی‌ختيځ",
+	"uls-region-PA": "غلی‌سمندر",
 	"uls-region-all": "ټولې ژبې",
 	"uls-no-results-found": "پايلې و  نه موندل شوې",
 	"uls-common-languages": "وړانديز شوې ژبې",
 	"uls-no-results-suggestion-title": "کېدای شي تاسې يې لېواله اوسئ:",
-	"uls-search-help": "تاسې د  ژبې د نوم له مخې، د سکرېپټ نوم، د ژبې د آيسو کوډ له مخې او يا هم د سيمې له مخې پلټنې کولی شئ:",
+	"uls-search-help": "تاسې د  ژبې نوم، سکرېپټ نوم، د ژبې د ISO کوډ او يا د سيمې له مخې پلټنې کولی شئ:",
 	"uls-search-placeholder": "د يوې ژبې پلټنه",
 	"uls-search-placeholder-short": "پلټنه"
 }
