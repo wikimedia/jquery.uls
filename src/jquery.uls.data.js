@@ -7054,7 +7054,7 @@
             "brh",
             "fa",
             "bgn",
-            "tg-cyrl",
+            "tg",
             "bft",
             "khw",
             "ks-arab",
@@ -7332,7 +7332,7 @@
             "shn"
         ],
         "TJ": [
-            "tg-cyrl",
+            "tg",
             "ru",
             "fa",
             "ar"
