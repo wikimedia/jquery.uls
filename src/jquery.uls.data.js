@@ -3364,6 +3364,13 @@
             ],
             "кырык мары"
         ],
+        "mrt": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Margi"
+        ],
         "mrv": [
             "Latn",
             [
@@ -3920,7 +3927,7 @@
             [
                 "AM"
             ],
-            "Papiamento"
+            "Papiamento (Aruba)"
         ],
         "pbb": [
             "Latn",
@@ -5999,12 +6006,13 @@
             "af"
         ],
         "BY": [
-            "be",
-            "ru"
+            "ru",
+            "be"
         ],
         "BZ": [
             "en",
-            "es"
+            "es",
+            "bzj"
         ],
         "CA": [
             "en",
@@ -6442,7 +6450,10 @@
         ],
         "GT": [
             "es",
-            "quc"
+            "cak",
+            "quc",
+            "en",
+            "jac"
         ],
         "GU": [
             "en",
@@ -6627,6 +6638,7 @@
             "sc",
             "de",
             "vec",
+            "pms",
             "nap",
             "lij",
             "scn",
@@ -6637,7 +6649,6 @@
             "lld",
             "ca",
             "el",
-            "pms",
             "hr",
             "rgn"
         ],
@@ -7054,7 +7065,7 @@
             "brh",
             "fa",
             "bgn",
-            "tg-cyrl",
+            "tg",
             "bft",
             "khw",
             "ks-arab",
@@ -7169,7 +7180,6 @@
             "mrj",
             "alt",
             "fi",
-            "sr-latn",
             "sr-cyrl",
             "vep",
             "mn",
@@ -7332,7 +7342,7 @@
             "shn"
         ],
         "TJ": [
-            "tg-cyrl",
+            "tg",
             "ru",
             "fa",
             "ar"
