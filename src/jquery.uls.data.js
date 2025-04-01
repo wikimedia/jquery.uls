@@ -3927,7 +3927,7 @@
             [
                 "AM"
             ],
-            "Papiamento"
+            "Papiamento (Aruba)"
         ],
         "pbb": [
             "Latn",
@@ -6011,7 +6011,8 @@
         ],
         "BZ": [
             "en",
-            "es"
+            "es",
+            "bzj"
         ],
         "CA": [
             "en",
@@ -6449,7 +6450,10 @@
         ],
         "GT": [
             "es",
-            "quc"
+            "cak",
+            "quc",
+            "en",
+            "jac"
         ],
         "GU": [
             "en",
