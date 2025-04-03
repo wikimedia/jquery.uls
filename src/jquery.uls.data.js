@@ -2020,6 +2020,13 @@
             ],
             "Hak-kâ-ngî (Pha̍k-fa-sṳ)"
         ],
+        "hav": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Kihavu"
+        ],
         "haw": [
             "Latn",
             [
@@ -5847,6 +5854,7 @@
         ],
         "AM": [
             "hy",
+            "ru",
             "ku-latn",
             "az-latn"
         ],
@@ -6240,6 +6248,7 @@
             "arq",
             "ar",
             "fr",
+            "mey",
             "kab",
             "en"
         ],
@@ -6267,7 +6276,8 @@
             "el"
         ],
         "EH": [
-            "ar"
+            "ar",
+            "mey"
         ],
         "ER": [
             "ti",
@@ -6790,6 +6800,7 @@
             "tzm",
             "shi-latn",
             "rif",
+            "mey",
             "es"
         ],
         "MC": [
@@ -6851,6 +6862,7 @@
             "zh",
             "yue",
             "en",
+            "nan-hant",
             "nan",
             "tl",
             "pt"
@@ -6863,6 +6875,7 @@
             "fr"
         ],
         "MR": [
+            "mey",
             "ar",
             "fr",
             "ff",
