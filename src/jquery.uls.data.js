@@ -2107,7 +2107,14 @@
             [
                 "AS"
             ],
-            "𑢹𑣉𑣉 𑣎𑣋𑣜"
+            "𑢹𑣉𑣉"
+        ],
+        "hoc-latn": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Ho"
         ],
         "hr": [
             "Latn",
@@ -4138,6 +4145,13 @@
                 "AS"
             ],
             "pinayuanan"
+        ],
+        "pzh": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Pazeh"
         ],
         "qu": [
             "Latn",
@@ -6381,7 +6395,8 @@
             "tr",
             "ga",
             "gd",
-            "kw"
+            "kw",
+            "pi"
         ],
         "GD": [
             "en"
@@ -6599,7 +6614,8 @@
             "bft",
             "sa",
             "dv",
-            "dz"
+            "dz",
+            "pi"
         ],
         "IO": [
             "en"
@@ -6608,6 +6624,8 @@
             "ar",
             "en",
             "ckb",
+            "ku-arab",
+            "ku-latn",
             "az-arab",
             "az-latn",
             "fa",
@@ -6619,7 +6637,6 @@
             "az-latn",
             "mzn",
             "glk",
-            "ckb",
             "sdh",
             "tk",
             "lrc",
@@ -6628,6 +6645,9 @@
             "luz",
             "lki",
             "kaa",
+            "ckb",
+            "ku-arab",
+            "ku-latn",
             "bgn",
             "hy",
             "ps",
@@ -6754,7 +6774,8 @@
         "LK": [
             "si",
             "ta",
-            "en"
+            "en",
+            "pi"
         ],
         "LR": [
             "en",
@@ -6846,7 +6867,8 @@
             "shn",
             "kac",
             "rhg",
-            "mnw"
+            "mnw",
+            "pi"
         ],
         "MN": [
             "mn",
@@ -7352,7 +7374,8 @@
             "zh-hant",
             "zh",
             "mnw",
-            "shn"
+            "shn",
+            "pi"
         ],
         "TJ": [
             "tg",
