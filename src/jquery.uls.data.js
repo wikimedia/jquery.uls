@@ -2020,6 +2020,13 @@
             ],
             "Hak-kâ-ngî (Pha̍k-fa-sṳ)"
         ],
+        "hav": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Kihavu"
+        ],
         "haw": [
             "Latn",
             [
@@ -2100,7 +2107,14 @@
             [
                 "AS"
             ],
-            "𑢹𑣉𑣉 𑣎𑣋𑣜"
+            "𑢹𑣉𑣉"
+        ],
+        "hoc-latn": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Ho"
         ],
         "hr": [
             "Latn",
@@ -4132,6 +4146,13 @@
             ],
             "pinayuanan"
         ],
+        "pzh": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Pazeh"
+        ],
         "qu": [
             "Latn",
             [
@@ -5847,6 +5868,7 @@
         ],
         "AM": [
             "hy",
+            "ru",
             "ku-latn",
             "az-latn"
         ],
@@ -6240,6 +6262,7 @@
             "arq",
             "ar",
             "fr",
+            "mey",
             "kab",
             "en"
         ],
@@ -6267,7 +6290,8 @@
             "el"
         ],
         "EH": [
-            "ar"
+            "ar",
+            "mey"
         ],
         "ER": [
             "ti",
@@ -6371,7 +6395,8 @@
             "tr",
             "ga",
             "gd",
-            "kw"
+            "kw",
+            "pi"
         ],
         "GD": [
             "en"
@@ -6589,7 +6614,8 @@
             "bft",
             "sa",
             "dv",
-            "dz"
+            "dz",
+            "pi"
         ],
         "IO": [
             "en"
@@ -6598,6 +6624,8 @@
             "ar",
             "en",
             "ckb",
+            "ku-arab",
+            "ku-latn",
             "az-arab",
             "az-latn",
             "fa",
@@ -6609,7 +6637,6 @@
             "az-latn",
             "mzn",
             "glk",
-            "ckb",
             "sdh",
             "tk",
             "lrc",
@@ -6618,6 +6645,9 @@
             "luz",
             "lki",
             "kaa",
+            "ckb",
+            "ku-arab",
+            "ku-latn",
             "bgn",
             "hy",
             "ps",
@@ -6744,7 +6774,8 @@
         "LK": [
             "si",
             "ta",
-            "en"
+            "en",
+            "pi"
         ],
         "LR": [
             "en",
@@ -6790,6 +6821,7 @@
             "tzm",
             "shi-latn",
             "rif",
+            "mey",
             "es"
         ],
         "MC": [
@@ -6835,7 +6867,8 @@
             "shn",
             "kac",
             "rhg",
-            "mnw"
+            "mnw",
+            "pi"
         ],
         "MN": [
             "mn",
@@ -6851,6 +6884,7 @@
             "zh",
             "yue",
             "en",
+            "nan-hant",
             "nan",
             "tl",
             "pt"
@@ -6863,6 +6897,7 @@
             "fr"
         ],
         "MR": [
+            "mey",
             "ar",
             "fr",
             "ff",
@@ -7339,7 +7374,8 @@
             "zh-hant",
             "zh",
             "mnw",
-            "shn"
+            "shn",
+            "pi"
         ],
         "TJ": [
             "tg",
