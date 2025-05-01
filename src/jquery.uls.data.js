@@ -4440,6 +4440,13 @@
             ],
             "саха тыла"
         ],
+        "sas": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Sasak"
+        ],
         "sat": [
             "Olck",
             [
@@ -6538,6 +6545,7 @@
             "bjn",
             "ace",
             "ms-arab",
+            "sas",
             "bbc-latn",
             "zh-hant",
             "zh",
