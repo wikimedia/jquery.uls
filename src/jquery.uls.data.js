@@ -1206,6 +1206,13 @@
             ],
             "Nēhiyawēwin"
         ],
+        "crg": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "Michif"
+        ],
         "crh": [
             "Latn",
             [
@@ -4440,6 +4447,13 @@
             ],
             "саха тыла"
         ],
+        "sas": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Sasak"
+        ],
         "sat": [
             "Olck",
             [
@@ -6075,6 +6089,7 @@
             "atj",
             "cr",
             "war",
+            "crg",
             "oka"
         ],
         "CC": [
@@ -6538,6 +6553,7 @@
             "bjn",
             "ace",
             "ms-arab",
+            "sas",
             "bbc-latn",
             "zh-hant",
             "zh",
