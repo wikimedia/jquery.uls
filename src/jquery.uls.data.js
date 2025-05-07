@@ -1206,6 +1206,13 @@
             ],
             "Nēhiyawēwin"
         ],
+        "crg": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "Michif"
+        ],
         "crh": [
             "Latn",
             [
@@ -6082,6 +6089,7 @@
             "atj",
             "cr",
             "war",
+            "crg",
             "oka"
         ],
         "CC": [
