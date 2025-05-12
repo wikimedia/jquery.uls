@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Foomin10",
 			"Fryed-peach",
 			"MathXplore",
 			"Otokoume",
@@ -20,7 +21,7 @@
 	"uls-no-results-found": "見つかりませんでした",
 	"uls-common-languages": "提案された言語",
 	"uls-no-results-suggestion-title": "もしかして:",
-	"uls-search-help": "言語名、文字体系名、言語の ISO コードで検索できます。地域別の一覧から選択することもできます。",
+	"uls-search-help": "言語名、文字体系名、言語 ISO コードで検索できます。地域別の一覧から選択することもできます。",
 	"uls-search-placeholder": "言語を検索",
 	"uls-search-placeholder-short": "検索"
 }
