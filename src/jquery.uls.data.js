@@ -2760,14 +2760,14 @@
             "Karjala"
         ],
         "ks": [
-            "ks-arab"
-        ],
-        "ks-arab": [
             "Arab",
             [
                 "AS"
             ],
             "کٲشُر"
+        ],
+        "ks-arab": [
+            "ks"
         ],
         "ks-deva": [
             "Deva",
