@@ -4191,6 +4191,13 @@
             ],
             "anqash qichwa"
         ],
+        "qxp": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "Punu qhichwa"
+        ],
         "rag": [
             "Latn",
             [
@@ -6174,6 +6181,7 @@
             "kk-cyrl",
             "ky",
             "tdd",
+            "mww-latn",
             "en",
             "ru",
             "vi",
@@ -6612,7 +6620,7 @@
             "hne",
             "ne",
             "sat",
-            "ks-arab",
+            "ks",
             "knn",
             "gbm",
             "sd",
@@ -7119,7 +7127,7 @@
             "tg",
             "bft",
             "khw",
-            "ks-arab",
+            "ks",
             "trw"
         ],
         "PL": [
@@ -7511,6 +7519,7 @@
             "vi",
             "ko",
             "ru",
+            "mww-latn",
             "nv",
             "yi",
             "pdc",
