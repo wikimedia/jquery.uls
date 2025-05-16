@@ -1206,6 +1206,13 @@
             ],
             "Nēhiyawēwin"
         ],
+        "crg": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "Michif"
+        ],
         "crh": [
             "Latn",
             [
@@ -2753,14 +2760,14 @@
             "Karjala"
         ],
         "ks": [
-            "ks-arab"
-        ],
-        "ks-arab": [
             "Arab",
             [
                 "AS"
             ],
             "کٲشُر"
+        ],
+        "ks-arab": [
+            "ks"
         ],
         "ks-deva": [
             "Deva",
@@ -4184,6 +4191,13 @@
             ],
             "anqash qichwa"
         ],
+        "qxp": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "Punu qhichwa"
+        ],
         "rag": [
             "Latn",
             [
@@ -4439,6 +4453,13 @@
                 "AS"
             ],
             "саха тыла"
+        ],
+        "sas": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Sasak"
         ],
         "sat": [
             "Olck",
@@ -6075,6 +6096,7 @@
             "atj",
             "cr",
             "war",
+            "crg",
             "oka"
         ],
         "CC": [
@@ -6159,6 +6181,7 @@
             "kk-cyrl",
             "ky",
             "tdd",
+            "mww-latn",
             "en",
             "ru",
             "vi",
@@ -6538,6 +6561,7 @@
             "bjn",
             "ace",
             "ms-arab",
+            "sas",
             "bbc-latn",
             "zh-hant",
             "zh",
@@ -6596,7 +6620,7 @@
             "hne",
             "ne",
             "sat",
-            "ks-arab",
+            "ks",
             "knn",
             "gbm",
             "sd",
@@ -7103,7 +7127,7 @@
             "tg",
             "bft",
             "khw",
-            "ks-arab",
+            "ks",
             "trw"
         ],
         "PL": [
@@ -7495,6 +7519,7 @@
             "vi",
             "ko",
             "ru",
+            "mww-latn",
             "nv",
             "yi",
             "pdc",
