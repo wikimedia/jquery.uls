@@ -4,6 +4,7 @@
 			"6ahodir",
 			"Akmalzhon",
 			"CoderSI",
+			"Mainculprit",
 			"Nataev",
 			"Таржимон"
 		]
@@ -20,5 +21,6 @@
 	"uls-common-languages": "Avtomatik tanlangan tillar",
 	"uls-no-results-suggestion-title": "Sizni qiziqtirishi mumkin:",
 	"uls-search-help": "Til hamda yozuv nomi yoki ISO kod bilan izlashingiz mumkin. Hudud boʻyicha koʻrib chiqishingiz ham mumkin.",
-	"uls-search-placeholder": "Qidiruv tili"
+	"uls-search-placeholder": "Qidiruv tili",
+	"uls-search-placeholder-short": "Qidiring"
 }
