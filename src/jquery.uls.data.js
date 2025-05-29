@@ -421,15 +421,15 @@
             "Aymar aru"
         ],
         "az": [
-            "az-latn"
-        ],
-        "az-arab": [
-            "Arab",
+            "Latn",
             [
-                "AS",
+                "EU",
                 "ME"
             ],
-            "تۆرکجه"
+            "azərbaycanca"
+        ],
+        "az-arab": [
+            "azb"
         ],
         "az-cyrl": [
             "Cyrl",
@@ -440,18 +440,18 @@
             "азәрбајҹанҹа"
         ],
         "az-latn": [
-            "Latn",
-            [
-                "EU",
-                "ME"
-            ],
-            "azərbaycanca"
+            "az"
         ],
         "azb": [
-            "az-arab"
+            "Arab",
+            [
+                "AS",
+                "ME"
+            ],
+            "تۆرکجه"
         ],
         "azj": [
-            "az-latn"
+            "az"
         ],
         "ba": [
             "Cyrl",
@@ -7630,7 +7630,6 @@
         ]
     }
 }
-
 		}( jQuery ) );
 	}, {} ]
 }, {}, [ 1 ] );
