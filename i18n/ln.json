@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Bergerdias",
-			"Eruedin"
+			"Eruedin",
+			"Lydie maliki"
 		]
 	},
 	"uls-region-WW": "Na mokili mobimba",
@@ -11,10 +12,13 @@
 	"uls-region-AF": "Afríka",
 	"uls-region-EU": "Erópa",
 	"uls-region-AS": "Azía",
+	"uls-region-ME": "Moyen-Orient",
 	"uls-region-PA": "Pasifike",
 	"uls-region-all": "Nkótá nyonso",
 	"uls-no-results-found": "Ba biyano bizuami te",
 	"uls-common-languages": "Minɔkɔ oyo epesami likanisi",
+	"uls-no-results-suggestion-title": "Okoki kosepela na makambo oyo:",
+	"uls-search-help": "Okoki koluka na nkombo ya monoko, nkombo ya script, code ISO ya monoko to okoki kotala na etuka.",
 	"uls-search-placeholder": "Luká lokótá mɔ̌kɔ́",
 	"uls-search-placeholder-short": "Boluki"
 }

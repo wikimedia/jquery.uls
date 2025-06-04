@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Singkiring57"
+		]
+	},
+	"uls-region-WW": "Otesai goṭa",
+	"uls-region-SP": "Bagetingu",
+	"uls-region-AM": "America",
+	"uls-region-AF": "Africa",
+	"uls-region-EU": "Europe",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Middle East",
+	"uls-region-PA": "Pacific",
+	"uls-region-all": "Saben Jagar ko",
+	"uls-no-results-found": "Jahnaḱ ká nam eana.",
+	"uls-common-languages": "Jagar ko inguldenga:",
+	"uls-no-results-suggestion-title": "Nena kom sala sanaṅ redo:",
+	"uls-search-help": "Jagar Nutum te, Oljumpa Nutum te, Jagar reaḱ ISO Code te baredo Region Nutum te ó nelsangar daeoḱa.",
+	"uls-search-placeholder": "Miat́ Jagar nelsangarè",
+	"uls-search-placeholder-short": "Nelsangarè"
+}
