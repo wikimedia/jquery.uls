@@ -4205,6 +4205,13 @@
             ],
             "Lologooli"
         ],
+        "raj": [
+            "Deva",
+            [
+                "AS"
+            ],
+            "राजस्थानी"
+        ],
         "rap": [
             "Latn",
             [
@@ -5891,7 +5898,7 @@
             "hy",
             "ru",
             "ku-latn",
-            "az-latn"
+            "az"
         ],
         "AO": [
             "pt",
@@ -5934,7 +5941,7 @@
             "sv"
         ],
         "AZ": [
-            "az-latn",
+            "az",
             "az-cyrl",
             "tly",
             "ku-latn",
@@ -6389,6 +6396,7 @@
             "nl",
             "eu",
             "frp",
+            "mww-latn",
             "ia"
         ],
         "GA": [
@@ -6628,6 +6636,7 @@
             "tcy",
             "brx",
             "mni",
+            "raj",
             "hoc",
             "saz",
             "ccp",
@@ -6650,15 +6659,15 @@
             "ckb",
             "ku-arab",
             "ku-latn",
-            "az-arab",
-            "az-latn",
+            "azb",
+            "az",
             "fa",
             "lrc"
         ],
         "IR": [
             "fa",
-            "az-arab",
-            "az-latn",
+            "azb",
+            "az",
             "mzn",
             "glk",
             "sdh",
@@ -6777,7 +6786,8 @@
             "kaa"
         ],
         "LA": [
-            "lo"
+            "lo",
+            "mww-latn"
         ],
         "LB": [
             "apc",
@@ -7230,7 +7240,7 @@
             "inh",
             "tyv",
             "az-cyrl",
-            "az-latn",
+            "az",
             "ady",
             "krl",
             "lbe",
@@ -7399,6 +7409,7 @@
             "zh",
             "mnw",
             "shn",
+            "mww-latn",
             "pi"
         ],
         "TJ": [
@@ -7437,8 +7448,8 @@
             "ku-latn",
             "apc",
             "kbd",
-            "az-latn",
-            "az-arab",
+            "az",
+            "azb",
             "ar",
             "bg",
             "ady",
@@ -7531,6 +7542,7 @@
             "lkt",
             "ik",
             "mus",
+            "oka",
             "io",
             "jbo"
         ],
@@ -7563,6 +7575,7 @@
         ],
         "VN": [
             "vi",
+            "mww-latn",
             "zh-hant",
             "zh",
             "cjm-cham"
