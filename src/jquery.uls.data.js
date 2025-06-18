@@ -111,14 +111,14 @@
             "Adygabze"
         ],
         "aeb": [
-            "aeb-arab"
-        ],
-        "aeb-arab": [
             "Arab",
             [
                 "AF"
             ],
             "تونسي"
+        ],
+        "aeb-arab": [
+            "aeb"
         ],
         "aeb-latn": [
             "Latn",
@@ -7441,7 +7441,7 @@
             "kaa"
         ],
         "TN": [
-            "aeb-arab",
+            "aeb",
             "ar",
             "fr"
         ],
