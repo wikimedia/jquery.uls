@@ -25,11 +25,11 @@
 		"Siebrand Mazeland"
 	],
 	"devDependencies": {
-		"eslint-config-wikimedia": "0.21.0",
+		"eslint-config-wikimedia": "0.30.0",
 		"eslint-plugin-html": "6.1.2",
 		"grunt": "1.5.3",
 		"grunt-contrib-qunit": "4.0.0",
-		"grunt-eslint": "23.0.0",
+		"grunt-eslint": "25.0.0",
 		"grunt-stylelint": "0.19.0",
 		"stylelint": "15.10.2",
 		"stylelint-config-wikimedia": "0.16.0"
