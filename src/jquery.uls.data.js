@@ -141,6 +141,13 @@
             ],
             "aghɨ̂m"
         ],
+        "agr": [
+            "Latn",
+            [
+                "AM"
+            ],
+            "Awajún"
+        ],
         "ahr": [
             "Deva",
             [
