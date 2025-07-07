@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Augustus A C",
 			"Gazimagomedov"
 		]
 	},
@@ -13,7 +14,7 @@
 	"uls-region-ME": "АскӀосаб Магъриб",
 	"uls-region-PA": "Океания",
 	"uls-no-results-found": "Щибниги жо батинчӀо",
-	"uls-common-languages": "Жалго жедедаго рищарал мацӀал",
+	"uls-common-languages": "Церелъурал мацӀал",
 	"uls-no-results-suggestion-title": "Дур интерес гьал мацӀазда ккезе батила:",
 	"uls-search-help": "МацӀалъул яги хъвай-хъваялъул цӀаразда рекъон цӀехезе бегьула, яги мацӀалъул ISO-кодалда рекъон. Гьединго бегьула регион бищун балагьизе:",
 	"uls-search-placeholder": "МацӀ цӀехей"
