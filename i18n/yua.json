@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Natali"
+		]
+	},
+	"uls-region-WW": "Tu yóok'ol kaab",
+	"uls-region-SP": "Éespesial",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "África",
+	"uls-region-EU": "Europa",
+	"uls-region-AS": "Asia",
+	"uls-region-ME": "Chúumuk Oriente",
+	"uls-region-PA": "Pacífico",
+	"uls-region-all": "Tuláakal t'aano'ob",
+	"uls-no-results-found": "Ma' kaxta'ab mix jump'éel resultado",
+	"uls-common-languages": "T'aano'ob ku ya'ala'al",
+	"uls-no-results-suggestion-title": "Je'el u páajtal a ts'íiboltik:",
+	"uls-search-help": "Je'el u páajtal a kaxtik tumen k'aaba' t'aan, k'aaba' script, código ISO ti' t'aan wa je'el u páajtal a kaxtik tumen región.",
+	"uls-search-placeholder": "Káaxt jump’èel t'aanil",
+	"uls-search-placeholder-short": "Káaxtej"
+}
