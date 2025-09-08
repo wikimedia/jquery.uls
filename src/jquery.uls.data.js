@@ -1136,6 +1136,13 @@
             ],
             "ԓыгъоравэтԓьэн"
         ],
+        "ckv": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Kebalan"
+        ],
         "cnh": [
             "Latn",
             [
@@ -3542,7 +3549,7 @@
             [
                 "AS"
             ],
-            "閩南語 \/ Bân-lâm-gú"
+            "閩南語 \/ Bân-lâm-gí"
         ],
         "nan-hani": [
             "Hani",
@@ -3570,21 +3577,21 @@
             [
                 "AS"
             ],
-            "Bân-lâm-gú (Lô-má-jī)"
+            "Bân-lâm-gí (Lô-má-jī)"
         ],
         "nan-latn-pehoeji": [
             "Latn",
             [
                 "AS"
             ],
-            "Bân-lâm-gú (Pe̍h-ōe-jī)"
+            "Bân-lâm-gí (Pe̍h-ōe-jī)"
         ],
         "nan-latn-tailo": [
             "Latn",
             [
                 "AS"
             ],
-            "Bân-lâm-gú (Tâi-lô)"
+            "Bân-lâm-gí (Tâi-lô)"
         ],
         "nap": [
             "Latn",
