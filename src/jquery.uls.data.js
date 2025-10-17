@@ -4929,6 +4929,13 @@
         "swh": [
             "sw"
         ],
+        "sxr": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Hla'alua"
+        ],
         "sxu": [
             "Latn",
             [
@@ -5236,6 +5243,13 @@
                 "AS"
             ],
             "Sinūg"
+        ],
+        "tsu": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "cou"
         ],
         "tt": [
             "Cyrl",
