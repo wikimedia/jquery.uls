@@ -23,7 +23,7 @@
 	var template, ULS;
 
 	// Region numbers in id attributes also appear in the langdb.
-	template = '<div class="grid uls-menu"> \
+	template = '<div class="grid uls-menu notheme skin-invert"> \
 			<div id="search" class="row uls-search"> \
 				<div class="uls-search-wrapper"> \
 					<label class="uls-search-label" for="uls-languagefilter"></label>\
