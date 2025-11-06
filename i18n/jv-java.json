@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bennylin"
+		]
+	},
+	"uls-region-WW": "ꦱ​ꦲꦶꦤ꧀ꦢꦼꦁꦔꦶꦁ​ꦢꦺꦴꦚ",
+	"uls-region-SP": "ꦩꦶꦫꦸꦁꦒꦤ꧀",
+	"uls-region-AM": "ꦄꦩꦺꦫꦶꦏꦃ",
+	"uls-region-AF": "ꦄꦥ꦳꧀ꦫꦶꦏꦃ",
+	"uls-region-EU": "ꦌꦫꦺꦴꦥꦃ",
+	"uls-region-AS": "ꦄꦱꦶꦲꦃ",
+	"uls-region-ME": "ꦮꦺꦠꦤ꧀ꦠꦼꦔꦃ",
+	"uls-region-PA": "ꦥꦱꦶꦥ꦳ꦶꦏ꧀",
+	"uls-region-all": "ꦏꦧꦺꦃꦧꦱ",
+	"uls-no-results-found": "ꦮꦺꦴꦲꦶꦁ​ꦒꦺꦴꦭꦺꦏ꧀ꦲꦺꦴꦫ​ꦲꦤ",
+	"uls-common-languages": "ꦧꦱ​ꦱꦶꦁ​ꦏꦥꦿꦪꦺꦴꦒꦏ꧀ꦏꦏꦺ",
+	"uls-no-results-suggestion-title": "ꦥꦚ꧀ꦗꦼꦤꦼꦁꦔꦤ꧀ꦧꦺꦴꦏ꧀ꦩꦼꦤꦮ​ꦱꦸꦏ​ꦲꦶꦁ꧇",
+	"uls-search-help": "ꦥꦚ꧀ꦗꦼꦤꦼꦁꦔꦤ꧀ꦧꦶꦱ​ꦒꦺꦴꦭꦺꦏ꧀ꦭꦸꦩꦤ꧀ꦠꦂ​ꦗꦼꦤꦼꦁ​ꦧꦱ꧈​ꦗꦼꦤꦼꦁ​ꦲꦏ꧀ꦱꦫ꧈​ꦏꦺꦴꦝꦼ​ISO​ꦧꦱ꧈​ꦲꦸꦠꦮ​ꦥꦚ꧀ꦗꦼꦤꦼꦁꦔꦤ꧀ꦧꦶꦱ​ꦭꦸꦫꦸ​ꦩꦶꦠꦸꦫꦸꦠ꧀ꦮꦼꦮꦼꦁꦏꦺꦴꦤ꧀꧈",
+	"uls-search-placeholder": "ꦒꦺꦴꦭꦺꦏ꧀ꦧꦱ",
+	"uls-search-placeholder-short": "ꦒꦺꦴꦭꦺꦏ꧀"
+}
