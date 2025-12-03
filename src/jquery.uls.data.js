@@ -4995,6 +4995,13 @@
             ],
             "தமிழ்"
         ],
+        "tao": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Ciriciring No Tao"
+        ],
         "taq": [
             "taq-tfng"
         ],
@@ -5594,6 +5601,13 @@
                 "PA"
             ],
             "Manado"
+        ],
+        "xnb": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Kanakanavu"
         ],
         "xon": [
             "Latn",
