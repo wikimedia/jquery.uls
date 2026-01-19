@@ -6,6 +6,7 @@
 			"CoderSI",
 			"Mainculprit",
 			"Nataev",
+			"Procedural human",
 			"Таржимон"
 		]
 	},
@@ -17,10 +18,11 @@
 	"uls-region-AS": "Osiyo",
 	"uls-region-ME": "Yaqin Sharq",
 	"uls-region-PA": "Okeaniya",
+	"uls-region-all": "Barcha tillar",
 	"uls-no-results-found": "Natija topilmadi",
-	"uls-common-languages": "Avtomatik tanlangan tillar",
+	"uls-common-languages": "Tavsiya etilgan tillar",
 	"uls-no-results-suggestion-title": "Sizni qiziqtirishi mumkin:",
-	"uls-search-help": "Til hamda yozuv nomi yoki ISO kod bilan izlashingiz mumkin. Hudud boʻyicha koʻrib chiqishingiz ham mumkin.",
-	"uls-search-placeholder": "Qidiruv tili",
+	"uls-search-help": "Siz til nomi, yozuv nomi, tilning ISO kodi bo'yicha qidirishingiz yoki mintaqa bo'yicha ko'rib chiqishingiz mumkin.",
+	"uls-search-placeholder": "Til qidirish",
 	"uls-search-placeholder-short": "Qidiring"
 }
