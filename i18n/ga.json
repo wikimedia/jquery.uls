@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aindriu80",
 			"Kscanne"
 		]
 	},
@@ -14,8 +15,9 @@
 	"uls-region-PA": "An tAigéan Ciúin",
 	"uls-region-all": "Na teangacha uile",
 	"uls-no-results-found": "Gan torthaí",
-	"uls-common-languages": "Teangacha coitianta",
+	"uls-common-languages": "Teangacha molta",
 	"uls-no-results-suggestion-title": "Seans go mbeadh suim agat i:",
-	"uls-search-help": "Is féidir cuardach de réir ainm na teanga, ainm na scripte, cód ISO 639, nó brabhsáil de réir réigiúin:",
-	"uls-search-placeholder": "Cuardaigh teangacha"
+	"uls-search-help": "Is féidir leat cuardach a dhéanamh de réir ainm teanga, ainm scripte, cód ISO na teanga nó is féidir leat brabhsáil de réir réigiúin.",
+	"uls-search-placeholder": "Cuardaigh teanga",
+	"uls-search-placeholder-short": "Cuardaigh"
 }
