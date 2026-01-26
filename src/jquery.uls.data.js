@@ -2414,6 +2414,14 @@
             ],
             "Patois"
         ],
+        "jax": [
+            "Latn",
+            [
+                "AS",
+                "PA"
+            ],
+            "Jambi"
+        ],
         "jbo": [
             "Latn",
             [
@@ -5107,6 +5115,13 @@
             ],
             "ትግሬ"
         ],
+        "tiv": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "tiv"
+        ],
         "tji": [
             "Latn",
             [
@@ -6720,6 +6735,7 @@
             "ccp",
             "bfq",
             "njo",
+            "wsg",
             "bo",
             "bpy",
             "bft",
@@ -6803,7 +6819,8 @@
         "JO": [
             "ar",
             "apc",
-            "en"
+            "en",
+            "ady"
         ],
         "JP": [
             "ja",
@@ -7099,6 +7116,7 @@
             "ig",
             "yo",
             "ff",
+            "tiv",
             "efi",
             "ibb",
             "ha-arab",
