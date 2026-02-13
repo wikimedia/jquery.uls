@@ -4204,6 +4204,13 @@
             ],
             "pinayuanan"
         ],
+        "pwo": [
+            "Mymr",
+            [
+                "AS"
+            ],
+            "ဖျိၩ့ၡိ"
+        ],
         "pzh": [
             "Latn",
             [
@@ -4890,6 +4897,13 @@
                 "AF"
             ],
             "SiSwati"
+        ],
+        "ssy": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Saaho"
         ],
         "st": [
             "Latn",
@@ -6422,6 +6436,7 @@
             "tig",
             "ar",
             "aa",
+            "ssy",
             "byn"
         ],
         "ES": [
@@ -6739,6 +6754,7 @@
             "bo",
             "bpy",
             "bft",
+            "mrh",
             "sa",
             "dv",
             "dz",
@@ -6997,6 +7013,7 @@
             "kac",
             "rhg",
             "mnw",
+            "mrh",
             "pi"
         ],
         "MN": [
@@ -7315,43 +7332,52 @@
         ],
         "RU": [
             "ru",
+            "en",
             "tt",
-            "ba",
             "cv",
-            "hy",
             "ce",
+            "hy",
+            "ba",
+            "de",
             "av",
-            "udm",
-            "mhr",
-            "sah",
-            "os",
+            "uk",
             "kbd",
             "myv",
-            "dar",
-            "mdf",
             "kum",
-            "kv",
-            "lez",
-            "krc",
+            "sah",
+            "dar",
+            "os",
             "inh",
-            "tyv",
             "az-cyrl",
             "az",
+            "lez",
+            "mdf",
+            "kk-cyrl",
+            "krc",
+            "mhr",
+            "tyv",
+            "udm",
+            "uz",
+            "tg",
+            "kv",
             "ady",
-            "krl",
+            "xal",
             "lbe",
-            "koi",
-            "pnt",
-            "mrj",
+            "ka",
             "alt",
+            "be",
+            "pnt",
+            "koi",
+            "mrj",
             "fi",
+            "krl",
             "sr-cyrl",
-            "vep",
             "mn",
+            "vep",
+            "cu",
             "kaa",
             "izh",
-            "vot",
-            "cu"
+            "vot"
         ],
         "RW": [
             "rw",
