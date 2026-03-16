@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Santhosh.thottingal",
+			"Saurmandal",
 			"Sfic",
 			"Siddhartha Ghai"
 		]
@@ -16,9 +17,9 @@
 	"uls-region-PA": "प्रशांत",
 	"uls-region-all": "सभी भाषाएँ",
 	"uls-no-results-found": "कोई परिणाम नहीं मिले",
-	"uls-common-languages": "सुझावित भाषा",
+	"uls-common-languages": "सुझावित भाषाएँ",
 	"uls-no-results-suggestion-title": "आपके लिये संभवतः उपयोगी:",
 	"uls-search-help": "आप भाषा के नाम, लिपि के नाम एवं भाषा के ISO कोड से खोज कर सकते हैं, और क्षेत्र अनुसार ब्राउज़ भी कर सकते हैं।",
-	"uls-search-placeholder": "भाषा के लिए खोजें",
+	"uls-search-placeholder": "भाषा खोजें",
 	"uls-search-placeholder-short": "खोजें"
 }
