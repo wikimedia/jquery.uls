@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kirsan",
+			"Orbitminis"
+		]
+	},
+	"uls-region-WW": "Całczi swiat",
+	"uls-region-SP": "Szpecjalné",
+	"uls-region-AM": "Amerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Eùropa",
+	"uls-region-AS": "Azjô",
+	"uls-region-ME": "Blisczi Pòrénk",
+	"uls-region-PA": "Pacyfik",
+	"uls-region-all": "Wszëtczé jãzëczi",
+	"uls-no-results-found": "Felënk wëników",
+	"uls-common-languages": "Bédowóné jãzëczi",
+	"uls-no-results-suggestion-title": "Mòże zainteresëją Ce te jãzëczi:",
+	"uls-search-help": "Mòżesz szëkac wedle miona jãzëka, miona systemu pisënkù, kòdu ISO abò zaglãdac na lëstë wedle regionów.",
+	"uls-search-placeholder": "Szëkba jãzëka",
+	"uls-search-placeholder-short": "Szëkba"
+}
