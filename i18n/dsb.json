@@ -14,8 +14,9 @@
 	"uls-region-PA": "Pacifik",
 	"uls-region-all": "Wšykne rěcy",
 	"uls-no-results-found": "Žedne wuslědki namakane",
-	"uls-common-languages": "Powšykne rěcy",
+	"uls-common-languages": "Naraźone rěcy",
 	"uls-no-results-suggestion-title": "To by mógło śi zajmowaś:",
 	"uls-search-help": "Móžoš pó mjenju rěcy, mjenju pisma, ISO-koźe rěcy pytaś abo móžoš pó regionje pytaś:",
-	"uls-search-placeholder": "Rěcne pytanje"
+	"uls-search-placeholder": "Za rěcu pytaś",
+	"uls-search-placeholder-short": "Pytaś"
 }
