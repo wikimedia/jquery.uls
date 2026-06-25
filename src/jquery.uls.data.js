@@ -2617,6 +2617,13 @@
             ],
             "Kaingáng"
         ],
+        "kha": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Khasi"
+        ],
         "khk": [
             "mn"
         ],
@@ -4569,11 +4576,28 @@
             "Scots"
         ],
         "sd": [
+            "sd-arab"
+        ],
+        "sd-arab": [
             "Arab",
             [
                 "AS"
             ],
             "سنڌي"
+        ],
+        "sd-deva": [
+            "Deva",
+            [
+                "AS"
+            ],
+            "सिंधी"
+        ],
+        "sd-sind": [
+            "Sind",
+            [
+                "AS"
+            ],
+            "𑋝𑋡𑋟𑋐𑋢"
         ],
         "sdc": [
             "Latn",
@@ -5301,6 +5325,13 @@
             ],
             "cou"
         ],
+        "tsw": [
+            "Latn",
+            [
+                "AF"
+            ],
+            "Tsishingini"
+        ],
         "tt": [
             "Cyrl",
             [
@@ -5448,6 +5479,9 @@
             ],
             "oʻzbekcha"
         ],
+        "uz-arab": [
+            "uzs"
+        ],
         "uz-cyrl": [
             "Cyrl",
             [
@@ -5460,6 +5494,13 @@
         ],
         "uzn": [
             "uz"
+        ],
+        "uzs": [
+            "Arab",
+            [
+                "AS"
+            ],
+            "اۉزبېکچه"
         ],
         "vai": [
             "Vaii",
@@ -5905,6 +5946,7 @@
             "Orya",
             "Rohg",
             "Saur",
+            "Sind",
             "Sinh",
             "Sylo",
             "Taml",
@@ -5988,6 +6030,7 @@
         "AF": [
             "fa",
             "ps",
+            "uzs",
             "uz",
             "tk",
             "bgn",
@@ -6747,13 +6790,15 @@
             "ks",
             "knn",
             "gbm",
-            "sd",
+            "sd-arab",
             "doi",
             "tcy",
+            "sd-deva",
             "brx",
             "mni",
             "raj",
             "hoc",
+            "kha",
             "saz",
             "ccp",
             "bfq",
@@ -7249,7 +7294,7 @@
             "pa",
             "en",
             "ps",
-            "sd",
+            "sd-arab",
             "skr-arab",
             "hno",
             "brh",
@@ -7426,7 +7471,19 @@
             "en",
             "zh",
             "ms",
+            "nan",
             "ta",
+            "hak",
+            "tl",
+            "yue",
+            "id",
+            "jv",
+            "bn",
+            "cdo",
+            "th",
+            "ja",
+            "cpx",
+            "mad",
             "ml",
             "pa"
         ],
@@ -7771,7 +7828,8 @@
             "ve",
             "tn"
         ]
-    }
+    },
+    "version": "2026-06-18T13:43:49+00:00"
 }
 
 		}( jQuery ) );
