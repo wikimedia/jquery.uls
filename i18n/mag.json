@@ -10,13 +10,13 @@
 	"uls-region-AF": "अफ्रिका",
 	"uls-region-EU": "यूरोप",
 	"uls-region-AS": "एसिया",
-	"uls-region-ME": "मध्यपूरुब",
+	"uls-region-ME": "मध्यपूर्व",
 	"uls-region-PA": "प्रशान्त",
-	"uls-region-all": "सब भाषा",
-	"uls-no-results-found": "कौनो परिणाम न भेटल",
+	"uls-region-all": "सभ भाषा",
+	"uls-no-results-found": "कौनो परिणाम नै भेटल",
 	"uls-common-languages": "सुझावित भाषा",
 	"uls-no-results-suggestion-title": "अपनेला उपयोगी हो सकहे :",
 	"uls-search-help": "अपने भाषाके नाम, लिपिके नाम, भाषाके ISO कोड से वा क्षेत्र अनुसार ब्राउज करके खोज सकही ।",
-	"uls-search-placeholder": "भाषा खोजी",
-	"uls-search-placeholder-short": "खोजी"
+	"uls-search-placeholder": "भाषा खोजथिन",
+	"uls-search-placeholder-short": "खोजथिन"
 }
