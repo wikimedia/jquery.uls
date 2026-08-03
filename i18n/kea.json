@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"GrogeXaKaba",
 			"Letra.berdi"
 		]
 	},
@@ -14,5 +15,9 @@
 	"uls-region-PA": "Pasífiku",
 	"uls-region-all": "Tudu linga",
 	"uls-no-results-found": "Nun razultadu ka foi atxadu",
-	"uls-common-languages": "Lingas sujiridu"
+	"uls-common-languages": "Lingas sujiridu",
+	"uls-no-results-suggestion-title": "Bu podi ten nteresi na:",
+	"uls-search-help": "Bu podi piskiza pa nómi di linga, tipu di alfabétu, kódi ISO di linga, o bu podi nabega pa rijon.",
+	"uls-search-placeholder": "Djobi un linga",
+	"uls-search-placeholder-short": "Djobi"
 }

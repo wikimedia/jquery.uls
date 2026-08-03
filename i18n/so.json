@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"uls-region-WW": "Caalami",
+	"uls-region-SP": "Gaar ah",
+	"uls-region-AM": "Ameerika",
+	"uls-region-AF": "Afrika",
+	"uls-region-EU": "Yurub",
+	"uls-region-AS": "Aasiya",
+	"uls-region-ME": "Bariga Dhexe",
+	"uls-region-PA": "Baasifig",
+	"uls-region-all": "Dhammaan luqadaha",
+	"uls-no-results-found": "Natiijooyin lama helin",
+	"uls-common-languages": "Luuqadaha lagu taliyey",
+	"uls-no-results-suggestion-title": "Waxaa laga yaabaa inaad xiisaynayso:",
+	"uls-search-help": "Waxaad raadin kartaa adigoo adeegsanaya magaca luuqadda, magaca farta, koodhka ISO ee luuqadda, ama waxaad ku daalacan kartaa gobol ahaan.",
+	"uls-search-placeholder": "Raadi luqad",
+	"uls-search-placeholder-short": "Raadi"
+}
