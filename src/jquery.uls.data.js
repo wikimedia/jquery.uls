@@ -2657,6 +2657,13 @@
             ],
             "Kırmancki"
         ],
+        "kix": [
+            "Latn",
+            [
+                "AS"
+            ],
+            "Khiamniungan"
+        ],
         "kj": [
             "Latn",
             [
