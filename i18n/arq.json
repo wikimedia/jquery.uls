@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bachounda"
+		]
+	},
+	"uls-region-WW": "فالعالم كامل",
+	"uls-region-SP": "الخاصه",
+	"uls-region-AM": "ماريكان",
+	"uls-region-AF": "أفريقيا",
+	"uls-region-EU": "أوروبا",
+	"uls-region-AS": "آسيا",
+	"uls-region-ME": "الشرق الأوسط",
+	"uls-region-PA": "المحيط الهادئ",
+	"uls-region-all": "قاع اللوغات",
+	"uls-no-results-found": "ما لقيتش نتائج",
+	"uls-common-languages": "اللوغات المقترحة",
+	"uls-no-results-suggestion-title": "ممكن تكون مهتم بــ:",
+	"uls-search-help": "تقدر تدور على حسب سميه اللوغه، سميه السكريبت، كود ISO تاع اللوغه ولاّ تتصفح على حساب الجهة.",
+	"uls-search-placeholder": "دور على لوغه",
+	"uls-search-placeholder-short": "فتّش"
+}
