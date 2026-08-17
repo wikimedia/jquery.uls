@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ar choler",
 			"Fulup",
 			"Gwenn-Ael"
 		]
@@ -16,8 +17,8 @@
 	"uls-region-all": "An holl yezhoù",
 	"uls-no-results-found": "N'eus bet kavet disoc'h ebet",
 	"uls-common-languages": "Yezhoù aliet",
-	"uls-no-results-suggestion-title": "Gallout a reot bezañ dedennet gant :",
-	"uls-search-help": "Gallout a reot klask dre anv yezh, anv skript, kod yezh ISO pe gallout a reot klask dre rannvro.",
+	"uls-no-results-suggestion-title": "Dedennet e viot marteze gant :",
+	"uls-search-help": "Gallout a rit klask dre anv yezh, anv skript, kod ISO ar yezh pe gallout a rit klask dre rannvro.",
 	"uls-search-placeholder": "Klask ur yezh",
 	"uls-search-placeholder-short": "Klask"
 }
