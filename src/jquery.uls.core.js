@@ -301,7 +301,10 @@
 		 * @param {Object} event The jQuery click event
 		 */
 		select: function ( langCode, event ) {
-			this.hide();
+			if ( this.options.clickShouldClose ) {
+				this.hide();
+			}
+
 			if ( this.options.onSelect ) {
 				this.options.onSelect.call( this, langCode, event );
 			}
@@ -416,6 +419,8 @@
 		// Should be set for distinguishing between different instances of ULS
 		// in the same application.
 		ulsPurpose: '',
+		// Whether or not a click on an item should close the menu
+		clickShouldClose: true,
 		// Used by LCD
 		quickList: [],
 		// Used by LCD
