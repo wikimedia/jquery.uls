@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chrisportelli"
+			"Chrisportelli",
+			"JiodoJ"
 		]
 	},
 	"uls-region-WW": "Madwar id-dinja",
@@ -12,10 +13,11 @@
 	"uls-region-AS": "Asja",
 	"uls-region-ME": "Lvant Nofsani",
 	"uls-region-PA": "Paċifiku",
-	"uls-region-all": "Kull lingwa",
+	"uls-region-all": "Il-lingwi kollha",
 	"uls-no-results-found": "L-ebda riżultat",
 	"uls-common-languages": "Lingwi ssuġġeriti",
-	"uls-no-results-suggestion-title": "Tista' tkun interessat fil-:",
-	"uls-search-help": "Tista' tfittex skont l-isem tal-lingwa, l-isem tal-iskript, kodiċi tal-lingwa ISO jew tista' tinnaviga skont ir-reġjun.",
-	"uls-search-placeholder": "Fittex lingwa"
+	"uls-no-results-suggestion-title": "Tista' tkun interessat fi:",
+	"uls-search-help": "Tista' tfittex skont l-isem tal-lingwa, l-isem tal-iskritt, kodiċi tal-lingwa ISO jew tista' tinnaviga skont ir-reġjun.",
+	"uls-search-placeholder": "Fittex lingwa",
+	"uls-search-placeholder-short": "Fittex"
 }

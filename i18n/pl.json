@@ -3,6 +3,7 @@
 		"authors": [
 			"Chrumps",
 			"Matma Rex",
+			"PanWor",
 			"Rezonansowy",
 			"Woytecr"
 		]
@@ -18,7 +19,7 @@
 	"uls-region-all": "Wszystkie języki",
 	"uls-no-results-found": "Brak wyników",
 	"uls-common-languages": "Sugerowane języki",
-	"uls-no-results-suggestion-title": "Być może cię zainteresują te języki:",
+	"uls-no-results-suggestion-title": "Być może zainteresują Cię te języki:",
 	"uls-search-help": "Możesz wyszukiwać według nazwy języka, nazwy systemu pisma, kodu ISO języka, lub przeglądać listy według regionów.",
 	"uls-search-placeholder": "Wyszukiwanie języka",
 	"uls-search-placeholder-short": "Wyszukiwanie"
