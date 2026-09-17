@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Farorud"
+		]
+	},
+	"uls-region-WW": "Умумиҷаҳонӣ",
+	"uls-region-SP": "Вижа",
+	"uls-region-AM": "Амрико",
+	"uls-region-AF": "Африқо",
+	"uls-region-EU": "Аврупо",
+	"uls-region-AS": "Осиё",
+	"uls-region-ME": "Ховари Миёна",
+	"uls-region-PA": "Уқёнусия",
+	"uls-region-all": "Тамоми забонҳо",
+	"uls-no-results-found": "Ёфта нашуд",
+	"uls-common-languages": "Забонҳои пешниҳодшуда",
+	"uls-no-results-suggestion-title": "Шояд ба шумо ҷолиб бошад:",
+	"uls-search-help": "Шумо метавонед аз рӯи номи забон ё низоми навишт, рамзи ISO-и забон ҷустуҷӯ кунед ва ё аз рӯи минтақа ҷустуҷӯ намоед.",
+	"uls-search-placeholder": "Ҷустуҷӯи забон",
+	"uls-search-placeholder-short": "Ҷустуҷӯ"
+}
