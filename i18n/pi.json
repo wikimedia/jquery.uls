@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"咽頭べさ"
+		]
+	},
+	"uls-region-WW": "सब्ब लोक विचारि",
+	"uls-region-SP": "विसिट्ठ",
+	"uls-region-AM": "अमेरिक",
+	"uls-region-AF": "आफरिक",
+	"uls-region-EU": "उरोप",
+	"uls-region-AS": "आस्ह्य",
+	"uls-region-ME": "मज्झिम पुब्ब देसो",
+	"uls-region-PA": "सन्ति समुद्दो",
+	"uls-region-all": "सब्ब भासायो",
+	"uls-no-results-found": "न ते लब्भन्ति फलानि",
+	"uls-common-languages": "चिन्तित भासायो",
+	"uls-no-results-suggestion-title": "तव रुचि निमित्तानि होन्ति:",
+	"uls-search-help": "तव भासा नामेन सक्कोति परियेसितुं। लिखन सञ्ञा नामेन। भासा ISO code वा अथ वा देस विभागेन अनुविचरितुं॥",
+	"uls-search-placeholder": "भासा परियेसनं",
+	"uls-search-placeholder-short": "परियेसनं"
+}
