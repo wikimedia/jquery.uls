@@ -1870,6 +1870,13 @@
             ],
             "Gàidhlig"
         ],
+        "gdo": [
+            "Cyrl",
+            [
+                "EU"
+            ],
+            "гъибдилӀи мицци"
+        ],
         "gez": [
             "Ethi",
             [
@@ -4603,14 +4610,14 @@
             "Scots"
         ],
         "sd": [
-            "sd-arab"
-        ],
-        "sd-arab": [
             "Arab",
             [
                 "AS"
             ],
             "سنڌي"
+        ],
+        "sd-arab": [
+            "sd"
         ],
         "sd-deva": [
             "Deva",
@@ -6817,7 +6824,7 @@
             "ks",
             "knn",
             "gbm",
-            "sd-arab",
+            "sd",
             "doi",
             "tcy",
             "sd-deva",
@@ -7321,7 +7328,7 @@
             "pa",
             "en",
             "ps",
-            "sd-arab",
+            "sd",
             "skr-arab",
             "hno",
             "brh",
@@ -7856,7 +7863,7 @@
             "tn"
         ]
     },
-    "version": "2026-08-18T14:09:37+00:00"
+    "version": "2026-09-17T19:46:40+00:00"
 }
 
 		}( jQuery ) );
