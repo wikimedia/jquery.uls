@@ -11,6 +11,7 @@
 	height: 20em;
 	/* Work around Chrome bug where it places scrollbar on the left in
 	 * in RTL mode but actually reserves the place on the right side */
+	/* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties -- Safari < 15 does not support two-value overflow */
 	overflow-x: hidden;
 	overflow-y: auto;
 	width: auto;
