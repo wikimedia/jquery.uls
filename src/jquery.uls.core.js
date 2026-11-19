@@ -15,6 +15,8 @@
  * @file
  * @license GNU General Public Licence 2.0 or later
  * @license MIT License
+ *
+ * @param {jQuery} $
  */
 
 ( function ( $ ) {

@@ -11,6 +11,7 @@
  * UniversalLanguageSelector in commercial projects as long as the copyright
  * header is left intact. See files GPL-LICENSE and MIT-LICENSE for details.
  *
+ * @param {jQuery} $
  */
 
 ( function ( $ ) {
