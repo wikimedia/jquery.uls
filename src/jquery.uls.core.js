@@ -262,7 +262,7 @@
 			this.$element.on( 'click', this.click.bind( this ) );
 
 			// Don't do anything if pressing on empty space in the ULS
-			this.$menu.on( 'click', function ( e ) {
+			this.$menu.on( 'click', ( e ) => {
 				e.stopPropagation();
 			} );
 

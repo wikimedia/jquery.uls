@@ -9,7 +9,6 @@
 		"$": "off"
 	},
 	"rules": {
-		"prefer-arrow-callback": "off",
 		"unicorn/prefer-includes": "off",
 		"no-jquery/no-extend": "off",
 		"no-jquery/no-done-fail": "off"

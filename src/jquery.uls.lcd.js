@@ -234,9 +234,9 @@
 			// Work around the bad interface, delay rendering until we have got
 			// all the languages to speed up performance.
 			clearTimeout( this.renderTimeout );
-			this.renderTimeout = setTimeout( function () {
+			this.renderTimeout = setTimeout( () => {
 				this.renderRegions();
-			}.bind( this ), 50 );
+			}, 50 );
 
 			return true;
 		},
@@ -291,7 +291,7 @@
 				this.$element.addClass( 'uls-lcd--no-quicklist' );
 			}
 
-			this.options.showRegions.forEach( function ( regionCode ) {
+			this.options.showRegions.forEach( ( regionCode ) => {
 				this.regionLanguages[ regionCode ] = [];
 
 				$section = $( '<div>' )
@@ -305,7 +305,7 @@
 					.appendTo( $section );
 
 				regions.push( $section );
-			}.bind( this ) );
+			} );
 
 			this.$element.append( regions );
 

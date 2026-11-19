@@ -188,9 +188,7 @@
 
 			this.options.lcd.setGroupByRegionOverride( false );
 			// Local search results
-			results = languages.filter( function ( langCode ) {
-				return this.filter( langCode, query );
-			}.bind( this ) );
+			results = languages.filter( ( langCode ) => this.filter( langCode, query ) );
 
 			// Use the searchAPI if available, assuming that it has superior search results.
 			if ( this.options.searchAPI ) {
@@ -203,12 +201,12 @@
 		},
 
 		searchAPI: function ( query ) {
-			return $.get( this.options.searchAPI, { search: query } ).then( function ( result ) {
+			return $.get( this.options.searchAPI, { search: query } ).then( ( result ) => {
 				const results = [];
 				let autofillLabel;
 
 				// eslint-disable-next-line no-jquery/no-each-util
-				$.each( result.languagesearch, function ( apiCode, name ) {
+				$.each( result.languagesearch, ( apiCode, name ) => {
 					let code, redirect;
 
 					if ( this.options.languages[ apiCode ] ) {
@@ -233,10 +231,10 @@
 						autofillLabel = autofillLabel || name;
 						results.push( code );
 					}
-				}.bind( this ) );
+				} );
 
 				return $.Deferred().resolve( query, results, autofillLabel );
-			}.bind( this ) );
+			} );
 		},
 
 		/**
