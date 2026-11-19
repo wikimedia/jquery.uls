@@ -194,9 +194,10 @@
 
 			// Use the searchAPI if available, assuming that it has superior search results.
 			if ( this.options.searchAPI ) {
-				this.searchAPI( query )
-					.done( this.resultHandler.bind( this ) )
-					.fail( this.resultHandler.bind( this, query, results, undefined ) );
+				this.searchAPI( query ).then(
+					this.resultHandler.bind( this ),
+					this.resultHandler.bind( this, query, results, undefined )
+				);
 			} else {
 				this.resultHandler( query, results );
 			}
