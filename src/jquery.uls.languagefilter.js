@@ -25,8 +25,6 @@
 ( function ( $ ) {
 	'use strict';
 
-	let LanguageFilter;
-
 	/**
 	 * Check if a prefix is visually prefix of a string
 	 *
@@ -41,7 +39,7 @@
 		return prebases.indexOf( string[ prefix.length ] ) <= 0;
 	}
 
-	LanguageFilter = function ( element, options ) {
+	const LanguageFilter = function ( element, options ) {
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.languagefilter.defaults, options );
 		this.$element.addClass( 'languagefilter' );
@@ -174,9 +172,9 @@
 		},
 
 		search: function () {
-			let languages = Object.keys( this.options.languages ),
-				results = [],
+			const languages = Object.keys( this.options.languages ),
 				query = ( this.$element.val() || '' ).trim().toLowerCase();
+			let results = [];
 
 			// Reset the keyboard navigation index inside LanguageCategoryDisplay (lcd)
 			// before re-rendering the language options
@@ -206,8 +204,8 @@
 
 		searchAPI: function ( query ) {
 			return $.get( this.options.searchAPI, { search: query } ).then( function ( result ) {
-				let autofillLabel,
-					results = [];
+				const results = [];
+				let autofillLabel;
 
 				// eslint-disable-next-line no-jquery/no-each-util
 				$.each( result.languagesearch, function ( apiCode, name ) {
@@ -272,7 +270,7 @@
 		},
 
 		autofill: function ( langCode, languageName ) {
-			let autonym, userInput, suggestion;
+			let autonym, suggestion;
 
 			if ( !this.$suggestion.length ) {
 				return;
@@ -289,7 +287,7 @@
 				return;
 			}
 
-			userInput = this.$element.val();
+			const userInput = this.$element.val();
 			suggestion = userInput +
 				languageName.slice( userInput.length, languageName.length );
 
@@ -346,9 +344,9 @@
 
 	$.fn.languagefilter = function ( option ) {
 		return this.each( function () {
-			let $this = $( this ),
-				data = $this.data( 'languagefilter' ),
+			const $this = $( this ),
 				options = typeof option === 'object' && option;
+			let data = $this.data( 'languagefilter' );
 
 			if ( !data ) {
 				$this.data( 'languagefilter', ( data = new LanguageFilter( this, options ) ) );

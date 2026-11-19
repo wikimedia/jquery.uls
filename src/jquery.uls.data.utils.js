@@ -91,8 +91,8 @@
 	 * @return {string[]}
 	 */
 	$.uls.data.getAutonyms = function () {
-		let language,
-			autonymsByCode = {};
+		const autonymsByCode = {};
+		let language;
 
 		for ( language in $.uls.data.languages ) {
 			if ( $.uls.data.isRedirect( language ) ) {
@@ -122,8 +122,8 @@
 	 * @return {string[]} languages codes
 	 */
 	$.uls.data.getLanguagesInScripts = function ( scripts ) {
-		let language, i,
-			languagesInScripts = [];
+		const languagesInScripts = [];
+		let language, i;
 
 		for ( language in $.uls.data.languages ) {
 			if ( $.uls.data.isRedirect( language ) ) {
@@ -159,8 +159,8 @@
 	 * @return {string[]} Array of language codes
 	 */
 	$.uls.data.getLanguagesByScriptGroup = function ( languages ) {
-		let languagesByScriptGroup = {},
-			language, languageIndex, resolvedRedirect, langScriptGroup;
+		const languagesByScriptGroup = {};
+		let language, languageIndex, resolvedRedirect, langScriptGroup;
 
 		for ( languageIndex = 0; languageIndex < languages.length; languageIndex++ ) {
 			language = languages[ languageIndex ];
@@ -182,8 +182,8 @@
 	 * @return {Object}
 	 */
 	$.uls.data.getLanguagesByScriptGroupInRegions = function ( regions ) {
-		let language, i, scriptGroup,
-			languagesByScriptGroupInRegions = {};
+		const languagesByScriptGroupInRegions = {};
+		let language, i, scriptGroup;
 
 		for ( language in $.uls.data.languages ) {
 			if ( $.uls.data.isRedirect( language ) ) {
@@ -243,11 +243,11 @@
 	 * @return {string[]} Array of language codes
 	 */
 	$.uls.data.sortByScriptGroup = function ( languages ) {
-		let groupedLanguages, scriptGroups, i,
+		let i,
 			allLanguages = [];
 
-		groupedLanguages = $.uls.data.getLanguagesByScriptGroup( languages );
-		scriptGroups = Object.keys( groupedLanguages ).sort();
+		const groupedLanguages = $.uls.data.getLanguagesByScriptGroup( languages );
+		const scriptGroups = Object.keys( groupedLanguages ).sort();
 
 		for ( i = 0; i < scriptGroups.length; i++ ) {
 			allLanguages = allLanguages.concat( groupedLanguages[ scriptGroups[ i ] ] );

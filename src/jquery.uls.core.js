@@ -20,10 +20,8 @@
 ( function ( $ ) {
 	'use strict';
 
-	let template, ULS;
-
 	// Region numbers in id attributes also appear in the langdb.
-	template = '<div class="grid uls-menu notheme skin-invert"> \
+	const template = '<div class="grid uls-menu notheme skin-invert"> \
 			<div id="search" class="row uls-search"> \
 				<div class="uls-search-wrapper"> \
 					<label class="uls-search-label" for="uls-languagefilter"></label>\
@@ -49,7 +47,7 @@
 	 * @param {Element} element
 	 * @param {Object} options
 	 */
-	ULS = function ( element, options ) {
+	const ULS = function ( element, options ) {
 		let code;
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.uls.defaults, options );
@@ -216,15 +214,14 @@
 		},
 
 		createLanguageFilter: function () {
-			let lcd, languagesCount,
-				columnsOptions = {
-					wide: 4,
-					medium: 2,
-					narrow: 1
-				};
+			const columnsOptions = {
+				wide: 4,
+				medium: 2,
+				narrow: 1
+			};
 
-			languagesCount = Object.keys( this.options.languages ).length;
-			lcd = this.$resultsView.lcd( {
+			const languagesCount = Object.keys( this.options.languages ).length;
+			const lcd = this.$resultsView.lcd( {
 				languages: this.languages,
 				columns: columnsOptions[ this.menuWidth ],
 
@@ -351,14 +348,13 @@
 		 * @return {string}
 		 */
 		getMenuWidth: function () {
-			let languagesCount,
-				screenWidth = document.documentElement.clientWidth;
+			const screenWidth = document.documentElement.clientWidth;
 
 			if ( this.options.menuWidth ) {
 				return this.options.menuWidth;
 			}
 
-			languagesCount = Object.keys( this.options.languages ).length;
+			const languagesCount = Object.keys( this.options.languages ).length;
 
 			if ( screenWidth > 900 && languagesCount >= 48 ) {
 				return 'wide';
@@ -381,9 +377,9 @@
 
 	$.fn.uls = function ( option ) {
 		return this.each( function () {
-			let $this = $( this ),
-				data = $this.data( 'uls' ),
+			const $this = $( this ),
 				options = typeof option === 'object' && option;
+			let data = $this.data( 'uls' );
 
 			if ( !data ) {
 				$this.data( 'uls', ( data = new ULS( this, options ) ) );
@@ -457,7 +453,7 @@
 		let timeout;
 
 		return function () {
-			let callNow, self = this,
+			const self = this,
 				later = function () {
 					timeout = null;
 					if ( !immediate ) {
@@ -465,7 +461,7 @@
 					}
 				};
 
-			callNow = immediate && !timeout;
+			const callNow = immediate && !timeout;
 			clearTimeout( timeout );
 			timeout = setTimeout( later, wait || 100 );
 
@@ -481,8 +477,7 @@
 	 */
 	$.fn.scrollIntoView = function () {
 		return this.each( function () {
-			let scrollPosition,
-				$window = $( window ),
+			const $window = $( window ),
 				windowHeight = $window.height(),
 				windowTop = $window.scrollTop(),
 				windowBottom = windowTop + windowHeight,
@@ -490,6 +485,7 @@
 				panelHeight = $element.height(),
 				panelTop = $element.offset().top,
 				panelBottom = panelTop + panelHeight;
+			let scrollPosition;
 
 			if ( ( panelTop < windowTop ) || ( panelBottom > windowBottom ) ) {
 				if ( windowTop > panelTop ) {

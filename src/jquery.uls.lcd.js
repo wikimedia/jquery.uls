@@ -268,8 +268,7 @@
 		},
 
 		render: function () {
-			let $section,
-				$quicklist = this.buildQuicklist(),
+			const $quicklist = this.buildQuicklist(),
 				regions = [],
 				regionNames = {
 					// These are fallback text when i18n library not present
@@ -283,6 +282,7 @@
 					AF: 'Africa',
 					PA: 'Pacific'
 				};
+			let $section;
 
 			if ( $quicklist.length ) {
 				regions.push( $quicklist );
@@ -316,8 +316,8 @@
 		 * Renders a region and displays it if it has content.
 		 */
 		renderRegions: function () {
-			let languages,
-				lcd = this;
+			const lcd = this;
+			let languages;
 
 			this.$element.removeClass( 'uls-no-results' );
 			this.$element.children( '.uls-lcd-region-section' ).each( function () {
@@ -358,11 +358,11 @@
 		 * @param {number} columnsPerRow How many columns fit in a row.
 		 */
 		renderRegion: function ( $region, languages, itemsPerColumn, columnsPerRow ) {
-			let columnsClasses, i, lastItem, currentScript, nextScript, force,
-				languagesCount = languages.length,
-				items = [],
-				columns = [],
+			const languagesCount = languages.length,
 				rows = [];
+			let columnsClasses, i, lastItem, currentScript, nextScript, force,
+				items = [],
+				columns = [];
 
 			languages = $.uls.data.sortByScriptGroup(
 				languages.sort( $.uls.data.sortByAutonym )
@@ -424,17 +424,15 @@
 		 * @return {Element}
 		 */
 		renderItem: function ( code ) {
-			let a, name, autonym, li;
-
-			name = this.options.languages[ code ];
-			autonym = $.uls.data.getAutonym( code ) || name || code;
+			const name = this.options.languages[ code ];
+			const autonym = $.uls.data.getAutonym( code ) || name || code;
 
 			// Not using jQuery as this is performance hotspot
-			li = document.createElement( 'li' );
+			const li = document.createElement( 'li' );
 			li.title = name;
 			li.setAttribute( 'data-code', code );
 
-			a = document.createElement( 'a' );
+			const a = document.createElement( 'a' );
 			a.appendChild( document.createTextNode( autonym ) );
 			a.className = 'autonym';
 			a.lang = code;
@@ -459,7 +457,7 @@
 		},
 
 		buildQuicklist: function () {
-			let quickList, $quickListSection, $quickListSectionTitle;
+			let quickList;
 
 			if ( this.$cachedQuicklist !== null ) {
 				return this.$cachedQuicklist;
@@ -479,10 +477,10 @@
 			quickList = quickList.slice( 0, 16 );
 			quickList.sort( $.uls.data.sortByAutonym );
 
-			$quickListSection = $( '<div>' )
+			const $quickListSection = $( '<div>' )
 				.addClass( 'uls-lcd-region-section uls-lcd-quicklist' );
 
-			$quickListSectionTitle = $( '<h3>' )
+			const $quickListSectionTitle = $( '<h3>' )
 				.attr( 'data-i18n', 'uls-common-languages' )
 				.addClass( 'uls-lcd-region-title' )
 				.text( 'Suggested languages' ); // This is placeholder text if jquery.i18n not present
@@ -570,9 +568,9 @@
 
 	$.fn.lcd = function ( option ) {
 		return this.each( function () {
-			let $this = $( this ),
-				data = $this.data( 'lcd' ),
+			const $this = $( this ),
 				options = typeof option === 'object' && option;
+			let data = $this.data( 'lcd' );
 
 			if ( !data ) {
 				$this.data( 'lcd', ( data = new LanguageCategoryDisplay( this, options ) ) );
@@ -604,16 +602,15 @@
 		// Callback function when no search results.
 		// If overloaded, it can accept the search string as an argument.
 		noResultsTemplate: function () {
-			let $suggestionsContainer, $suggestions,
-				$noResultsTemplate = $( noResultsTemplate );
+			const $noResultsTemplate = $( noResultsTemplate );
 
-			$suggestions = this.buildQuicklist().clone();
+			const $suggestions = this.buildQuicklist().clone();
 			$suggestions.removeClass( 'hide' )
 				.find( 'h3' )
 				.data( 'i18n', 'uls-no-results-suggestion-title' )
 				.text( 'You may be interested in:' )
 				.i18n();
-			$suggestionsContainer = $noResultsTemplate.find( '.uls-no-results-suggestions' );
+			const $suggestionsContainer = $noResultsTemplate.find( '.uls-no-results-suggestions' );
 			$suggestionsContainer.append( $suggestions );
 			return $noResultsTemplate;
 		}
