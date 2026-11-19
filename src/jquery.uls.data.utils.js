@@ -38,7 +38,7 @@
 	 * @return {string}
 	 */
 	$.uls.data.getScript = function ( language ) {
-		var target = $.uls.data.isRedirect( language );
+		const target = $.uls.data.isRedirect( language );
 
 		if ( target ) {
 			return $.uls.data.getScript( target );
@@ -59,7 +59,7 @@
 	 * @return {string|string[]}
 	 */
 	$.uls.data.getRegions = function ( language ) {
-		var target = $.uls.data.isRedirect( language );
+		const target = $.uls.data.isRedirect( language );
 
 		if ( target ) {
 			return $.uls.data.getRegions( target );
@@ -75,7 +75,7 @@
 	 * @return {string}
 	 */
 	$.uls.data.getAutonym = function ( language ) {
-		var target = $.uls.data.isRedirect( language );
+		const target = $.uls.data.isRedirect( language );
 
 		if ( target ) {
 			return $.uls.data.getAutonym( target );
@@ -91,7 +91,7 @@
 	 * @return {string[]}
 	 */
 	$.uls.data.getAutonyms = function () {
-		var language,
+		let language,
 			autonymsByCode = {};
 
 		for ( language in $.uls.data.languages ) {
@@ -122,7 +122,7 @@
 	 * @return {string[]} languages codes
 	 */
 	$.uls.data.getLanguagesInScripts = function ( scripts ) {
-		var language, i,
+		let language, i,
 			languagesInScripts = [];
 
 		for ( language in $.uls.data.languages ) {
@@ -159,7 +159,7 @@
 	 * @return {string[]} Array of language codes
 	 */
 	$.uls.data.getLanguagesByScriptGroup = function ( languages ) {
-		var languagesByScriptGroup = {},
+		let languagesByScriptGroup = {},
 			language, languageIndex, resolvedRedirect, langScriptGroup;
 
 		for ( languageIndex = 0; languageIndex < languages.length; languageIndex++ ) {
@@ -182,7 +182,7 @@
 	 * @return {Object}
 	 */
 	$.uls.data.getLanguagesByScriptGroupInRegions = function ( regions ) {
-		var language, i, scriptGroup,
+		let language, i, scriptGroup,
 			languagesByScriptGroupInRegions = {};
 
 		for ( language in $.uls.data.languages ) {
@@ -215,7 +215,7 @@
 	 * @return {string} script group name
 	 */
 	$.uls.data.getGroupOfScript = function ( script ) {
-		var scriptGroup;
+		let scriptGroup;
 
 		for ( scriptGroup in $.uls.data.scriptgroups ) {
 			if ( $.uls.data.scriptgroups[ scriptGroup ].indexOf( script ) !== -1 ) {
@@ -243,7 +243,7 @@
 	 * @return {string[]} Array of language codes
 	 */
 	$.uls.data.sortByScriptGroup = function ( languages ) {
-		var groupedLanguages, scriptGroups, i,
+		let groupedLanguages, scriptGroups, i,
 			allLanguages = [];
 
 		groupedLanguages = $.uls.data.getLanguagesByScriptGroup( languages );
@@ -265,7 +265,7 @@
 	 * @return {number}
 	 */
 	$.uls.data.sortByAutonym = function ( a, b ) {
-		var autonymA = $.uls.data.getAutonym( a ) || a,
+		const autonymA = $.uls.data.getAutonym( a ) || a,
 			autonymB = $.uls.data.getAutonym( b ) || b;
 
 		return ( autonymA.toLowerCase() < autonymB.toLowerCase() ) ? -1 : 1;

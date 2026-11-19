@@ -20,7 +20,7 @@
 ( function ( $ ) {
 	'use strict';
 
-	var template, ULS;
+	let template, ULS;
 
 	// Region numbers in id attributes also appear in the langdb.
 	template = '<div class="grid uls-menu notheme skin-invert"> \
@@ -50,7 +50,7 @@
 	 * @param {Object} options
 	 */
 	ULS = function ( element, options ) {
-		var code;
+		let code;
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.uls.defaults, options );
 		this.$menu = $( template );
@@ -115,7 +115,7 @@
 		 * @return {Object}
 		 */
 		position: function () {
-			var pos,
+			let pos,
 				top = this.top,
 				left = this.left;
 
@@ -145,7 +145,7 @@
 		 * Show the ULS window
 		 */
 		show: function () {
-			var widthClasses = {
+			const widthClasses = {
 				wide: 'uls-wide',
 				medium: 'uls-medium',
 				narrow: 'uls-narrow'
@@ -216,7 +216,7 @@
 		},
 
 		createLanguageFilter: function () {
-			var lcd, languagesCount,
+			let lcd, languagesCount,
 				columnsOptions = {
 					wide: 4,
 					medium: 2,
@@ -281,7 +281,7 @@
 		},
 
 		resize: function () {
-			var menuWidth = this.getMenuWidth();
+			const menuWidth = this.getMenuWidth();
 
 			if ( this.menuWidth === menuWidth ) {
 				return;
@@ -351,7 +351,7 @@
 		 * @return {string}
 		 */
 		getMenuWidth: function () {
-			var languagesCount,
+			let languagesCount,
 				screenWidth = document.documentElement.clientWidth;
 
 			if ( this.options.menuWidth ) {
@@ -381,7 +381,7 @@
 
 	$.fn.uls = function ( option ) {
 		return this.each( function () {
-			var $this = $( this ),
+			let $this = $( this ),
 				data = $this.data( 'uls' ),
 				options = typeof option === 'object' && option;
 
@@ -454,10 +454,10 @@
 	 * @return {Function} Debounced function.
 	 */
 	$.fn.uls.debounce = function ( fn, wait, immediate ) {
-		var timeout;
+		let timeout;
 
 		return function () {
-			var callNow, self = this,
+			let callNow, self = this,
 				later = function () {
 					timeout = null;
 					if ( !immediate ) {
@@ -481,7 +481,7 @@
 	 */
 	$.fn.scrollIntoView = function () {
 		return this.each( function () {
-			var scrollPosition,
+			let scrollPosition,
 				$window = $( window ),
 				windowHeight = $window.height(),
 				windowTop = $window.scrollTop(),

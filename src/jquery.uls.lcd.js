@@ -21,7 +21,7 @@
 ( function ( $ ) {
 	'use strict';
 
-	var noResultsTemplate = '<div class="uls-no-results-view"> \
+	const noResultsTemplate = '<div class="uls-no-results-view"> \
 		<h2 data-i18n="uls-no-results-found" class="uls-no-results-found-title">No results found</h2> \
 		<div class="uls-no-results-suggestions"></div> \
 		<div class="uls-no-found-more"> \
@@ -71,8 +71,8 @@
 
 	// Adapted from https://stackoverflow.com/a/41754707/903324
 	function isLanguageFullyVisible( $el, $holder ) {
-		var elementRect = $el.get( 0 ).getBoundingClientRect();
-		var holderRect = $holder.get( 0 ).getBoundingClientRect();
+		const elementRect = $el.get( 0 ).getBoundingClientRect();
+		const holderRect = $holder.get( 0 ).getBoundingClientRect();
 
 		return elementRect.top <= holderRect.top ?
 			holderRect.top <= elementRect.top :
@@ -99,7 +99,7 @@
 		 * LanguageFilter.
 		 */
 		navigateDown: function () {
-			var maxIndex = this.getLanguageOptionListItems().length - 1;
+			const maxIndex = this.getLanguageOptionListItems().length - 1;
 			// We support navigation starting both from the top and the bottom of the language list.
 			// The navigation should stop when the last language option is already highlighted (for
 			// top to bottom navigation). For top to bottom navigation, that happens when navigation
@@ -132,7 +132,7 @@
 		 * LanguageFilter.
 		 */
 		navigateUp: function () {
-			var maxIndex = this.getLanguageOptionListItems().length - 1;
+			const maxIndex = this.getLanguageOptionListItems().length - 1;
 			// We support navigation starting both from the top and the bottom of the language list.
 			// The navigation should stop when the first language option is already highlighted (for
 			// bottom to top navigation). For top to bottom navigation, that happens when navigation
@@ -155,14 +155,14 @@
 		 * language option <li> element (where n = navigation index)
 		 */
 		highlightLanguageOption: function () {
-			var $listItems = this.getLanguageOptionListItems();
+			const $listItems = this.getLanguageOptionListItems();
 			// There are no language items. Nothing to highlight.
 			if ( !$listItems.length ) {
 				return;
 			}
 			$listItems.removeClass( 'uls-language-option--highlighted' );
 
-			var $selectedItem = $listItems.eq( this.navigationIndex );
+			const $selectedItem = $listItems.eq( this.navigationIndex );
 			if ( $selectedItem.length === 0 ) {
 				throw new Error(
 					'Could not identify selected item with index: ' + this.navigationIndex + '; ' +
@@ -180,7 +180,7 @@
 
 		getHighlightedLanguageCode: function () {
 			if ( this.navigationIndex ) {
-				var $selectedItem = this.getLanguageOptionListItems().eq( this.navigationIndex );
+				const $selectedItem = this.getLanguageOptionListItems().eq( this.navigationIndex );
 				return $selectedItem.data( 'code' );
 			}
 
@@ -203,7 +203,7 @@
 		 * @return {boolean} Whether the language was known and accepted
 		 */
 		append: function ( langCode, regionCode ) {
-			var i, regions;
+			let i, regions;
 
 			if ( !$.uls.data.languages[ langCode ] ) {
 				// Language is unknown or not in the list of languages for this context.
@@ -268,7 +268,7 @@
 		},
 
 		render: function () {
-			var $section,
+			let $section,
 				$quicklist = this.buildQuicklist(),
 				regions = [],
 				regionNames = {
@@ -316,12 +316,12 @@
 		 * Renders a region and displays it if it has content.
 		 */
 		renderRegions: function () {
-			var languages,
+			let languages,
 				lcd = this;
 
 			this.$element.removeClass( 'uls-no-results' );
 			this.$element.children( '.uls-lcd-region-section' ).each( function () {
-				var $region = $( this ),
+				const $region = $( this ),
 					regionCode = $region.data( 'region' );
 
 				if ( $region.is( '.uls-lcd-quicklist' ) ) {
@@ -358,7 +358,7 @@
 		 * @param {number} columnsPerRow How many columns fit in a row.
 		 */
 		renderRegion: function ( $region, languages, itemsPerColumn, columnsPerRow ) {
-			var columnsClasses, i, lastItem, currentScript, nextScript, force,
+			let columnsClasses, i, lastItem, currentScript, nextScript, force,
 				languagesCount = languages.length,
 				items = [],
 				columns = [],
@@ -424,7 +424,7 @@
 		 * @return {Element}
 		 */
 		renderItem: function ( code ) {
-			var a, name, autonym, li;
+			let a, name, autonym, li;
 
 			name = this.options.languages[ code ];
 			autonym = $.uls.data.getAutonym( code ) || name || code;
@@ -459,7 +459,7 @@
 		},
 
 		buildQuicklist: function () {
-			var quickList, $quickListSection, $quickListSectionTitle;
+			let quickList, $quickListSection, $quickListSectionTitle;
 
 			if ( this.$cachedQuicklist !== null ) {
 				return this.$cachedQuicklist;
@@ -526,7 +526,7 @@
 		 * @param {Object} data Information about the failed search query
 		 */
 		noResults: function ( event, data ) {
-			var $noResults;
+			let $noResults;
 
 			this.$element.addClass( 'uls-no-results' );
 
@@ -546,13 +546,13 @@
 		},
 
 		listen: function () {
-			var lcd = this;
+			const lcd = this;
 
 			this.$element.on( 'mouseenter', 'li[data-code]', function () {
-				var $listItems = lcd.getLanguageOptionListItems();
+				const $listItems = lcd.getLanguageOptionListItems();
 				// Remove the previous option, and then highlight the current one.
 				$listItems.removeClass( 'uls-language-option--highlighted' );
-				var $self = $( this );
+				const $self = $( this );
 				$self.addClass( 'uls-language-option--highlighted' );
 				lcd.navigationIndex = $listItems.index( $self );
 			} ).on( 'mouseleave', 'li[data-code]', function () {
@@ -570,7 +570,7 @@
 
 	$.fn.lcd = function ( option ) {
 		return this.each( function () {
-			var $this = $( this ),
+			let $this = $( this ),
 				data = $this.data( 'lcd' ),
 				options = typeof option === 'object' && option;
 
@@ -604,7 +604,7 @@
 		// Callback function when no search results.
 		// If overloaded, it can accept the search string as an argument.
 		noResultsTemplate: function () {
-			var $suggestionsContainer, $suggestions,
+			let $suggestionsContainer, $suggestions,
 				$noResultsTemplate = $( noResultsTemplate );
 
 			$suggestions = this.buildQuicklist().clone();

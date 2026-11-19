@@ -25,7 +25,7 @@
 ( function ( $ ) {
 	'use strict';
 
-	var LanguageFilter;
+	let LanguageFilter;
 
 	/**
 	 * Check if a prefix is visually prefix of a string
@@ -37,7 +37,7 @@
 	function isVisualPrefix( prefix, string ) {
 		// Pre-base vowel signs of Indic languages. A vowel sign is called pre-base if
 		// consonant + vowel becomes [vowel][consonant] when rendered. Eg: ക + െ => കെ
-		var prebases = 'െേൈൊോൌெேைொோௌେୈୋୌિਿिিেৈোৌෙේෛොෝෞ';
+		const prebases = 'െേൈൊോൌெேைொோௌେୈୋୌિਿिিেৈোৌෙේෛොෝෞ';
 		return prebases.indexOf( string[ prefix.length ] ) <= 0;
 	}
 
@@ -83,7 +83,7 @@
 		},
 
 		keypress: function ( e ) {
-			var suggestion, query;
+			let suggestion, query, highlightedLanguage;
 
 			switch ( e.keyCode ) {
 				case 9: // Tab -> Autocomplete
@@ -108,7 +108,7 @@
 
 					// Check if a language is currently highlighted, and if so select that
 					// if user presses enter.
-					var highlightedLanguage = this.options.lcd.getHighlightedLanguageCode();
+					highlightedLanguage = this.options.lcd.getHighlightedLanguageCode();
 					if ( highlightedLanguage ) {
 						this.options.onSelect( highlightedLanguage, e );
 					} else if ( this.selectedLanguage ) {
@@ -174,7 +174,7 @@
 		},
 
 		search: function () {
-			var languages = Object.keys( this.options.languages ),
+			let languages = Object.keys( this.options.languages ),
 				results = [],
 				query = ( this.$element.val() || '' ).trim().toLowerCase();
 
@@ -206,12 +206,12 @@
 
 		searchAPI: function ( query ) {
 			return $.get( this.options.searchAPI, { search: query } ).then( function ( result ) {
-				var autofillLabel,
+				let autofillLabel,
 					results = [];
 
 				// eslint-disable-next-line no-jquery/no-each-util
 				$.each( result.languagesearch, function ( apiCode, name ) {
-					var code, redirect;
+					let code, redirect;
 
 					if ( this.options.languages[ apiCode ] ) {
 						code = apiCode;
@@ -272,7 +272,7 @@
 		},
 
 		autofill: function ( langCode, languageName ) {
-			var autonym, userInput, suggestion;
+			let autonym, userInput, suggestion;
 
 			if ( !this.$suggestion.length ) {
 				return;
@@ -334,7 +334,7 @@
 		 */
 		filter: function ( langCode, searchTerm ) {
 			// FIXME script is ISO 15924 code. We might need actual name of script.
-			var matcher = new RegExp( '^' + this.escapeRegex( searchTerm ), 'i' ),
+			const matcher = new RegExp( '^' + this.escapeRegex( searchTerm ), 'i' ),
 				languageName = this.options.languages[ langCode ];
 
 			return matcher.test( languageName ) ||
@@ -346,7 +346,7 @@
 
 	$.fn.languagefilter = function ( option ) {
 		return this.each( function () {
-			var $this = $( this ),
+			let $this = $( this ),
 				data = $this.data( 'languagefilter' ),
 				options = typeof option === 'object' && option;
 
