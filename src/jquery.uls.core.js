@@ -50,6 +50,8 @@
 	const ULS = function ( element, options ) {
 		let code;
 		this.$element = $( element );
+		// $.extend() skips undefined values, so they do not override the defaults.
+		// eslint-disable-next-line no-jquery/no-extend
 		this.options = $.extend( {}, $.fn.uls.defaults, options );
 		this.$menu = $( template );
 		this.languages = this.options.languages;
@@ -123,7 +125,7 @@
 
 			// Default implementation (middle of the screen under the trigger)
 			if ( top === undefined ) {
-				pos = $.extend( {}, this.$element.offset(), {
+				pos = Object.assign( {}, this.$element.offset(), {
 					height: this.$element[ 0 ].offsetHeight
 				} );
 				top = pos.top + pos.height;

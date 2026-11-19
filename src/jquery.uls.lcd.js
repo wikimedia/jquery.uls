@@ -47,6 +47,8 @@
 	 */
 	function LanguageCategoryDisplay( element, options ) {
 		this.$element = $( element );
+		// $.extend() skips undefined values, so they do not override the defaults.
+		// eslint-disable-next-line no-jquery/no-extend
 		this.options = $.extend( {}, $.fn.lcd.defaults, options );
 		// Ensure the internal region 'all' is always present
 		if ( !this.options.showRegions.includes( 'all' ) ) {

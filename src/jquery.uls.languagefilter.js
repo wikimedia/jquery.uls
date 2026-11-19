@@ -41,6 +41,8 @@
 
 	const LanguageFilter = function ( element, options ) {
 		this.$element = $( element );
+		// $.extend() skips undefined values, so they do not override the defaults.
+		// eslint-disable-next-line no-jquery/no-extend
 		this.options = $.extend( {}, $.fn.languagefilter.defaults, options );
 		this.$element.addClass( 'languagefilter' );
 		this.resultCount = 0;
