@@ -16,12 +16,14 @@
  * @file
  * @license GNU General Public Licence 2.0 or later
  * @license MIT License
+ *
+ * @param {jQuery} $
  */
 
 ( function ( $ ) {
 	'use strict';
 
-	var noResultsTemplate = '<div class="uls-no-results-view"> \
+	const noResultsTemplate = '<div class="uls-no-results-view"> \
 		<h2 data-i18n="uls-no-results-found" class="uls-no-results-found-title">No results found</h2> \
 		<div class="uls-no-results-suggestions"></div> \
 		<div class="uls-no-found-more"> \
@@ -47,9 +49,11 @@
 	 */
 	function LanguageCategoryDisplay( element, options ) {
 		this.$element = $( element );
+		// $.extend() skips undefined values, so they do not override the defaults.
+		// eslint-disable-next-line no-jquery/no-extend
 		this.options = $.extend( {}, $.fn.lcd.defaults, options );
 		// Ensure the internal region 'all' is always present
-		if ( this.options.showRegions.indexOf( 'all' ) === -1 ) {
+		if ( !this.options.showRegions.includes( 'all' ) ) {
 			this.options.showRegions.push( 'all' );
 		}
 
@@ -71,8 +75,8 @@
 
 	// Adapted from https://stackoverflow.com/a/41754707/903324
 	function isLanguageFullyVisible( $el, $holder ) {
-		var elementRect = $el.get( 0 ).getBoundingClientRect();
-		var holderRect = $holder.get( 0 ).getBoundingClientRect();
+		const elementRect = $el.get( 0 ).getBoundingClientRect();
+		const holderRect = $holder.get( 0 ).getBoundingClientRect();
 
 		return elementRect.top <= holderRect.top ?
 			holderRect.top <= elementRect.top :
@@ -99,7 +103,7 @@
 		 * LanguageFilter.
 		 */
 		navigateDown: function () {
-			var maxIndex = this.getLanguageOptionListItems().length - 1;
+			const maxIndex = this.getLanguageOptionListItems().length - 1;
 			// We support navigation starting both from the top and the bottom of the language list.
 			// The navigation should stop when the last language option is already highlighted (for
 			// top to bottom navigation). For top to bottom navigation, that happens when navigation
@@ -132,7 +136,7 @@
 		 * LanguageFilter.
 		 */
 		navigateUp: function () {
-			var maxIndex = this.getLanguageOptionListItems().length - 1;
+			const maxIndex = this.getLanguageOptionListItems().length - 1;
 			// We support navigation starting both from the top and the bottom of the language list.
 			// The navigation should stop when the first language option is already highlighted (for
 			// bottom to top navigation). For top to bottom navigation, that happens when navigation
@@ -155,14 +159,14 @@
 		 * language option <li> element (where n = navigation index)
 		 */
 		highlightLanguageOption: function () {
-			var $listItems = this.getLanguageOptionListItems();
+			const $listItems = this.getLanguageOptionListItems();
 			// There are no language items. Nothing to highlight.
 			if ( !$listItems.length ) {
 				return;
 			}
 			$listItems.removeClass( 'uls-language-option--highlighted' );
 
-			var $selectedItem = $listItems.eq( this.navigationIndex );
+			const $selectedItem = $listItems.eq( this.navigationIndex );
 			if ( $selectedItem.length === 0 ) {
 				throw new Error(
 					'Could not identify selected item with index: ' + this.navigationIndex + '; ' +
@@ -180,7 +184,7 @@
 
 		getHighlightedLanguageCode: function () {
 			if ( this.navigationIndex ) {
-				var $selectedItem = this.getLanguageOptionListItems().eq( this.navigationIndex );
+				const $selectedItem = this.getLanguageOptionListItems().eq( this.navigationIndex );
 				return $selectedItem.data( 'code' );
 			}
 
@@ -203,7 +207,7 @@
 		 * @return {boolean} Whether the language was known and accepted
 		 */
 		append: function ( langCode, regionCode ) {
-			var i, regions;
+			let i, regions;
 
 			if ( !$.uls.data.languages[ langCode ] ) {
 				// Language is unknown or not in the list of languages for this context.
@@ -214,7 +218,7 @@
 				regions = [ 'all' ];
 
 				// Make sure we do not get duplicates
-				if ( this.regionLanguages.all.indexOf( langCode ) > -1 ) {
+				if ( this.regionLanguages.all.includes( langCode ) ) {
 					return true;
 				}
 			} else {
@@ -234,9 +238,9 @@
 			// Work around the bad interface, delay rendering until we have got
 			// all the languages to speed up performance.
 			clearTimeout( this.renderTimeout );
-			this.renderTimeout = setTimeout( function () {
+			this.renderTimeout = setTimeout( () => {
 				this.renderRegions();
-			}.bind( this ), 50 );
+			}, 50 );
 
 			return true;
 		},
@@ -268,8 +272,7 @@
 		},
 
 		render: function () {
-			var $section,
-				$quicklist = this.buildQuicklist(),
+			const $quicklist = this.buildQuicklist(),
 				regions = [],
 				regionNames = {
 					// These are fallback text when i18n library not present
@@ -283,6 +286,7 @@
 					AF: 'Africa',
 					PA: 'Pacific'
 				};
+			let $section;
 
 			if ( $quicklist.length ) {
 				regions.push( $quicklist );
@@ -291,7 +295,7 @@
 				this.$element.addClass( 'uls-lcd--no-quicklist' );
 			}
 
-			this.options.showRegions.forEach( function ( regionCode ) {
+			this.options.showRegions.forEach( ( regionCode ) => {
 				this.regionLanguages[ regionCode ] = [];
 
 				$section = $( '<div>' )
@@ -305,7 +309,7 @@
 					.appendTo( $section );
 
 				regions.push( $section );
-			}.bind( this ) );
+			} );
 
 			this.$element.append( regions );
 
@@ -316,12 +320,12 @@
 		 * Renders a region and displays it if it has content.
 		 */
 		renderRegions: function () {
-			var languages,
-				lcd = this;
+			const lcd = this;
+			let languages;
 
 			this.$element.removeClass( 'uls-no-results' );
 			this.$element.children( '.uls-lcd-region-section' ).each( function () {
-				var $region = $( this ),
+				const $region = $( this ),
 					regionCode = $region.data( 'region' );
 
 				if ( $region.is( '.uls-lcd-quicklist' ) ) {
@@ -358,11 +362,11 @@
 		 * @param {number} columnsPerRow How many columns fit in a row.
 		 */
 		renderRegion: function ( $region, languages, itemsPerColumn, columnsPerRow ) {
-			var columnsClasses, i, lastItem, currentScript, nextScript, force,
-				languagesCount = languages.length,
-				items = [],
-				columns = [],
+			const languagesCount = languages.length,
 				rows = [];
+			let columnsClasses, i, lastItem, currentScript, nextScript, force,
+				items = [],
+				columns = [];
 
 			languages = $.uls.data.sortByScriptGroup(
 				languages.sort( $.uls.data.sortByAutonym )
@@ -424,17 +428,15 @@
 		 * @return {Element}
 		 */
 		renderItem: function ( code ) {
-			var a, name, autonym, li;
-
-			name = this.options.languages[ code ];
-			autonym = $.uls.data.getAutonym( code ) || name || code;
+			const name = this.options.languages[ code ];
+			const autonym = $.uls.data.getAutonym( code ) || name || code;
 
 			// Not using jQuery as this is performance hotspot
-			li = document.createElement( 'li' );
+			const li = document.createElement( 'li' );
 			li.title = name;
 			li.setAttribute( 'data-code', code );
 
-			a = document.createElement( 'a' );
+			const a = document.createElement( 'a' );
 			a.appendChild( document.createTextNode( autonym ) );
 			a.className = 'autonym';
 			a.lang = code;
@@ -459,7 +461,7 @@
 		},
 
 		buildQuicklist: function () {
-			var quickList, $quickListSection, $quickListSectionTitle;
+			let quickList;
 
 			if ( this.$cachedQuicklist !== null ) {
 				return this.$cachedQuicklist;
@@ -479,10 +481,10 @@
 			quickList = quickList.slice( 0, 16 );
 			quickList.sort( $.uls.data.sortByAutonym );
 
-			$quickListSection = $( '<div>' )
+			const $quickListSection = $( '<div>' )
 				.addClass( 'uls-lcd-region-section uls-lcd-quicklist' );
 
-			$quickListSectionTitle = $( '<h3>' )
+			const $quickListSectionTitle = $( '<h3>' )
 				.attr( 'data-i18n', 'uls-common-languages' )
 				.addClass( 'uls-lcd-region-title' )
 				.text( 'Suggested languages' ); // This is placeholder text if jquery.i18n not present
@@ -526,7 +528,7 @@
 		 * @param {Object} data Information about the failed search query
 		 */
 		noResults: function ( event, data ) {
-			var $noResults;
+			let $noResults;
 
 			this.$element.addClass( 'uls-no-results' );
 
@@ -546,13 +548,13 @@
 		},
 
 		listen: function () {
-			var lcd = this;
+			const lcd = this;
 
 			this.$element.on( 'mouseenter', 'li[data-code]', function () {
-				var $listItems = lcd.getLanguageOptionListItems();
+				const $listItems = lcd.getLanguageOptionListItems();
 				// Remove the previous option, and then highlight the current one.
 				$listItems.removeClass( 'uls-language-option--highlighted' );
-				var $self = $( this );
+				const $self = $( this );
 				$self.addClass( 'uls-language-option--highlighted' );
 				lcd.navigationIndex = $listItems.index( $self );
 			} ).on( 'mouseleave', 'li[data-code]', function () {
@@ -570,9 +572,9 @@
 
 	$.fn.lcd = function ( option ) {
 		return this.each( function () {
-			var $this = $( this ),
-				data = $this.data( 'lcd' ),
+			const $this = $( this ),
 				options = typeof option === 'object' && option;
+			let data = $this.data( 'lcd' );
 
 			if ( !data ) {
 				$this.data( 'lcd', ( data = new LanguageCategoryDisplay( this, options ) ) );
@@ -604,16 +606,15 @@
 		// Callback function when no search results.
 		// If overloaded, it can accept the search string as an argument.
 		noResultsTemplate: function () {
-			var $suggestionsContainer, $suggestions,
-				$noResultsTemplate = $( noResultsTemplate );
+			const $noResultsTemplate = $( noResultsTemplate );
 
-			$suggestions = this.buildQuicklist().clone();
+			const $suggestions = this.buildQuicklist().clone();
 			$suggestions.removeClass( 'hide' )
 				.find( 'h3' )
 				.data( 'i18n', 'uls-no-results-suggestion-title' )
 				.text( 'You may be interested in:' )
 				.i18n();
-			$suggestionsContainer = $noResultsTemplate.find( '.uls-no-results-suggestions' );
+			const $suggestionsContainer = $noResultsTemplate.find( '.uls-no-results-suggestions' );
 			$suggestionsContainer.append( $suggestions );
 			return $noResultsTemplate;
 		}

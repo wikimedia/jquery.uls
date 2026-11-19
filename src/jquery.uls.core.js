@@ -15,15 +15,15 @@
  * @file
  * @license GNU General Public Licence 2.0 or later
  * @license MIT License
+ *
+ * @param {jQuery} $
  */
 
 ( function ( $ ) {
 	'use strict';
 
-	var template, ULS;
-
 	// Region numbers in id attributes also appear in the langdb.
-	template = '<div class="grid uls-menu notheme skin-invert"> \
+	const template = '<div class="grid uls-menu notheme skin-invert"> \
 			<div id="search" class="row uls-search"> \
 				<div class="uls-search-wrapper"> \
 					<label class="uls-search-label" for="uls-languagefilter"></label>\
@@ -49,9 +49,11 @@
 	 * @param {Element} element
 	 * @param {Object} options
 	 */
-	ULS = function ( element, options ) {
-		var code;
+	const ULS = function ( element, options ) {
+		let code;
 		this.$element = $( element );
+		// $.extend() skips undefined values, so they do not override the defaults.
+		// eslint-disable-next-line no-jquery/no-extend
 		this.options = $.extend( {}, $.fn.uls.defaults, options );
 		this.$menu = $( template );
 		this.languages = this.options.languages;
@@ -115,7 +117,7 @@
 		 * @return {Object}
 		 */
 		position: function () {
-			var pos,
+			let pos,
 				top = this.top,
 				left = this.left;
 
@@ -125,7 +127,7 @@
 
 			// Default implementation (middle of the screen under the trigger)
 			if ( top === undefined ) {
-				pos = $.extend( {}, this.$element.offset(), {
+				pos = Object.assign( {}, this.$element.offset(), {
 					height: this.$element[ 0 ].offsetHeight
 				} );
 				top = pos.top + pos.height;
@@ -145,7 +147,7 @@
 		 * Show the ULS window
 		 */
 		show: function () {
-			var widthClasses = {
+			const widthClasses = {
 				wide: 'uls-wide',
 				medium: 'uls-medium',
 				narrow: 'uls-narrow'
@@ -216,15 +218,14 @@
 		},
 
 		createLanguageFilter: function () {
-			var lcd, languagesCount,
-				columnsOptions = {
-					wide: 4,
-					medium: 2,
-					narrow: 1
-				};
+			const columnsOptions = {
+				wide: 4,
+				medium: 2,
+				narrow: 1
+			};
 
-			languagesCount = Object.keys( this.options.languages ).length;
-			lcd = this.$resultsView.lcd( {
+			const languagesCount = Object.keys( this.options.languages ).length;
+			const lcd = this.$resultsView.lcd( {
 				languages: this.languages,
 				columns: columnsOptions[ this.menuWidth ],
 
@@ -265,7 +266,7 @@
 			this.$element.on( 'click', this.click.bind( this ) );
 
 			// Don't do anything if pressing on empty space in the ULS
-			this.$menu.on( 'click', function ( e ) {
+			this.$menu.on( 'click', ( e ) => {
 				e.stopPropagation();
 			} );
 
@@ -281,7 +282,7 @@
 		},
 
 		resize: function () {
-			var menuWidth = this.getMenuWidth();
+			const menuWidth = this.getMenuWidth();
 
 			if ( this.menuWidth === menuWidth ) {
 				return;
@@ -351,14 +352,13 @@
 		 * @return {string}
 		 */
 		getMenuWidth: function () {
-			var languagesCount,
-				screenWidth = document.documentElement.clientWidth;
+			const screenWidth = document.documentElement.clientWidth;
 
 			if ( this.options.menuWidth ) {
 				return this.options.menuWidth;
 			}
 
-			languagesCount = Object.keys( this.options.languages ).length;
+			const languagesCount = Object.keys( this.options.languages ).length;
 
 			if ( screenWidth > 900 && languagesCount >= 48 ) {
 				return 'wide';
@@ -381,9 +381,9 @@
 
 	$.fn.uls = function ( option ) {
 		return this.each( function () {
-			var $this = $( this ),
-				data = $this.data( 'uls' ),
+			const $this = $( this ),
 				options = typeof option === 'object' && option;
+			let data = $this.data( 'uls' );
 
 			if ( !data ) {
 				$this.data( 'uls', ( data = new ULS( this, options ) ) );
@@ -454,10 +454,10 @@
 	 * @return {Function} Debounced function.
 	 */
 	$.fn.uls.debounce = function ( fn, wait, immediate ) {
-		var timeout;
+		let timeout;
 
 		return function () {
-			var callNow, self = this,
+			const self = this,
 				later = function () {
 					timeout = null;
 					if ( !immediate ) {
@@ -465,7 +465,7 @@
 					}
 				};
 
-			callNow = immediate && !timeout;
+			const callNow = immediate && !timeout;
 			clearTimeout( timeout );
 			timeout = setTimeout( later, wait || 100 );
 
@@ -481,8 +481,7 @@
 	 */
 	$.fn.scrollIntoView = function () {
 		return this.each( function () {
-			var scrollPosition,
-				$window = $( window ),
+			const $window = $( window ),
 				windowHeight = $window.height(),
 				windowTop = $window.scrollTop(),
 				windowBottom = windowTop + windowHeight,
@@ -490,6 +489,7 @@
 				panelHeight = $element.height(),
 				panelTop = $element.offset().top,
 				panelBottom = panelTop + panelHeight;
+			let scrollPosition;
 
 			if ( ( panelTop < windowTop ) || ( panelBottom > windowBottom ) ) {
 				if ( windowTop > panelTop ) {
