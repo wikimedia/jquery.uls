@@ -5,7 +5,10 @@
 		"wikimedia/jquery"
 	],
 	"rules": {
-		"no-jquery/no-global-selector": "off"
+		"no-jquery/no-global-selector": "off",
+		"no-var": "off",
+		"prefer-arrow-callback": "off",
+		"unicorn/prefer-includes": "off"
 	},
 	"plugins": [
 		"html"
