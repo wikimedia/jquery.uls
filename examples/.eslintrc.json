@@ -5,8 +5,7 @@
 		"wikimedia/jquery"
 	],
 	"rules": {
-		"no-jquery/no-global-selector": "off",
-		"unicorn/prefer-includes": "off"
+		"no-jquery/no-global-selector": "off"
 	},
 	"plugins": [
 		"html"

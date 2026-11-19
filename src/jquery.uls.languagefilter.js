@@ -227,7 +227,7 @@
 					// this case we only show `sr` if no other variants are there.
 					// This also protects against broken search APIs returning duplicate
 					// results, although that is not happening in practice.
-					if ( results.indexOf( code ) === -1 ) {
+					if ( !results.includes( code ) ) {
 						autofillLabel = autofillLabel || name;
 						results.push( code );
 					}

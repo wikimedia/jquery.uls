@@ -49,7 +49,7 @@
 		this.$element = $( element );
 		this.options = $.extend( {}, $.fn.lcd.defaults, options );
 		// Ensure the internal region 'all' is always present
-		if ( this.options.showRegions.indexOf( 'all' ) === -1 ) {
+		if ( !this.options.showRegions.includes( 'all' ) ) {
 			this.options.showRegions.push( 'all' );
 		}
 
@@ -214,7 +214,7 @@
 				regions = [ 'all' ];
 
 				// Make sure we do not get duplicates
-				if ( this.regionLanguages.all.indexOf( langCode ) > -1 ) {
+				if ( this.regionLanguages.all.includes( langCode ) ) {
 					return true;
 				}
 			} else {

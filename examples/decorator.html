@@ -21,7 +21,7 @@
 		$( () => {
 			$( '.uls-trigger' ).uls( {
 				languageDecorator: function ( $language, languageCode ) {
-					if ( languageCode.indexOf( 'm' ) >= 0 ) {
+					if ( languageCode.includes( 'm' ) ) {
 						$language.parent().addClass( 'badge' );
 					}
 					$language.prop( 'href', '//' + languageCode + '.wikipedia.org' );
