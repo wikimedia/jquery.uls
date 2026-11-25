@@ -11,6 +11,7 @@
  * UniversalLanguageSelector in commercial projects as long as the copyright
  * header is left intact. See files GPL-LICENSE and MIT-LICENSE for details.
  *
+ * @param {jQuery} $
  */
 
 ( function ( $ ) {
@@ -18,7 +19,7 @@
 
 	QUnit.module( 'jquery.uls' );
 
-	QUnit.test( '-- Initial check', function ( assert ) {
+	QUnit.test( '-- Initial check', ( assert ) => {
 		assert.strictEqual( typeof $.fn.uls, 'function', '$.fn.uls is a function' );
 	} );
 

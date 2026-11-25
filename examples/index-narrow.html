@@ -18,7 +18,7 @@
 		<script src="../src/jquery.uls.languagefilter.js"></script>
 		<script src="../src/jquery.uls.core.js"></script>
 		<script>
-			$( function () {
+			$( () => {
 				$( '.uls-trigger' ).uls( {
 					languages: {
 						ca: 'català',
@@ -28,7 +28,7 @@
 						ru: 'русский'
 					},
 					onSelect: function ( language ) {
-						var languageName = $.uls.data.getAutonym( language );
+						const languageName = $.uls.data.getAutonym( language );
 						$( '.uls-trigger' ).text( languageName );
 					},
 					menuWidth: 'narrow',

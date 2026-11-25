@@ -25,8 +25,6 @@
 ( function ( $ ) {
 	'use strict';
 
-	var LanguageFilter;
-
 	/**
 	 * Check if a prefix is visually prefix of a string
 	 *
@@ -37,12 +35,14 @@
 	function isVisualPrefix( prefix, string ) {
 		// Pre-base vowel signs of Indic languages. A vowel sign is called pre-base if
 		// consonant + vowel becomes [vowel][consonant] when rendered. Eg: ക + െ => കെ
-		var prebases = 'െേൈൊോൌெேைொோௌେୈୋୌિਿिিেৈোৌෙේෛොෝෞ';
+		const prebases = 'െേൈൊോൌெேைொோௌେୈୋୌિਿिিেৈোৌෙේෛොෝෞ';
 		return prebases.indexOf( string[ prefix.length ] ) <= 0;
 	}
 
-	LanguageFilter = function ( element, options ) {
+	const LanguageFilter = function ( element, options ) {
 		this.$element = $( element );
+		// $.extend() skips undefined values, so they do not override the defaults.
+		// eslint-disable-next-line no-jquery/no-extend
 		this.options = $.extend( {}, $.fn.languagefilter.defaults, options );
 		this.$element.addClass( 'languagefilter' );
 		this.resultCount = 0;
@@ -83,7 +83,7 @@
 		},
 
 		keypress: function ( e ) {
-			var suggestion, query;
+			let suggestion, query, highlightedLanguage;
 
 			switch ( e.keyCode ) {
 				case 9: // Tab -> Autocomplete
@@ -108,7 +108,7 @@
 
 					// Check if a language is currently highlighted, and if so select that
 					// if user presses enter.
-					var highlightedLanguage = this.options.lcd.getHighlightedLanguageCode();
+					highlightedLanguage = this.options.lcd.getHighlightedLanguageCode();
 					if ( highlightedLanguage ) {
 						this.options.onSelect( highlightedLanguage, e );
 					} else if ( this.selectedLanguage ) {
@@ -174,9 +174,9 @@
 		},
 
 		search: function () {
-			var languages = Object.keys( this.options.languages ),
-				results = [],
+			const languages = Object.keys( this.options.languages ),
 				query = ( this.$element.val() || '' ).trim().toLowerCase();
+			let results = [];
 
 			// Reset the keyboard navigation index inside LanguageCategoryDisplay (lcd)
 			// before re-rendering the language options
@@ -190,28 +190,27 @@
 
 			this.options.lcd.setGroupByRegionOverride( false );
 			// Local search results
-			results = languages.filter( function ( langCode ) {
-				return this.filter( langCode, query );
-			}.bind( this ) );
+			results = languages.filter( ( langCode ) => this.filter( langCode, query ) );
 
 			// Use the searchAPI if available, assuming that it has superior search results.
 			if ( this.options.searchAPI ) {
-				this.searchAPI( query )
-					.done( this.resultHandler.bind( this ) )
-					.fail( this.resultHandler.bind( this, query, results, undefined ) );
+				this.searchAPI( query ).then(
+					this.resultHandler.bind( this ),
+					this.resultHandler.bind( this, query, results, undefined )
+				);
 			} else {
 				this.resultHandler( query, results );
 			}
 		},
 
 		searchAPI: function ( query ) {
-			return $.get( this.options.searchAPI, { search: query } ).then( function ( result ) {
-				var autofillLabel,
-					results = [];
+			return $.get( this.options.searchAPI, { search: query } ).then( ( result ) => {
+				const results = [];
+				let autofillLabel;
 
 				// eslint-disable-next-line no-jquery/no-each-util
-				$.each( result.languagesearch, function ( apiCode, name ) {
-					var code, redirect;
+				$.each( result.languagesearch, ( apiCode, name ) => {
+					let code, redirect;
 
 					if ( this.options.languages[ apiCode ] ) {
 						code = apiCode;
@@ -231,14 +230,14 @@
 					// this case we only show `sr` if no other variants are there.
 					// This also protects against broken search APIs returning duplicate
 					// results, although that is not happening in practice.
-					if ( results.indexOf( code ) === -1 ) {
+					if ( !results.includes( code ) ) {
 						autofillLabel = autofillLabel || name;
 						results.push( code );
 					}
-				}.bind( this ) );
+				} );
 
 				return $.Deferred().resolve( query, results, autofillLabel );
-			}.bind( this ) );
+			} );
 		},
 
 		/**
@@ -272,7 +271,7 @@
 		},
 
 		autofill: function ( langCode, languageName ) {
-			var autonym, userInput, suggestion;
+			let autonym, suggestion;
 
 			if ( !this.$suggestion.length ) {
 				return;
@@ -289,7 +288,7 @@
 				return;
 			}
 
-			userInput = this.$element.val();
+			const userInput = this.$element.val();
 			suggestion = userInput +
 				languageName.slice( userInput.length, languageName.length );
 
@@ -334,7 +333,7 @@
 		 */
 		filter: function ( langCode, searchTerm ) {
 			// FIXME script is ISO 15924 code. We might need actual name of script.
-			var matcher = new RegExp( '^' + this.escapeRegex( searchTerm ), 'i' ),
+			const matcher = new RegExp( '^' + this.escapeRegex( searchTerm ), 'i' ),
 				languageName = this.options.languages[ langCode ];
 
 			return matcher.test( languageName ) ||
@@ -346,9 +345,9 @@
 
 	$.fn.languagefilter = function ( option ) {
 		return this.each( function () {
-			var $this = $( this ),
-				data = $this.data( 'languagefilter' ),
+			const $this = $( this ),
 				options = typeof option === 'object' && option;
+			let data = $this.data( 'languagefilter' );
 
 			if ( !data ) {
 				$this.data( 'languagefilter', ( data = new LanguageFilter( this, options ) ) );

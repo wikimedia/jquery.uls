@@ -19,8 +19,8 @@
 		<script src="../src/jquery.uls.core.js"></script>
 		<script src="resources/jquery.i18n.min.js"></script>
 		<script>
-			$( function () {
-				var i18n = $.i18n();
+			$( () => {
+				const i18n = $.i18n();
 				// Use default locale "en"
 				i18n.locale = 'en';
 				i18n.load( '../i18n/en.json', 'en' );
@@ -29,7 +29,7 @@
 						this.i18n();
 					},
 					onSelect: function ( language ) {
-						var languageName = $.uls.data.getAutonym( language );
+						const languageName = $.uls.data.getAutonym( language );
 						$( '.uls-trigger' ).text( languageName );
 						i18n.locale = language;
 						// For ULS
