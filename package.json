@@ -41,8 +41,8 @@
 	"bugs": {
 		"url": "https://github.com/wikimedia/jquery.uls/issues"
 	},
-	"engine": {
-		"node": ">=6.11.1"
+	"engines": {
+		"node": ">=22"
 	},
 	"license": "(MIT OR GPL-2.0+)",
 	"scripts": {
